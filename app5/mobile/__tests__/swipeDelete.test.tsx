@@ -379,4 +379,114 @@ describe("preview deletion stays inside the current routine", () => {
     expect(hands.exerciseIds).toEqual(ids);
     expect(catalogSnapshot()).toEqual(before);
   });
+
+  async function pressLabel(label: string) {
+    await act(async () => {
+      const target = rendered!.root.findAll(
+        (node) => node.props.accessibilityLabel === label && typeof node.props.onPress === "function",
+      )[0];
+      if (!target) throw new Error(`Missing control: ${label}`);
+      target.props.onPress();
+    });
+  }
+
+  it("cycles matching replacements once, and skip keeps the deletion", async () => {
+    const before = catalogSnapshot();
+    const hands = getCombinations().find((combo) => combo.id === "hands")!;
+    const ids = [...hands.exerciseIds];
+    await open(hands);
+    const removed = resolveSelection(hands)[1];
+    await reveal(1);
+    await deleteVisible(removed.name);
+    expect(textOf("站姿手腕活動")).toBe(true);
+    expect(textOf("同一個活動，姿勢相近")).toBe(true);
+    expect(textOf("01:30")).toBe(true);
+    await pressLabel("換一個");
+    expect(textOf("仰躺手腕勾放")).toBe(true);
+    expect(textOf("站姿手腕活動")).toBe(false);
+    expect(textOf("同一個活動，另一個姿勢")).toBe(true);
+    const next = rendered!.root.findAll(
+      (node) => node.props.accessibilityLabel === "換一個" && typeof node.props.onPress === "function",
+    )[0];
+    expect(next.props.accessibilityState).toEqual({ disabled: true });
+    await act(async () => next.props.onPress());
+    expect(textOf("仰躺手腕勾放")).toBe(true);
+    await pressLabel("不用替代");
+    expect(textOf("仰躺手腕勾放")).toBe(false);
+    expect(textOf("站姿手腕活動")).toBe(false);
+    expect(textOf("01:30")).toBe(true);
+    await act(async () => rendered!.root.findByType(ActionButton).props.onPress());
+    const kept = [ids[0], ids[2], ids[3]];
+    expect(getCurrentRoutine()?.units.map((exercise) => exercise.id)).toEqual(kept);
+    expect((await readLastStarted())?.exerciseIds).toEqual(kept);
+    expect(hands.exerciseIds).toEqual(ids);
+    expect(catalogSnapshot()).toEqual(before);
+  });
+
+  it("inserts an accepted replacement at the deleted position and persists that list", async () => {
+    const before = catalogSnapshot();
+    const hands = getCombinations().find((combo) => combo.id === "hands")!;
+    const standing = getCombinations().find((combo) => combo.id === "standing")!;
+    const handsIds = hands.exerciseIds;
+    const standingIds = standing.exerciseIds;
+    await open(hands);
+    const removed = resolveSelection(hands)[1];
+    await reveal(1);
+    await deleteVisible(removed.name);
+    await pressLabel("加入替代");
+    expect(
+      rendered!.root.findAll(
+        (node) => node.props.accessibilityLabel === "動作 2，站姿手腕活動，查看說明",
+      ).length,
+    ).toBeGreaterThan(0);
+    expect(textOf("要加入相近的動作嗎？")).toBe(false);
+    expect(textOf("02:00")).toBe(true);
+    expect(textOf("04")).toBe(true);
+    await act(async () => {
+      rendered!.root
+        .findAll(
+          (node) =>
+            node.props.accessibilityLabel === "調整站姿手腕活動的順序" &&
+            typeof node.props.onAccessibilityAction === "function",
+        )[0]
+        .props.onAccessibilityAction({ nativeEvent: { actionName: "increment" } });
+    });
+    expect(textOf("要加入相近的動作嗎？")).toBe(false);
+    await act(async () => rendered!.root.findByType(ActionButton).props.onPress());
+    const expected = [handsIds[0], handsIds[2], "stand_wrist_flex", handsIds[3]];
+    expect(getCurrentRoutine()?.units.map((exercise) => exercise.id)).toEqual([...expected]);
+    expect(getCurrentRoutine()?.units.reduce((sum, exercise) => sum + exercise.duration_seconds, 0)).toBe(120);
+    expect((await readLastStarted())?.exerciseIds).toEqual([...expected]);
+    expect(hands.exerciseIds).toBe(handsIds);
+    expect(standing.exerciseIds).toBe(standingIds);
+    expect(catalogSnapshot()).toEqual(before);
+  });
+
+  it("offers no replacement for an unmatched action or the final remaining action", async () => {
+    const source = getCombinations().find((combo) => combo.id === "office")!;
+    const turn = resolveSelection(source).find((exercise) => exercise.id === "sit_upper_back_turn");
+    const side = resolveSelection(source).find((exercise) => exercise.id === "sit_neck_side");
+    if (!turn || !side) throw new Error("fixture exercises missing");
+    await open({ ...source, exerciseIds: [turn.id, side.id] });
+    await reveal(0);
+    await deleteVisible(turn.name);
+    expect(textOf("肩胛輕收放")).toBe(false);
+    expect(
+      rendered!.root.findAll((node) => node.props.accessibilityLabel === "加入替代"),
+    ).toHaveLength(0);
+    expect(textOf("00:30")).toBe(true);
+    expect(
+      rendered!.root.findAll((node) => String(node.props.accessibilityLabel ?? "").startsWith("刪除")),
+    ).toHaveLength(0);
+
+    await act(async () => rendered!.unmount());
+    rendered = undefined;
+    await open({ ...source, exerciseIds: [side.id] });
+    expect(
+      rendered!.root.findAll((node) => node.props.accessibilityLabel === "加入替代"),
+    ).toHaveLength(0);
+    expect(
+      rendered!.root.findAll((node) => String(node.props.accessibilityLabel ?? "").startsWith("刪除")),
+    ).toHaveLength(0);
+  });
 });
