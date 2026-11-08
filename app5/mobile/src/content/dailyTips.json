@@ -1,0 +1,1103 @@
+{
+  "status": "approved_subset",
+  "approvedCount": 60,
+  "locale": "zh-Hant",
+  "supportedUiLocales": [
+    "zh-Hant"
+  ],
+  "accessDate": "2026-11-08",
+  "note": "Approved Traditional Chinese sentences are stored verbatim. context flags only choose on-screen labels and do not replace the sentences.",
+  "ids": [
+    "004",
+    "005",
+    "007",
+    "008",
+    "012",
+    "013",
+    "014",
+    "015",
+    "016",
+    "017",
+    "018",
+    "020",
+    "021",
+    "023",
+    "024",
+    "025",
+    "028",
+    "029",
+    "031",
+    "034",
+    "039",
+    "040",
+    "042",
+    "043",
+    "044",
+    "045",
+    "047",
+    "049",
+    "050",
+    "051",
+    "052",
+    "053",
+    "054",
+    "055",
+    "056",
+    "059",
+    "060",
+    "062",
+    "064",
+    "065",
+    "066",
+    "067",
+    "068",
+    "069",
+    "070",
+    "071",
+    "072",
+    "073",
+    "074",
+    "076",
+    "080",
+    "082",
+    "083",
+    "084",
+    "089",
+    "090",
+    "093",
+    "094",
+    "095",
+    "098"
+  ],
+  "sources": {
+    "mayo-stretch": {
+      "id": "mayo-stretch",
+      "institution": "Mayo Clinic",
+      "title": "Stretching: Focus on flexibility",
+      "url": "https://www.mayoclinic.org/healthy-lifestyle/fitness/in-depth/stretching/art-20047931",
+      "pageDate": "2023-11-18",
+      "reviewedDate": "unknown",
+      "updatedDate": "2023-11-18",
+      "nextReview": "unknown",
+      "dateNote": "By Mayo Clinic Staff, page date Nov. 18, 2023. No separate review date on the page.",
+      "accessDate": "2026-11-08"
+    },
+    "medlineplus-posture": {
+      "id": "medlineplus-posture",
+      "institution": "MedlinePlus (U.S. National Library of Medicine)",
+      "title": "Guide to Good Posture",
+      "url": "https://medlineplus.gov/guidetogoodposture.html",
+      "pageDate": "unknown",
+      "reviewedDate": "unknown",
+      "updatedDate": "2025-09-08",
+      "nextReview": "unknown",
+      "dateNote": "Page shows Updated September 8, 2025. No separate review date found.",
+      "accessDate": "2026-11-08"
+    },
+    "nhs-adults": {
+      "id": "nhs-adults",
+      "institution": "NHS",
+      "title": "Physical activity guidelines for adults aged 19 to 64",
+      "url": "https://www.nhs.uk/live-well/exercise/physical-activity-guidelines-for-adults-aged-19-to-64/",
+      "pageDate": "unknown",
+      "reviewedDate": "2024-05-22",
+      "updatedDate": "unknown",
+      "nextReview": "2027-05-22",
+      "dateNote": "Page last reviewed 22 May 2024. Next review due 22 May 2027.",
+      "accessDate": "2026-11-08"
+    },
+    "nhs-strength": {
+      "id": "nhs-strength",
+      "institution": "NHS",
+      "title": "How to improve your strength and flexibility",
+      "url": "https://www.nhs.uk/live-well/exercise/how-to-improve-strength-flexibility/",
+      "pageDate": "unknown",
+      "reviewedDate": "2026-07-21",
+      "updatedDate": "unknown",
+      "nextReview": "2029-07-21",
+      "dateNote": "Page last reviewed 21 July 2026. Next review due 21 July 2029.",
+      "accessDate": "2026-11-08"
+    },
+    "medlineplus-how-much": {
+      "id": "medlineplus-how-much",
+      "institution": "MedlinePlus (U.S. National Library of Medicine / NHLBI)",
+      "title": "How much exercise do I need?",
+      "url": "https://medlineplus.gov/howmuchexercisedoineed.html",
+      "pageDate": "unknown",
+      "reviewedDate": "unknown",
+      "updatedDate": "unknown",
+      "nextReview": "unknown",
+      "dateNote": "No review or update date found in the fetched page.",
+      "accessDate": "2026-11-08"
+    },
+    "nhs-benefits": {
+      "id": "nhs-benefits",
+      "institution": "NHS",
+      "title": "Benefits of exercise",
+      "url": "https://www.nhs.uk/live-well/exercise/exercise-health-benefits/",
+      "pageDate": "unknown",
+      "reviewedDate": "2024-08-15",
+      "updatedDate": "unknown",
+      "nextReview": "2027-08-15",
+      "dateNote": "Fetched URL https://www.nhs.uk/live-well/exercise/why-sitting-too-much-is-bad-for-us/ redirects here. Page last reviewed 15 August 2024. Next review due 15 August 2027.",
+      "accessDate": "2026-11-08"
+    },
+    "cdc-benefits": {
+      "id": "cdc-benefits",
+      "institution": "U.S. Centers for Disease Control and Prevention",
+      "title": "Benefits of Physical Activity",
+      "url": "https://www.cdc.gov/physical-activity-basics/benefits/index.html",
+      "pageDate": "2025-12-04",
+      "reviewedDate": "unknown",
+      "updatedDate": "2025-12-04",
+      "nextReview": "unknown",
+      "dateNote": "Page dated Dec. 4, 2025. No separate review date shown.",
+      "accessDate": "2026-11-08"
+    },
+    "cdc-adults": {
+      "id": "cdc-adults",
+      "institution": "U.S. Centers for Disease Control and Prevention",
+      "title": "Adult Activity: An Overview",
+      "url": "https://www.cdc.gov/physical-activity-basics/guidelines/adults.html",
+      "pageDate": "2023-12-20",
+      "reviewedDate": "unknown",
+      "updatedDate": "2023-12-20",
+      "nextReview": "unknown",
+      "dateNote": "Page dated Dec. 20, 2023. No separate review date shown.",
+      "accessDate": "2026-11-08"
+    },
+    "nia-three-types": {
+      "id": "nia-three-types",
+      "institution": "National Institute on Aging (NIH)",
+      "title": "Three Types of Exercise Can Improve Your Health and Physical Ability",
+      "url": "https://www.nia.nih.gov/health/exercise-and-physical-activity/four-types-exercise-can-improve-your-health-and-physical",
+      "pageDate": "unknown",
+      "reviewedDate": "2025-01-14",
+      "updatedDate": "2026-01-25",
+      "nextReview": "unknown",
+      "dateNote": "On-page title is now Three Types (aerobic, muscle-strengthening, balance), with a flexibility section. URL slug still says four-types. Content reviewed January 14, 2025. Schema.org dateModified 2026-01-25.",
+      "accessDate": "2026-11-08"
+    },
+    "nia-getting-started": {
+      "id": "nia-getting-started",
+      "institution": "National Institute on Aging (NIH)",
+      "title": "Tips for Getting and Staying Active as You Age",
+      "url": "https://www.nia.nih.gov/health/exercise-and-physical-activity/how-older-adults-can-get-started-exercise",
+      "pageDate": "unknown",
+      "reviewedDate": "2025-01-14",
+      "updatedDate": "2026-01-25",
+      "nextReview": "unknown",
+      "dateNote": "Content reviewed January 14, 2025. Schema.org dateModified 2026-01-25. datePublished 2025-02-14.",
+      "accessDate": "2026-11-08"
+    },
+    "nhs-warmup": {
+      "id": "nhs-warmup",
+      "institution": "NHS",
+      "title": "How to warm up before exercising",
+      "url": "https://www.nhs.uk/live-well/exercise/how-to-warm-up-before-exercising/",
+      "pageDate": "unknown",
+      "reviewedDate": "2026-06-24",
+      "updatedDate": "unknown",
+      "nextReview": "2029-06-24",
+      "dateNote": "Page last reviewed 24 June 2026. Next review due 24 June 2029.",
+      "accessDate": "2026-11-08"
+    },
+    "nhs-stretch-after": {
+      "id": "nhs-stretch-after",
+      "institution": "NHS",
+      "title": "How to stretch after exercising",
+      "url": "https://www.nhs.uk/live-well/exercise/how-to-stretch-after-exercising/",
+      "pageDate": "unknown",
+      "reviewedDate": "2026-03-16",
+      "updatedDate": "unknown",
+      "nextReview": "2029-03-16",
+      "dateNote": "Page last reviewed 16 March 2026. Next review due 16 March 2029.",
+      "accessDate": "2026-11-08"
+    },
+    "nhs-older": {
+      "id": "nhs-older",
+      "institution": "NHS",
+      "title": "Physical activity guidelines for older adults",
+      "url": "https://www.nhs.uk/live-well/exercise/physical-activity-guidelines-older-adults/",
+      "pageDate": "unknown",
+      "reviewedDate": "2024-08-15",
+      "updatedDate": "unknown",
+      "nextReview": "2027-08-15",
+      "dateNote": "Page last reviewed 15 August 2024. Next review due 15 August 2027.",
+      "accessDate": "2026-11-08"
+    }
+  },
+  "tips": [
+    {
+      "id": "004",
+      "title": "冷的肌肉先暖開",
+      "category": "stretching",
+      "sentences": {
+        "zh-Hant": [
+          "肌肉還冷的時候直接拉，比較容易拉傷。",
+          "伸展前先用輕鬆的走路、慢跑或騎車，低強度做約 5 到 10 分鐘。"
+        ]
+      },
+      "sourceId": "mayo-stretch",
+      "provenance": "Mayo Clinic says stretching cold muscles can cause injury, and suggests 5 to 10 minutes of light walking, jogging, or biking first.",
+      "context": []
+    },
+    {
+      "id": "005",
+      "title": "運動後再拉更合適",
+      "category": "stretching",
+      "sentences": {
+        "zh-Hant": [
+          "肌肉已經因為活動而溫暖時，再做伸展會更合適。",
+          "所以伸展可以放在運動之後，而不是拿來代替熱身。"
+        ]
+      },
+      "sourceId": "mayo-stretch",
+      "provenance": "Mayo Clinic says it is even better to stretch after a workout when muscles are warm, and not to treat stretching as the warmup.",
+      "context": []
+    },
+    {
+      "id": "007",
+      "title": "衝刺前先別停住拉",
+      "category": "stretching",
+      "sentences": {
+        "zh-Hant": [
+          "緊接在衝刺或比賽前，把肌肉拉長並停住，有研究顯示可能讓表現稍差。",
+          "也有研究指出，賽前立刻伸展會讓腿後肌力量變弱。"
+        ]
+      },
+      "sourceId": "mayo-stretch",
+      "provenance": "Mayo Clinic reports that holding a lengthened stretch immediately before a sprint may slightly worsen performance, and that stretching immediately before an event weakens hamstring strength.",
+      "context": []
+    },
+    {
+      "id": "008",
+      "title": "柔軟度帶動關節角度",
+      "category": "mobility",
+      "sentences": {
+        "zh-Hant": [
+          "研究支持伸展有助於柔軟度，關節可活動的角度也會跟著改善。",
+          "這是活動範圍的變化，不是治療疾病，也不能單獨解釋心肺或體重的好處。"
+        ]
+      },
+      "sourceId": "mayo-stretch",
+      "provenance": "Mayo Clinic says research shows stretching can improve flexibility and, as a result, joint range of motion.",
+      "context": []
+    },
+    {
+      "id": "012",
+      "title": "順手照顧今天用到的部位",
+      "category": "stretching",
+      "sentences": {
+        "zh-Hant": [
+          "除了大肌群，也伸展這項活動最常使用的肌肉和關節。",
+          "頁面把這點寫成已有一些證據，而不是每一種運動都用同一套伸展。"
+        ]
+      },
+      "sourceId": "mayo-stretch",
+      "provenance": "Mayo Clinic says to stretch muscles and joints you routinely use, and that some evidence supports stretches for the muscles used most in a sport or activity.",
+      "context": [
+        "external_source"
+      ]
+    },
+    {
+      "id": "013",
+      "title": "不要彈震著拉",
+      "category": "stretching",
+      "sentences": {
+        "zh-Hant": [
+          "伸展要平順，不要用彈震的方式來回甩。",
+          "彈震可能傷到肌肉，也會讓肌肉更緊。"
+        ]
+      },
+      "sourceId": "mayo-stretch",
+      "provenance": "Mayo Clinic says to stretch in a smooth movement without bouncing, because bouncing can injure muscle and contribute to tightness.",
+      "context": []
+    },
+    {
+      "id": "014",
+      "title": "停住並照常呼吸",
+      "category": "stretching",
+      "sentences": {
+        "zh-Hant": [
+          "每個伸展大約停 30 秒，過程中照常呼吸。",
+          "不要憋氣，也不要為了停更久而拉到痛。"
+        ]
+      },
+      "sourceId": "mayo-stretch",
+      "provenance": "Mayo Clinic says to breathe normally and hold each stretch for about 30 seconds.",
+      "context": []
+    },
+    {
+      "id": "015",
+      "title": "較緊的地方可再久一點",
+      "category": "stretching",
+      "sentences": {
+        "zh-Hant": [
+          "特別緊的部位，停大約 60 秒可能比較夠。",
+          "時間拉長的前提仍是不痛，而不是硬撐。"
+        ]
+      },
+      "sourceId": "mayo-stretch",
+      "provenance": "Mayo Clinic says problem areas may need a hold of around 60 seconds.",
+      "context": []
+    },
+    {
+      "id": "016",
+      "title": "每週至少兩到三次",
+      "category": "stretching",
+      "sentences": {
+        "zh-Hant": [
+          "想得到較穩定的好處，伸展至少每週兩到三次。",
+          "就算每次只有 5 到 10 分鐘，也有幫助。"
+        ]
+      },
+      "sourceId": "mayo-stretch",
+      "provenance": "Mayo Clinic says the most benefit comes from stretching at least two to three times a week, and that even 5 to 10 minutes at a time can help.",
+      "context": []
+    },
+    {
+      "id": "017",
+      "title": "停練後角度可能退回",
+      "category": "mobility",
+      "sentences": {
+        "zh-Hant": [
+          "若伸展曾經讓關節活動角度變大，停掉之後角度可能再變小。",
+          "柔軟度要維持，就得持續做，不是做過一次就永久保留。"
+        ]
+      },
+      "sourceId": "mayo-stretch",
+      "provenance": "Mayo Clinic says range of motion gained from stretching may decrease again if stretching stops.",
+      "context": []
+    },
+    {
+      "id": "018",
+      "title": "伸展擋不住過度使用",
+      "category": "safe_exercise",
+      "sentences": {
+        "zh-Hant": [
+          "做了伸展，不代表就不會受傷。",
+          "過度使用造成的傷害，也不是靠伸展就能預防。"
+        ]
+      },
+      "sourceId": "mayo-stretch",
+      "provenance": "Mayo Clinic says stretching does not mean you cannot get injured, and that stretching will not prevent an overuse injury.",
+      "context": []
+    },
+    {
+      "id": "020",
+      "title": "帶著動作練柔軟度",
+      "category": "mobility",
+      "sentences": {
+        "zh-Hant": [
+          "太極、皮拉提斯或瑜伽這類緩和的動作練習，可以讓特定動作更柔軟。",
+          "Mayo 也寫到這類運動對年長者可能有助於減少跌倒；那是整個活動的效果，不是單靠停住一個伸展。"
+        ]
+      },
+      "sourceId": "mayo-stretch",
+      "provenance": "Mayo Clinic says gentle movements such as tai chi, Pilates, or yoga can improve flexibility in specific movements and can also help reduce falls in older adults.",
+      "context": []
+    },
+    {
+      "id": "021",
+      "title": "先做低強度的類似動作",
+      "category": "safe_exercise",
+      "sentences": {
+        "zh-Hant": [
+          "動態熱身是先用低強度，做和接下來活動相似的動作。",
+          "再逐漸加快、加重，而不是一開始就用比賽強度。"
+        ]
+      },
+      "sourceId": "mayo-stretch",
+      "provenance": "Mayo Clinic describes a dynamic warmup as movements similar to the planned activity, started at a low level and then sped up with added intensity.",
+      "context": []
+    },
+    {
+      "id": "023",
+      "title": "維持三個自然彎",
+      "category": "posture",
+      "sentences": {
+        "zh-Hant": [
+          "脊椎在頸部、背的中段和下背，本來就有三個自然彎曲。",
+          "姿勢要保住這些彎，不要再把它們加大。"
+        ]
+      },
+      "sourceId": "medlineplus-posture",
+      "provenance": "MedlinePlus says the spine has three natural curves, at the neck, mid back, and low back, and that posture should maintain those curves without increasing them.",
+      "context": []
+    },
+    {
+      "id": "024",
+      "title": "頭在肩上、肩在髖上",
+      "category": "posture",
+      "sentences": {
+        "zh-Hant": [
+          "一個實用的對齊方式，是頭在肩膀上方，肩膀在髖部上方。",
+          "這是排列的參考，不是要求每個人擺成同一張標準照片。"
+        ]
+      },
+      "sourceId": "medlineplus-posture",
+      "provenance": "MedlinePlus says the head should be above the shoulders, and the top of the shoulders over the hips.",
+      "context": []
+    },
+    {
+      "id": "025",
+      "title": "垮坐和幾種不適有關",
+      "category": "posture",
+      "sentences": {
+        "zh-Hant": [
+          "這頁把長時間彎腰垮坐，和頸、肩、背疼痛、柔軟度下降、關節比較不好活動連在一起。",
+          "它說的是可能發生，不是每個人彎一下就會受傷。"
+        ]
+      },
+      "sourceId": "medlineplus-posture",
+      "provenance": "MedlinePlus lists slouching as able to cause neck, shoulder, and back pain, decrease flexibility, and affect how well joints move. Stronger claims on the same list were not used.",
+      "context": [
+        "external_source"
+      ]
+    },
+    {
+      "id": "028",
+      "title": "椅背托住下背的彎",
+      "category": "posture",
+      "sentences": {
+        "zh-Hant": [
+          "坐著時讓整個背有支撐，包含下背那個自然彎。",
+          "椅子本身托不住時，可以加一個背墊。"
+        ]
+      },
+      "sourceId": "medlineplus-posture",
+      "provenance": "MedlinePlus says the back should be fully supported, using a pillow or other support if the chair cannot support the lower-back curve.",
+      "context": []
+    },
+    {
+      "id": "029",
+      "title": "肩放鬆、肘有個角度",
+      "category": "posture",
+      "sentences": {
+        "zh-Hant": [
+          "肩膀放鬆，不要圓肩，也不要用力向後扯。",
+          "手肘靠近身體，彎曲大約在 90 到 120 度。"
+        ]
+      },
+      "sourceId": "medlineplus-posture",
+      "provenance": "MedlinePlus says shoulders should be relaxed, not rounded or pulled backwards, and elbows kept close and bent between 90 and 120 degrees.",
+      "context": []
+    },
+    {
+      "id": "031",
+      "title": "大腿要被椅子托住",
+      "category": "posture",
+      "sentences": {
+        "zh-Hant": [
+          "坐著時大腿和髖部要有支撐，座面有足夠的墊。",
+          "大腿大約與地面平行，是這頁給的坐姿參考。"
+        ]
+      },
+      "sourceId": "medlineplus-posture",
+      "provenance": "MedlinePlus says the thighs and hips should be supported, with a well-padded seat and thighs about parallel to the floor.",
+      "context": [
+        "external_source"
+      ]
+    },
+    {
+      "id": "034",
+      "title": "軀幹周圍的肌肉幫忙撐",
+      "category": "posture",
+      "sentences": {
+        "zh-Hant": [
+          "背、腹和骨盆周圍的肌肉，會幫忙支撐軀幹。",
+          "練這些肌群被描述為對姿勢有幫助，不是把姿勢改到完美的方法。"
+        ]
+      },
+      "sourceId": "medlineplus-posture",
+      "provenance": "MedlinePlus says exercises that strengthen the core muscles around the back, abdomen, and pelvis are a good idea for posture.",
+      "context": []
+    },
+    {
+      "id": "039",
+      "title": "一百五或七十五",
+      "category": "general_physical_activity",
+      "sentences": {
+        "zh-Hant": [
+          "成人一週可做至少 150 分鐘中等強度，或 75 分鐘較強強度。",
+          "一般來說，這兩段時間的健康益處被寫成相近，也可以混著做。"
+        ]
+      },
+      "sourceId": "nhs-adults",
+      "provenance": "NHS adult page sets out 150 minutes moderate or 75 minutes vigorous, and says 75 minutes of vigorous activity can give similar health benefits to 150 minutes of moderate activity.",
+      "context": []
+    },
+    {
+      "id": "040",
+      "title": "分散在多天",
+      "category": "general_physical_activity",
+      "sentences": {
+        "zh-Hant": [
+          "這 150 分鐘比較適合分散在一週四到五天，或每天都做一點。",
+          "不是叫人把整週的量擠在同一次做完。"
+        ]
+      },
+      "sourceId": "nhs-adults",
+      "provenance": "NHS says to spread exercise evenly over 4 to 5 days a week, or every day.",
+      "context": []
+    },
+    {
+      "id": "042",
+      "title": "用說話判斷吃力程度",
+      "category": "general_physical_activity",
+      "sentences": {
+        "zh-Hant": [
+          "中等強度時會比較暖、呼吸比較快，還能說話，但不能唱歌。",
+          "較強強度時呼吸又急又快，不暫停就說不了幾個字。"
+        ]
+      },
+      "sourceId": "nhs-adults",
+      "provenance": "NHS describes moderate effort as being able to talk but not sing, and vigorous effort as being unable to say more than a few words without pausing.",
+      "context": []
+    },
+    {
+      "id": "043",
+      "title": "再出力就會變較強",
+      "category": "general_physical_activity",
+      "sentences": {
+        "zh-Hant": [
+          "多數中等強度的活動，只要再用力，就會變成較強強度。",
+          "同樣是走路，加快或走上坡，吃力程度就不一樣。"
+        ]
+      },
+      "sourceId": "nhs-adults",
+      "provenance": "NHS says most moderate activities can become vigorous if you increase your effort, and lists walking up stairs and fast or uphill cycling among vigorous examples.",
+      "context": []
+    },
+    {
+      "id": "044",
+      "title": "很短很吃力的幾次也算",
+      "category": "general_physical_activity",
+      "sentences": {
+        "zh-Hant": [
+          "幾次很短、非常吃力的活動，也可以算進一週的活動量。",
+          "中等、較強和非常吃力的活動可以混著累積，不必每次都做很久。"
+        ]
+      },
+      "sourceId": "nhs-adults",
+      "provenance": "NHS says the weekly target can also be met with several short sessions of very vigorous activity, or a mix of moderate, vigorous, and very vigorous activity.",
+      "context": []
+    },
+    {
+      "id": "045",
+      "title": "打斷久坐和久躺",
+      "category": "sedentary_breaks",
+      "sentences": {
+        "zh-Hant": [
+          "除了做活動，也要減少坐著和躺著的時間。",
+          "一段長時間完全不動時，中間用一點活動把它打斷。"
+        ]
+      },
+      "sourceId": "nhs-adults",
+      "provenance": "NHS adult guidelines say to reduce time spent sitting or lying down and to break up long periods of not moving with some activity.",
+      "context": []
+    },
+    {
+      "id": "047",
+      "title": "指引也涵蓋身障成人",
+      "category": "general_physical_activity",
+      "sentences": {
+        "zh-Hant": [
+          "這份 19 到 64 歲的活動指引，NHS 寫明也適用於身障成人。",
+          "做法仍要配合自己能做的方式，而不是把同一組動作硬套到每個人。"
+        ]
+      },
+      "sourceId": "nhs-adults",
+      "provenance": "NHS says these adult guidelines are also suitable for disabled adults.",
+      "context": []
+    },
+    {
+      "id": "049",
+      "title": "肌力和有氧可同天或不同天",
+      "category": "general_physical_activity",
+      "sentences": {
+        "zh-Hant": [
+          "練肌力可以和有氧同一天，也可以分開幾天，看哪種比較做得到。",
+          "重點是兩種都有排進去，不是只做其中一種。"
+        ]
+      },
+      "sourceId": "nhs-adults",
+      "provenance": "NHS says muscle-strengthening activities can be done on the same or different days as aerobic activity.",
+      "context": [
+        "strength_training"
+      ]
+    },
+    {
+      "id": "050",
+      "title": "肌力時間另計",
+      "category": "general_physical_activity",
+      "sentences": {
+        "zh-Hant": [
+          "做肌力所花的時間，不算進每週 150 分鐘的中等強度有氧。",
+          "走路、騎車這類有氧才計入那 150 分鐘；肌力要另外做。"
+        ]
+      },
+      "sourceId": "nhs-strength",
+      "provenance": "NHS says time spent on strength exercises does not count toward moderate aerobic activity, while walking or cycling does.",
+      "context": [
+        "strength_training"
+      ]
+    },
+    {
+      "id": "051",
+      "title": "做到幾乎再一下要人幫",
+      "category": "general_physical_activity",
+      "sentences": {
+        "zh-Hant": [
+          "肌力要練到再做一下會覺得困難、需要幫忙，才算有練到。",
+          "若一組做完還很輕鬆，對這頁的定義來說，負荷還不夠。"
+        ]
+      },
+      "sourceId": "nhs-strength",
+      "provenance": "NHS says a strengthening exercise should be performed until another repetition would be difficult without help.",
+      "context": [
+        "external_source",
+        "strength_training"
+      ]
+    },
+    {
+      "id": "052",
+      "title": "八到十二下為一組",
+      "category": "general_physical_activity",
+      "sentences": {
+        "zh-Hant": [
+          "每個肌力動作試著做 8 到 12 下，這算一組。",
+          "至少做兩組；想要更多好處，可以做到三組，並用數週時間慢慢加上去。"
+        ]
+      },
+      "sourceId": "nhs-strength",
+      "provenance": "NHS says 8 to 12 repetitions count as one set, to do at least two sets, and that three sets give still more benefit. Build up over weeks.",
+      "context": [
+        "strength_training"
+      ]
+    },
+    {
+      "id": "053",
+      "title": "肌力沒有固定分鐘數",
+      "category": "general_physical_activity",
+      "sentences": {
+        "zh-Hant": [
+          "肌力和柔軟度練習，並沒有一條「必須做幾分鐘」的時間規定。",
+          "有規定的是練到哪些肌群、每週至少幾天，以及做到什麼吃力程度。"
+        ]
+      },
+      "sourceId": "nhs-strength",
+      "provenance": "NHS says there are no specific recommendations for how much time to spend on strength and flexibility exercises.",
+      "context": [
+        "strength_training"
+      ]
+    },
+    {
+      "id": "054",
+      "title": "柔軟是為了日常動作",
+      "category": "mobility",
+      "sentences": {
+        "zh-Hant": [
+          "柔軟度指的是關節能做出日常事務和活動所需要的動作。",
+          "伸展、瑜伽、太極、皮拉提斯，都是這頁舉出的柔軟度活動例子。"
+        ]
+      },
+      "sourceId": "nhs-strength",
+      "provenance": "NHS defines flexibility exercises as activities that improve a joint's ability to keep the movement needed for daily tasks and physical activity, with stretching, yoga, tai chi, and Pilates as examples.",
+      "context": [
+        "external_source"
+      ]
+    },
+    {
+      "id": "055",
+      "title": "有些較強有氧也練得到肌肉",
+      "category": "general_physical_activity",
+      "sentences": {
+        "zh-Hant": [
+          "有些有氧如果做到較強強度，同時也會練到肌肉。",
+          "例如循環訓練、跳舞或武術；一般輕鬆走路則不能拿來代替肌力日。"
+        ]
+      },
+      "sourceId": "nhs-strength",
+      "provenance": "NHS says some aerobic exercises done vigorously also strengthen muscles, with examples including circuit training, dancing, and martial arts.",
+      "context": []
+    },
+    {
+      "id": "056",
+      "title": "一週也可以做到更長",
+      "category": "general_physical_activity",
+      "sentences": {
+        "zh-Hant": [
+          "MedlinePlus 給成人的範圍，是一週 150 到 300 分鐘中等強度，或 75 到 150 分鐘較強強度。",
+          "150 分鐘是下限附近，不是唯一允許的上限。"
+        ]
+      },
+      "sourceId": "medlineplus-how-much",
+      "provenance": "MedlinePlus says adults should get at least 150 to 300 minutes of moderate-intensity or 75 to 150 minutes of vigorous-intensity aerobic activity a week.",
+      "context": []
+    },
+    {
+      "id": "059",
+      "title": "有狀況先問分量",
+      "category": "safe_exercise",
+      "sentences": {
+        "zh-Hant": [
+          "年長者、孕婦，以及有身障或特別健康需要的人，活動分量要先問自己的醫護人員。",
+          "有慢性健康問題的人同樣適用，不要直接套一般成人的最高量。"
+        ]
+      },
+      "sourceId": "medlineplus-how-much",
+      "provenance": "MedlinePlus says older adults, pregnant women, and people with disabilities, special health needs, or chronic health problems should check with their provider about how much activity to do.",
+      "context": []
+    },
+    {
+      "id": "060",
+      "title": "很多人一天坐很久",
+      "category": "sedentary_breaks",
+      "sentences": {
+        "zh-Hant": [
+          "研究顯示許多成人一天坐著超過 7 小時，包含工作、交通和休息。",
+          "65 歲以上的人，一天坐著或躺著 10 小時以上的情況很常見。"
+        ]
+      },
+      "sourceId": "nhs-benefits",
+      "provenance": "NHS cites research that many adults spend more than 7 hours a day sitting, and that people over 65 spend 10 hours or more a day sitting or lying down.",
+      "context": []
+    },
+    {
+      "id": "062",
+      "title": "心情、睡眠與壓力",
+      "category": "general_physical_activity",
+      "sentences": {
+        "zh-Hant": [
+          "研究也把身體活動和較好的自尊、心情、睡眠品質、精神，以及較低的壓力連在一起。",
+          "這些是整體活動的描述，不要理解成拉筋就能取代睡眠或處理情緒問題。"
+        ]
+      },
+      "sourceId": "nhs-benefits",
+      "provenance": "NHS says research shows physical activity can boost self-esteem, mood, sleep quality, and energy, and reduce the risk of stress.",
+      "context": []
+    },
+    {
+      "id": "064",
+      "title": "一次活動後焦慮可能短時間減輕",
+      "category": "general_physical_activity",
+      "sentences": {
+        "zh-Hant": [
+          "成人做完一次中等至較強的活動後，短期的焦慮感可能減輕。",
+          "這是單次活動後的感覺，不能當成治療焦慮症的方法。"
+        ]
+      },
+      "sourceId": "cdc-benefits",
+      "provenance": "CDC says reduced short-term feelings of anxiety for adults can follow a session of moderate-to-vigorous physical activity.",
+      "context": []
+    },
+    {
+      "id": "065",
+      "title": "規律活動與思考、情緒風險",
+      "category": "general_physical_activity",
+      "sentences": {
+        "zh-Hant": [
+          "規律活動被描述為有助於維持思考、學習和判斷，並降低憂鬱和焦慮的風險。",
+          "同時也和睡得比較好有關；這些都不是伸展單獨可以負責的效果。"
+        ]
+      },
+      "sourceId": "cdc-benefits",
+      "provenance": "CDC says regular physical activity can help keep thinking, learning, and judgment skills sharp, reduce the risk of depression and anxiety, and help sleep.",
+      "context": []
+    },
+    {
+      "id": "066",
+      "title": "體重要同時看吃和動",
+      "category": "general_physical_activity",
+      "sentences": {
+        "zh-Hant": [
+          "體重和吃進去的熱量、以及活動量都有關，人與人之間需要的活動量差很多。",
+          "若沒有同時調整飲食，想把體重降下來並維持，通常需要相當多的活動。"
+        ]
+      },
+      "sourceId": "cdc-benefits",
+      "provenance": "CDC says both eating patterns and physical activity matter for weight, people differ, and losing weight and keeping it off needs a high amount of activity unless eating patterns also change.",
+      "context": []
+    },
+    {
+      "id": "067",
+      "title": "血壓與膽固醇也在好處裡",
+      "category": "general_physical_activity",
+      "sentences": {
+        "zh-Hant": [
+          "一週至少 150 分鐘中等強度活動，與較低的心臟病和中風風險有關，做更多還可以再低一些。",
+          "規律活動也被寫成可以降低血壓、改善膽固醇；這同樣不是伸展的效果。"
+        ]
+      },
+      "sourceId": "cdc-benefits",
+      "provenance": "CDC says at least 150 minutes a week of moderate activity is linked with lower heart-disease and stroke risk, more activity lowers risk further, and regular activity can lower blood pressure and improve cholesterol.",
+      "context": []
+    },
+    {
+      "id": "068",
+      "title": "不到一百五也可能有一點好處",
+      "category": "general_physical_activity",
+      "sentences": {
+        "zh-Hant": [
+          "規律的中等強度活動，即使一週還不到 150 分鐘，也開始和較低的第二型糖尿病與代謝症候群風險有關。",
+          "再多做，風險還可能更低；這不是血糖已經恢復正常的意思。"
+        ]
+      },
+      "sourceId": "cdc-benefits",
+      "provenance": "CDC says people can start to benefit from even less than 150 minutes a week of moderate activity for type 2 diabetes and metabolic syndrome risk, with more activity lowering risk further.",
+      "context": []
+    },
+    {
+      "id": "069",
+      "title": "至少八種癌症的風險較低",
+      "category": "general_physical_activity",
+      "sentences": {
+        "zh-Hant": [
+          "身體活動較多的人，得到至少八種癌症的風險較低。",
+          "對已經罹癌的人，規律活動被描述為有助生活品質和體能，而不是治療癌症。"
+        ]
+      },
+      "sourceId": "cdc-benefits",
+      "provenance": "CDC says being physically active lowers risk for at least eight cancers, and that for survivors regular activity supports quality of life and physical fitness.",
+      "context": []
+    },
+    {
+      "id": "070",
+      "title": "肌力用來留住肌肉",
+      "category": "general_physical_activity",
+      "sentences": {
+        "zh-Hant": [
+          "肌力活動有助於增加或維持肌肉量和力量，對肌肉變少的年長者特別重要。",
+          "重量和次數要慢慢加，不管幾歲都一樣。"
+        ]
+      },
+      "sourceId": "cdc-benefits",
+      "provenance": "CDC says muscle-strengthening can increase or maintain muscle mass and strength, and to slowly increase weight and repetitions.",
+      "context": [
+        "strength_training"
+      ]
+    },
+    {
+      "id": "071",
+      "title": "防跌倒要三種一起",
+      "category": "safe_exercise",
+      "sentences": {
+        "zh-Hant": [
+          "年長者要降低跌倒或跌倒受傷的風險，需要有氧、肌力和平衡都有，不是只做伸展。",
+          "這組活動可以在家做，也可以參加社區裡的結構化課程。"
+        ]
+      },
+      "sourceId": "cdc-benefits",
+      "provenance": "CDC says older adults need aerobic, muscle-strengthening, and balance activities together to improve function and decrease fall risk. Stretching alone is not the listed mix.",
+      "context": []
+    },
+    {
+      "id": "072",
+      "title": "快走對多數人通常安全",
+      "category": "safe_exercise",
+      "sentences": {
+        "zh-Hant": [
+          "像快走這種中等強度活動，對多數人通常是安全的。",
+          "這不是說每個人都適合開始跑，也不是說活動中出現不舒服可以忽略。"
+        ]
+      },
+      "sourceId": "cdc-benefits",
+      "provenance": "CDC says moderate physical activity, such as brisk walking, is generally safe for most people.",
+      "context": []
+    },
+    {
+      "id": "073",
+      "title": "一百五可以拆開累積",
+      "category": "general_physical_activity",
+      "sentences": {
+        "zh-Hant": [
+          "一週 150 分鐘不必一次做完，例如一天 30 分鐘、一週五天。",
+          "也可以拆成更小段，分散在一週裡面。"
+        ]
+      },
+      "sourceId": "cdc-adults",
+      "provenance": "CDC says 150 minutes can be 30 minutes a day, 5 days a week, and can be broken into smaller chunks.",
+      "context": []
+    },
+    {
+      "id": "074",
+      "title": "三種都排進一週",
+      "category": "general_physical_activity",
+      "sentences": {
+        "zh-Hant": [
+          "年長者不只要做一種運動；NIA 強調有氧、肌力和平衡都重要。",
+          "只做一種並不夠，多樣化也有助於不那麼無聊，並可能降低受傷風險。"
+        ]
+      },
+      "sourceId": "nia-three-types",
+      "provenance": "NIA says it is important to get aerobic, muscle-strengthening, and balance exercise, and that variety helps reduce boredom and injury risk.",
+      "context": []
+    },
+    {
+      "id": "076",
+      "title": "同一肌群不要連兩天",
+      "category": "safe_exercise",
+      "sentences": {
+        "zh-Hant": [
+          "大肌群每週至少練兩天，但不要連續兩天練同一組肌肉。",
+          "中間留時間讓肌肉恢復。"
+        ]
+      },
+      "sourceId": "nia-three-types",
+      "provenance": "NIA says to do muscle-strengthening at least two days a week, but not to work the same muscle group on two days in a row.",
+      "context": [
+        "strength_training"
+      ]
+    },
+    {
+      "id": "080",
+      "title": "出力時把氣吐掉",
+      "category": "safe_exercise",
+      "sentences": {
+        "zh-Hant": [
+          "練肌力時不要憋氣。",
+          "用力的時候吐氣，放鬆的時候吸氣。"
+        ]
+      },
+      "sourceId": "nia-three-types",
+      "provenance": "NIA says not to hold the breath during strength exercises: breathe out during the effort and in as you relax.",
+      "context": [
+        "strength_training"
+      ]
+    },
+    {
+      "id": "082",
+      "title": "戶外與裝備",
+      "category": "safe_exercise",
+      "sentences": {
+        "zh-Hant": [
+          "在戶外活動時注意天氣和周圍環境；騎車要戴安全帽，鞋子和衣服要適合運動。",
+          "對某一個活動沒有把握時，先問醫師。"
+        ]
+      },
+      "sourceId": "nia-three-types",
+      "provenance": "NIA says to be aware of weather and surroundings outdoors, use a helmet when bicycling, wear proper shoes and clothes, and talk with a doctor if unsure about a particular activity.",
+      "context": []
+    },
+    {
+      "id": "083",
+      "title": "有氧前後用輕鬆走路過渡",
+      "category": "mobility",
+      "sentences": {
+        "zh-Hant": [
+          "有氧前後，可以用輕鬆走路這類低強度活動當作暖身和緩和。",
+          "讓呼吸和心跳逐漸上升、再逐漸降下來，而不是突然開始或突然停止。"
+        ]
+      },
+      "sourceId": "nia-three-types",
+      "provenance": "NIA says to do a little light activity, such as easy walking, before and after aerobic activities to warm up and cool down.",
+      "context": []
+    },
+    {
+      "id": "084",
+      "title": "平衡大約每週三次",
+      "category": "mobility",
+      "sentences": {
+        "zh-Hant": [
+          "NIA 建議平衡練習大約每週三次，用來維持身體穩定。",
+          "它把平衡練習和減少跌倒、跌倒受傷連在一起；這是建議的方向，不是不會跌倒的保證。"
+        ]
+      },
+      "sourceId": "nia-three-types",
+      "provenance": "NIA says to aim for about three sessions of balance exercises a week, and that balance exercises help prevent falls and fall-related injuries.",
+      "context": []
+    },
+    {
+      "id": "089",
+      "title": "家事和走路也算活動",
+      "category": "general_physical_activity",
+      "sentences": {
+        "zh-Hant": [
+          "活動不一定是運動課，家事、辦事、用走路或騎車代步，以及休閒活動都算。",
+          "多樣一點比較好玩，也可能降低過度使用同一部位的風險。"
+        ]
+      },
+      "sourceId": "nia-getting-started",
+      "provenance": "NIA says activity can be chores, errands, walking or biking for transportation, or leisure, and that variety may reduce overuse injury risk.",
+      "context": []
+    },
+    {
+      "id": "090",
+      "title": "挑比較有精神的時段",
+      "category": "general_physical_activity",
+      "sentences": {
+        "zh-Hant": [
+          "把活動排在自己比較有精神的時段。",
+          "許多年長者會發現，活動當時和之後的疲勞其實比較少。"
+        ]
+      },
+      "sourceId": "nia-getting-started",
+      "provenance": "NIA says to plan activity for the parts of the day when you feel most energetic, and that many older adults feel less fatigue during and after activity.",
+      "context": []
+    },
+    {
+      "id": "093",
+      "title": "熱身至少約六分鐘",
+      "category": "safe_exercise",
+      "sentences": {
+        "zh-Hant": [
+          "較吃力的運動前，NHS 這套熱身建議至少做約 6 分鐘，需要的話再加長。",
+          "過程中如果痛或覺得不舒服，立刻停止；症狀沒有過去，再尋求醫療協助。"
+        ]
+      },
+      "sourceId": "nhs-warmup",
+      "provenance": "NHS says this warm-up should take at least 6 minutes, longer if needed, and to stop immediately if you feel pain or become unwell.",
+      "context": [
+        "external_source"
+      ]
+    },
+    {
+      "id": "094",
+      "title": "不確定就先問再做這套",
+      "category": "safe_exercise",
+      "sentences": {
+        "zh-Hant": [
+          "這套熱身是給多數健康、體力還可以的人的一般練習，不是用來治療某一種疼痛。",
+          "不確定適不適合、有病、有傷、剛動過手術或心臟病發，或正在懷孕、剛生產，先問醫護人員。"
+        ]
+      },
+      "sourceId": "nhs-warmup",
+      "provenance": "NHS says the exercises are general and not aimed at treating a specific cause of pain, and to get advice first if unsure, unwell, injured, recently after a heart attack or operation, pregnant, or recently after birth.",
+      "context": [
+        "external_source"
+      ]
+    },
+    {
+      "id": "095",
+      "title": "運動後用短短緩和伸展",
+      "category": "stretching",
+      "sentences": {
+        "zh-Hant": [
+          "運動結束後，可以用大約 5 分鐘的緩和伸展，讓身體慢慢鬆開、心跳緩緩下降。",
+          "這套動作大約每個停 15 到 20 秒；有傷、有病或懷孕時，先問物理治療師或醫護人員哪些要改。"
+        ]
+      },
+      "sourceId": "nhs-stretch-after",
+      "provenance": "NHS says the post-exercise stretches take about 5 minutes to relax, improve flexibility, and slow the heart rate, with holds of 15 to 20 seconds, and to ask a professional which to change if injured, ill, or pregnant.",
+      "context": [
+        "external_source"
+      ]
+    },
+    {
+      "id": "098",
+      "title": "曾跌倒就從力量和平衡開始",
+      "category": "mobility",
+      "sentences": {
+        "zh-Hant": [
+          "若曾經跌倒，或正在擔心跌倒，NHS 建議做肌力、平衡和柔軟練習，讓人更有力、站得更有信心。",
+          "這不是保證以後不會再跌倒；久未運動或有疾病，仍要先問醫師。"
+        ]
+      },
+      "sourceId": "nhs-older",
+      "provenance": "NHS older-adult guidance says if you have fallen or are worried about falling, strength, balance, and flexibility exercises will help you feel stronger and more confident. The same page says to speak to a GP if you have not exercised for some time or have medical concerns.",
+      "context": []
+    }
+  ]
+}
