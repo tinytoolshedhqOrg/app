@@ -4,7 +4,7 @@ import { useFocusEffect, useNavigation } from "@react-navigation/native";
 import type { NativeStackNavigationProp } from "@react-navigation/native-stack";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import Mascot from "../components/Mascot";
-import Icon from "../components/Icon";
+import Icon, { type IconName } from "../components/Icon";
 import {
   activityLabel,
   bodyParts,
@@ -36,70 +36,64 @@ export default function HomeScreen() {
     nav.navigate("Preview");
   }
   const combos = getCombinations();
-  const posture = (selection: Selection) =>
-    selection.id === "office" || selection.id === "hands"
-      ? "坐著"
-      : selection.id === "bedtime" || selection.id === "floor"
-        ? "躺著"
-        : "站著";
+  const combinationIcons: Record<string, IconName> = {
+    standing: "standing", office: "office", morning: "sun",
+    bedtime: "moon", hands: "hands", floor: "floor",
+  };
   return (
     <ScrollView
       style={ui.root}
       contentContainerStyle={[
         ui.content,
-        { paddingTop: insets.top + 24, paddingBottom: insets.bottom + 24 },
+        { paddingTop: insets.top + 12, paddingBottom: insets.bottom + 24 },
       ]}
     >
+      <View style={s.brandRow}>
+        <Text style={s.brand}>伸展 STRETCH</Text>
+        <View style={s.brandMark}><Icon name="standing" color={palette.blue} size={20} /></View>
+      </View>
+      <Text style={s.eyebrow}>MOVE A LITTLE, FEEL BETTER</Text>
       <View style={s.welcome}>
-        <View style={{ flex: 1 }}>
-          <Text style={ui.heading}>伸展一下。</Text>
-        </View>
-        <Mascot size={90} />
+        <Text style={s.heading}>伸展一下。</Text>
+        {!last && <Mascot size={78} />}
       </View>
       {last && (
-        <View style={s.lastSection}>
-          <Text style={s.lastLabel}>上次使用</Text>
-          <Pressable
-            accessibilityRole="button"
-            accessibilityLabel={`上次使用，${last.name}`}
-            onPress={() => open(last)}
-            style={({ pressed }) => [s.recent, pressed && s.pressed]}
-          >
-            <View style={{ flex: 1 }}>
-              <Text style={s.lastTitle}>{last.name}</Text>
-              <Text style={ui.small}>
-                {last.exerciseIds.length} 個動作 · 活動{" "}
-                {activityLabel(last.exerciseIds.length)}
-              </Text>
-            </View>
-            <Icon name="arrow" color={palette.blue} />
-          </Pressable>
-        </View>
+        <Pressable
+          accessibilityRole="button"
+          accessibilityLabel={`上次使用，${last.name}`}
+          onPress={() => open(last)}
+          style={({ pressed }) => [s.recent, pressed && s.pressed]}
+        >
+          <View pointerEvents="none" style={s.heroArt}><Mascot size={100} /></View>
+          <View style={s.heroCopy}>
+            <Text style={s.lastLabel}>上次使用</Text>
+            <Text style={s.lastTitle}>{last.name}</Text>
+            <Text style={s.lastMeta}>{last.exerciseIds.length} 個動作 · {activityLabel(last.exerciseIds.length)}</Text>
+          </View>
+          <View style={s.heroArrow}><Icon name="arrow" color={palette.blue} size={19} /></View>
+        </Pressable>
       )}
       <View style={s.sectionHeading}>
-        <Text style={ui.section}>組合</Text>
+        <Text style={ui.section}>伸展組合</Text>
+        <Text style={s.sectionMeta}>共 {combos.length} 組</Text>
       </View>
-      {combos.map((combo, index) => (
-        <Pressable
-          key={combo.id}
-          accessibilityRole="button"
-          accessibilityLabel={combo.name}
-          onPress={() => open(combo)}
-          style={({ pressed }) => [s.combination, pressed && s.pressed]}
-        >
-          <Text style={s.index}>{String(index + 1).padStart(2, "0")}</Text>
-          <View style={s.combinationCopy}>
+      <View style={s.combinations}>
+        {combos.map((combo) => (
+          <Pressable
+            key={combo.id}
+            accessibilityRole="button"
+            accessibilityLabel={combo.name}
+            onPress={() => open(combo)}
+            style={({ pressed }) => [s.combination, pressed && s.pressed]}
+          >
+            <Icon name={combinationIcons[combo.id] ?? "standing"} size={23} color={palette.blue} />
             <Text style={s.combinationName}>{combo.name}</Text>
-            <Text style={s.meta}>
-              {posture(combo)} · {combo.exerciseIds.length} 個動作 ·{" "}
-              {activityLabel(combo.exerciseIds.length)}
-            </Text>
-          </View>
-          <Icon name="arrow" size={18} color={palette.muted} />
-        </Pressable>
-      ))}
+            <Text style={s.meta}>{combo.exerciseIds.length} 個動作 · {activityLabel(combo.exerciseIds.length)}</Text>
+          </Pressable>
+        ))}
+      </View>
       <View style={s.sectionHeading}>
-        <Text style={ui.section}>部位</Text>
+        <Text style={ui.section}>依部位</Text>
       </View>
       <View style={s.parts}>
         {bodyParts.map((part) => (
@@ -125,81 +119,27 @@ export default function HomeScreen() {
   );
 }
 const s = StyleSheet.create({
-  welcome: {
-    flexDirection: "row",
-    alignItems: "center",
-    minHeight: 100,
-    gap: 8,
-  },
-  lastSection: { marginTop: 20 },
-  lastLabel: {
-    color: palette.muted,
-    fontSize: 12,
-    fontFamily: font.bold,
-    marginBottom: 8,
-  },
-  recent: {
-    minHeight: 84,
-    borderRadius: 14,
-    padding: 16,
-    backgroundColor: palette.pale,
-    flexDirection: "row",
-    alignItems: "center",
-    gap: 12,
-  },
-  lastTitle: {
-    fontFamily: font.bold,
-    fontSize: 19,
-    color: palette.ink,
-    marginBottom: 4,
-  },
-  sectionHeading: {
-    flexDirection: "row",
-    alignItems: "center",
-    justifyContent: "space-between",
-    marginTop: 24,
-    marginBottom: 8,
-    gap: 12,
-  },
-  combination: {
-    flexDirection: "row",
-    alignItems: "center",
-    minHeight: 62,
-    gap: 12,
-    paddingVertical: 8,
-  },
-  index: {
-    color: palette.blue,
-    fontFamily: font.medium,
-    fontSize: 12,
-    width: 26,
-    fontVariant: ["tabular-nums"],
-  },
-  combinationCopy: { flex: 1 },
-  combinationName: {
-    color: palette.ink,
-    fontFamily: font.medium,
-    fontSize: 16,
-    lineHeight: 26,
-  },
-  meta: {
-    fontFamily: font.regular,
-    color: palette.muted,
-    fontSize: 11,
-    lineHeight: 18,
-  },
+  brandRow: { flexDirection: "row", alignItems: "center", justifyContent: "space-between", marginBottom: 28 },
+  brand: { fontFamily: font.bold, color: palette.ink, fontSize: 14, letterSpacing: 1.8 },
+  brandMark: { width: 36, height: 36, borderRadius: 12, backgroundColor: palette.pale, alignItems: "center", justifyContent: "center" },
+  eyebrow: { fontFamily: font.medium, color: palette.muted, fontSize: 10, letterSpacing: 1.6, marginBottom: 8 },
+  welcome: { flexDirection: "row", alignItems: "center", justifyContent: "space-between", gap: 8, marginBottom: 22 },
+  heading: { flexShrink: 1, fontFamily: font.bold, color: palette.ink, fontSize: 36, lineHeight: 52 },
+  recent: { minHeight: 174, borderRadius: 14, padding: 22, backgroundColor: palette.blue, overflow: "hidden", justifyContent: "center" },
+  heroArt: { position: "absolute", right: 16, top: 10 },
+  heroCopy: { alignSelf: "flex-start", maxWidth: "72%" },
+  lastLabel: { color: palette.onBlueMuted, fontSize: 11, fontFamily: font.medium, marginBottom: 12 },
+  lastTitle: { fontFamily: font.bold, fontSize: 26, lineHeight: 38, color: palette.onBlue, marginBottom: 5 },
+  lastMeta: { fontFamily: font.regular, fontSize: 11, lineHeight: 19, color: palette.onBlueMuted },
+  heroArrow: { position: "absolute", bottom: 18, right: 18, width: 34, height: 34, borderRadius: 10, backgroundColor: palette.card, alignItems: "center", justifyContent: "center" },
+  sectionHeading: { flexDirection: "row", alignItems: "center", justifyContent: "space-between", marginTop: 26, marginBottom: 12, gap: 12 },
+  sectionMeta: { color: palette.muted, fontFamily: font.regular, fontSize: 11 },
+  combinations: { flexDirection: "row", flexWrap: "wrap", gap: 12 },
+  combination: { flexGrow: 1, flexBasis: "45%", minWidth: 130, backgroundColor: palette.card, minHeight: 122, borderRadius: 14, padding: 16, alignItems: "flex-start" },
+  combinationName: { color: palette.ink, fontFamily: font.bold, fontSize: 15, lineHeight: 24, marginTop: 10, marginBottom: 5 },
+  meta: { fontFamily: font.regular, color: palette.muted, fontSize: 11, lineHeight: 18 },
   parts: { flexDirection: "row", flexWrap: "wrap", gap: 8 },
-  part: {
-    flexGrow: 1,
-    flexBasis: "21%",
-    minHeight: 42,
-    paddingHorizontal: 4,
-    paddingVertical: 10,
-    borderRadius: 9,
-    backgroundColor: palette.wash,
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  partName: { fontFamily: font.medium, fontSize: 13, color: palette.ink },
-  pressed: { opacity: 0.65 },
+  part: { minHeight: 44, paddingHorizontal: 15, paddingVertical: 11, borderRadius: 9, backgroundColor: palette.card, alignItems: "center", justifyContent: "center" },
+  partName: { fontFamily: font.medium, fontSize: 12, color: palette.ink },
+  pressed: { opacity: 0.7 },
 });

@@ -53,7 +53,7 @@ describe("movement drag ordering", () => {
       jest.advanceTimersByTime(300);
     });
     await act(async () =>
-      handle.onPanResponderMove!(event(220), { dy: 120, dx: 0 } as any),
+      handle.onPanResponderMove!(event(268), { dy: 168, dx: 0 } as any),
     );
     return handle;
   }
@@ -61,7 +61,7 @@ describe("movement drag ordering", () => {
     const handle = await holdAndMove();
     expect(dragging).toHaveBeenCalledWith(true);
     expect(changed).not.toHaveBeenCalled();
-    await act(async () => handle.onPanResponderRelease!(event(220), {} as any));
+    await act(async () => handle.onPanResponderRelease!(event(268), {} as any));
     const expected = [...items];
     expected.splice(2, 0, expected.splice(0, 1)[0]);
     expect(changed).toHaveBeenCalledWith(expected);
@@ -70,7 +70,7 @@ describe("movement drag ordering", () => {
   it("discards a cancelled drag", async () => {
     const handle = await holdAndMove();
     await act(async () =>
-      handle.onPanResponderTerminate!(event(220), {} as any),
+      handle.onPanResponderTerminate!(event(268), {} as any),
     );
     expect(changed).not.toHaveBeenCalled();
     expect(dragging).toHaveBeenLastCalledWith(false);
@@ -79,9 +79,9 @@ describe("movement drag ordering", () => {
     const handle = responders[0];
     await act(async () => {
       handle.onPanResponderGrant!(event(100), {} as any);
-      handle.onPanResponderMove!(event(220), { dy: 120, dx: 0 } as any);
+      handle.onPanResponderMove!(event(268), { dy: 168, dx: 0 } as any);
       jest.advanceTimersByTime(400);
-      handle.onPanResponderRelease!(event(220), {} as any);
+      handle.onPanResponderRelease!(event(268), {} as any);
     });
     expect(changed).not.toHaveBeenCalled();
     expect(dragging).not.toHaveBeenCalled();

@@ -54,8 +54,8 @@
       "max_duration_seconds": 9,
       "text": "站穩，雙手低低打開，肩膀輕輕往後。",
       "audio_path": "audio/stand_chest_open_cue_01.mp3",
-      "measured_duration_seconds": null,
-      "audio_status": "pending"
+      "measured_duration_seconds": 5.16,
+      "audio_status": "ready"
     },
     {
       "id": "stand_chest_open_cue_02",
@@ -63,8 +63,8 @@
       "max_duration_seconds": 4,
       "text": "慢慢收回，放鬆一下。",
       "audio_path": "audio/stand_chest_open_cue_02.mp3",
-      "measured_duration_seconds": null,
-      "audio_status": "pending"
+      "measured_duration_seconds": 3.48,
+      "audio_status": "ready"
     },
     {
       "id": "stand_chest_open_cue_03",
@@ -72,8 +72,8 @@
       "max_duration_seconds": 9,
       "text": "再輕輕打開，保持自然呼吸。",
       "audio_path": "audio/stand_chest_open_cue_03.mp3",
-      "measured_duration_seconds": null,
-      "audio_status": "pending"
+      "measured_duration_seconds": 4.296,
+      "audio_status": "ready"
     },
     {
       "id": "stand_chest_open_cue_04",
@@ -81,8 +81,8 @@
       "max_duration_seconds": 4,
       "text": "雙手收回，放鬆肩膀。",
       "audio_path": "audio/stand_chest_open_cue_04.mp3",
-      "measured_duration_seconds": null,
-      "audio_status": "pending"
+      "measured_duration_seconds": 3.504,
+      "audio_status": "ready"
     }
   ],
   "animation_brief": "靜態示意圖：雙腳與髖同寬，雙手垂放，腰背保持自然。採用 chest 人物模板與方向箭頭。對照步驟與換側方向，不使用動畫。",

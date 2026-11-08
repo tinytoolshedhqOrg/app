@@ -53,8 +53,8 @@
       "max_duration_seconds": 9,
       "text": "雙肘靠身旁，手腕輕輕往上，再往下。",
       "audio_path": "audio/stand_wrist_flex_cue_01.mp3",
-      "measured_duration_seconds": null,
-      "audio_status": "pending"
+      "measured_duration_seconds": 5.328,
+      "audio_status": "ready"
     },
     {
       "id": "stand_wrist_flex_cue_02",
@@ -62,8 +62,8 @@
       "max_duration_seconds": 4,
       "text": "小幅度就好。",
       "audio_path": "audio/stand_wrist_flex_cue_02.mp3",
-      "measured_duration_seconds": null,
-      "audio_status": "pending"
+      "measured_duration_seconds": 2.376,
+      "audio_status": "ready"
     },
     {
       "id": "stand_wrist_flex_cue_03",
@@ -71,8 +71,8 @@
       "max_duration_seconds": 9,
       "text": "繼續慢慢活動，別用力彎到底。",
       "audio_path": "audio/stand_wrist_flex_cue_03.mp3",
-      "measured_duration_seconds": null,
-      "audio_status": "pending"
+      "measured_duration_seconds": 4.296,
+      "audio_status": "ready"
     },
     {
       "id": "stand_wrist_flex_cue_04",
@@ -80,8 +80,8 @@
       "max_duration_seconds": 4,
       "text": "放鬆手腕，雙手放下。",
       "audio_path": "audio/stand_wrist_flex_cue_04.mp3",
-      "measured_duration_seconds": null,
-      "audio_status": "pending"
+      "measured_duration_seconds": 3.576,
+      "audio_status": "ready"
     }
   ],
   "animation_brief": "靜態示意圖：站穩，雙肘貼近身側，前臂朝前，手掌朝下。採用 wrist 人物模板與方向箭頭。對照步驟與換側方向，不使用動畫。",

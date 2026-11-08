@@ -65,7 +65,7 @@ const s = StyleSheet.create({
   },
   navTitle: { color: palette.ink, fontSize: 15, fontFamily: font.medium },
   art: {
-    backgroundColor: palette.wash,
+    backgroundColor: palette.pale,
     borderRadius: 16,
     alignItems: "center",
     justifyContent: "center",

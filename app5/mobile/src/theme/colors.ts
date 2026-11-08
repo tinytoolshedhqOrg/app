@@ -1,14 +1,16 @@
+import { palette } from './studio';
+
 export const colors = {
-  bg: '#FFFFFF',
-  cell: '#FFFFFF',
-  label: '#141D2F',
+  bg: palette.bg,
+  cell: palette.card,
+  label: palette.ink,
   l2: 'rgba(20,29,47,0.55)',
   l3: 'rgba(20,29,47,0.28)',
   sep: 'rgba(20,29,47,0.09)',
   fill: 'rgba(20,29,47,0.07)',
-  brand: '#3F81EA',
+  brand: palette.blue,
   onbrand: '#FFFFFF',
-  tint: '#EAF2FF',
+  tint: palette.pale,
   red: '#E5533D',
-  band: '#F5F8FE',
+  band: palette.wash,
 };

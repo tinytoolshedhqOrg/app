@@ -103,21 +103,21 @@ export default function PreviewScreen() {
           <Text style={[ui.heading, { marginTop: 22 }]}>
             {selection?.name ?? "請先選擇組合"}
           </Text>
-          <Text style={ui.subtitle}>{selection?.subtitle}</Text>
           <View style={s.summary}>
-            <Text style={s.time}>{time}</Text>
-            <View style={{ flex: 1 }}>
-              <Text style={s.summaryTitle}>{units.length} 個動作 × 30 秒</Text>
-              <Text style={s.meta}>另有每段 3 秒準備時間</Text>
+            <View style={s.stat}>
+              <Text style={s.time}>{time}</Text>
+              <Text style={s.meta}>活動時間</Text>
+            </View>
+            <View style={s.statDivider} />
+            <View style={s.stat}>
+              <Text style={s.time}>{String(units.length).padStart(2, "0")}</Text>
+              <Text style={s.meta}>動作 · 每個 30 秒</Text>
             </View>
           </View>
           <View style={s.listHeading}>
             <Text style={ui.section}>動作順序</Text>
-            <Text style={s.meta}>固定 30 秒 / 動作</Text>
+            <Text style={s.meta}>{units.length} 個動作</Text>
           </View>
-          <Text style={[s.meta, { marginBottom: 8 }]}>
-            長按右側把手，上下拖曳調整
-          </Text>
           <ReorderableExerciseList
             items={units}
             onChange={setUnits}
@@ -132,6 +132,7 @@ export default function PreviewScreen() {
       <View
         style={[
           ui.content,
+          s.footer,
           { paddingTop: 12, paddingBottom: insets.bottom + 16 },
         ]}
       >
@@ -164,25 +165,22 @@ const s = StyleSheet.create({
   summary: {
     flexDirection: "row",
     alignItems: "center",
-    gap: 22,
-    padding: 16,
-    minHeight: 72,
-    borderRadius: 12,
-    backgroundColor: palette.wash,
+    gap: 20,
+    padding: 22,
+    minHeight: 112,
+    borderRadius: 14,
+    backgroundColor: palette.pale,
     marginTop: 18,
   },
   time: {
-    color: palette.blue,
+    color: palette.ink,
     fontFamily: font.bold,
-    fontSize: 29,
+    fontSize: 30,
     fontVariant: ["tabular-nums"],
   },
-  summaryTitle: {
-    fontFamily: font.medium,
-    fontSize: 13,
-    lineHeight: 22,
-    color: palette.ink,
-  },
+  stat: { flex: 1, gap: 5 },
+  statDivider: { width: 1, height: 48, backgroundColor: "#C4D3F0" },
+  footer: { backgroundColor: palette.bg, borderTopWidth: StyleSheet.hairlineWidth, borderTopColor: palette.border },
   meta: {
     fontFamily: font.regular,
     fontSize: 11,

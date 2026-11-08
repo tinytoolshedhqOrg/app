@@ -1,14 +1,16 @@
 import { StyleSheet } from "react-native";
 
 export const palette = {
-  bg: "#FFFFFF",
-  ink: "#141D2F",
-  muted: "#738096",
-  blue: "#3F81EA",
+  bg: "#F5F7FC",
+  ink: "#172D4F",
+  muted: "#63768D",
+  blue: "#225CE0",
   card: "#FFFFFF",
-  border: "#E8EDF4",
-  wash: "#F5F8FE",
-  pale: "#EAF2FF",
+  border: "#DBE3F2",
+  wash: "#EDF2FC",
+  pale: "#E1EAFF",
+  onBlue: "#FFFFFF",
+  onBlueMuted: "#DCE6FF",
 };
 export const font = {
   regular: "NotoSansTC_400Regular",
@@ -20,8 +22,8 @@ export const ui = StyleSheet.create({
   content: { paddingHorizontal: 24, paddingBottom: 24 },
   heading: {
     color: palette.ink,
-    fontSize: 32,
-    lineHeight: 46,
+    fontSize: 34,
+    lineHeight: 48,
     fontFamily: font.bold,
   },
   subtitle: {
@@ -33,8 +35,8 @@ export const ui = StyleSheet.create({
   },
   section: {
     color: palette.ink,
-    fontSize: 20,
-    lineHeight: 30,
+    fontSize: 17,
+    lineHeight: 26,
     fontFamily: font.bold,
   },
   row: {
@@ -52,7 +54,7 @@ export const ui = StyleSheet.create({
   number: { fontVariant: ["tabular-nums"], fontFamily: font.bold },
   button: {
     backgroundColor: palette.blue,
-    borderRadius: 14,
+    borderRadius: 12,
     minHeight: 54,
     alignItems: "center",
     justifyContent: "center",

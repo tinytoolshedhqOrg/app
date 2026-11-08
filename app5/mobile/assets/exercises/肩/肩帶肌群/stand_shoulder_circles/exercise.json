@@ -53,8 +53,8 @@
       "max_duration_seconds": 9,
       "text": "雙腳站穩，肩膀慢慢向前繞小圈。",
       "audio_path": "audio/stand_shoulder_circles_cue_01.mp3",
-      "measured_duration_seconds": null,
-      "audio_status": "pending"
+      "measured_duration_seconds": 4.896,
+      "audio_status": "ready"
     },
     {
       "id": "stand_shoulder_circles_cue_02",
@@ -62,8 +62,8 @@
       "max_duration_seconds": 4,
       "text": "輕輕繞，別憋氣。",
       "audio_path": "audio/stand_shoulder_circles_cue_02.mp3",
-      "measured_duration_seconds": null,
-      "audio_status": "pending"
+      "measured_duration_seconds": 2.976,
+      "audio_status": "ready"
     },
     {
       "id": "stand_shoulder_circles_cue_03",
@@ -71,8 +71,8 @@
       "max_duration_seconds": 9,
       "text": "換方向，肩膀慢慢向後繞圈。",
       "audio_path": "audio/stand_shoulder_circles_cue_03.mp3",
-      "measured_duration_seconds": null,
-      "audio_status": "pending"
+      "measured_duration_seconds": 4.344,
+      "audio_status": "ready"
     },
     {
       "id": "stand_shoulder_circles_cue_04",
@@ -80,8 +80,8 @@
       "max_duration_seconds": 4,
       "text": "慢慢停下，放鬆肩膀。",
       "audio_path": "audio/stand_shoulder_circles_cue_04.mp3",
-      "measured_duration_seconds": null,
-      "audio_status": "pending"
+      "measured_duration_seconds": 3.456,
+      "audio_status": "ready"
     }
   ],
   "animation_brief": "靜態示意圖：雙腳與髖同寬站穩，膝蓋不鎖死，身旁留空。採用 shoulder 人物模板與方向箭頭。對照步驟與換側方向，不使用動畫。",

@@ -53,8 +53,8 @@
       "max_duration_seconds": 9,
       "text": "雙肘靠身旁，雙手輕握，再張開手指。",
       "audio_path": "audio/stand_finger_open_cue_01.mp3",
-      "measured_duration_seconds": null,
-      "audio_status": "pending"
+      "measured_duration_seconds": 5.352,
+      "audio_status": "ready"
     },
     {
       "id": "stand_finger_open_cue_02",
@@ -62,8 +62,8 @@
       "max_duration_seconds": 4,
       "text": "不用握緊，慢慢來。",
       "audio_path": "audio/stand_finger_open_cue_02.mp3",
-      "measured_duration_seconds": null,
-      "audio_status": "pending"
+      "measured_duration_seconds": 3.12,
+      "audio_status": "ready"
     },
     {
       "id": "stand_finger_open_cue_03",
@@ -71,8 +71,8 @@
       "max_duration_seconds": 9,
       "text": "繼續輕輕開合，肩膀保持放鬆。",
       "audio_path": "audio/stand_finger_open_cue_03.mp3",
-      "measured_duration_seconds": null,
-      "audio_status": "pending"
+      "measured_duration_seconds": 4.512,
+      "audio_status": "ready"
     },
     {
       "id": "stand_finger_open_cue_04",
@@ -80,8 +80,8 @@
       "max_duration_seconds": 4,
       "text": "放鬆雙手，慢慢垂下。",
       "audio_path": "audio/stand_finger_open_cue_04.mp3",
-      "measured_duration_seconds": null,
-      "audio_status": "pending"
+      "measured_duration_seconds": 3.528,
+      "audio_status": "ready"
     }
   ],
   "animation_brief": "靜態示意圖：站穩，雙肘彎曲靠近身側，手腕保持自然。採用 hands 人物模板與方向箭頭。對照步驟與換側方向，不使用動畫。",

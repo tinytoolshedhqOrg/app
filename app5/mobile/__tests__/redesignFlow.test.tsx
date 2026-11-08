@@ -5,6 +5,7 @@ import AsyncStorage from "@react-native-async-storage/async-storage";
 import HomeScreen from "../src/screens/HomeScreen";
 import PreviewScreen from "../src/screens/PreviewScreen";
 import PlayerScreen from "../src/screens/PlayerScreen";
+import { setAudioModeAsync } from "expo-audio";
 import ActionButton from "../src/components/ActionButton";
 import { getCombinations, resolveSelection } from "../src/content/catalog";
 import {
@@ -169,5 +170,26 @@ describe("white and blue app flow", () => {
       again!.props.onPress();
     });
     expect(hasText("0:30")).toBe(true);
+  });
+  it("waits for audio configuration before firing the first standing cue", async () => {
+    const selected = getCombinations()[0];
+    setSelection(selected);
+    setCurrentRoutine({ units: resolveSelection(selected), repeatsSomeMoves: false, empty: false });
+    let ready!: () => void;
+    jest.mocked(setAudioModeAsync).mockImplementationOnce(() => new Promise<void>((resolve) => { ready = resolve; }));
+    await act(async () => { rendered = create(<PlayerScreen />); });
+    expect(mockVoice.play).not.toHaveBeenCalled();
+    await act(async () => jest.advanceTimersByTime(1000));
+    expect(mockVoice.play).not.toHaveBeenCalled();
+    await act(async () => { ready(); });
+    expect(mockVoice.replace).toHaveBeenCalled();
+    expect(mockVoice.play).toHaveBeenCalledTimes(1);
+    await act(async () => jest.advanceTimersByTime(500));
+    mockVoice.pause.mockImplementationOnce(() => { throw new Error('Native shared object already released'); });
+    mockMusic.pause.mockImplementationOnce(() => { throw new Error('Native shared object already released'); });
+    await act(async () => rendered!.unmount());
+    rendered = undefined;
+    mockVoice.pause.mockReset();
+    mockMusic.pause.mockReset();
   });
 });

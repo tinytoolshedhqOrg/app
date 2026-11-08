@@ -18,8 +18,9 @@ import {
 import type { Exercise } from "../content";
 import { font, palette } from "../theme/studio";
 import Icon from "./Icon";
+import ExerciseDiagram from "./ExerciseDiagram";
 
-const ROW_HEIGHT = 60;
+const ROW_HEIGHT = 84;
 const HOLD_MS = 300;
 export type SortScrollMetrics = {
   offset: number;
@@ -276,11 +277,15 @@ export default function ReorderableExerciseList({
               accessibilityLabel={`動作 ${index + 1}，${exercise.name}，查看說明`}
               style={s.details}
             >
-              <Text style={s.index}>{String(index + 1).padStart(2, "0")}</Text>
-              <Text numberOfLines={2} style={s.title}>
-                {exercise.name}
-              </Text>
-              <Text style={s.seconds}>0:30</Text>
+              <View style={s.thumbnail} pointerEvents="none" accessibilityElementsHidden importantForAccessibility="no-hide-descendants">
+                <ExerciseDiagram exercise={exercise} size={50} background="transparent" />
+              </View>
+              <View style={s.copy}>
+                <Text numberOfLines={2} style={s.title}>
+                  {String(index + 1).padStart(2, "0")} · {exercise.name}
+                </Text>
+                <Text style={s.seconds}>30 秒</Text>
+              </View>
             </Pressable>
             <DragHandle
               name={exercise.name}
@@ -300,11 +305,12 @@ export default function ReorderableExerciseList({
 }
 const s = StyleSheet.create({
   row: {
-    height: ROW_HEIGHT,
+    height: ROW_HEIGHT - 8,
+    marginBottom: 8,
     flexDirection: "row",
     alignItems: "center",
-    backgroundColor: palette.bg,
-    borderRadius: 10,
+    backgroundColor: palette.card,
+    borderRadius: 12,
   },
   dragging: {
     backgroundColor: palette.pale,
@@ -316,29 +322,24 @@ const s = StyleSheet.create({
   },
   details: {
     flex: 1,
-    height: ROW_HEIGHT,
+    height: ROW_HEIGHT - 8,
     flexDirection: "row",
     alignItems: "center",
     gap: 12,
+    paddingLeft: 10,
   },
-  index: {
-    width: 24,
-    color: palette.blue,
-    fontFamily: font.medium,
-    fontSize: 12,
-    fontVariant: ["tabular-nums"],
-  },
+  thumbnail: { width: 50, height: 50, borderRadius: 10, backgroundColor: palette.pale, overflow: "hidden", alignItems: "center", justifyContent: "center" },
+  copy: { flex: 1, gap: 4 },
   title: {
-    flex: 1,
-    fontFamily: font.medium,
+    fontFamily: font.bold,
     color: palette.ink,
-    fontSize: 14,
+    fontSize: 13,
     lineHeight: 21,
   },
   seconds: {
     color: palette.muted,
     fontFamily: font.regular,
-    fontSize: 12,
+    fontSize: 11,
     fontVariant: ["tabular-nums"],
   },
   handle: {

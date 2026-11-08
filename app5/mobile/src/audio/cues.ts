@@ -6,7 +6,7 @@ import type { AudioService } from "./silent";
 export function createCueAudioService(
   player: AudioPlayer,
   onError: () => void,
-): AudioService {
+): AudioService & { dispose(): void } {
   let muted = false,
     active = false,
     deadline = 0,
@@ -32,6 +32,13 @@ export function createCueAudioService(
     timer = setTimeout(stop, ms);
   }
   return {
+    // useAudioPlayer owns native disposal. Its cleanup can run before the screen's
+    // cleanup, so only cancel JS work here; calling pause on a released player throws.
+    dispose() {
+      clear();
+      active = false;
+      remaining = 0;
+    },
     async load() {},
     async playAt(id) {
       stop();

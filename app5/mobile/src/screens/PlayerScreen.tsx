@@ -31,7 +31,7 @@ export default function PlayerScreen() {
   const nav = useNavigation<NativeStackNavigationProp<RootStackParamList>>(),
     insets = useSafeAreaInsets();
   const { height } = useWindowDimensions();
-  const panelHeight = Math.max(160, Math.min(286, height - 620));
+  const panelHeight = Math.max(180, Math.min(300, height - 590));
   const routine = getCurrentRoutine(),
     selection = getSelection();
   const [audioError, setAudioError] = useState(false),
@@ -71,13 +71,18 @@ export default function PlayerScreen() {
         }
       })
       .catch(() => {
-        if (active) setAudioError(true);
+        if (active) {
+          setAudioError(true);
+          // Keep text guidance available if audio configuration fails.
+          setMusicReady(true);
+        }
       });
     return () => {
       active = false;
     };
   }, [music]);
   useEffect(() => {
+    if (!musicReady) return;
     player.start();
     player.tick();
     const interval = setInterval(() => setSnap(player.tick()), 100);
@@ -91,10 +96,9 @@ export default function PlayerScreen() {
     return () => {
       clearInterval(interval);
       listener.remove();
-      music.pause();
-      void audio.stopAll();
+      audio.dispose();
     };
-  }, [player, audio, music]);
+  }, [player, audio, music, musicReady]);
   useEffect(() => {
     if (!musicReady) return;
     void Promise.resolve()
@@ -313,7 +317,7 @@ const s = StyleSheet.create({
     minHeight: 44,
     gap: 12,
   },
-  navClose: { minHeight: 44, minWidth: 32, justifyContent: "center" },
+  navClose: { minHeight: 44, minWidth: 44, borderRadius: 12, backgroundColor: palette.card, alignItems: "center", justifyContent: "center" },
   navTitle: {
     flex: 1,
     fontSize: 14,
@@ -326,7 +330,7 @@ const s = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
-    marginBottom: 8,
+    marginBottom: 12,
   },
   step: {
     fontFamily: font.bold,
@@ -336,8 +340,8 @@ const s = StyleSheet.create({
   },
   meta: { fontFamily: font.regular, color: palette.muted, fontSize: 11 },
   demonstration: {
-    borderRadius: 16,
-    backgroundColor: palette.wash,
+    borderRadius: 20,
+    backgroundColor: palette.pale,
     alignItems: "center",
     justifyContent: "center",
   },
@@ -360,23 +364,23 @@ const s = StyleSheet.create({
     fontFamily: font.bold,
     fontSize: 57,
     lineHeight: 83,
-    color: palette.ink,
+    color: palette.blue,
     fontVariant: ["tabular-nums"],
   },
   progress: { flexDirection: "row", gap: 5, marginBottom: 20 },
   segment: {
     flex: 1,
-    height: 5,
+    height: 6,
     backgroundColor: palette.border,
     borderRadius: 2,
     overflow: "hidden",
   },
-  segmentFill: { backgroundColor: palette.blue, height: 5, borderRadius: 2 },
+  segmentFill: { backgroundColor: palette.blue, height: 6, borderRadius: 2 },
   prompt: {
-    backgroundColor: palette.pale,
-    padding: 12,
+    backgroundColor: palette.card,
+    padding: 16,
     minHeight: 63,
-    borderRadius: 10,
+    borderRadius: 14,
     justifyContent: "center",
   },
   promptText: {
@@ -388,10 +392,10 @@ const s = StyleSheet.create({
   footer: { backgroundColor: palette.bg, paddingHorizontal: 24, paddingTop: 8 },
   controls: { flexDirection: "row", justifyContent: "center", gap: 18 },
   control: {
-    height: 50,
+    height: 56,
     width: 64,
     borderRadius: 12,
-    backgroundColor: palette.wash,
+    backgroundColor: palette.card,
     alignItems: "center",
     justifyContent: "center",
   },

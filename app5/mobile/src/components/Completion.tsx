@@ -30,19 +30,21 @@ export default function Completion({
         },
       ]}
     >
+      <Text style={s.eyebrow}>A LITTLE BETTER, EVERY DAY</Text>
       <Text style={s.title}>這一小段，完成了。</Text>
-      <Text style={ui.subtitle}>把輕鬆，帶回接下來的日常。</Text>
       <View style={s.art}>
         <Mascot size={230} mood="cheer" />
       </View>
-      <Text style={ui.section}>{name}</Text>
-      <Text style={[ui.small, { marginTop: 4 }]}>
-        本組 {unitCount} 個動作 · 活動 {activityLabel(unitCount)}
-      </Text>
+      <View style={s.summary}>
+        <Text style={ui.section}>{name}</Text>
+        <Text style={[ui.small, { marginTop: 6 }]}>
+          {unitCount} 個動作 · 活動 {activityLabel(unitCount)}
+        </Text>
+      </View>
       <ActionButton
         label="回到首頁"
         onPress={onHome}
-        style={{ marginTop: 40 }}
+        style={{ marginTop: 24 }}
       />
       <Pressable onPress={onAgain} accessibilityRole="button" style={s.again}>
         <Text style={ui.link}>再伸展一次</Text>
@@ -51,6 +53,8 @@ export default function Completion({
   );
 }
 const s = StyleSheet.create({
+  eyebrow: { fontFamily: font.medium, fontSize: 10, letterSpacing: 1.5, color: palette.blue, marginBottom: 10 },
+  summary: { padding: 20, borderRadius: 14, backgroundColor: palette.card },
   title: {
     fontFamily: font.bold,
     fontSize: 29,
@@ -58,13 +62,13 @@ const s = StyleSheet.create({
     color: palette.ink,
   },
   art: {
-    minHeight: 280,
+    minHeight: 260,
     backgroundColor: palette.pale,
     borderRadius: 20,
     alignItems: "center",
     justifyContent: "center",
-    marginTop: 30,
-    marginBottom: 28,
+    marginTop: 24,
+    marginBottom: 16,
   },
   again: {
     minHeight: 50,

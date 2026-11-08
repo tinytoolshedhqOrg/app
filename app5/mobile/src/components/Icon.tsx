@@ -10,6 +10,12 @@ export type IconName =
   | "next"
   | "previous"
   | "music"
+  | "standing"
+  | "office"
+  | "sun"
+  | "moon"
+  | "hands"
+  | "floor"
   | "grip";
 export default function Icon({
   name,
@@ -23,6 +29,12 @@ export default function Icon({
   if (name === "back")
     return <SvgXml xml={figmaAssets.back} accessible={false} />;
   const paths: Record<Exclude<IconName, "music">, string> = {
+    standing: "M12 3v18M8 7l4-4 4 4M8 12l4-4 4 4",
+    office: "M7 4v10h11M7 9h10v5M8 14v6M17 14v6",
+    sun: "M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.5 1.5M17.5 17.5 19 19M5 19l1.5-1.5M17.5 6.5 19 5M16 12a4 4 0 1 1-8 0 4 4 0 0 1 8 0",
+    moon: "M20 15A9 9 0 0 1 9 4a9 9 0 1 0 11 11Z",
+    hands: "M8 19 4 12a2 2 0 0 1 3-2l2 3V5a1.5 1.5 0 0 1 3 0v6-8a1.5 1.5 0 0 1 3 0v8-6a1.5 1.5 0 0 1 3 0v7-3a1.5 1.5 0 0 1 3 0v7l-4 5h-6Z",
+    floor: "M3 20h18M5 15h13M8 15l3-6 5 3M6 9h.01",
     grip: "M8 6h.01M16 6h.01M8 12h.01M16 12h.01M8 18h.01M16 18h.01",
     arrow: "M5 12h14m-6-6 6 6-6 6",
     back: "m14 6-6 6 6 6",

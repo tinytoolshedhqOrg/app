@@ -1,2 +1,5 @@
 # TTS audition audio (never commit). Default --out is /workspace/audition-output/stretch.
 audition-output/
+
+# Local Azure Speech credentials
+/stretch-app/.env
