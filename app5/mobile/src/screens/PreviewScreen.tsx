@@ -27,6 +27,7 @@ import Icon from "../components/Icon";
 import ReorderableExerciseList, {
   type SortScrollMetrics,
 } from "../components/ReorderableExerciseList";
+import { removeExerciseAt } from "../components/exerciseSwipe";
 
 export default function PreviewScreen() {
   const nav = useNavigation<NativeStackNavigationProp<RootStackParamList>>();
@@ -36,6 +37,7 @@ export default function PreviewScreen() {
     selection ? resolveSelection(selection) : [],
   );
   const [dragging, setDragging] = useState(false);
+  const [swiping, setSwiping] = useState(false);
   const scrollRef = useRef<ScrollView>(null);
   const viewportRef = useRef<View>(null);
   const scrollMetrics = useRef<SortScrollMetrics>({
@@ -46,6 +48,9 @@ export default function PreviewScreen() {
   });
   const [detail, setDetail] = useState<Exercise | null>(null),
     [starting, setStarting] = useState(false);
+  function removeAt(index: number) {
+    setUnits((current) => removeExerciseAt(current, index));
+  }
   async function start() {
     if (!selection || !units.length || starting) return;
     setStarting(true);
@@ -89,7 +94,8 @@ export default function PreviewScreen() {
       >
         <ScrollView
           ref={scrollRef}
-          scrollEnabled={!dragging}
+          scrollEnabled={!dragging && !swiping}
+          directionalLockEnabled
           removeClippedSubviews={false}
           scrollEventThrottle={16}
           onScroll={(event) => {
@@ -123,6 +129,8 @@ export default function PreviewScreen() {
             onChange={setUnits}
             onOpen={setDetail}
             onDragStateChange={setDragging}
+            onDelete={removeAt}
+            onSwipeActive={setSwiping}
             scrollRef={scrollRef}
             viewportRef={viewportRef}
             scrollMetrics={scrollMetrics}

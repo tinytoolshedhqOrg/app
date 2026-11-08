@@ -4,6 +4,13 @@ import { act, create, type ReactTestRenderer } from "react-test-renderer";
 import ReorderableExerciseList from "../src/components/ReorderableExerciseList";
 import { getCombinations, resolveSelection } from "../src/content/catalog";
 
+function dragHandles(responders: PanResponderCallbacks[]) {
+  return responders.filter(
+    (responder) =>
+      responder.onStartShouldSetPanResponder?.({} as never, {} as never) === true,
+  );
+}
+
 describe("movement drag ordering", () => {
   let rendered: ReactTestRenderer;
   let responders: PanResponderCallbacks[];
@@ -25,6 +32,7 @@ describe("movement drag ordering", () => {
         <ReorderableExerciseList
           items={items}
           onChange={changed}
+          onDelete={jest.fn()}
           onOpen={jest.fn()}
           onDragStateChange={dragging}
           scrollRef={{ current: null }}
@@ -47,7 +55,7 @@ describe("movement drag ordering", () => {
     jest.useRealTimers();
   });
   async function holdAndMove() {
-    const handle = responders[0];
+    const handle = dragHandles(responders)[0];
     await act(async () => {
       handle.onPanResponderGrant!(event(100), {} as any);
       jest.advanceTimersByTime(300);
@@ -76,7 +84,7 @@ describe("movement drag ordering", () => {
     expect(dragging).toHaveBeenLastCalledWith(false);
   });
   it("does not reorder a swipe before the long press", async () => {
-    const handle = responders[0];
+    const handle = dragHandles(responders)[0];
     await act(async () => {
       handle.onPanResponderGrant!(event(100), {} as any);
       handle.onPanResponderMove!(event(268), { dy: 168, dx: 0 } as any);
