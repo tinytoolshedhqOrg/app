@@ -71,7 +71,7 @@
     {
       "id": "lie_knee_roll_cue_03",
       "at_seconds": 15,
-      "max_duration_seconds": 9,
+      "max_duration_seconds": 7,
       "text": "現在往右移一點，幅度小小的就好。",
       "audio_path": "audio/lie_knee_roll_cue_03.mp3",
       "measured_duration_seconds": null,
@@ -79,7 +79,7 @@
     },
     {
       "id": "lie_knee_roll_cue_04",
-      "at_seconds": 25,
+      "at_seconds": 22,
       "max_duration_seconds": 4,
       "text": "回到中間，雙腳踩穩。",
       "audio_path": "audio/lie_knee_roll_cue_04.mp3",

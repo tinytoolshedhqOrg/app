@@ -71,7 +71,7 @@
     {
       "id": "lie_arm_slide_cue_03",
       "at_seconds": 15,
-      "max_duration_seconds": 9,
+      "max_duration_seconds": 7,
       "text": "繼續輕輕滑開再收回，不用勉強。",
       "audio_path": "audio/lie_arm_slide_cue_03.mp3",
       "measured_duration_seconds": null,
@@ -79,7 +79,7 @@
     },
     {
       "id": "lie_arm_slide_cue_04",
-      "at_seconds": 25,
+      "at_seconds": 22,
       "max_duration_seconds": 4,
       "text": "雙手回到身旁，放鬆。",
       "audio_path": "audio/lie_arm_slide_cue_04.mp3",

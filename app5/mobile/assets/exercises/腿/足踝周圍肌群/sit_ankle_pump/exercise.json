@@ -71,7 +71,7 @@
     {
       "id": "sit_ankle_pump_cue_03",
       "at_seconds": 15,
-      "max_duration_seconds": 9,
+      "max_duration_seconds": 7,
       "text": "右腳跟留地，腳尖慢慢勾起再放下。",
       "audio_path": "audio/sit_ankle_pump_cue_03.mp3",
       "measured_duration_seconds": null,
@@ -79,7 +79,7 @@
     },
     {
       "id": "sit_ankle_pump_cue_04",
-      "at_seconds": 25,
+      "at_seconds": 22,
       "max_duration_seconds": 4,
       "text": "右腳收回，雙腳踩穩。",
       "audio_path": "audio/sit_ankle_pump_cue_04.mp3",

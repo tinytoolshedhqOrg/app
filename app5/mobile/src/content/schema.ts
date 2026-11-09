@@ -116,6 +116,8 @@ const sourceSchema = z.object({
 
 export const UNIT_SECONDS = 30;
 export const GAP_SECONDS = 3;
+/** Description cues must finish before the 3-2-1 ending countdown at 27s. */
+export const CUE_DEADLINE_SECONDS = 27;
 export const EXPECTED_EXERCISE_COUNT = 30;
 export const EXPECTED_PER_POSITION = 10;
 export const WHOLE_BODY_ID = 'whole_body';
@@ -191,6 +193,13 @@ function assertVoiceCuesInBounds(
       });
     }
     const end = cue.at_seconds + cue.max_duration_seconds;
+    if (end > CUE_DEADLINE_SECONDS) {
+      ctx.addIssue({
+        code: z.ZodIssueCode.custom,
+        message: `voice cue must finish by ${CUE_DEADLINE_SECONDS}s, before the ending countdown`,
+        path: [...path, i, 'max_duration_seconds'],
+      });
+    }
     if (end > UNIT_SECONDS) {
       ctx.addIssue({
         code: z.ZodIssueCode.custom,

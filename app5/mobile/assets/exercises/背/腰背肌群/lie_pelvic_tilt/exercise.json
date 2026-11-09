@@ -71,7 +71,7 @@
     {
       "id": "lie_pelvic_tilt_cue_03",
       "at_seconds": 15,
-      "max_duration_seconds": 9,
+      "max_duration_seconds": 7,
       "text": "繼續小小後傾，再慢慢放鬆。",
       "audio_path": "audio/lie_pelvic_tilt_cue_03.mp3",
       "measured_duration_seconds": null,
@@ -79,7 +79,7 @@
     },
     {
       "id": "lie_pelvic_tilt_cue_04",
-      "at_seconds": 25,
+      "at_seconds": 22,
       "max_duration_seconds": 4,
       "text": "回到自然位置，休息一下。",
       "audio_path": "audio/lie_pelvic_tilt_cue_04.mp3",

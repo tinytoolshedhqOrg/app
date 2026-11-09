@@ -282,14 +282,14 @@
         {
           "id": "sit_shoulder_circles_cue_03",
           "at_seconds": 15,
-          "max_duration_seconds": 9,
+          "max_duration_seconds": 7,
           "text": "現在換方向，肩膀慢慢向後繞圈。",
           "audio_path": null,
           "measured_duration_seconds": null
         },
         {
           "id": "sit_shoulder_circles_cue_04",
-          "at_seconds": 25,
+          "at_seconds": 22,
           "max_duration_seconds": 4,
           "text": "慢慢停下，放鬆肩膀。",
           "audio_path": null,
@@ -381,14 +381,14 @@
         {
           "id": "sit_chest_open_cue_03",
           "at_seconds": 15,
-          "max_duration_seconds": 9,
+          "max_duration_seconds": 7,
           "text": "再輕輕打開，胸前微微伸展就好。",
           "audio_path": null,
           "measured_duration_seconds": null
         },
         {
           "id": "sit_chest_open_cue_04",
-          "at_seconds": 25,
+          "at_seconds": 22,
           "max_duration_seconds": 4,
           "text": "雙手放回來，做得很好。",
           "audio_path": null,
@@ -479,14 +479,14 @@
         {
           "id": "sit_upper_back_turn_cue_03",
           "at_seconds": 15,
-          "max_duration_seconds": 9,
+          "max_duration_seconds": 7,
           "text": "現在向右轉，轉到舒服的位置就好。",
           "audio_path": null,
           "measured_duration_seconds": null
         },
         {
           "id": "sit_upper_back_turn_cue_04",
-          "at_seconds": 25,
+          "at_seconds": 22,
           "max_duration_seconds": 4,
           "text": "慢慢回正，放鬆雙手。",
           "audio_path": null,
@@ -578,14 +578,14 @@
         {
           "id": "sit_finger_open_cue_03",
           "at_seconds": 15,
-          "max_duration_seconds": 9,
+          "max_duration_seconds": 7,
           "text": "繼續照自己的速度，輕輕張開再放鬆。",
           "audio_path": null,
           "measured_duration_seconds": null
         },
         {
           "id": "sit_finger_open_cue_04",
-          "at_seconds": 25,
+          "at_seconds": 22,
           "max_duration_seconds": 4,
           "text": "停下來，放鬆雙手。",
           "audio_path": null,
@@ -676,14 +676,14 @@
         {
           "id": "sit_wrist_flex_cue_03",
           "at_seconds": 15,
-          "max_duration_seconds": 9,
+          "max_duration_seconds": 7,
           "text": "繼續慢慢上下活動，手臂保持放鬆。",
           "audio_path": null,
           "measured_duration_seconds": null
         },
         {
           "id": "sit_wrist_flex_cue_04",
-          "at_seconds": 25,
+          "at_seconds": 22,
           "max_duration_seconds": 4,
           "text": "回到自然位置，休息一下。",
           "audio_path": null,
@@ -774,14 +774,14 @@
         {
           "id": "sit_neck_turn_cue_03",
           "at_seconds": 15,
-          "max_duration_seconds": 9,
+          "max_duration_seconds": 7,
           "text": "現在慢慢向右轉，不用轉到底。",
           "audio_path": null,
           "measured_duration_seconds": null
         },
         {
           "id": "sit_neck_turn_cue_04",
-          "at_seconds": 25,
+          "at_seconds": 22,
           "max_duration_seconds": 4,
           "text": "回到前方，保持放鬆。",
           "audio_path": null,
@@ -873,14 +873,14 @@
         {
           "id": "sit_side_reach_cue_03",
           "at_seconds": 15,
-          "max_duration_seconds": 9,
+          "max_duration_seconds": 7,
           "text": "換右手往下滑，身體輕輕向右。",
           "audio_path": null,
           "measured_duration_seconds": null
         },
         {
           "id": "sit_side_reach_cue_04",
-          "at_seconds": 25,
+          "at_seconds": 22,
           "max_duration_seconds": 4,
           "text": "回到中間，坐穩放鬆。",
           "audio_path": null,
@@ -971,14 +971,14 @@
         {
           "id": "sit_elbow_bend_cue_03",
           "at_seconds": 15,
-          "max_duration_seconds": 9,
+          "max_duration_seconds": 7,
           "text": "繼續輕輕彎曲，再慢慢伸回。",
           "audio_path": null,
           "measured_duration_seconds": null
         },
         {
           "id": "sit_elbow_bend_cue_04",
-          "at_seconds": 25,
+          "at_seconds": 22,
           "max_duration_seconds": 4,
           "text": "雙手放下，放鬆手臂。",
           "audio_path": null,
@@ -1070,14 +1070,14 @@
         {
           "id": "sit_ankle_pump_cue_03",
           "at_seconds": 15,
-          "max_duration_seconds": 9,
+          "max_duration_seconds": 7,
           "text": "右腳跟留地，腳尖慢慢勾起再放下。",
           "audio_path": null,
           "measured_duration_seconds": null
         },
         {
           "id": "sit_ankle_pump_cue_04",
-          "at_seconds": 25,
+          "at_seconds": 22,
           "max_duration_seconds": 4,
           "text": "右腳收回，雙腳踩穩。",
           "audio_path": null,
@@ -1168,14 +1168,14 @@
         {
           "id": "sit_knee_extend_cue_03",
           "at_seconds": 15,
-          "max_duration_seconds": 9,
+          "max_duration_seconds": 7,
           "text": "右腳慢慢往前抬，再輕輕放回。",
           "audio_path": null,
           "measured_duration_seconds": null
         },
         {
           "id": "sit_knee_extend_cue_04",
-          "at_seconds": 25,
+          "at_seconds": 22,
           "max_duration_seconds": 4,
           "text": "雙腳踩地，放鬆腿部。",
           "audio_path": null,
@@ -1262,14 +1262,14 @@
         {
           "id": "stand_shoulder_circles_cue_03",
           "at_seconds": 15,
-          "max_duration_seconds": 9,
+          "max_duration_seconds": 7,
           "text": "換方向，肩膀慢慢向後繞圈。",
           "audio_path": null,
           "measured_duration_seconds": null
         },
         {
           "id": "stand_shoulder_circles_cue_04",
-          "at_seconds": 25,
+          "at_seconds": 22,
           "max_duration_seconds": 4,
           "text": "慢慢停下，放鬆肩膀。",
           "audio_path": null,
@@ -1359,14 +1359,14 @@
         {
           "id": "stand_chest_open_cue_03",
           "at_seconds": 15,
-          "max_duration_seconds": 9,
+          "max_duration_seconds": 7,
           "text": "再輕輕打開，保持自然呼吸。",
           "audio_path": null,
           "measured_duration_seconds": null
         },
         {
           "id": "stand_chest_open_cue_04",
-          "at_seconds": 25,
+          "at_seconds": 22,
           "max_duration_seconds": 4,
           "text": "雙手收回，放鬆肩膀。",
           "audio_path": null,
@@ -1455,14 +1455,14 @@
         {
           "id": "stand_finger_open_cue_03",
           "at_seconds": 15,
-          "max_duration_seconds": 9,
+          "max_duration_seconds": 7,
           "text": "繼續輕輕開合，肩膀保持放鬆。",
           "audio_path": null,
           "measured_duration_seconds": null
         },
         {
           "id": "stand_finger_open_cue_04",
-          "at_seconds": 25,
+          "at_seconds": 22,
           "max_duration_seconds": 4,
           "text": "放鬆雙手，慢慢垂下。",
           "audio_path": null,
@@ -1551,14 +1551,14 @@
         {
           "id": "stand_wrist_flex_cue_03",
           "at_seconds": 15,
-          "max_duration_seconds": 9,
+          "max_duration_seconds": 7,
           "text": "繼續慢慢活動，別用力彎到底。",
           "audio_path": null,
           "measured_duration_seconds": null
         },
         {
           "id": "stand_wrist_flex_cue_04",
-          "at_seconds": 25,
+          "at_seconds": 22,
           "max_duration_seconds": 4,
           "text": "放鬆手腕，雙手放下。",
           "audio_path": null,
@@ -1647,14 +1647,14 @@
         {
           "id": "stand_elbow_bend_cue_03",
           "at_seconds": 15,
-          "max_duration_seconds": 9,
+          "max_duration_seconds": 7,
           "text": "繼續慢慢彎伸，不用伸得很直。",
           "audio_path": null,
           "measured_duration_seconds": null
         },
         {
           "id": "stand_elbow_bend_cue_04",
-          "at_seconds": 25,
+          "at_seconds": 22,
           "max_duration_seconds": 4,
           "text": "雙手放下，放鬆手臂。",
           "audio_path": null,
@@ -1743,14 +1743,14 @@
         {
           "id": "stand_neck_turn_cue_03",
           "at_seconds": 15,
-          "max_duration_seconds": 9,
+          "max_duration_seconds": 7,
           "text": "換向右轉，肩膀不要跟著動。",
           "audio_path": null,
           "measured_duration_seconds": null
         },
         {
           "id": "stand_neck_turn_cue_04",
-          "at_seconds": 25,
+          "at_seconds": 22,
           "max_duration_seconds": 4,
           "text": "回到前方，放鬆。",
           "audio_path": null,
@@ -1839,14 +1839,14 @@
         {
           "id": "stand_side_slide_cue_03",
           "at_seconds": 15,
-          "max_duration_seconds": 9,
+          "max_duration_seconds": 7,
           "text": "換右手往下滑，身體輕輕向右。",
           "audio_path": null,
           "measured_duration_seconds": null
         },
         {
           "id": "stand_side_slide_cue_04",
-          "at_seconds": 25,
+          "at_seconds": 22,
           "max_duration_seconds": 4,
           "text": "慢慢回正，站穩。",
           "audio_path": null,
@@ -1938,14 +1938,14 @@
         {
           "id": "stand_calf_wall_cue_03",
           "at_seconds": 15,
-          "max_duration_seconds": 9,
+          "max_duration_seconds": 7,
           "text": "換右腳後退，腳跟留地，輕輕伸展。",
           "audio_path": null,
           "measured_duration_seconds": null
         },
         {
           "id": "stand_calf_wall_cue_04",
-          "at_seconds": 25,
+          "at_seconds": 22,
           "max_duration_seconds": 4,
           "text": "收回右腳，站穩放鬆。",
           "audio_path": null,
@@ -2035,14 +2035,14 @@
         {
           "id": "stand_arm_raise_cue_03",
           "at_seconds": 15,
-          "max_duration_seconds": 9,
+          "max_duration_seconds": 7,
           "text": "繼續照舒服的高度，慢慢抬起再放下。",
           "audio_path": null,
           "measured_duration_seconds": null
         },
         {
           "id": "stand_arm_raise_cue_04",
-          "at_seconds": 25,
+          "at_seconds": 22,
           "max_duration_seconds": 4,
           "text": "雙手放下，休息一下。",
           "audio_path": null,
@@ -2130,14 +2130,14 @@
         {
           "id": "stand_shoulder_blades_cue_03",
           "at_seconds": 15,
-          "max_duration_seconds": 9,
+          "max_duration_seconds": 7,
           "text": "繼續輕收再放鬆，不用力夾緊。",
           "audio_path": null,
           "measured_duration_seconds": null
         },
         {
           "id": "stand_shoulder_blades_cue_04",
-          "at_seconds": 25,
+          "at_seconds": 22,
           "max_duration_seconds": 4,
           "text": "放鬆肩膀，自然站好。",
           "audio_path": null,
@@ -2227,14 +2227,14 @@
         {
           "id": "lie_ankle_pump_cue_03",
           "at_seconds": 15,
-          "max_duration_seconds": 9,
+          "max_duration_seconds": 7,
           "text": "繼續慢慢勾腳，再輕輕放鬆。",
           "audio_path": null,
           "measured_duration_seconds": null
         },
         {
           "id": "lie_ankle_pump_cue_04",
-          "at_seconds": 25,
+          "at_seconds": 22,
           "max_duration_seconds": 4,
           "text": "停下，讓雙腳自然放鬆。",
           "audio_path": null,
@@ -2323,14 +2323,14 @@
         {
           "id": "lie_finger_open_cue_03",
           "at_seconds": 15,
-          "max_duration_seconds": 9,
+          "max_duration_seconds": 7,
           "text": "繼續輕輕開合，肩膀保持放鬆。",
           "audio_path": null,
           "measured_duration_seconds": null
         },
         {
           "id": "lie_finger_open_cue_04",
-          "at_seconds": 25,
+          "at_seconds": 22,
           "max_duration_seconds": 4,
           "text": "停下，放鬆雙手。",
           "audio_path": null,
@@ -2422,14 +2422,14 @@
         {
           "id": "lie_heel_slide_cue_03",
           "at_seconds": 15,
-          "max_duration_seconds": 9,
+          "max_duration_seconds": 7,
           "text": "換右腳跟慢慢滑近，再輕輕滑回。",
           "audio_path": null,
           "measured_duration_seconds": null
         },
         {
           "id": "lie_heel_slide_cue_04",
-          "at_seconds": 25,
+          "at_seconds": 22,
           "max_duration_seconds": 4,
           "text": "雙腿放鬆，休息一下。",
           "audio_path": null,
@@ -2519,14 +2519,14 @@
         {
           "id": "lie_ankle_circles_cue_03",
           "at_seconds": 15,
-          "max_duration_seconds": 9,
+          "max_duration_seconds": 7,
           "text": "現在各自換方向，繼續慢慢畫圈。",
           "audio_path": null,
           "measured_duration_seconds": null
         },
         {
           "id": "lie_ankle_circles_cue_04",
-          "at_seconds": 25,
+          "at_seconds": 22,
           "max_duration_seconds": 4,
           "text": "慢慢停下，放鬆雙腳。",
           "audio_path": null,
@@ -2616,14 +2616,14 @@
         {
           "id": "lie_knee_roll_cue_03",
           "at_seconds": 15,
-          "max_duration_seconds": 9,
+          "max_duration_seconds": 7,
           "text": "現在往右移一點，幅度小小的就好。",
           "audio_path": null,
           "measured_duration_seconds": null
         },
         {
           "id": "lie_knee_roll_cue_04",
-          "at_seconds": 25,
+          "at_seconds": 22,
           "max_duration_seconds": 4,
           "text": "回到中間，雙腳踩穩。",
           "audio_path": null,
@@ -2715,14 +2715,14 @@
         {
           "id": "lie_pelvic_tilt_cue_03",
           "at_seconds": 15,
-          "max_duration_seconds": 9,
+          "max_duration_seconds": 7,
           "text": "繼續小小後傾，再慢慢放鬆。",
           "audio_path": null,
           "measured_duration_seconds": null
         },
         {
           "id": "lie_pelvic_tilt_cue_04",
-          "at_seconds": 25,
+          "at_seconds": 22,
           "max_duration_seconds": 4,
           "text": "回到自然位置，休息一下。",
           "audio_path": null,
@@ -2814,14 +2814,14 @@
         {
           "id": "lie_single_knee_hug_cue_03",
           "at_seconds": 15,
-          "max_duration_seconds": 9,
+          "max_duration_seconds": 7,
           "text": "換托右大腿，右膝輕靠近，別用力拉。",
           "audio_path": null,
           "measured_duration_seconds": null
         },
         {
           "id": "lie_single_knee_hug_cue_04",
-          "at_seconds": 25,
+          "at_seconds": 22,
           "max_duration_seconds": 4,
           "text": "右腳放回，放鬆一下。",
           "audio_path": null,
@@ -2912,14 +2912,14 @@
         {
           "id": "lie_wrist_flex_cue_03",
           "at_seconds": 15,
-          "max_duration_seconds": 9,
+          "max_duration_seconds": 7,
           "text": "繼續小幅度活動，雙手不要靠近臉。",
           "audio_path": null,
           "measured_duration_seconds": null
         },
         {
           "id": "lie_wrist_flex_cue_04",
-          "at_seconds": 25,
+          "at_seconds": 22,
           "max_duration_seconds": 4,
           "text": "放鬆手腕，慢慢放下。",
           "audio_path": null,
@@ -3011,14 +3011,14 @@
         {
           "id": "lie_arm_slide_cue_03",
           "at_seconds": 15,
-          "max_duration_seconds": 9,
+          "max_duration_seconds": 7,
           "text": "繼續輕輕滑開再收回，不用勉強。",
           "audio_path": null,
           "measured_duration_seconds": null
         },
         {
           "id": "lie_arm_slide_cue_04",
-          "at_seconds": 25,
+          "at_seconds": 22,
           "max_duration_seconds": 4,
           "text": "雙手回到身旁，放鬆。",
           "audio_path": null,
@@ -3107,14 +3107,14 @@
         {
           "id": "lie_elbow_bend_cue_03",
           "at_seconds": 15,
-          "max_duration_seconds": 9,
+          "max_duration_seconds": 7,
           "text": "繼續輕輕彎伸，肩膀保持放鬆。",
           "audio_path": null,
           "measured_duration_seconds": null
         },
         {
           "id": "lie_elbow_bend_cue_04",
-          "at_seconds": 25,
+          "at_seconds": 22,
           "max_duration_seconds": 4,
           "text": "慢慢放下雙手，休息一下。",
           "audio_path": null,

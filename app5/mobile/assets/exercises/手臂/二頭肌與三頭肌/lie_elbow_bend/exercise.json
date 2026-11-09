@@ -70,7 +70,7 @@
     {
       "id": "lie_elbow_bend_cue_03",
       "at_seconds": 15,
-      "max_duration_seconds": 9,
+      "max_duration_seconds": 7,
       "text": "繼續輕輕彎伸，肩膀保持放鬆。",
       "audio_path": "audio/lie_elbow_bend_cue_03.mp3",
       "measured_duration_seconds": null,
@@ -78,7 +78,7 @@
     },
     {
       "id": "lie_elbow_bend_cue_04",
-      "at_seconds": 25,
+      "at_seconds": 22,
       "max_duration_seconds": 4,
       "text": "慢慢放下雙手，休息一下。",
       "audio_path": "audio/lie_elbow_bend_cue_04.mp3",

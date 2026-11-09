@@ -1,5 +1,6 @@
 import type { AudioPlayer } from "expo-audio";
 import { cueAssets, exerciseLibrary } from "../content/exercise-index";
+import { resolveCountdownPlay } from "./countdown";
 import type { AudioService } from "./silent";
 
 /** Only locally registered, measured audio is played. Missing clips remain text prompts. */
@@ -42,14 +43,16 @@ export function createCueAudioService(
     async load() {},
     async playAt(id) {
       stop();
-      const asset = cueAssets[id],
-        cue = cues.get(id);
-      if (muted || !asset || !cue) return;
+      const countdown = resolveCountdownPlay(id);
+      const asset = countdown?.asset ?? cueAssets[id];
+      const cue = cues.get(id);
+      const max = countdown?.maxDurationSeconds ?? cue?.max_duration_seconds;
+      if (muted || asset == null || max == null) return;
       try {
         player.replace(asset);
         player.play();
         active = true;
-        arm(cue.max_duration_seconds * 1000);
+        arm(max * 1000);
       } catch {
         stop();
         onError();

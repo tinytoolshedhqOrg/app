@@ -36,11 +36,10 @@ for (const [i, file] of files.entries()) {
   );
   const cues = ex.voice_cues;
   for (const [j, c] of cues.entries()) {
-    if (
-      c.at_seconds < 0 ||
-      c.at_seconds + c.max_duration_seconds > (cues[j + 1]?.at_seconds ?? 30)
-    )
-      throw new Error(`${c.id}: 語音超出時間窗`);
+    // Keep in step with CUE_DEADLINE_SECONDS in src/content/schema.ts.
+    const cueDeadline = cues[j + 1]?.at_seconds ?? 27;
+    if (c.at_seconds < 0 || c.at_seconds + c.max_duration_seconds > cueDeadline)
+      throw new Error(`${c.id}: 語音超出時間窗或碰到 27 秒結束倒數`);
     if (!c.audio_path) continue;
     const audio = path.resolve(path.dirname(file), c.audio_path);
     if (!audio.startsWith(path.dirname(file) + path.sep))

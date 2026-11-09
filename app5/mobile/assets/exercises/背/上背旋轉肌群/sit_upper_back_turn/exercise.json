@@ -70,7 +70,7 @@
     {
       "id": "sit_upper_back_turn_cue_03",
       "at_seconds": 15,
-      "max_duration_seconds": 9,
+      "max_duration_seconds": 7,
       "text": "現在向右轉，轉到舒服的位置就好。",
       "audio_path": "audio/sit_upper_back_turn_cue_03.mp3",
       "measured_duration_seconds": null,
@@ -78,7 +78,7 @@
     },
     {
       "id": "sit_upper_back_turn_cue_04",
-      "at_seconds": 25,
+      "at_seconds": 22,
       "max_duration_seconds": 4,
       "text": "慢慢回正，放鬆雙手。",
       "audio_path": "audio/sit_upper_back_turn_cue_04.mp3",

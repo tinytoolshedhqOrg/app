@@ -71,7 +71,7 @@
     {
       "id": "sit_side_reach_cue_03",
       "at_seconds": 15,
-      "max_duration_seconds": 9,
+      "max_duration_seconds": 7,
       "text": "換右手往下滑，身體輕輕向右。",
       "audio_path": "audio/sit_side_reach_cue_03.mp3",
       "measured_duration_seconds": null,
@@ -79,7 +79,7 @@
     },
     {
       "id": "sit_side_reach_cue_04",
-      "at_seconds": 25,
+      "at_seconds": 22,
       "max_duration_seconds": 4,
       "text": "回到中間，坐穩放鬆。",
       "audio_path": "audio/sit_side_reach_cue_04.mp3",
