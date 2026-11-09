@@ -57,8 +57,8 @@
       "max_duration_seconds": 9,
       "text": "掌心慢慢轉向上。",
       "audio_path": "audio/sit_palm_turn_cue_01.mp3",
-      "measured_duration_seconds": null,
-      "audio_status": "pending"
+      "measured_duration_seconds": 1.968,
+      "audio_status": "ready"
     },
     {
       "id": "sit_palm_turn_cue_02",
@@ -66,8 +66,8 @@
       "max_duration_seconds": 4,
       "text": "停一下。",
       "audio_path": "audio/sit_palm_turn_cue_02.mp3",
-      "measured_duration_seconds": null,
-      "audio_status": "pending"
+      "measured_duration_seconds": 0.96,
+      "audio_status": "ready"
     },
     {
       "id": "sit_palm_turn_cue_03",
@@ -75,8 +75,8 @@
       "max_duration_seconds": 7,
       "text": "再轉回手背向下。",
       "audio_path": "audio/sit_palm_turn_cue_03.mp3",
-      "measured_duration_seconds": null,
-      "audio_status": "pending"
+      "measured_duration_seconds": 1.968,
+      "audio_status": "ready"
     },
     {
       "id": "sit_palm_turn_cue_04",
@@ -84,8 +84,8 @@
       "max_duration_seconds": 4,
       "text": "雙手放鬆。",
       "audio_path": "audio/sit_palm_turn_cue_04.mp3",
-      "measured_duration_seconds": null,
-      "audio_status": "pending"
+      "measured_duration_seconds": 1.296,
+      "audio_status": "ready"
     }
   ],
   "animation_brief": "靜態示意圖：坐著，前臂放在桌面或大腿上。採用 wrist 人物模板與方向箭頭。圖檔未放入前，播放器改顯示這張向量人物。",

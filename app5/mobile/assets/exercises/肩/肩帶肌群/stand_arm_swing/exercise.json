@@ -56,8 +56,8 @@
       "max_duration_seconds": 9,
       "text": "右臂慢慢前後擺，左手扶椅。",
       "audio_path": "audio/stand_arm_swing_cue_01.mp3",
-      "measured_duration_seconds": null,
-      "audio_status": "pending"
+      "measured_duration_seconds": 2.904,
+      "audio_status": "ready"
     },
     {
       "id": "stand_arm_swing_cue_02",
@@ -65,8 +65,8 @@
       "max_duration_seconds": 4,
       "text": "身體不要跟著轉。",
       "audio_path": "audio/stand_arm_swing_cue_02.mp3",
-      "measured_duration_seconds": null,
-      "audio_status": "pending"
+      "measured_duration_seconds": 1.776,
+      "audio_status": "ready"
     },
     {
       "id": "stand_arm_swing_cue_03",
@@ -74,8 +74,8 @@
       "max_duration_seconds": 7,
       "text": "換手，左臂前後慢慢擺。",
       "audio_path": "audio/stand_arm_swing_cue_03.mp3",
-      "measured_duration_seconds": null,
-      "audio_status": "pending"
+      "measured_duration_seconds": 2.544,
+      "audio_status": "ready"
     },
     {
       "id": "stand_arm_swing_cue_04",
@@ -83,8 +83,8 @@
       "max_duration_seconds": 4,
       "text": "兩臂垂下站穩。",
       "audio_path": "audio/stand_arm_swing_cue_04.mp3",
-      "measured_duration_seconds": null,
-      "audio_status": "pending"
+      "measured_duration_seconds": 1.68,
+      "audio_status": "ready"
     }
   ],
   "animation_brief": "靜態示意圖：站在穩固椅子旁，一手扶椅背，上身微微前傾，另一手自然垂下。採用 shoulder 人物模板與方向箭頭。圖檔未放入前，播放器改顯示這張向量人物。",

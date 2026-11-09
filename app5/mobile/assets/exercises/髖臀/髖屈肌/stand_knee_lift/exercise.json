@@ -55,8 +55,8 @@
       "max_duration_seconds": 9,
       "text": "右膝抬向左手，靠近即可。",
       "audio_path": "audio/stand_knee_lift_cue_01.mp3",
-      "measured_duration_seconds": null,
-      "audio_status": "pending"
+      "measured_duration_seconds": 2.808,
+      "audio_status": "ready"
     },
     {
       "id": "stand_knee_lift_cue_02",
@@ -64,8 +64,8 @@
       "max_duration_seconds": 4,
       "text": "換左膝抬向右手。",
       "audio_path": "audio/stand_knee_lift_cue_02.mp3",
-      "measured_duration_seconds": null,
-      "audio_status": "pending"
+      "measured_duration_seconds": 1.968,
+      "audio_status": "ready"
     },
     {
       "id": "stand_knee_lift_cue_03",
@@ -73,8 +73,8 @@
       "max_duration_seconds": 7,
       "text": "再各一次，背站直。",
       "audio_path": "audio/stand_knee_lift_cue_03.mp3",
-      "measured_duration_seconds": null,
-      "audio_status": "pending"
+      "measured_duration_seconds": 1.968,
+      "audio_status": "ready"
     },
     {
       "id": "stand_knee_lift_cue_04",
@@ -82,8 +82,8 @@
       "max_duration_seconds": 4,
       "text": "雙腳踩穩。",
       "audio_path": "audio/stand_knee_lift_cue_04.mp3",
-      "measured_duration_seconds": null,
-      "audio_status": "pending"
+      "measured_duration_seconds": 1.248,
+      "audio_status": "ready"
     }
   ],
   "animation_brief": "靜態示意圖：站直，支撐腿可以微彎。採用 knee 人物模板與方向箭頭。圖檔未放入前，播放器改顯示這張向量人物。",

@@ -55,8 +55,8 @@
       "max_duration_seconds": 9,
       "text": "原地慢慢踏步。",
       "audio_path": "audio/stand_march_cue_01.mp3",
-      "measured_duration_seconds": null,
-      "audio_status": "pending"
+      "measured_duration_seconds": 1.56,
+      "audio_status": "ready"
     },
     {
       "id": "stand_march_cue_02",
@@ -64,8 +64,8 @@
       "max_duration_seconds": 4,
       "text": "手肘輕輕跟著擺。",
       "audio_path": "audio/stand_march_cue_02.mp3",
-      "measured_duration_seconds": null,
-      "audio_status": "pending"
+      "measured_duration_seconds": 1.92,
+      "audio_status": "ready"
     },
     {
       "id": "stand_march_cue_03",
@@ -73,8 +73,8 @@
       "max_duration_seconds": 7,
       "text": "膝蓋不必抬高。",
       "audio_path": "audio/stand_march_cue_03.mp3",
-      "measured_duration_seconds": null,
-      "audio_status": "pending"
+      "measured_duration_seconds": 1.536,
+      "audio_status": "ready"
     },
     {
       "id": "stand_march_cue_04",
@@ -82,8 +82,8 @@
       "max_duration_seconds": 4,
       "text": "慢慢站穩。",
       "audio_path": "audio/stand_march_cue_04.mp3",
-      "measured_duration_seconds": null,
-      "audio_status": "pending"
+      "measured_duration_seconds": 1.104,
+      "audio_status": "ready"
     }
   ],
   "animation_brief": "靜態示意圖：雙腳與髖同寬，手肘彎曲，拳頭放鬆。採用 knee 人物模板與方向箭頭。圖檔未放入前，播放器改顯示這張向量人物。",

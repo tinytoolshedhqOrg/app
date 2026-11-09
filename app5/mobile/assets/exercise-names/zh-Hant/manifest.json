@@ -2,149 +2,34 @@
   "voice": "zh-TW-HsiaoYuNeural",
   "locale": "zh-Hant",
   "clips": {
-    "sit_shoulder_circles": {
-      "text": "肩膀輕繞圈",
-      "file": "sit_shoulder_circles.mp3",
-      "duration_seconds": 1.608
-    },
-    "sit_chest_open": {
-      "text": "胸前輕伸展",
-      "file": "sit_chest_open.mp3",
-      "duration_seconds": 1.536
-    },
-    "sit_upper_back_turn": {
-      "text": "上半身輕轉",
-      "file": "sit_upper_back_turn.mp3",
-      "duration_seconds": 1.512
-    },
-    "sit_finger_open": {
-      "text": "手指輕開合",
-      "file": "sit_finger_open.mp3",
-      "duration_seconds": 1.584
-    },
-    "sit_wrist_flex": {
-      "text": "手腕上下活動",
-      "file": "sit_wrist_flex.mp3",
-      "duration_seconds": 1.776
-    },
-    "sit_neck_turn": {
-      "text": "頸部輕轉頭",
-      "file": "sit_neck_turn.mp3",
-      "duration_seconds": 1.464
-    },
-    "sit_side_reach": {
-      "text": "坐姿側身輕移",
-      "file": "sit_side_reach.mp3",
-      "duration_seconds": 1.752
-    },
-    "sit_elbow_bend": {
-      "text": "手肘輕彎伸",
-      "file": "sit_elbow_bend.mp3",
-      "duration_seconds": 1.584
-    },
-    "sit_ankle_pump": {
-      "text": "坐姿腳踝勾放",
-      "file": "sit_ankle_pump.mp3",
-      "duration_seconds": 1.656
-    },
-    "sit_knee_extend": {
-      "text": "坐姿膝部輕伸",
-      "file": "sit_knee_extend.mp3",
-      "duration_seconds": 1.752
-    },
-    "stand_shoulder_circles": {
-      "text": "站姿肩膀繞圈",
-      "file": "stand_shoulder_circles.mp3",
-      "duration_seconds": 1.776
-    },
-    "stand_chest_open": {
-      "text": "站姿胸前舒展",
-      "file": "stand_chest_open.mp3",
-      "duration_seconds": 1.752
-    },
-    "stand_finger_open": {
-      "text": "站姿手指開合",
-      "file": "stand_finger_open.mp3",
-      "duration_seconds": 1.728
-    },
-    "stand_wrist_flex": {
-      "text": "站姿手腕活動",
-      "file": "stand_wrist_flex.mp3",
-      "duration_seconds": 1.68
-    },
-    "stand_elbow_bend": {
-      "text": "站姿手肘彎伸",
-      "file": "stand_elbow_bend.mp3",
-      "duration_seconds": 1.848
-    },
-    "stand_neck_turn": {
-      "text": "站姿輕轉頭",
-      "file": "stand_neck_turn.mp3",
-      "duration_seconds": 1.512
-    },
-    "stand_side_slide": {
-      "text": "站姿側身輕滑",
-      "file": "stand_side_slide.mp3",
+    "lie_ankle_circles": {
+      "text": "仰躺腳踝小圈",
+      "file": "lie_ankle_circles.mp3",
       "duration_seconds": 1.8
-    },
-    "stand_calf_wall": {
-      "text": "扶牆小腿伸展",
-      "file": "stand_calf_wall.mp3",
-      "duration_seconds": 1.704
-    },
-    "stand_arm_raise": {
-      "text": "雙臂向前輕抬",
-      "file": "stand_arm_raise.mp3",
-      "duration_seconds": 1.92
-    },
-    "stand_shoulder_blades": {
-      "text": "肩胛輕收放",
-      "file": "stand_shoulder_blades.mp3",
-      "duration_seconds": 1.584
     },
     "lie_ankle_pump": {
       "text": "仰躺腳踝勾放",
       "file": "lie_ankle_pump.mp3",
       "duration_seconds": 1.68
     },
-    "lie_finger_open": {
-      "text": "仰躺手指開合",
-      "file": "lie_finger_open.mp3",
+    "lie_arm_overhead": {
+      "text": "仰躺雙臂上舉",
+      "file": "lie_arm_overhead.mp3",
       "duration_seconds": 1.776
-    },
-    "lie_heel_slide": {
-      "text": "腳跟輕滑動",
-      "file": "lie_heel_slide.mp3",
-      "duration_seconds": 1.392
-    },
-    "lie_ankle_circles": {
-      "text": "仰躺腳踝小圈",
-      "file": "lie_ankle_circles.mp3",
-      "duration_seconds": 1.8
-    },
-    "lie_knee_roll": {
-      "text": "屈膝小幅左右移",
-      "file": "lie_knee_roll.mp3",
-      "duration_seconds": 2.088
-    },
-    "lie_pelvic_tilt": {
-      "text": "骨盆輕輕回擺",
-      "file": "lie_pelvic_tilt.mp3",
-      "duration_seconds": 1.632
-    },
-    "lie_single_knee_hug": {
-      "text": "單膝輕靠近身體",
-      "file": "lie_single_knee_hug.mp3",
-      "duration_seconds": 1.968
-    },
-    "lie_wrist_flex": {
-      "text": "仰躺手腕勾放",
-      "file": "lie_wrist_flex.mp3",
-      "duration_seconds": 1.704
     },
     "lie_arm_slide": {
       "text": "雙臂貼地輕滑",
       "file": "lie_arm_slide.mp3",
+      "duration_seconds": 1.8
+    },
+    "lie_blade_sink": {
+      "text": "仰躺肩胛下沉",
+      "file": "lie_blade_sink.mp3",
+      "duration_seconds": 1.848
+    },
+    "lie_both_knees": {
+      "text": "仰躺雙膝靠近",
+      "file": "lie_both_knees.mp3",
       "duration_seconds": 1.8
     },
     "lie_elbow_bend": {
@@ -152,35 +37,470 @@
       "file": "lie_elbow_bend.mp3",
       "duration_seconds": 1.824
     },
-    "lie_hamstring": {
-      "text": "仰躺大腿後側伸展",
-      "file": "lie_hamstring.mp3",
-      "duration_seconds": 2.208
+    "lie_elbow_open": {
+      "text": "仰躺手肘外開",
+      "file": "lie_elbow_open.mp3",
+      "duration_seconds": 1.728
     },
-    "stand_triceps": {
-      "text": "頭上手臂後側伸展",
-      "file": "stand_triceps.mp3",
-      "duration_seconds": 2.16
-    },
-    "sit_triceps": {
-      "text": "坐姿手臂後側伸展",
-      "file": "sit_triceps.mp3",
-      "duration_seconds": 2.208
-    },
-    "stand_overhead_side": {
-      "text": "舉臂側身伸展",
-      "file": "stand_overhead_side.mp3",
-      "duration_seconds": 1.632
+    "lie_finger_open": {
+      "text": "仰躺手指開合",
+      "file": "lie_finger_open.mp3",
+      "duration_seconds": 1.776
     },
     "lie_glute": {
       "text": "仰躺臀部輕伸展",
       "file": "lie_glute.mp3",
       "duration_seconds": 1.944
     },
+    "lie_hamstring": {
+      "text": "仰躺大腿後側伸展",
+      "file": "lie_hamstring.mp3",
+      "duration_seconds": 2.208
+    },
+    "lie_heel_slide": {
+      "text": "腳跟輕滑動",
+      "file": "lie_heel_slide.mp3",
+      "duration_seconds": 1.392
+    },
+    "lie_hip_bridge": {
+      "text": "仰躺臀部抬起",
+      "file": "lie_hip_bridge.mp3",
+      "duration_seconds": 1.68
+    },
+    "lie_knee_roll": {
+      "text": "屈膝小幅左右移",
+      "file": "lie_knee_roll.mp3",
+      "duration_seconds": 2.088
+    },
+    "lie_knees_out": {
+      "text": "仰躺雙膝外放",
+      "file": "lie_knees_out.mp3",
+      "duration_seconds": 1.8
+    },
+    "lie_leg_raise": {
+      "text": "仰躺直腿輕抬",
+      "file": "lie_leg_raise.mp3",
+      "duration_seconds": 1.8
+    },
+    "lie_long_reach": {
+      "text": "仰躺全身伸長",
+      "file": "lie_long_reach.mp3",
+      "duration_seconds": 1.824
+    },
+    "lie_pelvic_tilt": {
+      "text": "骨盆輕輕回擺",
+      "file": "lie_pelvic_tilt.mp3",
+      "duration_seconds": 1.632
+    },
+    "lie_quad_set": {
+      "text": "仰躺大腿輕壓",
+      "file": "lie_quad_set.mp3",
+      "duration_seconds": 1.728
+    },
+    "lie_short_arc": {
+      "text": "仰躺短弧伸膝",
+      "file": "lie_short_arc.mp3",
+      "duration_seconds": 1.752
+    },
+    "lie_single_knee_hug": {
+      "text": "單膝輕靠近身體",
+      "file": "lie_single_knee_hug.mp3",
+      "duration_seconds": 1.968
+    },
+    "lie_snow_angel": {
+      "text": "仰躺雙臂側展",
+      "file": "lie_snow_angel.mp3",
+      "duration_seconds": 1.728
+    },
+    "lie_wrist_flex": {
+      "text": "仰躺手腕勾放",
+      "file": "lie_wrist_flex.mp3",
+      "duration_seconds": 1.704
+    },
+    "sit_ankle_point": {
+      "text": "坐姿腳尖前點",
+      "file": "sit_ankle_point.mp3",
+      "duration_seconds": 1.776
+    },
+    "sit_ankle_pump": {
+      "text": "坐姿腳踝勾放",
+      "file": "sit_ankle_pump.mp3",
+      "duration_seconds": 1.656
+    },
+    "sit_arm_reach": {
+      "text": "坐姿雙手向上",
+      "file": "sit_arm_reach.mp3",
+      "duration_seconds": 1.8
+    },
+    "sit_cat_cow": {
+      "text": "坐姿貓牛活動",
+      "file": "sit_cat_cow.mp3",
+      "duration_seconds": 1.68
+    },
+    "sit_chest_open": {
+      "text": "胸前輕伸展",
+      "file": "sit_chest_open.mp3",
+      "duration_seconds": 1.536
+    },
+    "sit_chin_chest": {
+      "text": "坐姿低頭輕放",
+      "file": "sit_chin_chest.mp3",
+      "duration_seconds": 1.752
+    },
+    "sit_chin_tuck": {
+      "text": "坐姿收下顎",
+      "file": "sit_chin_tuck.mp3",
+      "duration_seconds": 1.44
+    },
+    "sit_elbow_bend": {
+      "text": "手肘輕彎伸",
+      "file": "sit_elbow_bend.mp3",
+      "duration_seconds": 1.584
+    },
+    "sit_elbow_long": {
+      "text": "坐姿手肘伸直",
+      "file": "sit_elbow_long.mp3",
+      "duration_seconds": 1.872
+    },
+    "sit_finger_hook": {
+      "text": "坐姿手指鉤放",
+      "file": "sit_finger_hook.mp3",
+      "duration_seconds": 1.704
+    },
+    "sit_finger_mid": {
+      "text": "坐姿指節彎曲",
+      "file": "sit_finger_mid.mp3",
+      "duration_seconds": 1.776
+    },
+    "sit_finger_open": {
+      "text": "手指輕開合",
+      "file": "sit_finger_open.mp3",
+      "duration_seconds": 1.584
+    },
+    "sit_finger_spread": {
+      "text": "坐姿手指張開",
+      "file": "sit_finger_spread.mp3",
+      "duration_seconds": 1.776
+    },
+    "sit_finger_tip": {
+      "text": "坐姿指尖彎曲",
+      "file": "sit_finger_tip.mp3",
+      "duration_seconds": 1.776
+    },
+    "sit_flat_fist": {
+      "text": "坐姿手指平握",
+      "file": "sit_flat_fist.mp3",
+      "duration_seconds": 1.728
+    },
+    "sit_forearm_open": {
+      "text": "坐姿前臂外轉",
+      "file": "sit_forearm_open.mp3",
+      "duration_seconds": 1.776
+    },
+    "sit_forward_rest": {
+      "text": "坐姿前傾放鬆",
+      "file": "sit_forward_rest.mp3",
+      "duration_seconds": 1.848
+    },
+    "sit_hand_wave": {
+      "text": "坐姿手腕左右",
+      "file": "sit_hand_wave.mp3",
+      "duration_seconds": 1.704
+    },
+    "sit_heart_open": {
+      "text": "坐姿胸口後收",
+      "file": "sit_heart_open.mp3",
+      "duration_seconds": 1.776
+    },
+    "sit_hip_march": {
+      "text": "坐姿抬膝輕放",
+      "file": "sit_hip_march.mp3",
+      "duration_seconds": 1.776
+    },
+    "sit_inner_thigh": {
+      "text": "坐姿大腿內側",
+      "file": "sit_inner_thigh.mp3",
+      "duration_seconds": 1.728
+    },
+    "sit_knee_extend": {
+      "text": "坐姿膝部輕伸",
+      "file": "sit_knee_extend.mp3",
+      "duration_seconds": 1.752
+    },
+    "sit_knee_press": {
+      "text": "坐姿膝部輕壓",
+      "file": "sit_knee_press.mp3",
+      "duration_seconds": 1.704
+    },
+    "sit_mountain": {
+      "text": "坐姿挺身對齊",
+      "file": "sit_mountain.mp3",
+      "duration_seconds": 1.872
+    },
+    "sit_neck_arc": {
+      "text": "坐姿鼻子小圈",
+      "file": "sit_neck_arc.mp3",
+      "duration_seconds": 1.728
+    },
+    "sit_neck_diagonal": {
+      "text": "坐姿頸後斜伸",
+      "file": "sit_neck_diagonal.mp3",
+      "duration_seconds": 1.872
+    },
     "sit_neck_side": {
       "text": "坐姿頸側輕伸展",
       "file": "sit_neck_side.mp3",
       "duration_seconds": 2.016
+    },
+    "sit_neck_turn": {
+      "text": "頸部輕轉頭",
+      "file": "sit_neck_turn.mp3",
+      "duration_seconds": 1.464
+    },
+    "sit_palm_turn": {
+      "text": "坐姿掌心翻轉",
+      "file": "sit_palm_turn.mp3",
+      "duration_seconds": 1.776
+    },
+    "sit_shoulder_circles": {
+      "text": "肩膀輕繞圈",
+      "file": "sit_shoulder_circles.mp3",
+      "duration_seconds": 1.608
+    },
+    "sit_side_reach": {
+      "text": "坐姿側身輕移",
+      "file": "sit_side_reach.mp3",
+      "duration_seconds": 1.752
+    },
+    "sit_thumb_out": {
+      "text": "坐姿拇指外展",
+      "file": "sit_thumb_out.mp3",
+      "duration_seconds": 1.728
+    },
+    "sit_thumb_tip": {
+      "text": "坐姿拇指輕彎",
+      "file": "sit_thumb_tip.mp3",
+      "duration_seconds": 1.776
+    },
+    "sit_thumb_touch": {
+      "text": "坐姿拇指對指",
+      "file": "sit_thumb_touch.mp3",
+      "duration_seconds": 1.704
+    },
+    "sit_triceps": {
+      "text": "坐姿手臂後側伸展",
+      "file": "sit_triceps.mp3",
+      "duration_seconds": 2.208
+    },
+    "sit_upper_back_turn": {
+      "text": "上半身輕轉",
+      "file": "sit_upper_back_turn.mp3",
+      "duration_seconds": 1.512
+    },
+    "sit_wrist_ease": {
+      "text": "坐姿手腕伸放",
+      "file": "sit_wrist_ease.mp3",
+      "duration_seconds": 1.68
+    },
+    "sit_wrist_flex": {
+      "text": "手腕上下活動",
+      "file": "sit_wrist_flex.mp3",
+      "duration_seconds": 1.776
+    },
+    "sit_wrist_hold": {
+      "text": "坐姿手腕上抬",
+      "file": "sit_wrist_hold.mp3",
+      "duration_seconds": 1.752
+    },
+    "stand_arm_circles": {
+      "text": "站姿手臂畫圈",
+      "file": "stand_arm_circles.mp3",
+      "duration_seconds": 1.728
+    },
+    "stand_arm_cross": {
+      "text": "站姿手臂抱肩",
+      "file": "stand_arm_cross.mp3",
+      "duration_seconds": 1.704
+    },
+    "stand_arm_high": {
+      "text": "單臂上舉輕停",
+      "file": "stand_arm_high.mp3",
+      "duration_seconds": 1.752
+    },
+    "stand_arm_raise": {
+      "text": "雙臂向前輕抬",
+      "file": "stand_arm_raise.mp3",
+      "duration_seconds": 1.92
+    },
+    "stand_arm_sway": {
+      "text": "站姿手臂左右",
+      "file": "stand_arm_sway.mp3",
+      "duration_seconds": 1.656
+    },
+    "stand_arm_swing": {
+      "text": "站姿手臂前後",
+      "file": "stand_arm_swing.mp3",
+      "duration_seconds": 1.68
+    },
+    "stand_calf_raise": {
+      "text": "站姿腳跟抬起",
+      "file": "stand_calf_raise.mp3",
+      "duration_seconds": 1.632
+    },
+    "stand_calf_wall": {
+      "text": "扶牆小腿伸展",
+      "file": "stand_calf_wall.mp3",
+      "duration_seconds": 1.704
+    },
+    "stand_chest_open": {
+      "text": "站姿胸前舒展",
+      "file": "stand_chest_open.mp3",
+      "duration_seconds": 1.752
+    },
+    "stand_door_chest": {
+      "text": "門口胸前伸展",
+      "file": "stand_door_chest.mp3",
+      "duration_seconds": 1.728
+    },
+    "stand_elbow_bend": {
+      "text": "站姿手肘彎伸",
+      "file": "stand_elbow_bend.mp3",
+      "duration_seconds": 1.848
+    },
+    "stand_elbow_row": {
+      "text": "站姿手肘後拉",
+      "file": "stand_elbow_row.mp3",
+      "duration_seconds": 1.776
+    },
+    "stand_finger_open": {
+      "text": "站姿手指開合",
+      "file": "stand_finger_open.mp3",
+      "duration_seconds": 1.728
+    },
+    "stand_heel_dig": {
+      "text": "站姿腳跟前點",
+      "file": "stand_heel_dig.mp3",
+      "duration_seconds": 1.68
+    },
+    "stand_heel_toe": {
+      "text": "站姿腳跟接腳尖",
+      "file": "stand_heel_toe.mp3",
+      "duration_seconds": 1.944
+    },
+    "stand_hip_flexor": {
+      "text": "站姿髖前伸展",
+      "file": "stand_hip_flexor.mp3",
+      "duration_seconds": 1.752
+    },
+    "stand_it_band": {
+      "text": "站姿髖外側伸",
+      "file": "stand_it_band.mp3",
+      "duration_seconds": 1.776
+    },
+    "stand_knee_curl": {
+      "text": "站姿腳跟後抬",
+      "file": "stand_knee_curl.mp3",
+      "duration_seconds": 1.68
+    },
+    "stand_knee_lift": {
+      "text": "站姿抬膝觸手",
+      "file": "stand_knee_lift.mp3",
+      "duration_seconds": 1.656
+    },
+    "stand_leg_back": {
+      "text": "站姿腿向後抬",
+      "file": "stand_leg_back.mp3",
+      "duration_seconds": 1.752
+    },
+    "stand_leg_side": {
+      "text": "站姿腿向外抬",
+      "file": "stand_leg_side.mp3",
+      "duration_seconds": 1.752
+    },
+    "stand_march": {
+      "text": "原地輕踏步",
+      "file": "stand_march.mp3",
+      "duration_seconds": 1.368
+    },
+    "stand_mini_squat": {
+      "text": "站姿膝蓋輕彎",
+      "file": "stand_mini_squat.mp3",
+      "duration_seconds": 1.776
+    },
+    "stand_neck_turn": {
+      "text": "站姿輕轉頭",
+      "file": "stand_neck_turn.mp3",
+      "duration_seconds": 1.512
+    },
+    "stand_one_leg": {
+      "text": "站姿單腳站立",
+      "file": "stand_one_leg.mp3",
+      "duration_seconds": 1.656
+    },
+    "stand_overhead_side": {
+      "text": "舉臂側身伸展",
+      "file": "stand_overhead_side.mp3",
+      "duration_seconds": 1.632
+    },
+    "stand_quad": {
+      "text": "站姿大腿前側",
+      "file": "stand_quad.mp3",
+      "duration_seconds": 1.776
+    },
+    "stand_shoulder_blades": {
+      "text": "肩胛輕收放",
+      "file": "stand_shoulder_blades.mp3",
+      "duration_seconds": 1.584
+    },
+    "stand_shoulder_circles": {
+      "text": "站姿肩膀繞圈",
+      "file": "stand_shoulder_circles.mp3",
+      "duration_seconds": 1.776
+    },
+    "stand_side_slide": {
+      "text": "站姿側身輕滑",
+      "file": "stand_side_slide.mp3",
+      "duration_seconds": 1.8
+    },
+    "stand_soleus": {
+      "text": "屈膝小腿伸展",
+      "file": "stand_soleus.mp3",
+      "duration_seconds": 1.704
+    },
+    "stand_toe_raise": {
+      "text": "站姿腳尖抬起",
+      "file": "stand_toe_raise.mp3",
+      "duration_seconds": 1.704
+    },
+    "stand_triceps": {
+      "text": "頭上手臂後側伸展",
+      "file": "stand_triceps.mp3",
+      "duration_seconds": 2.16
+    },
+    "stand_wall_align": {
+      "text": "靠牆站姿對齊",
+      "file": "stand_wall_align.mp3",
+      "duration_seconds": 1.8
+    },
+    "stand_wall_angel": {
+      "text": "靠牆雙臂上展",
+      "file": "stand_wall_angel.mp3",
+      "duration_seconds": 1.728
+    },
+    "stand_wall_press": {
+      "text": "扶牆輕伏撐",
+      "file": "stand_wall_press.mp3",
+      "duration_seconds": 1.56
+    },
+    "stand_wall_slide": {
+      "text": "扶牆手臂上滑",
+      "file": "stand_wall_slide.mp3",
+      "duration_seconds": 1.728
+    },
+    "stand_wrist_flex": {
+      "text": "站姿手腕活動",
+      "file": "stand_wrist_flex.mp3",
+      "duration_seconds": 1.68
     }
   }
 }

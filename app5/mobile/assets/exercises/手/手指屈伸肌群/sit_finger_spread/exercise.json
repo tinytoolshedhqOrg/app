@@ -56,8 +56,8 @@
       "max_duration_seconds": 9,
       "text": "手指慢慢向兩側張開。",
       "audio_path": "audio/sit_finger_spread_cue_01.mp3",
-      "measured_duration_seconds": null,
-      "audio_status": "pending"
+      "measured_duration_seconds": 2.568,
+      "audio_status": "ready"
     },
     {
       "id": "sit_finger_spread_cue_02",
@@ -65,8 +65,8 @@
       "max_duration_seconds": 4,
       "text": "再輕輕併攏。",
       "audio_path": "audio/sit_finger_spread_cue_02.mp3",
-      "measured_duration_seconds": null,
-      "audio_status": "pending"
+      "measured_duration_seconds": 1.44,
+      "audio_status": "ready"
     },
     {
       "id": "sit_finger_spread_cue_03",
@@ -74,8 +74,8 @@
       "max_duration_seconds": 7,
       "text": "繼續張開、併攏。",
       "audio_path": "audio/sit_finger_spread_cue_03.mp3",
-      "measured_duration_seconds": null,
-      "audio_status": "pending"
+      "measured_duration_seconds": 1.776,
+      "audio_status": "ready"
     },
     {
       "id": "sit_finger_spread_cue_04",
@@ -83,8 +83,8 @@
       "max_duration_seconds": 4,
       "text": "手指放鬆。",
       "audio_path": "audio/sit_finger_spread_cue_04.mp3",
-      "measured_duration_seconds": null,
-      "audio_status": "pending"
+      "measured_duration_seconds": 1.296,
+      "audio_status": "ready"
     }
   ],
   "animation_brief": "靜態示意圖：前臂放在大腿上，手指先併攏。採用 hands 人物模板與方向箭頭。圖檔未放入前，播放器改顯示這張向量人物。",

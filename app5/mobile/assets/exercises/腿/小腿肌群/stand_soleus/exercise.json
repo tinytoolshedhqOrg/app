@@ -58,8 +58,8 @@
       "max_duration_seconds": 9,
       "text": "左腳在後，膝蓋微彎，腳跟留地。",
       "audio_path": "audio/stand_soleus_cue_01.mp3",
-      "measured_duration_seconds": null,
-      "audio_status": "pending"
+      "measured_duration_seconds": 3.336,
+      "audio_status": "ready"
     },
     {
       "id": "stand_soleus_cue_02",
@@ -67,8 +67,8 @@
       "max_duration_seconds": 4,
       "text": "身體微微向前。",
       "audio_path": "audio/stand_soleus_cue_02.mp3",
-      "measured_duration_seconds": null,
-      "audio_status": "pending"
+      "measured_duration_seconds": 1.872,
+      "audio_status": "ready"
     },
     {
       "id": "stand_soleus_cue_03",
@@ -76,8 +76,8 @@
       "max_duration_seconds": 7,
       "text": "換右腳在後，膝蓋仍微彎。",
       "audio_path": "audio/stand_soleus_cue_03.mp3",
-      "measured_duration_seconds": null,
-      "audio_status": "pending"
+      "measured_duration_seconds": 2.832,
+      "audio_status": "ready"
     },
     {
       "id": "stand_soleus_cue_04",
@@ -85,8 +85,8 @@
       "max_duration_seconds": 4,
       "text": "雙腳收回。",
       "audio_path": "audio/stand_soleus_cue_04.mp3",
-      "measured_duration_seconds": null,
-      "audio_status": "pending"
+      "measured_duration_seconds": 1.32,
+      "audio_status": "ready"
     }
   ],
   "animation_brief": "靜態示意圖：面對牆或椅背，一腳在後，後膝彎曲，後腳跟留在地面。採用 calf 人物模板與方向箭頭。圖檔未放入前，播放器改顯示這張向量人物。",

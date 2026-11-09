@@ -55,8 +55,8 @@
       "max_duration_seconds": 9,
       "text": "右腳向前一小步，身體站高。",
       "audio_path": "audio/stand_hip_flexor_cue_01.mp3",
-      "measured_duration_seconds": null,
-      "audio_status": "pending"
+      "measured_duration_seconds": 2.976,
+      "audio_status": "ready"
     },
     {
       "id": "stand_hip_flexor_cue_02",
@@ -64,8 +64,8 @@
       "max_duration_seconds": 4,
       "text": "後側髖部輕輕拉開。",
       "audio_path": "audio/stand_hip_flexor_cue_02.mp3",
-      "measured_duration_seconds": null,
-      "audio_status": "pending"
+      "measured_duration_seconds": 2.208,
+      "audio_status": "ready"
     },
     {
       "id": "stand_hip_flexor_cue_03",
@@ -73,8 +73,8 @@
       "max_duration_seconds": 7,
       "text": "換左腳在前。",
       "audio_path": "audio/stand_hip_flexor_cue_03.mp3",
-      "measured_duration_seconds": null,
-      "audio_status": "pending"
+      "measured_duration_seconds": 1.512,
+      "audio_status": "ready"
     },
     {
       "id": "stand_hip_flexor_cue_04",
@@ -82,8 +82,8 @@
       "max_duration_seconds": 4,
       "text": "雙腳收回。",
       "audio_path": "audio/stand_hip_flexor_cue_04.mp3",
-      "measured_duration_seconds": null,
-      "audio_status": "pending"
+      "measured_duration_seconds": 1.32,
+      "audio_status": "ready"
     }
   ],
   "animation_brief": "靜態示意圖：雙腳站穩，身旁留出一步的空間。採用 calf 人物模板與方向箭頭。圖檔未放入前，播放器改顯示這張向量人物。",

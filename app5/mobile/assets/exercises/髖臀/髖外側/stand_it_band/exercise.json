@@ -57,8 +57,8 @@
       "max_duration_seconds": 9,
       "text": "左腳交叉到前面，左手向上向右。",
       "audio_path": "audio/stand_it_band_cue_01.mp3",
-      "measured_duration_seconds": null,
-      "audio_status": "pending"
+      "measured_duration_seconds": 3.768,
+      "audio_status": "ready"
     },
     {
       "id": "stand_it_band_cue_02",
@@ -66,8 +66,8 @@
       "max_duration_seconds": 4,
       "text": "只到髖外側輕微拉開。",
       "audio_path": "audio/stand_it_band_cue_02.mp3",
-      "measured_duration_seconds": null,
-      "audio_status": "pending"
+      "measured_duration_seconds": 2.472,
+      "audio_status": "ready"
     },
     {
       "id": "stand_it_band_cue_03",
@@ -75,8 +75,8 @@
       "max_duration_seconds": 7,
       "text": "換邊，右手向上向左。",
       "audio_path": "audio/stand_it_band_cue_03.mp3",
-      "measured_duration_seconds": null,
-      "audio_status": "pending"
+      "measured_duration_seconds": 2.352,
+      "audio_status": "ready"
     },
     {
       "id": "stand_it_band_cue_04",
@@ -84,8 +84,8 @@
       "max_duration_seconds": 4,
       "text": "手臂放下，站穩。",
       "audio_path": "audio/stand_it_band_cue_04.mp3",
-      "measured_duration_seconds": null,
-      "audio_status": "pending"
+      "measured_duration_seconds": 1.824,
+      "audio_status": "ready"
     }
   ],
   "animation_brief": "靜態示意圖：靠近牆或椅背，需要時可以扶。採用 overhead-side 人物模板與方向箭頭。圖檔未放入前，播放器改顯示這張向量人物。",

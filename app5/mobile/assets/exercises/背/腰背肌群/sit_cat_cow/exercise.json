@@ -58,8 +58,8 @@
       "max_duration_seconds": 9,
       "text": "吐氣，背慢慢變圓。",
       "audio_path": "audio/sit_cat_cow_cue_01.mp3",
-      "measured_duration_seconds": null,
-      "audio_status": "pending"
+      "measured_duration_seconds": 2.088,
+      "audio_status": "ready"
     },
     {
       "id": "sit_cat_cow_cue_02",
@@ -67,8 +67,8 @@
       "max_duration_seconds": 4,
       "text": "吸氣，胸口打開，頭不後仰。",
       "audio_path": "audio/sit_cat_cow_cue_02.mp3",
-      "measured_duration_seconds": null,
-      "audio_status": "pending"
+      "measured_duration_seconds": 2.904,
+      "audio_status": "ready"
     },
     {
       "id": "sit_cat_cow_cue_03",
@@ -76,8 +76,8 @@
       "max_duration_seconds": 7,
       "text": "再圓一次，然後打開。",
       "audio_path": "audio/sit_cat_cow_cue_03.mp3",
-      "measured_duration_seconds": null,
-      "audio_status": "pending"
+      "measured_duration_seconds": 2.256,
+      "audio_status": "ready"
     },
     {
       "id": "sit_cat_cow_cue_04",
@@ -85,8 +85,8 @@
       "max_duration_seconds": 4,
       "text": "坐直。",
       "audio_path": "audio/sit_cat_cow_cue_04.mp3",
-      "measured_duration_seconds": null,
-      "audio_status": "pending"
+      "measured_duration_seconds": 0.792,
+      "audio_status": "ready"
     }
   ],
   "animation_brief": "靜態示意圖：穩坐，雙腳踩地，雙手輕放大腿。採用 side 人物模板與方向箭頭。圖檔未放入前，播放器改顯示這張向量人物。",

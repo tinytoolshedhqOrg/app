@@ -58,8 +58,8 @@
       "max_duration_seconds": 9,
       "text": "雙臂向頭的方向伸長。",
       "audio_path": "audio/lie_long_reach_cue_01.mp3",
-      "measured_duration_seconds": null,
-      "audio_status": "pending"
+      "measured_duration_seconds": 2.496,
+      "audio_status": "ready"
     },
     {
       "id": "lie_long_reach_cue_02",
@@ -67,8 +67,8 @@
       "max_duration_seconds": 4,
       "text": "腳尖勾向自己，再放遠。",
       "audio_path": "audio/lie_long_reach_cue_02.mp3",
-      "measured_duration_seconds": null,
-      "audio_status": "pending"
+      "measured_duration_seconds": 2.64,
+      "audio_status": "ready"
     },
     {
       "id": "lie_long_reach_cue_03",
@@ -76,8 +76,8 @@
       "max_duration_seconds": 7,
       "text": "身體輕輕拉長。",
       "audio_path": "audio/lie_long_reach_cue_03.mp3",
-      "measured_duration_seconds": null,
-      "audio_status": "pending"
+      "measured_duration_seconds": 1.872,
+      "audio_status": "ready"
     },
     {
       "id": "lie_long_reach_cue_04",
@@ -85,8 +85,8 @@
       "max_duration_seconds": 4,
       "text": "手臂放回身側。",
       "audio_path": "audio/lie_long_reach_cue_04.mp3",
-      "measured_duration_seconds": null,
-      "audio_status": "pending"
+      "measured_duration_seconds": 1.776,
+      "audio_status": "ready"
     }
   ],
   "animation_brief": "靜態示意圖：仰躺，雙臂可以舉到頭的方向，雙腿自然伸直。採用 floor-arms 人物模板與方向箭頭。圖檔未放入前，播放器改顯示這張向量人物。",

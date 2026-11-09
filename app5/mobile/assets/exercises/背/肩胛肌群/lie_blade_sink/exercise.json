@@ -57,8 +57,8 @@
       "max_duration_seconds": 9,
       "text": "肩胛輕輕沉進墊面。",
       "audio_path": "audio/lie_blade_sink_cue_01.mp3",
-      "measured_duration_seconds": null,
-      "audio_status": "pending"
+      "measured_duration_seconds": 2.328,
+      "audio_status": "ready"
     },
     {
       "id": "lie_blade_sink_cue_02",
@@ -66,8 +66,8 @@
       "max_duration_seconds": 4,
       "text": "不要聳向耳朵。",
       "audio_path": "audio/lie_blade_sink_cue_02.mp3",
-      "measured_duration_seconds": null,
-      "audio_status": "pending"
+      "measured_duration_seconds": 1.656,
+      "audio_status": "ready"
     },
     {
       "id": "lie_blade_sink_cue_03",
@@ -75,8 +75,8 @@
       "max_duration_seconds": 7,
       "text": "再沉一次，脖子放鬆。",
       "audio_path": "audio/lie_blade_sink_cue_03.mp3",
-      "measured_duration_seconds": null,
-      "audio_status": "pending"
+      "measured_duration_seconds": 2.304,
+      "audio_status": "ready"
     },
     {
       "id": "lie_blade_sink_cue_04",
@@ -84,8 +84,8 @@
       "max_duration_seconds": 4,
       "text": "肩膀完全放鬆。",
       "audio_path": "audio/lie_blade_sink_cue_04.mp3",
-      "measured_duration_seconds": null,
-      "audio_status": "pending"
+      "measured_duration_seconds": 1.752,
+      "audio_status": "ready"
     }
   ],
   "animation_brief": "靜態示意圖：仰躺，雙膝彎曲，雙臂在身側，掌心向上。採用 floor-arms 人物模板與方向箭頭。圖檔未放入前，播放器改顯示這張向量人物。",
