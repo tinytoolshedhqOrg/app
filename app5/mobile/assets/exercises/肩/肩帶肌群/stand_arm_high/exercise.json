@@ -1,0 +1,109 @@
+{
+  "id": "stand_arm_high",
+  "name": "單臂上舉輕停",
+  "content_version": "0.3.0",
+  "status": "draft",
+  "review_status": "source_referenced",
+  "position": "standing",
+  "body_regions": [
+    "shoulders",
+    "arms"
+  ],
+  "movement_type": "stretch",
+  "access_tier": "free",
+  "duration_seconds": 30,
+  "gap_after_seconds": 3,
+  "equipment": [],
+  "setup": "雙腳站穩，頭上留空。",
+  "description": "一手托住另一手的手腕，拇指朝外，手臂向上舉到舒服的高度停一下，再換手。",
+  "instructions": [
+    "右手托住左手腕，左臂向上、拇指朝外",
+    "停在舉得到的高度，不聳肩",
+    "放下，換左手托住右手腕再向上",
+    "兩臂回到身側"
+  ],
+  "cautions": [
+    "只到舒服的範圍，不彈震、不憋氣。疼痛、麻木或暈眩時停止。",
+    "已有傷勢、手術後、懷孕或不確定時，先確認這個活動是否適合自己。"
+  ],
+  "movement_timeline": [
+    {
+      "start_seconds": 0,
+      "end_seconds": 10,
+      "instruction": "右手托住左手腕，左臂向上、拇指朝外"
+    },
+    {
+      "start_seconds": 10,
+      "end_seconds": 15,
+      "instruction": "停在舉得到的高度，不聳肩"
+    },
+    {
+      "start_seconds": 15,
+      "end_seconds": 25,
+      "instruction": "放下，換左手托住右手腕再向上"
+    },
+    {
+      "start_seconds": 25,
+      "end_seconds": 30,
+      "instruction": "兩臂回到身側"
+    }
+  ],
+  "voice_cues": [
+    {
+      "id": "stand_arm_high_cue_01",
+      "at_seconds": 0,
+      "max_duration_seconds": 9,
+      "text": "右手托住左手腕，左臂慢慢向上。",
+      "audio_path": "audio/stand_arm_high_cue_01.mp3",
+      "measured_duration_seconds": null,
+      "audio_status": "pending"
+    },
+    {
+      "id": "stand_arm_high_cue_02",
+      "at_seconds": 10,
+      "max_duration_seconds": 4,
+      "text": "拇指朝外，不要聳肩。",
+      "audio_path": "audio/stand_arm_high_cue_02.mp3",
+      "measured_duration_seconds": null,
+      "audio_status": "pending"
+    },
+    {
+      "id": "stand_arm_high_cue_03",
+      "at_seconds": 15,
+      "max_duration_seconds": 7,
+      "text": "換手，右臂慢慢向上。",
+      "audio_path": "audio/stand_arm_high_cue_03.mp3",
+      "measured_duration_seconds": null,
+      "audio_status": "pending"
+    },
+    {
+      "id": "stand_arm_high_cue_04",
+      "at_seconds": 22,
+      "max_duration_seconds": 4,
+      "text": "兩臂放回身側。",
+      "audio_path": "audio/stand_arm_high_cue_04.mp3",
+      "measured_duration_seconds": null,
+      "audio_status": "pending"
+    }
+  ],
+  "animation_brief": "靜態示意圖：雙腳站穩，頭上留空。採用 raise 人物模板與方向箭頭。圖檔未放入前，播放器改顯示這張向量人物。",
+  "media": {
+    "status": "illustration_pending",
+    "image_path": "illustration.png",
+    "animation_path": null,
+    "animation_format": null,
+    "animation_playback": null,
+    "animation_duration_seconds": null,
+    "figma_url": null
+  },
+  "source_ids": [
+    "worcs_stretch"
+  ],
+  "library": {
+    "body_part": "肩",
+    "muscle": "肩帶肌群",
+    "pose": "raise",
+    "source_note": "依公開英文資料改寫動作方向與注意事項。左右放在同一筆；30 秒時間軸與換側是產品編排，與來源的維持秒數不同。",
+    "checked_on": "2026-11-09"
+  }
+}

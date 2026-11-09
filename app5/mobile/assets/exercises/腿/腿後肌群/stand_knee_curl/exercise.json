@@ -1,0 +1,110 @@
+{
+  "id": "stand_knee_curl",
+  "name": "站姿腳跟後抬",
+  "content_version": "0.3.0",
+  "status": "draft",
+  "review_status": "source_referenced",
+  "position": "standing",
+  "body_regions": [
+    "knees"
+  ],
+  "movement_type": "mobility",
+  "access_tier": "free",
+  "duration_seconds": 30,
+  "gap_after_seconds": 3,
+  "equipment": [
+    "chair"
+  ],
+  "setup": "一手輕扶椅背。一腳的腳尖先留在地面，膝蓋在另一腳稍後方。",
+  "description": "腳尖不離地，腳跟慢慢朝天花板抬起，再放下，然後換腳。",
+  "instructions": [
+    "右腳尖留地，右腳跟慢慢抬起",
+    "放下，站穩",
+    "換左腳跟慢慢抬起",
+    "雙腳踩平"
+  ],
+  "cautions": [
+    "只到舒服的範圍，不彈震、不憋氣。疼痛、麻木或暈眩時停止。",
+    "已有傷勢、手術後、懷孕或不確定時，先確認這個活動是否適合自己。"
+  ],
+  "movement_timeline": [
+    {
+      "start_seconds": 0,
+      "end_seconds": 10,
+      "instruction": "右腳尖留地，右腳跟慢慢抬起"
+    },
+    {
+      "start_seconds": 10,
+      "end_seconds": 15,
+      "instruction": "放下，站穩"
+    },
+    {
+      "start_seconds": 15,
+      "end_seconds": 25,
+      "instruction": "換左腳跟慢慢抬起"
+    },
+    {
+      "start_seconds": 25,
+      "end_seconds": 30,
+      "instruction": "雙腳踩平"
+    }
+  ],
+  "voice_cues": [
+    {
+      "id": "stand_knee_curl_cue_01",
+      "at_seconds": 0,
+      "max_duration_seconds": 9,
+      "text": "右腳尖留地，腳跟慢慢抬起。",
+      "audio_path": "audio/stand_knee_curl_cue_01.mp3",
+      "measured_duration_seconds": null,
+      "audio_status": "pending"
+    },
+    {
+      "id": "stand_knee_curl_cue_02",
+      "at_seconds": 10,
+      "max_duration_seconds": 4,
+      "text": "再放下。",
+      "audio_path": "audio/stand_knee_curl_cue_02.mp3",
+      "measured_duration_seconds": null,
+      "audio_status": "pending"
+    },
+    {
+      "id": "stand_knee_curl_cue_03",
+      "at_seconds": 15,
+      "max_duration_seconds": 7,
+      "text": "換左腳跟抬起。",
+      "audio_path": "audio/stand_knee_curl_cue_03.mp3",
+      "measured_duration_seconds": null,
+      "audio_status": "pending"
+    },
+    {
+      "id": "stand_knee_curl_cue_04",
+      "at_seconds": 22,
+      "max_duration_seconds": 4,
+      "text": "雙腳踩平。",
+      "audio_path": "audio/stand_knee_curl_cue_04.mp3",
+      "measured_duration_seconds": null,
+      "audio_status": "pending"
+    }
+  ],
+  "animation_brief": "靜態示意圖：一手輕扶椅背。一腳的腳尖先留在地面，膝蓋在另一腳稍後方。採用 knee 人物模板與方向箭頭。圖檔未放入前，播放器改顯示這張向量人物。",
+  "media": {
+    "status": "illustration_pending",
+    "image_path": "illustration.png",
+    "animation_path": null,
+    "animation_format": null,
+    "animation_playback": null,
+    "animation_duration_seconds": null,
+    "figma_url": null
+  },
+  "source_ids": [
+    "ni_balance"
+  ],
+  "library": {
+    "body_part": "腿",
+    "muscle": "腿後肌群",
+    "pose": "knee",
+    "source_note": "依公開英文資料改寫動作方向與注意事項。左右放在同一筆；30 秒時間軸與換側是產品編排，與來源的維持秒數不同。",
+    "checked_on": "2026-11-09"
+  }
+}

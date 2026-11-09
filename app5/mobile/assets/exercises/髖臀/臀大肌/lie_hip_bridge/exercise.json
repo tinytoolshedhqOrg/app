@@ -1,0 +1,111 @@
+{
+  "id": "lie_hip_bridge",
+  "name": "仰躺臀部抬起",
+  "content_version": "0.3.0",
+  "status": "draft",
+  "review_status": "source_referenced",
+  "position": "lying",
+  "body_regions": [
+    "hips",
+    "waist"
+  ],
+  "movement_type": "mobility",
+  "access_tier": "free",
+  "duration_seconds": 30,
+  "gap_after_seconds": 3,
+  "equipment": [
+    "mat"
+  ],
+  "setup": "仰躺，雙膝彎曲朝上，雙腳踩穩，雙臂在身側。",
+  "description": "用手臂幫忙穩定，臀部慢慢抬起，停一下再放下。不要抬到腰痛。",
+  "instructions": [
+    "臀部慢慢向上抬",
+    "停一下，肩膀仍在墊上",
+    "再抬一次，然後慢慢放下",
+    "背部放鬆貼回墊面"
+  ],
+  "cautions": [
+    "只到舒服的範圍，不彈震、不憋氣。疼痛、麻木或暈眩時停止。",
+    "已有傷勢、手術後、懷孕或不確定時，先確認這個活動是否適合自己。"
+  ],
+  "movement_timeline": [
+    {
+      "start_seconds": 0,
+      "end_seconds": 10,
+      "instruction": "臀部慢慢向上抬"
+    },
+    {
+      "start_seconds": 10,
+      "end_seconds": 15,
+      "instruction": "停一下，肩膀仍在墊上"
+    },
+    {
+      "start_seconds": 15,
+      "end_seconds": 25,
+      "instruction": "再抬一次，然後慢慢放下"
+    },
+    {
+      "start_seconds": 25,
+      "end_seconds": 30,
+      "instruction": "背部放鬆貼回墊面"
+    }
+  ],
+  "voice_cues": [
+    {
+      "id": "lie_hip_bridge_cue_01",
+      "at_seconds": 0,
+      "max_duration_seconds": 9,
+      "text": "臀部慢慢向上抬。",
+      "audio_path": "audio/lie_hip_bridge_cue_01.mp3",
+      "measured_duration_seconds": null,
+      "audio_status": "pending"
+    },
+    {
+      "id": "lie_hip_bridge_cue_02",
+      "at_seconds": 10,
+      "max_duration_seconds": 4,
+      "text": "不要抬到腰痛。",
+      "audio_path": "audio/lie_hip_bridge_cue_02.mp3",
+      "measured_duration_seconds": null,
+      "audio_status": "pending"
+    },
+    {
+      "id": "lie_hip_bridge_cue_03",
+      "at_seconds": 15,
+      "max_duration_seconds": 7,
+      "text": "再抬一次，然後放下。",
+      "audio_path": "audio/lie_hip_bridge_cue_03.mp3",
+      "measured_duration_seconds": null,
+      "audio_status": "pending"
+    },
+    {
+      "id": "lie_hip_bridge_cue_04",
+      "at_seconds": 22,
+      "max_duration_seconds": 4,
+      "text": "背部放鬆。",
+      "audio_path": "audio/lie_hip_bridge_cue_04.mp3",
+      "measured_duration_seconds": null,
+      "audio_status": "pending"
+    }
+  ],
+  "animation_brief": "靜態示意圖：仰躺，雙膝彎曲朝上，雙腳踩穩，雙臂在身側。採用 glute 人物模板與方向箭頭。圖檔未放入前，播放器改顯示這張向量人物。",
+  "media": {
+    "status": "illustration_pending",
+    "image_path": "illustration.png",
+    "animation_path": null,
+    "animation_format": null,
+    "animation_playback": null,
+    "animation_duration_seconds": null,
+    "figma_url": null
+  },
+  "source_ids": [
+    "ni_hip"
+  ],
+  "library": {
+    "body_part": "髖臀",
+    "muscle": "臀大肌",
+    "pose": "glute",
+    "source_note": "依公開英文資料改寫動作方向與注意事項。左右放在同一筆；30 秒時間軸與換側是產品編排，與來源的維持秒數不同。",
+    "checked_on": "2026-11-09"
+  }
+}

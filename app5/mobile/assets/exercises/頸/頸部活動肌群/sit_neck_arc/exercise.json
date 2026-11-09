@@ -1,0 +1,110 @@
+{
+  "id": "sit_neck_arc",
+  "name": "坐姿鼻子小圈",
+  "content_version": "0.3.0",
+  "status": "draft",
+  "review_status": "source_referenced",
+  "position": "sitting",
+  "body_regions": [
+    "neck"
+  ],
+  "movement_type": "mobility",
+  "access_tier": "free",
+  "duration_seconds": 30,
+  "gap_after_seconds": 3,
+  "equipment": [
+    "chair"
+  ],
+  "setup": "穩坐無輪椅，想像面前有一個小時鐘。",
+  "description": "用鼻尖在舒服範圍裡畫很小的圓，再換方向。不仰頭到底。",
+  "instructions": [
+    "鼻尖慢慢畫很小的圓",
+    "圓要小，肩膀不要跟著轉",
+    "換反方向，一樣畫小圓",
+    "停在正中，眼睛看前方"
+  ],
+  "cautions": [
+    "只畫小圈，不仰頭到底。暈眩、疼痛或麻木時停止。",
+    "已有傷勢、手術後、懷孕或不確定時，先確認這個活動是否適合自己。"
+  ],
+  "movement_timeline": [
+    {
+      "start_seconds": 0,
+      "end_seconds": 10,
+      "instruction": "鼻尖慢慢畫很小的圓"
+    },
+    {
+      "start_seconds": 10,
+      "end_seconds": 15,
+      "instruction": "圓要小，肩膀不要跟著轉"
+    },
+    {
+      "start_seconds": 15,
+      "end_seconds": 25,
+      "instruction": "換反方向，一樣畫小圓"
+    },
+    {
+      "start_seconds": 25,
+      "end_seconds": 30,
+      "instruction": "停在正中，眼睛看前方"
+    }
+  ],
+  "voice_cues": [
+    {
+      "id": "sit_neck_arc_cue_01",
+      "at_seconds": 0,
+      "max_duration_seconds": 9,
+      "text": "鼻尖慢慢畫一個小圓。",
+      "audio_path": "audio/sit_neck_arc_cue_01.mp3",
+      "measured_duration_seconds": null,
+      "audio_status": "pending"
+    },
+    {
+      "id": "sit_neck_arc_cue_02",
+      "at_seconds": 10,
+      "max_duration_seconds": 4,
+      "text": "圓小一點，肩膀不動。",
+      "audio_path": "audio/sit_neck_arc_cue_02.mp3",
+      "measured_duration_seconds": null,
+      "audio_status": "pending"
+    },
+    {
+      "id": "sit_neck_arc_cue_03",
+      "at_seconds": 15,
+      "max_duration_seconds": 7,
+      "text": "換反方向，繼續小圓。",
+      "audio_path": "audio/sit_neck_arc_cue_03.mp3",
+      "measured_duration_seconds": null,
+      "audio_status": "pending"
+    },
+    {
+      "id": "sit_neck_arc_cue_04",
+      "at_seconds": 22,
+      "max_duration_seconds": 4,
+      "text": "慢慢停在中間。",
+      "audio_path": "audio/sit_neck_arc_cue_04.mp3",
+      "measured_duration_seconds": null,
+      "audio_status": "pending"
+    }
+  ],
+  "animation_brief": "靜態示意圖：穩坐無輪椅，想像面前有一個小時鐘。採用 neck 人物模板與方向箭頭。圖檔未放入前，播放器改顯示這張向量人物。",
+  "media": {
+    "status": "illustration_pending",
+    "image_path": "illustration.png",
+    "animation_path": null,
+    "animation_format": null,
+    "animation_playback": null,
+    "animation_duration_seconds": null,
+    "figma_url": null
+  },
+  "source_ids": [
+    "clev_yoga"
+  ],
+  "library": {
+    "body_part": "頸",
+    "muscle": "頸部活動肌群",
+    "pose": "neck",
+    "source_note": "依公開英文資料改寫動作方向與注意事項。左右放在同一筆；30 秒時間軸與換側是產品編排，與來源的維持秒數不同。",
+    "checked_on": "2026-11-09"
+  }
+}

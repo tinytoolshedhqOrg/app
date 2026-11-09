@@ -1,0 +1,589 @@
+{
+  "style": {
+    "summary": "Match the app's existing exercise diagrams, which are flat vector figures drawn in code (src/components/ExerciseDiagram.tsx), not photographs. Square canvas, solid background #F5F8FE, no text and no watermark. A simple geometric adult: rounded thick limbs, no facial features, navy hair cap #25334B, skin #DBAF91, cobalt shirt #3F80EA, navy pants #25334B. A soft ground ellipse #DCE6F7. Sitting figures include a simple chair in #91A5C5. Lying figures are supine, head toward the left, on a thin mat line. One cobalt dashed arrow #3F80EA with a small arrowhead shows the movement. Static pose only: no photo, 3D, anime, or gradients.",
+    "reference": "src/components/ExerciseDiagram.tsx",
+    "format": "png",
+    "width": 440,
+    "height": 440,
+    "background": "#F5F8FE",
+    "note": "Until illustration.png exists, ExerciseDiagram draws the vector figure. After the PNG is added, run npm run content:build so the image is statically required."
+  },
+  "illustrations": [
+    {
+      "id": "sit_chin_tuck",
+      "target_path": "assets/exercises/頸/深層頸屈肌/sit_chin_tuck/illustration.png",
+      "format": "png",
+      "width": 440,
+      "height": 440,
+      "background": "#F5F8FE",
+      "prompt": "Match the app's existing exercise diagrams, which are flat vector figures drawn in code (src/components/ExerciseDiagram.tsx), not photographs. Square canvas, solid background #F5F8FE, no text and no watermark. A simple geometric adult: rounded thick limbs, no facial features, navy hair cap #25334B, skin #DBAF91, cobalt shirt #3F80EA, navy pants #25334B. A soft ground ellipse #DCE6F7. Sitting figures include a simple chair in #91A5C5. Lying figures are supine, head toward the left, on a thin mat line. One cobalt dashed arrow #3F80EA with a small arrowhead shows the movement. Static pose only: no photo, 3D, anime, or gradients. Seated adult on a simple chair, feet flat, eyes level. Chin slides straight back into a small double chin without looking up or down. Dashed arrow points backward from the chin."
+    },
+    {
+      "id": "sit_chin_chest",
+      "target_path": "assets/exercises/頸/頸後肌群/sit_chin_chest/illustration.png",
+      "format": "png",
+      "width": 440,
+      "height": 440,
+      "background": "#F5F8FE",
+      "prompt": "Match the app's existing exercise diagrams, which are flat vector figures drawn in code (src/components/ExerciseDiagram.tsx), not photographs. Square canvas, solid background #F5F8FE, no text and no watermark. A simple geometric adult: rounded thick limbs, no facial features, navy hair cap #25334B, skin #DBAF91, cobalt shirt #3F80EA, navy pants #25334B. A soft ground ellipse #DCE6F7. Sitting figures include a simple chair in #91A5C5. Lying figures are supine, head toward the left, on a thin mat line. One cobalt dashed arrow #3F80EA with a small arrowhead shows the movement. Static pose only: no photo, 3D, anime, or gradients. Seated adult, shoulders down. Chin nods toward the upper chest, neck long, not jutting forward. Dashed arrow curves downward from the nose toward the chest."
+    },
+    {
+      "id": "sit_neck_diagonal",
+      "target_path": "assets/exercises/頸/頸後側肌群/sit_neck_diagonal/illustration.png",
+      "format": "png",
+      "width": 440,
+      "height": 440,
+      "background": "#F5F8FE",
+      "prompt": "Match the app's existing exercise diagrams, which are flat vector figures drawn in code (src/components/ExerciseDiagram.tsx), not photographs. Square canvas, solid background #F5F8FE, no text and no watermark. A simple geometric adult: rounded thick limbs, no facial features, navy hair cap #25334B, skin #DBAF91, cobalt shirt #3F80EA, navy pants #25334B. A soft ground ellipse #DCE6F7. Sitting figures include a simple chair in #91A5C5. Lying figures are supine, head toward the left, on a thin mat line. One cobalt dashed arrow #3F80EA with a small arrowhead shows the movement. Static pose only: no photo, 3D, anime, or gradients. Seated adult looking slightly down and toward the right shoulder. The right hand rests lightly on the side of the head and does not pull. Dashed arrow shows the nose moving down and right."
+    },
+    {
+      "id": "sit_neck_arc",
+      "target_path": "assets/exercises/頸/頸部活動肌群/sit_neck_arc/illustration.png",
+      "format": "png",
+      "width": 440,
+      "height": 440,
+      "background": "#F5F8FE",
+      "prompt": "Match the app's existing exercise diagrams, which are flat vector figures drawn in code (src/components/ExerciseDiagram.tsx), not photographs. Square canvas, solid background #F5F8FE, no text and no watermark. A simple geometric adult: rounded thick limbs, no facial features, navy hair cap #25334B, skin #DBAF91, cobalt shirt #3F80EA, navy pants #25334B. A soft ground ellipse #DCE6F7. Sitting figures include a simple chair in #91A5C5. Lying figures are supine, head toward the left, on a thin mat line. One cobalt dashed arrow #3F80EA with a small arrowhead shows the movement. Static pose only: no photo, 3D, anime, or gradients. Seated adult facing forward. The nose traces a very small circle in front of the face, chin stays mostly level. A small circular dashed arrow sits in front of the nose."
+    },
+    {
+      "id": "sit_mountain",
+      "target_path": "assets/exercises/頸/頸部姿勢肌群/sit_mountain/illustration.png",
+      "format": "png",
+      "width": 440,
+      "height": 440,
+      "background": "#F5F8FE",
+      "prompt": "Match the app's existing exercise diagrams, which are flat vector figures drawn in code (src/components/ExerciseDiagram.tsx), not photographs. Square canvas, solid background #F5F8FE, no text and no watermark. A simple geometric adult: rounded thick limbs, no facial features, navy hair cap #25334B, skin #DBAF91, cobalt shirt #3F80EA, navy pants #25334B. A soft ground ellipse #DCE6F7. Sitting figures include a simple chair in #91A5C5. Lying figures are supine, head toward the left, on a thin mat line. One cobalt dashed arrow #3F80EA with a small arrowhead shows the movement. Static pose only: no photo, 3D, anime, or gradients. Seated adult at the front edge of a chair, spine tall, chin slightly tucked, shoulders drawn up then back and down. Dashed arrows show the shoulders moving back and down."
+    },
+    {
+      "id": "stand_arm_swing",
+      "target_path": "assets/exercises/肩/肩帶肌群/stand_arm_swing/illustration.png",
+      "format": "png",
+      "width": 440,
+      "height": 440,
+      "background": "#F5F8FE",
+      "prompt": "Match the app's existing exercise diagrams, which are flat vector figures drawn in code (src/components/ExerciseDiagram.tsx), not photographs. Square canvas, solid background #F5F8FE, no text and no watermark. A simple geometric adult: rounded thick limbs, no facial features, navy hair cap #25334B, skin #DBAF91, cobalt shirt #3F80EA, navy pants #25334B. A soft ground ellipse #DCE6F7. Sitting figures include a simple chair in #91A5C5. Lying figures are supine, head toward the left, on a thin mat line. One cobalt dashed arrow #3F80EA with a small arrowhead shows the movement. Static pose only: no photo, 3D, anime, or gradients. Adult leaning slightly forward, left hand on a chair back, right arm hanging and swinging forward and back. Dashed arrow runs forward and back along the hanging hand."
+    },
+    {
+      "id": "stand_arm_sway",
+      "target_path": "assets/exercises/肩/肩帶肌群/stand_arm_sway/illustration.png",
+      "format": "png",
+      "width": 440,
+      "height": 440,
+      "background": "#F5F8FE",
+      "prompt": "Match the app's existing exercise diagrams, which are flat vector figures drawn in code (src/components/ExerciseDiagram.tsx), not photographs. Square canvas, solid background #F5F8FE, no text and no watermark. A simple geometric adult: rounded thick limbs, no facial features, navy hair cap #25334B, skin #DBAF91, cobalt shirt #3F80EA, navy pants #25334B. A soft ground ellipse #DCE6F7. Sitting figures include a simple chair in #91A5C5. Lying figures are supine, head toward the left, on a thin mat line. One cobalt dashed arrow #3F80EA with a small arrowhead shows the movement. Static pose only: no photo, 3D, anime, or gradients. Adult leaning slightly forward with one hand on a chair. The free arm hangs and swings side to side across the body. Dashed arrow shows the sideways path of the hand."
+    },
+    {
+      "id": "stand_arm_circles",
+      "target_path": "assets/exercises/肩/肩帶肌群/stand_arm_circles/illustration.png",
+      "format": "png",
+      "width": 440,
+      "height": 440,
+      "background": "#F5F8FE",
+      "prompt": "Match the app's existing exercise diagrams, which are flat vector figures drawn in code (src/components/ExerciseDiagram.tsx), not photographs. Square canvas, solid background #F5F8FE, no text and no watermark. A simple geometric adult: rounded thick limbs, no facial features, navy hair cap #25334B, skin #DBAF91, cobalt shirt #3F80EA, navy pants #25334B. A soft ground ellipse #DCE6F7. Sitting figures include a simple chair in #91A5C5. Lying figures are supine, head toward the left, on a thin mat line. One cobalt dashed arrow #3F80EA with a small arrowhead shows the movement. Static pose only: no photo, 3D, anime, or gradients. Adult leaning forward, one hand on a chair, the free hand hanging and drawing a small circle. A small circular dashed arrow surrounds the hanging hand."
+    },
+    {
+      "id": "lie_arm_overhead",
+      "target_path": "assets/exercises/肩/肩帶肌群/lie_arm_overhead/illustration.png",
+      "format": "png",
+      "width": 440,
+      "height": 440,
+      "background": "#F5F8FE",
+      "prompt": "Match the app's existing exercise diagrams, which are flat vector figures drawn in code (src/components/ExerciseDiagram.tsx), not photographs. Square canvas, solid background #F5F8FE, no text and no watermark. A simple geometric adult: rounded thick limbs, no facial features, navy hair cap #25334B, skin #DBAF91, cobalt shirt #3F80EA, navy pants #25334B. A soft ground ellipse #DCE6F7. Sitting figures include a simple chair in #91A5C5. Lying figures are supine, head toward the left, on a thin mat line. One cobalt dashed arrow #3F80EA with a small arrowhead shows the movement. Static pose only: no photo, 3D, anime, or gradients. Supine adult, knees bent, feet on the mat, hands clasped and lifted over the chest toward overhead. Dashed arrow points from the hands toward the space above the head."
+    },
+    {
+      "id": "stand_wall_slide",
+      "target_path": "assets/exercises/肩/肩帶肌群/stand_wall_slide/illustration.png",
+      "format": "png",
+      "width": 440,
+      "height": 440,
+      "background": "#F5F8FE",
+      "prompt": "Match the app's existing exercise diagrams, which are flat vector figures drawn in code (src/components/ExerciseDiagram.tsx), not photographs. Square canvas, solid background #F5F8FE, no text and no watermark. A simple geometric adult: rounded thick limbs, no facial features, navy hair cap #25334B, skin #DBAF91, cobalt shirt #3F80EA, navy pants #25334B. A soft ground ellipse #DCE6F7. Sitting figures include a simple chair in #91A5C5. Lying figures are supine, head toward the left, on a thin mat line. One cobalt dashed arrow #3F80EA with a small arrowhead shows the movement. Static pose only: no photo, 3D, anime, or gradients. Adult facing a wall, elbows bent about ninety degrees, forearms on the wall, sliding both arms upward. Dashed arrows point up along the forearms."
+    },
+    {
+      "id": "sit_forearm_open",
+      "target_path": "assets/exercises/肩/肩帶肌群/sit_forearm_open/illustration.png",
+      "format": "png",
+      "width": 440,
+      "height": 440,
+      "background": "#F5F8FE",
+      "prompt": "Match the app's existing exercise diagrams, which are flat vector figures drawn in code (src/components/ExerciseDiagram.tsx), not photographs. Square canvas, solid background #F5F8FE, no text and no watermark. A simple geometric adult: rounded thick limbs, no facial features, navy hair cap #25334B, skin #DBAF91, cobalt shirt #3F80EA, navy pants #25334B. A soft ground ellipse #DCE6F7. Sitting figures include a simple chair in #91A5C5. Lying figures are supine, head toward the left, on a thin mat line. One cobalt dashed arrow #3F80EA with a small arrowhead shows the movement. Static pose only: no photo, 3D, anime, or gradients. Seated adult, elbows bent at the sides, palms up. Forearms open outward while upper arms stay still. Dashed arrows point outward from both hands."
+    },
+    {
+      "id": "stand_wall_angel",
+      "target_path": "assets/exercises/肩/肩帶肌群/stand_wall_angel/illustration.png",
+      "format": "png",
+      "width": 440,
+      "height": 440,
+      "background": "#F5F8FE",
+      "prompt": "Match the app's existing exercise diagrams, which are flat vector figures drawn in code (src/components/ExerciseDiagram.tsx), not photographs. Square canvas, solid background #F5F8FE, no text and no watermark. A simple geometric adult: rounded thick limbs, no facial features, navy hair cap #25334B, skin #DBAF91, cobalt shirt #3F80EA, navy pants #25334B. A soft ground ellipse #DCE6F7. Sitting figures include a simple chair in #91A5C5. Lying figures are supine, head toward the left, on a thin mat line. One cobalt dashed arrow #3F80EA with a small arrowhead shows the movement. Static pose only: no photo, 3D, anime, or gradients. Adult standing with back, head, and hips lightly against a wall, palms forward, arms sliding out and up while the backs of the hands try to stay on the wall. Dashed arrows point upward."
+    },
+    {
+      "id": "stand_arm_cross",
+      "target_path": "assets/exercises/肩/肩帶肌群/stand_arm_cross/illustration.png",
+      "format": "png",
+      "width": 440,
+      "height": 440,
+      "background": "#F5F8FE",
+      "prompt": "Match the app's existing exercise diagrams, which are flat vector figures drawn in code (src/components/ExerciseDiagram.tsx), not photographs. Square canvas, solid background #F5F8FE, no text and no watermark. A simple geometric adult: rounded thick limbs, no facial features, navy hair cap #25334B, skin #DBAF91, cobalt shirt #3F80EA, navy pants #25334B. A soft ground ellipse #DCE6F7. Sitting figures include a simple chair in #91A5C5. Lying figures are supine, head toward the left, on a thin mat line. One cobalt dashed arrow #3F80EA with a small arrowhead shows the movement. Static pose only: no photo, 3D, anime, or gradients. Standing adult hugging the right arm across the chest, left hand resting above the right elbow. Dashed arrow points the right hand across the body."
+    },
+    {
+      "id": "lie_snow_angel",
+      "target_path": "assets/exercises/肩/肩帶肌群/lie_snow_angel/illustration.png",
+      "format": "png",
+      "width": 440,
+      "height": 440,
+      "background": "#F5F8FE",
+      "prompt": "Match the app's existing exercise diagrams, which are flat vector figures drawn in code (src/components/ExerciseDiagram.tsx), not photographs. Square canvas, solid background #F5F8FE, no text and no watermark. A simple geometric adult: rounded thick limbs, no facial features, navy hair cap #25334B, skin #DBAF91, cobalt shirt #3F80EA, navy pants #25334B. A soft ground ellipse #DCE6F7. Sitting figures include a simple chair in #91A5C5. Lying figures are supine, head toward the left, on a thin mat line. One cobalt dashed arrow #3F80EA with a small arrowhead shows the movement. Static pose only: no photo, 3D, anime, or gradients. Supine adult with arms sliding along the mat from the sides up toward overhead, palms up, like a small snow angel. Dashed arrows follow both arms outward and up."
+    },
+    {
+      "id": "stand_arm_high",
+      "target_path": "assets/exercises/肩/肩帶肌群/stand_arm_high/illustration.png",
+      "format": "png",
+      "width": 440,
+      "height": 440,
+      "background": "#F5F8FE",
+      "prompt": "Match the app's existing exercise diagrams, which are flat vector figures drawn in code (src/components/ExerciseDiagram.tsx), not photographs. Square canvas, solid background #F5F8FE, no text and no watermark. A simple geometric adult: rounded thick limbs, no facial features, navy hair cap #25334B, skin #DBAF91, cobalt shirt #3F80EA, navy pants #25334B. A soft ground ellipse #DCE6F7. Sitting figures include a simple chair in #91A5C5. Lying figures are supine, head toward the left, on a thin mat line. One cobalt dashed arrow #3F80EA with a small arrowhead shows the movement. Static pose only: no photo, 3D, anime, or gradients. Standing adult lifting the left arm upward, thumb pointing out, right hand supporting the left wrist. Dashed arrow points up along the raised arm."
+    },
+    {
+      "id": "lie_elbow_open",
+      "target_path": "assets/exercises/肩/肩帶肌群/lie_elbow_open/illustration.png",
+      "format": "png",
+      "width": 440,
+      "height": 440,
+      "background": "#F5F8FE",
+      "prompt": "Match the app's existing exercise diagrams, which are flat vector figures drawn in code (src/components/ExerciseDiagram.tsx), not photographs. Square canvas, solid background #F5F8FE, no text and no watermark. A simple geometric adult: rounded thick limbs, no facial features, navy hair cap #25334B, skin #DBAF91, cobalt shirt #3F80EA, navy pants #25334B. A soft ground ellipse #DCE6F7. Sitting figures include a simple chair in #91A5C5. Lying figures are supine, head toward the left, on a thin mat line. One cobalt dashed arrow #3F80EA with a small arrowhead shows the movement. Static pose only: no photo, 3D, anime, or gradients. Supine adult with hands behind the neck and elbows lowering out toward the mat. Dashed arrows point from the elbows down and out."
+    },
+    {
+      "id": "sit_arm_reach",
+      "target_path": "assets/exercises/肩/肩帶肌群/sit_arm_reach/illustration.png",
+      "format": "png",
+      "width": 440,
+      "height": 440,
+      "background": "#F5F8FE",
+      "prompt": "Match the app's existing exercise diagrams, which are flat vector figures drawn in code (src/components/ExerciseDiagram.tsx), not photographs. Square canvas, solid background #F5F8FE, no text and no watermark. A simple geometric adult: rounded thick limbs, no facial features, navy hair cap #25334B, skin #DBAF91, cobalt shirt #3F80EA, navy pants #25334B. A soft ground ellipse #DCE6F7. Sitting figures include a simple chair in #91A5C5. Lying figures are supine, head toward the left, on a thin mat line. One cobalt dashed arrow #3F80EA with a small arrowhead shows the movement. Static pose only: no photo, 3D, anime, or gradients. Seated adult moving from palms together at the chest to both arms reaching overhead in a V, palms forward. Dashed arrows point up and out."
+    },
+    {
+      "id": "stand_door_chest",
+      "target_path": "assets/exercises/胸/胸大肌/stand_door_chest/illustration.png",
+      "format": "png",
+      "width": 440,
+      "height": 440,
+      "background": "#F5F8FE",
+      "prompt": "Match the app's existing exercise diagrams, which are flat vector figures drawn in code (src/components/ExerciseDiagram.tsx), not photographs. Square canvas, solid background #F5F8FE, no text and no watermark. A simple geometric adult: rounded thick limbs, no facial features, navy hair cap #25334B, skin #DBAF91, cobalt shirt #3F80EA, navy pants #25334B. A soft ground ellipse #DCE6F7. Sitting figures include a simple chair in #91A5C5. Lying figures are supine, head toward the left, on a thin mat line. One cobalt dashed arrow #3F80EA with a small arrowhead shows the movement. Static pose only: no photo, 3D, anime, or gradients. Adult in an open doorway, elbows bent, forearms on the door frame, one foot stepped back, torso leaning slightly forward. Dashed arrow points the chest gently forward."
+    },
+    {
+      "id": "stand_wall_press",
+      "target_path": "assets/exercises/胸/胸大肌/stand_wall_press/illustration.png",
+      "format": "png",
+      "width": 440,
+      "height": 440,
+      "background": "#F5F8FE",
+      "prompt": "Match the app's existing exercise diagrams, which are flat vector figures drawn in code (src/components/ExerciseDiagram.tsx), not photographs. Square canvas, solid background #F5F8FE, no text and no watermark. A simple geometric adult: rounded thick limbs, no facial features, navy hair cap #25334B, skin #DBAF91, cobalt shirt #3F80EA, navy pants #25334B. A soft ground ellipse #DCE6F7. Sitting figures include a simple chair in #91A5C5. Lying figures are supine, head toward the left, on a thin mat line. One cobalt dashed arrow #3F80EA with a small arrowhead shows the movement. Static pose only: no photo, 3D, anime, or gradients. Adult facing a wall in a small standing push-up, hands at chest height, elbows close to the ribs, body in a straight line. Dashed arrow points the chest toward the wall."
+    },
+    {
+      "id": "sit_heart_open",
+      "target_path": "assets/exercises/胸/胸大肌/sit_heart_open/illustration.png",
+      "format": "png",
+      "width": 440,
+      "height": 440,
+      "background": "#F5F8FE",
+      "prompt": "Match the app's existing exercise diagrams, which are flat vector figures drawn in code (src/components/ExerciseDiagram.tsx), not photographs. Square canvas, solid background #F5F8FE, no text and no watermark. A simple geometric adult: rounded thick limbs, no facial features, navy hair cap #25334B, skin #DBAF91, cobalt shirt #3F80EA, navy pants #25334B. A soft ground ellipse #DCE6F7. Sitting figures include a simple chair in #91A5C5. Lying figures are supine, head toward the left, on a thin mat line. One cobalt dashed arrow #3F80EA with a small arrowhead shows the movement. Static pose only: no photo, 3D, anime, or gradients. Seated adult at the front of a chair, spine tall, shoulder blades drawn gently back and down, arms relaxed at the sides. Dashed arrows point the shoulder blades back and down."
+    },
+    {
+      "id": "sit_cat_cow",
+      "target_path": "assets/exercises/背/腰背肌群/sit_cat_cow/illustration.png",
+      "format": "png",
+      "width": 440,
+      "height": 440,
+      "background": "#F5F8FE",
+      "prompt": "Match the app's existing exercise diagrams, which are flat vector figures drawn in code (src/components/ExerciseDiagram.tsx), not photographs. Square canvas, solid background #F5F8FE, no text and no watermark. A simple geometric adult: rounded thick limbs, no facial features, navy hair cap #25334B, skin #DBAF91, cobalt shirt #3F80EA, navy pants #25334B. A soft ground ellipse #DCE6F7. Sitting figures include a simple chair in #91A5C5. Lying figures are supine, head toward the left, on a thin mat line. One cobalt dashed arrow #3F80EA with a small arrowhead shows the movement. Static pose only: no photo, 3D, anime, or gradients. Seated adult with hands on the thighs, spine rounded and chin tucked, as the cat phase of seated cat-cow. A second small dashed arrow hints the chest will open on the next breath. Arrow shows the back rounding upward."
+    },
+    {
+      "id": "sit_forward_rest",
+      "target_path": "assets/exercises/背/腰背肌群/sit_forward_rest/illustration.png",
+      "format": "png",
+      "width": 440,
+      "height": 440,
+      "background": "#F5F8FE",
+      "prompt": "Match the app's existing exercise diagrams, which are flat vector figures drawn in code (src/components/ExerciseDiagram.tsx), not photographs. Square canvas, solid background #F5F8FE, no text and no watermark. A simple geometric adult: rounded thick limbs, no facial features, navy hair cap #25334B, skin #DBAF91, cobalt shirt #3F80EA, navy pants #25334B. A soft ground ellipse #DCE6F7. Sitting figures include a simple chair in #91A5C5. Lying figures are supine, head toward the left, on a thin mat line. One cobalt dashed arrow #3F80EA with a small arrowhead shows the movement. Static pose only: no photo, 3D, anime, or gradients. Seated adult folded gently forward, forearms on the thighs, one hand supporting the forehead, spine long rather than collapsed. Dashed arrow points the torso slightly forward."
+    },
+    {
+      "id": "stand_wall_align",
+      "target_path": "assets/exercises/背/姿勢肌群/stand_wall_align/illustration.png",
+      "format": "png",
+      "width": 440,
+      "height": 440,
+      "background": "#F5F8FE",
+      "prompt": "Match the app's existing exercise diagrams, which are flat vector figures drawn in code (src/components/ExerciseDiagram.tsx), not photographs. Square canvas, solid background #F5F8FE, no text and no watermark. A simple geometric adult: rounded thick limbs, no facial features, navy hair cap #25334B, skin #DBAF91, cobalt shirt #3F80EA, navy pants #25334B. A soft ground ellipse #DCE6F7. Sitting figures include a simple chair in #91A5C5. Lying figures are supine, head toward the left, on a thin mat line. One cobalt dashed arrow #3F80EA with a small arrowhead shows the movement. Static pose only: no photo, 3D, anime, or gradients. Adult standing against a wall with the back of the head, shoulder blades, hips, and the backs of the legs lightly touching. Chin is slightly tucked. Small dashed arrows show the head and pelvis moving back toward the wall."
+    },
+    {
+      "id": "lie_blade_sink",
+      "target_path": "assets/exercises/背/肩胛肌群/lie_blade_sink/illustration.png",
+      "format": "png",
+      "width": 440,
+      "height": 440,
+      "background": "#F5F8FE",
+      "prompt": "Match the app's existing exercise diagrams, which are flat vector figures drawn in code (src/components/ExerciseDiagram.tsx), not photographs. Square canvas, solid background #F5F8FE, no text and no watermark. A simple geometric adult: rounded thick limbs, no facial features, navy hair cap #25334B, skin #DBAF91, cobalt shirt #3F80EA, navy pants #25334B. A soft ground ellipse #DCE6F7. Sitting figures include a simple chair in #91A5C5. Lying figures are supine, head toward the left, on a thin mat line. One cobalt dashed arrow #3F80EA with a small arrowhead shows the movement. Static pose only: no photo, 3D, anime, or gradients. Supine adult, knees bent, arms by the sides with palms up, shoulder blades pressing gently down into the mat. Dashed arrows point the shoulder blades down and back."
+    },
+    {
+      "id": "lie_both_knees",
+      "target_path": "assets/exercises/背/腰背肌群/lie_both_knees/illustration.png",
+      "format": "png",
+      "width": 440,
+      "height": 440,
+      "background": "#F5F8FE",
+      "prompt": "Match the app's existing exercise diagrams, which are flat vector figures drawn in code (src/components/ExerciseDiagram.tsx), not photographs. Square canvas, solid background #F5F8FE, no text and no watermark. A simple geometric adult: rounded thick limbs, no facial features, navy hair cap #25334B, skin #DBAF91, cobalt shirt #3F80EA, navy pants #25334B. A soft ground ellipse #DCE6F7. Sitting figures include a simple chair in #91A5C5. Lying figures are supine, head toward the left, on a thin mat line. One cobalt dashed arrow #3F80EA with a small arrowhead shows the movement. Static pose only: no photo, 3D, anime, or gradients. Supine adult hugging both thighs so both knees come toward the chest together, head resting on the mat. Dashed arrow points the knees toward the chest."
+    },
+    {
+      "id": "lie_long_reach",
+      "target_path": "assets/exercises/背/全身伸展/lie_long_reach/illustration.png",
+      "format": "png",
+      "width": 440,
+      "height": 440,
+      "background": "#F5F8FE",
+      "prompt": "Match the app's existing exercise diagrams, which are flat vector figures drawn in code (src/components/ExerciseDiagram.tsx), not photographs. Square canvas, solid background #F5F8FE, no text and no watermark. A simple geometric adult: rounded thick limbs, no facial features, navy hair cap #25334B, skin #DBAF91, cobalt shirt #3F80EA, navy pants #25334B. A soft ground ellipse #DCE6F7. Sitting figures include a simple chair in #91A5C5. Lying figures are supine, head toward the left, on a thin mat line. One cobalt dashed arrow #3F80EA with a small arrowhead shows the movement. Static pose only: no photo, 3D, anime, or gradients. Supine adult reaching both arms overhead and lengthening the legs, toes flexing up. Dashed arrows point the hands overhead and the toes toward the knees."
+    },
+    {
+      "id": "sit_elbow_long",
+      "target_path": "assets/exercises/手臂/肘關節肌群/sit_elbow_long/illustration.png",
+      "format": "png",
+      "width": 440,
+      "height": 440,
+      "background": "#F5F8FE",
+      "prompt": "Match the app's existing exercise diagrams, which are flat vector figures drawn in code (src/components/ExerciseDiagram.tsx), not photographs. Square canvas, solid background #F5F8FE, no text and no watermark. A simple geometric adult: rounded thick limbs, no facial features, navy hair cap #25334B, skin #DBAF91, cobalt shirt #3F80EA, navy pants #25334B. A soft ground ellipse #DCE6F7. Sitting figures include a simple chair in #91A5C5. Lying figures are supine, head toward the left, on a thin mat line. One cobalt dashed arrow #3F80EA with a small arrowhead shows the movement. Static pose only: no photo, 3D, anime, or gradients. Seated adult straightening the right elbow, palm turned up, left hand supporting the right wrist. Dashed arrow points along the forearm as it turns palm-up."
+    },
+    {
+      "id": "stand_elbow_row",
+      "target_path": "assets/exercises/背/上背肌群/stand_elbow_row/illustration.png",
+      "format": "png",
+      "width": 440,
+      "height": 440,
+      "background": "#F5F8FE",
+      "prompt": "Match the app's existing exercise diagrams, which are flat vector figures drawn in code (src/components/ExerciseDiagram.tsx), not photographs. Square canvas, solid background #F5F8FE, no text and no watermark. A simple geometric adult: rounded thick limbs, no facial features, navy hair cap #25334B, skin #DBAF91, cobalt shirt #3F80EA, navy pants #25334B. A soft ground ellipse #DCE6F7. Sitting figures include a simple chair in #91A5C5. Lying figures are supine, head toward the left, on a thin mat line. One cobalt dashed arrow #3F80EA with a small arrowhead shows the movement. Static pose only: no photo, 3D, anime, or gradients. Standing adult with elbows bent close to the ribs, drawing the elbows straight back and squeezing the shoulder blades. Dashed arrows point backward along the elbows."
+    },
+    {
+      "id": "sit_finger_spread",
+      "target_path": "assets/exercises/手/手指屈伸肌群/sit_finger_spread/illustration.png",
+      "format": "png",
+      "width": 440,
+      "height": 440,
+      "background": "#F5F8FE",
+      "prompt": "Match the app's existing exercise diagrams, which are flat vector figures drawn in code (src/components/ExerciseDiagram.tsx), not photographs. Square canvas, solid background #F5F8FE, no text and no watermark. A simple geometric adult: rounded thick limbs, no facial features, navy hair cap #25334B, skin #DBAF91, cobalt shirt #3F80EA, navy pants #25334B. A soft ground ellipse #DCE6F7. Sitting figures include a simple chair in #91A5C5. Lying figures are supine, head toward the left, on a thin mat line. One cobalt dashed arrow #3F80EA with a small arrowhead shows the movement. Static pose only: no photo, 3D, anime, or gradients. Close view of a seated adult's hands on the thighs, fingers spreading wide apart. Dashed arrows point outward from the fingers."
+    },
+    {
+      "id": "sit_finger_tip",
+      "target_path": "assets/exercises/手/手指屈伸肌群/sit_finger_tip/illustration.png",
+      "format": "png",
+      "width": 440,
+      "height": 440,
+      "background": "#F5F8FE",
+      "prompt": "Match the app's existing exercise diagrams, which are flat vector figures drawn in code (src/components/ExerciseDiagram.tsx), not photographs. Square canvas, solid background #F5F8FE, no text and no watermark. A simple geometric adult: rounded thick limbs, no facial features, navy hair cap #25334B, skin #DBAF91, cobalt shirt #3F80EA, navy pants #25334B. A soft ground ellipse #DCE6F7. Sitting figures include a simple chair in #91A5C5. Lying figures are supine, head toward the left, on a thin mat line. One cobalt dashed arrow #3F80EA with a small arrowhead shows the movement. Static pose only: no photo, 3D, anime, or gradients. Seated hands with only the fingertips bending down while the other finger joints stay mostly straight. Dashed arrows curve at the fingertips."
+    },
+    {
+      "id": "sit_finger_hook",
+      "target_path": "assets/exercises/手/手指屈伸肌群/sit_finger_hook/illustration.png",
+      "format": "png",
+      "width": 440,
+      "height": 440,
+      "background": "#F5F8FE",
+      "prompt": "Match the app's existing exercise diagrams, which are flat vector figures drawn in code (src/components/ExerciseDiagram.tsx), not photographs. Square canvas, solid background #F5F8FE, no text and no watermark. A simple geometric adult: rounded thick limbs, no facial features, navy hair cap #25334B, skin #DBAF91, cobalt shirt #3F80EA, navy pants #25334B. A soft ground ellipse #DCE6F7. Sitting figures include a simple chair in #91A5C5. Lying figures are supine, head toward the left, on a thin mat line. One cobalt dashed arrow #3F80EA with a small arrowhead shows the movement. Static pose only: no photo, 3D, anime, or gradients. Seated hands with fingers curled into a soft hook, not a tight fist. Dashed arrow shows the fingers curling and then opening."
+    },
+    {
+      "id": "sit_flat_fist",
+      "target_path": "assets/exercises/手/手指屈伸肌群/sit_flat_fist/illustration.png",
+      "format": "png",
+      "width": 440,
+      "height": 440,
+      "background": "#F5F8FE",
+      "prompt": "Match the app's existing exercise diagrams, which are flat vector figures drawn in code (src/components/ExerciseDiagram.tsx), not photographs. Square canvas, solid background #F5F8FE, no text and no watermark. A simple geometric adult: rounded thick limbs, no facial features, navy hair cap #25334B, skin #DBAF91, cobalt shirt #3F80EA, navy pants #25334B. A soft ground ellipse #DCE6F7. Sitting figures include a simple chair in #91A5C5. Lying figures are supine, head toward the left, on a thin mat line. One cobalt dashed arrow #3F80EA with a small arrowhead shows the movement. Static pose only: no photo, 3D, anime, or gradients. Seated hands in a flat fist: knuckles bent, fingertips and middle joints still relatively straight. Dashed arrow shows the knuckles bending."
+    },
+    {
+      "id": "sit_palm_turn",
+      "target_path": "assets/exercises/手/前臂屈伸肌群/sit_palm_turn/illustration.png",
+      "format": "png",
+      "width": 440,
+      "height": 440,
+      "background": "#F5F8FE",
+      "prompt": "Match the app's existing exercise diagrams, which are flat vector figures drawn in code (src/components/ExerciseDiagram.tsx), not photographs. Square canvas, solid background #F5F8FE, no text and no watermark. A simple geometric adult: rounded thick limbs, no facial features, navy hair cap #25334B, skin #DBAF91, cobalt shirt #3F80EA, navy pants #25334B. A soft ground ellipse #DCE6F7. Sitting figures include a simple chair in #91A5C5. Lying figures are supine, head toward the left, on a thin mat line. One cobalt dashed arrow #3F80EA with a small arrowhead shows the movement. Static pose only: no photo, 3D, anime, or gradients. Seated forearms resting on the thighs, palms rotating from down to up. Dashed arrow shows the forearm rotating."
+    },
+    {
+      "id": "sit_finger_mid",
+      "target_path": "assets/exercises/手/手指屈伸肌群/sit_finger_mid/illustration.png",
+      "format": "png",
+      "width": 440,
+      "height": 440,
+      "background": "#F5F8FE",
+      "prompt": "Match the app's existing exercise diagrams, which are flat vector figures drawn in code (src/components/ExerciseDiagram.tsx), not photographs. Square canvas, solid background #F5F8FE, no text and no watermark. A simple geometric adult: rounded thick limbs, no facial features, navy hair cap #25334B, skin #DBAF91, cobalt shirt #3F80EA, navy pants #25334B. A soft ground ellipse #DCE6F7. Sitting figures include a simple chair in #91A5C5. Lying figures are supine, head toward the left, on a thin mat line. One cobalt dashed arrow #3F80EA with a small arrowhead shows the movement. Static pose only: no photo, 3D, anime, or gradients. Seated hands bending at the middle finger joints so the fingertips point toward the palm, then straightening. Dashed arrow marks the middle joints."
+    },
+    {
+      "id": "sit_thumb_out",
+      "target_path": "assets/exercises/手/拇指肌群/sit_thumb_out/illustration.png",
+      "format": "png",
+      "width": 440,
+      "height": 440,
+      "background": "#F5F8FE",
+      "prompt": "Match the app's existing exercise diagrams, which are flat vector figures drawn in code (src/components/ExerciseDiagram.tsx), not photographs. Square canvas, solid background #F5F8FE, no text and no watermark. A simple geometric adult: rounded thick limbs, no facial features, navy hair cap #25334B, skin #DBAF91, cobalt shirt #3F80EA, navy pants #25334B. A soft ground ellipse #DCE6F7. Sitting figures include a simple chair in #91A5C5. Lying figures are supine, head toward the left, on a thin mat line. One cobalt dashed arrow #3F80EA with a small arrowhead shows the movement. Static pose only: no photo, 3D, anime, or gradients. Seated hand with the thumb moving away from the index finger. Dashed arrow points the thumb outward."
+    },
+    {
+      "id": "sit_thumb_tip",
+      "target_path": "assets/exercises/手/拇指肌群/sit_thumb_tip/illustration.png",
+      "format": "png",
+      "width": 440,
+      "height": 440,
+      "background": "#F5F8FE",
+      "prompt": "Match the app's existing exercise diagrams, which are flat vector figures drawn in code (src/components/ExerciseDiagram.tsx), not photographs. Square canvas, solid background #F5F8FE, no text and no watermark. A simple geometric adult: rounded thick limbs, no facial features, navy hair cap #25334B, skin #DBAF91, cobalt shirt #3F80EA, navy pants #25334B. A soft ground ellipse #DCE6F7. Sitting figures include a simple chair in #91A5C5. Lying figures are supine, head toward the left, on a thin mat line. One cobalt dashed arrow #3F80EA with a small arrowhead shows the movement. Static pose only: no photo, 3D, anime, or gradients. Seated hand bending only the tip of the thumb. Dashed arrow curves at the thumb tip."
+    },
+    {
+      "id": "sit_thumb_touch",
+      "target_path": "assets/exercises/手/拇指肌群/sit_thumb_touch/illustration.png",
+      "format": "png",
+      "width": 440,
+      "height": 440,
+      "background": "#F5F8FE",
+      "prompt": "Match the app's existing exercise diagrams, which are flat vector figures drawn in code (src/components/ExerciseDiagram.tsx), not photographs. Square canvas, solid background #F5F8FE, no text and no watermark. A simple geometric adult: rounded thick limbs, no facial features, navy hair cap #25334B, skin #DBAF91, cobalt shirt #3F80EA, navy pants #25334B. A soft ground ellipse #DCE6F7. Sitting figures include a simple chair in #91A5C5. Lying figures are supine, head toward the left, on a thin mat line. One cobalt dashed arrow #3F80EA with a small arrowhead shows the movement. Static pose only: no photo, 3D, anime, or gradients. Seated hand with the thumb touching the index fingertip to make a small circle, ready to touch each fingertip in turn. Dashed arrow moves from the thumb toward the fingertips."
+    },
+    {
+      "id": "sit_hand_wave",
+      "target_path": "assets/exercises/手/前臂屈伸肌群/sit_hand_wave/illustration.png",
+      "format": "png",
+      "width": 440,
+      "height": 440,
+      "background": "#F5F8FE",
+      "prompt": "Match the app's existing exercise diagrams, which are flat vector figures drawn in code (src/components/ExerciseDiagram.tsx), not photographs. Square canvas, solid background #F5F8FE, no text and no watermark. A simple geometric adult: rounded thick limbs, no facial features, navy hair cap #25334B, skin #DBAF91, cobalt shirt #3F80EA, navy pants #25334B. A soft ground ellipse #DCE6F7. Sitting figures include a simple chair in #91A5C5. Lying figures are supine, head toward the left, on a thin mat line. One cobalt dashed arrow #3F80EA with a small arrowhead shows the movement. Static pose only: no photo, 3D, anime, or gradients. Seated forearms resting, hands waving slowly side to side at the wrist. Dashed arrow shows the sideways wave."
+    },
+    {
+      "id": "sit_wrist_hold",
+      "target_path": "assets/exercises/手/前臂屈伸肌群/sit_wrist_hold/illustration.png",
+      "format": "png",
+      "width": 440,
+      "height": 440,
+      "background": "#F5F8FE",
+      "prompt": "Match the app's existing exercise diagrams, which are flat vector figures drawn in code (src/components/ExerciseDiagram.tsx), not photographs. Square canvas, solid background #F5F8FE, no text and no watermark. A simple geometric adult: rounded thick limbs, no facial features, navy hair cap #25334B, skin #DBAF91, cobalt shirt #3F80EA, navy pants #25334B. A soft ground ellipse #DCE6F7. Sitting figures include a simple chair in #91A5C5. Lying figures are supine, head toward the left, on a thin mat line. One cobalt dashed arrow #3F80EA with a small arrowhead shows the movement. Static pose only: no photo, 3D, anime, or gradients. Seated forearm supported on a table, palm up, wrist just off the edge, hand lifted in line with the forearm. Dashed arrow points the hand upward."
+    },
+    {
+      "id": "sit_wrist_ease",
+      "target_path": "assets/exercises/手/前臂屈伸肌群/sit_wrist_ease/illustration.png",
+      "format": "png",
+      "width": 440,
+      "height": 440,
+      "background": "#F5F8FE",
+      "prompt": "Match the app's existing exercise diagrams, which are flat vector figures drawn in code (src/components/ExerciseDiagram.tsx), not photographs. Square canvas, solid background #F5F8FE, no text and no watermark. A simple geometric adult: rounded thick limbs, no facial features, navy hair cap #25334B, skin #DBAF91, cobalt shirt #3F80EA, navy pants #25334B. A soft ground ellipse #DCE6F7. Sitting figures include a simple chair in #91A5C5. Lying figures are supine, head toward the left, on a thin mat line. One cobalt dashed arrow #3F80EA with a small arrowhead shows the movement. Static pose only: no photo, 3D, anime, or gradients. Seated adult, one hand gently bending the other wrist upward, palm up, then letting it ease downward. Dashed arrow shows the supported hand moving up."
+    },
+    {
+      "id": "lie_hip_bridge",
+      "target_path": "assets/exercises/髖臀/臀大肌/lie_hip_bridge/illustration.png",
+      "format": "png",
+      "width": 440,
+      "height": 440,
+      "background": "#F5F8FE",
+      "prompt": "Match the app's existing exercise diagrams, which are flat vector figures drawn in code (src/components/ExerciseDiagram.tsx), not photographs. Square canvas, solid background #F5F8FE, no text and no watermark. A simple geometric adult: rounded thick limbs, no facial features, navy hair cap #25334B, skin #DBAF91, cobalt shirt #3F80EA, navy pants #25334B. A soft ground ellipse #DCE6F7. Sitting figures include a simple chair in #91A5C5. Lying figures are supine, head toward the left, on a thin mat line. One cobalt dashed arrow #3F80EA with a small arrowhead shows the movement. Static pose only: no photo, 3D, anime, or gradients. Supine adult with knees bent and hips lifted a small amount, shoulders staying on the mat. Dashed arrow points the hips upward."
+    },
+    {
+      "id": "stand_leg_back",
+      "target_path": "assets/exercises/髖臀/髖伸肌群/stand_leg_back/illustration.png",
+      "format": "png",
+      "width": 440,
+      "height": 440,
+      "background": "#F5F8FE",
+      "prompt": "Match the app's existing exercise diagrams, which are flat vector figures drawn in code (src/components/ExerciseDiagram.tsx), not photographs. Square canvas, solid background #F5F8FE, no text and no watermark. A simple geometric adult: rounded thick limbs, no facial features, navy hair cap #25334B, skin #DBAF91, cobalt shirt #3F80EA, navy pants #25334B. A soft ground ellipse #DCE6F7. Sitting figures include a simple chair in #91A5C5. Lying figures are supine, head toward the left, on a thin mat line. One cobalt dashed arrow #3F80EA with a small arrowhead shows the movement. Static pose only: no photo, 3D, anime, or gradients. Adult holding a chair, one leg straight and lifting a little behind the body. Dashed arrow points that foot backward."
+    },
+    {
+      "id": "stand_leg_side",
+      "target_path": "assets/exercises/髖臀/髖外展肌群/stand_leg_side/illustration.png",
+      "format": "png",
+      "width": 440,
+      "height": 440,
+      "background": "#F5F8FE",
+      "prompt": "Match the app's existing exercise diagrams, which are flat vector figures drawn in code (src/components/ExerciseDiagram.tsx), not photographs. Square canvas, solid background #F5F8FE, no text and no watermark. A simple geometric adult: rounded thick limbs, no facial features, navy hair cap #25334B, skin #DBAF91, cobalt shirt #3F80EA, navy pants #25334B. A soft ground ellipse #DCE6F7. Sitting figures include a simple chair in #91A5C5. Lying figures are supine, head toward the left, on a thin mat line. One cobalt dashed arrow #3F80EA with a small arrowhead shows the movement. Static pose only: no photo, 3D, anime, or gradients. Adult holding a chair with one hand, the far leg straight and lifted a little out to the side, torso upright. Dashed arrow points the foot sideways."
+    },
+    {
+      "id": "stand_hip_flexor",
+      "target_path": "assets/exercises/髖臀/髖屈肌/stand_hip_flexor/illustration.png",
+      "format": "png",
+      "width": 440,
+      "height": 440,
+      "background": "#F5F8FE",
+      "prompt": "Match the app's existing exercise diagrams, which are flat vector figures drawn in code (src/components/ExerciseDiagram.tsx), not photographs. Square canvas, solid background #F5F8FE, no text and no watermark. A simple geometric adult: rounded thick limbs, no facial features, navy hair cap #25334B, skin #DBAF91, cobalt shirt #3F80EA, navy pants #25334B. A soft ground ellipse #DCE6F7. Sitting figures include a simple chair in #91A5C5. Lying figures are supine, head toward the left, on a thin mat line. One cobalt dashed arrow #3F80EA with a small arrowhead shows the movement. Static pose only: no photo, 3D, anime, or gradients. Adult in a small standing lunge, right foot forward, left foot back, torso tall, a gentle stretch at the front of the left hip. Dashed arrow points the left hip slightly forward. Not a deep squat."
+    },
+    {
+      "id": "sit_hip_march",
+      "target_path": "assets/exercises/髖臀/髖屈肌/sit_hip_march/illustration.png",
+      "format": "png",
+      "width": 440,
+      "height": 440,
+      "background": "#F5F8FE",
+      "prompt": "Match the app's existing exercise diagrams, which are flat vector figures drawn in code (src/components/ExerciseDiagram.tsx), not photographs. Square canvas, solid background #F5F8FE, no text and no watermark. A simple geometric adult: rounded thick limbs, no facial features, navy hair cap #25334B, skin #DBAF91, cobalt shirt #3F80EA, navy pants #25334B. A soft ground ellipse #DCE6F7. Sitting figures include a simple chair in #91A5C5. Lying figures are supine, head toward the left, on a thin mat line. One cobalt dashed arrow #3F80EA with a small arrowhead shows the movement. Static pose only: no photo, 3D, anime, or gradients. Seated adult lifting one knee while the other foot stays on the floor, hands holding the chair. Dashed arrow points the knee upward."
+    },
+    {
+      "id": "lie_knees_out",
+      "target_path": "assets/exercises/髖臀/內收肌群/lie_knees_out/illustration.png",
+      "format": "png",
+      "width": 440,
+      "height": 440,
+      "background": "#F5F8FE",
+      "prompt": "Match the app's existing exercise diagrams, which are flat vector figures drawn in code (src/components/ExerciseDiagram.tsx), not photographs. Square canvas, solid background #F5F8FE, no text and no watermark. A simple geometric adult: rounded thick limbs, no facial features, navy hair cap #25334B, skin #DBAF91, cobalt shirt #3F80EA, navy pants #25334B. A soft ground ellipse #DCE6F7. Sitting figures include a simple chair in #91A5C5. Lying figures are supine, head toward the left, on a thin mat line. One cobalt dashed arrow #3F80EA with a small arrowhead shows the movement. Static pose only: no photo, 3D, anime, or gradients. Supine adult, knees bent, soles facing each other, knees falling gently outward. Dashed arrows point the knees out. Low back stays near the mat."
+    },
+    {
+      "id": "stand_march",
+      "target_path": "assets/exercises/髖臀/髖屈肌/stand_march/illustration.png",
+      "format": "png",
+      "width": 440,
+      "height": 440,
+      "background": "#F5F8FE",
+      "prompt": "Match the app's existing exercise diagrams, which are flat vector figures drawn in code (src/components/ExerciseDiagram.tsx), not photographs. Square canvas, solid background #F5F8FE, no text and no watermark. A simple geometric adult: rounded thick limbs, no facial features, navy hair cap #25334B, skin #DBAF91, cobalt shirt #3F80EA, navy pants #25334B. A soft ground ellipse #DCE6F7. Sitting figures include a simple chair in #91A5C5. Lying figures are supine, head toward the left, on a thin mat line. One cobalt dashed arrow #3F80EA with a small arrowhead shows the movement. Static pose only: no photo, 3D, anime, or gradients. Adult marching in place with a low knee lift and soft fists pumping slightly. Dashed arrow points one knee up."
+    },
+    {
+      "id": "stand_knee_lift",
+      "target_path": "assets/exercises/髖臀/髖屈肌/stand_knee_lift/illustration.png",
+      "format": "png",
+      "width": 440,
+      "height": 440,
+      "background": "#F5F8FE",
+      "prompt": "Match the app's existing exercise diagrams, which are flat vector figures drawn in code (src/components/ExerciseDiagram.tsx), not photographs. Square canvas, solid background #F5F8FE, no text and no watermark. A simple geometric adult: rounded thick limbs, no facial features, navy hair cap #25334B, skin #DBAF91, cobalt shirt #3F80EA, navy pants #25334B. A soft ground ellipse #DCE6F7. Sitting figures include a simple chair in #91A5C5. Lying figures are supine, head toward the left, on a thin mat line. One cobalt dashed arrow #3F80EA with a small arrowhead shows the movement. Static pose only: no photo, 3D, anime, or gradients. Standing adult lifting the right knee toward the left hand, supporting knee slightly bent, back straight. Dashed arrow points the knee toward the opposite hand."
+    },
+    {
+      "id": "stand_mini_squat",
+      "target_path": "assets/exercises/腿/股四頭肌/stand_mini_squat/illustration.png",
+      "format": "png",
+      "width": 440,
+      "height": 440,
+      "background": "#F5F8FE",
+      "prompt": "Match the app's existing exercise diagrams, which are flat vector figures drawn in code (src/components/ExerciseDiagram.tsx), not photographs. Square canvas, solid background #F5F8FE, no text and no watermark. A simple geometric adult: rounded thick limbs, no facial features, navy hair cap #25334B, skin #DBAF91, cobalt shirt #3F80EA, navy pants #25334B. A soft ground ellipse #DCE6F7. Sitting figures include a simple chair in #91A5C5. Lying figures are supine, head toward the left, on a thin mat line. One cobalt dashed arrow #3F80EA with a small arrowhead shows the movement. Static pose only: no photo, 3D, anime, or gradients. Adult holding a chair back, knees softly bent in a very small squat, heels down, back straight. Dashed arrow points the hips slightly down."
+    },
+    {
+      "id": "stand_calf_raise",
+      "target_path": "assets/exercises/腿/小腿肌群/stand_calf_raise/illustration.png",
+      "format": "png",
+      "width": 440,
+      "height": 440,
+      "background": "#F5F8FE",
+      "prompt": "Match the app's existing exercise diagrams, which are flat vector figures drawn in code (src/components/ExerciseDiagram.tsx), not photographs. Square canvas, solid background #F5F8FE, no text and no watermark. A simple geometric adult: rounded thick limbs, no facial features, navy hair cap #25334B, skin #DBAF91, cobalt shirt #3F80EA, navy pants #25334B. A soft ground ellipse #DCE6F7. Sitting figures include a simple chair in #91A5C5. Lying figures are supine, head toward the left, on a thin mat line. One cobalt dashed arrow #3F80EA with a small arrowhead shows the movement. Static pose only: no photo, 3D, anime, or gradients. Adult holding a chair, both heels lifted, weight toward the forefoot. Dashed arrow points the heels upward."
+    },
+    {
+      "id": "stand_quad",
+      "target_path": "assets/exercises/腿/股四頭肌/stand_quad/illustration.png",
+      "format": "png",
+      "width": 440,
+      "height": 440,
+      "background": "#F5F8FE",
+      "prompt": "Match the app's existing exercise diagrams, which are flat vector figures drawn in code (src/components/ExerciseDiagram.tsx), not photographs. Square canvas, solid background #F5F8FE, no text and no watermark. A simple geometric adult: rounded thick limbs, no facial features, navy hair cap #25334B, skin #DBAF91, cobalt shirt #3F80EA, navy pants #25334B. A soft ground ellipse #DCE6F7. Sitting figures include a simple chair in #91A5C5. Lying figures are supine, head toward the left, on a thin mat line. One cobalt dashed arrow #3F80EA with a small arrowhead shows the movement. Static pose only: no photo, 3D, anime, or gradients. Adult holding a wall with the right hand and the left ankle with the left hand, heel toward the buttock, knees close together. Dashed arrow points the heel toward the hip."
+    },
+    {
+      "id": "stand_toe_raise",
+      "target_path": "assets/exercises/腿/足踝周圍肌群/stand_toe_raise/illustration.png",
+      "format": "png",
+      "width": 440,
+      "height": 440,
+      "background": "#F5F8FE",
+      "prompt": "Match the app's existing exercise diagrams, which are flat vector figures drawn in code (src/components/ExerciseDiagram.tsx), not photographs. Square canvas, solid background #F5F8FE, no text and no watermark. A simple geometric adult: rounded thick limbs, no facial features, navy hair cap #25334B, skin #DBAF91, cobalt shirt #3F80EA, navy pants #25334B. A soft ground ellipse #DCE6F7. Sitting figures include a simple chair in #91A5C5. Lying figures are supine, head toward the left, on a thin mat line. One cobalt dashed arrow #3F80EA with a small arrowhead shows the movement. Static pose only: no photo, 3D, anime, or gradients. Adult standing with heels on the floor and forefeet lifted toward the shins. Dashed arrow points the toes upward."
+    },
+    {
+      "id": "stand_heel_toe",
+      "target_path": "assets/exercises/腿/足踝周圍肌群/stand_heel_toe/illustration.png",
+      "format": "png",
+      "width": 440,
+      "height": 440,
+      "background": "#F5F8FE",
+      "prompt": "Match the app's existing exercise diagrams, which are flat vector figures drawn in code (src/components/ExerciseDiagram.tsx), not photographs. Square canvas, solid background #F5F8FE, no text and no watermark. A simple geometric adult: rounded thick limbs, no facial features, navy hair cap #25334B, skin #DBAF91, cobalt shirt #3F80EA, navy pants #25334B. A soft ground ellipse #DCE6F7. Sitting figures include a simple chair in #91A5C5. Lying figures are supine, head toward the left, on a thin mat line. One cobalt dashed arrow #3F80EA with a small arrowhead shows the movement. Static pose only: no photo, 3D, anime, or gradients. Adult standing with the right heel touching just in front of the left toes, one hand near a chair, gaze forward. Dashed arrow shows the heel moving in front of the other foot."
+    },
+    {
+      "id": "stand_one_leg",
+      "target_path": "assets/exercises/腿/足踝周圍肌群/stand_one_leg/illustration.png",
+      "format": "png",
+      "width": 440,
+      "height": 440,
+      "background": "#F5F8FE",
+      "prompt": "Match the app's existing exercise diagrams, which are flat vector figures drawn in code (src/components/ExerciseDiagram.tsx), not photographs. Square canvas, solid background #F5F8FE, no text and no watermark. A simple geometric adult: rounded thick limbs, no facial features, navy hair cap #25334B, skin #DBAF91, cobalt shirt #3F80EA, navy pants #25334B. A soft ground ellipse #DCE6F7. Sitting figures include a simple chair in #91A5C5. Lying figures are supine, head toward the left, on a thin mat line. One cobalt dashed arrow #3F80EA with a small arrowhead shows the movement. Static pose only: no photo, 3D, anime, or gradients. Adult facing a wall with fingertips touching it, one foot lifted, hips level, standing knee softly bent. Dashed arrow points the lifted foot up."
+    },
+    {
+      "id": "stand_knee_curl",
+      "target_path": "assets/exercises/腿/腿後肌群/stand_knee_curl/illustration.png",
+      "format": "png",
+      "width": 440,
+      "height": 440,
+      "background": "#F5F8FE",
+      "prompt": "Match the app's existing exercise diagrams, which are flat vector figures drawn in code (src/components/ExerciseDiagram.tsx), not photographs. Square canvas, solid background #F5F8FE, no text and no watermark. A simple geometric adult: rounded thick limbs, no facial features, navy hair cap #25334B, skin #DBAF91, cobalt shirt #3F80EA, navy pants #25334B. A soft ground ellipse #DCE6F7. Sitting figures include a simple chair in #91A5C5. Lying figures are supine, head toward the left, on a thin mat line. One cobalt dashed arrow #3F80EA with a small arrowhead shows the movement. Static pose only: no photo, 3D, anime, or gradients. Adult holding a chair, one toe on the floor and that heel lifting toward the ceiling, knee slightly behind the other leg. Dashed arrow points the heel up."
+    },
+    {
+      "id": "lie_quad_set",
+      "target_path": "assets/exercises/腿/股四頭肌/lie_quad_set/illustration.png",
+      "format": "png",
+      "width": 440,
+      "height": 440,
+      "background": "#F5F8FE",
+      "prompt": "Match the app's existing exercise diagrams, which are flat vector figures drawn in code (src/components/ExerciseDiagram.tsx), not photographs. Square canvas, solid background #F5F8FE, no text and no watermark. A simple geometric adult: rounded thick limbs, no facial features, navy hair cap #25334B, skin #DBAF91, cobalt shirt #3F80EA, navy pants #25334B. A soft ground ellipse #DCE6F7. Sitting figures include a simple chair in #91A5C5. Lying figures are supine, head toward the left, on a thin mat line. One cobalt dashed arrow #3F80EA with a small arrowhead shows the movement. Static pose only: no photo, 3D, anime, or gradients. Supine adult with one knee pressing gently down into the mat, thigh tightened, the other leg resting. Dashed arrow points the back of the knee downward."
+    },
+    {
+      "id": "lie_short_arc",
+      "target_path": "assets/exercises/腿/股四頭肌/lie_short_arc/illustration.png",
+      "format": "png",
+      "width": 440,
+      "height": 440,
+      "background": "#F5F8FE",
+      "prompt": "Match the app's existing exercise diagrams, which are flat vector figures drawn in code (src/components/ExerciseDiagram.tsx), not photographs. Square canvas, solid background #F5F8FE, no text and no watermark. A simple geometric adult: rounded thick limbs, no facial features, navy hair cap #25334B, skin #DBAF91, cobalt shirt #3F80EA, navy pants #25334B. A soft ground ellipse #DCE6F7. Sitting figures include a simple chair in #91A5C5. Lying figures are supine, head toward the left, on a thin mat line. One cobalt dashed arrow #3F80EA with a small arrowhead shows the movement. Static pose only: no photo, 3D, anime, or gradients. Supine adult with a small cushion under both knees, one lower leg lifting until the knee is nearly straight. Dashed arrow points the foot upward."
+    },
+    {
+      "id": "lie_leg_raise",
+      "target_path": "assets/exercises/腿/股四頭肌/lie_leg_raise/illustration.png",
+      "format": "png",
+      "width": 440,
+      "height": 440,
+      "background": "#F5F8FE",
+      "prompt": "Match the app's existing exercise diagrams, which are flat vector figures drawn in code (src/components/ExerciseDiagram.tsx), not photographs. Square canvas, solid background #F5F8FE, no text and no watermark. A simple geometric adult: rounded thick limbs, no facial features, navy hair cap #25334B, skin #DBAF91, cobalt shirt #3F80EA, navy pants #25334B. A soft ground ellipse #DCE6F7. Sitting figures include a simple chair in #91A5C5. Lying figures are supine, head toward the left, on a thin mat line. One cobalt dashed arrow #3F80EA with a small arrowhead shows the movement. Static pose only: no photo, 3D, anime, or gradients. Supine adult with one knee bent and the other leg straight, lifting the straight leg only a little off the mat. Dashed arrow points that foot up a short distance."
+    },
+    {
+      "id": "stand_it_band",
+      "target_path": "assets/exercises/髖臀/髖外側/stand_it_band/illustration.png",
+      "format": "png",
+      "width": 440,
+      "height": 440,
+      "background": "#F5F8FE",
+      "prompt": "Match the app's existing exercise diagrams, which are flat vector figures drawn in code (src/components/ExerciseDiagram.tsx), not photographs. Square canvas, solid background #F5F8FE, no text and no watermark. A simple geometric adult: rounded thick limbs, no facial features, navy hair cap #25334B, skin #DBAF91, cobalt shirt #3F80EA, navy pants #25334B. A soft ground ellipse #DCE6F7. Sitting figures include a simple chair in #91A5C5. Lying figures are supine, head toward the left, on a thin mat line. One cobalt dashed arrow #3F80EA with a small arrowhead shows the movement. Static pose only: no photo, 3D, anime, or gradients. Standing adult with the left ankle crossed in front of the right, left arm reaching overhead toward the right. Dashed arrow follows the arm across and up. A gentle stretch along the outer left hip."
+    },
+    {
+      "id": "sit_knee_press",
+      "target_path": "assets/exercises/腿/股四頭肌/sit_knee_press/illustration.png",
+      "format": "png",
+      "width": 440,
+      "height": 440,
+      "background": "#F5F8FE",
+      "prompt": "Match the app's existing exercise diagrams, which are flat vector figures drawn in code (src/components/ExerciseDiagram.tsx), not photographs. Square canvas, solid background #F5F8FE, no text and no watermark. A simple geometric adult: rounded thick limbs, no facial features, navy hair cap #25334B, skin #DBAF91, cobalt shirt #3F80EA, navy pants #25334B. A soft ground ellipse #DCE6F7. Sitting figures include a simple chair in #91A5C5. Lying figures are supine, head toward the left, on a thin mat line. One cobalt dashed arrow #3F80EA with a small arrowhead shows the movement. Static pose only: no photo, 3D, anime, or gradients. Seated adult with one heel on a second stable chair opposite, gently straightening that knee. Dashed arrow points the knee downward toward straight."
+    },
+    {
+      "id": "sit_ankle_point",
+      "target_path": "assets/exercises/腿/足踝周圍肌群/sit_ankle_point/illustration.png",
+      "format": "png",
+      "width": 440,
+      "height": 440,
+      "background": "#F5F8FE",
+      "prompt": "Match the app's existing exercise diagrams, which are flat vector figures drawn in code (src/components/ExerciseDiagram.tsx), not photographs. Square canvas, solid background #F5F8FE, no text and no watermark. A simple geometric adult: rounded thick limbs, no facial features, navy hair cap #25334B, skin #DBAF91, cobalt shirt #3F80EA, navy pants #25334B. A soft ground ellipse #DCE6F7. Sitting figures include a simple chair in #91A5C5. Lying figures are supine, head toward the left, on a thin mat line. One cobalt dashed arrow #3F80EA with a small arrowhead shows the movement. Static pose only: no photo, 3D, anime, or gradients. Seated adult holding the chair, one leg straight and lifted, toes pointing away. Dashed arrow points the toes forward."
+    },
+    {
+      "id": "stand_heel_dig",
+      "target_path": "assets/exercises/腿/足踝周圍肌群/stand_heel_dig/illustration.png",
+      "format": "png",
+      "width": 440,
+      "height": 440,
+      "background": "#F5F8FE",
+      "prompt": "Match the app's existing exercise diagrams, which are flat vector figures drawn in code (src/components/ExerciseDiagram.tsx), not photographs. Square canvas, solid background #F5F8FE, no text and no watermark. A simple geometric adult: rounded thick limbs, no facial features, navy hair cap #25334B, skin #DBAF91, cobalt shirt #3F80EA, navy pants #25334B. A soft ground ellipse #DCE6F7. Sitting figures include a simple chair in #91A5C5. Lying figures are supine, head toward the left, on a thin mat line. One cobalt dashed arrow #3F80EA with a small arrowhead shows the movement. Static pose only: no photo, 3D, anime, or gradients. Adult standing with the right heel placed forward and the toes up, supporting knee softly bent. Dashed arrow points the heel forward."
+    },
+    {
+      "id": "stand_soleus",
+      "target_path": "assets/exercises/腿/小腿肌群/stand_soleus/illustration.png",
+      "format": "png",
+      "width": 440,
+      "height": 440,
+      "background": "#F5F8FE",
+      "prompt": "Match the app's existing exercise diagrams, which are flat vector figures drawn in code (src/components/ExerciseDiagram.tsx), not photographs. Square canvas, solid background #F5F8FE, no text and no watermark. A simple geometric adult: rounded thick limbs, no facial features, navy hair cap #25334B, skin #DBAF91, cobalt shirt #3F80EA, navy pants #25334B. A soft ground ellipse #DCE6F7. Sitting figures include a simple chair in #91A5C5. Lying figures are supine, head toward the left, on a thin mat line. One cobalt dashed arrow #3F80EA with a small arrowhead shows the movement. Static pose only: no photo, 3D, anime, or gradients. Adult facing a wall, back knee bent, back heel down, front knee soft, a gentle lower-calf stretch. Dashed arrow points the hips slightly forward while the back heel stays on the floor."
+    },
+    {
+      "id": "sit_inner_thigh",
+      "target_path": "assets/exercises/髖臀/內收肌群/sit_inner_thigh/illustration.png",
+      "format": "png",
+      "width": 440,
+      "height": 440,
+      "background": "#F5F8FE",
+      "prompt": "Match the app's existing exercise diagrams, which are flat vector figures drawn in code (src/components/ExerciseDiagram.tsx), not photographs. Square canvas, solid background #F5F8FE, no text and no watermark. A simple geometric adult: rounded thick limbs, no facial features, navy hair cap #25334B, skin #DBAF91, cobalt shirt #3F80EA, navy pants #25334B. A soft ground ellipse #DCE6F7. Sitting figures include a simple chair in #91A5C5. Lying figures are supine, head toward the left, on a thin mat line. One cobalt dashed arrow #3F80EA with a small arrowhead shows the movement. Static pose only: no photo, 3D, anime, or gradients. Adult sitting tall with the soles of the feet together and knees lowering gently outward. Hands may rest on the feet. Dashed arrows point the knees down. Back stays straight."
+    }
+  ]
+}

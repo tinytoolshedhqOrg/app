@@ -1,0 +1,111 @@
+{
+  "id": "stand_heel_toe",
+  "name": "站姿腳跟接腳尖",
+  "content_version": "0.3.0",
+  "status": "draft",
+  "review_status": "source_referenced",
+  "position": "standing",
+  "body_regions": [
+    "ankles",
+    "hips"
+  ],
+  "movement_type": "mobility",
+  "access_tier": "free",
+  "duration_seconds": 30,
+  "gap_after_seconds": 3,
+  "equipment": [
+    "chair"
+  ],
+  "setup": "一手可輕扶椅背，先站高。",
+  "description": "一腳的腳跟接到另一腳的腳尖前方，站一下，再換另一腳在前。眼睛看前方。",
+  "instructions": [
+    "右腳跟接到左腳尖前方",
+    "看前方，停一下",
+    "換左腳跟接到右腳尖前方",
+    "雙腳打開站穩"
+  ],
+  "cautions": [
+    "只到舒服的範圍，不彈震、不憋氣。疼痛、麻木或暈眩時停止。",
+    "已有傷勢、手術後、懷孕或不確定時，先確認這個活動是否適合自己。"
+  ],
+  "movement_timeline": [
+    {
+      "start_seconds": 0,
+      "end_seconds": 10,
+      "instruction": "右腳跟接到左腳尖前方"
+    },
+    {
+      "start_seconds": 10,
+      "end_seconds": 15,
+      "instruction": "看前方，停一下"
+    },
+    {
+      "start_seconds": 15,
+      "end_seconds": 25,
+      "instruction": "換左腳跟接到右腳尖前方"
+    },
+    {
+      "start_seconds": 25,
+      "end_seconds": 30,
+      "instruction": "雙腳打開站穩"
+    }
+  ],
+  "voice_cues": [
+    {
+      "id": "stand_heel_toe_cue_01",
+      "at_seconds": 0,
+      "max_duration_seconds": 9,
+      "text": "右腳跟接到左腳尖前面。",
+      "audio_path": "audio/stand_heel_toe_cue_01.mp3",
+      "measured_duration_seconds": null,
+      "audio_status": "pending"
+    },
+    {
+      "id": "stand_heel_toe_cue_02",
+      "at_seconds": 10,
+      "max_duration_seconds": 4,
+      "text": "眼睛看前方。",
+      "audio_path": "audio/stand_heel_toe_cue_02.mp3",
+      "measured_duration_seconds": null,
+      "audio_status": "pending"
+    },
+    {
+      "id": "stand_heel_toe_cue_03",
+      "at_seconds": 15,
+      "max_duration_seconds": 7,
+      "text": "換左腳跟在前。",
+      "audio_path": "audio/stand_heel_toe_cue_03.mp3",
+      "measured_duration_seconds": null,
+      "audio_status": "pending"
+    },
+    {
+      "id": "stand_heel_toe_cue_04",
+      "at_seconds": 22,
+      "max_duration_seconds": 4,
+      "text": "雙腳打開站穩。",
+      "audio_path": "audio/stand_heel_toe_cue_04.mp3",
+      "measured_duration_seconds": null,
+      "audio_status": "pending"
+    }
+  ],
+  "animation_brief": "靜態示意圖：一手可輕扶椅背，先站高。採用 ankle 人物模板與方向箭頭。圖檔未放入前，播放器改顯示這張向量人物。",
+  "media": {
+    "status": "illustration_pending",
+    "image_path": "illustration.png",
+    "animation_path": null,
+    "animation_format": null,
+    "animation_playback": null,
+    "animation_duration_seconds": null,
+    "figma_url": null
+  },
+  "source_ids": [
+    "ni_balance"
+  ],
+  "library": {
+    "body_part": "腿",
+    "muscle": "足踝周圍肌群",
+    "pose": "ankle",
+    "source_note": "依公開英文資料改寫動作方向與注意事項。左右放在同一筆；30 秒時間軸與換側是產品編排，與來源的維持秒數不同。",
+    "checked_on": "2026-11-09"
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "id": "sit_inner_thigh",
+  "name": "坐姿大腿內側",
+  "content_version": "0.3.0",
+  "status": "draft",
+  "review_status": "source_referenced",
+  "position": "sitting",
+  "body_regions": [
+    "hips"
+  ],
+  "movement_type": "stretch",
+  "access_tier": "free",
+  "duration_seconds": 30,
+  "gap_after_seconds": 3,
+  "equipment": [
+    "mat"
+  ],
+  "setup": "坐在穩固平面上，背部坐直，雙膝彎曲。",
+  "description": "腳底相對，雙手可輕扶腳，雙膝慢慢朝地面的方向放下。不必壓到地板。",
+  "instructions": [
+    "腳底相對，雙膝慢慢向外向下",
+    "背部仍然坐直",
+    "若舒服就再停留一下",
+    "雙膝慢慢合回"
+  ],
+  "cautions": [
+    "只到舒服的範圍，不彈震、不憋氣。疼痛、麻木或暈眩時停止。",
+    "已有傷勢、手術後、懷孕或不確定時，先確認這個活動是否適合自己。"
+  ],
+  "movement_timeline": [
+    {
+      "start_seconds": 0,
+      "end_seconds": 10,
+      "instruction": "腳底相對，雙膝慢慢向外向下"
+    },
+    {
+      "start_seconds": 10,
+      "end_seconds": 15,
+      "instruction": "背部仍然坐直"
+    },
+    {
+      "start_seconds": 15,
+      "end_seconds": 25,
+      "instruction": "若舒服就再停留一下"
+    },
+    {
+      "start_seconds": 25,
+      "end_seconds": 30,
+      "instruction": "雙膝慢慢合回"
+    }
+  ],
+  "voice_cues": [
+    {
+      "id": "sit_inner_thigh_cue_01",
+      "at_seconds": 0,
+      "max_duration_seconds": 9,
+      "text": "腳底相對，雙膝慢慢向下。",
+      "audio_path": "audio/sit_inner_thigh_cue_01.mp3",
+      "measured_duration_seconds": null,
+      "audio_status": "pending"
+    },
+    {
+      "id": "sit_inner_thigh_cue_02",
+      "at_seconds": 10,
+      "max_duration_seconds": 4,
+      "text": "背部坐直。",
+      "audio_path": "audio/sit_inner_thigh_cue_02.mp3",
+      "measured_duration_seconds": null,
+      "audio_status": "pending"
+    },
+    {
+      "id": "sit_inner_thigh_cue_03",
+      "at_seconds": 15,
+      "max_duration_seconds": 7,
+      "text": "只到舒服的位置。",
+      "audio_path": "audio/sit_inner_thigh_cue_03.mp3",
+      "measured_duration_seconds": null,
+      "audio_status": "pending"
+    },
+    {
+      "id": "sit_inner_thigh_cue_04",
+      "at_seconds": 22,
+      "max_duration_seconds": 4,
+      "text": "雙膝慢慢合回。",
+      "audio_path": "audio/sit_inner_thigh_cue_04.mp3",
+      "measured_duration_seconds": null,
+      "audio_status": "pending"
+    }
+  ],
+  "animation_brief": "靜態示意圖：坐在穩固平面上，背部坐直，雙膝彎曲。採用 hug 人物模板與方向箭頭。圖檔未放入前，播放器改顯示這張向量人物。",
+  "media": {
+    "status": "illustration_pending",
+    "image_path": "illustration.png",
+    "animation_path": null,
+    "animation_format": null,
+    "animation_playback": null,
+    "animation_duration_seconds": null,
+    "figma_url": null
+  },
+  "source_ids": [
+    "cooldown"
+  ],
+  "library": {
+    "body_part": "髖臀",
+    "muscle": "內收肌群",
+    "pose": "hug",
+    "source_note": "依公開英文資料改寫動作方向與注意事項。左右放在同一筆；30 秒時間軸與換側是產品編排，與來源的維持秒數不同。",
+    "checked_on": "2026-11-09"
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "id": "sit_wrist_ease",
+  "name": "坐姿手腕伸放",
+  "content_version": "0.3.0",
+  "status": "draft",
+  "review_status": "source_referenced",
+  "position": "sitting",
+  "body_regions": [
+    "wrists"
+  ],
+  "movement_type": "stretch",
+  "access_tier": "free",
+  "duration_seconds": 30,
+  "gap_after_seconds": 3,
+  "equipment": [
+    "chair"
+  ],
+  "setup": "前臂放穩，掌心向上。",
+  "description": "另一手把手腕輕輕托向上，再放開，讓手腕自己慢慢向下。換手。不要壓痛。",
+  "instructions": [
+    "左手輕托右手腕向上",
+    "放開，右手腕自己慢慢向下",
+    "換邊，右手輕托左手腕",
+    "兩手放下"
+  ],
+  "cautions": [
+    "只到舒服的範圍，不彈震、不憋氣。疼痛、麻木或暈眩時停止。",
+    "已有傷勢、手術後、懷孕或不確定時，先確認這個活動是否適合自己。"
+  ],
+  "movement_timeline": [
+    {
+      "start_seconds": 0,
+      "end_seconds": 10,
+      "instruction": "左手輕托右手腕向上"
+    },
+    {
+      "start_seconds": 10,
+      "end_seconds": 15,
+      "instruction": "放開，右手腕自己慢慢向下"
+    },
+    {
+      "start_seconds": 15,
+      "end_seconds": 25,
+      "instruction": "換邊，右手輕托左手腕"
+    },
+    {
+      "start_seconds": 25,
+      "end_seconds": 30,
+      "instruction": "兩手放下"
+    }
+  ],
+  "voice_cues": [
+    {
+      "id": "sit_wrist_ease_cue_01",
+      "at_seconds": 0,
+      "max_duration_seconds": 9,
+      "text": "左手輕托右手腕向上。",
+      "audio_path": "audio/sit_wrist_ease_cue_01.mp3",
+      "measured_duration_seconds": null,
+      "audio_status": "pending"
+    },
+    {
+      "id": "sit_wrist_ease_cue_02",
+      "at_seconds": 10,
+      "max_duration_seconds": 4,
+      "text": "放開，讓手腕慢慢向下。",
+      "audio_path": "audio/sit_wrist_ease_cue_02.mp3",
+      "measured_duration_seconds": null,
+      "audio_status": "pending"
+    },
+    {
+      "id": "sit_wrist_ease_cue_03",
+      "at_seconds": 15,
+      "max_duration_seconds": 7,
+      "text": "換邊，再托一次。",
+      "audio_path": "audio/sit_wrist_ease_cue_03.mp3",
+      "measured_duration_seconds": null,
+      "audio_status": "pending"
+    },
+    {
+      "id": "sit_wrist_ease_cue_04",
+      "at_seconds": 22,
+      "max_duration_seconds": 4,
+      "text": "兩手放下。",
+      "audio_path": "audio/sit_wrist_ease_cue_04.mp3",
+      "measured_duration_seconds": null,
+      "audio_status": "pending"
+    }
+  ],
+  "animation_brief": "靜態示意圖：前臂放穩，掌心向上。採用 wrist 人物模板與方向箭頭。圖檔未放入前，播放器改顯示這張向量人物。",
+  "media": {
+    "status": "illustration_pending",
+    "image_path": "illustration.png",
+    "animation_path": null,
+    "animation_format": null,
+    "animation_playback": null,
+    "animation_duration_seconds": null,
+    "figma_url": null
+  },
+  "source_ids": [
+    "ni_elbow"
+  ],
+  "library": {
+    "body_part": "手",
+    "muscle": "前臂屈伸肌群",
+    "pose": "wrist",
+    "source_note": "依公開英文資料改寫動作方向與注意事項。左右放在同一筆；30 秒時間軸與換側是產品編排，與來源的維持秒數不同。",
+    "checked_on": "2026-11-09"
+  }
+}

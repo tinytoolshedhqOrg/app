@@ -1,0 +1,109 @@
+{
+  "id": "stand_march",
+  "name": "原地輕踏步",
+  "content_version": "0.3.0",
+  "status": "draft",
+  "review_status": "source_referenced",
+  "position": "standing",
+  "body_regions": [
+    "hips",
+    "knees"
+  ],
+  "movement_type": "mobility",
+  "access_tier": "free",
+  "duration_seconds": 30,
+  "gap_after_seconds": 3,
+  "equipment": [],
+  "setup": "雙腳與髖同寬，手肘彎曲，拳頭放鬆。",
+  "description": "在原地慢慢踏步，手肘跟著輕輕前後擺。膝蓋不必抬高。",
+  "instructions": [
+    "原地慢慢踏步，手肘輕擺",
+    "膝蓋抬到舒服的高度",
+    "繼續踏步，眼睛看前方",
+    "雙腳併攏站穩"
+  ],
+  "cautions": [
+    "只到舒服的範圍，不彈震、不憋氣。疼痛、麻木或暈眩時停止。",
+    "已有傷勢、手術後、懷孕或不確定時，先確認這個活動是否適合自己。"
+  ],
+  "movement_timeline": [
+    {
+      "start_seconds": 0,
+      "end_seconds": 10,
+      "instruction": "原地慢慢踏步，手肘輕擺"
+    },
+    {
+      "start_seconds": 10,
+      "end_seconds": 15,
+      "instruction": "膝蓋抬到舒服的高度"
+    },
+    {
+      "start_seconds": 15,
+      "end_seconds": 25,
+      "instruction": "繼續踏步，眼睛看前方"
+    },
+    {
+      "start_seconds": 25,
+      "end_seconds": 30,
+      "instruction": "雙腳併攏站穩"
+    }
+  ],
+  "voice_cues": [
+    {
+      "id": "stand_march_cue_01",
+      "at_seconds": 0,
+      "max_duration_seconds": 9,
+      "text": "原地慢慢踏步。",
+      "audio_path": "audio/stand_march_cue_01.mp3",
+      "measured_duration_seconds": null,
+      "audio_status": "pending"
+    },
+    {
+      "id": "stand_march_cue_02",
+      "at_seconds": 10,
+      "max_duration_seconds": 4,
+      "text": "手肘輕輕跟著擺。",
+      "audio_path": "audio/stand_march_cue_02.mp3",
+      "measured_duration_seconds": null,
+      "audio_status": "pending"
+    },
+    {
+      "id": "stand_march_cue_03",
+      "at_seconds": 15,
+      "max_duration_seconds": 7,
+      "text": "膝蓋不必抬高。",
+      "audio_path": "audio/stand_march_cue_03.mp3",
+      "measured_duration_seconds": null,
+      "audio_status": "pending"
+    },
+    {
+      "id": "stand_march_cue_04",
+      "at_seconds": 22,
+      "max_duration_seconds": 4,
+      "text": "慢慢站穩。",
+      "audio_path": "audio/stand_march_cue_04.mp3",
+      "measured_duration_seconds": null,
+      "audio_status": "pending"
+    }
+  ],
+  "animation_brief": "靜態示意圖：雙腳與髖同寬，手肘彎曲，拳頭放鬆。採用 knee 人物模板與方向箭頭。圖檔未放入前，播放器改顯示這張向量人物。",
+  "media": {
+    "status": "illustration_pending",
+    "image_path": "illustration.png",
+    "animation_path": null,
+    "animation_format": null,
+    "animation_playback": null,
+    "animation_duration_seconds": null,
+    "figma_url": null
+  },
+  "source_ids": [
+    "nhs_warm"
+  ],
+  "library": {
+    "body_part": "髖臀",
+    "muscle": "髖屈肌",
+    "pose": "knee",
+    "source_note": "依公開英文資料改寫動作方向與注意事項。左右放在同一筆；30 秒時間軸與換側是產品編排，與來源的維持秒數不同。",
+    "checked_on": "2026-11-09"
+  }
+}

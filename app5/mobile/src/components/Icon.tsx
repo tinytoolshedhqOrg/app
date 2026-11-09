@@ -16,7 +16,10 @@ export type IconName =
   | "moon"
   | "hands"
   | "floor"
-  | "grip";
+  | "grip"
+  | "desk"
+  | "legs"
+  | "neck";
 export default function Icon({
   name,
   size = 22,
@@ -36,6 +39,9 @@ export default function Icon({
     hands: "M8 19 4 12a2 2 0 0 1 3-2l2 3V5a1.5 1.5 0 0 1 3 0v6-8a1.5 1.5 0 0 1 3 0v8-6a1.5 1.5 0 0 1 3 0v7-3a1.5 1.5 0 0 1 3 0v7l-4 5h-6Z",
     floor: "M3 20h18M5 15h13M8 15l3-6 5 3M6 9h.01",
     grip: "M8 6h.01M16 6h.01M8 12h.01M16 12h.01M8 18h.01M16 18h.01",
+    desk: "M4 10h16M6 10v8M18 10v8M8 14h8M4 7h6",
+    legs: "M8 4v6l-3 9M16 4v6l3 9M9 14h6",
+    neck: "M12 3a3 3 0 1 0 0 6 3 3 0 0 0 0-6M8 21c1-4 2.2-6 4-6s3 2 4 6",
     arrow: "M5 12h14m-6-6 6 6-6 6",
     back: "m14 6-6 6 6 6",
     close: "m6 6 12 12M6 18 18 6",
