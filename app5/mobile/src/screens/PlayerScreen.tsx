@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useState, useSyncExternalStore } from "react";
 import {
   Alert,
   AppState,
@@ -27,17 +27,13 @@ import { getSelection, readMusic, saveMusic } from "../storage/selection";
 import type { RootStackParamList } from "../navigation/types";
 import { font, palette, ui } from "../theme/studio";
 
-/**
- * Pre-exercise screen shows 3, 2, 1 only. The name window and the spoken 開始 are blank.
- * The trailing buffer (no next action) still counts the full 7s gap.
- */
+const congratulations = require("../../assets/completion/congratulations.mp3");
+const yay = require("../../assets/completion/yay.mp3");
+
 function timerText(snap: PlayerSnapshot): string {
   if (snap.countdownBlank) return "";
   if (snap.countdownLabel) return snap.countdownLabel;
-  if (snap.phase === "lead" || (snap.phase === "gap" && snap.next)) return "";
-  if (snap.phase === "gap") {
-    return String(Math.ceil(Math.max(0, snap.gapRemaining)));
-  }
+  if (snap.phase !== "unit") return "";
   return `0:${String(Math.ceil(snap.unitRemaining)).padStart(2, "0")}`;
 }
 
@@ -51,11 +47,13 @@ export default function PlayerScreen() {
   const [audioError, setAudioError] = useState(false),
     [detail, setDetail] = useState(false),
     [musicEnabled, setMusicEnabled] = useState(true),
-    [musicReady, setMusicReady] = useState(false);
+    [musicReady, setMusicReady] = useState(false),
+    [announcementFinished, setAnnouncementFinished] = useState(false);
   const music = useAudioPlayer(
     require("../../assets/music/stretch-background.mp3"),
   );
   const voice = useAudioPlayer(null);
+  const celebration = useAudioPlayer(congratulations);
   const audio = useMemo(
     () => createCueAudioService(voice, () => setAudioError(true)),
     [voice],
@@ -65,11 +63,13 @@ export default function PlayerScreen() {
     [routine, audio],
   );
   const [snap, setSnap] = useState(() => player.snapshot());
+  const routineComplete = snap.phase === "complete" && snap.unitCount > 0;
+  const voiceEnabled = useSyncExternalStore(subscribePrefs, () => getPrefs().voiceEnabled);
+  const showCompletion = routineComplete && (!voiceEnabled || announcementFinished);
   useKeepAwake();
   useEffect(() => {
-    audio.setMuted(!getPrefs().voiceEnabled);
-    return subscribePrefs((prefs) => audio.setMuted(!prefs.voiceEnabled));
-  }, [audio]);
+    audio.setMuted(!voiceEnabled);
+  }, [audio, voiceEnabled]);
   useEffect(() => {
     let active = true;
     void Promise.all([
@@ -108,6 +108,7 @@ export default function PlayerScreen() {
       if (state !== "active") {
         player.pause();
         music.pause();
+        celebration.pause();
         setSnap(player.snapshot());
       }
     });
@@ -116,22 +117,65 @@ export default function PlayerScreen() {
       listener.remove();
       audio.dispose();
     };
-  }, [player, audio, music, musicReady]);
+  }, [player, audio, music, celebration, musicReady]);
   useEffect(() => {
     if (!musicReady) return;
     void Promise.resolve()
       .then(() => {
-        if (
-          musicEnabled &&
-          !snap.paused &&
-          snap.phase !== "complete" &&
-          !detail
-        )
+        if (musicEnabled && !snap.paused && snap.phase !== "complete" && !detail)
           music.play();
         else music.pause();
       })
       .catch(() => setAudioError(true));
   }, [music, musicReady, musicEnabled, snap.paused, snap.phase, detail]);
+  useEffect(() => {
+    if (!routineComplete || showCompletion) return;
+    let active = true;
+    const finish = () => {
+      if (active) setAnnouncementFinished(true);
+    };
+    const playback = celebration.addListener("playbackStatusUpdate", (status) => {
+      if (status.didJustFinish || status.error) finish();
+    });
+    const appState = AppState.addEventListener("change", (state) => {
+      if (state !== "active") finish();
+    });
+    // Keep the completion screen reachable if audio never reports an ending.
+    const timeout = setTimeout(() => {
+      finish();
+    }, 4000);
+    void Promise.resolve()
+      .then(() => {
+        if (!active) return;
+        if (AppState.currentState === "background") {
+          finish();
+          return;
+        }
+        celebration.replace(congratulations);
+        celebration.play();
+      })
+      .catch(finish);
+    return () => {
+      active = false;
+      clearTimeout(timeout);
+      playback.remove();
+      appState.remove();
+    };
+  }, [celebration, routineComplete, showCompletion]);
+  useEffect(() => {
+    if (!showCompletion) return;
+    let active = true;
+    void Promise.resolve()
+      .then(() => {
+        if (!active) return;
+        celebration.pause();
+        if (!musicEnabled || AppState.currentState === "background") return;
+        celebration.replace(yay);
+        celebration.play();
+      })
+      .catch(() => setAudioError(true));
+    return () => { active = false; };
+  }, [celebration, musicEnabled, showCompletion]);
   function togglePause() {
     if (snap.paused) player.resume();
     else player.pause();
@@ -162,13 +206,15 @@ export default function PlayerScreen() {
         <ActionButton label="返回首頁" onPress={() => nav.popToTop()} />
       </View>
     );
-  if (snap.phase === "complete")
+  if (showCompletion)
     return (
       <Completion
         name={selection?.name ?? "伸展組合"}
         unitCount={snap.unitCount}
         onHome={() => nav.popToTop()}
         onAgain={() => {
+          celebration.pause();
+          setAnnouncementFinished(false);
           player.start();
           setSnap(player.tick());
         }}
@@ -178,14 +224,17 @@ export default function PlayerScreen() {
     snap.phase === "lead"
       ? "準備開始"
       : gap
-        ? snap.next
-          ? "準備下一個動作"
-          : "最後緩衝"
-        : snap.paused
+        ? "準備下一個動作"
+        : routineComplete
+          ? "恭喜！完成了一組動作"
+          : snap.paused
           ? "已暫停"
           : "保持自然呼吸";
   return (
-    <View style={[ui.root, { paddingTop: insets.top + 8 }]}>
+    <View
+      pointerEvents={routineComplete ? "none" : "auto"}
+      style={[ui.root, { paddingTop: insets.top + 8 }]}
+    >
       <View style={s.nav}>
         <Pressable
           style={s.navClose}

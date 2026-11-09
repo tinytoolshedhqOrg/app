@@ -33,6 +33,20 @@ const mockMusic = {
   replace: jest.fn(),
 };
 const mockVoice = { play: jest.fn(), pause: jest.fn(), replace: jest.fn() };
+let mockCelebrationStatus: ((status: { didJustFinish: boolean }) => void) | undefined;
+const mockCelebration = {
+  play: jest.fn(),
+  pause: jest.fn(),
+  replace: jest.fn(),
+  addListener: jest.fn((_, listener: typeof mockCelebrationStatus) => {
+    mockCelebrationStatus = listener;
+    return { remove: () => { mockCelebrationStatus = undefined; } };
+  }),
+};
+const mockCongratulations = require("../assets/completion/congratulations.mp3");
+const yay = require("../assets/completion/yay.mp3");
+jest.mock("../assets/completion/congratulations.mp3", () => "congratulations.mp3");
+jest.mock("../assets/completion/yay.mp3", () => "yay.mp3");
 jest.mock("@react-navigation/native", () => ({
   useNavigation: () => mockNavigation,
   useFocusEffect: (callback: () => void) =>
@@ -43,7 +57,8 @@ jest.mock("react-native-safe-area-context", () => ({
 }));
 jest.mock("expo-audio", () => ({
   setAudioModeAsync: jest.fn(async () => {}),
-  useAudioPlayer: (source: unknown) => (source ? mockMusic : mockVoice),
+  useAudioPlayer: (source: unknown) =>
+    source === mockCongratulations ? mockCelebration : source ? mockMusic : mockVoice,
 }));
 
 describe("white and blue app flow", () => {
@@ -164,7 +179,12 @@ describe("white and blue app flow", () => {
     await press("背景音樂");
     expect(await readMusic()).toBe(false);
     for (const _unit of selected.exerciseIds) await press("下一個動作");
-    expect(hasText("這一小段，完成了。")).toBe(true);
+    expect(hasText("恭喜！完成了一組動作")).toBe(true);
+    expect(hasText("歐哞！你好棒！")).toBe(false);
+    expect(mockCelebration.replace).toHaveBeenCalledWith(mockCongratulations);
+    await act(async () => mockCelebrationStatus?.({ didJustFinish: true }));
+    expect(hasText("歐哞！你好棒！")).toBe(true);
+    expect(mockCelebration.play).toHaveBeenCalledTimes(1);
     expect(JSON.stringify(rendered!.toJSON())).not.toMatch(
       /注意事項|動作參考|醫療建議/,
     );
@@ -183,6 +203,23 @@ describe("white and blue app flow", () => {
     expect(hasText("3")).toBe(false);
     expect(hasText("開始")).toBe(false);
     expect(hasText("準備開始")).toBe(true);
+  });
+  it.each([true, false])("plays Yay once on the completion screen with voice enabled: %s", async (voiceEnabled) => {
+    await updatePrefs({ voiceEnabled });
+    const selected = getCombinations()[0];
+    setSelection(selected);
+    setCurrentRoutine({ units: resolveSelection(selected).slice(0, 1), repeatsSomeMoves: false, empty: false });
+    await act(async () => { rendered = create(<PlayerScreen />); });
+    await act(async () => jest.advanceTimersByTime(37_000));
+    if (voiceEnabled) {
+      expect(mockCelebration.replace).toHaveBeenCalledWith(mockCongratulations);
+      expect(hasText("歐哞！你好棒！")).toBe(false);
+      await act(async () => mockCelebrationStatus?.({ didJustFinish: true }));
+    }
+    expect(hasText("歐哞！你好棒！")).toBe(true);
+    expect(mockCelebration.replace.mock.calls).toEqual(voiceEnabled ? [[mockCongratulations], [yay]] : [[yay]]);
+    await act(async () => jest.advanceTimersByTime(5000));
+    expect(mockCelebration.play).toHaveBeenCalledTimes(voiceEnabled ? 2 : 1);
   });
   it("waits for audio configuration before firing the first standing cue", async () => {
     const selected = getCombinations()[0];

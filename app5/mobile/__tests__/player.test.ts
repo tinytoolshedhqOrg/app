@@ -86,12 +86,11 @@ function mockAudio(): AudioService & { plays: string[] } {
 }
 
 describe('player timeline', () => {
-  it('maps 3 minutes to 6 units, a 7s lead-in, and a 7s gap after every unit', () => {
+  it('adds a 7s preparation before each unit and ends with the last unit', () => {
     expect(PREP_SECONDS).toBe(7);
     expect(LEAD_SECONDS).toBe(PREP_SECONDS);
     expect(SLOT_SECONDS).toBe(37);
-    expect(totalPlaybackSeconds(6)).toBe(229);
-    expect(LEAD_SECONDS + 6 * 30 + 6 * PREP_SECONDS).toBe(229);
+    expect(totalPlaybackSeconds(6)).toBe(222);
     expect(unitStartSeconds(0)).toBe(LEAD_SECONDS);
     expect(prepTimelineHolds()).toBe(true);
     expect(countdownFitsGap(START_COUNTDOWN_BEATS)).toBe(true);
@@ -151,7 +150,9 @@ describe('player timeline', () => {
     expect(next.unitIndex).toBe(1);
     expect(next.unitRemaining).toBe(30);
 
-    now = totalPlaybackSeconds(2) * 1000;
+    now = (unitStartSeconds(1) + 30) * 1000 - 1;
+    expect(p.snapshot().phase).toBe('unit');
+    now += 1;
     expect(p.snapshot().phase).toBe('complete');
   });
 
@@ -307,7 +308,7 @@ describe('spoken countdown', () => {
     expect(COUNTDOWN_CLIPS.start.text).toBe('開始');
   });
 
-  it('does not speak during the trailing gap or replay a beat after pause', () => {
+  it('does not fire an exercise cue on completion or replay a beat after pause', () => {
     let now = 0;
     const audio = mockAudio();
     const p = new PlayerController([unit('a', [cue('a0', 0)])], audio, () => now);
@@ -332,7 +333,7 @@ describe('spoken countdown', () => {
     alone.tick();
     now = (LEAD_SECONDS + 30) * 1000;
     alone.tick();
-    expect(alone.snapshot().phase).toBe('gap');
+    expect(alone.snapshot().phase).toBe('complete');
     expect(alone.snapshot().next).toBeUndefined();
     expect(alone.snapshot().countdownLabel).toBeUndefined();
     expect(trailing.plays).toEqual(['a0']);

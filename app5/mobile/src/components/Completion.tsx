@@ -32,7 +32,7 @@ export default function Completion({
       ]}
     >
       <Text style={s.eyebrow}>A LITTLE BETTER, EVERY DAY</Text>
-      <Text style={s.title}>這一小段，完成了。</Text>
+      <Text style={s.title}>歐哞！你好棒！</Text>
       <View style={s.art}>
         <Mascot size={230} mood="cheer" />
       </View>

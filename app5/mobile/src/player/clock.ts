@@ -23,7 +23,7 @@ export function unitStartSeconds(index: number): number {
 
 export function totalPlaybackSeconds(unitCount: number): number {
   if (unitCount <= 0) return 0;
-  return LEAD_SECONDS + unitCount * SLOT_SECONDS;
+  return unitStartSeconds(unitCount - 1) + UNIT_SECONDS;
 }
 
 export function formatActiveDurationLabel(activeSeconds: number): { n: number; unit: 'sec' | 'min' } {
@@ -279,7 +279,7 @@ export class PlayerController {
   tick(at: number = this.now()): PlayerSnapshot {
     const snap = this.snapshot(at);
     if (snap.phase === 'complete') {
-      void this.audio.stopAll();
+      if (this.lastPhase !== 'complete') void this.audio.stopAll();
       this.lastPhase = 'complete';
       return snap;
     }

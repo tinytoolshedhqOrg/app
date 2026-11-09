@@ -216,7 +216,7 @@ describe('daily tip card', () => {
       await Promise.resolve();
     });
     const text = JSON.stringify(rendered!.toJSON());
-    expect(text).toContain('這一小段，完成了。');
+    expect(text).toContain('歐哞！你好棒！');
     expect(text).toContain('今日小知識');
     expect(text).not.toContain('下一則');
     expect(text).not.toContain('換一個');
