@@ -1,8 +1,11 @@
 #!/usr/bin/env python3
-"""Replace zh-Hant countdown placeholders with Azure HsiaoYu clips.
+"""Generate zh-Hant countdown clips with Azure HsiaoYu.
 
-Reads the key from the environment or stretch-app/.env. Never prints the key,
-request headers, or response bodies. Does not commit anything.
+Azure's MP3 output pads each short word with silence (about 1.87s). This script
+trims both ends with ffmpeg silenceremove, re-encodes to 24 kHz 96 kbps mono,
+then checks the trimmed length against the countdown slot. Reads the key from
+the environment or stretch-app/.env. Never prints the key, request headers, or
+response bodies. Does not commit anything.
 """
 import argparse
 import hashlib
@@ -43,6 +46,20 @@ def credentials(env_file):
     if not re.fullmatch(r'[a-z0-9]+', region):
         raise ValueError('Invalid Azure region.')
     return key, region
+
+
+def trim_silence(source, dest):
+    """Drop leading and trailing silence, then write a 24 kHz 96 kbps MP3."""
+    if not shutil.which('ffmpeg'):
+        raise ValueError('ffmpeg is required to trim leading and trailing silence.')
+    # stop_periods is negative so silence is removed from the end as well as the start.
+    filt = 'silenceremove=start_periods=1:start_threshold=-50dB:stop_periods=-1:stop_threshold=-50dB:detection=peak'
+    result = subprocess.run(
+        ['ffmpeg', '-y', '-i', str(source), '-af', filt,
+         '-ar', '24000', '-ac', '1', '-c:a', 'libmp3lame', '-b:a', '96k', str(dest)],
+        capture_output=True, text=True)
+    if result.returncode != 0 or not dest.exists() or dest.stat().st_size == 0:
+        raise ValueError('ffmpeg could not trim silence from the countdown clip.')
 
 
 def duration(file):
@@ -109,43 +126,53 @@ def main():
     for clip in clips:
         print(f'{clip["file"]}: 「{clip["text"]}」 max {clip["max_duration_seconds"]}s', flush=True)
     if args.dry_run:
-        print('Dry run only. Placeholder files were not changed.')
+        print('Dry run only. Countdown files were not changed.')
         return
+    if not shutil.which('ffmpeg'):
+        raise ValueError('ffmpeg is required to trim leading and trailing silence.')
     if not shutil.which('ffprobe') and not shutil.which('afinfo'):
         raise ValueError('Install ffprobe or run on macOS for duration checks.')
     key, region = credentials(args.env_file)
     last_request = [0.0]
-    ready = True
-    for clip in clips:
-        target = OUT / clip['file']
-        if not target.resolve().is_relative_to(OUT.resolve()):
-            raise ValueError(f'{clip["file"]} escapes the countdown folder.')
-        data = synthesize(clip['text'], key, region, rate, last_request)
-        temporary = target.with_suffix('.pending.mp3')
-        temporary.write_bytes(data)
-        try:
-            seconds = duration(temporary)
+    staged = []
+    try:
+        for clip in clips:
+            target = (OUT / clip['file']).resolve()
+            if not target.is_relative_to(OUT.resolve()):
+                raise ValueError(f'{clip["file"]} escapes the countdown folder.')
+            raw = target.with_suffix('.raw.mp3')
+            trimmed = target.with_suffix('.trimmed.mp3')
+            raw.write_bytes(synthesize(clip['text'], key, region, rate, last_request))
+            trim_silence(raw, trimmed)
+            seconds = duration(trimmed)
             if seconds <= 0:
-                raise ValueError('Invalid audio duration.')
-            temporary.replace(target)
-        finally:
-            temporary.unlink(missing_ok=True)
-        clip['measured_duration_seconds'] = round(seconds, 3)
-        clip['sha256'] = hashlib.sha256(target.read_bytes()).hexdigest()
-        clip['over_limit'] = seconds > clip['max_duration_seconds']
-        if clip['over_limit']:
-            ready = False
-        print(f'{clip["file"]}: {seconds:.3f}s / {clip["max_duration_seconds"]}s'
-              + (' OVER LIMIT' if clip['over_limit'] else ''), flush=True)
-    manifest['status'] = 'ready' if ready else 'placeholder'
-    manifest['placeholder'] = not ready
-    manifest['format'] = FORMAT
-    temporary_manifest = MANIFEST.with_suffix('.json.tmp')
-    temporary_manifest.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + '\n')
-    temporary_manifest.replace(MANIFEST)
-    if not ready:
-        raise ValueError('At least one clip is longer than its countdown slot. Status left as placeholder.')
-    print(f'Wrote {len(clips)} clips. manifest status: ready.')
+                raise ValueError(f'{clip["file"]}: invalid audio duration after trimming silence.')
+            over = seconds > clip['max_duration_seconds']
+            print(f'{clip["file"]}: trimmed {seconds:.3f}s / {clip["max_duration_seconds"]}s'
+                  + (' OVER LIMIT' if over else ''), flush=True)
+            staged.append((clip, target, trimmed, seconds, over))
+        if any(item[4] for item in staged):
+            raise ValueError('At least one trimmed clip is longer than its countdown slot. Existing files were left unchanged.')
+        for clip, target, trimmed, seconds, _over in staged:
+            trimmed.replace(target)
+            clip['measured_duration_seconds'] = round(seconds, 3)
+            clip['sha256'] = hashlib.sha256(target.read_bytes()).hexdigest()
+            clip['over_limit'] = False
+        manifest['status'] = 'ready'
+        manifest['placeholder'] = False
+        manifest['format'] = FORMAT
+        manifest['note'] = (
+            'Trimmed zh-TW-HsiaoYuNeural speech. Generated locally; the Azure key is not stored here.'
+        )
+        temporary_manifest = MANIFEST.with_suffix('.json.tmp')
+        temporary_manifest.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + '\n')
+        temporary_manifest.replace(MANIFEST)
+    finally:
+        for path in OUT.glob('*.raw.mp3'):
+            path.unlink(missing_ok=True)
+        for path in OUT.glob('*.trimmed.mp3'):
+            path.unlink(missing_ok=True)
+    print(f'Wrote {len(clips)} trimmed clips. manifest status: ready.')
 
 
 if __name__ == '__main__':

@@ -3,37 +3,49 @@
   "voice": "zh-TW-HsiaoYuNeural",
   "rate": "0%",
   "format": "audio-24khz-96kbitrate-mono-mp3",
-  "status": "placeholder",
-  "placeholder": true,
-  "note": "The mp3 files in this folder are silent placeholders, not HsiaoYu speech. Replace them by running app5/mobile/scripts/generate-countdown.py with a local Azure key. Do not commit the key.",
+  "status": "ready",
+  "placeholder": false,
+  "note": "Trimmed zh-TW-HsiaoYuNeural speech. Generated locally; the Azure key is not stored here.",
   "clips": [
     {
       "token": "3",
       "text": "三",
       "label": "3",
-      "file": "3.placeholder.mp3",
-      "max_duration_seconds": 0.65
+      "file": "3.mp3",
+      "max_duration_seconds": 0.65,
+      "measured_duration_seconds": 0.576,
+      "sha256": "d54d8d962facef15d66f32b8d3923be622d95421f802c8934cd1d48d0ce95916",
+      "over_limit": false
     },
     {
       "token": "2",
       "text": "二",
       "label": "2",
-      "file": "2.placeholder.mp3",
-      "max_duration_seconds": 0.65
+      "file": "2.mp3",
+      "max_duration_seconds": 0.65,
+      "measured_duration_seconds": 0.408,
+      "sha256": "86d3dc58995f12ecab35a4d6d9084d275cda26412a17a97efab954ed62b006f1",
+      "over_limit": false
     },
     {
       "token": "1",
       "text": "一",
       "label": "1",
-      "file": "1.placeholder.mp3",
-      "max_duration_seconds": 0.65
+      "file": "1.mp3",
+      "max_duration_seconds": 0.65,
+      "measured_duration_seconds": 0.408,
+      "sha256": "b6bbdccf33486863ddcaf7cbddbf91331475ab9cb8428a4b016494521be432df",
+      "over_limit": false
     },
     {
       "token": "start",
       "text": "開始",
       "label": "開始",
-      "file": "start.placeholder.mp3",
-      "max_duration_seconds": 0.85
+      "file": "start.mp3",
+      "max_duration_seconds": 0.85,
+      "measured_duration_seconds": 0.744,
+      "sha256": "de56f7417025596d21d7120d9cc136a8b4e3bb9817aed52a547590c081426d12",
+      "over_limit": false
     }
   ]
 }
