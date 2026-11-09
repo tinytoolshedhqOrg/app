@@ -8,10 +8,12 @@ import {
   END_COUNTDOWN_BEATS,
   LEAD_SECONDS,
   PlayerController,
+  PREP_SECONDS,
   SLOT_SECONDS,
   START_COUNTDOWN_BEATS,
   countdownFitsGap,
   endCountdownInsideUnit,
+  prepTimelineHolds,
   totalPlaybackSeconds,
   unitStartSeconds,
 } from '../src/player';
@@ -84,14 +86,17 @@ function mockAudio(): AudioService & { plays: string[] } {
 }
 
 describe('player timeline', () => {
-  it('maps 3 minutes to 6 units, a 3s lead-in, and a 3s gap after every unit', () => {
-    expect(LEAD_SECONDS).toBe(3);
-    expect(SLOT_SECONDS).toBe(33);
-    expect(totalPlaybackSeconds(6)).toBe(201);
-    expect(LEAD_SECONDS + 6 * 30 + 6 * 3).toBe(201);
+  it('maps 3 minutes to 6 units, a 7s lead-in, and a 7s gap after every unit', () => {
+    expect(PREP_SECONDS).toBe(7);
+    expect(LEAD_SECONDS).toBe(PREP_SECONDS);
+    expect(SLOT_SECONDS).toBe(37);
+    expect(totalPlaybackSeconds(6)).toBe(229);
+    expect(LEAD_SECONDS + 6 * 30 + 6 * PREP_SECONDS).toBe(229);
     expect(unitStartSeconds(0)).toBe(LEAD_SECONDS);
+    expect(prepTimelineHolds()).toBe(true);
     expect(countdownFitsGap(START_COUNTDOWN_BEATS)).toBe(true);
     expect(endCountdownInsideUnit()).toBe(true);
+    expect(START_COUNTDOWN_BEATS.map((beat) => beat.at)).toEqual([3, 4, 5, 6]);
     expect(END_COUNTDOWN_BEATS.map((beat) => beat.at)).toEqual([27, 28, 29]);
     expect(CUE_DEADLINE_SECONDS).toBe(END_COUNTDOWN_BEATS[0].at);
   });
@@ -119,7 +124,8 @@ describe('player timeline', () => {
     const p = new PlayerController([unit('a'), unit('b')], mockAudio(), () => now);
     p.start();
     expect(p.snapshot().phase).toBe('lead');
-    expect(p.snapshot().countdownLabel).toBe('3');
+    expect(p.snapshot().countdownLabel).toBeUndefined();
+    expect(p.snapshot().gapRemaining).toBe(LEAD_SECONDS);
 
     now = LEAD_SECONDS * 1000 + 10_000;
     const mid = p.snapshot();
@@ -131,11 +137,15 @@ describe('player timeline', () => {
     now = LEAD_SECONDS * 1000 + 31_000;
     const gap = p.snapshot();
     expect(gap.phase).toBe('gap');
-    expect(gap.gapRemaining).toBe(2);
+    expect(gap.gapRemaining).toBe(6);
     expect(gap.next?.id).toBe('b');
-    expect(gap.countdownLabel).toBe('2');
+    expect(gap.countdownLabel).toBeUndefined();
 
-    now = LEAD_SECONDS * 1000 + 33_000;
+    now = LEAD_SECONDS * 1000 + 34_000;
+    expect(p.snapshot().countdownLabel).toBe('2');
+    expect(p.snapshot().gapRemaining).toBe(3);
+
+    now = LEAD_SECONDS * 1000 + 37_000;
     const next = p.snapshot();
     expect(next.phase).toBe('unit');
     expect(next.unitIndex).toBe(1);
@@ -196,8 +206,11 @@ describe('player timeline', () => {
 
     audio.plays.length = 0;
     audio.setMuted(true);
-    const p2 = new PlayerController([unit('a', [cue('m1', 0)])], audio, () => 0);
+    let mutedNow = 0;
+    const p2 = new PlayerController([unit('a', [cue('m1', 0)])], audio, () => mutedNow);
     p2.start();
+    p2.tick();
+    mutedNow = 3000;
     p2.tick();
     expect(audio.plays).toEqual([]);
     expect(p2.snapshot().countdownLabel).toBe('3');
@@ -230,13 +243,19 @@ describe('spoken countdown', () => {
       () => now,
     );
     p.start();
-    const beats = [0, 700, 1400, 2100];
-    const leadLabels = ['3', '2', '1', '開始'];
+    now = 0;
+    p.tick();
+    expect(p.snapshot().countdownLabel).toBeUndefined();
+    expect(p.snapshot().countdownBlank).toBe(false);
+    const beats = [3000, 4000, 5000, 6000];
+    const leadLabels = ['3', '2', '1', undefined];
     beats.forEach((ms, index) => {
       now = ms;
       p.tick();
       expect(p.snapshot().phase).toBe('lead');
       expect(p.snapshot().countdownLabel).toBe(leadLabels[index]);
+      expect(p.snapshot().countdownLabel).not.toBe('開始');
+      expect(p.snapshot().countdownBlank).toBe(ms === 6000);
     });
     now = LEAD_SECONDS * 1000;
     p.tick();
@@ -258,14 +277,18 @@ describe('spoken countdown', () => {
     now = (LEAD_SECONDS + 30) * 1000;
     p.tick();
     expect(p.snapshot().phase).toBe('gap');
+    expect(p.snapshot().countdownLabel).toBeUndefined();
+    now = (LEAD_SECONDS + 30) * 1000 + 3000;
+    p.tick();
     expect(p.snapshot().countdownLabel).toBe('3');
-    now = (LEAD_SECONDS + 30) * 1000 + 700;
+    now = (LEAD_SECONDS + 30) * 1000 + 4000;
     p.tick();
-    now = (LEAD_SECONDS + 30) * 1000 + 1400;
+    now = (LEAD_SECONDS + 30) * 1000 + 5000;
     p.tick();
-    now = (LEAD_SECONDS + 30) * 1000 + 2100;
+    now = (LEAD_SECONDS + 30) * 1000 + 6000;
     p.tick();
-    expect(p.snapshot().countdownLabel).toBe('開始');
+    expect(p.snapshot().countdownLabel).toBeUndefined();
+    expect(p.snapshot().countdownBlank).toBe(true);
     now = unitStartSeconds(1) * 1000;
     p.tick();
     expect(p.snapshot().phase).toBe('unit');
@@ -273,9 +296,11 @@ describe('spoken countdown', () => {
     expect(p.snapshot().unitRemaining).toBe(30);
 
     expect(audio.plays).toEqual([
+      'name:a',
       'countdown:3', 'countdown:2', 'countdown:1', 'countdown:start',
       'a0',
       'countdown:3', 'countdown:2', 'countdown:1',
+      'name:b',
       'countdown:3', 'countdown:2', 'countdown:1', 'countdown:start',
       'b0',
     ]);
@@ -292,11 +317,11 @@ describe('spoken countdown', () => {
     now = 4000;
     p.tick();
     expect(p.snapshot().paused).toBe(true);
-    expect(p.snapshot().countdownLabel).toBe('3');
-    expect(audio.plays).toEqual(['countdown:3']);
+    expect(p.snapshot().countdownLabel).toBeUndefined();
+    expect(audio.plays).toEqual(['name:a']);
     p.resume();
     p.tick();
-    expect(audio.plays).toEqual(['countdown:3']);
+    expect(audio.plays).toEqual(['name:a']);
     expect(audio.resume).toHaveBeenCalled();
 
     now = 0;
@@ -350,8 +375,60 @@ describe('spoken countdown', () => {
     expect(p.snapshot().phase).toBe('unit');
     expect(p.snapshot().unitIndex).toBe(0);
     expect(p.snapshot().unitRemaining).toBe(30);
-    expect(audio.plays).toEqual(['countdown:3', 'a0']);
+    expect(audio.plays).toEqual(['name:a', 'a0']);
     p.tick();
-    expect(audio.plays).toEqual(['countdown:3', 'a0']);
+    expect(audio.plays).toEqual(['name:a', 'a0']);
+  });
+
+  it('starts 3, 2, 1, and 開始 exactly 1s apart on the wall clock', () => {
+    let now = 0;
+    const audio = mockAudio();
+    const playedAt: { id: string; at: number }[] = [];
+    audio.playAt = jest.fn(async (id: string) => {
+      playedAt.push({ id, at: now });
+      audio.plays.push(id);
+    });
+    const p = new PlayerController([unit('a', [cue('a0', 0)]), unit('b')], audio, () => now);
+    p.start();
+    for (let ms = 0; ms <= PREP_SECONDS * 1000; ms += 100) {
+      now = ms;
+      p.tick();
+    }
+    const leadCounts = playedAt.filter((play) => play.id.startsWith('countdown:'));
+    expect(leadCounts.map((play) => play.id)).toEqual([
+      'countdown:3', 'countdown:2', 'countdown:1', 'countdown:start',
+    ]);
+    expect(leadCounts.map((play) => play.at)).toEqual([3000, 4000, 5000, 6000]);
+    for (let i = 1; i < leadCounts.length; i += 1) {
+      expect(leadCounts[i].at - leadCounts[i - 1].at).toBe(1000);
+    }
+    expect(playedAt.find((play) => play.id === 'name:a')?.at).toBe(0);
+    expect(playedAt.find((play) => play.id === 'a0')?.at).toBe(PREP_SECONDS * 1000);
+
+    const gapStart = (LEAD_SECONDS + 30) * 1000;
+    for (let ms = gapStart; ms <= gapStart + PREP_SECONDS * 1000; ms += 100) {
+      now = ms;
+      p.tick();
+    }
+    const gapCounts = playedAt.filter((play) => play.at >= gapStart && play.id.startsWith('countdown:'));
+    expect(gapCounts.map((play) => play.at)).toEqual([
+      gapStart + 3000, gapStart + 4000, gapStart + 5000, gapStart + 6000,
+    ]);
+    for (let i = 1; i < gapCounts.length; i += 1) {
+      expect(gapCounts[i].at - gapCounts[i - 1].at).toBe(1000);
+    }
+    expect(playedAt.find((play) => play.id === 'name:b')?.at).toBe(gapStart);
+  });
+
+  it('does not catch missed countdown beats up in one tick', () => {
+    let now = 0;
+    const audio = mockAudio();
+    const p = new PlayerController([unit('a'), unit('b')], audio, () => now);
+    p.start();
+    now = 6200;
+    p.tick();
+    expect(audio.plays).toEqual(['countdown:start']);
+    p.tick();
+    expect(audio.plays).toEqual(['countdown:start']);
   });
 });

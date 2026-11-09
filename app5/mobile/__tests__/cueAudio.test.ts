@@ -1,5 +1,6 @@
 import type { AudioPlayer } from 'expo-audio';
 import { countdownAsset } from '../src/audio/countdown';
+import { exerciseNameAsset } from '../src/audio/exerciseNames';
 import { createCueAudioService } from '../src/audio/cues';
 import { cueAssets, exerciseLibrary } from '../src/content/exercise-index';
 
@@ -46,6 +47,15 @@ describe('local voice clips', () => {
   audio.resume();
   expect(player.play).toHaveBeenCalledTimes(2);
   expect(jest.getTimerCount()).toBe(0);
+ });
+ it('plays a bundled exercise name and stays silent when that id has no clip', async () => {
+  const player = makePlayer();
+  const audio = createCueAudioService(player as unknown as AudioPlayer, jest.fn());
+  await audio.playAt('name:stand_chest_open');
+  expect(player.replace).toHaveBeenCalledWith(exerciseNameAsset('stand_chest_open'));
+  expect(player.play).toHaveBeenCalledTimes(1);
+  await audio.playAt('name:missing_exercise');
+  expect(player.play).toHaveBeenCalledTimes(1);
  });
  it('plays the offline countdown clip and stays silent when voice is off', async () => {
   const player = makePlayer();

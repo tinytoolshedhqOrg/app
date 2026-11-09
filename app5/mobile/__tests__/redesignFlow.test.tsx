@@ -17,6 +17,7 @@ import {
 } from "../src/storage/selection";
 import { getCurrentRoutine, resetPrefsForTests, setCurrentRoutine, updatePrefs } from "../src/storage";
 import { countdownAsset } from "../src/audio/countdown";
+import { exerciseNameAsset } from "../src/audio/exerciseNames";
 import { cueAssets, exerciseLibrary } from "../src/content/exercise-index";
 
 const mockNavigation = {
@@ -145,9 +146,13 @@ describe("white and blue app flow", () => {
     });
     expect(mockMusic.play).toHaveBeenCalled();
     await act(async () => jest.advanceTimersByTime(100));
-    expect(hasText("3")).toBe(true);
+    expect(hasText("3")).toBe(false);
+    expect(hasText("開始")).toBe(false);
     expect(hasText("準備開始")).toBe(true);
-    await act(async () => jest.advanceTimersByTime(4900));
+    await act(async () => jest.advanceTimersByTime(2900));
+    expect(hasText("3")).toBe(true);
+    expect(hasText("開始")).toBe(false);
+    await act(async () => jest.advanceTimersByTime(6000));
     expect(hasText("0:28")).toBe(true);
     await press("暫停跟練");
     expect(mockMusic.pause).toHaveBeenCalled();
@@ -175,7 +180,8 @@ describe("white and blue app flow", () => {
         );
       again!.props.onPress();
     });
-    expect(hasText("3")).toBe(true);
+    expect(hasText("3")).toBe(false);
+    expect(hasText("開始")).toBe(false);
     expect(hasText("準備開始")).toBe(true);
   });
   it("waits for audio configuration before firing the first standing cue", async () => {
@@ -188,15 +194,24 @@ describe("white and blue app flow", () => {
     expect(mockVoice.play).not.toHaveBeenCalled();
     await act(async () => jest.advanceTimersByTime(1000));
     expect(mockVoice.play).not.toHaveBeenCalled();
+    const playedAt: number[] = [];
+    mockVoice.play.mockImplementation(() => {
+      playedAt.push(Date.now());
+    });
     await act(async () => { ready(); });
-    expect(mockVoice.replace).toHaveBeenCalledWith(countdownAsset("3"));
+    expect(mockVoice.replace).toHaveBeenCalledWith(exerciseNameAsset("stand_neck_turn"));
     expect(mockVoice.play).toHaveBeenCalledTimes(1);
     await act(async () => jest.advanceTimersByTime(500));
     expect(mockVoice.play).toHaveBeenCalledTimes(1);
-    await act(async () => jest.advanceTimersByTime(2500));
+    await act(async () => jest.advanceTimersByTime(6500));
     const standing = exerciseLibrary.find((e) => e.id === "stand_neck_turn")!;
     expect(mockVoice.replace).toHaveBeenLastCalledWith(cueAssets[standing.voice_cues[0].id]);
-    expect(mockVoice.play).toHaveBeenCalledTimes(5);
+    expect(mockVoice.play).toHaveBeenCalledTimes(6);
+    const countdownStarts = playedAt.slice(1, 5);
+    expect(countdownStarts.map((at, index) => (index === 0 ? 0 : at - countdownStarts[index - 1]))).toEqual([
+      0, 1000, 1000, 1000,
+    ]);
+    expect(mockVoice.replace).toHaveBeenCalledWith(countdownAsset("3"));
     mockVoice.pause.mockImplementationOnce(() => { throw new Error('Native shared object already released'); });
     mockMusic.pause.mockImplementationOnce(() => { throw new Error('Native shared object already released'); });
     await act(async () => rendered!.unmount());
@@ -216,10 +231,14 @@ describe("white and blue app flow", () => {
     await act(async () => {
       rendered = create(<PlayerScreen />);
     });
-    await act(async () => jest.advanceTimersByTime(100));
+    await act(async () => jest.advanceTimersByTime(3000));
     expect(hasText("3")).toBe(true);
+    expect(hasText("開始")).toBe(false);
     expect(hasText("準備開始")).toBe(true);
     expect(mockVoice.play).not.toHaveBeenCalled();
+    await act(async () => jest.advanceTimersByTime(3000));
+    expect(hasText("開始")).toBe(false);
+    expect(hasText("1")).toBe(false);
     expect(mockMusic.play).toHaveBeenCalled();
   });
 });

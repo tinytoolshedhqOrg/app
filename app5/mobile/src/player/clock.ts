@@ -1,17 +1,21 @@
 import type { AudioService } from '../audio';
-import { GAP_SECONDS, UNIT_SECONDS, type Exercise, type VoiceCue } from '../content';
+import { UNIT_SECONDS, type Exercise, type VoiceCue } from '../content';
 import {
+  COUNTDOWN_CLIPS,
   END_COUNTDOWN_BEATS,
+  NAME_START_GRACE_SECONDS,
+  PREP_SECONDS,
   START_COUNTDOWN_BEATS,
   countdownPlayId,
+  exerciseNamePlayId,
+  isSpokenStartMoment,
   visibleCountdownLabel,
-  COUNTDOWN_CLIPS,
   type CountdownBeat,
 } from './countdown';
 
-export const SLOT_SECONDS = UNIT_SECONDS + GAP_SECONDS;
-/** Spoken "3, 2, 1, 開始" before every exercise, including the first. */
-export const LEAD_SECONDS = GAP_SECONDS;
+export const SLOT_SECONDS = UNIT_SECONDS + PREP_SECONDS;
+/** Name, pause, then "3, 2, 1, 開始" before every exercise, including the first. */
+export const LEAD_SECONDS = PREP_SECONDS;
 
 export function unitStartSeconds(index: number): number {
   return LEAD_SECONDS + index * SLOT_SECONDS;
@@ -39,8 +43,10 @@ export type PlayerSnapshot = {
   gapRemaining: number;
   paused: boolean;
   progress: number;
-  /** 3 / 2 / 1 / 開始 while a spoken countdown is on screen. Independent of mute. */
+  /** 3 / 2 / 1 while a spoken countdown digit is on screen. 開始 is never shown. Independent of mute. */
   countdownLabel?: string;
+  /** True during the spoken 開始, so the screen does not fall back to the gap number. */
+  countdownBlank?: boolean;
   current?: Exercise;
   next?: Exercise;
   instruction?: string;
@@ -125,6 +131,7 @@ export class PlayerController {
         paused: this.paused,
         progress: elapsedSeconds / totalSeconds,
         countdownLabel: visibleCountdownLabel(START_COUNTDOWN_BEATS, elapsedSeconds, LEAD_SECONDS),
+        countdownBlank: isSpokenStartMoment(START_COUNTDOWN_BEATS, elapsedSeconds, LEAD_SECONDS),
         current,
         next: this.units[1],
         instruction: current?.setup,
@@ -161,6 +168,7 @@ export class PlayerController {
         paused: this.paused,
         progress: elapsedSeconds / totalSeconds,
         countdownLabel: visibleCountdownLabel(END_COUNTDOWN_BEATS, offset, UNIT_SECONDS),
+        countdownBlank: false,
         current,
         next,
         instruction: current ? segmentAt(current, offset) : undefined,
@@ -178,8 +186,11 @@ export class PlayerController {
       paused: this.paused,
       progress: elapsedSeconds / totalSeconds,
       countdownLabel: next
-        ? visibleCountdownLabel(START_COUNTDOWN_BEATS, gapOffset, GAP_SECONDS)
+        ? visibleCountdownLabel(START_COUNTDOWN_BEATS, gapOffset, PREP_SECONDS)
         : undefined,
+      countdownBlank: next
+        ? isSpokenStartMoment(START_COUNTDOWN_BEATS, gapOffset, PREP_SECONDS)
+        : false,
       current,
       next,
       instruction: next?.setup,
@@ -279,11 +290,13 @@ export class PlayerController {
     if (unitChanged) this.firedCues.clear();
     this.lastUnitIndex = snap.unitIndex;
     this.lastPhase = snap.phase;
-    if (snap.phase === 'lead') {
+    if (snap.phase === 'lead' && snap.current) {
       // The lead-in and the gap after unit 0 share unitIndex 0, so prefix the target.
-      this.fireBeats(START_COUNTDOWN_BEATS, LEAD_SECONDS - snap.gapRemaining, 'before:0:');
+      // Offset is wall-clock time since the prep started, not "when the previous clip ended".
+      this.firePrep(snap.current.id, snap.elapsedSeconds, 'before:0:');
     } else if (snap.phase === 'gap' && snap.next) {
-      this.fireBeats(START_COUNTDOWN_BEATS, GAP_SECONDS - snap.gapRemaining, `before:${snap.unitIndex + 1}:`);
+      const gapStart = unitStartSeconds(snap.unitIndex) + UNIT_SECONDS;
+      this.firePrep(snap.next.id, snap.elapsedSeconds - gapStart, `before:${snap.unitIndex + 1}:`);
     } else if (snap.phase === 'unit' && snap.current) {
       const elapsedInUnit = UNIT_SECONDS - snap.unitRemaining;
       this.fireCues(snap.current.voice_cues, elapsedInUnit);
@@ -302,14 +315,38 @@ export class PlayerController {
     }
   }
 
+  /**
+   * Name at the start of the prep, then 3 / 2 / 1 / 開始.
+   * Each start is an absolute offset on this prep's wall clock. A late tick
+   * plays only the beat whose window still contains `elapsed`; it does not
+   * catch the missed beats up, and it does not chain the next beat off clip end.
+   */
+  private firePrep(exerciseId: string, elapsed: number, keyPrefix: string): void {
+    this.fireName(exerciseId, elapsed, keyPrefix);
+    this.fireBeats(START_COUNTDOWN_BEATS, elapsed, keyPrefix);
+  }
+
+  private fireName(exerciseId: string, elapsed: number, keyPrefix: string): void {
+    const key = `${keyPrefix}name`;
+    if (this.firedCues.has(key)) return;
+    const elapsedMs = Math.round(elapsed * 1000);
+    if (elapsedMs < 0) return;
+    this.firedCues.add(key);
+    if (elapsedMs <= Math.round(NAME_START_GRACE_SECONDS * 1000)) {
+      void this.audio.playAt(exerciseNamePlayId(exerciseId));
+    }
+  }
+
   private fireBeats(beats: readonly CountdownBeat[], elapsed: number, keyPrefix = ''): void {
+    const elapsedMs = Math.round(elapsed * 1000);
     for (const beat of beats) {
       const key = keyPrefix + beat.key;
       if (this.firedCues.has(key)) continue;
-      const clip = COUNTDOWN_CLIPS[beat.clip];
-      if (elapsed + 0.05 >= beat.at) {
+      const atMs = Math.round(beat.at * 1000);
+      const windowMs = Math.round(COUNTDOWN_CLIPS[beat.clip].maxDurationSeconds * 1000);
+      if (elapsedMs >= atMs) {
         this.firedCues.add(key);
-        if (elapsed < beat.at + clip.maxDurationSeconds) void this.audio.playAt(countdownPlayId(beat.clip));
+        if (elapsedMs < atMs + windowMs) void this.audio.playAt(countdownPlayId(beat.clip));
       }
     }
   }
