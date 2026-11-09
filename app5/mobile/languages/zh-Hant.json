@@ -81,6 +81,22 @@
     "nothingToRestore": "找不到已購買紀錄",
     "cannotRestore": "此平台無法恢復"
   },
+  "knowledge": {
+    "heading": "今日小知識",
+    "source": "來源",
+    "open": "開啟原文",
+    "external": "文中的「這頁」或「這套」指的是下方來源，不是這個 App 的伸展組合。",
+    "strength": "這則談的是肌力訓練，不是每天的伸展。",
+    "activity": "這則談的是整體身體活動，不是伸展單獨的效果。",
+    "category": {
+      "stretching": "伸展",
+      "sedentary_breaks": "減少久坐",
+      "mobility": "活動度",
+      "general_physical_activity": "一般身體活動",
+      "safe_exercise": "安全運動",
+      "posture": "姿勢"
+    }
+  },
   "common": {
     "back": "返回",
     "cancel": "取消",

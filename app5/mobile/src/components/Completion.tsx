@@ -2,6 +2,7 @@ import { Pressable, ScrollView, StyleSheet, Text, View } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import Mascot from "./Mascot";
 import ActionButton from "./ActionButton";
+import DailyTipCard from "./DailyTipCard";
 import { activityLabel } from "../content/catalog";
 import { font, palette, ui } from "../theme/studio";
 
@@ -41,6 +42,7 @@ export default function Completion({
           {unitCount} 個動作 · 活動 {activityLabel(unitCount)}
         </Text>
       </View>
+      <DailyTipCard />
       <ActionButton
         label="回到首頁"
         onPress={onHome}

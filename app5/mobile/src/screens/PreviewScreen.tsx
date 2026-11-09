@@ -12,7 +12,13 @@ import { useNavigation } from "@react-navigation/native";
 import type { NativeStackNavigationProp } from "@react-navigation/native-stack";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { resolveSelection } from "../content/catalog";
-import type { Exercise } from "../content";
+import { loadBundledContent, type Exercise } from "../content";
+import {
+  advanceCandidate,
+  insertReplacement,
+  postureNote,
+  rankReplacements,
+} from "../content/replacements";
 import {
   getSelection,
   rememberStarted,
@@ -27,6 +33,7 @@ import Icon from "../components/Icon";
 import ReorderableExerciseList, {
   type SortScrollMetrics,
 } from "../components/ReorderableExerciseList";
+import { removeExerciseAt } from "../components/exerciseSwipe";
 
 export default function PreviewScreen() {
   const nav = useNavigation<NativeStackNavigationProp<RootStackParamList>>();
@@ -36,6 +43,7 @@ export default function PreviewScreen() {
     selection ? resolveSelection(selection) : [],
   );
   const [dragging, setDragging] = useState(false);
+  const [swiping, setSwiping] = useState(false);
   const scrollRef = useRef<ScrollView>(null);
   const viewportRef = useRef<View>(null);
   const scrollMetrics = useRef<SortScrollMetrics>({
@@ -46,6 +54,62 @@ export default function PreviewScreen() {
   });
   const [detail, setDetail] = useState<Exercise | null>(null),
     [starting, setStarting] = useState(false);
+  const [suggestion, setSuggestion] = useState<{
+    deletedIndex: number;
+    removedPosition: string;
+    candidateIds: string[];
+    cursor: number;
+  } | null>(null);
+  function removeAt(index: number) {
+    const removed = units[index];
+    const next = removeExerciseAt(units, index);
+    if (!removed || next === units) return;
+    setUnits(next);
+    const candidates = rankReplacements(
+      removed,
+      loadBundledContent().exercises,
+      new Set(next.map((exercise) => exercise.id)),
+    );
+    setSuggestion(
+      candidates.length
+        ? {
+            deletedIndex: index,
+            removedPosition: removed.position,
+            candidateIds: candidates.map((exercise) => exercise.id),
+            cursor: 0,
+          }
+        : null,
+    );
+  }
+  function commitOrder(next: Exercise[]) {
+    setUnits(next);
+    setSuggestion(null);
+  }
+  function acceptReplacement() {
+    if (!suggestion) return;
+    const chosenId = suggestion.candidateIds[suggestion.cursor];
+    const candidate = loadBundledContent().exercises.find((exercise) => exercise.id === chosenId);
+    const deletedIndex = suggestion.deletedIndex;
+    setSuggestion(null);
+    if (!candidate) return;
+    setUnits((current) => insertReplacement(current, deletedIndex, candidate));
+  }
+  function showNextReplacement() {
+    setSuggestion((current) => {
+      if (!current) return current;
+      const cursor = advanceCandidate(current.candidateIds.length, current.cursor);
+      if (cursor == null) return current;
+      return { ...current, cursor };
+    });
+  }
+  const suggested = suggestion
+    ? loadBundledContent().exercises.find(
+        (exercise) => exercise.id === suggestion.candidateIds[suggestion.cursor],
+      )
+    : undefined;
+  const hasNextCandidate = suggestion
+    ? advanceCandidate(suggestion.candidateIds.length, suggestion.cursor) != null
+    : false;
   async function start() {
     if (!selection || !units.length || starting) return;
     setStarting(true);
@@ -89,7 +153,8 @@ export default function PreviewScreen() {
       >
         <ScrollView
           ref={scrollRef}
-          scrollEnabled={!dragging}
+          scrollEnabled={!dragging && !swiping}
+          directionalLockEnabled
           removeClippedSubviews={false}
           scrollEventThrottle={16}
           onScroll={(event) => {
@@ -120,9 +185,11 @@ export default function PreviewScreen() {
           </View>
           <ReorderableExerciseList
             items={units}
-            onChange={setUnits}
+            onChange={commitOrder}
             onOpen={setDetail}
             onDragStateChange={setDragging}
+            onDelete={removeAt}
+            onSwipeActive={setSwiping}
             scrollRef={scrollRef}
             viewportRef={viewportRef}
             scrollMetrics={scrollMetrics}
@@ -136,6 +203,43 @@ export default function PreviewScreen() {
           { paddingTop: 12, paddingBottom: insets.bottom + 16 },
         ]}
       >
+        {suggestion && suggested ? (
+          <View style={s.suggestion}>
+            <Text style={s.suggestionTitle}>要加入相近的動作嗎？</Text>
+            <Text style={s.suggestionName}>{suggested.name}</Text>
+            <Text style={s.suggestionNote}>
+              {postureNote(suggestion.removedPosition, suggested.position)}
+            </Text>
+            <View style={s.suggestionActions}>
+              <Pressable
+                accessibilityRole="button"
+                accessibilityLabel="加入替代"
+                onPress={acceptReplacement}
+                style={s.suggestionPrimary}
+              >
+                <Text style={s.suggestionPrimaryText}>加入替代</Text>
+              </Pressable>
+              <Pressable
+                accessibilityRole="button"
+                accessibilityLabel="換一個"
+                accessibilityState={{ disabled: !hasNextCandidate }}
+                disabled={!hasNextCandidate}
+                onPress={showNextReplacement}
+                style={[s.suggestionSecondary, !hasNextCandidate && s.suggestionDisabled]}
+              >
+                <Text style={s.suggestionSecondaryText}>換一個</Text>
+              </Pressable>
+              <Pressable
+                accessibilityRole="button"
+                accessibilityLabel="不用替代"
+                onPress={() => setSuggestion(null)}
+                style={s.suggestionSecondary}
+              >
+                <Text style={s.suggestionSecondaryText}>不用替代</Text>
+              </Pressable>
+            </View>
+          </View>
+        ) : null}
         <ActionButton
           label={starting ? "正在準備…" : "開始跟練"}
           onPress={() => void start()}
@@ -181,6 +285,36 @@ const s = StyleSheet.create({
   stat: { flex: 1, gap: 5 },
   statDivider: { width: 1, height: 48, backgroundColor: "#C4D3F0" },
   footer: { backgroundColor: palette.bg, borderTopWidth: StyleSheet.hairlineWidth, borderTopColor: palette.border },
+  suggestion: {
+    marginBottom: 12,
+    padding: 14,
+    borderRadius: 14,
+    backgroundColor: palette.pale,
+    gap: 4,
+  },
+  suggestionTitle: { color: palette.ink, fontFamily: font.bold, fontSize: 15, lineHeight: 22 },
+  suggestionName: { color: palette.ink, fontFamily: font.medium, fontSize: 14, lineHeight: 22 },
+  suggestionNote: { color: palette.muted, fontFamily: font.regular, fontSize: 12, lineHeight: 18 },
+  suggestionActions: { flexDirection: "row", flexWrap: "wrap", gap: 8, marginTop: 8 },
+  suggestionPrimary: {
+    minHeight: 40,
+    paddingHorizontal: 12,
+    borderRadius: 10,
+    backgroundColor: palette.blue,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  suggestionPrimaryText: { color: palette.onBlue, fontFamily: font.bold, fontSize: 13 },
+  suggestionSecondary: {
+    minHeight: 40,
+    paddingHorizontal: 12,
+    borderRadius: 10,
+    backgroundColor: palette.card,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  suggestionSecondaryText: { color: palette.ink, fontFamily: font.medium, fontSize: 13 },
+  suggestionDisabled: { opacity: 0.4 },
   meta: {
     fontFamily: font.regular,
     fontSize: 11,

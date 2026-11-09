@@ -3,6 +3,10 @@ import zhHant from '../../languages/zh-Hant.json';
 
 type Dict = typeof zhHant;
 
+/** In-app UI dictionaries. iOS photo-permission strings are not app UI locales. */
+export const SUPPORTED_UI_LOCALES = ['zh-Hant'] as const;
+export type AppLocale = (typeof SUPPORTED_UI_LOCALES)[number];
+
 let current: Dict = zhHant;
 
 export function initializeI18n(): void {
