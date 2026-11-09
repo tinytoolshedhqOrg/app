@@ -25,7 +25,7 @@
     "empty": "沒有符合的動作",
     "change": "請改選姿勢、部位或時間",
     "needsUnlock": "其餘動作需買斷後才能使用",
-    "gapNote": "活動 {active}，另有每段 3 秒間隔"
+    "gapNote": "活動 {active}，另有每段 7 秒準備"
   },
   "player": {
     "pause": "暫停",

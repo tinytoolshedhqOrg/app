@@ -21,11 +21,25 @@ import Completion from "../components/Completion";
 import Icon from "../components/Icon";
 import ActionButton from "../components/ActionButton";
 import { createCueAudioService } from "../audio/cues";
-import { PlayerController } from "../player";
+import { PlayerController, type PlayerSnapshot } from "../player";
 import { getCurrentRoutine, getPrefs, subscribePrefs } from "../storage";
 import { getSelection, readMusic, saveMusic } from "../storage/selection";
 import type { RootStackParamList } from "../navigation/types";
 import { font, palette, ui } from "../theme/studio";
+
+/**
+ * Pre-exercise screen shows 3, 2, 1 only. The name window and the spoken 開始 are blank.
+ * The trailing buffer (no next action) still counts the full 7s gap.
+ */
+function timerText(snap: PlayerSnapshot): string {
+  if (snap.countdownBlank) return "";
+  if (snap.countdownLabel) return snap.countdownLabel;
+  if (snap.phase === "lead" || (snap.phase === "gap" && snap.next)) return "";
+  if (snap.phase === "gap") {
+    return String(Math.ceil(Math.max(0, snap.gapRemaining)));
+  }
+  return `0:${String(Math.ceil(snap.unitRemaining)).padStart(2, "0")}`;
+}
 
 export default function PlayerScreen() {
   const nav = useNavigation<NativeStackNavigationProp<RootStackParamList>>(),
@@ -224,10 +238,7 @@ export default function PlayerScreen() {
             }
             style={s.countdown}
           >
-            {snap.countdownLabel ??
-              (gap
-                ? String(Math.ceil(snap.gapRemaining))
-                : `0:${String(Math.ceil(snap.unitRemaining)).padStart(2, "0")}`)}
+            {timerText(snap)}
           </Text>
           <Text style={ui.small}>{status}</Text>
         </View>
@@ -383,6 +394,7 @@ const s = StyleSheet.create({
     fontFamily: font.bold,
     fontSize: 57,
     lineHeight: 83,
+    minHeight: 83,
     color: palette.blue,
     fontVariant: ["tabular-nums"],
   },
