@@ -68,7 +68,7 @@
     {
       "id": "stand_overhead_side_cue_03",
       "at_seconds": 15,
-      "max_duration_seconds": 9,
+      "max_duration_seconds": 7,
       "text": "回正，再慢慢向左側傾。",
       "audio_path": "audio/stand_overhead_side_cue_03.mp3",
       "measured_duration_seconds": null,
@@ -76,7 +76,7 @@
     },
     {
       "id": "stand_overhead_side_cue_04",
-      "at_seconds": 25,
+      "at_seconds": 22,
       "max_duration_seconds": 4,
       "text": "慢慢回正，雙手放下。",
       "audio_path": "audio/stand_overhead_side_cue_04.mp3",

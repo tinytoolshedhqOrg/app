@@ -1,4 +1,5 @@
 import type { AudioPlayer } from 'expo-audio';
+import { countdownAsset } from '../src/audio/countdown';
 import { createCueAudioService } from '../src/audio/cues';
 import { cueAssets, exerciseLibrary } from '../src/content/exercise-index';
 
@@ -45,6 +46,16 @@ describe('local voice clips', () => {
   audio.resume();
   expect(player.play).toHaveBeenCalledTimes(2);
   expect(jest.getTimerCount()).toBe(0);
+ });
+ it('plays the offline countdown clip and stays silent when voice is off', async () => {
+  const player = makePlayer();
+  const audio = createCueAudioService(player as unknown as AudioPlayer, jest.fn());
+  await audio.playAt('countdown:3');
+  expect(player.replace).toHaveBeenCalledWith(countdownAsset('3'));
+  expect(player.play).toHaveBeenCalledTimes(1);
+  audio.setMuted(true);
+  await audio.playAt('countdown:start');
+  expect(player.play).toHaveBeenCalledTimes(1);
  });
  it('stops a clip at its budget and respects mute', async () => {
   cueAssets[cue.id] = 42;

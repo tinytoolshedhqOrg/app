@@ -70,7 +70,7 @@
     {
       "id": "sit_shoulder_circles_cue_03",
       "at_seconds": 15,
-      "max_duration_seconds": 9,
+      "max_duration_seconds": 7,
       "text": "現在換方向，肩膀慢慢向後繞圈。",
       "audio_path": "audio/sit_shoulder_circles_cue_03.mp3",
       "measured_duration_seconds": null,
@@ -78,7 +78,7 @@
     },
     {
       "id": "sit_shoulder_circles_cue_04",
-      "at_seconds": 25,
+      "at_seconds": 22,
       "max_duration_seconds": 4,
       "text": "慢慢停下，放鬆肩膀。",
       "audio_path": "audio/sit_shoulder_circles_cue_04.mp3",

@@ -70,7 +70,7 @@
     {
       "id": "lie_wrist_flex_cue_03",
       "at_seconds": 15,
-      "max_duration_seconds": 9,
+      "max_duration_seconds": 7,
       "text": "繼續小幅度活動，雙手不要靠近臉。",
       "audio_path": "audio/lie_wrist_flex_cue_03.mp3",
       "measured_duration_seconds": null,
@@ -78,7 +78,7 @@
     },
     {
       "id": "lie_wrist_flex_cue_04",
-      "at_seconds": 25,
+      "at_seconds": 22,
       "max_duration_seconds": 4,
       "text": "放鬆手腕，慢慢放下。",
       "audio_path": "audio/lie_wrist_flex_cue_04.mp3",

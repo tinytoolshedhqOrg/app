@@ -65,6 +65,21 @@ describe('content schema', () => {
     expect(safeParseContentPack(raw).success).toBe(false);
   });
 
+  it('rejects a voice cue that runs into the ending countdown', () => {
+    const raw = clone() as { exercises: { voice_cues: { at_seconds: number; max_duration_seconds: number }[] }[] };
+    const cues = raw.exercises[0].voice_cues;
+    const last = cues[cues.length - 1];
+    last.at_seconds = 24;
+    last.max_duration_seconds = 4;
+    expect(safeParseContentPack(raw).success).toBe(false);
+
+    const touching = clone() as { exercises: { voice_cues: { at_seconds: number; max_duration_seconds: number }[] }[] };
+    const ok = touching.exercises[0].voice_cues;
+    ok[ok.length - 1].at_seconds = 23;
+    ok[ok.length - 1].max_duration_seconds = 4;
+    expect(safeParseContentPack(touching).success).toBe(true);
+  });
+
   it('rejects a voice cue that crosses 30s or the next cue', () => {
     const raw = clone() as { exercises: { voice_cues: { at_seconds: number; max_duration_seconds: number }[] }[] };
     raw.exercises[0].voice_cues[0].max_duration_seconds = 40;

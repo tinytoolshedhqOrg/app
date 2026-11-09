@@ -71,7 +71,7 @@
     {
       "id": "lie_single_knee_hug_cue_03",
       "at_seconds": 15,
-      "max_duration_seconds": 9,
+      "max_duration_seconds": 7,
       "text": "換托右大腿，右膝輕靠近，別用力拉。",
       "audio_path": "audio/lie_single_knee_hug_cue_03.mp3",
       "measured_duration_seconds": null,
@@ -79,7 +79,7 @@
     },
     {
       "id": "lie_single_knee_hug_cue_04",
-      "at_seconds": 25,
+      "at_seconds": 22,
       "max_duration_seconds": 4,
       "text": "右腳放回，放鬆一下。",
       "audio_path": "audio/lie_single_knee_hug_cue_04.mp3",

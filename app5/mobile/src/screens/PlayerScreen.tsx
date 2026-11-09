@@ -22,7 +22,7 @@ import Icon from "../components/Icon";
 import ActionButton from "../components/ActionButton";
 import { createCueAudioService } from "../audio/cues";
 import { PlayerController } from "../player";
-import { getCurrentRoutine } from "../storage";
+import { getCurrentRoutine, getPrefs, subscribePrefs } from "../storage";
 import { getSelection, readMusic, saveMusic } from "../storage/selection";
 import type { RootStackParamList } from "../navigation/types";
 import { font, palette, ui } from "../theme/studio";
@@ -52,6 +52,10 @@ export default function PlayerScreen() {
   );
   const [snap, setSnap] = useState(() => player.snapshot());
   useKeepAwake();
+  useEffect(() => {
+    audio.setMuted(!getPrefs().voiceEnabled);
+    return subscribePrefs((prefs) => audio.setMuted(!prefs.voiceEnabled));
+  }, [audio]);
   useEffect(() => {
     let active = true;
     void Promise.all([
@@ -129,9 +133,12 @@ export default function PlayerScreen() {
   }
   const gap = snap.phase === "gap";
   const shown = gap ? (snap.next ?? snap.current) : snap.current;
-  const cue = snap.current?.voice_cues
-    .filter((c) => c.at_seconds <= 30 - snap.unitRemaining)
-    .at(-1);
+  const cue =
+    snap.phase === "unit"
+      ? snap.current?.voice_cues
+          .filter((c) => c.at_seconds <= 30 - snap.unitRemaining)
+          .at(-1)
+      : undefined;
   if (!shown)
     return (
       <View
@@ -153,13 +160,16 @@ export default function PlayerScreen() {
         }}
       />
     );
-  const status = gap
-    ? snap.next
-      ? "準備下一個動作"
-      : "最後緩衝"
-    : snap.paused
-      ? "已暫停"
-      : "保持自然呼吸";
+  const status =
+    snap.phase === "lead"
+      ? "準備開始"
+      : gap
+        ? snap.next
+          ? "準備下一個動作"
+          : "最後緩衝"
+        : snap.paused
+          ? "已暫停"
+          : "保持自然呼吸";
   return (
     <View style={[ui.root, { paddingTop: insets.top + 8 }]}>
       <View style={s.nav}>
@@ -207,10 +217,17 @@ export default function PlayerScreen() {
         <Text style={s.name}>{shown.name}</Text>
         <Text style={ui.small}>{shown.library?.muscle}</Text>
         <View style={s.timerRow}>
-          <Text accessibilityLiveRegion="none" style={s.countdown}>
-            {gap
-              ? String(Math.ceil(snap.gapRemaining))
-              : `0:${String(Math.ceil(snap.unitRemaining)).padStart(2, "0")}`}
+          <Text
+            accessibilityLiveRegion="none"
+            accessibilityLabel={
+              snap.countdownLabel ? `倒數 ${snap.countdownLabel}` : undefined
+            }
+            style={s.countdown}
+          >
+            {snap.countdownLabel ??
+              (gap
+                ? String(Math.ceil(snap.gapRemaining))
+                : `0:${String(Math.ceil(snap.unitRemaining)).padStart(2, "0")}`)}
           </Text>
           <Text style={ui.small}>{status}</Text>
         </View>
@@ -239,9 +256,11 @@ export default function PlayerScreen() {
         </View>
         <View style={s.prompt}>
           <Text style={s.promptText}>
-            {gap
-              ? (snap.next?.setup ?? "放鬆雙手，保持自然呼吸。")
-              : (cue?.text ?? snap.instruction)}
+            {snap.phase === "lead"
+              ? snap.current?.setup
+              : gap
+                ? (snap.next?.setup ?? "放鬆雙手，保持自然呼吸。")
+                : (cue?.text ?? snap.instruction)}
           </Text>
         </View>
       </ScrollView>

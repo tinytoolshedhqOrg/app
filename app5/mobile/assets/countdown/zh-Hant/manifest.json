@@ -1,0 +1,39 @@
+{
+  "locale": "zh-Hant",
+  "voice": "zh-TW-HsiaoYuNeural",
+  "rate": "0%",
+  "format": "audio-24khz-96kbitrate-mono-mp3",
+  "status": "placeholder",
+  "placeholder": true,
+  "note": "The mp3 files in this folder are silent placeholders, not HsiaoYu speech. Replace them by running app5/mobile/scripts/generate-countdown.py with a local Azure key. Do not commit the key.",
+  "clips": [
+    {
+      "token": "3",
+      "text": "三",
+      "label": "3",
+      "file": "3.placeholder.mp3",
+      "max_duration_seconds": 0.65
+    },
+    {
+      "token": "2",
+      "text": "二",
+      "label": "2",
+      "file": "2.placeholder.mp3",
+      "max_duration_seconds": 0.65
+    },
+    {
+      "token": "1",
+      "text": "一",
+      "label": "1",
+      "file": "1.placeholder.mp3",
+      "max_duration_seconds": 0.65
+    },
+    {
+      "token": "start",
+      "text": "開始",
+      "label": "開始",
+      "file": "start.placeholder.mp3",
+      "max_duration_seconds": 0.85
+    }
+  ]
+}

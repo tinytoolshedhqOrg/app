@@ -71,7 +71,7 @@
     {
       "id": "stand_calf_wall_cue_03",
       "at_seconds": 15,
-      "max_duration_seconds": 9,
+      "max_duration_seconds": 7,
       "text": "換右腳後退，腳跟留地，輕輕伸展。",
       "audio_path": "audio/stand_calf_wall_cue_03.mp3",
       "measured_duration_seconds": null,
@@ -79,7 +79,7 @@
     },
     {
       "id": "stand_calf_wall_cue_04",
-      "at_seconds": 25,
+      "at_seconds": 22,
       "max_duration_seconds": 4,
       "text": "收回右腳，站穩放鬆。",
       "audio_path": "audio/stand_calf_wall_cue_04.mp3",

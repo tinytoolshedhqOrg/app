@@ -68,7 +68,7 @@
     {
       "id": "stand_neck_turn_cue_03",
       "at_seconds": 15,
-      "max_duration_seconds": 9,
+      "max_duration_seconds": 7,
       "text": "換向右轉，肩膀不要跟著動。",
       "audio_path": "audio/stand_neck_turn_cue_03.mp3",
       "measured_duration_seconds": 3.936,
@@ -76,7 +76,7 @@
     },
     {
       "id": "stand_neck_turn_cue_04",
-      "at_seconds": 25,
+      "at_seconds": 22,
       "max_duration_seconds": 4,
       "text": "回到前方，放鬆。",
       "audio_path": "audio/stand_neck_turn_cue_04.mp3",

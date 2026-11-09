@@ -1,7 +1,7 @@
 import fs from "fs";
 import path from "path";
 import AsyncStorage from "@react-native-async-storage/async-storage";
-import { loadBundledContent } from "../src/content";
+import { CUE_DEADLINE_SECONDS, loadBundledContent } from "../src/content";
 import {
   bodyParts,
   getBodySelection,
@@ -32,12 +32,17 @@ describe("composable library", () => {
         JSON.parse(fs.readFileSync(path.join(folder, "exercise.json"), "utf8"))
           .id,
       ).toBe(ex.id);
-      for (const c of ex.voice_cues) {
+      let previousEnd = 0;
+      const cues = [...ex.voice_cues].sort((a, b) => a.at_seconds - b.at_seconds);
+      for (const c of cues) {
         expect(ids.has(c.id)).toBe(false);
         ids.add(c.id);
         expect(c.audio_path).toMatch(/^audio\/.+\.mp3$/);
-        expect(c.at_seconds + c.max_duration_seconds).toBeLessThanOrEqual(30);
+        expect(c.at_seconds).toBeGreaterThanOrEqual(previousEnd);
+        expect(c.at_seconds + c.max_duration_seconds).toBeLessThanOrEqual(CUE_DEADLINE_SECONDS);
+        previousEnd = c.at_seconds + c.max_duration_seconds;
       }
+      expect(cues[cues.length - 1].at_seconds).toBeLessThanOrEqual(22);
       expect(
         ex.source_ids.every((id) => pack.sources.some((s) => s.id === id)),
       ).toBe(true);
