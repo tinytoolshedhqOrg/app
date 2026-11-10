@@ -1,4 +1,5 @@
 {
-  "CFBundleDisplayName": "Stretch",
+  "CFBundleDisplayName": "Kettle Stretch",
+  "CFBundleName": "Kettle Stretch",
   "NSPhotoLibraryUsageDescription": "This app does not read your photos and does not save or export images. It would use photo library access only to copy a photo into the app when given that photo's library address."
 }
