@@ -89,7 +89,7 @@
   ],
   "animation_brief": "靜態示意圖：一手輕扶椅背。一腳的腳尖先留在地面，膝蓋在另一腳稍後方。採用 knee 人物模板與方向箭頭。圖檔未放入前，播放器改顯示這張向量人物。",
   "media": {
-    "status": "illustration_pending",
+    "status": "ai_illustration",
     "image_path": "illustration.png",
     "animation_path": null,
     "animation_format": null,

@@ -91,7 +91,7 @@
   ],
   "animation_brief": "靜態示意圖：背對穩固牆面，腳跟可以離牆一小步。採用 blades 人物模板與方向箭頭。圖檔未放入前，播放器改顯示這張向量人物。",
   "media": {
-    "status": "illustration_pending",
+    "status": "ai_illustration",
     "image_path": "illustration.png",
     "animation_path": null,
     "animation_format": null,

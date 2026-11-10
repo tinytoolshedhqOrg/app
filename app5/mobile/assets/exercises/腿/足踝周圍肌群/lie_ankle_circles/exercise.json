@@ -89,8 +89,8 @@
   ],
   "animation_brief": "靜態示意圖：仰躺，小腿下墊薄墊，腳跟略超出墊緣，腳踝能自由活動。採用 ankle-circle 人物模板與方向箭頭。對照步驟與換側方向，不使用動畫。",
   "media": {
-    "status": "static_diagram",
-    "image_path": null,
+    "status": "ai_illustration",
+    "image_path": "illustration.png",
     "animation_path": null,
     "animation_format": null,
     "animation_playback": null,

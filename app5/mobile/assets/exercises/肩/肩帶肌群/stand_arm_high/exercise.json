@@ -88,7 +88,7 @@
   ],
   "animation_brief": "靜態示意圖：雙腳站穩，頭上留空。採用 raise 人物模板與方向箭頭。圖檔未放入前，播放器改顯示這張向量人物。",
   "media": {
-    "status": "illustration_pending",
+    "status": "ai_illustration",
     "image_path": "illustration.png",
     "animation_path": null,
     "animation_format": null,

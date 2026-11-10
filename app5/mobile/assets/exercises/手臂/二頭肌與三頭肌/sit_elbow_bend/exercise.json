@@ -88,8 +88,8 @@
   ],
   "animation_brief": "靜態示意圖：坐穩，雙臂垂在身旁，手掌朝前，手指放鬆。採用 elbow 人物模板與方向箭頭。對照步驟與換側方向，不使用動畫。",
   "media": {
-    "status": "static_diagram",
-    "image_path": null,
+    "status": "ai_illustration",
+    "image_path": "illustration.png",
     "animation_path": null,
     "animation_format": null,
     "animation_playback": null,
