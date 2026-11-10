@@ -10,7 +10,7 @@
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.tinytoolshed.stretch",
-      "buildNumber": "3",
+      "buildNumber": "4",
       "infoPlist": {
         "CFBundleDevelopmentRegion": "zh-Hant",
         "CFBundleLocalizations": [

@@ -1,62 +1,63 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-# Deploy app1/app2/app3/app4 store HTML (support + privacy) to GitHub Pages (gh-pages).
+# Deploy app1..app5 store HTML (support + privacy) to GitHub Pages.
 #
-# How to run (from the repo root, after this PR is merged):
+# How to run (from the repo root, on an up-to-date main):
 #   git checkout main && git pull origin main
 #   ./deploy-store-pages.sh
 #
-# Do not run from a feature branch unless you intend to publish that branch's
-# store HTML. The script copies from the *current working tree* onto gh-pages
-# and pushes. It does not commit store files on main.
+# The script copies from the *current working tree*, so do not run it from a
+# feature branch unless you mean to publish that branch's store HTML.
 #
-# After running:
-#   https://tinytoolshedhq.github.io/app/app4/store/support.html
-#   https://tinytoolshedhq.github.io/app/app4/store/privacy.html
-# (same pattern for app1 / app2 / app3)
+# Targets:
+#   1. PRIMARY (URL-preserving): repo tinytoolshedhq/tinytoolshedhq.github.io,
+#      branch main, folder app/. This serves the URLs that App Store Connect
+#      already uses:
+#        https://tinytoolshedhq.github.io/app/<appN>/store/support.html
+#        https://tinytoolshedhq.github.io/app/<appN>/store/privacy.html
+#      History: these URLs used to come from the gh-pages branch of
+#      tinytoolshedhq/app. When the repo moved to tinytoolshedhqOrg/app, GitHub
+#      Pages does not redirect and the gh-pages branch was gone, so every URL
+#      returned 404 (2026-11-10). Do NOT create a repo named `app` under the
+#      tinytoolshedhq account: it would break the transfer redirect.
+#   2. BACKUP: branch gh-pages of tinytoolshedhqOrg/app (origin), served at
+#        https://tinytoolshedhqorg.github.io/app/<appN>/store/...
 #
-# History: gh-pages `app4/store/` previously held CraftQ / 業問 pages (deployed
-# 2026-09-17) because this repo's app4 slot was used for that product before
-# Decibel Meter existed. Later deploys skipped app4 when main had no
-# `app4/store/*.html`, so CraftQ stayed live. This script now requires those
-# files and overwrites dest files; the index labels match the current apps.
+# Needs push access to both repos (gh auth / GH_TOKEN as tinytoolshedhq).
+
+APPS=(app1 app2 app3 app4 app5)
+PRIMARY_REPO="${PRIMARY_REPO:-tinytoolshedhq/tinytoolshedhq.github.io}"
+PRIMARY_BRANCH="${PRIMARY_BRANCH:-main}"
+PRIMARY_SUBDIR="app"
 
 REPO_ROOT="$(cd "$(dirname "$0")" && pwd)"
 cd "$REPO_ROOT"
 
-TEMP_DIR=$(mktemp -d)
-trap 'rm -rf "$TEMP_DIR"' EXIT
-
-if git rev-parse --verify gh-pages >/dev/null 2>&1; then
-  git worktree add "$TEMP_DIR" gh-pages
-else
-  git fetch origin gh-pages
-  git worktree add "$TEMP_DIR" origin/gh-pages
-fi
+STAGE=$(mktemp -d)
+WORK=$(mktemp -d)
+trap 'rm -rf "$STAGE" "$WORK"' EXIT
 
 missing=0
-for app in app1 app2 app3 app4; do
-  src="$REPO_ROOT/$app/store"
-  dest="$TEMP_DIR/$app/store"
-  mkdir -p "$dest"
+for app in "${APPS[@]}"; do
+  mkdir -p "$STAGE/$app/store"
   for f in support.html privacy.html; do
-    if [ -f "$src/$f" ]; then
-      cp "$src/$f" "$dest/$f"
-      echo "copied $app/store/$f"
+    if [ -f "$REPO_ROOT/$app/store/$f" ]; then
+      cp "$REPO_ROOT/$app/store/$f" "$STAGE/$app/store/$f"
+      echo "staged $app/store/$f"
     else
-      echo "missing $src/$f" >&2
+      echo "missing $app/store/$f" >&2
       missing=1
     fi
   done
 done
 if [ "$missing" -ne 0 ]; then
-  echo "Refusing to deploy with missing store pages (would leave stale gh-pages files)." >&2
+  echo "Refusing to deploy with missing store pages." >&2
   exit 1
 fi
 
-# Tiny root index so /app/ is not an empty listing error
-cat > "$TEMP_DIR/index.html" <<'EOF'
+# Tiny index so /app/ is not a 404
+cat > "$STAGE/index.html" <<'HTML'
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
@@ -67,6 +68,7 @@ cat > "$TEMP_DIR/index.html" <<'EOF'
 <body>
   <p>Store pages:</p>
   <ul>
+    <li><a href="./app5/store/support.html">壺鈴伸展 Kettle Stretch support</a> · <a href="./app5/store/privacy.html">privacy</a></li>
     <li><a href="./app4/store/support.html">分貝計 support</a> · <a href="./app4/store/privacy.html">privacy</a></li>
     <li><a href="./app3/store/support.html">Been Ages support</a> · <a href="./app3/store/privacy.html">privacy</a></li>
     <li><a href="./app2/store/support.html">急廁 Go support</a> · <a href="./app2/store/privacy.html">privacy</a></li>
@@ -74,20 +76,57 @@ cat > "$TEMP_DIR/index.html" <<'EOF'
   </ul>
 </body>
 </html>
-EOF
+HTML
 
-cd "$TEMP_DIR"
-git add app1/store app2/store app3/store app4/store index.html
-if git diff --cached --quiet; then
-  echo "No changes to commit."
+commit_and_push() { # $1 = dir, $2 = push refspec target
+  cd "$1"
+  git add -A
+  if git diff --cached --quiet; then
+    echo "No changes in $1."
+  else
+    git -c user.name="tinytoolshedhq" -c user.email="tinytoolshedhq@users.noreply.github.com" \
+      commit -q -m "deploy store support/privacy pages $(date +%Y-%m-%d)"
+    git push -q origin "HEAD:$2"
+    echo "pushed $2"
+  fi
+  cd "$REPO_ROOT"
+}
+
+if command -v gh >/dev/null 2>&1; then gh auth setup-git >/dev/null 2>&1 || true; fi
+
+# 1. Primary: tinytoolshedhq.github.io/app/
+primary_ok=0
+if git clone -q --depth 1 --branch "$PRIMARY_BRANCH" "https://github.com/$PRIMARY_REPO.git" "$WORK/primary" 2>/dev/null; then
+  touch "$WORK/primary/.nojekyll"
+  for app in "${APPS[@]}"; do
+    mkdir -p "$WORK/primary/$PRIMARY_SUBDIR/$app/store"
+    cp "$STAGE/$app/store/"*.html "$WORK/primary/$PRIMARY_SUBDIR/$app/store/"
+  done
+  cp "$STAGE/index.html" "$WORK/primary/$PRIMARY_SUBDIR/index.html"
+  commit_and_push "$WORK/primary" "$PRIMARY_BRANCH"
+  primary_ok=1
 else
-  git commit -m "deploy store support/privacy pages $(date +%Y-%m-%d)"
-  git push origin HEAD:gh-pages
+  echo "WARNING: cannot clone $PRIMARY_REPO ($PRIMARY_BRANCH). The original" >&2
+  echo "  https://tinytoolshedhq.github.io/app/... URLs will stay 404 until that repo" >&2
+  echo "  exists (public, Pages from $PRIMARY_BRANCH /), then rerun this script." >&2
 fi
 
-cd "$REPO_ROOT"
-git worktree remove "$TEMP_DIR" --force 2>/dev/null || true
+# 2. Backup: gh-pages branch of this repo (orphan branch if it does not exist)
+if git ls-remote --exit-code --heads origin gh-pages >/dev/null 2>&1; then
+  git clone -q --depth 1 --branch gh-pages "$(git remote get-url origin)" "$WORK/backup"
+else
+  git init -q "$WORK/backup"
+  (cd "$WORK/backup" && git checkout -q --orphan gh-pages && git remote add origin "$(cd "$REPO_ROOT" && git remote get-url origin)")
+fi
+touch "$WORK/backup/.nojekyll"
+cp -R "$STAGE/." "$WORK/backup/"
+commit_and_push "$WORK/backup" gh-pages
 
-echo "Done. Verify:"
-echo "  https://tinytoolshedhq.github.io/app/app4/store/support.html"
-echo "  https://tinytoolshedhq.github.io/app/app4/store/privacy.html"
+echo "Done. Verify (after the Pages build, ~1 min):"
+[ "$primary_ok" -eq 1 ] || echo "  (primary target skipped; only the backup URLs below the list work)"
+for app in "${APPS[@]}"; do
+  for f in support privacy; do
+    echo "  https://tinytoolshedhq.github.io/app/$app/store/$f.html"
+  done
+done
+echo "Backup: https://tinytoolshedhqorg.github.io/app/<appN>/store/{support,privacy}.html"
