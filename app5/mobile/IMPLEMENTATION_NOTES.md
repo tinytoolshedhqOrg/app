@@ -45,14 +45,14 @@ stand_shoulder_blades
 
 ### 生成與接入方式
 
-- 生成工具在 repo 根目錄的 `stretch-app/azure-tts/`，只需要 Python 3 標準庫。操作見該資料夾 README。
-- 本機金鑰在 `stretch-app/.env`，支援 `AzureSpeech__SubscriptionKey` 或 `AZURE_SPEECH_KEY`；此檔已加入 Git 忽略規則，不打包進 App。
+- 生成工具在 [`app5/tools/azure-tts/`](../tools/azure-tts/)，只需要 Python 3 標準庫。操作見該資料夾 README。
+- 本機金鑰在 `app5/tools/.env`，支援 `AzureSpeech__SubscriptionKey` 或 `AZURE_SPEECH_KEY`；此檔已加入 Git 忽略規則，不打包進 App。
 - 從 repo 根目錄執行：
 
 ```sh
-python3 -B stretch-app/azure-tts/generate.py --dry-run
-python3 -B stretch-app/azure-tts/generate.py
-python3 -B stretch-app/azure-tts/compare.py
+python3 -B app5/tools/azure-tts/generate.py --dry-run
+python3 -B app5/tools/azure-tts/generate.py
+python3 -B app5/tools/azure-tts/compare.py
 ```
 
 - 預設只處理 standing 組合。生成請求至少間隔 3.2 秒，對 429／部分 5xx 有有限次重試；相同參數及音檔雜湊符合時直接沿用，避免重複生成。

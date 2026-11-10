@@ -5,11 +5,11 @@
 從 repo 根目錄執行：
 
 ```sh
-python3 stretch-app/azure-tts/generate.py --dry-run
-python3 stretch-app/azure-tts/generate.py
+python3 app5/tools/azure-tts/generate.py --dry-run
+python3 app5/tools/azure-tts/generate.py
 ```
 
-`stretch-app/.env` 支援既有的 `AzureSpeech__SubscriptionKey=...`，也支援 `AZURE_SPEECH_KEY=...`。區域預設 `eastasia`，可用 `AZURE_SPEECH_REGION` 指定。環境變數優先於檔案。不要將金鑰提交 Git。
+`app5/tools/.env` 支援既有的 `AzureSpeech__SubscriptionKey=...`，也支援 `AZURE_SPEECH_KEY=...`。區域預設 `eastasia`，可用 `AZURE_SPEECH_REGION` 指定。環境變數優先於檔案。不要將金鑰提交 Git。
 
 - 聲線：`zh-TW-HsiaoYuNeural`；預設語速 `0%`。
 - 輸出：`audition-output/stretch/azure/standing/zh-TW-HsiaoYuNeural/0%/`（Git 忽略）。
@@ -26,7 +26,7 @@ python3 stretch-app/azure-tts/generate.py
 ## 首句 A／B 試聽
 
 ```sh
-python3 stretch-app/azure-tts/compare.py
+python3 app5/tools/azure-tts/compare.py
 ```
 
 A 沿用原地伸展第一句已生成音檔；B 使用相同 HsiaoYu 聲線、語速 `-10%`，在「先站穩，」後加入 SSML `250ms` 停頓。只新增一個 B 音檔，不重做整組。產出保存在同聲線資料夾的 `ab-first-cue/`，包含雙播放器 `index.html`、兩個 MP3、B 的 SSML 與參數紀錄。重跑時雜湊符合就不重複呼叫 Azure。

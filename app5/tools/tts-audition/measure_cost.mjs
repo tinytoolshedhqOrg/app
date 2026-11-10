@@ -158,7 +158,7 @@ function maskSecrets(s) {
 // 一組 10 個動作的字數（以 exercises.zh-Hant.json 前 10 個動作的 voice_cues 估算）
 function tenExerciseChars() {
   try {
-    const ex = JSON.parse(fs.readFileSync(path.resolve(HERE, "..", "exercises.zh-Hant.json"), "utf8")).exercises;
+    const ex = JSON.parse(fs.readFileSync(path.resolve(HERE, "../../mobile/assets/content/exercises.zh-Hant.json"), "utf8")).exercises;
     const ten = ex.slice(0, 10);
     const texts = ten.flatMap((e) => (e.voice_cues || []).map((v) => v.text));
     return { chars: texts.reduce((s, t) => s + charCount(t), 0), cues: texts.length, n: ten.length };

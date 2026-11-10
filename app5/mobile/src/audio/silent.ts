@@ -9,7 +9,7 @@ export type RouteChange = { reason: 'oldDeviceUnavailable' | string };
 export type Unsubscribe = () => void;
 
 /**
- * Playback interface from stretch-app/IMPLEMENTATION_PLAN.md §1.
+ * Playback interface from app5/docs/IMPLEMENTATION_PLAN.md §1.
  * This slice ships a silent placeholder; real expo-audio + files drop in later.
  */
 export interface AudioService {

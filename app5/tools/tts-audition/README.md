@@ -36,7 +36,7 @@
   - 每秒成本
   - 每千字成本
   - 一次自訂轉換的推估成本
-- 自訂轉換的推估基準是 exercises.zh-Hant.json 前 10 個動作，共 40 句、509 字。日文和英文的推估同時列出「依字數」與「依句數」兩種，譯文長度不同時，以依句數為準。
+- 自訂轉換的推估基準是[原始動作資料](../../mobile/assets/content/exercises.zh-Hant.json)前 10 個動作，共 40 句、509 字。日文和英文的推估同時列出「依字數」與「依句數」兩種，譯文長度不同時，以依句數為準。
 - 秒數 = PCM 位元組數 ÷ 48000（24000 Hz × 2 bytes）。token 數取自 `response.done` 的 `response.usage.input_token_details` 與 `output_token_details`（text_tokens、audio_tokens）。
 - 價格寫成腳本頂端的 `PRICE` 常數（每 1M token）：
 

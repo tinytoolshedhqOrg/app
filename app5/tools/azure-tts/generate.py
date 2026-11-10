@@ -15,8 +15,11 @@ import urllib.error
 import urllib.request
 from xml.sax.saxutils import escape, quoteattr
 
-REPO = Path(__file__).resolve().parents[2]
-LIBRARY = REPO / 'app5/mobile/assets/exercises'
+TOOLS = Path(__file__).resolve().parents[1]
+APP = TOOLS.parent
+REPO = APP.parent
+LIBRARY = APP / 'mobile/assets/exercises'
+ENV_FILE = TOOLS / '.env'
 FORMAT = 'audio-24khz-96kbitrate-mono-mp3'
 
 
@@ -146,7 +149,7 @@ a.onended=()=>{if(sequence&&clips[i+1]){clips[i+1].scrollIntoView({block:'center
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--routine', default='standing', help='Routine ID; defaults to the eight standing exercises.')
-    parser.add_argument('--env-file', type=Path, default=REPO / 'stretch-app/.env')
+    parser.add_argument('--env-file', type=Path, default=ENV_FILE)
     parser.add_argument('--rate', default='0%', help='SSML speaking rate, e.g. 0%% or +10%%.')
     parser.add_argument('--dry-run', action='store_true', help='List scope without reading credentials or calling Azure.')
     parser.add_argument('--limit', type=int, help='Generate only the first N cues for a small trial.')

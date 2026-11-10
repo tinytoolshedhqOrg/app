@@ -4,7 +4,6 @@ on:
   pull_request:
     paths:
       - 'app5/mobile/**'
-      - 'stretch-app/exercises.zh-Hant.json'
       - '.github/workflows/app5-ci.yml'
 
 permissions:

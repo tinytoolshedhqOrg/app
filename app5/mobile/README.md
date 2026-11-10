@@ -81,7 +81,7 @@ assets/exercises/
 4. 執行 `npm run content:build`。Metro 需要靜態 `require()`，不能只把檔案丟入資料夾就自動發現。建置腳本會拒絕 ready 但缺檔、未量測或超時的音檔。
 5. 執行型別、lint 與測試，再在模擬器／真機檢查。可以逐句補檔，缺檔仍使用文字提示。
 
-生成的 `src/content/exercise-index.ts` 同時匯入 JSON 與現有音檔。執行時依 `at_seconds` 播放；暫停會暫停語音，切動作、緩衝和完成會停止原提示。語音與音樂使用不同播放器。未使用的預製舊 TTS 試聽工具位於 repo 的 `stretch-app/tts-audition`，本流程不自動執行它。
+生成的 `src/content/exercise-index.ts` 同時匯入 JSON 與現有音檔。執行時依 `at_seconds` 播放；暫停會暫停語音，切動作、緩衝和完成會停止原提示。語音與音樂使用不同播放器。未使用的預製舊 TTS 試聽工具位於 [`app5/tools/tts-audition`](../tools/tts-audition/)，本流程不自動執行它。
 
 ## 白藍設計與本地素材
 

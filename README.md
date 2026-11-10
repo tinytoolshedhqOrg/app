@@ -89,15 +89,13 @@ cd app4/mobile && npm install && npm start
 
 ## app5 — 伸展
 
-依姿勢、部位與時間組合短時間伸展與活動。此切片離線：內容驗證、規則選課、播放器、記住上次選項、一次買斷 IAP（本機）。規格與內容見 `stretch-app/`。
+離線伸展跟練 App。執行方式與現行行為見 [app5/mobile](app5/mobile/README.md)，早期產品規格與規劃放在 [app5/docs](app5/docs/README.md)，語音生成與試聽工具放在 [app5/tools](app5/tools/)。
 
 ```bash
 cd app5/mobile && npm install && npm start
 ```
 
 - 單元測試／型別／lint：`npm test`、`npm run typecheck`、`npm run lint`
-- IAP 商品 ID 佔位：`com.tinytoolshed.stretch.fullpack`（尚未在 App Store Connect 建立）
-- 無後端、無 TTS、無網路。動畫與語音為佔位。
 
 ---
 

@@ -2,7 +2,9 @@
 
 更新日期：2026-10-30。名稱暫定，平台僅限 iOS。
 
-本文件與 `exercises.zh-Hant.json` 為第一版產品規格及內容草稿，尚未實作 App、後端、購買功能或下載服務。JSON 含 30 個動作內容單位；圖片、動畫與語音尚未製作，不能視為完整的影音下載包。
+目前的 App 與開發指令見 [mobile README](../mobile/README.md)。
+
+本文件與 [`exercises.zh-Hant.json`](../mobile/assets/content/exercises.zh-Hant.json) 為第一版產品規格及內容草稿，尚未實作 App、後端、購買功能或下載服務。JSON 含 30 個動作內容單位；圖片、動畫與語音尚未製作，不能視為完整的影音下載包。
 
 ## 1. 產品目的
 
@@ -122,7 +124,7 @@ Figma Starter 可先試做人物與動畫；超過方案功能限制才升級，
 
 ## 9. JSON 格式與資料包
 
-檔案：`exercises.zh-Hant.json`，UTF-8、標準 JSON、繁體中文。
+檔案：[`exercises.zh-Hant.json`](../mobile/assets/content/exercises.zh-Hant.json)，UTF-8、標準 JSON、繁體中文。
 
 | 欄位 | 說明 |
 | --- | --- |

@@ -4,7 +4,7 @@
 Azure's MP3 output pads each short word with silence (about 1.87s). This script
 trims both ends with ffmpeg silenceremove, re-encodes to 24 kHz 96 kbps mono,
 then checks the trimmed length against the countdown slot. Reads the key from
-the environment or stretch-app/.env. Never prints the key, request headers, or
+the environment or app5/tools/.env. Never prints the key, request headers, or
 response bodies. Does not commit anything.
 """
 import argparse
@@ -22,7 +22,7 @@ import urllib.request
 from xml.sax.saxutils import escape, quoteattr
 
 ROOT = Path(__file__).resolve().parents[1]
-REPO = ROOT.parents[1]
+ENV_FILE = ROOT.parent / 'tools/.env'
 OUT = ROOT / 'assets/countdown/zh-Hant'
 MANIFEST = OUT / 'manifest.json'
 VOICE = 'zh-TW-HsiaoYuNeural'
@@ -42,7 +42,7 @@ def credentials(env_file):
     key = values.get('AZURE_SPEECH_KEY') or values.get('AzureSpeech__SubscriptionKey')
     region = values.get('AZURE_SPEECH_REGION') or values.get('AzureSpeech__Region') or 'eastasia'
     if not key:
-        raise ValueError('Missing AZURE_SPEECH_KEY or AzureSpeech__SubscriptionKey in the environment or stretch-app/.env.')
+        raise ValueError('Missing AZURE_SPEECH_KEY or AzureSpeech__SubscriptionKey in the environment or app5/tools/.env.')
     if not re.fullmatch(r'[a-z0-9]+', region):
         raise ValueError('Invalid Azure region.')
     return key, region
@@ -112,7 +112,7 @@ def synthesize(text, key, region, rate, last_request):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--env-file', type=Path, default=REPO / 'stretch-app/.env')
+    parser.add_argument('--env-file', type=Path, default=ENV_FILE)
     parser.add_argument('--dry-run', action='store_true', help='List clips without reading a key or calling Azure.')
     args = parser.parse_args()
     manifest = json.loads(MANIFEST.read_text())

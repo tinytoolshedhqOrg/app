@@ -12,7 +12,7 @@
 
 聲線與既有動作提示相同：語速 `0%`，格式 `audio-24khz-96kbitrate-mono-mp3`。
 
-金鑰只放本機，不要寫進程式、不要提交 Git。沿用 `stretch-app/.env`（已在根目錄 `.gitignore`）的 `AZURE_SPEECH_KEY` 或 `AzureSpeech__SubscriptionKey`。區域預設 `eastasia`。需要本機的 `ffmpeg` 與 `ffprobe`。
+金鑰只放本機，不要寫進程式、不要提交 Git。沿用 `app5/tools/.env`（已在根目錄 `.gitignore`）的 `AZURE_SPEECH_KEY` 或 `AzureSpeech__SubscriptionKey`。區域預設 `eastasia`。需要本機的 `ffmpeg` 與 `ffprobe`。
 
 從 repo 根目錄：
 

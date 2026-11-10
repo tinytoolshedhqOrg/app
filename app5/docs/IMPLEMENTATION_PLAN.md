@@ -1,7 +1,7 @@
 
 # 伸展 app（暫定名）實作計畫 — app5/
 
-更新：2026-10-30（第二版：全免費方案起步、TTS 只比較 Google 與 OpenAI）。依據：`README.md`、`exercises.zh-Hant.json`，以及 Chun 2026-10-30 的四項決定。
+更新：2026-10-30（第二版：全免費方案起步、TTS 只比較 Google 與 OpenAI）。依據：`README.md`、[`exercises.zh-Hant.json`](../mobile/assets/content/exercises.zh-Hant.json)，以及 Chun 2026-10-30 的四項決定。
 本文件只是計畫，不含程式。價格都標了查證日期，**所有成本都是估算**，正式定價前要用實測校正。
 
 ## 0. 已定決策
@@ -168,7 +168,7 @@ Chun 2026-10-30 決定：全部從免費方案開始。程式要設計成升級�
 
 ## 4. TTS：Google Cloud TTS Chirp 3 HD vs OpenAI（2026-10-30 查官方頁）
 ElevenLabs 依 Chun 的選擇排除，不列入推薦。
-2026-10-30 Chun 決定預設與自訂語音都用 OpenAI（全球多語），暫不接 Google；試聽與成本實測腳本在 `stretch-app/tts-audition/`。
+2026-10-30 Chun 決定預設與自訂語音都用 OpenAI（全球多語），暫不接 Google；試聽與成本實測腳本在 [`app5/tools/tts-audition/`](../tools/tts-audition/)。
 
 字數是用腳本從 JSON 實際統計的 `voice_cues.text`：30 動作、120 段、**共 1,500 字**。最長的 10 個動作合計 531 字。所有 `max_duration_seconds` 合計 780 秒。
 

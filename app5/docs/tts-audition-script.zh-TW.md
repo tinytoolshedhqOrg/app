@@ -1,6 +1,6 @@
 # TTS 試聽腳本（zh-TW）— 伸展 app（暫定名）
 
-更新：2026-10-30。講稿逐字取自 `exercises.zh-Hant.json`，沒有改寫。用來比較 Google Chirp 3 HD 和 OpenAI TTS。
+更新：2026-10-30。講稿逐字取自 [`exercises.zh-Hant.json`](../mobile/assets/content/exercises.zh-Hant.json)，沒有改寫。用來比較 Google Chirp 3 HD 和 OpenAI TTS。
 
 挑選原則：
 - 坐、站、躺三種姿勢各選 1 個，都含左右換側。

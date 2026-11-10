@@ -2,4 +2,4 @@
 audition-output/
 
 # Local Azure Speech credentials
-/stretch-app/.env
+/app5/tools/.env

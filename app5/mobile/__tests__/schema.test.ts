@@ -1,5 +1,3 @@
-import fs from 'fs';
-import path from 'path';
 import bundled from '../assets/content/exercises.zh-Hant.json';
 import { parseContentPack, safeParseContentPack, EXPECTED_EXERCISE_COUNT } from '../src/content';
 
@@ -8,12 +6,6 @@ function clone(): Record<string, unknown> {
 }
 
 describe('content schema', () => {
-  it('keeps the app5 copy identical to stretch-app/exercises.zh-Hant.json', () => {
-    const spec = fs.readFileSync(path.join(__dirname, '../../../stretch-app/exercises.zh-Hant.json'));
-    const app = fs.readFileSync(path.join(__dirname, '../assets/content/exercises.zh-Hant.json'));
-    expect(app.equals(spec)).toBe(true);
-  });
-
   it('accepts the bundled 30-exercise pack with source_referenced', () => {
     const pack = parseContentPack(bundled);
     expect(pack.exercises).toHaveLength(EXPECTED_EXERCISE_COUNT);

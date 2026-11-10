@@ -7,7 +7,7 @@ from pathlib import Path
 import shutil
 import sys
 
-from generate import REPO, build_ssml, credentials, duration, synthesize
+from generate import ENV_FILE, REPO, build_ssml, credentials, duration, synthesize
 
 
 def main():
@@ -31,7 +31,7 @@ def main():
     cached = (b.exists() and old.get('ssml_sha256') == signature and
               old.get('B', {}).get('sha256') == hashlib.sha256(b.read_bytes()).hexdigest())
     if not cached:
-        key, region = credentials(REPO / 'stretch-app/.env')
+        key, region = credentials(ENV_FILE)
         data = synthesize(text, key, region, voice, '-10%', [0.0], '先站穩，', 250)
         temporary = b.with_suffix('.pending.mp3')
         temporary.write_bytes(data)
