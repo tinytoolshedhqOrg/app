@@ -1,28 +1,23 @@
 {
   "status": "approved_subset",
-  "approvedCount": 60,
+  "approvedCount": 55,
   "locale": "zh-Hant",
   "supportedUiLocales": [
     "zh-Hant"
   ],
   "accessDate": "2026-11-08",
-  "note": "Approved Traditional Chinese sentences are stored verbatim. context flags only choose on-screen labels and do not replace the sentences.",
+  "note": "Each tip has one standalone Traditional Chinese sentence. Source details and provenance are retained for reference.",
   "ids": [
     "004",
     "005",
     "007",
-    "008",
     "012",
-    "013",
     "014",
     "015",
-    "016",
     "017",
-    "018",
     "020",
     "021",
     "023",
-    "024",
     "025",
     "028",
     "029",
@@ -230,12 +225,11 @@
   "tips": [
     {
       "id": "004",
-      "title": "冷的肌肉先暖開",
+      "title": "伸展前先熱身",
       "category": "stretching",
       "sentences": {
         "zh-Hant": [
-          "肌肉還冷的時候直接拉，比較容易拉傷。",
-          "伸展前先用輕鬆的走路、慢跑或騎車，低強度做約 5 到 10 分鐘。"
+          "肌肉還沒熱開時直接伸展比較容易拉傷，所以可以先輕鬆走一走，等身體暖了再開始。"
         ]
       },
       "sourceId": "mayo-stretch",
@@ -244,12 +238,11 @@
     },
     {
       "id": "005",
-      "title": "運動後再拉更合適",
+      "title": "運動後適合做靜態伸展",
       "category": "stretching",
       "sentences": {
         "zh-Hant": [
-          "肌肉已經因為活動而溫暖時，再做伸展會更合適。",
-          "所以伸展可以放在運動之後，而不是拿來代替熱身。"
+          "想做停在同一個姿勢的靜態伸展，可以排在運動後，趁肌肉還暖的時候做。"
         ]
       },
       "sourceId": "mayo-stretch",
@@ -258,12 +251,11 @@
     },
     {
       "id": "007",
-      "title": "衝刺前先別停住拉",
+      "title": "衝刺前先別做靜態伸展",
       "category": "stretching",
       "sentences": {
         "zh-Hant": [
-          "緊接在衝刺或比賽前，把肌肉拉長並停住，有研究顯示可能讓表現稍差。",
-          "也有研究指出，賽前立刻伸展會讓腿後肌力量變弱。"
+          "準備衝刺時，先把肌肉拉長並停在同一個姿勢，可能讓接下來的衝刺表現稍微變差。"
         ]
       },
       "sourceId": "mayo-stretch",
@@ -271,57 +263,25 @@
       "context": []
     },
     {
-      "id": "008",
-      "title": "柔軟度帶動關節角度",
-      "category": "mobility",
-      "sentences": {
-        "zh-Hant": [
-          "研究支持伸展有助於柔軟度，關節可活動的角度也會跟著改善。",
-          "這是活動範圍的變化，不是治療疾病，也不能單獨解釋心肺或體重的好處。"
-        ]
-      },
-      "sourceId": "mayo-stretch",
-      "provenance": "Mayo Clinic says research shows stretching can improve flexibility and, as a result, joint range of motion.",
-      "context": []
-    },
-    {
       "id": "012",
-      "title": "順手照顧今天用到的部位",
+      "title": "伸展今天用得多的部位",
       "category": "stretching",
       "sentences": {
         "zh-Hant": [
-          "除了大肌群，也伸展這項活動最常使用的肌肉和關節。",
-          "頁面把這點寫成已有一些證據，而不是每一種運動都用同一套伸展。"
+          "挑伸展動作時，可以先想想今天哪些部位用得最多，像是跑步後就可以多照顧腿部。"
         ]
       },
       "sourceId": "mayo-stretch",
       "provenance": "Mayo Clinic says to stretch muscles and joints you routinely use, and that some evidence supports stretches for the muscles used most in a sport or activity.",
-      "context": [
-        "external_source"
-      ]
-    },
-    {
-      "id": "013",
-      "title": "不要彈震著拉",
-      "category": "stretching",
-      "sentences": {
-        "zh-Hant": [
-          "伸展要平順，不要用彈震的方式來回甩。",
-          "彈震可能傷到肌肉，也會讓肌肉更緊。"
-        ]
-      },
-      "sourceId": "mayo-stretch",
-      "provenance": "Mayo Clinic says to stretch in a smooth movement without bouncing, because bouncing can injure muscle and contribute to tightness.",
       "context": []
     },
     {
       "id": "014",
-      "title": "停住並照常呼吸",
+      "title": "伸展時保持呼吸",
       "category": "stretching",
       "sentences": {
         "zh-Hant": [
-          "每個伸展大約停 30 秒，過程中照常呼吸。",
-          "不要憋氣，也不要為了停更久而拉到痛。"
+          "伸展到有拉感的位置後，可以停留約 30 秒，過程中維持平常的呼吸節奏。"
         ]
       },
       "sourceId": "mayo-stretch",
@@ -330,12 +290,11 @@
     },
     {
       "id": "015",
-      "title": "較緊的地方可再久一點",
+      "title": "特別緊的部位可以多停一下",
       "category": "stretching",
       "sentences": {
         "zh-Hant": [
-          "特別緊的部位，停大約 60 秒可能比較夠。",
-          "時間拉長的前提仍是不痛，而不是硬撐。"
+          "有些特別緊的部位可能需要伸展約 60 秒，可以在有拉感但不痛的範圍內多停一會兒。"
         ]
       },
       "sourceId": "mayo-stretch",
@@ -343,27 +302,12 @@
       "context": []
     },
     {
-      "id": "016",
-      "title": "每週至少兩到三次",
-      "category": "stretching",
-      "sentences": {
-        "zh-Hant": [
-          "想得到較穩定的好處，伸展至少每週兩到三次。",
-          "就算每次只有 5 到 10 分鐘，也有幫助。"
-        ]
-      },
-      "sourceId": "mayo-stretch",
-      "provenance": "Mayo Clinic says the most benefit comes from stretching at least two to three times a week, and that even 5 to 10 minutes at a time can help.",
-      "context": []
-    },
-    {
       "id": "017",
-      "title": "停練後角度可能退回",
+      "title": "柔軟度需要持續維持",
       "category": "mobility",
       "sentences": {
         "zh-Hant": [
-          "若伸展曾經讓關節活動角度變大，停掉之後角度可能再變小。",
-          "柔軟度要維持，就得持續做，不是做過一次就永久保留。"
+          "伸展練出來的關節活動範圍，可能在停練一段時間後縮小，所以想維持原本的幅度就要持續練習。"
         ]
       },
       "sourceId": "mayo-stretch",
@@ -371,27 +315,12 @@
       "context": []
     },
     {
-      "id": "018",
-      "title": "伸展擋不住過度使用",
-      "category": "safe_exercise",
-      "sentences": {
-        "zh-Hant": [
-          "做了伸展，不代表就不會受傷。",
-          "過度使用造成的傷害，也不是靠伸展就能預防。"
-        ]
-      },
-      "sourceId": "mayo-stretch",
-      "provenance": "Mayo Clinic says stretching does not mean you cannot get injured, and that stretching will not prevent an overuse injury.",
-      "context": []
-    },
-    {
       "id": "020",
-      "title": "帶著動作練柔軟度",
+      "title": "柔軟度也能在移動中練",
       "category": "mobility",
       "sentences": {
         "zh-Hant": [
-          "太極、皮拉提斯或瑜伽這類緩和的動作練習，可以讓特定動作更柔軟。",
-          "Mayo 也寫到這類運動對年長者可能有助於減少跌倒；那是整個活動的效果，不是單靠停住一個伸展。"
+          "太極、皮拉提斯或瑜伽的緩慢動作，可以讓身體練習在移動中伸展，改善特定動作的柔軟度。"
         ]
       },
       "sourceId": "mayo-stretch",
@@ -400,12 +329,11 @@
     },
     {
       "id": "021",
-      "title": "先做低強度的類似動作",
+      "title": "用慢速版的動作熱身",
       "category": "safe_exercise",
       "sentences": {
         "zh-Hant": [
-          "動態熱身是先用低強度，做和接下來活動相似的動作。",
-          "再逐漸加快、加重，而不是一開始就用比賽強度。"
+          "動態熱身可以從接下來要做的動作開始，例如跑步前先用慢跑讓身體適應。"
         ]
       },
       "sourceId": "mayo-stretch",
@@ -414,12 +342,11 @@
     },
     {
       "id": "023",
-      "title": "維持三個自然彎",
+      "title": "脊椎本來就有三個彎",
       "category": "posture",
       "sentences": {
         "zh-Hant": [
-          "脊椎在頸部、背的中段和下背，本來就有三個自然彎曲。",
-          "姿勢要保住這些彎，不要再把它們加大。"
+          "頸部、上背和下背各有自然的弧度，坐著或站著時可以保留這些弧度，避免刻意把腰拱得更深。"
         ]
       },
       "sourceId": "medlineplus-posture",
@@ -427,43 +354,25 @@
       "context": []
     },
     {
-      "id": "024",
-      "title": "頭在肩上、肩在髖上",
-      "category": "posture",
-      "sentences": {
-        "zh-Hant": [
-          "一個實用的對齊方式，是頭在肩膀上方，肩膀在髖部上方。",
-          "這是排列的參考，不是要求每個人擺成同一張標準照片。"
-        ]
-      },
-      "sourceId": "medlineplus-posture",
-      "provenance": "MedlinePlus says the head should be above the shoulders, and the top of the shoulders over the hips.",
-      "context": []
-    },
-    {
       "id": "025",
-      "title": "垮坐和幾種不適有關",
+      "title": "坐久了可以換個姿勢",
       "category": "posture",
       "sentences": {
         "zh-Hant": [
-          "這頁把長時間彎腰垮坐，和頸、肩、背疼痛、柔軟度下降、關節比較不好活動連在一起。",
-          "它說的是可能發生，不是每個人彎一下就會受傷。"
+          "長時間彎腰垮坐可能讓脖子、肩膀和背部不舒服，坐久了可以起來動一動，再換個姿勢坐。"
         ]
       },
       "sourceId": "medlineplus-posture",
       "provenance": "MedlinePlus lists slouching as able to cause neck, shoulder, and back pain, decrease flexibility, and affect how well joints move. Stronger claims on the same list were not used.",
-      "context": [
-        "external_source"
-      ]
+      "context": []
     },
     {
       "id": "028",
-      "title": "椅背托住下背的彎",
+      "title": "坐著時讓椅背托住下背",
       "category": "posture",
       "sentences": {
         "zh-Hant": [
-          "坐著時讓整個背有支撐，包含下背那個自然彎。",
-          "椅子本身托不住時，可以加一個背墊。"
+          "坐著時可以把臀部坐到椅子後方，讓椅背支撐整個背部，尤其是下背自然往內彎的地方。"
         ]
       },
       "sourceId": "medlineplus-posture",
@@ -472,12 +381,11 @@
     },
     {
       "id": "029",
-      "title": "肩放鬆、肘有個角度",
+      "title": "打字時把肩膀放鬆",
       "category": "posture",
       "sentences": {
         "zh-Hant": [
-          "肩膀放鬆，不要圓肩，也不要用力向後扯。",
-          "手肘靠近身體，彎曲大約在 90 到 120 度。"
+          "打字時可以讓肩膀自然放鬆，避免為了坐挺而一直用力把肩膀往後拉。"
         ]
       },
       "sourceId": "medlineplus-posture",
@@ -486,28 +394,24 @@
     },
     {
       "id": "031",
-      "title": "大腿要被椅子托住",
+      "title": "坐下時確認大腿有支撐",
       "category": "posture",
       "sentences": {
         "zh-Hant": [
-          "坐著時大腿和髖部要有支撐，座面有足夠的墊。",
-          "大腿大約與地面平行，是這頁給的坐姿參考。"
+          "坐在椅子上時，讓座面托住臀部和大腿，大腿大致與地面平行可作為調整椅子高度的參考。"
         ]
       },
       "sourceId": "medlineplus-posture",
       "provenance": "MedlinePlus says the thighs and hips should be supported, with a well-padded seat and thighs about parallel to the floor.",
-      "context": [
-        "external_source"
-      ]
+      "context": []
     },
     {
       "id": "034",
-      "title": "軀幹周圍的肌肉幫忙撐",
+      "title": "核心肌群幫忙支撐軀幹",
       "category": "posture",
       "sentences": {
         "zh-Hant": [
-          "背、腹和骨盆周圍的肌肉，會幫忙支撐軀幹。",
-          "練這些肌群被描述為對姿勢有幫助，不是把姿勢改到完美的方法。"
+          "腹部、背部和骨盆周圍的肌肉一起支撐軀幹，鍛鍊這些肌肉有助於維持姿勢。"
         ]
       },
       "sourceId": "medlineplus-posture",
@@ -516,12 +420,11 @@
     },
     {
       "id": "039",
-      "title": "一百五或七十五",
+      "title": "運動強度會影響每週目標",
       "category": "general_physical_activity",
       "sentences": {
         "zh-Hant": [
-          "成人一週可做至少 150 分鐘中等強度，或 75 分鐘較強強度。",
-          "一般來說，這兩段時間的健康益處被寫成相近，也可以混著做。"
+          "一般成人的每週活動目標是至少 150 分鐘中等強度活動，例如快走，或 75 分鐘高強度活動，例如跑步。"
         ]
       },
       "sourceId": "nhs-adults",
@@ -530,12 +433,11 @@
     },
     {
       "id": "040",
-      "title": "分散在多天",
+      "title": "把活動分散到一週幾天",
       "category": "general_physical_activity",
       "sentences": {
         "zh-Hant": [
-          "這 150 分鐘比較適合分散在一週四到五天，或每天都做一點。",
-          "不是叫人把整週的量擠在同一次做完。"
+          "如果目標是一週做 150 分鐘中等強度活動，可以分散到四、五天，讓每次要做的時間短一點。"
         ]
       },
       "sourceId": "nhs-adults",
@@ -544,12 +446,11 @@
     },
     {
       "id": "042",
-      "title": "用說話判斷吃力程度",
+      "title": "用能不能唱歌判斷強度",
       "category": "general_physical_activity",
       "sentences": {
         "zh-Hant": [
-          "中等強度時會比較暖、呼吸比較快，還能說話，但不能唱歌。",
-          "較強強度時呼吸又急又快，不暫停就說不了幾個字。"
+          "活動時如果呼吸變快，還能聊天但唱不了歌，通常已經達到中等強度。"
         ]
       },
       "sourceId": "nhs-adults",
@@ -558,12 +459,11 @@
     },
     {
       "id": "043",
-      "title": "再出力就會變較強",
+      "title": "同一種活動也能調整強度",
       "category": "general_physical_activity",
       "sentences": {
         "zh-Hant": [
-          "多數中等強度的活動，只要再用力，就會變成較強強度。",
-          "同樣是走路，加快或走上坡，吃力程度就不一樣。"
+          "活動的強度取決於你有多吃力，例如騎同一台腳踏車時，加速或改騎上坡都會提高強度。"
         ]
       },
       "sourceId": "nhs-adults",
@@ -572,12 +472,11 @@
     },
     {
       "id": "044",
-      "title": "很短很吃力的幾次也算",
+      "title": "短時間的高強度活動也算",
       "category": "general_physical_activity",
       "sentences": {
         "zh-Hant": [
-          "幾次很短、非常吃力的活動，也可以算進一週的活動量。",
-          "中等、較強和非常吃力的活動可以混著累積，不必每次都做很久。"
+          "即使每次只能做很短的時間，幾次強度很高的活動也能累積進一週的運動量。"
         ]
       },
       "sourceId": "nhs-adults",
@@ -586,12 +485,11 @@
     },
     {
       "id": "045",
-      "title": "打斷久坐和久躺",
+      "title": "用一點活動打斷久坐",
       "category": "sedentary_breaks",
       "sentences": {
         "zh-Hant": [
-          "除了做活動，也要減少坐著和躺著的時間。",
-          "一段長時間完全不動時，中間用一點活動把它打斷。"
+          "如果已經坐著工作或看電視很久，可以起身走一走，用一小段活動打斷長時間不動。"
         ]
       },
       "sourceId": "nhs-adults",
@@ -600,12 +498,11 @@
     },
     {
       "id": "047",
-      "title": "指引也涵蓋身障成人",
+      "title": "身障成人也能累積活動量",
       "category": "general_physical_activity",
       "sentences": {
         "zh-Hant": [
-          "這份 19 到 64 歲的活動指引，NHS 寫明也適用於身障成人。",
-          "做法仍要配合自己能做的方式，而不是把同一組動作硬套到每個人。"
+          "每週的身體活動目標也適用於身障成人，活動方式可以依自己的能力和行動方式調整。"
         ]
       },
       "sourceId": "nhs-adults",
@@ -614,12 +511,11 @@
     },
     {
       "id": "049",
-      "title": "肌力和有氧可同天或不同天",
+      "title": "肌力和有氧可以排在同一天",
       "category": "general_physical_activity",
       "sentences": {
         "zh-Hant": [
-          "練肌力可以和有氧同一天，也可以分開幾天，看哪種比較做得到。",
-          "重點是兩種都有排進去，不是只做其中一種。"
+          "肌力和有氧可以依行程排在同一天，例如快走後做肌力訓練，也可以分開安排。"
         ]
       },
       "sourceId": "nhs-adults",
@@ -630,12 +526,11 @@
     },
     {
       "id": "050",
-      "title": "肌力時間另計",
+      "title": "肌力和有氧各有活動目標",
       "category": "general_physical_activity",
       "sentences": {
         "zh-Hant": [
-          "做肌力所花的時間，不算進每週 150 分鐘的中等強度有氧。",
-          "走路、騎車這類有氧才計入那 150 分鐘；肌力要另外做。"
+          "每週 150 分鐘的中等強度有氧目標，可以用快走或騎車來累積，肌力訓練的時間另外計算。"
         ]
       },
       "sourceId": "nhs-strength",
@@ -646,29 +541,26 @@
     },
     {
       "id": "051",
-      "title": "做到幾乎再一下要人幫",
+      "title": "用最後一下感覺肌力負荷",
       "category": "general_physical_activity",
       "sentences": {
         "zh-Hant": [
-          "肌力要練到再做一下會覺得困難、需要幫忙，才算有練到。",
-          "若一組做完還很輕鬆，對這頁的定義來說，負荷還不夠。"
+          "做一組肌力動作時，如果到了最後，再多做一下已經覺得很吃力，就可以把它當成負荷夠不夠的參考。"
         ]
       },
       "sourceId": "nhs-strength",
       "provenance": "NHS says a strengthening exercise should be performed until another repetition would be difficult without help.",
       "context": [
-        "external_source",
         "strength_training"
       ]
     },
     {
       "id": "052",
-      "title": "八到十二下為一組",
+      "title": "肌力訓練的一組怎麼算",
       "category": "general_physical_activity",
       "sentences": {
         "zh-Hant": [
-          "每個肌力動作試著做 8 到 12 下，這算一組。",
-          "至少做兩組；想要更多好處，可以做到三組，並用數週時間慢慢加上去。"
+          "做肌力訓練時，同一個動作連續做 8 到 12 下，可以算作一組。"
         ]
       },
       "sourceId": "nhs-strength",
@@ -679,12 +571,11 @@
     },
     {
       "id": "053",
-      "title": "肌力沒有固定分鐘數",
+      "title": "肌力訓練可以用組數來安排",
       "category": "general_physical_activity",
       "sentences": {
         "zh-Hant": [
-          "肌力和柔軟度練習，並沒有一條「必須做幾分鐘」的時間規定。",
-          "有規定的是練到哪些肌群、每週至少幾天，以及做到什麼吃力程度。"
+          "肌力和柔軟度練習沒有固定的分鐘數目標，安排肌力訓練時，可以用動作和組數規劃每次要做的量。"
         ]
       },
       "sourceId": "nhs-strength",
@@ -695,28 +586,24 @@
     },
     {
       "id": "054",
-      "title": "柔軟是為了日常動作",
+      "title": "關節活動度用得到的地方",
       "category": "mobility",
       "sentences": {
         "zh-Hant": [
-          "柔軟度指的是關節能做出日常事務和活動所需要的動作。",
-          "伸展、瑜伽、太極、皮拉提斯，都是這頁舉出的柔軟度活動例子。"
+          "練柔軟度可以幫關節維持日常動作需要的活動幅度，例如彎腰穿鞋或伸手拿高處的東西。"
         ]
       },
       "sourceId": "nhs-strength",
       "provenance": "NHS defines flexibility exercises as activities that improve a joint's ability to keep the movement needed for daily tasks and physical activity, with stretching, yoga, tai chi, and Pilates as examples.",
-      "context": [
-        "external_source"
-      ]
+      "context": []
     },
     {
       "id": "055",
-      "title": "有些較強有氧也練得到肌肉",
+      "title": "有些活動同時練到心肺和肌肉",
       "category": "general_physical_activity",
       "sentences": {
         "zh-Hant": [
-          "有些有氧如果做到較強強度，同時也會練到肌肉。",
-          "例如循環訓練、跳舞或武術；一般輕鬆走路則不能拿來代替肌力日。"
+          "跳舞或武術做到較高強度時，除了讓呼吸變快，有些動作也會讓肌肉出力。"
         ]
       },
       "sourceId": "nhs-strength",
@@ -725,12 +612,11 @@
     },
     {
       "id": "056",
-      "title": "一週也可以做到更長",
+      "title": "成人每週活動量有一段範圍",
       "category": "general_physical_activity",
       "sentences": {
         "zh-Hant": [
-          "MedlinePlus 給成人的範圍，是一週 150 到 300 分鐘中等強度，或 75 到 150 分鐘較強強度。",
-          "150 分鐘是下限附近，不是唯一允許的上限。"
+          "以中等強度的有氧活動為例，成人每週可以累積 150 到 300 分鐘，例如把快走分散在幾天完成。"
         ]
       },
       "sourceId": "medlineplus-how-much",
@@ -739,12 +625,11 @@
     },
     {
       "id": "059",
-      "title": "有狀況先問分量",
+      "title": "依健康狀況安排活動量",
       "category": "safe_exercise",
       "sentences": {
         "zh-Hant": [
-          "年長者、孕婦，以及有身障或特別健康需要的人，活動分量要先問自己的醫護人員。",
-          "有慢性健康問題的人同樣適用，不要直接套一般成人的最高量。"
+          "有慢性病、懷孕或有特殊健康需求時，可以先和醫護人員確認適合自己的活動量。"
         ]
       },
       "sourceId": "medlineplus-how-much",
@@ -753,12 +638,11 @@
     },
     {
       "id": "060",
-      "title": "很多人一天坐很久",
+      "title": "通勤和休息也會累積久坐",
       "category": "sedentary_breaks",
       "sentences": {
         "zh-Hant": [
-          "研究顯示許多成人一天坐著超過 7 小時，包含工作、交通和休息。",
-          "65 歲以上的人，一天坐著或躺著 10 小時以上的情況很常見。"
+          "工作、通勤和休息時坐著的時間都會累加，不少成人一天坐著超過 7 小時。"
         ]
       },
       "sourceId": "nhs-benefits",
@@ -767,12 +651,11 @@
     },
     {
       "id": "062",
-      "title": "心情、睡眠與壓力",
+      "title": "身體活動也和睡眠有關",
       "category": "general_physical_activity",
       "sentences": {
         "zh-Hant": [
-          "研究也把身體活動和較好的自尊、心情、睡眠品質、精神，以及較低的壓力連在一起。",
-          "這些是整體活動的描述，不要理解成拉筋就能取代睡眠或處理情緒問題。"
+          "平常多做些身體活動，除了對體能有益，也和心情較好、睡眠品質較佳有關。"
         ]
       },
       "sourceId": "nhs-benefits",
@@ -781,12 +664,11 @@
     },
     {
       "id": "064",
-      "title": "一次活動後焦慮可能短時間減輕",
+      "title": "活動後可能暫時沒那麼焦慮",
       "category": "general_physical_activity",
       "sentences": {
         "zh-Hant": [
-          "成人做完一次中等至較強的活動後，短期的焦慮感可能減輕。",
-          "這是單次活動後的感覺，不能當成治療焦慮症的方法。"
+          "對成人來說，做完一次中等到高強度的身體活動後，短時間內可能會感覺比較不焦慮。"
         ]
       },
       "sourceId": "cdc-benefits",
@@ -795,12 +677,11 @@
     },
     {
       "id": "065",
-      "title": "規律活動與思考、情緒風險",
+      "title": "規律活動也能幫大腦維持功能",
       "category": "general_physical_activity",
       "sentences": {
         "zh-Hant": [
-          "規律活動被描述為有助於維持思考、學習和判斷，並降低憂鬱和焦慮的風險。",
-          "同時也和睡得比較好有關；這些都不是伸展單獨可以負責的效果。"
+          "規律的身體活動有助於維持思考、學習和判斷能力，也和較低的憂鬱及焦慮風險有關。"
         ]
       },
       "sourceId": "cdc-benefits",
@@ -809,12 +690,11 @@
     },
     {
       "id": "066",
-      "title": "體重要同時看吃和動",
+      "title": "體重和飲食、活動量都相關",
       "category": "general_physical_activity",
       "sentences": {
         "zh-Hant": [
-          "體重和吃進去的熱量、以及活動量都有關，人與人之間需要的活動量差很多。",
-          "若沒有同時調整飲食，想把體重降下來並維持，通常需要相當多的活動。"
+          "體重會受到飲食攝取與身體活動消耗的熱量影響，因此每個人維持體重需要的活動量可能不同。"
         ]
       },
       "sourceId": "cdc-benefits",
@@ -823,12 +703,11 @@
     },
     {
       "id": "067",
-      "title": "血壓與膽固醇也在好處裡",
+      "title": "活動量和心血管健康有關",
       "category": "general_physical_activity",
       "sentences": {
         "zh-Hant": [
-          "一週至少 150 分鐘中等強度活動，與較低的心臟病和中風風險有關，做更多還可以再低一些。",
-          "規律活動也被寫成可以降低血壓、改善膽固醇；這同樣不是伸展的效果。"
+          "每週累積至少 150 分鐘中等強度活動，例如快走，和較低的心臟病及中風風險有關。"
         ]
       },
       "sourceId": "cdc-benefits",
@@ -837,12 +716,11 @@
     },
     {
       "id": "068",
-      "title": "不到一百五也可能有一點好處",
+      "title": "活動量還沒達標也可能有益",
       "category": "general_physical_activity",
       "sentences": {
         "zh-Hant": [
-          "規律的中等強度活動，即使一週還不到 150 分鐘，也開始和較低的第二型糖尿病與代謝症候群風險有關。",
-          "再多做，風險還可能更低；這不是血糖已經恢復正常的意思。"
+          "即使每週還做不到 150 分鐘，規律的中等強度活動也可能有助於降低第二型糖尿病和代謝症候群的風險。"
         ]
       },
       "sourceId": "cdc-benefits",
@@ -851,12 +729,11 @@
     },
     {
       "id": "069",
-      "title": "至少八種癌症的風險較低",
+      "title": "身體活動和部分癌症風險有關",
       "category": "general_physical_activity",
       "sentences": {
         "zh-Hant": [
-          "身體活動較多的人，得到至少八種癌症的風險較低。",
-          "對已經罹癌的人，規律活動被描述為有助生活品質和體能，而不是治療癌症。"
+          "保持身體活動和至少八種癌症的風險較低有關，其中包括大腸癌與乳癌。"
         ]
       },
       "sourceId": "cdc-benefits",
@@ -865,12 +742,11 @@
     },
     {
       "id": "070",
-      "title": "肌力用來留住肌肉",
+      "title": "練肌力有助於維持肌肉",
       "category": "general_physical_activity",
       "sentences": {
         "zh-Hant": [
-          "肌力活動有助於增加或維持肌肉量和力量，對肌肉變少的年長者特別重要。",
-          "重量和次數要慢慢加，不管幾歲都一樣。"
+          "肌力訓練有助於維持肌肉量和力量，對隨年齡增長而逐漸流失肌肉的人尤其重要。"
         ]
       },
       "sourceId": "cdc-benefits",
@@ -881,12 +757,11 @@
     },
     {
       "id": "071",
-      "title": "防跌倒要三種一起",
+      "title": "年長者防跌可以搭配三種活動",
       "category": "safe_exercise",
       "sentences": {
         "zh-Hant": [
-          "年長者要降低跌倒或跌倒受傷的風險，需要有氧、肌力和平衡都有，不是只做伸展。",
-          "這組活動可以在家做，也可以參加社區裡的結構化課程。"
+          "年長者可以把有氧、肌力和平衡練習搭配起來，例如快走、從椅子起身和練習站穩，以降低跌倒風險。"
         ]
       },
       "sourceId": "cdc-benefits",
@@ -895,12 +770,11 @@
     },
     {
       "id": "072",
-      "title": "快走對多數人通常安全",
+      "title": "快走是中等強度活動的一種",
       "category": "safe_exercise",
       "sentences": {
         "zh-Hant": [
-          "像快走這種中等強度活動，對多數人通常是安全的。",
-          "這不是說每個人都適合開始跑，也不是說活動中出現不舒服可以忽略。"
+          "快走時呼吸會比散步時快，對多數人來說，這是安全的中等強度活動。"
         ]
       },
       "sourceId": "cdc-benefits",
@@ -909,12 +783,11 @@
     },
     {
       "id": "073",
-      "title": "一百五可以拆開累積",
+      "title": "每週的運動分鐘數可以分段累積",
       "category": "general_physical_activity",
       "sentences": {
         "zh-Hant": [
-          "一週 150 分鐘不必一次做完，例如一天 30 分鐘、一週五天。",
-          "也可以拆成更小段，分散在一週裡面。"
+          "如果找不到完整的 30 分鐘快走，可以把時間分成早、中、晚各 10 分鐘，合計仍是 30 分鐘。"
         ]
       },
       "sourceId": "cdc-adults",
@@ -923,12 +796,11 @@
     },
     {
       "id": "074",
-      "title": "三種都排進一週",
+      "title": "不同活動練到不同能力",
       "category": "general_physical_activity",
       "sentences": {
         "zh-Hant": [
-          "年長者不只要做一種運動；NIA 強調有氧、肌力和平衡都重要。",
-          "只做一種並不夠，多樣化也有助於不那麼無聊，並可能降低受傷風險。"
+          "安排年長者的運動時，可以讓快走、肌力和平衡練習輪流出現，分別照顧耐力、力量和站立時的穩定度。"
         ]
       },
       "sourceId": "nia-three-types",
@@ -937,12 +809,11 @@
     },
     {
       "id": "076",
-      "title": "同一肌群不要連兩天",
+      "title": "同一肌群的訓練日可以隔開",
       "category": "safe_exercise",
       "sentences": {
         "zh-Hant": [
-          "大肌群每週至少練兩天，但不要連續兩天練同一組肌肉。",
-          "中間留時間讓肌肉恢復。"
+          "大肌群可以每週訓練至少兩天，安排時把練同一組肌肉的日子隔開，例如週一和週三練腿。"
         ]
       },
       "sourceId": "nia-three-types",
@@ -953,12 +824,11 @@
     },
     {
       "id": "080",
-      "title": "出力時把氣吐掉",
+      "title": "練肌力時保持呼吸",
       "category": "safe_exercise",
       "sentences": {
         "zh-Hant": [
-          "練肌力時不要憋氣。",
-          "用力的時候吐氣，放鬆的時候吸氣。"
+          "做肌力動作時容易不自覺憋氣，可以跟著動作的節奏呼吸，讓氣息保持順暢。"
         ]
       },
       "sourceId": "nia-three-types",
@@ -969,12 +839,11 @@
     },
     {
       "id": "082",
-      "title": "戶外與裝備",
+      "title": "出門運動前看天氣和裝備",
       "category": "safe_exercise",
       "sentences": {
         "zh-Hant": [
-          "在戶外活動時注意天氣和周圍環境；騎車要戴安全帽，鞋子和衣服要適合運動。",
-          "對某一個活動沒有把握時，先問醫師。"
+          "到戶外活動前，可以先看看天氣和路況，再選適合的鞋子與衣服，騎車時記得戴安全帽。"
         ]
       },
       "sourceId": "nia-three-types",
@@ -983,12 +852,11 @@
     },
     {
       "id": "083",
-      "title": "有氧前後用輕鬆走路過渡",
+      "title": "快走前後都可以先放慢",
       "category": "mobility",
       "sentences": {
         "zh-Hant": [
-          "有氧前後，可以用輕鬆走路這類低強度活動當作暖身和緩和。",
-          "讓呼吸和心跳逐漸上升、再逐漸降下來，而不是突然開始或突然停止。"
+          "快走前可以先輕鬆走一段當作熱身，結束時也可以放慢腳步，讓身體慢慢緩和下來。"
         ]
       },
       "sourceId": "nia-three-types",
@@ -997,12 +865,11 @@
     },
     {
       "id": "084",
-      "title": "平衡大約每週三次",
+      "title": "平衡練習可以分散到一週三天",
       "category": "mobility",
       "sentences": {
         "zh-Hant": [
-          "NIA 建議平衡練習大約每週三次，用來維持身體穩定。",
-          "它把平衡練習和減少跌倒、跌倒受傷連在一起；這是建議的方向，不是不會跌倒的保證。"
+          "年長者可以把平衡練習安排在每週約三天，讓維持身體穩定成為固定練習。"
         ]
       },
       "sourceId": "nia-three-types",
@@ -1011,12 +878,11 @@
     },
     {
       "id": "089",
-      "title": "家事和走路也算活動",
+      "title": "日常生活也有活動機會",
       "category": "general_physical_activity",
       "sentences": {
         "zh-Hant": [
-          "活動不一定是運動課，家事、辦事、用走路或騎車代步，以及休閒活動都算。",
-          "多樣一點比較好玩，也可能降低過度使用同一部位的風險。"
+          "做家事、走路去辦事或騎車代步都算身體活動，可以從平常就會做的事增加活動量。"
         ]
       },
       "sourceId": "nia-getting-started",
@@ -1025,12 +891,11 @@
     },
     {
       "id": "090",
-      "title": "挑比較有精神的時段",
+      "title": "把活動排在最有精神的時候",
       "category": "general_physical_activity",
       "sentences": {
         "zh-Hant": [
-          "把活動排在自己比較有精神的時段。",
-          "許多年長者會發現，活動當時和之後的疲勞其實比較少。"
+          "如果你早上比晚上有精神，可以把散步排在早上，讓運動配合自己一天的體力變化。"
         ]
       },
       "sourceId": "nia-getting-started",
@@ -1039,60 +904,50 @@
     },
     {
       "id": "093",
-      "title": "熱身至少約六分鐘",
+      "title": "吃力的運動前留時間熱身",
       "category": "safe_exercise",
       "sentences": {
         "zh-Hant": [
-          "較吃力的運動前，NHS 這套熱身建議至少做約 6 分鐘，需要的話再加長。",
-          "過程中如果痛或覺得不舒服，立刻停止；症狀沒有過去，再尋求醫療協助。"
+          "準備做較吃力的運動時，可以先留至少 6 分鐘做熱身，從原地踏步這類輕鬆的動作開始。"
         ]
       },
       "sourceId": "nhs-warmup",
       "provenance": "NHS says this warm-up should take at least 6 minutes, longer if needed, and to stop immediately if you feel pain or become unwell.",
-      "context": [
-        "external_source"
-      ]
+      "context": []
     },
     {
       "id": "094",
-      "title": "不確定就先問再做這套",
+      "title": "熱身是為了準備接下來的運動",
       "category": "safe_exercise",
       "sentences": {
         "zh-Hant": [
-          "這套熱身是給多數健康、體力還可以的人的一般練習，不是用來治療某一種疼痛。",
-          "不確定適不適合、有病、有傷、剛動過手術或心臟病發，或正在懷孕、剛生產，先問醫護人員。"
+          "一般的全身熱身是為了讓身體準備接下來的運動，有特定部位疼痛時，適合的活動方式要視原因而定。"
         ]
       },
       "sourceId": "nhs-warmup",
       "provenance": "NHS says the exercises are general and not aimed at treating a specific cause of pain, and to get advice first if unsure, unwell, injured, recently after a heart attack or operation, pregnant, or recently after birth.",
-      "context": [
-        "external_source"
-      ]
+      "context": []
     },
     {
       "id": "095",
-      "title": "運動後用短短緩和伸展",
+      "title": "運動後留幾分鐘緩和",
       "category": "stretching",
       "sentences": {
         "zh-Hant": [
-          "運動結束後，可以用大約 5 分鐘的緩和伸展，讓身體慢慢鬆開、心跳緩緩下降。",
-          "這套動作大約每個停 15 到 20 秒；有傷、有病或懷孕時，先問物理治療師或醫護人員哪些要改。"
+          "運動結束後，可以留大約 5 分鐘做輕柔伸展，讓身體慢慢放鬆。"
         ]
       },
       "sourceId": "nhs-stretch-after",
       "provenance": "NHS says the post-exercise stretches take about 5 minutes to relax, improve flexibility, and slow the heart rate, with holds of 15 to 20 seconds, and to ask a professional which to change if injured, ill, or pregnant.",
-      "context": [
-        "external_source"
-      ]
+      "context": []
     },
     {
       "id": "098",
-      "title": "曾跌倒就從力量和平衡開始",
+      "title": "曾跌倒的人可以練力量和平衡",
       "category": "mobility",
       "sentences": {
         "zh-Hant": [
-          "若曾經跌倒，或正在擔心跌倒，NHS 建議做肌力、平衡和柔軟練習，讓人更有力、站得更有信心。",
-          "這不是保證以後不會再跌倒；久未運動或有疾病，仍要先問醫師。"
+          "如果曾經跌倒或擔心跌倒，可以把肌力、平衡和柔軟度練習放進活動安排，幫助自己更有力、站得更穩。"
         ]
       },
       "sourceId": "nhs-older",

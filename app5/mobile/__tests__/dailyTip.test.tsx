@@ -30,11 +30,11 @@ function day(n: number): string {
 }
 
 describe('daily tip catalog', () => {
-  it('keeps exactly the screened 60 ids in zh-Hant, with two sentences each', () => {
+  it('keeps 55 tips in zh-Hant, with one distinct sentence each', () => {
     expect(SUPPORTED_UI_LOCALES).toEqual(['zh-Hant']);
-    expect(DAILY_TIP_IDS).toHaveLength(60);
-    expect(new Set(DAILY_TIP_IDS).size).toBe(60);
-    for (const removed of ['001', '002', '003']) {
+    expect(DAILY_TIP_IDS).toHaveLength(55);
+    expect(listDailyTips().map((tip) => tip.id)).toEqual(DAILY_TIP_IDS);
+    for (const removed of ['001', '002', '003', '008', '013', '016', '018', '024']) {
       expect(DAILY_TIP_IDS).not.toContain(removed);
     }
     const texts = new Set<string>();
@@ -46,38 +46,18 @@ describe('daily tip catalog', () => {
       expect(source?.url.startsWith('https://')).toBe(true);
       for (const locale of SUPPORTED_UI_LOCALES) {
         const sentences = tip.sentences[locale];
-        expect(sentences).toHaveLength(2);
-        expect(sentences[0].endsWith('。')).toBe(true);
-        expect(sentences[1].endsWith('。')).toBe(true);
-        expect(sentences[0].slice(0, -1)).not.toContain('。');
-        expect(sentences[1].slice(0, -1)).not.toContain('。');
-        texts.add(sentences[0] + sentences[1]);
+        expect(sentences).toHaveLength(1);
+        expect(sentences[0]).toMatch(/^[^。！？]+。$/);
+        texts.add(sentences[0]);
       }
       expect(tipSentences(tip.id, 'en')).toEqual(tipSentences(tip.id, 'zh-Hant'));
     }
-    expect(texts.size).toBe(60);
+    expect(texts.size).toBe(55);
   });
 
-  it('keeps the approved wording for source-context and strength tips', () => {
-    expect(tipSentences('012', 'zh-Hant')).toEqual([
-      '除了大肌群，也伸展這項活動最常使用的肌肉和關節。',
-      '頁面把這點寫成已有一些證據，而不是每一種運動都用同一套伸展。',
-    ]);
-    expect(tipSentences('076', 'zh-Hant')).toEqual([
-      '大肌群每週至少練兩天，但不要連續兩天練同一組肌肉。',
-      '中間留時間讓肌肉恢復。',
-    ]);
-    expect(tipSentences('080', 'zh-Hant')).toEqual([
-      '練肌力時不要憋氣。',
-      '用力的時候吐氣，放鬆的時候吸氣。',
-    ]);
-    expect(tipSentences('095', 'zh-Hant')).toEqual([
-      '運動結束後，可以用大約 5 分鐘的緩和伸展，讓身體慢慢鬆開、心跳緩緩下降。',
-      '這套動作大約每個停 15 到 20 秒；有傷、有病或懷孕時，先問物理治療師或醫護人員哪些要改。',
-    ]);
+  it('keeps the strength-training context', () => {
     expect(getDailyTip('076')?.context).toContain('strength_training');
     expect(getDailyTip('080')?.context).toContain('strength_training');
-    expect(getDailyTip('095')?.context).toContain('external_source');
   });
 });
 
@@ -133,7 +113,7 @@ describe('daily tip schedule', () => {
       state = presentDailyTip(state, day(n), DAILY_TIP_IDS, zero);
       seen.push(state.order[state.index]);
     }
-    expect(new Set(seen).size).toBe(60);
+    expect(new Set(seen)).toEqual(new Set(DAILY_TIP_IDS));
     expect(seen).toEqual(state!.order);
     const last = seen[seen.length - 1];
     const next = presentDailyTip(state, day(DAILY_TIP_IDS.length + 1), DAILY_TIP_IDS, zero);
@@ -158,7 +138,7 @@ describe('daily tip schedule', () => {
     await AsyncStorage.setItem(DAILY_TIP_KEY, '{');
     const first = await showDailyTip('2026-05-01', zero);
     expect(DAILY_TIP_IDS).toContain(first.tipId);
-    expect(first.record.order).toHaveLength(60);
+    expect(first.record.order).toHaveLength(55);
 
     await AsyncStorage.setItem(DAILY_TIP_KEY, JSON.stringify({
       order: ['004'],
@@ -166,7 +146,7 @@ describe('daily tip schedule', () => {
       shownOn: '2026-02-31',
     }));
     const recovered = await showDailyTip('2026-05-02', zero);
-    expect(recovered.record.order).toHaveLength(60);
+    expect(recovered.record.order).toHaveLength(55);
     expect(new Set(recovered.record.order)).toEqual(new Set(DAILY_TIP_IDS));
     expect(recovered.record.shownOn).toBe('2026-05-02');
 
@@ -180,6 +160,21 @@ describe('daily tip schedule', () => {
     const nextDay = await showDailyTip('2026-05-09', zero);
     expect(nextDay.tipId).not.toBe(recovered.tipId);
     expect(nextDay.record.index).toBe(recovered.record.index + 1);
+  });
+
+  it('removes retired tips from a saved rotation without repeating retained tips', () => {
+    const ids = ['004', '005', '007'];
+    const order = ['004', '013', '005', '008', '007'];
+    const shownOn = '2026-05-01';
+    const kept = presentDailyTip({ order, index: 2, shownOn }, shownOn, ids, zero);
+    expect(kept).toEqual({ order: ids, index: 1, shownOn });
+
+    const replaced = presentDailyTip({ order, index: 3, shownOn }, shownOn, ids, zero);
+    expect(replaced).toEqual({ order: ids, index: 2, shownOn });
+
+    const restarted = presentDailyTip({ order: [...order, '024'], index: 5, shownOn }, shownOn, ids, zero);
+    expect(restarted.order[restarted.index]).not.toBe('007');
+    expect(new Set(restarted.order)).toEqual(new Set(ids));
   });
 });
 
@@ -229,7 +224,7 @@ describe('daily tip card', () => {
     });
     const body = JSON.stringify(rendered!.toJSON());
     expect(body).toContain('這則談的是肌力訓練，不是每天的伸展。');
-    expect(body).toContain('大肌群每週至少練兩天，但不要連續兩天練同一組肌肉。');
+    expect(body).toContain(tipSentences('076', 'zh-Hant')![0]);
     expect(body).not.toContain('下一則');
 
     const link = rendered!.root.findAll(
@@ -244,10 +239,9 @@ describe('daily tip card', () => {
     await act(async () => {
       rendered = create(<DailyTipBody tip={getDailyTip('095')!} />);
     });
-    const external = JSON.stringify(rendered!.toJSON());
-    expect(external).toContain('文中的「這頁」或「這套」指的是下方來源，不是這個 App 的伸展組合。');
-    expect(external).toContain('這套動作大約每個停 15 到 20 秒；有傷、有病或懷孕時，先問物理治療師或醫護人員哪些要改。');
-    expect(external).not.toContain('這則談的是肌力訓練');
+    const cooldown = JSON.stringify(rendered!.toJSON());
+    expect(cooldown).toContain(tipSentences('095', 'zh-Hant')![0]);
+    expect(cooldown).not.toContain('這則談的是肌力訓練');
 
     await act(async () => rendered!.unmount());
     await act(async () => {
@@ -282,7 +276,6 @@ describe('daily tip card', () => {
     expect(toggle.props.accessibilityState.expanded).toBe(true);
     const expanded = JSON.stringify(rendered!.toJSON());
     expect(expanded).toContain(sentences[0]);
-    expect(expanded).toContain(sentences[1]);
 
     await act(async () => toggle.props.onPress());
     expect(toggle.props.accessibilityState.expanded).toBe(false);

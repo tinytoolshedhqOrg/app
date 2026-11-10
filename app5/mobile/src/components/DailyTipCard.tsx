@@ -52,7 +52,6 @@ export function DailyTipBody({ tip }: { tip: DailyTip }) {
   const source = getDailyTipSource(tip.sourceId);
   if (!sentences || !source) return null;
   const strength = tip.context.includes("strength_training");
-  const external = tip.context.includes("external_source");
   const general = tip.category === "general_physical_activity" && !strength;
   return (
     <View style={s.body}>
@@ -60,9 +59,7 @@ export function DailyTipBody({ tip }: { tip: DailyTip }) {
       <Text style={s.title}>{tip.title}</Text>
       {strength ? <Text style={s.note}>{t("knowledge.strength")}</Text> : null}
       {general ? <Text style={s.note}>{t("knowledge.activity")}</Text> : null}
-      {external ? <Text style={s.note}>{t("knowledge.external")}</Text> : null}
       <Text style={s.sentence}>{sentences[0]}</Text>
-      <Text style={s.sentence}>{sentences[1]}</Text>
       <Text style={s.sourceLabel}>{t("knowledge.source")}</Text>
       <Text style={s.sourceName}>
         {source.institution}

@@ -9,13 +9,13 @@ export type TipCategory =
   | 'safe_exercise'
   | 'posture';
 
-export type TipContext = 'external_source' | 'strength_training';
+export type TipContext = 'strength_training';
 
 export type DailyTip = {
   id: string;
   title: string;
   category: TipCategory;
-  sentences: Record<AppLocale, [string, string]>;
+  sentences: Record<AppLocale, [string]>;
   sourceId: string;
   provenance: string;
   context: TipContext[];
@@ -54,7 +54,7 @@ export function getDailyTipSource(sourceId: string): DailyTipSource | undefined 
   return sources[sourceId];
 }
 
-export function tipSentences(id: string, locale: string): [string, string] | undefined {
+export function tipSentences(id: string, locale: string): [string] | undefined {
   const tip = byId.get(id);
   if (!tip) return undefined;
   const supported = (SUPPORTED_UI_LOCALES as readonly string[]).includes(locale)

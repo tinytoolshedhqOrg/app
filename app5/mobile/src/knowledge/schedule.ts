@@ -44,6 +44,25 @@ export function shuffleIds(ids: readonly string[], random: () => number, avoidFi
   return next;
 }
 
+function pruneRemovedTips(
+  stored: DailyTipRecord | null,
+  today: string,
+  ids: readonly string[],
+  random: () => number,
+): DailyTipRecord | null {
+  if (!stored || !Array.isArray(stored.order) || !isDailyTipRecord(stored, stored.order)) return null;
+  const allowed = new Set(ids);
+  const order = stored.order.filter((id) => allowed.has(id));
+  if (order.length === 0 || !sameIds(order, ids)) return null;
+
+  const index = stored.order.slice(0, stored.index).filter((id) => allowed.has(id)).length;
+  if (allowed.has(stored.order[stored.index])) return { ...stored, order, index };
+
+  const shownOn = today > stored.shownOn ? today : stored.shownOn;
+  if (index < order.length) return { order, index, shownOn };
+  return { order: shuffleIds(ids, random, order[index - 1]), index: 0, shownOn };
+}
+
 /**
  * One tip per local civil day on which the completed-workout card is shown.
  * A later day advances exactly one step, including after several absent days.
@@ -59,7 +78,9 @@ export function presentDailyTip(
 ): DailyTipRecord {
   if (!isCivilDate(today)) throw new Error('today must be a civil date');
   if (!isDailyTipRecord(stored, ids)) {
-    return { order: shuffleIds(ids, random), index: 0, shownOn: today };
+    const pruned = pruneRemovedTips(stored, today, ids, random);
+    if (!pruned) return { order: shuffleIds(ids, random), index: 0, shownOn: today };
+    stored = pruned;
   }
   if (stored.shownOn >= today) return stored;
   if (stored.index < stored.order.length - 1) {
