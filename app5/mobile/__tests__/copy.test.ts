@@ -52,15 +52,25 @@ describe('copy', () => {
     expect(player).toMatch(/shown\.name/);
   });
 
-  it('declares App Store photo usage strings like app4 (ITMS-90683)', () => {
+  it('does not render the removed home headline in any locale or screen', () => {
+    const files = [
+      ...walk(path.join(__dirname, '../src')),
+      ...walk(path.join(__dirname, '../languages')),
+    ];
+    for (const file of files) {
+      const text = fs.readFileSync(file, 'utf8');
+      expect(text).not.toMatch(/伸展一下|Stretch a little|Take a stretch/);
+    }
+  });
+
+  it('declares an honest photo-library read string and no add-only string', () => {
     const appJson = require('../app.json');
     const plist = appJson.expo.ios.infoPlist;
-    expect(plist.NSPhotoLibraryUsageDescription).toBe(
-      'This app does not access your photos. This text is required by a system component.',
-    );
-    expect(plist.NSPhotoLibraryAddUsageDescription).toBe(
-      'This app does not add photos to your library. This text is required by a system component.',
-    );
+    const usage =
+      "This app does not read your photos and does not save or export images. It would use photo library access only to copy a photo into the app when given that photo's library address.";
+    expect(plist.NSPhotoLibraryUsageDescription).toBe(usage);
+    expect(plist.NSPhotoLibraryAddUsageDescription).toBeUndefined();
+    expect(JSON.stringify(appJson.expo.plugins)).not.toMatch(/NSPhotoLibraryAddUsageDescription|savePhotosPermission/);
     expect(appJson.expo.locales).toEqual({
       en: './languages/ios/en.json',
       'zh-Hant': './languages/ios/zh-Hant.json',
@@ -69,9 +79,13 @@ describe('copy', () => {
     });
     const zhIos = require('../languages/ios/zh-Hant.json');
     const enIos = require('../languages/ios/en.json');
-    expect(zhIos.NSPhotoLibraryUsageDescription).toBe('這個 App 不會使用你的照片。這段文字是系統元件需要的。');
-    expect(zhIos.NSPhotoLibraryAddUsageDescription).toBe('這個 App 不會把照片加進相簿。這段文字是系統元件需要的。');
+    expect(zhIos.NSPhotoLibraryUsageDescription).toBe(
+      '這個 App 不會讀取你的照片，也不會儲存或匯出圖片。只有在取得某張照片的相簿位址時，才會使用相簿權限把該照片複製到 App 裡。',
+    );
+    expect(zhIos.NSPhotoLibraryAddUsageDescription).toBeUndefined();
     expect(enIos.NSPhotoLibraryUsageDescription).toBe(plist.NSPhotoLibraryUsageDescription);
-    expect(enIos.NSPhotoLibraryAddUsageDescription).toBe(plist.NSPhotoLibraryAddUsageDescription);
+    expect(enIos.NSPhotoLibraryAddUsageDescription).toBeUndefined();
+    expect(appJson.expo.ios.buildNumber).toBe('2');
+    expect(appJson.expo.extra.eas.projectId).toBe('964b2a8d-f108-43c6-a7bb-a3121643aaed');
   });
 });
