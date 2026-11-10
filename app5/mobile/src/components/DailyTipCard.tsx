@@ -12,6 +12,7 @@ import { font, palette } from "../theme/studio";
 
 export default function DailyTipCard() {
   const [tipId, setTipId] = useState<string | null>(null);
+  const [expanded, setExpanded] = useState(false);
   useEffect(() => {
     let active = true;
     void showDailyTip()
@@ -27,7 +28,22 @@ export default function DailyTipCard() {
   }, []);
   const tip = tipId ? getDailyTip(tipId) : undefined;
   if (!tip) return null;
-  return <DailyTipBody tip={tip} />;
+  const heading = t("knowledge.heading");
+  return (
+    <View style={s.card}>
+      <Pressable
+        accessibilityRole="button"
+        accessibilityLabel={heading}
+        accessibilityState={{ expanded }}
+        onPress={() => setExpanded((current) => !current)}
+        style={s.header}
+      >
+        <Text style={s.heading}>{heading}</Text>
+        <Text style={s.indicator}>{expanded ? "−" : "+"}</Text>
+      </Pressable>
+      {expanded && <DailyTipBody tip={tip} />}
+    </View>
+  );
 }
 
 export function DailyTipBody({ tip }: { tip: DailyTip }) {
@@ -39,8 +55,7 @@ export function DailyTipBody({ tip }: { tip: DailyTip }) {
   const external = tip.context.includes("external_source");
   const general = tip.category === "general_physical_activity" && !strength;
   return (
-    <View style={s.card} accessibilityRole="summary">
-      <Text style={s.eyebrow}>{t("knowledge.heading")}</Text>
+    <View style={s.body}>
       <Text style={s.category}>{t(`knowledge.category.${tip.category}`)}</Text>
       <Text style={s.title}>{tip.title}</Text>
       {strength ? <Text style={s.note}>{t("knowledge.strength")}</Text> : null}
@@ -70,20 +85,26 @@ export function DailyTipBody({ tip }: { tip: DailyTip }) {
 const s = StyleSheet.create({
   card: {
     marginTop: 16,
-    padding: 20,
     borderRadius: 14,
     backgroundColor: palette.card,
     borderWidth: 1,
     borderColor: palette.border,
   },
-  eyebrow: {
+  header: {
+    minHeight: 48,
+    paddingHorizontal: 20,
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+  },
+  heading: {
     fontFamily: font.medium,
-    fontSize: 12,
-    lineHeight: 18,
+    fontSize: 14,
     color: palette.blue,
   },
+  indicator: { fontSize: 20, color: palette.blue },
+  body: { paddingHorizontal: 20, paddingBottom: 20 },
   category: {
-    marginTop: 8,
     fontFamily: font.medium,
     fontSize: 12,
     lineHeight: 18,

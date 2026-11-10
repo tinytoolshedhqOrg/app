@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import React from 'react';
-import { Linking, Text } from 'react-native';
+import { Linking } from 'react-native';
 import { act, create, type ReactTestRenderer } from 'react-test-renderer';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import Completion from '../src/components/Completion';
@@ -258,7 +258,7 @@ describe('daily tip card', () => {
     expect(activity).toContain('一般身體活動');
   });
 
-  it('keeps the same id when the locale lookup changes', async () => {
+  it('keeps the same tip across locales and shows its body only when expanded', async () => {
     const shown = await showDailyTip('2026-08-01', zero);
     expect(tipSentences(shown.tipId, 'zh-Hant')).toEqual(tipSentences(shown.tipId, 'fr'));
     await AsyncStorage.clear();
@@ -272,9 +272,20 @@ describe('daily tip card', () => {
     const raw = await AsyncStorage.getItem(DAILY_TIP_KEY);
     const record = JSON.parse(raw!) as DailyTipRecord;
     const sentences = tipSentences(record.order[record.index], 'zh-Hant')!;
-    const text = JSON.stringify(rendered!.toJSON());
-    expect(text).toContain(sentences[0]);
-    expect(text).toContain(sentences[1]);
-    expect(rendered!.root.findAllByType(Text).some((node) => node.props.children === '今日小知識')).toBe(true);
+    const toggle = rendered!.root.findAll(
+      (node) => node.props?.accessibilityLabel === '今日小知識' && typeof node.props.onPress === 'function',
+    )[0];
+    expect(toggle.props.accessibilityState.expanded).toBe(false);
+    expect(JSON.stringify(rendered!.toJSON())).not.toContain(sentences[0]);
+
+    await act(async () => toggle.props.onPress());
+    expect(toggle.props.accessibilityState.expanded).toBe(true);
+    const expanded = JSON.stringify(rendered!.toJSON());
+    expect(expanded).toContain(sentences[0]);
+    expect(expanded).toContain(sentences[1]);
+
+    await act(async () => toggle.props.onPress());
+    expect(toggle.props.accessibilityState.expanded).toBe(false);
+    expect(JSON.stringify(rendered!.toJSON())).not.toContain(sentences[0]);
   });
 });
