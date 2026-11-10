@@ -228,8 +228,8 @@ export default function PlayerScreen() {
         : routineComplete
           ? "恭喜！完成了一組動作"
           : snap.paused
-          ? "已暫停"
-          : "保持自然呼吸";
+            ? null
+            : "保持自然呼吸";
   return (
     <View
       pointerEvents={routineComplete ? "none" : "auto"}
@@ -263,13 +263,10 @@ export default function PlayerScreen() {
           { paddingTop: 16, paddingBottom: 12 },
         ]}
       >
-        <View style={s.progressHeader}>
-          <Text style={s.step}>
-            {String(snap.unitIndex + 1).padStart(2, "0")} /{" "}
-            {String(snap.unitCount).padStart(2, "0")}
-          </Text>
-          <Text style={s.meta}>每個動作 30 秒</Text>
-        </View>
+        <Text style={s.step}>
+          {String(snap.unitIndex + 1).padStart(2, "0")} /{" "}
+          {String(snap.unitCount).padStart(2, "0")}
+        </Text>
         <View style={[s.demonstration, { height: panelHeight }]}>
           <ExerciseDiagram
             exercise={shown}
@@ -289,7 +286,7 @@ export default function PlayerScreen() {
           >
             {timerText(snap)}
           </Text>
-          <Text style={ui.small}>{status}</Text>
+          {status && <Text style={ui.small}>{status}</Text>}
         </View>
         <View
           accessibilityRole="progressbar"
@@ -405,19 +402,13 @@ const s = StyleSheet.create({
   },
   detailsButton: { minHeight: 44, justifyContent: "center" },
   detailsLabel: { color: palette.blue, fontFamily: font.medium, fontSize: 12 },
-  progressHeader: {
-    flexDirection: "row",
-    justifyContent: "space-between",
-    alignItems: "center",
-    marginBottom: 12,
-  },
   step: {
     fontFamily: font.bold,
     color: palette.blue,
     fontSize: 12,
     fontVariant: ["tabular-nums"],
+    marginBottom: 12,
   },
-  meta: { fontFamily: font.regular, color: palette.muted, fontSize: 11 },
   demonstration: {
     borderRadius: 20,
     backgroundColor: palette.pale,
