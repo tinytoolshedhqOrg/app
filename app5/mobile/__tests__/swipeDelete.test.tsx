@@ -18,6 +18,7 @@ import {
   resolveSelection,
   type Selection,
 } from "../src/content/catalog";
+import { setProUnlocked } from "../src/iap";
 import { getCurrentRoutine } from "../src/storage";
 import {
   getSelection,
@@ -220,6 +221,7 @@ describe("preview deletion stays inside the current routine", () => {
     jest.useFakeTimers();
     jest.clearAllMocks();
     await AsyncStorage.clear();
+    await setProUnlocked(true);
     (globalThis as { IS_REACT_ACT_ENVIRONMENT?: boolean }).IS_REACT_ACT_ENVIRONMENT = true;
     responders = [];
     jest.spyOn(PanResponder, "create").mockImplementation((config) => {

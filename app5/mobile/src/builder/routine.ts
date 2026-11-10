@@ -2,7 +2,6 @@ import { exerciseMatchesEquipment, exerciseMatchesRegion, UNIT_SECONDS, type Exe
 
 export type RoutineReason =
   | 'no_matching_content'
-  | 'needs_unlock'
   | 'equipment_unavailable'
   | 'invalid_duration';
 
@@ -11,7 +10,6 @@ export type RoutineRequest = {
   position: string;
   bodyRegion: string;
   durationSeconds: number;
-  unlocked: boolean;
   availableEquipment?: string[];
 };
 
@@ -80,22 +78,15 @@ export function buildRoutine(req: RoutineRequest): RoutineResult {
     return { units: [], repeatsSomeMoves: false, empty: true, reason: 'no_matching_content' };
   }
 
-  const byEquip = byRegion.filter((e) => exerciseMatchesEquipment(e, req.availableEquipment));
-  if (byEquip.length === 0) {
+  const pool = byRegion.filter((e) => exerciseMatchesEquipment(e, req.availableEquipment));
+  if (pool.length === 0) {
     return { units: [], repeatsSomeMoves: false, empty: true, reason: 'equipment_unavailable' };
-  }
-
-  const unlockedPool = req.unlocked
-    ? byEquip
-    : byEquip.filter((e) => e.access_tier === 'free');
-  if (unlockedPool.length === 0) {
-    return { units: [], repeatsSomeMoves: false, empty: true, reason: 'needs_unlock' };
   }
 
   const units: Exercise[] = [];
   const usedIds = new Set<string>();
   for (let i = 0; i < n; i += 1) {
-    const next = i === 0 ? pickFirst(unlockedPool) : pickNext(units[i - 1], unlockedPool, usedIds);
+    const next = i === 0 ? pickFirst(pool) : pickNext(units[i - 1], pool, usedIds);
     units.push(next);
     usedIds.add(next.id);
   }

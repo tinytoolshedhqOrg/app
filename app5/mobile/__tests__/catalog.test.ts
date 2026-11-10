@@ -63,6 +63,18 @@ describe("composable library", () => {
     const all = combos.flatMap((c) => c.exerciseIds);
     expect(new Set(all).size).toBeLessThan(all.length);
   });
+  it("builds each body-part session from every matching exercise", () => {
+    const pack = loadBundledContent();
+    for (const part of bodyParts) {
+      const ids = pack.exercises
+        .filter((exercise) => exercise.library?.body_part === part.name)
+        .map((exercise) => exercise.id);
+      const selection = getBodySelection(part.name);
+      expect(ids.length).toBeGreaterThan(0);
+      expect(new Set(selection.exerciseIds)).toEqual(new Set(ids));
+      expect(selection.exerciseIds).toHaveLength(ids.length);
+    }
+  });
   it("makes every part reachable and groups posture transitions", () => {
     for (const part of bodyParts) {
       const units = resolveSelection(getBodySelection(part.name));

@@ -42,6 +42,8 @@ type Props = {
   onOpen: (exercise: Exercise) => void;
   onDragStateChange: (dragging: boolean) => void;
   onSwipeActive?: (active: boolean) => void;
+  editingEnabled?: boolean;
+  onEditLocked?: () => void;
   scrollRef: RefObject<ScrollView | null>;
   viewportRef: RefObject<View | null>;
   scrollMetrics: RefObject<SortScrollMetrics>;
@@ -51,6 +53,8 @@ function DragHandle({
   name,
   position,
   count,
+  enabled,
+  onLocked,
   onBegin,
   onMove,
   onFinish,
@@ -60,6 +64,8 @@ function DragHandle({
   name: string;
   position: number;
   count: number;
+  enabled: boolean;
+  onLocked: () => void;
   onBegin: (pageY: number) => void;
   onMove: (pageY: number) => void;
   onFinish: () => void;
@@ -80,6 +86,10 @@ function DragHandle({
       PanResponder.create({
         onStartShouldSetPanResponder: () => true,
         onPanResponderGrant: (event) => {
+          if (!enabled) {
+            onLocked();
+            return;
+          }
           clearHold();
           const pageY = event.nativeEvent.pageY;
           timer.current = setTimeout(() => {
@@ -88,6 +98,7 @@ function DragHandle({
           }, HOLD_MS);
         },
         onPanResponderMove: (event, gesture) => {
+          if (!enabled) return;
           if (active.current) onMove(event.nativeEvent.pageY);
           else if (Math.abs(gesture.dy) > 8 || Math.abs(gesture.dx) > 8)
             clearHold();
@@ -105,21 +116,27 @@ function DragHandle({
         onPanResponderTerminationRequest: () => !active.current,
         onShouldBlockNativeResponder: () => active.current,
       }),
-    [clearHold, onBegin, onMove, onFinish, onCancel],
+    [clearHold, enabled, onBegin, onLocked, onMove, onFinish, onCancel],
   );
   return (
     <View
       {...responder.panHandlers}
       accessible
       accessibilityRole="adjustable"
-      accessibilityLabel={`調整${name}的順序`}
-      accessibilityHint="長按後上下拖曳，也可使用向上或向下調整動作"
+      accessibilityLabel={enabled ? `調整${name}的順序` : `解鎖後才能調整${name}的順序`}
+      accessibilityHint={
+        enabled ? "長按後上下拖曳，也可使用向上或向下調整動作" : "點一下前往買斷"
+      }
       accessibilityValue={{ min: 1, max: count, now: position + 1 }}
       accessibilityActions={[
         { name: "decrement", label: "向上移動" },
         { name: "increment", label: "向下移動" },
       ]}
       onAccessibilityAction={(event) => {
+        if (!enabled) {
+          onLocked();
+          return;
+        }
         if (event.nativeEvent.actionName === "decrement") onStep(-1);
         if (event.nativeEvent.actionName === "increment") onStep(1);
       }}
@@ -134,30 +151,36 @@ function useSwipeDelete({
   revealed,
   canDelete,
   sorting,
+  locked,
   onReveal,
   onCollapse,
   onSwipeActive,
+  onBlocked,
 }: {
   revealed: boolean;
   canDelete: boolean;
   sorting: boolean;
+  locked: boolean;
   onReveal: () => void;
   onCollapse: () => void;
   onSwipeActive: (active: boolean) => void;
+  onBlocked: () => void;
 }) {
   const [translate] = useState(() => new Animated.Value(0));
   const offset = useRef(0);
   const start = useRef(0);
-  const gesture = useRef({ revealed, canDelete, sorting });
+  const gesture = useRef({ revealed, canDelete, sorting, locked });
   const reveal = useRef(onReveal);
   const collapse = useRef(onCollapse);
   const swipeActive = useRef(onSwipeActive);
+  const blocked = useRef(onBlocked);
   useEffect(() => {
-    gesture.current = { revealed, canDelete, sorting };
+    gesture.current = { revealed, canDelete, sorting, locked };
     reveal.current = onReveal;
     collapse.current = onCollapse;
     swipeActive.current = onSwipeActive;
-  }, [revealed, canDelete, sorting, onReveal, onCollapse, onSwipeActive]);
+    blocked.current = onBlocked;
+  }, [revealed, canDelete, sorting, locked, onReveal, onCollapse, onSwipeActive, onBlocked]);
   useEffect(() => {
     const to = revealed && canDelete ? -SWIPE_DELETE_WIDTH : 0;
     offset.current = to;
@@ -170,9 +193,21 @@ function useSwipeDelete({
       PanResponder.create({
         onStartShouldSetPanResponder: () => false,
         onMoveShouldSetPanResponder: (_event, pan) =>
-          swipeShouldClaim(pan.dx, pan.dy, gesture.current),
+          swipeShouldClaim(
+            pan.dx,
+            pan.dy,
+            gesture.current.locked
+              ? { canDelete: true, revealed: false, sorting: gesture.current.sorting }
+              : gesture.current,
+          ),
         onMoveShouldSetPanResponderCapture: (_event, pan) =>
-          swipeShouldClaim(pan.dx, pan.dy, gesture.current),
+          swipeShouldClaim(
+            pan.dx,
+            pan.dy,
+            gesture.current.locked
+              ? { canDelete: true, revealed: false, sorting: gesture.current.sorting }
+              : gesture.current,
+          ),
         onPanResponderGrant: () => {
           start.current = offset.current;
           swipeActive.current(true);
@@ -188,6 +223,13 @@ function useSwipeDelete({
         },
         onPanResponderRelease: (_event, pan) => {
           swipeActive.current(false);
+          if (gesture.current.locked) {
+            const attempted = nextSwipeOffset(start.current, pan.dx, true);
+            offset.current = 0;
+            translate.setValue(0);
+            if (swipeShouldReveal(attempted, pan.vx, true)) blocked.current();
+            return;
+          }
           const allowed = gesture.current.canDelete && !gesture.current.sorting;
           const next = nextSwipeOffset(start.current, pan.dx, allowed);
           if (swipeShouldReveal(next, pan.vx, allowed)) {
@@ -226,6 +268,8 @@ function ExerciseRow({
   onDelete,
   onOpen,
   onSwipeActive,
+  editingEnabled,
+  onEditLocked,
   onBegin,
   onMove,
   onFinish,
@@ -238,6 +282,8 @@ function ExerciseRow({
   revealed: boolean;
   sorting: boolean;
   lifted: boolean;
+  editingEnabled: boolean;
+  onEditLocked: () => void;
   onReveal: () => void;
   onCollapse: () => void;
   onDelete: () => void;
@@ -249,18 +295,20 @@ function ExerciseRow({
   onCancel: () => void;
   onStep: (delta: number) => void;
 }) {
-  const canDelete = count > 1 && !sorting;
+  const canDelete = editingEnabled && count > 1 && !sorting;
   const { responder, translate } = useSwipeDelete({
     revealed: revealed && canDelete,
     canDelete,
     sorting,
+    locked: !editingEnabled,
     onReveal,
     onCollapse,
     onSwipeActive,
+    onBlocked: onEditLocked,
   });
   return (
     <View style={s.clip}>
-      {count > 1 ? (
+      {editingEnabled && count > 1 ? (
         <Pressable
           accessibilityRole="button"
           accessibilityLabel={`刪除${exercise.name}`}
@@ -294,7 +342,7 @@ function ExerciseRow({
             accessibilityRole="button"
             accessibilityLabel={`動作 ${index + 1}，${exercise.name}，查看說明`}
             accessibilityHint={
-              sorting
+              !editingEnabled || sorting
                 ? undefined
                 : revealed
                   ? "點一下關閉刪除"
@@ -324,6 +372,8 @@ function ExerciseRow({
           name={exercise.name}
           position={index}
           count={count}
+          enabled={editingEnabled}
+          onLocked={onEditLocked}
           onBegin={onBegin}
           onMove={onMove}
           onFinish={onFinish}
@@ -342,6 +392,8 @@ export default function ReorderableExerciseList({
   onOpen,
   onDragStateChange,
   onSwipeActive = () => {},
+  editingEnabled = true,
+  onEditLocked = () => {},
   scrollRef,
   viewportRef,
   scrollMetrics,
@@ -363,10 +415,10 @@ export default function ReorderableExerciseList({
     startOffset: number;
   } | null>(null);
   const interval = useRef<ReturnType<typeof setInterval> | null>(null);
-  const callbacks = useRef({ items, onChange, onDragStateChange });
+  const callbacks = useRef({ items, onChange, onDragStateChange, editingEnabled, onEditLocked });
   useEffect(() => {
-    callbacks.current = { items, onChange, onDragStateChange };
-  }, [items, onChange, onDragStateChange]);
+    callbacks.current = { items, onChange, onDragStateChange, editingEnabled, onEditLocked };
+  }, [items, onChange, onDragStateChange, editingEnabled, onEditLocked]);
   const update = useCallback(
     (pageY: number) => {
       const current = active.current;
@@ -422,6 +474,10 @@ export default function ReorderableExerciseList({
     [],
   );
   function begin(from: number, pageY: number) {
+    if (!callbacks.current.editingEnabled) {
+      callbacks.current.onEditLocked();
+      return;
+    }
     setReveal({ signature, index: null });
     active.current = {
       from,
@@ -463,6 +519,10 @@ export default function ReorderableExerciseList({
     }, 32);
   }
   function step(from: number, delta: number) {
+    if (!editingEnabled) {
+      onEditLocked();
+      return;
+    }
     const to = Math.max(0, Math.min(items.length - 1, from + delta));
     if (from === to) return;
     const next = [...items];
@@ -503,7 +563,7 @@ export default function ReorderableExerciseList({
               sorting={drag !== null}
               lifted={selected}
               onReveal={() => {
-                if (items.length <= 1 || drag) return;
+                if (!editingEnabled || items.length <= 1 || drag) return;
                 setReveal({ signature, index });
               }}
               onCollapse={() =>
@@ -511,7 +571,13 @@ export default function ReorderableExerciseList({
                   current.index === index ? { signature, index: null } : current,
                 )
               }
+              editingEnabled={editingEnabled}
+              onEditLocked={onEditLocked}
               onDelete={() => {
+                if (!editingEnabled) {
+                  onEditLocked();
+                  return;
+                }
                 if (items.length <= 1 || drag) return;
                 onDelete(index);
               }}

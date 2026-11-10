@@ -1,6 +1,11 @@
 import bundled from '../assets/content/exercises.zh-Hant.json';
 import { buildRoutine } from '../src/builder';
-import { parseContentPack, type Exercise } from '../src/content';
+import {
+  loadBundledContent,
+  parseContentPack,
+  regionsAvailableForPosition,
+  type Exercise,
+} from '../src/content';
 
 const pack = parseContentPack(bundled);
 
@@ -50,14 +55,12 @@ describe('routine builder', () => {
       position: 'sitting',
       bodyRegion: 'whole_body',
       durationSeconds: 180,
-      unlocked: true,
     });
     const b = buildRoutine({
       exercises: pack.exercises,
       position: 'sitting',
       bodyRegion: 'whole_body',
       durationSeconds: 180,
-      unlocked: true,
     });
     expect(a.empty).toBe(false);
     expect(a.units).toHaveLength(6);
@@ -71,7 +74,6 @@ describe('routine builder', () => {
       position: 'sitting',
       bodyRegion: 'shoulders',
       durationSeconds: 60,
-      unlocked: true,
     });
     expect(shoulders.units.every((e) => e.body_regions.includes('shoulders'))).toBe(true);
 
@@ -80,7 +82,6 @@ describe('routine builder', () => {
       position: 'sitting',
       bodyRegion: 'whole_body',
       durationSeconds: 60,
-      unlocked: true,
     });
     expect(whole.units.length).toBe(2);
   });
@@ -91,7 +92,6 @@ describe('routine builder', () => {
       position: 'lying',
       bodyRegion: 'ankles',
       durationSeconds: 300,
-      unlocked: true,
     });
     expect(result.empty).toBe(false);
     expect(result.repeatsSomeMoves).toBe(true);
@@ -104,7 +104,6 @@ describe('routine builder', () => {
       position: 'lying',
       bodyRegion: 'whole_body',
       durationSeconds: 180,
-      unlocked: true,
     });
     expect(result.units.every((e) => e.position === 'lying')).toBe(true);
     expect(result.units.every((e) => e.setup.includes('仰躺'))).toBe(true);
@@ -120,7 +119,6 @@ describe('routine builder', () => {
       position: 'sitting',
       bodyRegion: 'neck',
       durationSeconds: 150,
-      unlocked: true,
     });
     expect(result.units).toHaveLength(5);
     for (let i = 1; i < result.units.length; i += 1) {
@@ -140,7 +138,6 @@ describe('routine builder', () => {
       position: 'standing',
       bodyRegion: 'arms',
       durationSeconds: 60,
-      unlocked: true,
     });
     expect(result.units.every((e) => e.setup === 'same')).toBe(true);
   });
@@ -155,7 +152,6 @@ describe('routine builder', () => {
       position: 'standing',
       bodyRegion: 'calves',
       durationSeconds: 30,
-      unlocked: true,
       availableEquipment: [],
     });
     expect(noWall.units.map((e) => e.id)).toEqual(['free']);
@@ -165,29 +161,37 @@ describe('routine builder', () => {
       position: 'standing',
       bodyRegion: 'calves',
       durationSeconds: 30,
-      unlocked: true,
       availableEquipment: [],
     });
     expect(none).toMatchObject({ empty: true, reason: 'equipment_unavailable' });
   });
 
-  it('returns needs_unlock instead of inserting paid moves', () => {
+  it('includes paid-tier moves for a user who has not unlocked editing', () => {
     const exercises = [
       stub({
-        id: 'paid-only',
+        id: 'free-move',
+        position: 'sitting',
+        body_regions: ['hips'],
+        access_tier: 'free',
+        setup: 'same',
+      }),
+      stub({
+        id: 'paid-move',
         position: 'sitting',
         body_regions: ['hips'],
         access_tier: 'paid',
+        setup: 'same',
       }),
     ];
     const result = buildRoutine({
       exercises,
       position: 'sitting',
       bodyRegion: 'hips',
-      durationSeconds: 30,
-      unlocked: false,
+      durationSeconds: 60,
     });
-    expect(result).toMatchObject({ empty: true, reason: 'needs_unlock', units: [] });
+    expect(result.empty).toBe(false);
+    expect(result.reason).toBeUndefined();
+    expect(result.units.map((exercise) => exercise.id).sort()).toEqual(['free-move', 'paid-move']);
   });
 
   it('returns no_matching_content when the region does not exist for that posture', () => {
@@ -196,21 +200,39 @@ describe('routine builder', () => {
       position: 'sitting',
       bodyRegion: 'hips',
       durationSeconds: 60,
-      unlocked: true,
     });
     expect(result).toMatchObject({ empty: true, reason: 'no_matching_content' });
   });
 
-  it('keeps free-tier sitting content to access_tier free', () => {
+  it('uses every eligible library exercise when building a free session', () => {
+    const exercises = loadBundledContent().exercises;
+    const eligible = exercises.filter((exercise) => exercise.position === 'sitting');
+    expect(eligible.length).toBeGreaterThan(0);
     const result = buildRoutine({
-      exercises: pack.exercises,
+      exercises,
       position: 'sitting',
       bodyRegion: 'whole_body',
-      durationSeconds: 90,
-      unlocked: false,
+      durationSeconds: eligible.length * 30,
     });
-    expect(result.units).toHaveLength(3);
-    expect(result.units.every((e) => e.access_tier === 'free')).toBe(true);
+    expect(result.empty).toBe(false);
+    expect(result.reason).toBeUndefined();
+    expect(result.units).toHaveLength(eligible.length);
+    expect(new Set(result.units.map((exercise) => exercise.id))).toEqual(
+      new Set(eligible.map((exercise) => exercise.id)),
+    );
+  });
+
+  it('lists a region that only a paid-tier exercise covers', () => {
+    const base = loadBundledContent();
+    const paid = {
+      ...base.exercises[0],
+      id: 'paid-only-hips',
+      position: 'sitting',
+      body_regions: ['hips'],
+      access_tier: 'paid' as const,
+    };
+    const regions = regionsAvailableForPosition({ ...base, exercises: [paid] }, 'sitting');
+    expect(regions.map((region) => region.id)).toContain('hips');
   });
 
   it('uses distinct eligible exercises before repeating (supine 5 min has 10)', () => {
@@ -219,7 +241,6 @@ describe('routine builder', () => {
       position: 'lying',
       bodyRegion: 'whole_body',
       durationSeconds: 300,
-      unlocked: true,
     });
     expect(result.units).toHaveLength(10);
     expect(new Set(result.units.map((e) => e.id)).size).toBe(10);
@@ -233,7 +254,6 @@ describe('routine builder', () => {
       position: 'sitting',
       bodyRegion: 'whole_body',
       durationSeconds: 45,
-      unlocked: true,
     });
     expect(result.reason).toBe('invalid_duration');
   });

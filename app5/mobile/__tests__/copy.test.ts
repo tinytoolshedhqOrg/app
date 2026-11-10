@@ -32,6 +32,13 @@ describe('copy', () => {
         expect(`${file}: ${text.includes(phrase) ? phrase : ''}`).not.toContain(phrase);
       }
     }
+    expect(zh.paywall.headline).toBe('自訂組合內容：刪除、排序、替換動作');
+    expect(zh.paywall.body).toBe('一次買斷後可以刪除、排序、替換動作。沒有訂閱，也沒有加購。');
+    expect(zh.paywall.freeNote).toBe('跟練現有組合免費。自訂組合內容：刪除、排序、替換動作需一次買斷。');
+    expect(zh.paywall.once).toBe('一次買斷');
+    expect(zh.settings.unlock).toBe('自訂組合內容：刪除、排序、替換動作');
+    expect(zh.preview.unlock).toBe('自訂組合內容：刪除、排序、替換動作');
+    expect(JSON.stringify(zh)).not.toMatch(/解鎖全部動作|免費版各姿勢有少量基礎動作|其餘動作需買斷後才能使用|符合的動作尚未解鎖/);
     expect(zh.home.safety).toBe('若疼痛、麻木、暈眩或不適，請立即停止。這不是醫療建議。');
     expect(zh.home.consult).toBe('已有傷勢、手術後、懷孕或有活動限制者，先確認內容是否適合自身情況。');
     expect(JSON.stringify(zh)).not.toMatch(/審核通過/);

@@ -15,6 +15,7 @@ import {
   rememberStarted,
   setSelection,
 } from "../src/storage/selection";
+import { setProUnlocked } from "../src/iap";
 import { getCurrentRoutine, resetPrefsForTests, setCurrentRoutine, updatePrefs } from "../src/storage";
 import { countdownAsset } from "../src/audio/countdown";
 import { exerciseNameAsset } from "../src/audio/exerciseNames";
@@ -110,6 +111,7 @@ describe("white and blue app flow", () => {
   });
   it("starts the exact selected 30-second movement sequence", async () => {
     const selected = getCombinations()[1];
+    await setProUnlocked(true);
     setSelection(selected);
     await act(async () => {
       rendered = create(<PreviewScreen />);

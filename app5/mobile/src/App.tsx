@@ -10,6 +10,7 @@ import { GestureHandlerRootView } from "react-native-gesture-handler";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 import { StatusBar } from "expo-status-bar";
 import { initializeI18n, t } from "./i18n";
+import { isProUnlocked } from "./iap";
 import { installWebAlert } from "./lib/webAlert";
 import { loadBundledContent } from "./content";
 import { initPrefs } from "./storage";
@@ -34,6 +35,7 @@ export default function App() {
         initializeI18n();
         loadBundledContent();
         await initPrefs();
+        await isProUnlocked();
         if (!cancelled) setReady(true);
       } catch (e) {
         if (!cancelled) setError(String((e as Error)?.message || e));

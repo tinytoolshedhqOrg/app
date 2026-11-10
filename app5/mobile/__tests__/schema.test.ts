@@ -24,6 +24,7 @@ describe('content schema', () => {
     }
     expect(ids.size).toBe(30);
     expect(byPos).toEqual({ sitting: 10, standing: 10, lying: 10 });
+    expect(pack.exercises.every((exercise) => exercise.access_tier === 'free')).toBe(true);
     expect(pack.notes).toContain('部分動作為一般活動設計，沒有對應的官方來源，只依共同注意事項設計。');
   });
 
