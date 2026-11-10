@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "伸展",
+    "name": "Kettle Stretch",
     "slug": "stretch",
     "version": "0.1.0",
     "orientation": "portrait",
@@ -10,7 +10,7 @@
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.tinytoolshed.stretch",
-      "buildNumber": "2",
+      "buildNumber": "3",
       "infoPlist": {
         "CFBundleDevelopmentRegion": "zh-Hant",
         "CFBundleLocalizations": [

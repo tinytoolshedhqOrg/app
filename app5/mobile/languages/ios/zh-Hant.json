@@ -1,4 +1,5 @@
 {
-  "CFBundleDisplayName": "伸展",
+  "CFBundleDisplayName": "壺鈴伸展",
+  "CFBundleName": "壺鈴伸展",
   "NSPhotoLibraryUsageDescription": "這個 App 不會讀取你的照片，也不會儲存或匯出圖片。只有在取得某張照片的相簿位址時，才會使用相簿權限把該照片複製到 App 裡。"
 }

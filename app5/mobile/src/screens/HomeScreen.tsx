@@ -51,7 +51,7 @@ export default function HomeScreen() {
       ]}
     >
       <View style={s.brandRow}>
-        <Text style={s.brand}>伸展 STRETCH</Text>
+        <Text style={s.brand}>壺鈴伸展 KETTLE STRETCH</Text>
         <View style={s.brandMark}><Icon name="standing" color={palette.blue} size={20} /></View>
       </View>
       <Text style={s.eyebrow}>MOVE A LITTLE, FEEL BETTER</Text>
