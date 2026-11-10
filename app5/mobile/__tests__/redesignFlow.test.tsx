@@ -96,6 +96,8 @@ describe("white and blue app flow", () => {
       rendered = create(<HomeScreen />);
     });
     expect(hasText("上次使用")).toBe(true);
+    expect(hasText("伸展一下。")).toBe(false);
+    expect(JSON.stringify(rendered!.toJSON())).not.toMatch(/伸展一下/);
     expect(hasText("依當下情境選擇")).toBe(false);
     expect(hasText("給自己一點空間。")).toBe(false);
     expect(hasText("今天想活動哪裡？")).toBe(false);

@@ -10,7 +10,7 @@
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.tinytoolshed.stretch",
-      "buildNumber": "1",
+      "buildNumber": "2",
       "infoPlist": {
         "CFBundleDevelopmentRegion": "zh-Hant",
         "CFBundleLocalizations": [
@@ -19,8 +19,7 @@
         ],
         "CFBundleAllowMixedLocalizations": true,
         "ITSAppUsesNonExemptEncryption": false,
-        "NSPhotoLibraryUsageDescription": "This app does not access your photos. This text is required by a system component.",
-        "NSPhotoLibraryAddUsageDescription": "This app does not add photos to your library. This text is required by a system component."
+        "NSPhotoLibraryUsageDescription": "This app does not read your photos and does not save or export images. It would use photo library access only to copy a photo into the app when given that photo's library address."
       },
       "runtimeVersion": {
         "policy": "sdkVersion"
@@ -80,6 +79,11 @@
       "zh-TW": "./languages/ios/zh-Hant.json",
       "zh-HK": "./languages/ios/zh-Hant.json"
     },
-    "owner": "leowang1105"
+    "owner": "leowang1105",
+    "extra": {
+      "eas": {
+        "projectId": "964b2a8d-f108-43c6-a7bb-a3121643aaed"
+      }
+    }
   }
 }

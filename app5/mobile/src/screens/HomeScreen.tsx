@@ -55,10 +55,11 @@ export default function HomeScreen() {
         <View style={s.brandMark}><Icon name="standing" color={palette.blue} size={20} /></View>
       </View>
       <Text style={s.eyebrow}>MOVE A LITTLE, FEEL BETTER</Text>
-      <View style={s.welcome}>
-        <Text style={s.heading}>伸展一下。</Text>
-        {!last && <Mascot size={78} />}
-      </View>
+      {!last && (
+        <View style={s.welcome}>
+          <Mascot size={78} />
+        </View>
+      )}
       {last && (
         <Pressable
           accessibilityRole="button"
@@ -124,9 +125,8 @@ const s = StyleSheet.create({
   brandRow: { flexDirection: "row", alignItems: "center", justifyContent: "space-between", marginBottom: 28 },
   brand: { fontFamily: font.bold, color: palette.ink, fontSize: 14, letterSpacing: 1.8 },
   brandMark: { width: 36, height: 36, borderRadius: 12, backgroundColor: palette.pale, alignItems: "center", justifyContent: "center" },
-  eyebrow: { fontFamily: font.medium, color: palette.muted, fontSize: 10, letterSpacing: 1.6, marginBottom: 8 },
-  welcome: { flexDirection: "row", alignItems: "center", justifyContent: "space-between", gap: 8, marginBottom: 22 },
-  heading: { flexShrink: 1, fontFamily: font.bold, color: palette.ink, fontSize: 36, lineHeight: 52 },
+  eyebrow: { fontFamily: font.medium, color: palette.muted, fontSize: 10, letterSpacing: 1.6, marginBottom: 16 },
+  welcome: { alignItems: "flex-end", marginBottom: 8 },
   recent: { minHeight: 174, borderRadius: 14, padding: 22, backgroundColor: palette.blue, overflow: "hidden", justifyContent: "center" },
   heroArt: { position: "absolute", right: 16, top: 10 },
   heroCopy: { alignSelf: "flex-start", maxWidth: "72%" },
