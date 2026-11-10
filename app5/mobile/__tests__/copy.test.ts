@@ -90,7 +90,7 @@ describe('copy', () => {
     expect(appJson.expo.scheme).toBe('stretch');
     expect(appJson.expo.ios.bundleIdentifier).toBe('com.tinytoolshed.stretch');
     expect(appJson.expo.owner).toBe('leowang1105');
-    expect(appJson.expo.ios.buildNumber).toBe('3');
+    expect(appJson.expo.ios.buildNumber).toBe('4');
     expect(appJson.expo.extra.eas.projectId).toBe('964b2a8d-f108-43c6-a7bb-a3121643aaed');
     expect(enIos.CFBundleDisplayName).toBe('Kettle Stretch');
     expect(enIos.CFBundleName).toBe('Kettle Stretch');
