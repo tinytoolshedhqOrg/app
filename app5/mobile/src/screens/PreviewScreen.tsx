@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import {
   Alert,
   Modal,
@@ -25,6 +25,8 @@ import {
   setSelection,
 } from "../storage/selection";
 import { setCurrentRoutine } from "../storage";
+import { currentProUnlocked, isProUnlocked, subscribePro } from "../iap";
+import { t } from "../i18n";
 import { font, palette, ui } from "../theme/studio";
 import type { RootStackParamList } from "../navigation/types";
 import { ExerciseDetails } from "../components/ExerciseDetails";
@@ -54,6 +56,26 @@ export default function PreviewScreen() {
   });
   const [detail, setDetail] = useState<Exercise | null>(null),
     [starting, setStarting] = useState(false);
+  const [pro, setPro] = useState(currentProUnlocked);
+  useEffect(() => {
+    let active = true;
+    let generation = 0;
+    const unsub = subscribePro((value) => {
+      generation += 1;
+      if (active) setPro(value);
+    });
+    const request = ++generation;
+    isProUnlocked().then((value) => {
+      if (active && request === generation) setPro(value);
+    });
+    return () => {
+      active = false;
+      unsub();
+    };
+  }, []);
+  function openPaywall() {
+    nav.navigate("Paywall", { reason: "edit_routine" });
+  }
   const [suggestion, setSuggestion] = useState<{
     deletedIndex: number;
     removedPosition: string;
@@ -61,6 +83,10 @@ export default function PreviewScreen() {
     cursor: number;
   } | null>(null);
   function removeAt(index: number) {
+    if (!pro) {
+      openPaywall();
+      return;
+    }
     const removed = units[index];
     const next = removeExerciseAt(units, index);
     if (!removed || next === units) return;
@@ -82,10 +108,18 @@ export default function PreviewScreen() {
     );
   }
   function commitOrder(next: Exercise[]) {
+    if (!pro) {
+      openPaywall();
+      return;
+    }
     setUnits(next);
     setSuggestion(null);
   }
   function acceptReplacement() {
+    if (!pro) {
+      openPaywall();
+      return;
+    }
     if (!suggestion) return;
     const chosenId = suggestion.candidateIds[suggestion.cursor];
     const candidate = loadBundledContent().exercises.find((exercise) => exercise.id === chosenId);
@@ -95,6 +129,10 @@ export default function PreviewScreen() {
     setUnits((current) => insertReplacement(current, deletedIndex, candidate));
   }
   function showNextReplacement() {
+    if (!pro) {
+      openPaywall();
+      return;
+    }
     setSuggestion((current) => {
       if (!current) return current;
       const cursor = advanceCandidate(current.candidateIds.length, current.cursor);
@@ -183,8 +221,20 @@ export default function PreviewScreen() {
             <Text style={ui.section}>動作順序</Text>
             <Text style={s.meta}>{units.length} 個動作</Text>
           </View>
+          {pro ? null : (
+            <Pressable
+              accessibilityRole="button"
+              accessibilityLabel={t("preview.unlock")}
+              onPress={openPaywall}
+              style={s.lockHint}
+            >
+              <Text style={s.lockHintText}>{t("preview.unlock")}</Text>
+            </Pressable>
+          )}
           <ReorderableExerciseList
             items={units}
+            editingEnabled={pro}
+            onEditLocked={openPaywall}
             onChange={commitOrder}
             onOpen={setDetail}
             onDragStateChange={setDragging}
@@ -328,5 +378,17 @@ const s = StyleSheet.create({
     gap: 8,
     marginTop: 22,
     marginBottom: 8,
+  },
+  lockHint: {
+    alignSelf: "flex-start",
+    marginBottom: 8,
+    minHeight: 32,
+    justifyContent: "center",
+  },
+  lockHintText: {
+    color: palette.blue,
+    fontFamily: font.medium,
+    fontSize: 12,
+    lineHeight: 18,
   },
 });

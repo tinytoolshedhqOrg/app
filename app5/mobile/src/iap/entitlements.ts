@@ -3,6 +3,13 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 const PRO_KEY = 'stretch/proUnlocked/v1';
 const EMPTY_PURCHASE_STREAK_KEY = 'stretch/emptyPurchaseStreak/v1';
 const proListeners = new Set<(unlocked: boolean) => void>();
+let cachedUnlocked = false;
+let cacheEpoch = 0;
+
+/** Last unlock value published in this session, so Preview can enable editing on first paint. */
+export function currentProUnlocked(): boolean {
+  return cachedUnlocked;
+}
 
 export const PENDING_MAX_AGE_MS = 14 * 24 * 60 * 60 * 1000;
 
@@ -12,9 +19,11 @@ export function subscribePro(listener: (unlocked: boolean) => void): () => void 
 }
 
 function notifyPro(unlocked: boolean) {
+  cachedUnlocked = !!unlocked;
+  cacheEpoch += 1;
   for (const l of proListeners) {
     try {
-      l(!!unlocked);
+      l(cachedUnlocked);
     } catch { /* ignore */ }
   }
 }
@@ -109,7 +118,10 @@ export async function isPendingVerification(): Promise<boolean> {
 }
 
 export async function isProUnlocked(): Promise<boolean> {
-  return isProPersisted();
+  const epoch = cacheEpoch;
+  const unlocked = await isProPersisted();
+  if (epoch === cacheEpoch) cachedUnlocked = unlocked;
+  return unlocked;
 }
 
 export async function setProUnlocked(

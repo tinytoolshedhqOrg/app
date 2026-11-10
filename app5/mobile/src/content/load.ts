@@ -29,12 +29,10 @@ export function labelFor(list: LabeledId[], id: string): string {
 export function regionsAvailableForPosition(
   pack: ContentPack,
   position: string,
-  unlocked: boolean,
 ): LabeledId[] {
   const used = new Set<string>();
   for (const ex of pack.exercises) {
     if (ex.position !== position) continue;
-    if (!unlocked && ex.access_tier !== 'free') continue;
     for (const rid of ex.body_regions) used.add(rid);
   }
   return pack.categories.body_regions.filter((r) => used.has(r.id));

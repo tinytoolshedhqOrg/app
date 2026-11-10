@@ -519,7 +519,7 @@
         "hands"
       ],
       "movement_type": "mobility",
-      "access_tier": "paid",
+      "access_tier": "free",
       "duration_seconds": 30,
       "gap_after_seconds": 3,
       "equipment": [
@@ -617,7 +617,7 @@
         "wrists"
       ],
       "movement_type": "mobility",
-      "access_tier": "paid",
+      "access_tier": "free",
       "duration_seconds": 30,
       "gap_after_seconds": 3,
       "equipment": [
@@ -715,7 +715,7 @@
         "neck"
       ],
       "movement_type": "mobility",
-      "access_tier": "paid",
+      "access_tier": "free",
       "duration_seconds": 30,
       "gap_after_seconds": 3,
       "equipment": [
@@ -814,7 +814,7 @@
         "upper_back"
       ],
       "movement_type": "mobility",
-      "access_tier": "paid",
+      "access_tier": "free",
       "duration_seconds": 30,
       "gap_after_seconds": 3,
       "equipment": [
@@ -912,7 +912,7 @@
         "arms"
       ],
       "movement_type": "mobility",
-      "access_tier": "paid",
+      "access_tier": "free",
       "duration_seconds": 30,
       "gap_after_seconds": 3,
       "equipment": [
@@ -1011,7 +1011,7 @@
         "calves"
       ],
       "movement_type": "mobility",
-      "access_tier": "paid",
+      "access_tier": "free",
       "duration_seconds": 30,
       "gap_after_seconds": 3,
       "equipment": [
@@ -1109,7 +1109,7 @@
         "knees"
       ],
       "movement_type": "mobility",
-      "access_tier": "paid",
+      "access_tier": "free",
       "duration_seconds": 30,
       "gap_after_seconds": 3,
       "equipment": [
@@ -1494,7 +1494,7 @@
         "wrists"
       ],
       "movement_type": "mobility",
-      "access_tier": "paid",
+      "access_tier": "free",
       "duration_seconds": 30,
       "gap_after_seconds": 3,
       "equipment": [],
@@ -1590,7 +1590,7 @@
         "arms"
       ],
       "movement_type": "mobility",
-      "access_tier": "paid",
+      "access_tier": "free",
       "duration_seconds": 30,
       "gap_after_seconds": 3,
       "equipment": [],
@@ -1686,7 +1686,7 @@
         "neck"
       ],
       "movement_type": "mobility",
-      "access_tier": "paid",
+      "access_tier": "free",
       "duration_seconds": 30,
       "gap_after_seconds": 3,
       "equipment": [],
@@ -1782,7 +1782,7 @@
         "waist"
       ],
       "movement_type": "mobility",
-      "access_tier": "paid",
+      "access_tier": "free",
       "duration_seconds": 30,
       "gap_after_seconds": 3,
       "equipment": [],
@@ -1879,7 +1879,7 @@
         "ankles"
       ],
       "movement_type": "stretch",
-      "access_tier": "paid",
+      "access_tier": "free",
       "duration_seconds": 30,
       "gap_after_seconds": 3,
       "equipment": [
@@ -1978,7 +1978,7 @@
         "arms"
       ],
       "movement_type": "mobility",
-      "access_tier": "paid",
+      "access_tier": "free",
       "duration_seconds": 30,
       "gap_after_seconds": 3,
       "equipment": [],
@@ -2073,7 +2073,7 @@
         "shoulders"
       ],
       "movement_type": "mobility",
-      "access_tier": "paid",
+      "access_tier": "free",
       "duration_seconds": 30,
       "gap_after_seconds": 3,
       "equipment": [],
@@ -2459,7 +2459,7 @@
         "ankles"
       ],
       "movement_type": "mobility",
-      "access_tier": "paid",
+      "access_tier": "free",
       "duration_seconds": 30,
       "gap_after_seconds": 3,
       "equipment": [
@@ -2557,7 +2557,7 @@
         "hips"
       ],
       "movement_type": "mobility",
-      "access_tier": "paid",
+      "access_tier": "free",
       "duration_seconds": 30,
       "gap_after_seconds": 3,
       "equipment": [
@@ -2656,7 +2656,7 @@
         "hips"
       ],
       "movement_type": "mobility",
-      "access_tier": "paid",
+      "access_tier": "free",
       "duration_seconds": 30,
       "gap_after_seconds": 3,
       "equipment": [
@@ -2755,7 +2755,7 @@
         "waist"
       ],
       "movement_type": "stretch",
-      "access_tier": "paid",
+      "access_tier": "free",
       "duration_seconds": 30,
       "gap_after_seconds": 3,
       "equipment": [
@@ -2853,7 +2853,7 @@
         "wrists"
       ],
       "movement_type": "mobility",
-      "access_tier": "paid",
+      "access_tier": "free",
       "duration_seconds": 30,
       "gap_after_seconds": 3,
       "equipment": [
@@ -2952,7 +2952,7 @@
         "arms"
       ],
       "movement_type": "mobility",
-      "access_tier": "paid",
+      "access_tier": "free",
       "duration_seconds": 30,
       "gap_after_seconds": 3,
       "equipment": [
@@ -3048,7 +3048,7 @@
         "arms"
       ],
       "movement_type": "mobility",
-      "access_tier": "paid",
+      "access_tier": "free",
       "duration_seconds": 30,
       "gap_after_seconds": 3,
       "equipment": [
