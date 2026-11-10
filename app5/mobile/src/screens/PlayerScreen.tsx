@@ -220,16 +220,13 @@ export default function PlayerScreen() {
         }}
       />
     );
-  const status =
-    snap.phase === "lead"
-      ? "準備開始"
-      : gap
-        ? "準備下一個動作"
-        : routineComplete
-          ? "恭喜！完成了一組動作"
-          : snap.paused
-            ? null
-            : "保持自然呼吸";
+  const status = gap
+    ? "準備下一個動作"
+    : routineComplete
+      ? "恭喜！完成了一組動作"
+      : snap.phase === "lead" || snap.paused
+        ? null
+        : "保持自然呼吸";
   return (
     <View
       pointerEvents={routineComplete ? "none" : "auto"}

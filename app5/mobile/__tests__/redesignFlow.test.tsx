@@ -163,7 +163,7 @@ describe("white and blue app flow", () => {
     await act(async () => jest.advanceTimersByTime(100));
     expect(hasText("3")).toBe(false);
     expect(hasText("開始")).toBe(false);
-    expect(hasText("準備開始")).toBe(true);
+    expect(hasText("準備開始")).toBe(false);
     await act(async () => jest.advanceTimersByTime(2900));
     expect(hasText("3")).toBe(true);
     expect(hasText("開始")).toBe(false);
@@ -202,7 +202,9 @@ describe("white and blue app flow", () => {
     });
     expect(hasText("3")).toBe(false);
     expect(hasText("開始")).toBe(false);
-    expect(hasText("準備開始")).toBe(true);
+    expect(hasText("準備開始")).toBe(false);
+    await act(async () => jest.advanceTimersByTime(3000));
+    expect(hasText("3")).toBe(true);
   });
   it.each([true, false])("plays Yay once on the completion screen with voice enabled: %s", async (voiceEnabled) => {
     await updatePrefs({ voiceEnabled });
@@ -271,7 +273,7 @@ describe("white and blue app flow", () => {
     await act(async () => jest.advanceTimersByTime(3000));
     expect(hasText("3")).toBe(true);
     expect(hasText("開始")).toBe(false);
-    expect(hasText("準備開始")).toBe(true);
+    expect(hasText("準備開始")).toBe(false);
     expect(mockVoice.play).not.toHaveBeenCalled();
     await act(async () => jest.advanceTimersByTime(3000));
     expect(hasText("開始")).toBe(false);
