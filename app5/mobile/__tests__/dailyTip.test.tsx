@@ -30,13 +30,10 @@ function day(n: number): string {
 }
 
 describe('daily tip catalog', () => {
-  it('keeps 55 tips in zh-Hant, with one distinct sentence each', () => {
+  it('keeps 42 sequentially numbered tips in zh-Hant, with one distinct sentence each', () => {
     expect(SUPPORTED_UI_LOCALES).toEqual(['zh-Hant']);
-    expect(DAILY_TIP_IDS).toHaveLength(55);
+    expect(DAILY_TIP_IDS).toEqual(Array.from({ length: 42 }, (_, index) => String(index + 1)));
     expect(listDailyTips().map((tip) => tip.id)).toEqual(DAILY_TIP_IDS);
-    for (const removed of ['001', '002', '003', '008', '013', '016', '018', '024']) {
-      expect(DAILY_TIP_IDS).not.toContain(removed);
-    }
     const texts = new Set<string>();
     for (const tip of listDailyTips()) {
       expect(DAILY_TIP_IDS).toContain(tip.id);
@@ -52,12 +49,12 @@ describe('daily tip catalog', () => {
       }
       expect(tipSentences(tip.id, 'en')).toEqual(tipSentences(tip.id, 'zh-Hant'));
     }
-    expect(texts.size).toBe(55);
+    expect(texts.size).toBe(42);
   });
 
   it('keeps the strength-training context', () => {
-    expect(getDailyTip('076')?.context).toContain('strength_training');
-    expect(getDailyTip('080')?.context).toContain('strength_training');
+    expect(getDailyTip('35')?.context).toContain('strength_training');
+    expect(getDailyTip('36')?.context).toContain('strength_training');
   });
 });
 
@@ -138,7 +135,7 @@ describe('daily tip schedule', () => {
     await AsyncStorage.setItem(DAILY_TIP_KEY, '{');
     const first = await showDailyTip('2026-05-01', zero);
     expect(DAILY_TIP_IDS).toContain(first.tipId);
-    expect(first.record.order).toHaveLength(55);
+    expect(first.record.order).toHaveLength(42);
 
     await AsyncStorage.setItem(DAILY_TIP_KEY, JSON.stringify({
       order: ['004'],
@@ -146,7 +143,7 @@ describe('daily tip schedule', () => {
       shownOn: '2026-02-31',
     }));
     const recovered = await showDailyTip('2026-05-02', zero);
-    expect(recovered.record.order).toHaveLength(55);
+    expect(recovered.record.order).toHaveLength(42);
     expect(new Set(recovered.record.order)).toEqual(new Set(DAILY_TIP_IDS));
     expect(recovered.record.shownOn).toBe('2026-05-02');
 
@@ -175,6 +172,23 @@ describe('daily tip schedule', () => {
     const restarted = presentDailyTip({ order: [...order, '024'], index: 5, shownOn }, shownOn, ids, zero);
     expect(restarted.order[restarted.index]).not.toBe('007');
     expect(new Set(restarted.order)).toEqual(new Set(ids));
+  });
+
+  it('renumbers a saved rotation, skipping a retired tip and persisting its replacement', async () => {
+    const order = (
+      '004 005 007 012 014 015 017 020 021 023 025 028 029 031 034 039 040 042 043 ' +
+      '044 045 047 049 050 051 052 053 054 055 056 059 060 062 064 065 066 067 068 ' +
+      '069 070 071 072 073 074 076 080 082 083 084 089 090 093 094 095 098'
+    ).split(' ');
+    const shownOn = '2026-05-01';
+    await AsyncStorage.setItem(DAILY_TIP_KEY, JSON.stringify({ order, index: order.indexOf('031'), shownOn }));
+
+    const shown = await showDailyTip(shownOn, zero);
+    expect(shown.tipId).toBe('14');
+    expect(getDailyTip(shown.tipId)?.title).toBe('運動強度會影響每週目標');
+    expect(shown.record).toEqual({ order: DAILY_TIP_IDS, index: 13, shownOn });
+    expect(JSON.parse((await AsyncStorage.getItem(DAILY_TIP_KEY))!)).toEqual(shown.record);
+    expect(await showDailyTip(shownOn, zero)).toEqual(shown);
   });
 });
 
@@ -216,7 +230,7 @@ describe('daily tip card', () => {
     expect(text).not.toContain('下一則');
     expect(text).not.toContain('換一個');
 
-    const tip = getDailyTip('076');
+    const tip = getDailyTip('35');
     expect(tip).toBeTruthy();
     await act(async () => rendered!.unmount());
     await act(async () => {
@@ -224,7 +238,7 @@ describe('daily tip card', () => {
     });
     const body = JSON.stringify(rendered!.toJSON());
     expect(body).toContain('這則談的是肌力訓練，不是每天的伸展。');
-    expect(body).toContain(tipSentences('076', 'zh-Hant')![0]);
+    expect(body).toContain(tipSentences('35', 'zh-Hant')![0]);
     expect(body).not.toContain('下一則');
 
     const link = rendered!.root.findAll(
@@ -237,15 +251,15 @@ describe('daily tip card', () => {
 
     await act(async () => rendered!.unmount());
     await act(async () => {
-      rendered = create(<DailyTipBody tip={getDailyTip('095')!} />);
+      rendered = create(<DailyTipBody tip={getDailyTip('40')!} />);
     });
-    const cooldown = JSON.stringify(rendered!.toJSON());
-    expect(cooldown).toContain(tipSentences('095', 'zh-Hant')![0]);
-    expect(cooldown).not.toContain('這則談的是肌力訓練');
+    const warmup = JSON.stringify(rendered!.toJSON());
+    expect(warmup).toContain(tipSentences('40', 'zh-Hant')![0]);
+    expect(warmup).not.toContain('這則談的是肌力訓練');
 
     await act(async () => rendered!.unmount());
     await act(async () => {
-      rendered = create(<DailyTipBody tip={getDailyTip('067')!} />);
+      rendered = create(<DailyTipBody tip={getDailyTip('27')!} />);
     });
     const activity = JSON.stringify(rendered!.toJSON());
     expect(activity).toContain('這則談的是整體身體活動，不是伸展單獨的效果。');

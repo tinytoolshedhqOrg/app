@@ -1,6 +1,6 @@
 {
   "status": "approved_subset",
-  "approvedCount": 55,
+  "approvedCount": 42,
   "locale": "zh-Hant",
   "supportedUiLocales": [
     "zh-Hant"
@@ -8,61 +8,48 @@
   "accessDate": "2026-11-08",
   "note": "Each tip has one standalone Traditional Chinese sentence. Source details and provenance are retained for reference.",
   "ids": [
-    "004",
-    "005",
-    "007",
-    "012",
-    "014",
-    "015",
-    "017",
-    "020",
-    "021",
-    "023",
-    "025",
-    "028",
-    "029",
-    "031",
-    "034",
-    "039",
-    "040",
-    "042",
-    "043",
-    "044",
-    "045",
-    "047",
-    "049",
-    "050",
-    "051",
-    "052",
-    "053",
-    "054",
-    "055",
-    "056",
-    "059",
-    "060",
-    "062",
-    "064",
-    "065",
-    "066",
-    "067",
-    "068",
-    "069",
-    "070",
-    "071",
-    "072",
-    "073",
-    "074",
-    "076",
-    "080",
-    "082",
-    "083",
-    "084",
-    "089",
-    "090",
-    "093",
-    "094",
-    "095",
-    "098"
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14",
+    "15",
+    "16",
+    "17",
+    "18",
+    "19",
+    "20",
+    "21",
+    "22",
+    "23",
+    "24",
+    "25",
+    "26",
+    "27",
+    "28",
+    "29",
+    "30",
+    "31",
+    "32",
+    "33",
+    "34",
+    "35",
+    "36",
+    "37",
+    "38",
+    "39",
+    "40",
+    "41",
+    "42"
   ],
   "sources": {
     "mayo-stretch": {
@@ -224,7 +211,7 @@
   },
   "tips": [
     {
-      "id": "004",
+      "id": "1",
       "title": "伸展前先熱身",
       "category": "stretching",
       "sentences": {
@@ -237,7 +224,7 @@
       "context": []
     },
     {
-      "id": "005",
+      "id": "2",
       "title": "運動後適合做靜態伸展",
       "category": "stretching",
       "sentences": {
@@ -250,7 +237,7 @@
       "context": []
     },
     {
-      "id": "007",
+      "id": "3",
       "title": "衝刺前先別做靜態伸展",
       "category": "stretching",
       "sentences": {
@@ -263,7 +250,7 @@
       "context": []
     },
     {
-      "id": "012",
+      "id": "4",
       "title": "伸展今天用得多的部位",
       "category": "stretching",
       "sentences": {
@@ -276,7 +263,7 @@
       "context": []
     },
     {
-      "id": "014",
+      "id": "5",
       "title": "伸展時保持呼吸",
       "category": "stretching",
       "sentences": {
@@ -289,7 +276,7 @@
       "context": []
     },
     {
-      "id": "015",
+      "id": "6",
       "title": "特別緊的部位可以多停一下",
       "category": "stretching",
       "sentences": {
@@ -302,7 +289,7 @@
       "context": []
     },
     {
-      "id": "017",
+      "id": "7",
       "title": "柔軟度需要持續維持",
       "category": "mobility",
       "sentences": {
@@ -315,7 +302,7 @@
       "context": []
     },
     {
-      "id": "020",
+      "id": "8",
       "title": "柔軟度也能在移動中練",
       "category": "mobility",
       "sentences": {
@@ -328,7 +315,7 @@
       "context": []
     },
     {
-      "id": "021",
+      "id": "9",
       "title": "用慢速版的動作熱身",
       "category": "safe_exercise",
       "sentences": {
@@ -341,7 +328,7 @@
       "context": []
     },
     {
-      "id": "023",
+      "id": "10",
       "title": "脊椎本來就有三個彎",
       "category": "posture",
       "sentences": {
@@ -354,7 +341,7 @@
       "context": []
     },
     {
-      "id": "025",
+      "id": "11",
       "title": "坐久了可以換個姿勢",
       "category": "posture",
       "sentences": {
@@ -367,7 +354,7 @@
       "context": []
     },
     {
-      "id": "028",
+      "id": "12",
       "title": "坐著時讓椅背托住下背",
       "category": "posture",
       "sentences": {
@@ -380,7 +367,7 @@
       "context": []
     },
     {
-      "id": "029",
+      "id": "13",
       "title": "打字時把肩膀放鬆",
       "category": "posture",
       "sentences": {
@@ -393,33 +380,7 @@
       "context": []
     },
     {
-      "id": "031",
-      "title": "坐下時確認大腿有支撐",
-      "category": "posture",
-      "sentences": {
-        "zh-Hant": [
-          "坐在椅子上時，讓座面托住臀部和大腿，大腿大致與地面平行可作為調整椅子高度的參考。"
-        ]
-      },
-      "sourceId": "medlineplus-posture",
-      "provenance": "MedlinePlus says the thighs and hips should be supported, with a well-padded seat and thighs about parallel to the floor.",
-      "context": []
-    },
-    {
-      "id": "034",
-      "title": "核心肌群幫忙支撐軀幹",
-      "category": "posture",
-      "sentences": {
-        "zh-Hant": [
-          "腹部、背部和骨盆周圍的肌肉一起支撐軀幹，鍛鍊這些肌肉有助於維持姿勢。"
-        ]
-      },
-      "sourceId": "medlineplus-posture",
-      "provenance": "MedlinePlus says exercises that strengthen the core muscles around the back, abdomen, and pelvis are a good idea for posture.",
-      "context": []
-    },
-    {
-      "id": "039",
+      "id": "14",
       "title": "運動強度會影響每週目標",
       "category": "general_physical_activity",
       "sentences": {
@@ -432,7 +393,7 @@
       "context": []
     },
     {
-      "id": "040",
+      "id": "15",
       "title": "把活動分散到一週幾天",
       "category": "general_physical_activity",
       "sentences": {
@@ -445,7 +406,7 @@
       "context": []
     },
     {
-      "id": "042",
+      "id": "16",
       "title": "用能不能唱歌判斷強度",
       "category": "general_physical_activity",
       "sentences": {
@@ -458,7 +419,7 @@
       "context": []
     },
     {
-      "id": "043",
+      "id": "17",
       "title": "同一種活動也能調整強度",
       "category": "general_physical_activity",
       "sentences": {
@@ -471,20 +432,7 @@
       "context": []
     },
     {
-      "id": "044",
-      "title": "短時間的高強度活動也算",
-      "category": "general_physical_activity",
-      "sentences": {
-        "zh-Hant": [
-          "即使每次只能做很短的時間，幾次強度很高的活動也能累積進一週的運動量。"
-        ]
-      },
-      "sourceId": "nhs-adults",
-      "provenance": "NHS says the weekly target can also be met with several short sessions of very vigorous activity, or a mix of moderate, vigorous, and very vigorous activity.",
-      "context": []
-    },
-    {
-      "id": "045",
+      "id": "18",
       "title": "用一點活動打斷久坐",
       "category": "sedentary_breaks",
       "sentences": {
@@ -497,35 +445,7 @@
       "context": []
     },
     {
-      "id": "047",
-      "title": "身障成人也能累積活動量",
-      "category": "general_physical_activity",
-      "sentences": {
-        "zh-Hant": [
-          "每週的身體活動目標也適用於身障成人，活動方式可以依自己的能力和行動方式調整。"
-        ]
-      },
-      "sourceId": "nhs-adults",
-      "provenance": "NHS says these adult guidelines are also suitable for disabled adults.",
-      "context": []
-    },
-    {
-      "id": "049",
-      "title": "肌力和有氧可以排在同一天",
-      "category": "general_physical_activity",
-      "sentences": {
-        "zh-Hant": [
-          "肌力和有氧可以依行程排在同一天，例如快走後做肌力訓練，也可以分開安排。"
-        ]
-      },
-      "sourceId": "nhs-adults",
-      "provenance": "NHS says muscle-strengthening activities can be done on the same or different days as aerobic activity.",
-      "context": [
-        "strength_training"
-      ]
-    },
-    {
-      "id": "050",
+      "id": "19",
       "title": "肌力和有氧各有活動目標",
       "category": "general_physical_activity",
       "sentences": {
@@ -540,7 +460,7 @@
       ]
     },
     {
-      "id": "051",
+      "id": "20",
       "title": "用最後一下感覺肌力負荷",
       "category": "general_physical_activity",
       "sentences": {
@@ -555,7 +475,7 @@
       ]
     },
     {
-      "id": "052",
+      "id": "21",
       "title": "肌力訓練的一組怎麼算",
       "category": "general_physical_activity",
       "sentences": {
@@ -570,7 +490,7 @@
       ]
     },
     {
-      "id": "053",
+      "id": "22",
       "title": "肌力訓練可以用組數來安排",
       "category": "general_physical_activity",
       "sentences": {
@@ -585,33 +505,7 @@
       ]
     },
     {
-      "id": "054",
-      "title": "關節活動度用得到的地方",
-      "category": "mobility",
-      "sentences": {
-        "zh-Hant": [
-          "練柔軟度可以幫關節維持日常動作需要的活動幅度，例如彎腰穿鞋或伸手拿高處的東西。"
-        ]
-      },
-      "sourceId": "nhs-strength",
-      "provenance": "NHS defines flexibility exercises as activities that improve a joint's ability to keep the movement needed for daily tasks and physical activity, with stretching, yoga, tai chi, and Pilates as examples.",
-      "context": []
-    },
-    {
-      "id": "055",
-      "title": "有些活動同時練到心肺和肌肉",
-      "category": "general_physical_activity",
-      "sentences": {
-        "zh-Hant": [
-          "跳舞或武術做到較高強度時，除了讓呼吸變快，有些動作也會讓肌肉出力。"
-        ]
-      },
-      "sourceId": "nhs-strength",
-      "provenance": "NHS says some aerobic exercises done vigorously also strengthen muscles, with examples including circuit training, dancing, and martial arts.",
-      "context": []
-    },
-    {
-      "id": "056",
+      "id": "23",
       "title": "成人每週活動量有一段範圍",
       "category": "general_physical_activity",
       "sentences": {
@@ -624,20 +518,7 @@
       "context": []
     },
     {
-      "id": "059",
-      "title": "依健康狀況安排活動量",
-      "category": "safe_exercise",
-      "sentences": {
-        "zh-Hant": [
-          "有慢性病、懷孕或有特殊健康需求時，可以先和醫護人員確認適合自己的活動量。"
-        ]
-      },
-      "sourceId": "medlineplus-how-much",
-      "provenance": "MedlinePlus says older adults, pregnant women, and people with disabilities, special health needs, or chronic health problems should check with their provider about how much activity to do.",
-      "context": []
-    },
-    {
-      "id": "060",
+      "id": "24",
       "title": "通勤和休息也會累積久坐",
       "category": "sedentary_breaks",
       "sentences": {
@@ -650,20 +531,7 @@
       "context": []
     },
     {
-      "id": "062",
-      "title": "身體活動也和睡眠有關",
-      "category": "general_physical_activity",
-      "sentences": {
-        "zh-Hant": [
-          "平常多做些身體活動，除了對體能有益，也和心情較好、睡眠品質較佳有關。"
-        ]
-      },
-      "sourceId": "nhs-benefits",
-      "provenance": "NHS says research shows physical activity can boost self-esteem, mood, sleep quality, and energy, and reduce the risk of stress.",
-      "context": []
-    },
-    {
-      "id": "064",
+      "id": "25",
       "title": "活動後可能暫時沒那麼焦慮",
       "category": "general_physical_activity",
       "sentences": {
@@ -676,7 +544,7 @@
       "context": []
     },
     {
-      "id": "065",
+      "id": "26",
       "title": "規律活動也能幫大腦維持功能",
       "category": "general_physical_activity",
       "sentences": {
@@ -689,20 +557,7 @@
       "context": []
     },
     {
-      "id": "066",
-      "title": "體重和飲食、活動量都相關",
-      "category": "general_physical_activity",
-      "sentences": {
-        "zh-Hant": [
-          "體重會受到飲食攝取與身體活動消耗的熱量影響，因此每個人維持體重需要的活動量可能不同。"
-        ]
-      },
-      "sourceId": "cdc-benefits",
-      "provenance": "CDC says both eating patterns and physical activity matter for weight, people differ, and losing weight and keeping it off needs a high amount of activity unless eating patterns also change.",
-      "context": []
-    },
-    {
-      "id": "067",
+      "id": "27",
       "title": "活動量和心血管健康有關",
       "category": "general_physical_activity",
       "sentences": {
@@ -715,7 +570,7 @@
       "context": []
     },
     {
-      "id": "068",
+      "id": "28",
       "title": "活動量還沒達標也可能有益",
       "category": "general_physical_activity",
       "sentences": {
@@ -728,7 +583,7 @@
       "context": []
     },
     {
-      "id": "069",
+      "id": "29",
       "title": "身體活動和部分癌症風險有關",
       "category": "general_physical_activity",
       "sentences": {
@@ -741,7 +596,7 @@
       "context": []
     },
     {
-      "id": "070",
+      "id": "30",
       "title": "練肌力有助於維持肌肉",
       "category": "general_physical_activity",
       "sentences": {
@@ -756,7 +611,7 @@
       ]
     },
     {
-      "id": "071",
+      "id": "31",
       "title": "年長者防跌可以搭配三種活動",
       "category": "safe_exercise",
       "sentences": {
@@ -769,7 +624,7 @@
       "context": []
     },
     {
-      "id": "072",
+      "id": "32",
       "title": "快走是中等強度活動的一種",
       "category": "safe_exercise",
       "sentences": {
@@ -782,7 +637,7 @@
       "context": []
     },
     {
-      "id": "073",
+      "id": "33",
       "title": "每週的運動分鐘數可以分段累積",
       "category": "general_physical_activity",
       "sentences": {
@@ -795,7 +650,7 @@
       "context": []
     },
     {
-      "id": "074",
+      "id": "34",
       "title": "不同活動練到不同能力",
       "category": "general_physical_activity",
       "sentences": {
@@ -808,7 +663,7 @@
       "context": []
     },
     {
-      "id": "076",
+      "id": "35",
       "title": "同一肌群的訓練日可以隔開",
       "category": "safe_exercise",
       "sentences": {
@@ -823,7 +678,7 @@
       ]
     },
     {
-      "id": "080",
+      "id": "36",
       "title": "練肌力時保持呼吸",
       "category": "safe_exercise",
       "sentences": {
@@ -838,33 +693,7 @@
       ]
     },
     {
-      "id": "082",
-      "title": "出門運動前看天氣和裝備",
-      "category": "safe_exercise",
-      "sentences": {
-        "zh-Hant": [
-          "到戶外活動前，可以先看看天氣和路況，再選適合的鞋子與衣服，騎車時記得戴安全帽。"
-        ]
-      },
-      "sourceId": "nia-three-types",
-      "provenance": "NIA says to be aware of weather and surroundings outdoors, use a helmet when bicycling, wear proper shoes and clothes, and talk with a doctor if unsure about a particular activity.",
-      "context": []
-    },
-    {
-      "id": "083",
-      "title": "快走前後都可以先放慢",
-      "category": "mobility",
-      "sentences": {
-        "zh-Hant": [
-          "快走前可以先輕鬆走一段當作熱身，結束時也可以放慢腳步，讓身體慢慢緩和下來。"
-        ]
-      },
-      "sourceId": "nia-three-types",
-      "provenance": "NIA says to do a little light activity, such as easy walking, before and after aerobic activities to warm up and cool down.",
-      "context": []
-    },
-    {
-      "id": "084",
+      "id": "37",
       "title": "平衡練習可以分散到一週三天",
       "category": "mobility",
       "sentences": {
@@ -877,7 +706,7 @@
       "context": []
     },
     {
-      "id": "089",
+      "id": "38",
       "title": "日常生活也有活動機會",
       "category": "general_physical_activity",
       "sentences": {
@@ -890,7 +719,7 @@
       "context": []
     },
     {
-      "id": "090",
+      "id": "39",
       "title": "把活動排在最有精神的時候",
       "category": "general_physical_activity",
       "sentences": {
@@ -903,7 +732,7 @@
       "context": []
     },
     {
-      "id": "093",
+      "id": "40",
       "title": "吃力的運動前留時間熱身",
       "category": "safe_exercise",
       "sentences": {
@@ -916,7 +745,7 @@
       "context": []
     },
     {
-      "id": "094",
+      "id": "41",
       "title": "熱身是為了準備接下來的運動",
       "category": "safe_exercise",
       "sentences": {
@@ -929,20 +758,7 @@
       "context": []
     },
     {
-      "id": "095",
-      "title": "運動後留幾分鐘緩和",
-      "category": "stretching",
-      "sentences": {
-        "zh-Hant": [
-          "運動結束後，可以留大約 5 分鐘做輕柔伸展，讓身體慢慢放鬆。"
-        ]
-      },
-      "sourceId": "nhs-stretch-after",
-      "provenance": "NHS says the post-exercise stretches take about 5 minutes to relax, improve flexibility, and slow the heart rate, with holds of 15 to 20 seconds, and to ask a professional which to change if injured, ill, or pregnant.",
-      "context": []
-    },
-    {
-      "id": "098",
+      "id": "42",
       "title": "曾跌倒的人可以練力量和平衡",
       "category": "mobility",
       "sentences": {
