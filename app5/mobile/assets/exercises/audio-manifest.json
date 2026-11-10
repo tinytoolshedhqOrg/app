@@ -1,0 +1,1833 @@
+{
+  "voice": "zh-TW-HsiaoYuNeural",
+  "locale": "zh-Hant",
+  "rate": "default",
+  "name_clips": [
+    {
+      "exercise_id": "lie_ankle_circles",
+      "text": "仰躺腳踝小圈",
+      "target_path": "assets/exercise-names/zh-Hant/lie_ankle_circles.mp3",
+      "status": "ready"
+    },
+    {
+      "exercise_id": "lie_ankle_pump",
+      "text": "仰躺腳踝勾放",
+      "target_path": "assets/exercise-names/zh-Hant/lie_ankle_pump.mp3",
+      "status": "ready"
+    },
+    {
+      "exercise_id": "lie_arm_slide",
+      "text": "雙臂貼地輕滑",
+      "target_path": "assets/exercise-names/zh-Hant/lie_arm_slide.mp3",
+      "status": "ready"
+    },
+    {
+      "exercise_id": "lie_elbow_bend",
+      "text": "仰躺手肘彎伸",
+      "target_path": "assets/exercise-names/zh-Hant/lie_elbow_bend.mp3",
+      "status": "ready"
+    },
+    {
+      "exercise_id": "lie_finger_open",
+      "text": "仰躺手指開合",
+      "target_path": "assets/exercise-names/zh-Hant/lie_finger_open.mp3",
+      "status": "ready"
+    },
+    {
+      "exercise_id": "lie_glute",
+      "text": "仰躺臀部輕伸展",
+      "target_path": "assets/exercise-names/zh-Hant/lie_glute.mp3",
+      "status": "ready"
+    },
+    {
+      "exercise_id": "lie_hamstring",
+      "text": "仰躺大腿後側伸展",
+      "target_path": "assets/exercise-names/zh-Hant/lie_hamstring.mp3",
+      "status": "ready"
+    },
+    {
+      "exercise_id": "lie_heel_slide",
+      "text": "腳跟輕滑動",
+      "target_path": "assets/exercise-names/zh-Hant/lie_heel_slide.mp3",
+      "status": "ready"
+    },
+    {
+      "exercise_id": "lie_knee_roll",
+      "text": "屈膝小幅左右移",
+      "target_path": "assets/exercise-names/zh-Hant/lie_knee_roll.mp3",
+      "status": "ready"
+    },
+    {
+      "exercise_id": "lie_pelvic_tilt",
+      "text": "骨盆輕輕回擺",
+      "target_path": "assets/exercise-names/zh-Hant/lie_pelvic_tilt.mp3",
+      "status": "ready"
+    },
+    {
+      "exercise_id": "lie_single_knee_hug",
+      "text": "單膝輕靠近身體",
+      "target_path": "assets/exercise-names/zh-Hant/lie_single_knee_hug.mp3",
+      "status": "ready"
+    },
+    {
+      "exercise_id": "lie_wrist_flex",
+      "text": "仰躺手腕勾放",
+      "target_path": "assets/exercise-names/zh-Hant/lie_wrist_flex.mp3",
+      "status": "ready"
+    },
+    {
+      "exercise_id": "sit_ankle_pump",
+      "text": "坐姿腳踝勾放",
+      "target_path": "assets/exercise-names/zh-Hant/sit_ankle_pump.mp3",
+      "status": "ready"
+    },
+    {
+      "exercise_id": "sit_chest_open",
+      "text": "胸前輕伸展",
+      "target_path": "assets/exercise-names/zh-Hant/sit_chest_open.mp3",
+      "status": "ready"
+    },
+    {
+      "exercise_id": "sit_elbow_bend",
+      "text": "手肘輕彎伸",
+      "target_path": "assets/exercise-names/zh-Hant/sit_elbow_bend.mp3",
+      "status": "ready"
+    },
+    {
+      "exercise_id": "sit_finger_open",
+      "text": "手指輕開合",
+      "target_path": "assets/exercise-names/zh-Hant/sit_finger_open.mp3",
+      "status": "ready"
+    },
+    {
+      "exercise_id": "sit_knee_extend",
+      "text": "坐姿膝部輕伸",
+      "target_path": "assets/exercise-names/zh-Hant/sit_knee_extend.mp3",
+      "status": "ready"
+    },
+    {
+      "exercise_id": "sit_neck_side",
+      "text": "坐姿頸側輕伸展",
+      "target_path": "assets/exercise-names/zh-Hant/sit_neck_side.mp3",
+      "status": "ready"
+    },
+    {
+      "exercise_id": "sit_neck_turn",
+      "text": "頸部輕轉頭",
+      "target_path": "assets/exercise-names/zh-Hant/sit_neck_turn.mp3",
+      "status": "ready"
+    },
+    {
+      "exercise_id": "sit_shoulder_circles",
+      "text": "肩膀輕繞圈",
+      "target_path": "assets/exercise-names/zh-Hant/sit_shoulder_circles.mp3",
+      "status": "ready"
+    },
+    {
+      "exercise_id": "sit_side_reach",
+      "text": "坐姿側身輕移",
+      "target_path": "assets/exercise-names/zh-Hant/sit_side_reach.mp3",
+      "status": "ready"
+    },
+    {
+      "exercise_id": "sit_triceps",
+      "text": "坐姿手臂後側伸展",
+      "target_path": "assets/exercise-names/zh-Hant/sit_triceps.mp3",
+      "status": "ready"
+    },
+    {
+      "exercise_id": "sit_upper_back_turn",
+      "text": "上半身輕轉",
+      "target_path": "assets/exercise-names/zh-Hant/sit_upper_back_turn.mp3",
+      "status": "ready"
+    },
+    {
+      "exercise_id": "sit_wrist_flex",
+      "text": "手腕上下活動",
+      "target_path": "assets/exercise-names/zh-Hant/sit_wrist_flex.mp3",
+      "status": "ready"
+    },
+    {
+      "exercise_id": "stand_arm_raise",
+      "text": "雙臂向前輕抬",
+      "target_path": "assets/exercise-names/zh-Hant/stand_arm_raise.mp3",
+      "status": "ready"
+    },
+    {
+      "exercise_id": "stand_calf_wall",
+      "text": "扶牆小腿伸展",
+      "target_path": "assets/exercise-names/zh-Hant/stand_calf_wall.mp3",
+      "status": "ready"
+    },
+    {
+      "exercise_id": "stand_chest_open",
+      "text": "站姿胸前舒展",
+      "target_path": "assets/exercise-names/zh-Hant/stand_chest_open.mp3",
+      "status": "ready"
+    },
+    {
+      "exercise_id": "stand_elbow_bend",
+      "text": "站姿手肘彎伸",
+      "target_path": "assets/exercise-names/zh-Hant/stand_elbow_bend.mp3",
+      "status": "ready"
+    },
+    {
+      "exercise_id": "stand_finger_open",
+      "text": "站姿手指開合",
+      "target_path": "assets/exercise-names/zh-Hant/stand_finger_open.mp3",
+      "status": "ready"
+    },
+    {
+      "exercise_id": "stand_neck_turn",
+      "text": "站姿輕轉頭",
+      "target_path": "assets/exercise-names/zh-Hant/stand_neck_turn.mp3",
+      "status": "ready"
+    },
+    {
+      "exercise_id": "stand_overhead_side",
+      "text": "舉臂側身伸展",
+      "target_path": "assets/exercise-names/zh-Hant/stand_overhead_side.mp3",
+      "status": "ready"
+    },
+    {
+      "exercise_id": "stand_shoulder_blades",
+      "text": "肩胛輕收放",
+      "target_path": "assets/exercise-names/zh-Hant/stand_shoulder_blades.mp3",
+      "status": "ready"
+    },
+    {
+      "exercise_id": "stand_shoulder_circles",
+      "text": "站姿肩膀繞圈",
+      "target_path": "assets/exercise-names/zh-Hant/stand_shoulder_circles.mp3",
+      "status": "ready"
+    },
+    {
+      "exercise_id": "stand_side_slide",
+      "text": "站姿側身輕滑",
+      "target_path": "assets/exercise-names/zh-Hant/stand_side_slide.mp3",
+      "status": "ready"
+    },
+    {
+      "exercise_id": "stand_triceps",
+      "text": "頭上手臂後側伸展",
+      "target_path": "assets/exercise-names/zh-Hant/stand_triceps.mp3",
+      "status": "ready"
+    },
+    {
+      "exercise_id": "stand_wrist_flex",
+      "text": "站姿手腕活動",
+      "target_path": "assets/exercise-names/zh-Hant/stand_wrist_flex.mp3",
+      "status": "ready"
+    },
+    {
+      "exercise_id": "sit_chin_tuck",
+      "text": "坐姿收下顎",
+      "target_path": "assets/exercise-names/zh-Hant/sit_chin_tuck.mp3",
+      "status": "ready"
+    },
+    {
+      "exercise_id": "sit_chin_chest",
+      "text": "坐姿低頭輕放",
+      "target_path": "assets/exercise-names/zh-Hant/sit_chin_chest.mp3",
+      "status": "ready"
+    },
+    {
+      "exercise_id": "sit_neck_diagonal",
+      "text": "坐姿頸後斜伸",
+      "target_path": "assets/exercise-names/zh-Hant/sit_neck_diagonal.mp3",
+      "status": "ready"
+    },
+    {
+      "exercise_id": "sit_neck_arc",
+      "text": "坐姿鼻子小圈",
+      "target_path": "assets/exercise-names/zh-Hant/sit_neck_arc.mp3",
+      "status": "ready"
+    },
+    {
+      "exercise_id": "sit_mountain",
+      "text": "坐姿挺身對齊",
+      "target_path": "assets/exercise-names/zh-Hant/sit_mountain.mp3",
+      "status": "ready"
+    },
+    {
+      "exercise_id": "stand_arm_swing",
+      "text": "站姿手臂前後",
+      "target_path": "assets/exercise-names/zh-Hant/stand_arm_swing.mp3",
+      "status": "ready"
+    },
+    {
+      "exercise_id": "stand_arm_sway",
+      "text": "站姿手臂左右",
+      "target_path": "assets/exercise-names/zh-Hant/stand_arm_sway.mp3",
+      "status": "ready"
+    },
+    {
+      "exercise_id": "stand_arm_circles",
+      "text": "站姿手臂畫圈",
+      "target_path": "assets/exercise-names/zh-Hant/stand_arm_circles.mp3",
+      "status": "ready"
+    },
+    {
+      "exercise_id": "lie_arm_overhead",
+      "text": "仰躺雙臂上舉",
+      "target_path": "assets/exercise-names/zh-Hant/lie_arm_overhead.mp3",
+      "status": "ready"
+    },
+    {
+      "exercise_id": "stand_wall_slide",
+      "text": "扶牆手臂上滑",
+      "target_path": "assets/exercise-names/zh-Hant/stand_wall_slide.mp3",
+      "status": "ready"
+    },
+    {
+      "exercise_id": "sit_forearm_open",
+      "text": "坐姿前臂外轉",
+      "target_path": "assets/exercise-names/zh-Hant/sit_forearm_open.mp3",
+      "status": "ready"
+    },
+    {
+      "exercise_id": "stand_wall_angel",
+      "text": "靠牆雙臂上展",
+      "target_path": "assets/exercise-names/zh-Hant/stand_wall_angel.mp3",
+      "status": "ready"
+    },
+    {
+      "exercise_id": "stand_arm_cross",
+      "text": "站姿手臂抱肩",
+      "target_path": "assets/exercise-names/zh-Hant/stand_arm_cross.mp3",
+      "status": "ready"
+    },
+    {
+      "exercise_id": "lie_snow_angel",
+      "text": "仰躺雙臂側展",
+      "target_path": "assets/exercise-names/zh-Hant/lie_snow_angel.mp3",
+      "status": "ready"
+    },
+    {
+      "exercise_id": "stand_arm_high",
+      "text": "單臂上舉輕停",
+      "target_path": "assets/exercise-names/zh-Hant/stand_arm_high.mp3",
+      "status": "ready"
+    },
+    {
+      "exercise_id": "lie_elbow_open",
+      "text": "仰躺手肘外開",
+      "target_path": "assets/exercise-names/zh-Hant/lie_elbow_open.mp3",
+      "status": "ready"
+    },
+    {
+      "exercise_id": "sit_arm_reach",
+      "text": "坐姿雙手向上",
+      "target_path": "assets/exercise-names/zh-Hant/sit_arm_reach.mp3",
+      "status": "ready"
+    },
+    {
+      "exercise_id": "stand_door_chest",
+      "text": "門口胸前伸展",
+      "target_path": "assets/exercise-names/zh-Hant/stand_door_chest.mp3",
+      "status": "ready"
+    },
+    {
+      "exercise_id": "stand_wall_press",
+      "text": "扶牆輕伏撐",
+      "target_path": "assets/exercise-names/zh-Hant/stand_wall_press.mp3",
+      "status": "ready"
+    },
+    {
+      "exercise_id": "sit_heart_open",
+      "text": "坐姿胸口後收",
+      "target_path": "assets/exercise-names/zh-Hant/sit_heart_open.mp3",
+      "status": "ready"
+    },
+    {
+      "exercise_id": "sit_cat_cow",
+      "text": "坐姿貓牛活動",
+      "target_path": "assets/exercise-names/zh-Hant/sit_cat_cow.mp3",
+      "status": "ready"
+    },
+    {
+      "exercise_id": "sit_forward_rest",
+      "text": "坐姿前傾放鬆",
+      "target_path": "assets/exercise-names/zh-Hant/sit_forward_rest.mp3",
+      "status": "ready"
+    },
+    {
+      "exercise_id": "stand_wall_align",
+      "text": "靠牆站姿對齊",
+      "target_path": "assets/exercise-names/zh-Hant/stand_wall_align.mp3",
+      "status": "ready"
+    },
+    {
+      "exercise_id": "lie_blade_sink",
+      "text": "仰躺肩胛下沉",
+      "target_path": "assets/exercise-names/zh-Hant/lie_blade_sink.mp3",
+      "status": "ready"
+    },
+    {
+      "exercise_id": "lie_both_knees",
+      "text": "仰躺雙膝靠近",
+      "target_path": "assets/exercise-names/zh-Hant/lie_both_knees.mp3",
+      "status": "ready"
+    },
+    {
+      "exercise_id": "lie_long_reach",
+      "text": "仰躺全身伸長",
+      "target_path": "assets/exercise-names/zh-Hant/lie_long_reach.mp3",
+      "status": "ready"
+    },
+    {
+      "exercise_id": "sit_elbow_long",
+      "text": "坐姿手肘伸直",
+      "target_path": "assets/exercise-names/zh-Hant/sit_elbow_long.mp3",
+      "status": "ready"
+    },
+    {
+      "exercise_id": "stand_elbow_row",
+      "text": "站姿手肘後拉",
+      "target_path": "assets/exercise-names/zh-Hant/stand_elbow_row.mp3",
+      "status": "ready"
+    },
+    {
+      "exercise_id": "sit_finger_spread",
+      "text": "坐姿手指張開",
+      "target_path": "assets/exercise-names/zh-Hant/sit_finger_spread.mp3",
+      "status": "ready"
+    },
+    {
+      "exercise_id": "sit_finger_tip",
+      "text": "坐姿指尖彎曲",
+      "target_path": "assets/exercise-names/zh-Hant/sit_finger_tip.mp3",
+      "status": "ready"
+    },
+    {
+      "exercise_id": "sit_finger_hook",
+      "text": "坐姿手指鉤放",
+      "target_path": "assets/exercise-names/zh-Hant/sit_finger_hook.mp3",
+      "status": "ready"
+    },
+    {
+      "exercise_id": "sit_flat_fist",
+      "text": "坐姿手指平握",
+      "target_path": "assets/exercise-names/zh-Hant/sit_flat_fist.mp3",
+      "status": "ready"
+    },
+    {
+      "exercise_id": "sit_palm_turn",
+      "text": "坐姿掌心翻轉",
+      "target_path": "assets/exercise-names/zh-Hant/sit_palm_turn.mp3",
+      "status": "ready"
+    },
+    {
+      "exercise_id": "sit_finger_mid",
+      "text": "坐姿指節彎曲",
+      "target_path": "assets/exercise-names/zh-Hant/sit_finger_mid.mp3",
+      "status": "ready"
+    },
+    {
+      "exercise_id": "sit_thumb_out",
+      "text": "坐姿拇指外展",
+      "target_path": "assets/exercise-names/zh-Hant/sit_thumb_out.mp3",
+      "status": "ready"
+    },
+    {
+      "exercise_id": "sit_thumb_tip",
+      "text": "坐姿拇指輕彎",
+      "target_path": "assets/exercise-names/zh-Hant/sit_thumb_tip.mp3",
+      "status": "ready"
+    },
+    {
+      "exercise_id": "sit_thumb_touch",
+      "text": "坐姿拇指對指",
+      "target_path": "assets/exercise-names/zh-Hant/sit_thumb_touch.mp3",
+      "status": "ready"
+    },
+    {
+      "exercise_id": "sit_hand_wave",
+      "text": "坐姿手腕左右",
+      "target_path": "assets/exercise-names/zh-Hant/sit_hand_wave.mp3",
+      "status": "ready"
+    },
+    {
+      "exercise_id": "sit_wrist_hold",
+      "text": "坐姿手腕上抬",
+      "target_path": "assets/exercise-names/zh-Hant/sit_wrist_hold.mp3",
+      "status": "ready"
+    },
+    {
+      "exercise_id": "sit_wrist_ease",
+      "text": "坐姿手腕伸放",
+      "target_path": "assets/exercise-names/zh-Hant/sit_wrist_ease.mp3",
+      "status": "ready"
+    },
+    {
+      "exercise_id": "lie_hip_bridge",
+      "text": "仰躺臀部抬起",
+      "target_path": "assets/exercise-names/zh-Hant/lie_hip_bridge.mp3",
+      "status": "ready"
+    },
+    {
+      "exercise_id": "stand_leg_back",
+      "text": "站姿腿向後抬",
+      "target_path": "assets/exercise-names/zh-Hant/stand_leg_back.mp3",
+      "status": "ready"
+    },
+    {
+      "exercise_id": "stand_leg_side",
+      "text": "站姿腿向外抬",
+      "target_path": "assets/exercise-names/zh-Hant/stand_leg_side.mp3",
+      "status": "ready"
+    },
+    {
+      "exercise_id": "stand_hip_flexor",
+      "text": "站姿髖前伸展",
+      "target_path": "assets/exercise-names/zh-Hant/stand_hip_flexor.mp3",
+      "status": "ready"
+    },
+    {
+      "exercise_id": "sit_hip_march",
+      "text": "坐姿抬膝輕放",
+      "target_path": "assets/exercise-names/zh-Hant/sit_hip_march.mp3",
+      "status": "ready"
+    },
+    {
+      "exercise_id": "lie_knees_out",
+      "text": "仰躺雙膝外放",
+      "target_path": "assets/exercise-names/zh-Hant/lie_knees_out.mp3",
+      "status": "ready"
+    },
+    {
+      "exercise_id": "stand_march",
+      "text": "原地輕踏步",
+      "target_path": "assets/exercise-names/zh-Hant/stand_march.mp3",
+      "status": "ready"
+    },
+    {
+      "exercise_id": "stand_knee_lift",
+      "text": "站姿抬膝觸手",
+      "target_path": "assets/exercise-names/zh-Hant/stand_knee_lift.mp3",
+      "status": "ready"
+    },
+    {
+      "exercise_id": "stand_mini_squat",
+      "text": "站姿膝蓋輕彎",
+      "target_path": "assets/exercise-names/zh-Hant/stand_mini_squat.mp3",
+      "status": "ready"
+    },
+    {
+      "exercise_id": "stand_calf_raise",
+      "text": "站姿腳跟抬起",
+      "target_path": "assets/exercise-names/zh-Hant/stand_calf_raise.mp3",
+      "status": "ready"
+    },
+    {
+      "exercise_id": "stand_quad",
+      "text": "站姿大腿前側",
+      "target_path": "assets/exercise-names/zh-Hant/stand_quad.mp3",
+      "status": "ready"
+    },
+    {
+      "exercise_id": "stand_toe_raise",
+      "text": "站姿腳尖抬起",
+      "target_path": "assets/exercise-names/zh-Hant/stand_toe_raise.mp3",
+      "status": "ready"
+    },
+    {
+      "exercise_id": "stand_heel_toe",
+      "text": "站姿腳跟接腳尖",
+      "target_path": "assets/exercise-names/zh-Hant/stand_heel_toe.mp3",
+      "status": "ready"
+    },
+    {
+      "exercise_id": "stand_one_leg",
+      "text": "站姿單腳站立",
+      "target_path": "assets/exercise-names/zh-Hant/stand_one_leg.mp3",
+      "status": "ready"
+    },
+    {
+      "exercise_id": "stand_knee_curl",
+      "text": "站姿腳跟後抬",
+      "target_path": "assets/exercise-names/zh-Hant/stand_knee_curl.mp3",
+      "status": "ready"
+    },
+    {
+      "exercise_id": "lie_quad_set",
+      "text": "仰躺大腿輕壓",
+      "target_path": "assets/exercise-names/zh-Hant/lie_quad_set.mp3",
+      "status": "ready"
+    },
+    {
+      "exercise_id": "lie_short_arc",
+      "text": "仰躺短弧伸膝",
+      "target_path": "assets/exercise-names/zh-Hant/lie_short_arc.mp3",
+      "status": "ready"
+    },
+    {
+      "exercise_id": "lie_leg_raise",
+      "text": "仰躺直腿輕抬",
+      "target_path": "assets/exercise-names/zh-Hant/lie_leg_raise.mp3",
+      "status": "ready"
+    },
+    {
+      "exercise_id": "stand_it_band",
+      "text": "站姿髖外側伸",
+      "target_path": "assets/exercise-names/zh-Hant/stand_it_band.mp3",
+      "status": "ready"
+    },
+    {
+      "exercise_id": "sit_knee_press",
+      "text": "坐姿膝部輕壓",
+      "target_path": "assets/exercise-names/zh-Hant/sit_knee_press.mp3",
+      "status": "ready"
+    },
+    {
+      "exercise_id": "sit_ankle_point",
+      "text": "坐姿腳尖前點",
+      "target_path": "assets/exercise-names/zh-Hant/sit_ankle_point.mp3",
+      "status": "ready"
+    },
+    {
+      "exercise_id": "stand_heel_dig",
+      "text": "站姿腳跟前點",
+      "target_path": "assets/exercise-names/zh-Hant/stand_heel_dig.mp3",
+      "status": "ready"
+    },
+    {
+      "exercise_id": "stand_soleus",
+      "text": "屈膝小腿伸展",
+      "target_path": "assets/exercise-names/zh-Hant/stand_soleus.mp3",
+      "status": "ready"
+    },
+    {
+      "exercise_id": "sit_inner_thigh",
+      "text": "坐姿大腿內側",
+      "target_path": "assets/exercise-names/zh-Hant/sit_inner_thigh.mp3",
+      "status": "ready"
+    }
+  ],
+  "cue_clips": [
+    {
+      "exercise_id": "sit_chin_tuck",
+      "cue_id": "sit_chin_tuck_cue_01",
+      "text": "眼睛看前方，下巴輕輕往後收。",
+      "max_duration_seconds": 9,
+      "target_path": "assets/exercises/頸/深層頸屈肌/sit_chin_tuck/audio/sit_chin_tuck_cue_01.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 3.504
+    },
+    {
+      "exercise_id": "sit_chin_tuck",
+      "cue_id": "sit_chin_tuck_cue_02",
+      "text": "肩膀放鬆。",
+      "max_duration_seconds": 4,
+      "target_path": "assets/exercises/頸/深層頸屈肌/sit_chin_tuck/audio/sit_chin_tuck_cue_02.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 1.296
+    },
+    {
+      "exercise_id": "sit_chin_tuck",
+      "cue_id": "sit_chin_tuck_cue_03",
+      "text": "再收一次，幅度小一點。",
+      "max_duration_seconds": 7,
+      "target_path": "assets/exercises/頸/深層頸屈肌/sit_chin_tuck/audio/sit_chin_tuck_cue_03.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 2.448
+    },
+    {
+      "exercise_id": "sit_chin_tuck",
+      "cue_id": "sit_chin_tuck_cue_04",
+      "text": "慢慢放回。",
+      "max_duration_seconds": 4,
+      "target_path": "assets/exercises/頸/深層頸屈肌/sit_chin_tuck/audio/sit_chin_tuck_cue_04.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 1.248
+    },
+    {
+      "exercise_id": "sit_chin_chest",
+      "cue_id": "sit_chin_chest_cue_01",
+      "text": "下巴慢慢朝胸口靠近。",
+      "max_duration_seconds": 9,
+      "target_path": "assets/exercises/頸/頸後肌群/sit_chin_chest/audio/sit_chin_chest_cue_01.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 2.496
+    },
+    {
+      "exercise_id": "sit_chin_chest",
+      "cue_id": "sit_chin_chest_cue_02",
+      "text": "不要壓脖子。",
+      "max_duration_seconds": 4,
+      "target_path": "assets/exercises/頸/頸後肌群/sit_chin_chest/audio/sit_chin_chest_cue_02.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 1.296
+    },
+    {
+      "exercise_id": "sit_chin_chest",
+      "cue_id": "sit_chin_chest_cue_03",
+      "text": "再輕輕低一次。",
+      "max_duration_seconds": 7,
+      "target_path": "assets/exercises/頸/頸後肌群/sit_chin_chest/audio/sit_chin_chest_cue_03.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 1.68
+    },
+    {
+      "exercise_id": "sit_chin_chest",
+      "cue_id": "sit_chin_chest_cue_04",
+      "text": "慢慢抬回。",
+      "max_duration_seconds": 4,
+      "target_path": "assets/exercises/頸/頸後肌群/sit_chin_chest/audio/sit_chin_chest_cue_04.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 1.2
+    },
+    {
+      "exercise_id": "sit_forearm_open",
+      "cue_id": "sit_forearm_open_cue_01",
+      "text": "掌心向上，前臂慢慢向外打開。",
+      "max_duration_seconds": 9,
+      "target_path": "assets/exercises/肩/肩帶肌群/sit_forearm_open/audio/sit_forearm_open_cue_01.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 3.36
+    },
+    {
+      "exercise_id": "sit_forearm_open",
+      "cue_id": "sit_forearm_open_cue_02",
+      "text": "上臂留在原位。",
+      "max_duration_seconds": 4,
+      "target_path": "assets/exercises/肩/肩帶肌群/sit_forearm_open/audio/sit_forearm_open_cue_02.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 1.776
+    },
+    {
+      "exercise_id": "sit_forearm_open",
+      "cue_id": "sit_forearm_open_cue_03",
+      "text": "再輕輕打開一次。",
+      "max_duration_seconds": 7,
+      "target_path": "assets/exercises/肩/肩帶肌群/sit_forearm_open/audio/sit_forearm_open_cue_03.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 1.944
+    },
+    {
+      "exercise_id": "sit_forearm_open",
+      "cue_id": "sit_forearm_open_cue_04",
+      "text": "回到身前。",
+      "max_duration_seconds": 4,
+      "target_path": "assets/exercises/肩/肩帶肌群/sit_forearm_open/audio/sit_forearm_open_cue_04.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 1.2
+    },
+    {
+      "exercise_id": "sit_cat_cow",
+      "cue_id": "sit_cat_cow_cue_01",
+      "text": "吐氣，背慢慢變圓。",
+      "max_duration_seconds": 9,
+      "target_path": "assets/exercises/背/腰背肌群/sit_cat_cow/audio/sit_cat_cow_cue_01.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 2.088
+    },
+    {
+      "exercise_id": "sit_cat_cow",
+      "cue_id": "sit_cat_cow_cue_02",
+      "text": "吸氣，胸口打開，頭不後仰。",
+      "max_duration_seconds": 4,
+      "target_path": "assets/exercises/背/腰背肌群/sit_cat_cow/audio/sit_cat_cow_cue_02.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 2.904
+    },
+    {
+      "exercise_id": "sit_cat_cow",
+      "cue_id": "sit_cat_cow_cue_03",
+      "text": "再圓一次，然後打開。",
+      "max_duration_seconds": 7,
+      "target_path": "assets/exercises/背/腰背肌群/sit_cat_cow/audio/sit_cat_cow_cue_03.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 2.256
+    },
+    {
+      "exercise_id": "sit_cat_cow",
+      "cue_id": "sit_cat_cow_cue_04",
+      "text": "坐直。",
+      "max_duration_seconds": 4,
+      "target_path": "assets/exercises/背/腰背肌群/sit_cat_cow/audio/sit_cat_cow_cue_04.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 0.792
+    },
+    {
+      "exercise_id": "sit_heart_open",
+      "cue_id": "sit_heart_open_cue_01",
+      "text": "坐高，肩胛向後向下。",
+      "max_duration_seconds": 9,
+      "target_path": "assets/exercises/胸/胸大肌/sit_heart_open/audio/sit_heart_open_cue_01.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 2.52
+    },
+    {
+      "exercise_id": "sit_heart_open",
+      "cue_id": "sit_heart_open_cue_02",
+      "text": "肋骨不要挺出。",
+      "max_duration_seconds": 4,
+      "target_path": "assets/exercises/胸/胸大肌/sit_heart_open/audio/sit_heart_open_cue_02.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 1.608
+    },
+    {
+      "exercise_id": "sit_heart_open",
+      "cue_id": "sit_heart_open_cue_03",
+      "text": "再輕輕收一次肩胛。",
+      "max_duration_seconds": 7,
+      "target_path": "assets/exercises/胸/胸大肌/sit_heart_open/audio/sit_heart_open_cue_03.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 2.232
+    },
+    {
+      "exercise_id": "sit_heart_open",
+      "cue_id": "sit_heart_open_cue_04",
+      "text": "肩膀放鬆。",
+      "max_duration_seconds": 4,
+      "target_path": "assets/exercises/胸/胸大肌/sit_heart_open/audio/sit_heart_open_cue_04.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 1.296
+    },
+    {
+      "exercise_id": "sit_palm_turn",
+      "cue_id": "sit_palm_turn_cue_01",
+      "text": "掌心慢慢轉向上。",
+      "max_duration_seconds": 9,
+      "target_path": "assets/exercises/手/前臂屈伸肌群/sit_palm_turn/audio/sit_palm_turn_cue_01.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 1.968
+    },
+    {
+      "exercise_id": "sit_palm_turn",
+      "cue_id": "sit_palm_turn_cue_02",
+      "text": "停一下。",
+      "max_duration_seconds": 4,
+      "target_path": "assets/exercises/手/前臂屈伸肌群/sit_palm_turn/audio/sit_palm_turn_cue_02.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 0.96
+    },
+    {
+      "exercise_id": "sit_palm_turn",
+      "cue_id": "sit_palm_turn_cue_03",
+      "text": "再轉回手背向下。",
+      "max_duration_seconds": 7,
+      "target_path": "assets/exercises/手/前臂屈伸肌群/sit_palm_turn/audio/sit_palm_turn_cue_03.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 1.968
+    },
+    {
+      "exercise_id": "sit_palm_turn",
+      "cue_id": "sit_palm_turn_cue_04",
+      "text": "雙手放鬆。",
+      "max_duration_seconds": 4,
+      "target_path": "assets/exercises/手/前臂屈伸肌群/sit_palm_turn/audio/sit_palm_turn_cue_04.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 1.296
+    },
+    {
+      "exercise_id": "sit_finger_spread",
+      "cue_id": "sit_finger_spread_cue_01",
+      "text": "手指慢慢向兩側張開。",
+      "max_duration_seconds": 9,
+      "target_path": "assets/exercises/手/手指屈伸肌群/sit_finger_spread/audio/sit_finger_spread_cue_01.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 2.568
+    },
+    {
+      "exercise_id": "sit_finger_spread",
+      "cue_id": "sit_finger_spread_cue_02",
+      "text": "再輕輕併攏。",
+      "max_duration_seconds": 4,
+      "target_path": "assets/exercises/手/手指屈伸肌群/sit_finger_spread/audio/sit_finger_spread_cue_02.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 1.44
+    },
+    {
+      "exercise_id": "sit_finger_spread",
+      "cue_id": "sit_finger_spread_cue_03",
+      "text": "繼續張開、併攏。",
+      "max_duration_seconds": 7,
+      "target_path": "assets/exercises/手/手指屈伸肌群/sit_finger_spread/audio/sit_finger_spread_cue_03.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 1.776
+    },
+    {
+      "exercise_id": "sit_finger_spread",
+      "cue_id": "sit_finger_spread_cue_04",
+      "text": "手指放鬆。",
+      "max_duration_seconds": 4,
+      "target_path": "assets/exercises/手/手指屈伸肌群/sit_finger_spread/audio/sit_finger_spread_cue_04.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 1.296
+    },
+    {
+      "exercise_id": "sit_thumb_touch",
+      "cue_id": "sit_thumb_touch_cue_01",
+      "text": "拇指輕點食指，再伸直。",
+      "max_duration_seconds": 9,
+      "target_path": "assets/exercises/手/拇指肌群/sit_thumb_touch/audio/sit_thumb_touch_cue_01.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 2.616
+    },
+    {
+      "exercise_id": "sit_thumb_touch",
+      "cue_id": "sit_thumb_touch_cue_02",
+      "text": "接著點中指、無名指。",
+      "max_duration_seconds": 4,
+      "target_path": "assets/exercises/手/拇指肌群/sit_thumb_touch/audio/sit_thumb_touch_cue_02.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 2.256
+    },
+    {
+      "exercise_id": "sit_thumb_touch",
+      "cue_id": "sit_thumb_touch_cue_03",
+      "text": "再點一下小指。",
+      "max_duration_seconds": 7,
+      "target_path": "assets/exercises/手/拇指肌群/sit_thumb_touch/audio/sit_thumb_touch_cue_03.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 1.752
+    },
+    {
+      "exercise_id": "sit_thumb_touch",
+      "cue_id": "sit_thumb_touch_cue_04",
+      "text": "拇指伸直。",
+      "max_duration_seconds": 4,
+      "target_path": "assets/exercises/手/拇指肌群/sit_thumb_touch/audio/sit_thumb_touch_cue_04.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 1.248
+    },
+    {
+      "exercise_id": "stand_march",
+      "cue_id": "stand_march_cue_01",
+      "text": "原地慢慢踏步。",
+      "max_duration_seconds": 9,
+      "target_path": "assets/exercises/髖臀/髖屈肌/stand_march/audio/stand_march_cue_01.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 1.56
+    },
+    {
+      "exercise_id": "stand_march",
+      "cue_id": "stand_march_cue_02",
+      "text": "手肘輕輕跟著擺。",
+      "max_duration_seconds": 4,
+      "target_path": "assets/exercises/髖臀/髖屈肌/stand_march/audio/stand_march_cue_02.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 1.92
+    },
+    {
+      "exercise_id": "stand_march",
+      "cue_id": "stand_march_cue_03",
+      "text": "膝蓋不必抬高。",
+      "max_duration_seconds": 7,
+      "target_path": "assets/exercises/髖臀/髖屈肌/stand_march/audio/stand_march_cue_03.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 1.536
+    },
+    {
+      "exercise_id": "stand_march",
+      "cue_id": "stand_march_cue_04",
+      "text": "慢慢站穩。",
+      "max_duration_seconds": 4,
+      "target_path": "assets/exercises/髖臀/髖屈肌/stand_march/audio/stand_march_cue_04.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 1.104
+    },
+    {
+      "exercise_id": "stand_heel_dig",
+      "cue_id": "stand_heel_dig_cue_01",
+      "text": "右腳跟向前點，腳尖朝上。",
+      "max_duration_seconds": 9,
+      "target_path": "assets/exercises/腿/足踝周圍肌群/stand_heel_dig/audio/stand_heel_dig_cue_01.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 2.904
+    },
+    {
+      "exercise_id": "stand_heel_dig",
+      "cue_id": "stand_heel_dig_cue_02",
+      "text": "換左腳跟。",
+      "max_duration_seconds": 4,
+      "target_path": "assets/exercises/腿/足踝周圍肌群/stand_heel_dig/audio/stand_heel_dig_cue_02.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 1.128
+    },
+    {
+      "exercise_id": "stand_heel_dig",
+      "cue_id": "stand_heel_dig_cue_03",
+      "text": "兩側再各一次。",
+      "max_duration_seconds": 7,
+      "target_path": "assets/exercises/腿/足踝周圍肌群/stand_heel_dig/audio/stand_heel_dig_cue_03.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 1.56
+    },
+    {
+      "exercise_id": "stand_heel_dig",
+      "cue_id": "stand_heel_dig_cue_04",
+      "text": "雙腳收回。",
+      "max_duration_seconds": 4,
+      "target_path": "assets/exercises/腿/足踝周圍肌群/stand_heel_dig/audio/stand_heel_dig_cue_04.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 1.32
+    },
+    {
+      "exercise_id": "stand_knee_lift",
+      "cue_id": "stand_knee_lift_cue_01",
+      "text": "右膝抬向左手，靠近即可。",
+      "max_duration_seconds": 9,
+      "target_path": "assets/exercises/髖臀/髖屈肌/stand_knee_lift/audio/stand_knee_lift_cue_01.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 2.808
+    },
+    {
+      "exercise_id": "stand_knee_lift",
+      "cue_id": "stand_knee_lift_cue_02",
+      "text": "換左膝抬向右手。",
+      "max_duration_seconds": 4,
+      "target_path": "assets/exercises/髖臀/髖屈肌/stand_knee_lift/audio/stand_knee_lift_cue_02.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 1.968
+    },
+    {
+      "exercise_id": "stand_knee_lift",
+      "cue_id": "stand_knee_lift_cue_03",
+      "text": "再各一次，背站直。",
+      "max_duration_seconds": 7,
+      "target_path": "assets/exercises/髖臀/髖屈肌/stand_knee_lift/audio/stand_knee_lift_cue_03.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 1.968
+    },
+    {
+      "exercise_id": "stand_knee_lift",
+      "cue_id": "stand_knee_lift_cue_04",
+      "text": "雙腳踩穩。",
+      "max_duration_seconds": 4,
+      "target_path": "assets/exercises/髖臀/髖屈肌/stand_knee_lift/audio/stand_knee_lift_cue_04.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 1.248
+    },
+    {
+      "exercise_id": "stand_arm_swing",
+      "cue_id": "stand_arm_swing_cue_01",
+      "text": "右臂慢慢前後擺，左手扶椅。",
+      "max_duration_seconds": 9,
+      "target_path": "assets/exercises/肩/肩帶肌群/stand_arm_swing/audio/stand_arm_swing_cue_01.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 2.904
+    },
+    {
+      "exercise_id": "stand_arm_swing",
+      "cue_id": "stand_arm_swing_cue_02",
+      "text": "身體不要跟著轉。",
+      "max_duration_seconds": 4,
+      "target_path": "assets/exercises/肩/肩帶肌群/stand_arm_swing/audio/stand_arm_swing_cue_02.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 1.776
+    },
+    {
+      "exercise_id": "stand_arm_swing",
+      "cue_id": "stand_arm_swing_cue_03",
+      "text": "換手，左臂前後慢慢擺。",
+      "max_duration_seconds": 7,
+      "target_path": "assets/exercises/肩/肩帶肌群/stand_arm_swing/audio/stand_arm_swing_cue_03.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 2.544
+    },
+    {
+      "exercise_id": "stand_arm_swing",
+      "cue_id": "stand_arm_swing_cue_04",
+      "text": "兩臂垂下站穩。",
+      "max_duration_seconds": 4,
+      "target_path": "assets/exercises/肩/肩帶肌群/stand_arm_swing/audio/stand_arm_swing_cue_04.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 1.68
+    },
+    {
+      "exercise_id": "stand_calf_raise",
+      "cue_id": "stand_calf_raise_cue_01",
+      "text": "腳跟慢慢抬起。",
+      "max_duration_seconds": 9,
+      "target_path": "assets/exercises/腿/小腿肌群/stand_calf_raise/audio/stand_calf_raise_cue_01.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 1.632
+    },
+    {
+      "exercise_id": "stand_calf_raise",
+      "cue_id": "stand_calf_raise_cue_02",
+      "text": "再慢慢放下。",
+      "max_duration_seconds": 4,
+      "target_path": "assets/exercises/腿/小腿肌群/stand_calf_raise/audio/stand_calf_raise_cue_02.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 1.488
+    },
+    {
+      "exercise_id": "stand_calf_raise",
+      "cue_id": "stand_calf_raise_cue_03",
+      "text": "再抬一次，身體不要搖。",
+      "max_duration_seconds": 7,
+      "target_path": "assets/exercises/腿/小腿肌群/stand_calf_raise/audio/stand_calf_raise_cue_03.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 2.448
+    },
+    {
+      "exercise_id": "stand_calf_raise",
+      "cue_id": "stand_calf_raise_cue_04",
+      "text": "雙腳踩平。",
+      "max_duration_seconds": 4,
+      "target_path": "assets/exercises/腿/小腿肌群/stand_calf_raise/audio/stand_calf_raise_cue_04.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 1.272
+    },
+    {
+      "exercise_id": "stand_toe_raise",
+      "cue_id": "stand_toe_raise_cue_01",
+      "text": "腳尖慢慢抬起，腳跟留地。",
+      "max_duration_seconds": 9,
+      "target_path": "assets/exercises/腿/足踝周圍肌群/stand_toe_raise/audio/stand_toe_raise_cue_01.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 2.712
+    },
+    {
+      "exercise_id": "stand_toe_raise",
+      "cue_id": "stand_toe_raise_cue_02",
+      "text": "再放下。",
+      "max_duration_seconds": 4,
+      "target_path": "assets/exercises/腿/足踝周圍肌群/stand_toe_raise/audio/stand_toe_raise_cue_02.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 1.008
+    },
+    {
+      "exercise_id": "stand_toe_raise",
+      "cue_id": "stand_toe_raise_cue_03",
+      "text": "再抬一次。",
+      "max_duration_seconds": 7,
+      "target_path": "assets/exercises/腿/足踝周圍肌群/stand_toe_raise/audio/stand_toe_raise_cue_03.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 1.128
+    },
+    {
+      "exercise_id": "stand_toe_raise",
+      "cue_id": "stand_toe_raise_cue_04",
+      "text": "腳掌放平。",
+      "max_duration_seconds": 4,
+      "target_path": "assets/exercises/腿/足踝周圍肌群/stand_toe_raise/audio/stand_toe_raise_cue_04.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 1.296
+    },
+    {
+      "exercise_id": "stand_mini_squat",
+      "cue_id": "stand_mini_squat_cue_01",
+      "text": "膝蓋慢慢彎曲，不要蹲很低。",
+      "max_duration_seconds": 9,
+      "target_path": "assets/exercises/腿/股四頭肌/stand_mini_squat/audio/stand_mini_squat_cue_01.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 2.856
+    },
+    {
+      "exercise_id": "stand_mini_squat",
+      "cue_id": "stand_mini_squat_cue_02",
+      "text": "再站起來。",
+      "max_duration_seconds": 4,
+      "target_path": "assets/exercises/腿/股四頭肌/stand_mini_squat/audio/stand_mini_squat_cue_02.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 1.224
+    },
+    {
+      "exercise_id": "stand_mini_squat",
+      "cue_id": "stand_mini_squat_cue_03",
+      "text": "起來時臀部輕輕收。",
+      "max_duration_seconds": 7,
+      "target_path": "assets/exercises/腿/股四頭肌/stand_mini_squat/audio/stand_mini_squat_cue_03.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 2.352
+    },
+    {
+      "exercise_id": "stand_mini_squat",
+      "cue_id": "stand_mini_squat_cue_04",
+      "text": "站直。",
+      "max_duration_seconds": 4,
+      "target_path": "assets/exercises/腿/股四頭肌/stand_mini_squat/audio/stand_mini_squat_cue_04.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 0.768
+    },
+    {
+      "exercise_id": "stand_leg_side",
+      "cue_id": "stand_leg_side_cue_01",
+      "text": "右腿向側邊抬起一點。",
+      "max_duration_seconds": 9,
+      "target_path": "assets/exercises/髖臀/髖外展肌群/stand_leg_side/audio/stand_leg_side_cue_01.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 2.4
+    },
+    {
+      "exercise_id": "stand_leg_side",
+      "cue_id": "stand_leg_side_cue_02",
+      "text": "身體不要歪。",
+      "max_duration_seconds": 4,
+      "target_path": "assets/exercises/髖臀/髖外展肌群/stand_leg_side/audio/stand_leg_side_cue_02.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 1.392
+    },
+    {
+      "exercise_id": "stand_leg_side",
+      "cue_id": "stand_leg_side_cue_03",
+      "text": "換左腿向側邊抬。",
+      "max_duration_seconds": 7,
+      "target_path": "assets/exercises/髖臀/髖外展肌群/stand_leg_side/audio/stand_leg_side_cue_03.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 2.088
+    },
+    {
+      "exercise_id": "stand_leg_side",
+      "cue_id": "stand_leg_side_cue_04",
+      "text": "雙腳站穩。",
+      "max_duration_seconds": 4,
+      "target_path": "assets/exercises/髖臀/髖外展肌群/stand_leg_side/audio/stand_leg_side_cue_04.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 1.176
+    },
+    {
+      "exercise_id": "stand_leg_back",
+      "cue_id": "stand_leg_back_cue_01",
+      "text": "右腿慢慢向後抬一點。",
+      "max_duration_seconds": 9,
+      "target_path": "assets/exercises/髖臀/髖伸肌群/stand_leg_back/audio/stand_leg_back_cue_01.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 2.328
+    },
+    {
+      "exercise_id": "stand_leg_back",
+      "cue_id": "stand_leg_back_cue_02",
+      "text": "腰不要前挺。",
+      "max_duration_seconds": 4,
+      "target_path": "assets/exercises/髖臀/髖伸肌群/stand_leg_back/audio/stand_leg_back_cue_02.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 1.392
+    },
+    {
+      "exercise_id": "stand_leg_back",
+      "cue_id": "stand_leg_back_cue_03",
+      "text": "換左腿向後抬。",
+      "max_duration_seconds": 7,
+      "target_path": "assets/exercises/髖臀/髖伸肌群/stand_leg_back/audio/stand_leg_back_cue_03.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 1.776
+    },
+    {
+      "exercise_id": "stand_leg_back",
+      "cue_id": "stand_leg_back_cue_04",
+      "text": "雙腳踩穩。",
+      "max_duration_seconds": 4,
+      "target_path": "assets/exercises/髖臀/髖伸肌群/stand_leg_back/audio/stand_leg_back_cue_04.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 1.248
+    },
+    {
+      "exercise_id": "stand_hip_flexor",
+      "cue_id": "stand_hip_flexor_cue_01",
+      "text": "右腳向前一小步，身體站高。",
+      "max_duration_seconds": 9,
+      "target_path": "assets/exercises/髖臀/髖屈肌/stand_hip_flexor/audio/stand_hip_flexor_cue_01.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 2.976
+    },
+    {
+      "exercise_id": "stand_hip_flexor",
+      "cue_id": "stand_hip_flexor_cue_02",
+      "text": "後側髖部輕輕拉開。",
+      "max_duration_seconds": 4,
+      "target_path": "assets/exercises/髖臀/髖屈肌/stand_hip_flexor/audio/stand_hip_flexor_cue_02.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 2.208
+    },
+    {
+      "exercise_id": "stand_hip_flexor",
+      "cue_id": "stand_hip_flexor_cue_03",
+      "text": "換左腳在前。",
+      "max_duration_seconds": 7,
+      "target_path": "assets/exercises/髖臀/髖屈肌/stand_hip_flexor/audio/stand_hip_flexor_cue_03.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 1.512
+    },
+    {
+      "exercise_id": "stand_hip_flexor",
+      "cue_id": "stand_hip_flexor_cue_04",
+      "text": "雙腳收回。",
+      "max_duration_seconds": 4,
+      "target_path": "assets/exercises/髖臀/髖屈肌/stand_hip_flexor/audio/stand_hip_flexor_cue_04.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 1.32
+    },
+    {
+      "exercise_id": "stand_quad",
+      "cue_id": "stand_quad_cue_01",
+      "text": "左手輕握左腳踝，腳跟靠近臀部。",
+      "max_duration_seconds": 9,
+      "target_path": "assets/exercises/腿/股四頭肌/stand_quad/audio/stand_quad_cue_01.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 3.576
+    },
+    {
+      "exercise_id": "stand_quad",
+      "cue_id": "stand_quad_cue_02",
+      "text": "兩膝盡量靠近。",
+      "max_duration_seconds": 4,
+      "target_path": "assets/exercises/腿/股四頭肌/stand_quad/audio/stand_quad_cue_02.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 1.872
+    },
+    {
+      "exercise_id": "stand_quad",
+      "cue_id": "stand_quad_cue_03",
+      "text": "換右腿。",
+      "max_duration_seconds": 7,
+      "target_path": "assets/exercises/腿/股四頭肌/stand_quad/audio/stand_quad_cue_03.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 0.936
+    },
+    {
+      "exercise_id": "stand_quad",
+      "cue_id": "stand_quad_cue_04",
+      "text": "雙腳踩穩。",
+      "max_duration_seconds": 4,
+      "target_path": "assets/exercises/腿/股四頭肌/stand_quad/audio/stand_quad_cue_04.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 1.248
+    },
+    {
+      "exercise_id": "stand_it_band",
+      "cue_id": "stand_it_band_cue_01",
+      "text": "左腳交叉到前面，左手向上向右。",
+      "max_duration_seconds": 9,
+      "target_path": "assets/exercises/髖臀/髖外側/stand_it_band/audio/stand_it_band_cue_01.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 3.768
+    },
+    {
+      "exercise_id": "stand_it_band",
+      "cue_id": "stand_it_band_cue_02",
+      "text": "只到髖外側輕微拉開。",
+      "max_duration_seconds": 4,
+      "target_path": "assets/exercises/髖臀/髖外側/stand_it_band/audio/stand_it_band_cue_02.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 2.472
+    },
+    {
+      "exercise_id": "stand_it_band",
+      "cue_id": "stand_it_band_cue_03",
+      "text": "換邊，右手向上向左。",
+      "max_duration_seconds": 7,
+      "target_path": "assets/exercises/髖臀/髖外側/stand_it_band/audio/stand_it_band_cue_03.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 2.352
+    },
+    {
+      "exercise_id": "stand_it_band",
+      "cue_id": "stand_it_band_cue_04",
+      "text": "手臂放下，站穩。",
+      "max_duration_seconds": 4,
+      "target_path": "assets/exercises/髖臀/髖外側/stand_it_band/audio/stand_it_band_cue_04.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 1.824
+    },
+    {
+      "exercise_id": "stand_soleus",
+      "cue_id": "stand_soleus_cue_01",
+      "text": "左腳在後，膝蓋微彎，腳跟留地。",
+      "max_duration_seconds": 9,
+      "target_path": "assets/exercises/腿/小腿肌群/stand_soleus/audio/stand_soleus_cue_01.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 3.336
+    },
+    {
+      "exercise_id": "stand_soleus",
+      "cue_id": "stand_soleus_cue_02",
+      "text": "身體微微向前。",
+      "max_duration_seconds": 4,
+      "target_path": "assets/exercises/腿/小腿肌群/stand_soleus/audio/stand_soleus_cue_02.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 1.872
+    },
+    {
+      "exercise_id": "stand_soleus",
+      "cue_id": "stand_soleus_cue_03",
+      "text": "換右腳在後，膝蓋仍微彎。",
+      "max_duration_seconds": 7,
+      "target_path": "assets/exercises/腿/小腿肌群/stand_soleus/audio/stand_soleus_cue_03.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 2.832
+    },
+    {
+      "exercise_id": "stand_soleus",
+      "cue_id": "stand_soleus_cue_04",
+      "text": "雙腳收回。",
+      "max_duration_seconds": 4,
+      "target_path": "assets/exercises/腿/小腿肌群/stand_soleus/audio/stand_soleus_cue_04.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 1.32
+    },
+    {
+      "exercise_id": "stand_one_leg",
+      "cue_id": "stand_one_leg_cue_01",
+      "text": "左腳抬起，右腿微彎。",
+      "max_duration_seconds": 9,
+      "target_path": "assets/exercises/腿/足踝周圍肌群/stand_one_leg/audio/stand_one_leg_cue_01.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 2.304
+    },
+    {
+      "exercise_id": "stand_one_leg",
+      "cue_id": "stand_one_leg_cue_02",
+      "text": "站不穩就放下。",
+      "max_duration_seconds": 4,
+      "target_path": "assets/exercises/腿/足踝周圍肌群/stand_one_leg/audio/stand_one_leg_cue_02.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 1.656
+    },
+    {
+      "exercise_id": "stand_one_leg",
+      "cue_id": "stand_one_leg_cue_03",
+      "text": "換右腳抬起。",
+      "max_duration_seconds": 7,
+      "target_path": "assets/exercises/腿/足踝周圍肌群/stand_one_leg/audio/stand_one_leg_cue_03.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 1.44
+    },
+    {
+      "exercise_id": "stand_one_leg",
+      "cue_id": "stand_one_leg_cue_04",
+      "text": "雙腳踩穩。",
+      "max_duration_seconds": 4,
+      "target_path": "assets/exercises/腿/足踝周圍肌群/stand_one_leg/audio/stand_one_leg_cue_04.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 1.248
+    },
+    {
+      "exercise_id": "sit_neck_arc",
+      "cue_id": "sit_neck_arc_cue_01",
+      "text": "鼻尖慢慢畫一個小圓。",
+      "max_duration_seconds": 9,
+      "target_path": "assets/exercises/頸/頸部活動肌群/sit_neck_arc/audio/sit_neck_arc_cue_01.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 2.256
+    },
+    {
+      "exercise_id": "sit_neck_arc",
+      "cue_id": "sit_neck_arc_cue_02",
+      "text": "圓小一點，肩膀不動。",
+      "max_duration_seconds": 4,
+      "target_path": "assets/exercises/頸/頸部活動肌群/sit_neck_arc/audio/sit_neck_arc_cue_02.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 2.016
+    },
+    {
+      "exercise_id": "sit_neck_arc",
+      "cue_id": "sit_neck_arc_cue_03",
+      "text": "換反方向，繼續小圓。",
+      "max_duration_seconds": 7,
+      "target_path": "assets/exercises/頸/頸部活動肌群/sit_neck_arc/audio/sit_neck_arc_cue_03.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 2.4
+    },
+    {
+      "exercise_id": "sit_neck_arc",
+      "cue_id": "sit_neck_arc_cue_04",
+      "text": "慢慢停在中間。",
+      "max_duration_seconds": 4,
+      "target_path": "assets/exercises/頸/頸部活動肌群/sit_neck_arc/audio/sit_neck_arc_cue_04.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 1.776
+    },
+    {
+      "exercise_id": "sit_neck_diagonal",
+      "cue_id": "sit_neck_diagonal_cue_01",
+      "text": "頭微微低下，再偏向右側。",
+      "max_duration_seconds": 9,
+      "target_path": "assets/exercises/頸/頸後側肌群/sit_neck_diagonal/audio/sit_neck_diagonal_cue_01.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 2.736
+    },
+    {
+      "exercise_id": "sit_neck_diagonal",
+      "cue_id": "sit_neck_diagonal_cue_02",
+      "text": "手不要往下壓。",
+      "max_duration_seconds": 4,
+      "target_path": "assets/exercises/頸/頸後側肌群/sit_neck_diagonal/audio/sit_neck_diagonal_cue_02.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 1.776
+    },
+    {
+      "exercise_id": "sit_neck_diagonal",
+      "cue_id": "sit_neck_diagonal_cue_03",
+      "text": "回正，換邊低下並偏左。",
+      "max_duration_seconds": 7,
+      "target_path": "assets/exercises/頸/頸後側肌群/sit_neck_diagonal/audio/sit_neck_diagonal_cue_03.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 2.568
+    },
+    {
+      "exercise_id": "sit_neck_diagonal",
+      "cue_id": "sit_neck_diagonal_cue_04",
+      "text": "慢慢回正。",
+      "max_duration_seconds": 4,
+      "target_path": "assets/exercises/頸/頸後側肌群/sit_neck_diagonal/audio/sit_neck_diagonal_cue_04.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 1.128
+    },
+    {
+      "exercise_id": "sit_mountain",
+      "cue_id": "sit_mountain_cue_01",
+      "text": "坐高，下巴微微收回。",
+      "max_duration_seconds": 9,
+      "target_path": "assets/exercises/頸/頸部姿勢肌群/sit_mountain/audio/sit_mountain_cue_01.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 2.448
+    },
+    {
+      "exercise_id": "sit_mountain",
+      "cue_id": "sit_mountain_cue_02",
+      "text": "肩膀向上，再向後。",
+      "max_duration_seconds": 4,
+      "target_path": "assets/exercises/頸/頸部姿勢肌群/sit_mountain/audio/sit_mountain_cue_02.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 2.184
+    },
+    {
+      "exercise_id": "sit_mountain",
+      "cue_id": "sit_mountain_cue_03",
+      "text": "肩膀慢慢放下。",
+      "max_duration_seconds": 7,
+      "target_path": "assets/exercises/頸/頸部姿勢肌群/sit_mountain/audio/sit_mountain_cue_03.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 1.728
+    },
+    {
+      "exercise_id": "sit_mountain",
+      "cue_id": "sit_mountain_cue_04",
+      "text": "保持坐高。",
+      "max_duration_seconds": 4,
+      "target_path": "assets/exercises/頸/頸部姿勢肌群/sit_mountain/audio/sit_mountain_cue_04.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 1.176
+    },
+    {
+      "exercise_id": "sit_arm_reach",
+      "cue_id": "sit_arm_reach_cue_01",
+      "text": "掌心在胸前輕輕相合。",
+      "max_duration_seconds": 9,
+      "target_path": "assets/exercises/肩/肩帶肌群/sit_arm_reach/audio/sit_arm_reach_cue_01.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 2.688
+    },
+    {
+      "exercise_id": "sit_arm_reach",
+      "cue_id": "sit_arm_reach_cue_02",
+      "text": "雙手向上打開。",
+      "max_duration_seconds": 4,
+      "target_path": "assets/exercises/肩/肩帶肌群/sit_arm_reach/audio/sit_arm_reach_cue_02.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 1.728
+    },
+    {
+      "exercise_id": "sit_arm_reach",
+      "cue_id": "sit_arm_reach_cue_03",
+      "text": "回到胸前，肩胛向下。",
+      "max_duration_seconds": 7,
+      "target_path": "assets/exercises/肩/肩帶肌群/sit_arm_reach/audio/sit_arm_reach_cue_03.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 2.448
+    },
+    {
+      "exercise_id": "sit_arm_reach",
+      "cue_id": "sit_arm_reach_cue_04",
+      "text": "雙手放回腿上。",
+      "max_duration_seconds": 4,
+      "target_path": "assets/exercises/肩/肩帶肌群/sit_arm_reach/audio/sit_arm_reach_cue_04.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 1.776
+    },
+    {
+      "exercise_id": "lie_quad_set",
+      "cue_id": "lie_quad_set_cue_01",
+      "text": "右膝後側輕輕壓向墊面。",
+      "max_duration_seconds": 9,
+      "target_path": "assets/exercises/腿/股四頭肌/lie_quad_set/audio/lie_quad_set_cue_01.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 2.88
+    },
+    {
+      "exercise_id": "lie_quad_set",
+      "cue_id": "lie_quad_set_cue_02",
+      "text": "放鬆。",
+      "max_duration_seconds": 4,
+      "target_path": "assets/exercises/腿/股四頭肌/lie_quad_set/audio/lie_quad_set_cue_02.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 0.744
+    },
+    {
+      "exercise_id": "lie_quad_set",
+      "cue_id": "lie_quad_set_cue_03",
+      "text": "換左腿，再壓一下。",
+      "max_duration_seconds": 7,
+      "target_path": "assets/exercises/腿/股四頭肌/lie_quad_set/audio/lie_quad_set_cue_03.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 2.016
+    },
+    {
+      "exercise_id": "lie_quad_set",
+      "cue_id": "lie_quad_set_cue_04",
+      "text": "兩腿放鬆。",
+      "max_duration_seconds": 4,
+      "target_path": "assets/exercises/腿/股四頭肌/lie_quad_set/audio/lie_quad_set_cue_04.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 1.272
+    },
+    {
+      "exercise_id": "lie_short_arc",
+      "cue_id": "lie_short_arc_cue_01",
+      "text": "右膝壓住薄墊，小腿向上抬。",
+      "max_duration_seconds": 9,
+      "target_path": "assets/exercises/腿/股四頭肌/lie_short_arc/audio/lie_short_arc_cue_01.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 3.168
+    },
+    {
+      "exercise_id": "lie_short_arc",
+      "cue_id": "lie_short_arc_cue_02",
+      "text": "不必完全伸直。",
+      "max_duration_seconds": 4,
+      "target_path": "assets/exercises/腿/股四頭肌/lie_short_arc/audio/lie_short_arc_cue_02.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 1.704
+    },
+    {
+      "exercise_id": "lie_short_arc",
+      "cue_id": "lie_short_arc_cue_03",
+      "text": "換左腿。",
+      "max_duration_seconds": 7,
+      "target_path": "assets/exercises/腿/股四頭肌/lie_short_arc/audio/lie_short_arc_cue_03.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 0.936
+    },
+    {
+      "exercise_id": "lie_short_arc",
+      "cue_id": "lie_short_arc_cue_04",
+      "text": "兩腿放鬆。",
+      "max_duration_seconds": 4,
+      "target_path": "assets/exercises/腿/股四頭肌/lie_short_arc/audio/lie_short_arc_cue_04.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 1.272
+    },
+    {
+      "exercise_id": "lie_leg_raise",
+      "cue_id": "lie_leg_raise_cue_01",
+      "text": "右腿伸直，抬離墊面一點。",
+      "max_duration_seconds": 9,
+      "target_path": "assets/exercises/腿/股四頭肌/lie_leg_raise/audio/lie_leg_raise_cue_01.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 2.568
+    },
+    {
+      "exercise_id": "lie_leg_raise",
+      "cue_id": "lie_leg_raise_cue_02",
+      "text": "再放下。",
+      "max_duration_seconds": 4,
+      "target_path": "assets/exercises/腿/股四頭肌/lie_leg_raise/audio/lie_leg_raise_cue_02.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 1.008
+    },
+    {
+      "exercise_id": "lie_leg_raise",
+      "cue_id": "lie_leg_raise_cue_03",
+      "text": "換左腿輕抬。",
+      "max_duration_seconds": 7,
+      "target_path": "assets/exercises/腿/股四頭肌/lie_leg_raise/audio/lie_leg_raise_cue_03.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 1.488
+    },
+    {
+      "exercise_id": "lie_leg_raise",
+      "cue_id": "lie_leg_raise_cue_04",
+      "text": "兩腳放回。",
+      "max_duration_seconds": 4,
+      "target_path": "assets/exercises/腿/股四頭肌/lie_leg_raise/audio/lie_leg_raise_cue_04.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 1.296
+    },
+    {
+      "exercise_id": "lie_both_knees",
+      "cue_id": "lie_both_knees_cue_01",
+      "text": "雙膝一起輕輕靠近胸口。",
+      "max_duration_seconds": 9,
+      "target_path": "assets/exercises/背/腰背肌群/lie_both_knees/audio/lie_both_knees_cue_01.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 2.736
+    },
+    {
+      "exercise_id": "lie_both_knees",
+      "cue_id": "lie_both_knees_cue_02",
+      "text": "頭可以留在墊上。",
+      "max_duration_seconds": 4,
+      "target_path": "assets/exercises/背/腰背肌群/lie_both_knees/audio/lie_both_knees_cue_02.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 1.848
+    },
+    {
+      "exercise_id": "lie_both_knees",
+      "cue_id": "lie_both_knees_cue_03",
+      "text": "再靠近一點，不要勉強。",
+      "max_duration_seconds": 7,
+      "target_path": "assets/exercises/背/腰背肌群/lie_both_knees/audio/lie_both_knees_cue_03.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 2.328
+    },
+    {
+      "exercise_id": "lie_both_knees",
+      "cue_id": "lie_both_knees_cue_04",
+      "text": "雙腳放回墊面。",
+      "max_duration_seconds": 4,
+      "target_path": "assets/exercises/背/腰背肌群/lie_both_knees/audio/lie_both_knees_cue_04.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 1.68
+    },
+    {
+      "exercise_id": "lie_knees_out",
+      "cue_id": "lie_knees_out_cue_01",
+      "text": "雙膝慢慢向外打開。",
+      "max_duration_seconds": 9,
+      "target_path": "assets/exercises/髖臀/內收肌群/lie_knees_out/audio/lie_knees_out_cue_01.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 2.256
+    },
+    {
+      "exercise_id": "lie_knees_out",
+      "cue_id": "lie_knees_out_cue_02",
+      "text": "腰背留在墊上。",
+      "max_duration_seconds": 4,
+      "target_path": "assets/exercises/髖臀/內收肌群/lie_knees_out/audio/lie_knees_out_cue_02.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 1.68
+    },
+    {
+      "exercise_id": "lie_knees_out",
+      "cue_id": "lie_knees_out_cue_03",
+      "text": "只停在舒服的位置。",
+      "max_duration_seconds": 7,
+      "target_path": "assets/exercises/髖臀/內收肌群/lie_knees_out/audio/lie_knees_out_cue_03.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 2.064
+    },
+    {
+      "exercise_id": "lie_knees_out",
+      "cue_id": "lie_knees_out_cue_04",
+      "text": "雙膝慢慢合回。",
+      "max_duration_seconds": 4,
+      "target_path": "assets/exercises/髖臀/內收肌群/lie_knees_out/audio/lie_knees_out_cue_04.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 1.824
+    },
+    {
+      "exercise_id": "lie_hip_bridge",
+      "cue_id": "lie_hip_bridge_cue_01",
+      "text": "臀部慢慢向上抬。",
+      "max_duration_seconds": 9,
+      "target_path": "assets/exercises/髖臀/臀大肌/lie_hip_bridge/audio/lie_hip_bridge_cue_01.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 2.016
+    },
+    {
+      "exercise_id": "lie_hip_bridge",
+      "cue_id": "lie_hip_bridge_cue_02",
+      "text": "不要抬到腰痛。",
+      "max_duration_seconds": 4,
+      "target_path": "assets/exercises/髖臀/臀大肌/lie_hip_bridge/audio/lie_hip_bridge_cue_02.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 1.56
+    },
+    {
+      "exercise_id": "lie_hip_bridge",
+      "cue_id": "lie_hip_bridge_cue_03",
+      "text": "再抬一次，然後放下。",
+      "max_duration_seconds": 7,
+      "target_path": "assets/exercises/髖臀/臀大肌/lie_hip_bridge/audio/lie_hip_bridge_cue_03.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 2.304
+    },
+    {
+      "exercise_id": "lie_hip_bridge",
+      "cue_id": "lie_hip_bridge_cue_04",
+      "text": "背部放鬆。",
+      "max_duration_seconds": 4,
+      "target_path": "assets/exercises/髖臀/臀大肌/lie_hip_bridge/audio/lie_hip_bridge_cue_04.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 1.128
+    },
+    {
+      "exercise_id": "lie_long_reach",
+      "cue_id": "lie_long_reach_cue_01",
+      "text": "雙臂向頭的方向伸長。",
+      "max_duration_seconds": 9,
+      "target_path": "assets/exercises/背/全身伸展/lie_long_reach/audio/lie_long_reach_cue_01.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 2.496
+    },
+    {
+      "exercise_id": "lie_long_reach",
+      "cue_id": "lie_long_reach_cue_02",
+      "text": "腳尖勾向自己，再放遠。",
+      "max_duration_seconds": 4,
+      "target_path": "assets/exercises/背/全身伸展/lie_long_reach/audio/lie_long_reach_cue_02.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 2.64
+    },
+    {
+      "exercise_id": "lie_long_reach",
+      "cue_id": "lie_long_reach_cue_03",
+      "text": "身體輕輕拉長。",
+      "max_duration_seconds": 7,
+      "target_path": "assets/exercises/背/全身伸展/lie_long_reach/audio/lie_long_reach_cue_03.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 1.872
+    },
+    {
+      "exercise_id": "lie_long_reach",
+      "cue_id": "lie_long_reach_cue_04",
+      "text": "手臂放回身側。",
+      "max_duration_seconds": 4,
+      "target_path": "assets/exercises/背/全身伸展/lie_long_reach/audio/lie_long_reach_cue_04.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 1.776
+    },
+    {
+      "exercise_id": "lie_blade_sink",
+      "cue_id": "lie_blade_sink_cue_01",
+      "text": "肩胛輕輕沉進墊面。",
+      "max_duration_seconds": 9,
+      "target_path": "assets/exercises/背/肩胛肌群/lie_blade_sink/audio/lie_blade_sink_cue_01.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 2.328
+    },
+    {
+      "exercise_id": "lie_blade_sink",
+      "cue_id": "lie_blade_sink_cue_02",
+      "text": "不要聳向耳朵。",
+      "max_duration_seconds": 4,
+      "target_path": "assets/exercises/背/肩胛肌群/lie_blade_sink/audio/lie_blade_sink_cue_02.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 1.656
+    },
+    {
+      "exercise_id": "lie_blade_sink",
+      "cue_id": "lie_blade_sink_cue_03",
+      "text": "再沉一次，脖子放鬆。",
+      "max_duration_seconds": 7,
+      "target_path": "assets/exercises/背/肩胛肌群/lie_blade_sink/audio/lie_blade_sink_cue_03.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 2.304
+    },
+    {
+      "exercise_id": "lie_blade_sink",
+      "cue_id": "lie_blade_sink_cue_04",
+      "text": "肩膀完全放鬆。",
+      "max_duration_seconds": 4,
+      "target_path": "assets/exercises/背/肩胛肌群/lie_blade_sink/audio/lie_blade_sink_cue_04.mp3",
+      "status": "ready",
+      "measured_duration_seconds": 1.752
+    }
+  ]
+}

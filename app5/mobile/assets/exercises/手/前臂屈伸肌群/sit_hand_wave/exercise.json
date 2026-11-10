@@ -1,0 +1,110 @@
+{
+  "id": "sit_hand_wave",
+  "name": "坐姿手腕左右",
+  "content_version": "0.3.0",
+  "status": "draft",
+  "review_status": "source_referenced",
+  "position": "sitting",
+  "body_regions": [
+    "wrists"
+  ],
+  "movement_type": "mobility",
+  "access_tier": "free",
+  "duration_seconds": 30,
+  "gap_after_seconds": 3,
+  "equipment": [
+    "chair"
+  ],
+  "setup": "前臂放在大腿上，手掌放鬆。",
+  "description": "手腕小幅左右擺動，像慢速揮手。不上下甩。",
+  "instructions": [
+    "手腕慢慢向左右小幅擺動",
+    "前臂留在腿上",
+    "繼續慢速左右擺",
+    "手掌回正"
+  ],
+  "cautions": [
+    "只到舒服的範圍，不彈震、不憋氣。疼痛、麻木或暈眩時停止。",
+    "已有傷勢、手術後、懷孕或不確定時，先確認這個活動是否適合自己。"
+  ],
+  "movement_timeline": [
+    {
+      "start_seconds": 0,
+      "end_seconds": 10,
+      "instruction": "手腕慢慢向左右小幅擺動"
+    },
+    {
+      "start_seconds": 10,
+      "end_seconds": 15,
+      "instruction": "前臂留在腿上"
+    },
+    {
+      "start_seconds": 15,
+      "end_seconds": 25,
+      "instruction": "繼續慢速左右擺"
+    },
+    {
+      "start_seconds": 25,
+      "end_seconds": 30,
+      "instruction": "手掌回正"
+    }
+  ],
+  "voice_cues": [
+    {
+      "id": "sit_hand_wave_cue_01",
+      "at_seconds": 0,
+      "max_duration_seconds": 9,
+      "text": "手腕慢慢左右擺。",
+      "audio_path": "audio/sit_hand_wave_cue_01.mp3",
+      "measured_duration_seconds": null,
+      "audio_status": "pending"
+    },
+    {
+      "id": "sit_hand_wave_cue_02",
+      "at_seconds": 10,
+      "max_duration_seconds": 4,
+      "text": "前臂留在腿上。",
+      "audio_path": "audio/sit_hand_wave_cue_02.mp3",
+      "measured_duration_seconds": null,
+      "audio_status": "pending"
+    },
+    {
+      "id": "sit_hand_wave_cue_03",
+      "at_seconds": 15,
+      "max_duration_seconds": 7,
+      "text": "繼續慢一點。",
+      "audio_path": "audio/sit_hand_wave_cue_03.mp3",
+      "measured_duration_seconds": null,
+      "audio_status": "pending"
+    },
+    {
+      "id": "sit_hand_wave_cue_04",
+      "at_seconds": 22,
+      "max_duration_seconds": 4,
+      "text": "手掌回正。",
+      "audio_path": "audio/sit_hand_wave_cue_04.mp3",
+      "measured_duration_seconds": null,
+      "audio_status": "pending"
+    }
+  ],
+  "animation_brief": "靜態示意圖：前臂放在大腿上，手掌放鬆。採用 wrist 人物模板與方向箭頭。圖檔未放入前，播放器改顯示這張向量人物。",
+  "media": {
+    "status": "ai_illustration",
+    "image_path": "illustration.png",
+    "animation_path": null,
+    "animation_format": null,
+    "animation_playback": null,
+    "animation_duration_seconds": null,
+    "figma_url": null
+  },
+  "source_ids": [
+    "ni_wrist"
+  ],
+  "library": {
+    "body_part": "手",
+    "muscle": "前臂屈伸肌群",
+    "pose": "wrist",
+    "source_note": "依公開英文資料改寫動作方向與注意事項。左右放在同一筆；30 秒時間軸與換側是產品編排，與來源的維持秒數不同。",
+    "checked_on": "2026-11-09"
+  }
+}

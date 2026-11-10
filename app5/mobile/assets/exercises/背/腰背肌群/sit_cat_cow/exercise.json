@@ -1,0 +1,112 @@
+{
+  "id": "sit_cat_cow",
+  "name": "坐姿貓牛活動",
+  "content_version": "0.3.0",
+  "status": "draft",
+  "review_status": "source_referenced",
+  "position": "sitting",
+  "body_regions": [
+    "upper_back",
+    "waist"
+  ],
+  "movement_type": "mobility",
+  "access_tier": "free",
+  "duration_seconds": 30,
+  "gap_after_seconds": 3,
+  "equipment": [
+    "chair"
+  ],
+  "setup": "穩坐，雙腳踩地，雙手輕放大腿。",
+  "description": "吐氣時背變圓、下巴收；吸氣時胸口打開、尾骨微微向後。頭不要向後甩。",
+  "instructions": [
+    "吐氣，背變圓，下巴輕收",
+    "吸氣，胸口打開，頭不要後仰",
+    "再慢慢圓背一次，然後打開",
+    "回到坐直"
+  ],
+  "cautions": [
+    "只到舒服的範圍，不彈震、不憋氣。疼痛、麻木或暈眩時停止。",
+    "頭不要向後甩。坐姿活動的幅度比跪姿小。",
+    "已有傷勢、手術後、懷孕或不確定時，先確認這個活動是否適合自己。"
+  ],
+  "movement_timeline": [
+    {
+      "start_seconds": 0,
+      "end_seconds": 10,
+      "instruction": "吐氣，背變圓，下巴輕收"
+    },
+    {
+      "start_seconds": 10,
+      "end_seconds": 15,
+      "instruction": "吸氣，胸口打開，頭不要後仰"
+    },
+    {
+      "start_seconds": 15,
+      "end_seconds": 25,
+      "instruction": "再慢慢圓背一次，然後打開"
+    },
+    {
+      "start_seconds": 25,
+      "end_seconds": 30,
+      "instruction": "回到坐直"
+    }
+  ],
+  "voice_cues": [
+    {
+      "id": "sit_cat_cow_cue_01",
+      "at_seconds": 0,
+      "max_duration_seconds": 9,
+      "text": "吐氣，背慢慢變圓。",
+      "audio_path": "audio/sit_cat_cow_cue_01.mp3",
+      "measured_duration_seconds": 2.088,
+      "audio_status": "ready"
+    },
+    {
+      "id": "sit_cat_cow_cue_02",
+      "at_seconds": 10,
+      "max_duration_seconds": 4,
+      "text": "吸氣，胸口打開，頭不後仰。",
+      "audio_path": "audio/sit_cat_cow_cue_02.mp3",
+      "measured_duration_seconds": 2.904,
+      "audio_status": "ready"
+    },
+    {
+      "id": "sit_cat_cow_cue_03",
+      "at_seconds": 15,
+      "max_duration_seconds": 7,
+      "text": "再圓一次，然後打開。",
+      "audio_path": "audio/sit_cat_cow_cue_03.mp3",
+      "measured_duration_seconds": 2.256,
+      "audio_status": "ready"
+    },
+    {
+      "id": "sit_cat_cow_cue_04",
+      "at_seconds": 22,
+      "max_duration_seconds": 4,
+      "text": "坐直。",
+      "audio_path": "audio/sit_cat_cow_cue_04.mp3",
+      "measured_duration_seconds": 0.792,
+      "audio_status": "ready"
+    }
+  ],
+  "animation_brief": "靜態示意圖：穩坐，雙腳踩地，雙手輕放大腿。採用 side 人物模板與方向箭頭。圖檔未放入前，播放器改顯示這張向量人物。",
+  "media": {
+    "status": "ai_illustration",
+    "image_path": "illustration.png",
+    "animation_path": null,
+    "animation_format": null,
+    "animation_playback": null,
+    "animation_duration_seconds": null,
+    "figma_url": null
+  },
+  "source_ids": [
+    "clev_cat"
+  ],
+  "library": {
+    "body_part": "背",
+    "muscle": "腰背肌群",
+    "pose": "side",
+    "source_note": "依公開英文資料改寫動作方向與注意事項。左右放在同一筆；30 秒時間軸與換側是產品編排，與來源的維持秒數不同。",
+    "checked_on": "2026-11-09"
+  }
+}

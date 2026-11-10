@@ -1,0 +1,113 @@
+{
+  "id": "lie_both_knees",
+  "name": "仰躺雙膝靠近",
+  "content_version": "0.3.0",
+  "status": "draft",
+  "review_status": "source_referenced",
+  "position": "lying",
+  "body_regions": [
+    "waist",
+    "hips"
+  ],
+  "movement_type": "stretch",
+  "access_tier": "free",
+  "duration_seconds": 30,
+  "gap_after_seconds": 3,
+  "equipment": [
+    "mat"
+  ],
+  "setup": "仰躺在墊上，雙膝一起彎向胸口。",
+  "description": "兩手抱住雙大腿後方，雙膝一起輕輕靠近胸口，再放回。若不好抱，就改抱一側。",
+  "instructions": [
+    "雙膝一起輕輕靠近胸口",
+    "手抱大腿後方，頭可以留在墊上",
+    "再靠近一次，只到腰部舒服",
+    "雙腳放回墊面"
+  ],
+  "cautions": [
+    "只到舒服的範圍，不彈震、不憋氣。疼痛、麻木或暈眩時停止。",
+    "若骨質較脆或不舒服，不要把雙膝壓向胸口。可以改成單膝。",
+    "已有傷勢、手術後、懷孕或不確定時，先確認這個活動是否適合自己。"
+  ],
+  "movement_timeline": [
+    {
+      "start_seconds": 0,
+      "end_seconds": 10,
+      "instruction": "雙膝一起輕輕靠近胸口"
+    },
+    {
+      "start_seconds": 10,
+      "end_seconds": 15,
+      "instruction": "手抱大腿後方，頭可以留在墊上"
+    },
+    {
+      "start_seconds": 15,
+      "end_seconds": 25,
+      "instruction": "再靠近一次，只到腰部舒服"
+    },
+    {
+      "start_seconds": 25,
+      "end_seconds": 30,
+      "instruction": "雙腳放回墊面"
+    }
+  ],
+  "voice_cues": [
+    {
+      "id": "lie_both_knees_cue_01",
+      "at_seconds": 0,
+      "max_duration_seconds": 9,
+      "text": "雙膝一起輕輕靠近胸口。",
+      "audio_path": "audio/lie_both_knees_cue_01.mp3",
+      "measured_duration_seconds": 2.736,
+      "audio_status": "ready"
+    },
+    {
+      "id": "lie_both_knees_cue_02",
+      "at_seconds": 10,
+      "max_duration_seconds": 4,
+      "text": "頭可以留在墊上。",
+      "audio_path": "audio/lie_both_knees_cue_02.mp3",
+      "measured_duration_seconds": 1.848,
+      "audio_status": "ready"
+    },
+    {
+      "id": "lie_both_knees_cue_03",
+      "at_seconds": 15,
+      "max_duration_seconds": 7,
+      "text": "再靠近一點，不要勉強。",
+      "audio_path": "audio/lie_both_knees_cue_03.mp3",
+      "measured_duration_seconds": 2.328,
+      "audio_status": "ready"
+    },
+    {
+      "id": "lie_both_knees_cue_04",
+      "at_seconds": 22,
+      "max_duration_seconds": 4,
+      "text": "雙腳放回墊面。",
+      "audio_path": "audio/lie_both_knees_cue_04.mp3",
+      "measured_duration_seconds": 1.68,
+      "audio_status": "ready"
+    }
+  ],
+  "animation_brief": "靜態示意圖：仰躺在墊上，雙膝一起彎向胸口。採用 hug 人物模板與方向箭頭。圖檔未放入前，播放器改顯示這張向量人物。",
+  "media": {
+    "status": "ai_illustration",
+    "image_path": "illustration.png",
+    "animation_path": null,
+    "animation_format": null,
+    "animation_playback": null,
+    "animation_duration_seconds": null,
+    "figma_url": null
+  },
+  "source_ids": [
+    "worcs_stretch",
+    "mayo_back"
+  ],
+  "library": {
+    "body_part": "背",
+    "muscle": "腰背肌群",
+    "pose": "hug",
+    "source_note": "依公開英文資料改寫動作方向與注意事項。左右放在同一筆；30 秒時間軸與換側是產品編排，與來源的維持秒數不同。",
+    "checked_on": "2026-11-09"
+  }
+}

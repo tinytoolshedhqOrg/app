@@ -1,3 +1,4 @@
+import { Image } from "react-native";
 import Svg, {
   Circle,
   Ellipse,
@@ -8,6 +9,7 @@ import Svg, {
   Rect,
 } from "react-native-svg";
 import type { Exercise } from "../content";
+import { imageAssets } from "../content/exercise-index";
 
 type Point = [number, number];
 export default function ExerciseDiagram({
@@ -22,6 +24,17 @@ export default function ExerciseDiagram({
   background?: string;
 }) {
   const pose = exercise?.library?.pose ?? requested ?? "raise";
+  const photo = exercise ? imageAssets[exercise.id] : undefined;
+  if (photo != null) {
+    return (
+      <Image
+        source={photo}
+        style={{ width: size, height: size }}
+        resizeMode="contain"
+        accessibilityLabel={exercise ? `${exercise.name}示意圖` : "伸展示意圖"}
+      />
+    );
+  }
   const sitting = exercise?.position === "sitting";
   const lying =
     exercise?.position === "lying" ||

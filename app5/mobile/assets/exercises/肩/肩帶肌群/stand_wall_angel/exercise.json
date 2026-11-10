@@ -1,0 +1,111 @@
+{
+  "id": "stand_wall_angel",
+  "name": "靠牆雙臂上展",
+  "content_version": "0.3.0",
+  "status": "draft",
+  "review_status": "source_referenced",
+  "position": "standing",
+  "body_regions": [
+    "chest",
+    "shoulders"
+  ],
+  "movement_type": "mobility",
+  "access_tier": "free",
+  "duration_seconds": 30,
+  "gap_after_seconds": 3,
+  "equipment": [
+    "wall"
+  ],
+  "setup": "背對穩固牆面，後腦、肩胛和臀盡量輕靠牆，掌心向前。",
+  "description": "手背盡量沿牆向外再向上滑，然後滑回。碰不到牆的地方不要硬壓。",
+  "instructions": [
+    "手背沿牆向外、再向上滑",
+    "後腦仍輕靠牆，不挺腰",
+    "再滑一次，只到碰得到的範圍",
+    "雙臂慢慢滑回身側"
+  ],
+  "cautions": [
+    "只到舒服的範圍，不彈震、不憋氣。疼痛、麻木或暈眩時停止。",
+    "已有傷勢、手術後、懷孕或不確定時，先確認這個活動是否適合自己。"
+  ],
+  "movement_timeline": [
+    {
+      "start_seconds": 0,
+      "end_seconds": 10,
+      "instruction": "手背沿牆向外、再向上滑"
+    },
+    {
+      "start_seconds": 10,
+      "end_seconds": 15,
+      "instruction": "後腦仍輕靠牆，不挺腰"
+    },
+    {
+      "start_seconds": 15,
+      "end_seconds": 25,
+      "instruction": "再滑一次，只到碰得到的範圍"
+    },
+    {
+      "start_seconds": 25,
+      "end_seconds": 30,
+      "instruction": "雙臂慢慢滑回身側"
+    }
+  ],
+  "voice_cues": [
+    {
+      "id": "stand_wall_angel_cue_01",
+      "at_seconds": 0,
+      "max_duration_seconds": 9,
+      "text": "手背沿牆慢慢向上滑。",
+      "audio_path": "audio/stand_wall_angel_cue_01.mp3",
+      "measured_duration_seconds": null,
+      "audio_status": "pending"
+    },
+    {
+      "id": "stand_wall_angel_cue_02",
+      "at_seconds": 10,
+      "max_duration_seconds": 4,
+      "text": "腰不要往前挺。",
+      "audio_path": "audio/stand_wall_angel_cue_02.mp3",
+      "measured_duration_seconds": null,
+      "audio_status": "pending"
+    },
+    {
+      "id": "stand_wall_angel_cue_03",
+      "at_seconds": 15,
+      "max_duration_seconds": 7,
+      "text": "再滑一次，碰不到就停。",
+      "audio_path": "audio/stand_wall_angel_cue_03.mp3",
+      "measured_duration_seconds": null,
+      "audio_status": "pending"
+    },
+    {
+      "id": "stand_wall_angel_cue_04",
+      "at_seconds": 22,
+      "max_duration_seconds": 4,
+      "text": "雙臂慢慢放回。",
+      "audio_path": "audio/stand_wall_angel_cue_04.mp3",
+      "measured_duration_seconds": null,
+      "audio_status": "pending"
+    }
+  ],
+  "animation_brief": "靜態示意圖：背對穩固牆面，後腦、肩胛和臀盡量輕靠牆，掌心向前。採用 raise 人物模板與方向箭頭。圖檔未放入前，播放器改顯示這張向量人物。",
+  "media": {
+    "status": "ai_illustration",
+    "image_path": "illustration.png",
+    "animation_path": null,
+    "animation_format": null,
+    "animation_playback": null,
+    "animation_duration_seconds": null,
+    "figma_url": null
+  },
+  "source_ids": [
+    "clev_posture"
+  ],
+  "library": {
+    "body_part": "肩",
+    "muscle": "肩帶肌群",
+    "pose": "raise",
+    "source_note": "依公開英文資料改寫動作方向與注意事項。左右放在同一筆；30 秒時間軸與換側是產品編排，與來源的維持秒數不同。",
+    "checked_on": "2026-11-09"
+  }
+}

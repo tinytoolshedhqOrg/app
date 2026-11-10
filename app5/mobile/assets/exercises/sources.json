@@ -34,5 +34,113 @@
     "title": "NHS — How to stretch after exercising",
     "url": "https://www.nhs.uk/live-well/exercise/how-to-stretch-after-exercising/",
     "scope": "腿後與臀部伸展方向參考，30 秒編排另行設計。"
+  },
+  {
+    "id": "leeds_neck",
+    "title": "Leeds Community Healthcare NHS Trust — New and undiagnosed neck problems",
+    "url": "https://leedscommunityhealthcare.nhs.uk/our-services-a-z/musculoskeletal-msk/neck-problems/new-and-undiagnosed-neck-problems/",
+    "scope": "坐下顎（chin tuck）的方向參考；維持秒數與 30 秒編排另行設計。"
+  },
+  {
+    "id": "ni_neck",
+    "title": "NHS inform — Exercises for neck problems",
+    "url": "https://www.nhsinform.scot/illnesses-and-conditions/muscle-bone-and-joints/neck-and-back-problems-and-conditions/exercises-for-neck-problems/",
+    "scope": "低頭與雙臂打開的方向參考；轉頭與側傾已有動作，不重複收錄。"
+  },
+  {
+    "id": "ni_shoulder",
+    "title": "NHS inform — Exercises for shoulder problems",
+    "url": "https://www.nhsinform.scot/illnesses-and-conditions/muscle-bone-and-joints/arm-shoulder-and-hand-problems-and-conditions/exercises-for-shoulder-problems/",
+    "scope": "手臂鐘擺、畫圈、仰躺上舉與扶牆上滑的方向參考。側躺負重旋轉未收錄。"
+  },
+  {
+    "id": "ni_wrist",
+    "title": "NHS inform — Exercises for wrist, hand and finger problems",
+    "url": "https://www.nhsinform.scot/illnesses-and-conditions/muscle-bone-and-joints/arm-shoulder-and-hand-problems-and-conditions/exercises-for-wrist-hand-and-finger-problems/",
+    "scope": "手指張開、指節彎曲、平握、拇指與手腕左右擺的方向參考。既有的握拳張開與手腕上下活動不重複。"
+  },
+  {
+    "id": "ni_elbow",
+    "title": "NHS inform — Exercises for elbow problems",
+    "url": "https://www.nhsinform.scot/illnesses-and-conditions/muscle-bone-and-joints/arm-shoulder-and-hand-problems-and-conditions/exercises-for-elbow-problems/",
+    "scope": "掌心翻轉，以及前臂靠在桌緣的手腕上抬與被動伸展方向參考。"
+  },
+  {
+    "id": "ni_hip",
+    "title": "NHS inform — Exercises for hip problems",
+    "url": "https://www.nhsinform.scot/illnesses-and-conditions/muscle-bone-and-joints/leg-and-foot-problems-and-conditions/exercises-for-hip-problems/",
+    "scope": "仰躺抬臀、站姿腿向後與向側抬的方向參考。"
+  },
+  {
+    "id": "ni_knee",
+    "title": "NHS inform — Exercises for knee problems",
+    "url": "https://www.nhsinform.scot/illnesses-and-conditions/muscle-bone-and-joints/leg-and-foot-problems-and-conditions/exercises-for-knee-problems/",
+    "scope": "大腿輕壓、短弧伸膝、直腿輕抬與腳放對椅伸膝的方向參考。腳跟滑動不重複。"
+  },
+  {
+    "id": "ni_balance",
+    "title": "NHS inform — Strength and balance exercises",
+    "url": "https://www.nhsinform.scot/healthy-living/preventing-falls/keeping-well/strength-and-balance-exercises/",
+    "scope": "腳尖抬起、腳跟後抬、腳跟接腳尖與單腳站立的方向參考。行走類步伐未收成跟練動作。"
+  },
+  {
+    "id": "nhs_strength",
+    "title": "NHS — Strength exercises",
+    "url": "https://www.nhs.uk/live-well/exercise/strength-exercises/",
+    "scope": "小幅下蹲、腳跟抬起與扶牆伏撐的方向參考。"
+  },
+  {
+    "id": "nhs_warm",
+    "title": "NHS — How to warm up before exercising",
+    "url": "https://www.nhs.uk/live-well/exercise/how-to-warm-up-before-exercising/",
+    "scope": "原地踏步、腳跟前點與抬膝的方向參考。肩繞圈不重複。"
+  },
+  {
+    "id": "mayo_stretch",
+    "title": "Mayo Clinic — A guide to basic stretches",
+    "url": "https://www.mayoclinic.org/healthy-lifestyle/fitness/in-depth/stretching/art-20546848",
+    "scope": "頸後斜向、手臂抱肩、站姿大腿前側與髖外側伸展的方向參考。直膝扶牆小腿與仰躺單膝靠近不重複。"
+  },
+  {
+    "id": "mayo_back",
+    "title": "Mayo Clinic — Back exercises in 15 minutes a day",
+    "url": "https://www.mayoclinic.org/healthy-lifestyle/adult-health/in-depth/back-pain/art-20546859",
+    "scope": "仰躺時雙膝一起靠近身體的方向參考。單膝、膝部左右移與骨盆回擺不重複。"
+  },
+  {
+    "id": "clev_posture",
+    "title": "Cleveland Clinic — Exercises to improve posture",
+    "url": "https://health.clevelandclinic.org/posture-exercises",
+    "scope": "靠牆站姿、靠牆雙臂上展、門口胸前伸展、肩胛下沉與手肘後拉的方向參考。"
+  },
+  {
+    "id": "clev_cat",
+    "title": "Cleveland Clinic — Cat-cow stretch",
+    "url": "https://health.clevelandclinic.org/cat-cow-stretch",
+    "scope": "坐姿貓牛的方向參考。四肢跪地版本未收錄，因本庫躺姿只做仰躺。"
+  },
+  {
+    "id": "clev_yoga",
+    "title": "Cleveland Clinic — 12 yoga poses you can do at your desk",
+    "url": "https://health.clevelandclinic.org/12-yoga-poses-can-work",
+    "scope": "鼻子小圈、坐姿挺身、胸口後收與前傾休息的方向參考。肩繞圈、側彎與轉體不重複。"
+  },
+  {
+    "id": "ace_lunge",
+    "title": "ACE — Standing lunge stretch",
+    "url": "https://www.acefitness.org/resources/everyone/exercise-library/137/standing-lunge-stretch/",
+    "scope": "站姿髖前伸展的方向參考。不必蹲到大腿與地面平行。"
+  },
+  {
+    "id": "ace_seated",
+    "title": "ACE — Seated workouts for beginners",
+    "url": "https://www.acefitness.org/resources/pros/expert-articles/6449/seated-workouts-for-beginners-5-tips-for-starting-exercise-from-scratch/",
+    "scope": "掌心相合再向上打開成 V 字的方向參考。"
+  },
+  {
+    "id": "worcs_stretch",
+    "title": "Worcestershire Acute Hospitals NHS Trust — Stretching exercises",
+    "url": "https://www.worcsacute.nhs.uk/~documents/documents/patient-information-leaflets-a-z/stretching-exercises-physiotherapy/?layout=file",
+    "scope": "單臂上舉、仰躺手肘外開、手肘伸直、全身伸長、雙膝外放、站姿大腿前側與屈膝小腿的方向參考。俯臥與既有的直膝小腿伸展不重複。"
   }
 ]

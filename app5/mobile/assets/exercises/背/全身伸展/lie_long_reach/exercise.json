@@ -1,0 +1,112 @@
+{
+  "id": "lie_long_reach",
+  "name": "仰躺全身伸長",
+  "content_version": "0.3.0",
+  "status": "draft",
+  "review_status": "source_referenced",
+  "position": "lying",
+  "body_regions": [
+    "shoulders",
+    "waist",
+    "ankles"
+  ],
+  "movement_type": "stretch",
+  "access_tier": "free",
+  "duration_seconds": 30,
+  "gap_after_seconds": 3,
+  "equipment": [
+    "mat"
+  ],
+  "setup": "仰躺，雙臂可以舉到頭的方向，雙腿自然伸直。",
+  "description": "雙臂向頭的方向伸長，腳尖慢慢勾向自己再放遠，身體像被輕輕拉長。",
+  "instructions": [
+    "雙臂向頭的方向伸長",
+    "腳尖勾向自己，再輕輕放遠",
+    "手臂與腳同時輕輕拉長",
+    "手臂放回身側，腳放鬆"
+  ],
+  "cautions": [
+    "只到舒服的範圍，不彈震、不憋氣。疼痛、麻木或暈眩時停止。",
+    "已有傷勢、手術後、懷孕或不確定時，先確認這個活動是否適合自己。"
+  ],
+  "movement_timeline": [
+    {
+      "start_seconds": 0,
+      "end_seconds": 10,
+      "instruction": "雙臂向頭的方向伸長"
+    },
+    {
+      "start_seconds": 10,
+      "end_seconds": 15,
+      "instruction": "腳尖勾向自己，再輕輕放遠"
+    },
+    {
+      "start_seconds": 15,
+      "end_seconds": 25,
+      "instruction": "手臂與腳同時輕輕拉長"
+    },
+    {
+      "start_seconds": 25,
+      "end_seconds": 30,
+      "instruction": "手臂放回身側，腳放鬆"
+    }
+  ],
+  "voice_cues": [
+    {
+      "id": "lie_long_reach_cue_01",
+      "at_seconds": 0,
+      "max_duration_seconds": 9,
+      "text": "雙臂向頭的方向伸長。",
+      "audio_path": "audio/lie_long_reach_cue_01.mp3",
+      "measured_duration_seconds": 2.496,
+      "audio_status": "ready"
+    },
+    {
+      "id": "lie_long_reach_cue_02",
+      "at_seconds": 10,
+      "max_duration_seconds": 4,
+      "text": "腳尖勾向自己，再放遠。",
+      "audio_path": "audio/lie_long_reach_cue_02.mp3",
+      "measured_duration_seconds": 2.64,
+      "audio_status": "ready"
+    },
+    {
+      "id": "lie_long_reach_cue_03",
+      "at_seconds": 15,
+      "max_duration_seconds": 7,
+      "text": "身體輕輕拉長。",
+      "audio_path": "audio/lie_long_reach_cue_03.mp3",
+      "measured_duration_seconds": 1.872,
+      "audio_status": "ready"
+    },
+    {
+      "id": "lie_long_reach_cue_04",
+      "at_seconds": 22,
+      "max_duration_seconds": 4,
+      "text": "手臂放回身側。",
+      "audio_path": "audio/lie_long_reach_cue_04.mp3",
+      "measured_duration_seconds": 1.776,
+      "audio_status": "ready"
+    }
+  ],
+  "animation_brief": "靜態示意圖：仰躺，雙臂可以舉到頭的方向，雙腿自然伸直。採用 floor-arms 人物模板與方向箭頭。圖檔未放入前，播放器改顯示這張向量人物。",
+  "media": {
+    "status": "ai_illustration",
+    "image_path": "illustration.png",
+    "animation_path": null,
+    "animation_format": null,
+    "animation_playback": null,
+    "animation_duration_seconds": null,
+    "figma_url": null
+  },
+  "source_ids": [
+    "worcs_stretch"
+  ],
+  "library": {
+    "body_part": "背",
+    "muscle": "全身伸展",
+    "pose": "floor-arms",
+    "source_note": "依公開英文資料改寫動作方向與注意事項。左右放在同一筆；30 秒時間軸與換側是產品編排，與來源的維持秒數不同。",
+    "checked_on": "2026-11-09"
+  }
+}

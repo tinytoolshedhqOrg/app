@@ -1,0 +1,111 @@
+{
+  "id": "sit_chin_tuck",
+  "name": "坐姿收下顎",
+  "content_version": "0.3.0",
+  "status": "draft",
+  "review_status": "source_referenced",
+  "position": "sitting",
+  "body_regions": [
+    "neck"
+  ],
+  "movement_type": "mobility",
+  "access_tier": "free",
+  "duration_seconds": 30,
+  "gap_after_seconds": 3,
+  "equipment": [
+    "chair"
+  ],
+  "setup": "穩坐無輪椅，雙腳踩地，眼睛看前方。",
+  "description": "眼睛保持平視，下巴輕輕往後收，做出雙下巴，再放鬆。",
+  "instructions": [
+    "眼睛看前方，下巴輕輕往後收",
+    "停住，肩膀不要跟著聳起",
+    "再收下顎，幅度維持很小",
+    "慢慢放回，眼睛仍看前方"
+  ],
+  "cautions": [
+    "只到舒服的範圍，不彈震、不憋氣。疼痛、麻木或暈眩時停止。",
+    "已有傷勢、手術後、懷孕或不確定時，先確認這個活動是否適合自己。"
+  ],
+  "movement_timeline": [
+    {
+      "start_seconds": 0,
+      "end_seconds": 10,
+      "instruction": "眼睛看前方，下巴輕輕往後收"
+    },
+    {
+      "start_seconds": 10,
+      "end_seconds": 15,
+      "instruction": "停住，肩膀不要跟著聳起"
+    },
+    {
+      "start_seconds": 15,
+      "end_seconds": 25,
+      "instruction": "再收下顎，幅度維持很小"
+    },
+    {
+      "start_seconds": 25,
+      "end_seconds": 30,
+      "instruction": "慢慢放回，眼睛仍看前方"
+    }
+  ],
+  "voice_cues": [
+    {
+      "id": "sit_chin_tuck_cue_01",
+      "at_seconds": 0,
+      "max_duration_seconds": 9,
+      "text": "眼睛看前方，下巴輕輕往後收。",
+      "audio_path": "audio/sit_chin_tuck_cue_01.mp3",
+      "measured_duration_seconds": 3.504,
+      "audio_status": "ready"
+    },
+    {
+      "id": "sit_chin_tuck_cue_02",
+      "at_seconds": 10,
+      "max_duration_seconds": 4,
+      "text": "肩膀放鬆。",
+      "audio_path": "audio/sit_chin_tuck_cue_02.mp3",
+      "measured_duration_seconds": 1.296,
+      "audio_status": "ready"
+    },
+    {
+      "id": "sit_chin_tuck_cue_03",
+      "at_seconds": 15,
+      "max_duration_seconds": 7,
+      "text": "再收一次，幅度小一點。",
+      "audio_path": "audio/sit_chin_tuck_cue_03.mp3",
+      "measured_duration_seconds": 2.448,
+      "audio_status": "ready"
+    },
+    {
+      "id": "sit_chin_tuck_cue_04",
+      "at_seconds": 22,
+      "max_duration_seconds": 4,
+      "text": "慢慢放回。",
+      "audio_path": "audio/sit_chin_tuck_cue_04.mp3",
+      "measured_duration_seconds": 1.248,
+      "audio_status": "ready"
+    }
+  ],
+  "animation_brief": "靜態示意圖：穩坐無輪椅，雙腳踩地，眼睛看前方。採用 neck 人物模板與方向箭頭。圖檔未放入前，播放器改顯示這張向量人物。",
+  "media": {
+    "status": "ai_illustration",
+    "image_path": "illustration.png",
+    "animation_path": null,
+    "animation_format": null,
+    "animation_playback": null,
+    "animation_duration_seconds": null,
+    "figma_url": null
+  },
+  "source_ids": [
+    "leeds_neck",
+    "clev_posture"
+  ],
+  "library": {
+    "body_part": "頸",
+    "muscle": "深層頸屈肌",
+    "pose": "neck",
+    "source_note": "依公開英文資料改寫動作方向與注意事項。左右放在同一筆；30 秒時間軸與換側是產品編排，與來源的維持秒數不同。",
+    "checked_on": "2026-11-09"
+  }
+}

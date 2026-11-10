@@ -1,0 +1,110 @@
+{
+  "id": "stand_door_chest",
+  "name": "門口胸前伸展",
+  "content_version": "0.3.0",
+  "status": "draft",
+  "review_status": "source_referenced",
+  "position": "standing",
+  "body_regions": [
+    "chest",
+    "shoulders"
+  ],
+  "movement_type": "stretch",
+  "access_tier": "free",
+  "duration_seconds": 30,
+  "gap_after_seconds": 3,
+  "equipment": [],
+  "setup": "站在敞開、穩固的門框中。雙肘彎曲約九十度，前臂與掌心貼在門框兩側。",
+  "description": "一腳向後踏一小步，身體重量輕輕向前，胸口有輕微拉開，再換腳。",
+  "instructions": [
+    "右腳向後小步，身體微微向前",
+    "胸口輕微拉開，不聳肩",
+    "換左腳向後，再微微向前",
+    "腳步收回，雙手離開門框"
+  ],
+  "cautions": [
+    "只到舒服的範圍，不彈震、不憋氣。疼痛、麻木或暈眩時停止。",
+    "門框要穩。只到胸口輕微拉開，不把身體壓進門框。",
+    "已有傷勢、手術後、懷孕或不確定時，先確認這個活動是否適合自己。"
+  ],
+  "movement_timeline": [
+    {
+      "start_seconds": 0,
+      "end_seconds": 10,
+      "instruction": "右腳向後小步，身體微微向前"
+    },
+    {
+      "start_seconds": 10,
+      "end_seconds": 15,
+      "instruction": "胸口輕微拉開，不聳肩"
+    },
+    {
+      "start_seconds": 15,
+      "end_seconds": 25,
+      "instruction": "換左腳向後，再微微向前"
+    },
+    {
+      "start_seconds": 25,
+      "end_seconds": 30,
+      "instruction": "腳步收回，雙手離開門框"
+    }
+  ],
+  "voice_cues": [
+    {
+      "id": "stand_door_chest_cue_01",
+      "at_seconds": 0,
+      "max_duration_seconds": 9,
+      "text": "右腳退一小步，身體微微向前。",
+      "audio_path": "audio/stand_door_chest_cue_01.mp3",
+      "measured_duration_seconds": null,
+      "audio_status": "pending"
+    },
+    {
+      "id": "stand_door_chest_cue_02",
+      "at_seconds": 10,
+      "max_duration_seconds": 4,
+      "text": "胸口輕輕打開。",
+      "audio_path": "audio/stand_door_chest_cue_02.mp3",
+      "measured_duration_seconds": null,
+      "audio_status": "pending"
+    },
+    {
+      "id": "stand_door_chest_cue_03",
+      "at_seconds": 15,
+      "max_duration_seconds": 7,
+      "text": "換左腳退後，再微微向前。",
+      "audio_path": "audio/stand_door_chest_cue_03.mp3",
+      "measured_duration_seconds": null,
+      "audio_status": "pending"
+    },
+    {
+      "id": "stand_door_chest_cue_04",
+      "at_seconds": 22,
+      "max_duration_seconds": 4,
+      "text": "站回中間。",
+      "audio_path": "audio/stand_door_chest_cue_04.mp3",
+      "measured_duration_seconds": null,
+      "audio_status": "pending"
+    }
+  ],
+  "animation_brief": "靜態示意圖：站在敞開、穩固的門框中。雙肘彎曲約九十度，前臂與掌心貼在門框兩側。採用 chest 人物模板與方向箭頭。圖檔未放入前，播放器改顯示這張向量人物。",
+  "media": {
+    "status": "ai_illustration",
+    "image_path": "illustration.png",
+    "animation_path": null,
+    "animation_format": null,
+    "animation_playback": null,
+    "animation_duration_seconds": null,
+    "figma_url": null
+  },
+  "source_ids": [
+    "clev_posture"
+  ],
+  "library": {
+    "body_part": "胸",
+    "muscle": "胸大肌",
+    "pose": "chest",
+    "source_note": "依公開英文資料改寫動作方向與注意事項。左右放在同一筆；30 秒時間軸與換側是產品編排，與來源的維持秒數不同。",
+    "checked_on": "2026-11-09"
+  }
+}

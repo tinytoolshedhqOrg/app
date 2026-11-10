@@ -89,8 +89,8 @@
   ],
   "animation_brief": "靜態示意圖：坐在無扶手穩固椅子上，雙腳踩穩，雙手垂放。採用 side 人物模板與方向箭頭。對照步驟與換側方向，不使用動畫。",
   "media": {
-    "status": "static_diagram",
-    "image_path": null,
+    "status": "ai_illustration",
+    "image_path": "illustration.png",
     "animation_path": null,
     "animation_format": null,
     "animation_playback": null,

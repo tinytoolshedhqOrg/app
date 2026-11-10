@@ -1,0 +1,110 @@
+{
+  "id": "sit_thumb_touch",
+  "name": "坐姿拇指對指",
+  "content_version": "0.3.0",
+  "status": "draft",
+  "review_status": "source_referenced",
+  "position": "sitting",
+  "body_regions": [
+    "hands"
+  ],
+  "movement_type": "mobility",
+  "access_tier": "free",
+  "duration_seconds": 30,
+  "gap_after_seconds": 3,
+  "equipment": [
+    "chair"
+  ],
+  "setup": "前臂放在大腿上，拇指先伸直。",
+  "description": "拇指依序輕點食指、中指、無名指與小指的指尖，每點一次就把拇指伸直。",
+  "instructions": [
+    "拇指輕點食指指尖，再伸直",
+    "接著點中指與無名指",
+    "再點小指指尖",
+    "拇指伸直放鬆"
+  ],
+  "cautions": [
+    "只到舒服的範圍，不彈震、不憋氣。疼痛、麻木或暈眩時停止。",
+    "已有傷勢、手術後、懷孕或不確定時，先確認這個活動是否適合自己。"
+  ],
+  "movement_timeline": [
+    {
+      "start_seconds": 0,
+      "end_seconds": 10,
+      "instruction": "拇指輕點食指指尖，再伸直"
+    },
+    {
+      "start_seconds": 10,
+      "end_seconds": 15,
+      "instruction": "接著點中指與無名指"
+    },
+    {
+      "start_seconds": 15,
+      "end_seconds": 25,
+      "instruction": "再點小指指尖"
+    },
+    {
+      "start_seconds": 25,
+      "end_seconds": 30,
+      "instruction": "拇指伸直放鬆"
+    }
+  ],
+  "voice_cues": [
+    {
+      "id": "sit_thumb_touch_cue_01",
+      "at_seconds": 0,
+      "max_duration_seconds": 9,
+      "text": "拇指輕點食指，再伸直。",
+      "audio_path": "audio/sit_thumb_touch_cue_01.mp3",
+      "measured_duration_seconds": 2.616,
+      "audio_status": "ready"
+    },
+    {
+      "id": "sit_thumb_touch_cue_02",
+      "at_seconds": 10,
+      "max_duration_seconds": 4,
+      "text": "接著點中指、無名指。",
+      "audio_path": "audio/sit_thumb_touch_cue_02.mp3",
+      "measured_duration_seconds": 2.256,
+      "audio_status": "ready"
+    },
+    {
+      "id": "sit_thumb_touch_cue_03",
+      "at_seconds": 15,
+      "max_duration_seconds": 7,
+      "text": "再點一下小指。",
+      "audio_path": "audio/sit_thumb_touch_cue_03.mp3",
+      "measured_duration_seconds": 1.752,
+      "audio_status": "ready"
+    },
+    {
+      "id": "sit_thumb_touch_cue_04",
+      "at_seconds": 22,
+      "max_duration_seconds": 4,
+      "text": "拇指伸直。",
+      "audio_path": "audio/sit_thumb_touch_cue_04.mp3",
+      "measured_duration_seconds": 1.248,
+      "audio_status": "ready"
+    }
+  ],
+  "animation_brief": "靜態示意圖：前臂放在大腿上，拇指先伸直。採用 hands 人物模板與方向箭頭。圖檔未放入前，播放器改顯示這張向量人物。",
+  "media": {
+    "status": "ai_illustration",
+    "image_path": "illustration.png",
+    "animation_path": null,
+    "animation_format": null,
+    "animation_playback": null,
+    "animation_duration_seconds": null,
+    "figma_url": null
+  },
+  "source_ids": [
+    "ni_wrist"
+  ],
+  "library": {
+    "body_part": "手",
+    "muscle": "拇指肌群",
+    "pose": "hands",
+    "source_note": "依公開英文資料改寫動作方向與注意事項。左右放在同一筆；30 秒時間軸與換側是產品編排，與來源的維持秒數不同。",
+    "checked_on": "2026-11-09"
+  }
+}

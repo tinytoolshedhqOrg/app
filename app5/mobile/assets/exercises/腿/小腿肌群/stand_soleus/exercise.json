@@ -1,0 +1,112 @@
+{
+  "id": "stand_soleus",
+  "name": "屈膝小腿伸展",
+  "content_version": "0.3.0",
+  "status": "draft",
+  "review_status": "source_referenced",
+  "position": "standing",
+  "body_regions": [
+    "calves",
+    "ankles"
+  ],
+  "movement_type": "stretch",
+  "access_tier": "free",
+  "duration_seconds": 30,
+  "gap_after_seconds": 3,
+  "equipment": [
+    "wall"
+  ],
+  "setup": "面對牆或椅背，一腳在後，後膝彎曲，後腳跟留在地面。",
+  "description": "後膝保持微彎，身體微微向前，後腳跟不離地，小腿較下方有輕微拉開，再換腳。",
+  "instructions": [
+    "左腳在後，左膝微彎，腳跟留地",
+    "身體微微向前，不把腳跟抬起",
+    "換右腳在後，右膝微彎",
+    "雙腳收回站穩"
+  ],
+  "cautions": [
+    "只到舒服的範圍，不彈震、不憋氣。疼痛、麻木或暈眩時停止。",
+    "這是後膝彎曲的小腿活動，和直膝扶牆小腿伸展不同。腳跟要留在地面。",
+    "已有傷勢、手術後、懷孕或不確定時，先確認這個活動是否適合自己。"
+  ],
+  "movement_timeline": [
+    {
+      "start_seconds": 0,
+      "end_seconds": 10,
+      "instruction": "左腳在後，左膝微彎，腳跟留地"
+    },
+    {
+      "start_seconds": 10,
+      "end_seconds": 15,
+      "instruction": "身體微微向前，不把腳跟抬起"
+    },
+    {
+      "start_seconds": 15,
+      "end_seconds": 25,
+      "instruction": "換右腳在後，右膝微彎"
+    },
+    {
+      "start_seconds": 25,
+      "end_seconds": 30,
+      "instruction": "雙腳收回站穩"
+    }
+  ],
+  "voice_cues": [
+    {
+      "id": "stand_soleus_cue_01",
+      "at_seconds": 0,
+      "max_duration_seconds": 9,
+      "text": "左腳在後，膝蓋微彎，腳跟留地。",
+      "audio_path": "audio/stand_soleus_cue_01.mp3",
+      "measured_duration_seconds": 3.336,
+      "audio_status": "ready"
+    },
+    {
+      "id": "stand_soleus_cue_02",
+      "at_seconds": 10,
+      "max_duration_seconds": 4,
+      "text": "身體微微向前。",
+      "audio_path": "audio/stand_soleus_cue_02.mp3",
+      "measured_duration_seconds": 1.872,
+      "audio_status": "ready"
+    },
+    {
+      "id": "stand_soleus_cue_03",
+      "at_seconds": 15,
+      "max_duration_seconds": 7,
+      "text": "換右腳在後，膝蓋仍微彎。",
+      "audio_path": "audio/stand_soleus_cue_03.mp3",
+      "measured_duration_seconds": 2.832,
+      "audio_status": "ready"
+    },
+    {
+      "id": "stand_soleus_cue_04",
+      "at_seconds": 22,
+      "max_duration_seconds": 4,
+      "text": "雙腳收回。",
+      "audio_path": "audio/stand_soleus_cue_04.mp3",
+      "measured_duration_seconds": 1.32,
+      "audio_status": "ready"
+    }
+  ],
+  "animation_brief": "靜態示意圖：面對牆或椅背，一腳在後，後膝彎曲，後腳跟留在地面。採用 calf 人物模板與方向箭頭。圖檔未放入前，播放器改顯示這張向量人物。",
+  "media": {
+    "status": "ai_illustration",
+    "image_path": "illustration.png",
+    "animation_path": null,
+    "animation_format": null,
+    "animation_playback": null,
+    "animation_duration_seconds": null,
+    "figma_url": null
+  },
+  "source_ids": [
+    "worcs_stretch"
+  ],
+  "library": {
+    "body_part": "腿",
+    "muscle": "小腿肌群",
+    "pose": "calf",
+    "source_note": "依公開英文資料改寫動作方向與注意事項。左右放在同一筆；30 秒時間軸與換側是產品編排，與來源的維持秒數不同。",
+    "checked_on": "2026-11-09"
+  }
+}

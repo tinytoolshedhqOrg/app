@@ -1,0 +1,108 @@
+{
+  "id": "stand_arm_cross",
+  "name": "站姿手臂抱肩",
+  "content_version": "0.3.0",
+  "status": "draft",
+  "review_status": "source_referenced",
+  "position": "standing",
+  "body_regions": [
+    "shoulders"
+  ],
+  "movement_type": "stretch",
+  "access_tier": "free",
+  "duration_seconds": 30,
+  "gap_after_seconds": 3,
+  "equipment": [],
+  "setup": "雙腳站穩，身旁留一點空間。",
+  "description": "一隻手臂橫過胸口，另一手扶在肘上方或下方，輕抱停一下，再換手。",
+  "instructions": [
+    "右臂橫過胸口，左手輕扶右肘",
+    "只抱到肩膀後面有輕微拉開",
+    "換左臂橫過胸口，右手輕扶",
+    "兩臂放下"
+  ],
+  "cautions": [
+    "只到舒服的範圍，不彈震、不憋氣。疼痛、麻木或暈眩時停止。",
+    "已有傷勢、手術後、懷孕或不確定時，先確認這個活動是否適合自己。"
+  ],
+  "movement_timeline": [
+    {
+      "start_seconds": 0,
+      "end_seconds": 10,
+      "instruction": "右臂橫過胸口，左手輕扶右肘"
+    },
+    {
+      "start_seconds": 10,
+      "end_seconds": 15,
+      "instruction": "只抱到肩膀後面有輕微拉開"
+    },
+    {
+      "start_seconds": 15,
+      "end_seconds": 25,
+      "instruction": "換左臂橫過胸口，右手輕扶"
+    },
+    {
+      "start_seconds": 25,
+      "end_seconds": 30,
+      "instruction": "兩臂放下"
+    }
+  ],
+  "voice_cues": [
+    {
+      "id": "stand_arm_cross_cue_01",
+      "at_seconds": 0,
+      "max_duration_seconds": 9,
+      "text": "右臂橫過胸口，左手輕扶。",
+      "audio_path": "audio/stand_arm_cross_cue_01.mp3",
+      "measured_duration_seconds": null,
+      "audio_status": "pending"
+    },
+    {
+      "id": "stand_arm_cross_cue_02",
+      "at_seconds": 10,
+      "max_duration_seconds": 4,
+      "text": "不要壓著脖子。",
+      "audio_path": "audio/stand_arm_cross_cue_02.mp3",
+      "measured_duration_seconds": null,
+      "audio_status": "pending"
+    },
+    {
+      "id": "stand_arm_cross_cue_03",
+      "at_seconds": 15,
+      "max_duration_seconds": 7,
+      "text": "換左臂橫過胸口。",
+      "audio_path": "audio/stand_arm_cross_cue_03.mp3",
+      "measured_duration_seconds": null,
+      "audio_status": "pending"
+    },
+    {
+      "id": "stand_arm_cross_cue_04",
+      "at_seconds": 22,
+      "max_duration_seconds": 4,
+      "text": "兩臂放下。",
+      "audio_path": "audio/stand_arm_cross_cue_04.mp3",
+      "measured_duration_seconds": null,
+      "audio_status": "pending"
+    }
+  ],
+  "animation_brief": "靜態示意圖：雙腳站穩，身旁留一點空間。採用 shoulder 人物模板與方向箭頭。圖檔未放入前，播放器改顯示這張向量人物。",
+  "media": {
+    "status": "ai_illustration",
+    "image_path": "illustration.png",
+    "animation_path": null,
+    "animation_format": null,
+    "animation_playback": null,
+    "animation_duration_seconds": null,
+    "figma_url": null
+  },
+  "source_ids": [
+    "mayo_stretch"
+  ],
+  "library": {
+    "body_part": "肩",
+    "muscle": "肩帶肌群",
+    "pose": "shoulder",
+    "source_note": "依公開英文資料改寫動作方向與注意事項。左右放在同一筆；30 秒時間軸與換側是產品編排，與來源的維持秒數不同。",
+    "checked_on": "2026-11-09"
+  }
+}

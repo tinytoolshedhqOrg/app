@@ -89,8 +89,8 @@
   ],
   "animation_brief": "靜態示意圖：仰躺在穩定平面，雙腿舒服伸展，頭頸可用薄墊支撐。採用 ankle 人物模板與方向箭頭。對照步驟與換側方向，不使用動畫。",
   "media": {
-    "status": "static_diagram",
-    "image_path": null,
+    "status": "ai_illustration",
+    "image_path": "illustration.png",
     "animation_path": null,
     "animation_format": null,
     "animation_playback": null,

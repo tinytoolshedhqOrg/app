@@ -39,6 +39,8 @@ export default function HomeScreen() {
   const combinationIcons: Record<string, IconName> = {
     standing: "standing", office: "office", morning: "sun",
     bedtime: "moon", hands: "hands", floor: "floor",
+    desk_break: "desk", wake_easy: "sun", lower_body: "legs",
+    neck_shoulders: "neck", wind_down: "moon",
   };
   return (
     <ScrollView

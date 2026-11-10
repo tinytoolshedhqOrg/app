@@ -1,0 +1,111 @@
+{
+  "id": "sit_knee_press",
+  "name": "坐姿膝部輕壓",
+  "content_version": "0.3.0",
+  "status": "draft",
+  "review_status": "source_referenced",
+  "position": "sitting",
+  "body_regions": [
+    "knees"
+  ],
+  "movement_type": "stretch",
+  "access_tier": "free",
+  "duration_seconds": 30,
+  "gap_after_seconds": 3,
+  "equipment": [
+    "chair"
+  ],
+  "setup": "坐穩，把一腳放在對面的穩固椅面上，膝蓋可以微彎。",
+  "description": "輕輕向下用力，讓膝蓋更接近伸直，停一下再換腿。不必把腿壓直。",
+  "instructions": [
+    "右腳放上對椅，膝蓋輕輕向下",
+    "只到舒服的伸直程度",
+    "換左腳放上對椅",
+    "腳放回地面"
+  ],
+  "cautions": [
+    "只到舒服的範圍，不彈震、不憋氣。疼痛、麻木或暈眩時停止。",
+    "對面的椅子要穩、沒有輪子。夠不到就不要勉強。",
+    "已有傷勢、手術後、懷孕或不確定時，先確認這個活動是否適合自己。"
+  ],
+  "movement_timeline": [
+    {
+      "start_seconds": 0,
+      "end_seconds": 10,
+      "instruction": "右腳放上對椅，膝蓋輕輕向下"
+    },
+    {
+      "start_seconds": 10,
+      "end_seconds": 15,
+      "instruction": "只到舒服的伸直程度"
+    },
+    {
+      "start_seconds": 15,
+      "end_seconds": 25,
+      "instruction": "換左腳放上對椅"
+    },
+    {
+      "start_seconds": 25,
+      "end_seconds": 30,
+      "instruction": "腳放回地面"
+    }
+  ],
+  "voice_cues": [
+    {
+      "id": "sit_knee_press_cue_01",
+      "at_seconds": 0,
+      "max_duration_seconds": 9,
+      "text": "右腳放上椅子，膝蓋輕輕向下。",
+      "audio_path": "audio/sit_knee_press_cue_01.mp3",
+      "measured_duration_seconds": null,
+      "audio_status": "pending"
+    },
+    {
+      "id": "sit_knee_press_cue_02",
+      "at_seconds": 10,
+      "max_duration_seconds": 4,
+      "text": "不必完全伸直。",
+      "audio_path": "audio/sit_knee_press_cue_02.mp3",
+      "measured_duration_seconds": null,
+      "audio_status": "pending"
+    },
+    {
+      "id": "sit_knee_press_cue_03",
+      "at_seconds": 15,
+      "max_duration_seconds": 7,
+      "text": "換左腳。",
+      "audio_path": "audio/sit_knee_press_cue_03.mp3",
+      "measured_duration_seconds": null,
+      "audio_status": "pending"
+    },
+    {
+      "id": "sit_knee_press_cue_04",
+      "at_seconds": 22,
+      "max_duration_seconds": 4,
+      "text": "腳放回地面。",
+      "audio_path": "audio/sit_knee_press_cue_04.mp3",
+      "measured_duration_seconds": null,
+      "audio_status": "pending"
+    }
+  ],
+  "animation_brief": "靜態示意圖：坐穩，把一腳放在對面的穩固椅面上，膝蓋可以微彎。採用 knee 人物模板與方向箭頭。圖檔未放入前，播放器改顯示這張向量人物。",
+  "media": {
+    "status": "ai_illustration",
+    "image_path": "illustration.png",
+    "animation_path": null,
+    "animation_format": null,
+    "animation_playback": null,
+    "animation_duration_seconds": null,
+    "figma_url": null
+  },
+  "source_ids": [
+    "ni_knee"
+  ],
+  "library": {
+    "body_part": "腿",
+    "muscle": "股四頭肌",
+    "pose": "knee",
+    "source_note": "依公開英文資料改寫動作方向與注意事項。左右放在同一筆；30 秒時間軸與換側是產品編排，與來源的維持秒數不同。",
+    "checked_on": "2026-11-09"
+  }
+}

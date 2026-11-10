@@ -1,0 +1,112 @@
+{
+  "id": "stand_wall_align",
+  "name": "靠牆站姿對齊",
+  "content_version": "0.3.0",
+  "status": "draft",
+  "review_status": "source_referenced",
+  "position": "standing",
+  "body_regions": [
+    "neck",
+    "shoulders",
+    "waist"
+  ],
+  "movement_type": "mobility",
+  "access_tier": "free",
+  "duration_seconds": 30,
+  "gap_after_seconds": 3,
+  "equipment": [
+    "wall"
+  ],
+  "setup": "背對穩固牆面，腳跟可以離牆一小步。",
+  "description": "後腦、肩胛、臀與腿後側盡量輕靠牆，下巴微收，骨盆輕輕收。碰不到的地方不要硬貼。",
+  "instructions": [
+    "後腦與肩胛輕靠牆，下巴微收",
+    "骨盆輕輕收，腰不要完全壓平",
+    "維持這個高度，自然呼吸",
+    "離開牆面，仍保持站高"
+  ],
+  "cautions": [
+    "只到舒服的範圍，不彈震、不憋氣。疼痛、麻木或暈眩時停止。",
+    "已有傷勢、手術後、懷孕或不確定時，先確認這個活動是否適合自己。"
+  ],
+  "movement_timeline": [
+    {
+      "start_seconds": 0,
+      "end_seconds": 10,
+      "instruction": "後腦與肩胛輕靠牆，下巴微收"
+    },
+    {
+      "start_seconds": 10,
+      "end_seconds": 15,
+      "instruction": "骨盆輕輕收，腰不要完全壓平"
+    },
+    {
+      "start_seconds": 15,
+      "end_seconds": 25,
+      "instruction": "維持這個高度，自然呼吸"
+    },
+    {
+      "start_seconds": 25,
+      "end_seconds": 30,
+      "instruction": "離開牆面，仍保持站高"
+    }
+  ],
+  "voice_cues": [
+    {
+      "id": "stand_wall_align_cue_01",
+      "at_seconds": 0,
+      "max_duration_seconds": 9,
+      "text": "後腦和肩胛輕靠牆。",
+      "audio_path": "audio/stand_wall_align_cue_01.mp3",
+      "measured_duration_seconds": null,
+      "audio_status": "pending"
+    },
+    {
+      "id": "stand_wall_align_cue_02",
+      "at_seconds": 10,
+      "max_duration_seconds": 4,
+      "text": "下巴微收，不要硬貼。",
+      "audio_path": "audio/stand_wall_align_cue_02.mp3",
+      "measured_duration_seconds": null,
+      "audio_status": "pending"
+    },
+    {
+      "id": "stand_wall_align_cue_03",
+      "at_seconds": 15,
+      "max_duration_seconds": 7,
+      "text": "骨盆輕輕收一下。",
+      "audio_path": "audio/stand_wall_align_cue_03.mp3",
+      "measured_duration_seconds": null,
+      "audio_status": "pending"
+    },
+    {
+      "id": "stand_wall_align_cue_04",
+      "at_seconds": 22,
+      "max_duration_seconds": 4,
+      "text": "離開牆，仍然站高。",
+      "audio_path": "audio/stand_wall_align_cue_04.mp3",
+      "measured_duration_seconds": null,
+      "audio_status": "pending"
+    }
+  ],
+  "animation_brief": "靜態示意圖：背對穩固牆面，腳跟可以離牆一小步。採用 blades 人物模板與方向箭頭。圖檔未放入前，播放器改顯示這張向量人物。",
+  "media": {
+    "status": "ai_illustration",
+    "image_path": "illustration.png",
+    "animation_path": null,
+    "animation_format": null,
+    "animation_playback": null,
+    "animation_duration_seconds": null,
+    "figma_url": null
+  },
+  "source_ids": [
+    "clev_posture"
+  ],
+  "library": {
+    "body_part": "背",
+    "muscle": "姿勢肌群",
+    "pose": "blades",
+    "source_note": "依公開英文資料改寫動作方向與注意事項。左右放在同一筆；30 秒時間軸與換側是產品編排，與來源的維持秒數不同。",
+    "checked_on": "2026-11-09"
+  }
+}

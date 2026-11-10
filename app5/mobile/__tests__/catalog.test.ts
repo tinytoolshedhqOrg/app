@@ -15,9 +15,13 @@ import {
 } from "../src/storage/selection";
 
 describe("composable library", () => {
-  it("loads all 36 folders with unique, timed prompts", () => {
+  it("loads all 100 folders with unique, timed prompts", () => {
     const pack = loadBundledContent();
-    expect(pack.exercises).toHaveLength(36);
+    expect(pack.exercises).toHaveLength(100);
+    const free = pack.exercises.filter((e) => e.access_tier === "free").length;
+    const paid = pack.exercises.filter((e) => e.access_tier === "paid").length;
+    expect(free).toBe(100);
+    expect(paid).toBe(0);
     const ids = new Set<string>();
     for (const ex of pack.exercises) {
       expect(ex.duration_seconds).toBe(30);

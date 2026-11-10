@@ -1,0 +1,111 @@
+{
+  "id": "stand_wall_press",
+  "name": "扶牆輕伏撐",
+  "content_version": "0.3.0",
+  "status": "draft",
+  "review_status": "source_referenced",
+  "position": "standing",
+  "body_regions": [
+    "chest",
+    "arms"
+  ],
+  "movement_type": "mobility",
+  "access_tier": "free",
+  "duration_seconds": 30,
+  "gap_after_seconds": 3,
+  "equipment": [
+    "wall"
+  ],
+  "setup": "面對穩固牆面，站在一臂距離，雙手掌心貼牆，約在胸口高度。",
+  "description": "手肘貼近身側，身體慢慢靠近牆，再推回。只做小幅度。",
+  "instructions": [
+    "手肘貼近身側，身體慢慢靠近牆",
+    "不要塌腰，幅度保持很小",
+    "再靠近一次，然後推回",
+    "手臂伸直到舒服的位置，站穩"
+  ],
+  "cautions": [
+    "只到舒服的範圍，不彈震、不憋氣。疼痛、麻木或暈眩時停止。",
+    "已有傷勢、手術後、懷孕或不確定時，先確認這個活動是否適合自己。"
+  ],
+  "movement_timeline": [
+    {
+      "start_seconds": 0,
+      "end_seconds": 10,
+      "instruction": "手肘貼近身側，身體慢慢靠近牆"
+    },
+    {
+      "start_seconds": 10,
+      "end_seconds": 15,
+      "instruction": "不要塌腰，幅度保持很小"
+    },
+    {
+      "start_seconds": 15,
+      "end_seconds": 25,
+      "instruction": "再靠近一次，然後推回"
+    },
+    {
+      "start_seconds": 25,
+      "end_seconds": 30,
+      "instruction": "手臂伸直到舒服的位置，站穩"
+    }
+  ],
+  "voice_cues": [
+    {
+      "id": "stand_wall_press_cue_01",
+      "at_seconds": 0,
+      "max_duration_seconds": 9,
+      "text": "身體慢慢靠近牆，手肘貼身旁。",
+      "audio_path": "audio/stand_wall_press_cue_01.mp3",
+      "measured_duration_seconds": null,
+      "audio_status": "pending"
+    },
+    {
+      "id": "stand_wall_press_cue_02",
+      "at_seconds": 10,
+      "max_duration_seconds": 4,
+      "text": "不要塌腰。",
+      "audio_path": "audio/stand_wall_press_cue_02.mp3",
+      "measured_duration_seconds": null,
+      "audio_status": "pending"
+    },
+    {
+      "id": "stand_wall_press_cue_03",
+      "at_seconds": 15,
+      "max_duration_seconds": 7,
+      "text": "再靠近一次，然後推回去。",
+      "audio_path": "audio/stand_wall_press_cue_03.mp3",
+      "measured_duration_seconds": null,
+      "audio_status": "pending"
+    },
+    {
+      "id": "stand_wall_press_cue_04",
+      "at_seconds": 22,
+      "max_duration_seconds": 4,
+      "text": "站穩，手臂放鬆。",
+      "audio_path": "audio/stand_wall_press_cue_04.mp3",
+      "measured_duration_seconds": null,
+      "audio_status": "pending"
+    }
+  ],
+  "animation_brief": "靜態示意圖：面對穩固牆面，站在一臂距離，雙手掌心貼牆，約在胸口高度。採用 chest 人物模板與方向箭頭。圖檔未放入前，播放器改顯示這張向量人物。",
+  "media": {
+    "status": "ai_illustration",
+    "image_path": "illustration.png",
+    "animation_path": null,
+    "animation_format": null,
+    "animation_playback": null,
+    "animation_duration_seconds": null,
+    "figma_url": null
+  },
+  "source_ids": [
+    "nhs_strength"
+  ],
+  "library": {
+    "body_part": "胸",
+    "muscle": "胸大肌",
+    "pose": "chest",
+    "source_note": "依公開英文資料改寫動作方向與注意事項。左右放在同一筆；30 秒時間軸與換側是產品編排，與來源的維持秒數不同。",
+    "checked_on": "2026-11-09"
+  }
+}

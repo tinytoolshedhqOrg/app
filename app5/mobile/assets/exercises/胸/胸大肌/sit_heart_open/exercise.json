@@ -1,0 +1,111 @@
+{
+  "id": "sit_heart_open",
+  "name": "坐姿胸口後收",
+  "content_version": "0.3.0",
+  "status": "draft",
+  "review_status": "source_referenced",
+  "position": "sitting",
+  "body_regions": [
+    "chest",
+    "shoulders"
+  ],
+  "movement_type": "stretch",
+  "access_tier": "free",
+  "duration_seconds": 30,
+  "gap_after_seconds": 3,
+  "equipment": [
+    "chair"
+  ],
+  "setup": "坐在椅面前緣，雙腳踩地，背不要靠著椅背。",
+  "description": "脊柱拉長，肩胛輕輕向後向下，胸口留在正中。手臂可以放在身側。",
+  "instructions": [
+    "坐高，肩胛向後向下輕收",
+    "胸口留在正中，不把肋骨挺出",
+    "再收一次肩胛，手臂仍放鬆",
+    "肩膀放鬆，坐回舒服的位置"
+  ],
+  "cautions": [
+    "只到舒服的範圍，不彈震、不憋氣。疼痛、麻木或暈眩時停止。",
+    "已有傷勢、手術後、懷孕或不確定時，先確認這個活動是否適合自己。"
+  ],
+  "movement_timeline": [
+    {
+      "start_seconds": 0,
+      "end_seconds": 10,
+      "instruction": "坐高，肩胛向後向下輕收"
+    },
+    {
+      "start_seconds": 10,
+      "end_seconds": 15,
+      "instruction": "胸口留在正中，不把肋骨挺出"
+    },
+    {
+      "start_seconds": 15,
+      "end_seconds": 25,
+      "instruction": "再收一次肩胛，手臂仍放鬆"
+    },
+    {
+      "start_seconds": 25,
+      "end_seconds": 30,
+      "instruction": "肩膀放鬆，坐回舒服的位置"
+    }
+  ],
+  "voice_cues": [
+    {
+      "id": "sit_heart_open_cue_01",
+      "at_seconds": 0,
+      "max_duration_seconds": 9,
+      "text": "坐高，肩胛向後向下。",
+      "audio_path": "audio/sit_heart_open_cue_01.mp3",
+      "measured_duration_seconds": 2.52,
+      "audio_status": "ready"
+    },
+    {
+      "id": "sit_heart_open_cue_02",
+      "at_seconds": 10,
+      "max_duration_seconds": 4,
+      "text": "肋骨不要挺出。",
+      "audio_path": "audio/sit_heart_open_cue_02.mp3",
+      "measured_duration_seconds": 1.608,
+      "audio_status": "ready"
+    },
+    {
+      "id": "sit_heart_open_cue_03",
+      "at_seconds": 15,
+      "max_duration_seconds": 7,
+      "text": "再輕輕收一次肩胛。",
+      "audio_path": "audio/sit_heart_open_cue_03.mp3",
+      "measured_duration_seconds": 2.232,
+      "audio_status": "ready"
+    },
+    {
+      "id": "sit_heart_open_cue_04",
+      "at_seconds": 22,
+      "max_duration_seconds": 4,
+      "text": "肩膀放鬆。",
+      "audio_path": "audio/sit_heart_open_cue_04.mp3",
+      "measured_duration_seconds": 1.296,
+      "audio_status": "ready"
+    }
+  ],
+  "animation_brief": "靜態示意圖：坐在椅面前緣，雙腳踩地，背不要靠著椅背。採用 chest 人物模板與方向箭頭。圖檔未放入前，播放器改顯示這張向量人物。",
+  "media": {
+    "status": "ai_illustration",
+    "image_path": "illustration.png",
+    "animation_path": null,
+    "animation_format": null,
+    "animation_playback": null,
+    "animation_duration_seconds": null,
+    "figma_url": null
+  },
+  "source_ids": [
+    "clev_yoga"
+  ],
+  "library": {
+    "body_part": "胸",
+    "muscle": "胸大肌",
+    "pose": "chest",
+    "source_note": "依公開英文資料改寫動作方向與注意事項。左右放在同一筆；30 秒時間軸與換側是產品編排，與來源的維持秒數不同。",
+    "checked_on": "2026-11-09"
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "id": "stand_leg_back",
+  "name": "站姿腿向後抬",
+  "content_version": "0.3.0",
+  "status": "draft",
+  "review_status": "source_referenced",
+  "position": "standing",
+  "body_regions": [
+    "hips"
+  ],
+  "movement_type": "mobility",
+  "access_tier": "free",
+  "duration_seconds": 30,
+  "gap_after_seconds": 3,
+  "equipment": [
+    "chair"
+  ],
+  "setup": "面對穩固椅背，雙手輕扶。",
+  "description": "一腿站穩，另一腿伸直慢慢向後抬起一點，停一下再放下，然後換腿。",
+  "instructions": [
+    "右腿伸直，慢慢向後抬一點",
+    "停一下，腰不要前挺",
+    "換左腿向後抬一點",
+    "雙腳踩回地面"
+  ],
+  "cautions": [
+    "只到舒服的範圍，不彈震、不憋氣。疼痛、麻木或暈眩時停止。",
+    "已有傷勢、手術後、懷孕或不確定時，先確認這個活動是否適合自己。"
+  ],
+  "movement_timeline": [
+    {
+      "start_seconds": 0,
+      "end_seconds": 10,
+      "instruction": "右腿伸直，慢慢向後抬一點"
+    },
+    {
+      "start_seconds": 10,
+      "end_seconds": 15,
+      "instruction": "停一下，腰不要前挺"
+    },
+    {
+      "start_seconds": 15,
+      "end_seconds": 25,
+      "instruction": "換左腿向後抬一點"
+    },
+    {
+      "start_seconds": 25,
+      "end_seconds": 30,
+      "instruction": "雙腳踩回地面"
+    }
+  ],
+  "voice_cues": [
+    {
+      "id": "stand_leg_back_cue_01",
+      "at_seconds": 0,
+      "max_duration_seconds": 9,
+      "text": "右腿慢慢向後抬一點。",
+      "audio_path": "audio/stand_leg_back_cue_01.mp3",
+      "measured_duration_seconds": 2.328,
+      "audio_status": "ready"
+    },
+    {
+      "id": "stand_leg_back_cue_02",
+      "at_seconds": 10,
+      "max_duration_seconds": 4,
+      "text": "腰不要前挺。",
+      "audio_path": "audio/stand_leg_back_cue_02.mp3",
+      "measured_duration_seconds": 1.392,
+      "audio_status": "ready"
+    },
+    {
+      "id": "stand_leg_back_cue_03",
+      "at_seconds": 15,
+      "max_duration_seconds": 7,
+      "text": "換左腿向後抬。",
+      "audio_path": "audio/stand_leg_back_cue_03.mp3",
+      "measured_duration_seconds": 1.776,
+      "audio_status": "ready"
+    },
+    {
+      "id": "stand_leg_back_cue_04",
+      "at_seconds": 22,
+      "max_duration_seconds": 4,
+      "text": "雙腳踩穩。",
+      "audio_path": "audio/stand_leg_back_cue_04.mp3",
+      "measured_duration_seconds": 1.248,
+      "audio_status": "ready"
+    }
+  ],
+  "animation_brief": "靜態示意圖：面對穩固椅背，雙手輕扶。採用 calf 人物模板與方向箭頭。圖檔未放入前，播放器改顯示這張向量人物。",
+  "media": {
+    "status": "ai_illustration",
+    "image_path": "illustration.png",
+    "animation_path": null,
+    "animation_format": null,
+    "animation_playback": null,
+    "animation_duration_seconds": null,
+    "figma_url": null
+  },
+  "source_ids": [
+    "ni_hip"
+  ],
+  "library": {
+    "body_part": "髖臀",
+    "muscle": "髖伸肌群",
+    "pose": "calf",
+    "source_note": "依公開英文資料改寫動作方向與注意事項。左右放在同一筆；30 秒時間軸與換側是產品編排，與來源的維持秒數不同。",
+    "checked_on": "2026-11-09"
+  }
+}
