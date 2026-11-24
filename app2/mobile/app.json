@@ -2,14 +2,14 @@
   "expo": {
     "name": "急廁 Go",
     "slug": "toilet-go",
-    "version": "1.1.5",
+    "version": "1.1.6",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.toiletgo.app",
-      "buildNumber": "22",
+      "buildNumber": "24",
       "infoPlist": {
         "CFBundleAllowMixedLocalizations": true,
         "NSLocationWhenInUseUsageDescription": "Your location is used to find nearby stores and cafes with a toilet.",
