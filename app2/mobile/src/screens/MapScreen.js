@@ -119,8 +119,9 @@ function runningInExpoGo() {
 }
 
 async function openGoogleMaps(place) {
-  // Coordinates first so a generic category like 咖啡 is not sent as the search.
-  // The app uses Google Maps (web destination= / app daddr=), not Apple Maps.
+  // Named places: Google Maps search (query= / q=), with center=lat,lng when
+  // known so a chain store opens the nearby branch. Unnamed places (e.g. 公廁)
+  // still use destination= / daddr= coordinates. Not Apple Maps.
   const urls = googleMapsUrls(place);
   if (!urls) {
     Alert.alert(t('map.navFailTitle'), t('map.navFailBody'));

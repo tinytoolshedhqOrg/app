@@ -9,7 +9,7 @@
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.toiletgo.app",
-      "buildNumber": "27",
+      "buildNumber": "28",
       "infoPlist": {
         "CFBundleAllowMixedLocalizations": true,
         "NSLocationWhenInUseUsageDescription": "Your location is used to find nearby stores and cafes with a toilet.",
