@@ -11,6 +11,7 @@ import {
 import BottomSheet, { BottomSheetScrollView } from '@gorhom/bottom-sheet';
 import { colors, radius } from '../theme';
 import { formatDistance, formatHours, isHoursUnknown } from '../lib/geo';
+import { placeLabel } from '../lib/placeLabel';
 import { MAX_COMMENT_LEN, MAX_COMMENTS_PER_PLACE } from '../lib/community';
 import { t, useLanguage } from '../i18n';
 
@@ -74,8 +75,7 @@ export default function PlaceDetailSheet({
             </View>
             <View style={{ flex: 1 }}>
               <Text style={styles.title}>
-                {place.type}
-                {place.name ? ` ${place.name}` : ''}
+                {placeLabel(place)}
               </Text>
               <Text style={styles.addr}>{place.地址}</Text>
             </View>
