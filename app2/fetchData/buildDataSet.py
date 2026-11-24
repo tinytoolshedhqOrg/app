@@ -39,6 +39,8 @@ FREE_SOURCE_FILES = [
     "hk_kfc.json",
     "jp_mcdonalds.json",
     "jp_starbucks_mos.json",
+    # Vietnam venues with toilets=yes. Public toilets stay Pro-only.
+    "vn_venues_toilets.json",
 ]
 
 # Pro offline pack includes every free source plus paid types.
@@ -65,9 +67,11 @@ PRO_SOURCE_FILES = [
     "jp_station_toilets.json",
     "jp_sapa.json",
     "jp_michinoeki.json",
-    # Vietnam OSM confirmed toilets only (© OpenStreetMap contributors, ODbL).
-    # Pro pack only; free list is unchanged until categories are chosen.
+    # Vietnam OSM (© OpenStreetMap contributors, ODbL).
+    # vn_toilets.json is 公廁 (Pro only). vn_venues_toilets.json is also free,
+    # and free sources are repeated here so the offline pack stays complete.
     "vn_toilets.json",
+    "vn_venues_toilets.json",
 ]
 
 REQUIRED = ("id", "type", "地址", "lat", "lng", "營業時間")

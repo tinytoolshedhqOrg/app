@@ -62,7 +62,12 @@ GEOM_RANK = {
     "MultiPolygon": 4,
 }
 
-CONFIRMED_FILE = "vn_toilets.json"
+# amenity=toilets (type 公廁). Pro pack only, same as TW/HK public toilets.
+TOILETS_FILE = "vn_toilets.json"
+# toilets=yes venues. Free CDN, and also the Pro pack: every FREE_SOURCE_FILES
+# entry is listed again in PRO_SOURCE_FILES.
+VENUES_FILE = "vn_venues_toilets.json"
+PUBLIC_TOILET_BUCKET = "amenity=toilets"
 
 # Existing app type strings where a category already exists (公廁, 商場, 加油站).
 # Hotel / cafe / restaurant / museum / attraction / theme park / bus / rail have
@@ -505,8 +510,16 @@ def load_objects(source: str, pbf: Path | None, *, refresh: bool) -> dict[tuple[
         return overpass_vietnam()
 
 
-def collect(objects, *, include_department_store: bool) -> tuple[list[dict], Counter]:
-    confirmed: list[dict] = []
+def output_file(bucket: str) -> str:
+    """Public toilets stay Pro-only. Every other confirmed venue is free."""
+    if bucket == PUBLIC_TOILET_BUCKET:
+        return TOILETS_FILE
+    return VENUES_FILE
+
+
+def collect(objects, *, include_department_store: bool) -> tuple[list[dict], list[dict], Counter]:
+    toilets: list[dict] = []
+    venues: list[dict] = []
     stats: Counter = Counter()
     for (osm_type, osm_id), (_rank, geometry, tags) in objects.items():
         stats["objects"] += 1
@@ -530,20 +543,27 @@ def collect(objects, *, include_department_store: bool) -> tuple[list[dict], Cou
             osm_type,
             osm_id,
             type_name,
-            toilets_yes=(bucket != "amenity=toilets"),
+            toilets_yes=(bucket != PUBLIC_TOILET_BUCKET),
         )
+        dest = output_file(bucket)
+        stats[f"file:{dest}"] += 1
         stats[f"bucket:{bucket}"] += 1
+        group = "toilets" if dest == TOILETS_FILE else "venues"
         for city, box in CITY_BOXES.items():
             if in_box(lat, lng, box):
-                stats[f"city:{city}"] += 1
-        confirmed.append(row)
-    confirmed.sort(key=lambda row: (row["type"], row["name"], row["id"]))
-    return confirmed, stats
+                stats[f"city:{city}:{group}"] += 1
+        if dest == TOILETS_FILE:
+            toilets.append(row)
+        else:
+            venues.append(row)
+    toilets.sort(key=lambda row: (row["type"], row["name"], row["id"]))
+    venues.sort(key=lambda row: (row["type"], row["name"], row["id"]))
+    return toilets, venues, stats
 
 
-def print_summary(confirmed: list[dict], stats: Counter) -> None:
+def print_summary(toilets: list[dict], venues: list[dict], stats: Counter) -> None:
     print("\n=== Vietnam toilet summary ===", flush=True)
-    print(f"confirmed {len(confirmed)}", flush=True)
+    print(f"{TOILETS_FILE} {len(toilets)}  {VENUES_FILE} {len(venues)}", flush=True)
     print(
         "dropped "
         f"geometry={stats['dropped_geometry']} "
@@ -555,10 +575,14 @@ def print_summary(confirmed: list[dict], stats: Counter) -> None:
         if key.startswith("bucket:"):
             print(f"  {count:6d}  {key.split(':', 1)[1]}", flush=True)
     for city in CITY_BOXES:
-        print(f"  {city}: {stats[f'city:{city}']}", flush=True)
-    if confirmed:
-        lats = [row["lat"] for row in confirmed]
-        lngs = [row["lng"] for row in confirmed]
+        print(
+            f"  {city}: toilets {stats[f'city:{city}:toilets']}  venues {stats[f'city:{city}:venues']}",
+            flush=True,
+        )
+    rows = toilets + venues
+    if rows:
+        lats = [row["lat"] for row in rows]
+        lngs = [row["lng"] for row in rows]
         print(
             f"extent lat {min(lats):.4f}..{max(lats):.4f}  lng {min(lngs):.4f}..{max(lngs):.4f}",
             flush=True,
@@ -586,6 +610,10 @@ def self_test() -> None:
     assert classify({"shop": "department_store", "toilets": "yes"}, include_department_store=False) is None
     assert classify({"amenity": "fuel"}) is None
     assert classify({"amenity": "fuel", "toilets": "yes"})[1] == "加油站"
+    assert output_file("amenity=toilets") == "vn_toilets.json"
+    assert output_file("shop=mall") == "vn_venues_toilets.json"
+    assert output_file("amenity=cafe") == "vn_venues_toilets.json"
+    assert output_file("railway=station") == "vn_venues_toilets.json"
     assert pick_name({"name:vi": "Hà Nội", "name:en": "Hanoi", "name": "Ha Noi"}, "公廁") == "Ha Noi"
     assert pick_name({"name:en": "Hanoi", "name:vi": "Hà Nội"}, "公廁") == "Hà Nội"
     assert pick_name({"brand": "Petrolimex"}, "加油站") == "Petrolimex"
@@ -636,14 +664,15 @@ def main() -> None:
         self_test()
         return
     objects = load_objects(args.source, args.pbf, refresh=args.refresh)
-    confirmed, stats = collect(
+    toilets, venues, stats = collect(
         objects,
         include_department_store=not args.no_department_store,
     )
-    if not confirmed:
+    if not toilets and not venues:
         raise SystemExit("no Vietnam places produced")
-    save_json(CONFIRMED_FILE, confirmed)
-    print_summary(confirmed, stats)
+    save_json(TOILETS_FILE, toilets)
+    save_json(VENUES_FILE, venues)
+    print_summary(toilets, venues, stats)
 
 
 if __name__ == "__main__":

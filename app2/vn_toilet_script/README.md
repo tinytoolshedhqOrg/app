@@ -41,9 +41,16 @@ Overpass endpoint: <https://overpass-api.de/api/interpreter> (plus kumi.systems 
 
 ## Output
 
-`data/vn_toilets.json` only. Confirmed toilets: `amenity=toilets` (except `access=private` / `access=no`), plus venues below that are tagged `toilets=yes`. Venues without `toilets=yes` are not written.
+Two JSON arrays. Venues without `toilets=yes` are not written.
 
-The file is a JSON array. Each record is:
+| File | Contents | Pack |
+|---|---|---|
+| `data/vn_toilets.json` | `amenity=toilets` except `access=private` / `access=no` (type `公廁`) | Pro only |
+| `data/vn_venues_toilets.json` | Other confirmed venues tagged `toilets=yes` | Free, and also Pro |
+
+Free sources are listed in both `FREE_SOURCE_FILES` and `PRO_SOURCE_FILES` (7-Eleven, MTR, KFC, McDonald’s, Starbucks/MOS). `vn_venues_toilets.json` follows that. `vn_toilets.json` does not.
+
+Each record is:
 
 ```json
 {
@@ -59,7 +66,7 @@ The file is a JSON array. Each record is:
 
 `id` is `vn-` plus a 12-hex SHA1 of type, name, address, and `osm type:id`, same scheme as `hk-` / `jp-` in `fetchData/common.py`. Coordinates are WGS84, rounded to 7 decimals. Way and relation centers come from the polygon centroid (largest ring for multipolygons) or the vertex average for lines.
 
-`buildDataSet.py` lists this file in `PRO_SOURCE_FILES` only. It is not in `FREE_SOURCE_FILES`. Publishing still needs `python3 fetchData/buildDataSet.py` and `bash deploy-places.sh`.
+Publishing still needs `python3 fetchData/buildDataSet.py` and `bash deploy-places.sh`. The free CDN merge (`dataSet.json`) does not include `vn_toilets.json`.
 
 ## What is included
 
@@ -101,35 +108,34 @@ City shards (`城市.json`) only match addresses that start with a Taiwan `縣`/
 
 Geofabrik extract dated 2026-11-23 (`vietnam-latest.osm.pbf`, data extent 8.56–23.38 N, 102.16–109.46 E). Re-run the script to refresh.
 
-| File | Records | Size | vs existing |
+| File | Records | Size | Pack |
 |---|---:|---:|---|
-| `data/vn_toilets.json` | 1,304 | 582 KB | smaller than `jp_public_toilets.json` (2,112 / 1.1 MB) |
+| `data/vn_toilets.json` | 1,110 | 438 KB | Pro only (`公廁`) |
+| `data/vn_venues_toilets.json` | 194 | 143 KB | Free and Pro |
 
-Unconfirmed venues are not generated. Counts below are confirmed toilets only.
+`vn_toilets.json` is smaller than `jp_public_toilets.json` (2,112 / 1.1 MB).
 
-Confirmed 1,304:
-
-| OSM | Type | Count |
-|---|---|---:|
-| `amenity=toilets` | 公廁 | 1,110 |
-| `amenity=cafe` + `toilets=yes` | 咖啡 | 89 |
-| `amenity=restaurant` + `toilets=yes` | 餐廳 | 81 |
-| `shop=mall` + `toilets=yes` | 商場 | 16 |
-| `tourism=museum` + `toilets=yes` | 博物館 | 4 |
-| `railway=station` + `toilets=yes` | 車站 | 2 |
-| `amenity=bus_station` + `toilets=yes` | 公車站 | 1 |
-| `tourism=attraction` + `toilets=yes` | 景點 | 1 |
+| OSM | Type | File | Count |
+|---|---|---|---:|
+| `amenity=toilets` | 公廁 | `vn_toilets.json` | 1,110 |
+| `amenity=cafe` + `toilets=yes` | 咖啡 | `vn_venues_toilets.json` | 89 |
+| `amenity=restaurant` + `toilets=yes` | 餐廳 | `vn_venues_toilets.json` | 81 |
+| `shop=mall` + `toilets=yes` | 商場 | `vn_venues_toilets.json` | 16 |
+| `tourism=museum` + `toilets=yes` | 博物館 | `vn_venues_toilets.json` | 4 |
+| `railway=station` + `toilets=yes` | 車站 | `vn_venues_toilets.json` | 2 |
+| `amenity=bus_station` + `toilets=yes` | 公車站 | `vn_venues_toilets.json` | 1 |
+| `tourism=attraction` + `toilets=yes` | 景點 | `vn_venues_toilets.json` | 1 |
 
 Urban boxes, not the full municipal boundary:
 
-- Hanoi 20.90–21.20 N, 105.70–106.05 E: 247 (公廁 218, 餐廳 13, 咖啡 8, 商場 7, 博物館 1)
-- HCMC 10.68–10.90 N, 106.55–106.85 E: 153 (公廁 103, 咖啡 32, 餐廳 15, 商場 3)
+- Hanoi 20.90–21.20 N, 105.70–106.05 E: 公廁 218, venues 29 (餐廳 13, 咖啡 8, 商場 7, 博物館 1)
+- HCMC 10.68–10.90 N, 106.55–106.85 E: 公廁 103, venues 50 (咖啡 32, 餐廳 15, 商場 3)
 
 ## What the app still needs
 
-No UI change is required to parse these records. They show up only after the Pro pack is rebuilt and a device has downloaded it:
+No UI change is required to parse these records. They show up after `buildDataSet.py` is run and the free cells (venues) or Pro pack (公廁 plus venues) are deployed:
 
 - `resolveMarket()` has no Vietnam market, so help text stays generic.
-- `FREE_SOURCE_FILES` is unchanged. Which Vietnam categories belong in the free version is still open. A free install in Vietnam loads empty cells until that choice is made, or until the user downloads the full pack.
+- The free map will include `vn_venues_toilets.json` only. `公廁` stays in the Pro pack.
 - Store listing and the help modal do not mention Vietnam.
 - `營業時間.raw` extras (`fee`, `access`, `wheelchair`, `toilets=yes`) are hidden while hours are `unknown`.
