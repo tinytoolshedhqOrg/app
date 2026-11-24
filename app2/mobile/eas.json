@@ -31,6 +31,14 @@
         "EXPO_PUBLIC_PLACES_URL": "https://tinytoolshedhq.github.io/app/places",
         "EXPO_PUBLIC_IAP_PRODUCT_ID": "com.toiletgo.app.fullpack"
       }
+    },
+    "testflight": {
+      "autoIncrement": true,
+      "distribution": "store",
+      "env": {
+        "EXPO_PUBLIC_PLACES_URL": "https://tinytoolshedhqorg.github.io/app/places-staging",
+        "EXPO_PUBLIC_IAP_PRODUCT_ID": "com.toiletgo.app.fullpack"
+      }
     }
   },
   "submit": {
@@ -41,6 +49,11 @@
       "android": {
         "track": "internal",
         "releaseStatus": "draft"
+      }
+    },
+    "testflight": {
+      "ios": {
+        "ascAppId": "6798266716"
       }
     }
   }
