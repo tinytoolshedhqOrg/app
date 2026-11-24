@@ -35,6 +35,10 @@ export function isGenericPlaceType(type) {
   return GENERIC_PLACE_TYPES.has(String(type || '').trim());
 }
 
+export function placeName(place) {
+  return String(place?.name || '').trim();
+}
+
 /**
  * Sheet / marker title.
  * Brand types stay "7-11 台場". Generic types show the name only, or the
@@ -42,7 +46,7 @@ export function isGenericPlaceType(type) {
  */
 export function placeLabel(place) {
   const type = String(place?.type || '').trim();
-  const name = String(place?.name || '').trim();
+  const name = placeName(place);
   if (isGenericPlaceType(type)) {
     return name || type;
   }
@@ -57,30 +61,54 @@ export function coordinateDestination(place) {
   return `${lat},${lng}`;
 }
 
-/** Text fallback if coordinates are missing. Generic category types are omitted. */
+/**
+ * Google Maps search text when the place has a real name.
+ * Brand types stay in the query ("7-11 台場"); generic types are omitted.
+ * Address is appended when present (same Taiwan behavior as before PR #81,
+ * minus generic category prefixes).
+ */
 export function navigationTextQuery(place) {
   const type = String(place?.type || '').trim();
-  const name = String(place?.name || '').trim();
+  const name = placeName(place);
   const addr = String(place?.['地址'] || '').trim();
   const parts = [];
-  if (type && !isGenericPlaceType(type)) parts.push(type);
+  if (type && !isGenericPlaceType(type) && name) parts.push(type);
   if (name) parts.push(name);
-  if (addr) parts.push(addr);
+  if (name && addr) parts.push(addr);
   return [...new Set(parts)].join(' ');
 }
 
 /**
- * Destination string for Google Maps (web `destination=` / app `daddr=`).
- * Coordinates first so navigation always hits the pin.
+ * Search by name when one exists; otherwise fall back to coordinates.
+ * Used by tests and as the human-readable destination summary.
  */
 export function navigationDestination(place) {
-  return coordinateDestination(place) || navigationTextQuery(place);
+  return navigationTextQuery(place) || coordinateDestination(place);
 }
 
+/**
+ * Google Maps URLs.
+ * Named places: search query (plus center=lat,lng when coords exist, to
+ * bias the correct branch). Unnamed places: directions to lat,lng.
+ */
 export function googleMapsUrls(place) {
-  const dest = navigationDestination(place);
-  if (!dest) return null;
-  const encoded = encodeURIComponent(dest);
+  const text = navigationTextQuery(place);
+  const coords = coordinateDestination(place);
+
+  if (text) {
+    const q = encodeURIComponent(text);
+    const web = `https://www.google.com/maps/search/?api=1&query=${q}`;
+    const app = coords
+      ? `comgooglemaps://?q=${q}&center=${coords}`
+      : `comgooglemaps://?q=${q}`;
+    return {
+      web: coords ? `${web}&center=${coords}` : web,
+      app,
+    };
+  }
+
+  if (!coords) return null;
+  const encoded = encodeURIComponent(coords);
   return {
     web: `https://www.google.com/maps/dir/?api=1&destination=${encoded}&travelmode=walking`,
     app: `comgooglemaps://?daddr=${encoded}&directionsmode=walking`,

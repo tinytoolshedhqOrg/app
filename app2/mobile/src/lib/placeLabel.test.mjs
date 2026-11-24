@@ -27,7 +27,7 @@ test('placeLabel drops generic category when a name exists', () => {
   assert.equal(placeLabel({ type: '港鐵', name: '台北車站' }), '港鐵 台北車站');
 });
 
-test('navigation uses coordinates when present', () => {
+test('named Vietnam venue searches by name, not coordinates, and biases with center', () => {
   const vn = {
     type: '咖啡',
     name: 'Highlands Coffee',
@@ -36,16 +36,37 @@ test('navigation uses coordinates when present', () => {
     lng: 106.6982421,
   };
   assert.equal(navigationTextQuery(vn), 'Highlands Coffee');
-  assert.equal(navigationDestination(vn), '10.7747454,106.6982421');
+  assert.equal(navigationDestination(vn), 'Highlands Coffee');
   const urls = googleMapsUrls(vn);
   assert.equal(
     urls.web,
-    'https://www.google.com/maps/dir/?api=1&destination=10.7747454%2C106.6982421&travelmode=walking',
+    'https://www.google.com/maps/search/?api=1&query=Highlands%20Coffee&center=10.7747454,106.6982421',
   );
-  assert.equal(urls.app, 'comgooglemaps://?daddr=10.7747454%2C106.6982421&directionsmode=walking');
+  assert.equal(
+    urls.app,
+    'comgooglemaps://?q=Highlands%20Coffee&center=10.7747454,106.6982421',
+  );
 });
 
-test('Taiwan 7-11 destination is still the pin coordinates', () => {
+test('named Vietnam venue with address includes the address in the search', () => {
+  const vn = {
+    type: '咖啡',
+    name: 'Highlands Coffee',
+    地址: '187 Đường Phạm Ngũ Lão',
+    lat: 10.7686142,
+    lng: 106.6934398,
+  };
+  assert.equal(navigationTextQuery(vn), 'Highlands Coffee 187 Đường Phạm Ngũ Lão');
+  const urls = googleMapsUrls(vn);
+  const q = encodeURIComponent('Highlands Coffee 187 Đường Phạm Ngũ Lão');
+  assert.equal(
+    urls.web,
+    `https://www.google.com/maps/search/?api=1&query=${q}&center=10.7686142,106.6934398`,
+  );
+  assert.equal(urls.app, `comgooglemaps://?q=${q}&center=10.7686142,106.6934398`);
+});
+
+test('Taiwan 7-11 searches by brand label plus address, biased to the pin', () => {
   const tw = {
     type: '7-11',
     name: '台場',
@@ -55,14 +76,40 @@ test('Taiwan 7-11 destination is still the pin coordinates', () => {
   };
   assert.equal(placeLabel(tw), '7-11 台場');
   assert.equal(navigationTextQuery(tw), '7-11 台場 台北市松山區八德路三段20-2號');
-  assert.equal(navigationDestination(tw), '25.0481234,121.5656789');
+  assert.equal(navigationDestination(tw), '7-11 台場 台北市松山區八德路三段20-2號');
+  const urls = googleMapsUrls(tw);
+  const q = encodeURIComponent('7-11 台場 台北市松山區八德路三段20-2號');
+  assert.equal(
+    urls.web,
+    `https://www.google.com/maps/search/?api=1&query=${q}&center=25.0481234,121.5656789`,
+  );
+  assert.equal(urls.app, `comgooglemaps://?q=${q}&center=25.0481234,121.5656789`);
 });
 
-test('falls back to a text query without generic types if coords are missing', () => {
+test('unnamed places fall back to coordinate directions', () => {
+  const toilet = { type: '公廁', name: '', lat: 10.8010103, lng: 106.6647105 };
+  assert.equal(placeLabel(toilet), '公廁');
+  assert.equal(navigationTextQuery(toilet), '');
+  assert.equal(navigationDestination(toilet), '10.8010103,106.6647105');
+  const urls = googleMapsUrls(toilet);
+  assert.equal(
+    urls.web,
+    'https://www.google.com/maps/dir/?api=1&destination=10.8010103%2C106.6647105&travelmode=walking',
+  );
+  assert.equal(urls.app, 'comgooglemaps://?daddr=10.8010103%2C106.6647105&directionsmode=walking');
+});
+
+test('named place without coords still searches by name', () => {
   const cafe = { type: '咖啡', name: 'Highlands Coffee', 地址: '187 Đường Phạm Ngũ Lão' };
   assert.equal(navigationTextQuery(cafe), 'Highlands Coffee 187 Đường Phạm Ngũ Lão');
-  assert.equal(navigationDestination(cafe), 'Highlands Coffee 187 Đường Phạm Ngũ Lão');
   assert.equal(coordinateDestination(cafe), '');
+  const urls = googleMapsUrls(cafe);
+  const q = encodeURIComponent('Highlands Coffee 187 Đường Phạm Ngũ Lão');
+  assert.equal(urls.web, `https://www.google.com/maps/search/?api=1&query=${q}`);
+  assert.equal(urls.app, `comgooglemaps://?q=${q}`);
+});
+
+test('generic type alone with no name or coords cannot navigate', () => {
   const bare = { type: '公廁' };
   assert.equal(navigationDestination(bare), '');
   assert.equal(googleMapsUrls(bare), null);
