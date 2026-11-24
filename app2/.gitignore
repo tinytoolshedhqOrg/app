@@ -9,6 +9,7 @@ web/dist/
 
 # Python bytecode
 fetchData/__pycache__/
+vn_toilet_script/__pycache__/
 
 # Mobile offline hotspot cells + cellRegistry MUST be tracked so EAS can bundle them.
 # Regenerate with: python3 fetchData/buildDataSet.py

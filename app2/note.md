@@ -51,6 +51,7 @@
 
 # 資料來源
 可從 `fetchData/` run 各個 python script 取得 json 到 `data/`（例如 `711_with_toilet.json`），再由 `buildDataSet.py` **產出** `dataSet.json`、空間格子、以及縣市檔。  
+越南：`vn_toilet_script/fetch_vietnam.py` 從 OpenStreetMap（Geofabrik Vietnam PBF，Overpass 為備援）產出 `data/vn_toilets.json`（已確認）與 `data/vn_possible.json`（未確認）。**© OpenStreetMap contributors**，授權 ODbL。這兩份只進 Pro 包（`PRO_SOURCE_FILES`），不進免費 `dataSet.json`。  
 **注意：** `dataSet.json` 是產物不是輸入；只改它再跑 build 會被 `711_with_toilet.json` 覆蓋。要改店家請改 source JSON 或重跑抓資料腳本。  
 admin 會定期重跑 `buildDataSet.py`。客戶端「附近」只載入 9 格；「全部」載入畫面範圍內的 cells（超過 60 格則不載），不再整包 import `dataSet.json`。
 
