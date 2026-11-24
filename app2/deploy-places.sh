@@ -1,12 +1,20 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-# Deploy data/dist/ to GitHub Pages (gh-pages branch) under /places/
+# Deploy data/dist/ to GitHub Pages (gh-pages branch) under /${PLACES_DIR}/
+# PLACES_DIR is a single path segment (default: places). Example:
+#   PLACES_DIR=places-staging bash deploy-places.sh
 # After running, assets are available at:
-#   https://tinytoolshedhq.github.io/app/places/cells/{i}_{j}.json
-#   https://tinytoolshedhq.github.io/app/places/cities/{縣市}.json
-#   https://tinytoolshedhq.github.io/app/places/pack/full.json
-#   https://tinytoolshedhq.github.io/app/places/pack/manifest.json
+#   https://tinytoolshedhqorg.github.io/app/{dir}/cells/{i}_{j}.json
+#   https://tinytoolshedhqorg.github.io/app/{dir}/cities/{縣市}.json
+#   https://tinytoolshedhqorg.github.io/app/{dir}/pack/full.json
+#   https://tinytoolshedhqorg.github.io/app/{dir}/pack/manifest.json
+
+PLACES_DIR="${PLACES_DIR:-places}"
+if [[ ! "$PLACES_DIR" =~ ^[A-Za-z0-9._-]+$ ]]; then
+  echo "Error: PLACES_DIR must be a single path segment (letters, numbers, dot, underscore, hyphen)."
+  exit 1
+fi
 
 DIST_DIR="$(cd "$(dirname "$0")/data/dist" && pwd)"
 REPO_ROOT="$(cd "$(dirname "$0")/.." && pwd)"
@@ -32,24 +40,24 @@ else
   cd "$REPO_ROOT"
 fi
 
-rm -rf "$TEMP_DIR/places"
-mkdir -p "$TEMP_DIR/places"
-cp -r "$DIST_DIR/cells" "$TEMP_DIR/places/cells"
+rm -rf "$TEMP_DIR/$PLACES_DIR"
+mkdir -p "$TEMP_DIR/$PLACES_DIR"
+cp -r "$DIST_DIR/cells" "$TEMP_DIR/$PLACES_DIR/cells"
 if [ -d "$DIST_DIR/cities" ]; then
-  cp -r "$DIST_DIR/cities" "$TEMP_DIR/places/cities"
+  cp -r "$DIST_DIR/cities" "$TEMP_DIR/$PLACES_DIR/cities"
 fi
-cp "$DIST_DIR/manifest.json" "$TEMP_DIR/places/manifest.json" 2>/dev/null || true
-cp "$DIST_DIR/index.slim.json" "$TEMP_DIR/places/index.slim.json" 2>/dev/null || true
+cp "$DIST_DIR/manifest.json" "$TEMP_DIR/$PLACES_DIR/manifest.json" 2>/dev/null || true
+cp "$DIST_DIR/index.slim.json" "$TEMP_DIR/$PLACES_DIR/index.slim.json" 2>/dev/null || true
 if [ -d "$DIST_DIR/pack" ]; then
-  cp -r "$DIST_DIR/pack" "$TEMP_DIR/places/pack"
+  cp -r "$DIST_DIR/pack" "$TEMP_DIR/$PLACES_DIR/pack"
 fi
 
 cd "$TEMP_DIR"
 git add -A
-git commit -m "update places data $(date +%Y-%m-%d)" --allow-empty
+git commit -m "update ${PLACES_DIR} data $(date +%Y-%m-%d)" --allow-empty
 git push origin gh-pages
 
 cd "$REPO_ROOT"
 git worktree remove "$TEMP_DIR" --force 2>/dev/null || true
 
-echo "Done! Places CDN: https://tinytoolshedhq.github.io/app/places"
+echo "Done! Places CDN: https://tinytoolshedhqorg.github.io/app/${PLACES_DIR}"
