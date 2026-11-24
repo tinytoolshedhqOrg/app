@@ -65,9 +65,9 @@ PRO_SOURCE_FILES = [
     "jp_station_toilets.json",
     "jp_sapa.json",
     "jp_michinoeki.json",
-    # Vietnam OSM (© OpenStreetMap contributors, ODbL). Pro pack only.
+    # Vietnam OSM confirmed toilets only (© OpenStreetMap contributors, ODbL).
+    # Pro pack only; free list is unchanged until categories are chosen.
     "vn_toilets.json",
-    "vn_possible.json",
 ]
 
 REQUIRED = ("id", "type", "地址", "lat", "lng", "營業時間")

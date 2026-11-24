@@ -41,12 +41,9 @@ Overpass endpoint: <https://overpass-api.de/api/interpreter> (plus kumi.systems 
 
 ## Output
 
-| File | Tier |
-|---|---|
-| `data/vn_toilets.json` | Confirmed toilet |
-| `data/vn_possible.json` | Toilet not confirmed |
+`data/vn_toilets.json` only. Confirmed toilets: `amenity=toilets` (except `access=private` / `access=no`), plus venues below that are tagged `toilets=yes`. Venues without `toilets=yes` are not written.
 
-Both files are JSON arrays. Each record is:
+The file is a JSON array. Each record is:
 
 ```json
 {
@@ -62,38 +59,33 @@ Both files are JSON arrays. Each record is:
 
 `id` is `vn-` plus a 12-hex SHA1 of type, name, address, and `osm type:id`, same scheme as `hk-` / `jp-` in `fetchData/common.py`. Coordinates are WGS84, rounded to 7 decimals. Way and relation centers come from the polygon centroid (largest ring for multipolygons) or the vertex average for lines.
 
-`buildDataSet.py` lists both files in `PRO_SOURCE_FILES` only. They are not in the free CDN merge (`dataSet.json`). Publishing still needs `python3 fetchData/buildDataSet.py` and `bash deploy-places.sh`.
+`buildDataSet.py` lists this file in `PRO_SOURCE_FILES` only. It is not in `FREE_SOURCE_FILES`. Publishing still needs `python3 fetchData/buildDataSet.py` and `bash deploy-places.sh`.
 
 ## What is included
 
-Confirmed (`vn_toilets.json`):
-
 - `amenity=toilets`, except `access=private` or `access=no`
-- Any venue below tagged `toilets=yes` (same access exclusion)
-
-Possible (`vn_possible.json`). Toilet is not confirmed; using it may mean buying something or asking:
-
-- `shop=mall` and `shop=department_store` (drop department stores with `--no-department-store`)
-- `tourism=hotel`
-- `amenity=cafe`, `amenity=restaurant`
-- `tourism=museum`, `tourism=attraction`, `tourism=theme_park`
-- `amenity=fuel`
-- `amenity=bus_station`
-- `railway=station`
+- A venue below only when it is tagged `toilets=yes` (same access exclusion):
+  - `shop=mall` and `shop=department_store` (`--no-department-store` drops the latter)
+  - `tourism=hotel`
+  - `amenity=cafe`, `amenity=restaurant`
+  - `tourism=museum`, `tourism=attraction`, `tourism=theme_park`
+  - `amenity=fuel`
+  - `amenity=bus_station`
+  - `railway=station`
 
 Excluded:
 
+- Any venue that does not have `toilets=yes`
 - `aeroway=*` and `amenity=aerodrome` / `airport`
 - `shop=convenience`, even with `toilets=yes`
 - Ferry terminals (`amenity=ferry_terminal`, `station=ferry`, `railway=ferry`)
 - Objects that are only `public_transport=station` (a railway station that also has that tag is kept)
-- `toilets=no` on a venue (toilet is confirmed absent, so it is not "possible")
 
 If one object matches several categories, the first hit wins: railway station, bus station, mall, department store, fuel, hotel, museum, theme park, cafe, restaurant, attraction. `amenity=toilets` wins over all of those.
 
 ## Format decisions
 
-The place schema has no confirmed/possible field, and `buildDataSet.py` only keeps `id`, `type`, `name`, `地址`, `lat`, `lng`, `營業時間`. The split is two source files, which is how the other countries separate feeds. Inside a record:
+`buildDataSet.py` only keeps `id`, `type`, `name`, `地址`, `lat`, `lng`, `營業時間`. Inside a record:
 
 - Confirmed public toilets use the existing type `公廁` (same as Taiwan FAC_P_07 and Hong Kong public toilets).
 - Venues use the closest existing type when there is one: `商場` (mall and department store, same as Hong Kong), `加油站`.
@@ -112,9 +104,8 @@ Geofabrik extract dated 2026-11-23 (`vietnam-latest.osm.pbf`, data extent 8.56�
 | File | Records | Size | vs existing |
 |---|---:|---:|---|
 | `data/vn_toilets.json` | 1,304 | 582 KB | smaller than `jp_public_toilets.json` (2,112 / 1.1 MB) |
-| `data/vn_possible.json` | 37,575 | 17 MB | about 3× `public_toilets.json` (12,664 / 5.5 MB), the largest current source file |
 
-The possible file is kept. Drop `vn_possible.json` from `PRO_SOURCE_FILES` if the pack should stay smaller. `shop=department_store` is 1,097 of the possible `商場` rows and is noisy in this extract (fabric shops, dealers); malls alone are 256 possible + 16 confirmed.
+Unconfirmed venues are not generated. Counts below are confirmed toilets only.
 
 Confirmed 1,304:
 
@@ -129,34 +120,16 @@ Confirmed 1,304:
 | `amenity=bus_station` + `toilets=yes` | 公車站 | 1 |
 | `tourism=attraction` + `toilets=yes` | 景點 | 1 |
 
-Possible 37,575:
-
-| OSM | Type | Count |
-|---|---|---:|
-| `amenity=restaurant` | 餐廳 | 12,335 |
-| `amenity=cafe` | 咖啡 | 9,560 |
-| `tourism=hotel` | 飯店 | 6,280 |
-| `amenity=fuel` | 加油站 | 5,091 |
-| `tourism=attraction` | 景點 | 1,508 |
-| `shop=department_store` | 商場 | 1,097 |
-| `amenity=bus_station` | 公車站 | 546 |
-| `railway=station` | 車站 | 458 |
-| `tourism=museum` | 博物館 | 392 |
-| `shop=mall` | 商場 | 256 |
-| `tourism=theme_park` | 主題樂園 | 52 |
-
-366 filtered objects were referenced geometry (crossings and similar) and were not places. None were dropped for geometry or for falling outside Vietnam.
-
 Urban boxes, not the full municipal boundary:
 
-- Hanoi 20.90–21.20 N, 105.70–106.05 E: 247 confirmed (公廁 218, 餐廳 13, 咖啡 8, 商場 7, 博物館 1), 4,903 possible (餐廳 1,999, 咖啡 1,515, 飯店 646, 加油站 264, 車站 147, 商場 132, 景點 129, 博物館 45, 公車站 25, 主題樂園 1)
-- HCMC 10.68–10.90 N, 106.55–106.85 E: 153 confirmed (公廁 103, 咖啡 32, 餐廳 15, 商場 3), 5,655 possible (餐廳 2,468, 咖啡 1,739, 飯店 696, 加油站 458, 商場 130, 景點 63, 公車站 48, 博物館 31, 車站 18, 主題樂園 4)
+- Hanoi 20.90–21.20 N, 105.70–106.05 E: 247 (公廁 218, 餐廳 13, 咖啡 8, 商場 7, 博物館 1)
+- HCMC 10.68–10.90 N, 106.55–106.85 E: 153 (公廁 103, 咖啡 32, 餐廳 15, 商場 3)
 
 ## What the app still needs
 
 No UI change is required to parse these records. They show up only after the Pro pack is rebuilt and a device has downloaded it:
 
 - `resolveMarket()` has no Vietnam market, so help text stays generic.
-- Free sources are still 7-Eleven / MTR+KFC / McDonald’s+Starbucks+MOS. A free install in Vietnam loads empty cells until `vn_toilets.json` is added to `FREE_SOURCE_FILES` or the user downloads the full pack.
+- `FREE_SOURCE_FILES` is unchanged. Which Vietnam categories belong in the free version is still open. A free install in Vietnam loads empty cells until that choice is made, or until the user downloads the full pack.
 - Store listing and the help modal do not mention Vietnam.
 - `營業時間.raw` extras (`fee`, `access`, `wheelchair`, `toilets=yes`) are hidden while hours are `unknown`.

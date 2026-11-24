@@ -63,7 +63,6 @@ GEOM_RANK = {
 }
 
 CONFIRMED_FILE = "vn_toilets.json"
-POSSIBLE_FILE = "vn_possible.json"
 
 # Existing app type strings where a category already exists (公廁, 商場, 加油站).
 # Hotel / cafe / restaurant / museum / attraction / theme park / bus / rail have
@@ -114,12 +113,8 @@ def _toilets_yes(tags: dict) -> bool:
     return _tag(tags, "toilets").lower() in {"yes", "true", "1"}
 
 
-def _toilets_no(tags: dict) -> bool:
-    return _tag(tags, "toilets").lower() in {"no", "false", "0"}
-
-
 def venue_match(tags: dict) -> tuple[str, str] | None:
-    """Return (osm bucket, app type) for a possible-tier category."""
+    """Return (osm bucket, app type) for a venue that can carry toilets=yes."""
     for key, value, type_name in VENUE_RULES:
         if _tag(tags, key) == value:
             return f"{key}={value}", type_name
@@ -129,11 +124,11 @@ def venue_match(tags: dict) -> tuple[str, str] | None:
 def classify(tags: dict, *, include_department_store: bool = True) -> tuple[str, str, str] | None:
     """Return (tier, app type, osm bucket) or None when the feature is dropped.
 
-    tier is `confirmed` or `possible`. Confirmed is amenity=toilets, or a
-    venue in the category list tagged toilets=yes. There is no schema field
-    for that split: confirmed public toilets use type 公廁, and a confirmed
-    venue keeps its category type with `toilets=yes` appended to 營業時間.raw
-    (the same channel JP station toilets use for `fee=`).
+    Only confirmed toilets are kept: amenity=toilets, or a venue in the
+    category list tagged toilets=yes. Venues without that tag are omitted.
+    Public toilets use type 公廁. A toilets=yes venue keeps its category type
+    and appends toilets=yes to 營業時間.raw (the same channel JP station
+    toilets use for fee=).
     """
     if _is_airport(tags) or _is_convenience(tags):
         return None
@@ -150,13 +145,9 @@ def classify(tags: dict, *, include_department_store: bool = True) -> tuple[str,
     bucket, type_name = matched
     if bucket == "shop=department_store" and not include_department_store:
         return None
-    if _toilets_no(tags):
+    if not _toilets_yes(tags) or _closed_access(tags):
         return None
-    if _toilets_yes(tags):
-        if _closed_access(tags):
-            return None
-        return "confirmed", type_name, bucket
-    return "possible", type_name, bucket
+    return "confirmed", type_name, bucket
 
 
 def pick_name(tags: dict, fallback: str) -> str:
@@ -514,9 +505,8 @@ def load_objects(source: str, pbf: Path | None, *, refresh: bool) -> dict[tuple[
         return overpass_vietnam()
 
 
-def collect(objects, *, include_department_store: bool) -> tuple[list[dict], list[dict], Counter]:
+def collect(objects, *, include_department_store: bool) -> tuple[list[dict], Counter]:
     confirmed: list[dict] = []
-    possible: list[dict] = []
     stats: Counter = Counter()
     for (osm_type, osm_id), (_rank, geometry, tags) in objects.items():
         stats["objects"] += 1
@@ -532,7 +522,7 @@ def collect(objects, *, include_department_store: bool) -> tuple[list[dict], lis
         if decision is None:
             stats["dropped_rules"] += 1
             continue
-        tier, type_name, bucket = decision
+        _tier, type_name, bucket = decision
         row = build_record(
             tags,
             lat,
@@ -540,26 +530,20 @@ def collect(objects, *, include_department_store: bool) -> tuple[list[dict], lis
             osm_type,
             osm_id,
             type_name,
-            toilets_yes=(tier == "confirmed" and bucket != "amenity=toilets"),
+            toilets_yes=(bucket != "amenity=toilets"),
         )
-        stats[f"tier:{tier}"] += 1
-        stats[f"type:{tier}:{type_name}"] += 1
-        stats[f"bucket:{tier}:{bucket}"] += 1
+        stats[f"bucket:{bucket}"] += 1
         for city, box in CITY_BOXES.items():
             if in_box(lat, lng, box):
-                stats[f"city:{city}:{tier}"] += 1
-        if tier == "confirmed":
-            confirmed.append(row)
-        else:
-            possible.append(row)
+                stats[f"city:{city}"] += 1
+        confirmed.append(row)
     confirmed.sort(key=lambda row: (row["type"], row["name"], row["id"]))
-    possible.sort(key=lambda row: (row["type"], row["name"], row["id"]))
-    return confirmed, possible, stats
+    return confirmed, stats
 
 
-def print_summary(confirmed: list[dict], possible: list[dict], stats: Counter) -> None:
+def print_summary(confirmed: list[dict], stats: Counter) -> None:
     print("\n=== Vietnam toilet summary ===", flush=True)
-    print(f"confirmed {len(confirmed)}  possible {len(possible)}", flush=True)
+    print(f"confirmed {len(confirmed)}", flush=True)
     print(
         "dropped "
         f"geometry={stats['dropped_geometry']} "
@@ -567,17 +551,14 @@ def print_summary(confirmed: list[dict], possible: list[dict], stats: Counter) -
         f"rules={stats['dropped_rules']}",
         flush=True,
     )
-    for tier, rows in (("confirmed", confirmed), ("possible", possible)):
-        print(f"[{tier}]", flush=True)
-        buckets = [(key, count) for key, count in sorted(stats.items()) if key.startswith(f"bucket:{tier}:")]
-        for key, count in buckets:
-            print(f"  {count:6d}  {key.split(':', 2)[2]}", flush=True)
-        for city in CITY_BOXES:
-            print(f"  {city}: {stats[f'city:{city}:{tier}']}", flush=True)
-    all_rows = confirmed + possible
-    if all_rows:
-        lats = [row["lat"] for row in all_rows]
-        lngs = [row["lng"] for row in all_rows]
+    for key, count in sorted(stats.items()):
+        if key.startswith("bucket:"):
+            print(f"  {count:6d}  {key.split(':', 1)[1]}", flush=True)
+    for city in CITY_BOXES:
+        print(f"  {city}: {stats[f'city:{city}']}", flush=True)
+    if confirmed:
+        lats = [row["lat"] for row in confirmed]
+        lngs = [row["lng"] for row in confirmed]
         print(
             f"extent lat {min(lats):.4f}..{max(lats):.4f}  lng {min(lngs):.4f}..{max(lngs):.4f}",
             flush=True,
@@ -591,19 +572,20 @@ def self_test() -> None:
     assert classify({"amenity": "toilets", "access": "customers"})[0] == "confirmed"
     assert classify({"amenity": "toilets", "shop": "convenience"}) is None
     assert classify({"amenity": "toilets", "aeroway": "terminal"}) is None
-    assert classify({"shop": "mall"}) == ("possible", "商場", "shop=mall")
+    assert classify({"shop": "mall"}) is None
     assert classify({"shop": "mall", "toilets": "yes"}) == ("confirmed", "商場", "shop=mall")
     assert classify({"shop": "mall", "toilets": "yes", "access": "private"}) is None
     assert classify({"amenity": "restaurant", "toilets": "no"}) is None
     assert classify({"amenity": "cafe", "shop": "convenience"}) is None
     assert classify({"public_transport": "station"}) is None
-    assert classify({"railway": "station"}) == ("possible", "車站", "railway=station")
-    assert classify({"railway": "station", "public_transport": "station"})[2] == "railway=station"
-    assert classify({"railway": "station", "station": "ferry"}) is None
-    assert classify({"amenity": "ferry_terminal", "tourism": "attraction"}) is None
-    assert classify({"tourism": "hotel", "aeroway": "aerodrome"}) is None
-    assert classify({"shop": "department_store"}, include_department_store=False) is None
-    assert classify({"amenity": "fuel"})[1] == "加油站"
+    assert classify({"railway": "station"}) is None
+    assert classify({"railway": "station", "toilets": "yes", "public_transport": "station"})[2] == "railway=station"
+    assert classify({"railway": "station", "station": "ferry", "toilets": "yes"}) is None
+    assert classify({"amenity": "ferry_terminal", "tourism": "attraction", "toilets": "yes"}) is None
+    assert classify({"tourism": "hotel", "aeroway": "aerodrome", "toilets": "yes"}) is None
+    assert classify({"shop": "department_store", "toilets": "yes"}, include_department_store=False) is None
+    assert classify({"amenity": "fuel"}) is None
+    assert classify({"amenity": "fuel", "toilets": "yes"})[1] == "加油站"
     assert pick_name({"name:vi": "Hà Nội", "name:en": "Hanoi", "name": "Ha Noi"}, "公廁") == "Ha Noi"
     assert pick_name({"name:en": "Hanoi", "name:vi": "Hà Nội"}, "公廁") == "Hà Nội"
     assert pick_name({"brand": "Petrolimex"}, "加油站") == "Petrolimex"
@@ -654,15 +636,14 @@ def main() -> None:
         self_test()
         return
     objects = load_objects(args.source, args.pbf, refresh=args.refresh)
-    confirmed, possible, stats = collect(
+    confirmed, stats = collect(
         objects,
         include_department_store=not args.no_department_store,
     )
-    if not confirmed and not possible:
+    if not confirmed:
         raise SystemExit("no Vietnam places produced")
     save_json(CONFIRMED_FILE, confirmed)
-    save_json(POSSIBLE_FILE, possible)
-    print_summary(confirmed, possible, stats)
+    print_summary(confirmed, stats)
 
 
 if __name__ == "__main__":
