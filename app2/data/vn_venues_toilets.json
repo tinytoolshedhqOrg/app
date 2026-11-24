@@ -1,0 +1,7490 @@
+[
+  {
+    "id": "vn-715d4e77ea84",
+    "type": "公車站",
+    "name": "Sao Viet",
+    "地址": "",
+    "lat": 22.8053125,
+    "lng": 104.9755604,
+    "營業時間": {
+      "raw": "toilets=yes",
+      "allDay": false,
+      "unknown": true,
+      "byDay": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": []
+      }
+    }
+  },
+  {
+    "id": "vn-5d1aa0a8685a",
+    "type": "博物館",
+    "name": "Bảo tàng Hồ Chí Minh",
+    "地址": "19 Phố Ngọc Hà, Phường Ba Đình, Hà Nội, Thành phố Hà Nội",
+    "lat": 21.0356131,
+    "lng": 105.8326022,
+    "營業時間": {
+      "raw": "Tu-Th 08:00-11:30; Sa-Su 14:00-16:30 fee=yes wheelchair=yes toilets=yes",
+      "allDay": false,
+      "unknown": true,
+      "byDay": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": []
+      }
+    }
+  },
+  {
+    "id": "vn-63f01a50ca9f",
+    "type": "博物館",
+    "name": "Bảo tàng Nghệ thuật Điêu khắc Chăm Đà Nẵng",
+    "地址": "Đường Bạch Đằng",
+    "lat": 16.0602574,
+    "lng": 108.2231849,
+    "營業時間": {
+      "raw": "fee=yes wheelchair=yes toilets=yes",
+      "allDay": false,
+      "unknown": true,
+      "byDay": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": []
+      }
+    }
+  },
+  {
+    "id": "vn-ea8febee6d1f",
+    "type": "博物館",
+    "name": "Bảo tàng Đà Nẵng",
+    "地址": "42 Đường Trần Phú",
+    "lat": 16.0748353,
+    "lng": 108.2239758,
+    "營業時間": {
+      "raw": "08:00-17:00 wheelchair=limited toilets=yes",
+      "allDay": false,
+      "unknown": false,
+      "byDay": {
+        "1": [
+          {
+            "open": "08:00",
+            "close": "17:00"
+          }
+        ],
+        "2": [
+          {
+            "open": "08:00",
+            "close": "17:00"
+          }
+        ],
+        "3": [
+          {
+            "open": "08:00",
+            "close": "17:00"
+          }
+        ],
+        "4": [
+          {
+            "open": "08:00",
+            "close": "17:00"
+          }
+        ],
+        "5": [
+          {
+            "open": "08:00",
+            "close": "17:00"
+          }
+        ],
+        "6": [
+          {
+            "open": "08:00",
+            "close": "17:00"
+          }
+        ],
+        "7": [
+          {
+            "open": "08:00",
+            "close": "17:00"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "vn-ab25ced786a9",
+    "type": "博物館",
+    "name": "Natural history museum",
+    "地址": "",
+    "lat": 20.7945806,
+    "lng": 106.9904418,
+    "營業時間": {
+      "raw": "toilets=yes",
+      "allDay": false,
+      "unknown": true,
+      "byDay": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": []
+      }
+    }
+  },
+  {
+    "id": "vn-3da617555996",
+    "type": "咖啡",
+    "name": "An Coffee",
+    "地址": "Đường tỉnh 385, Thôn Nghĩa Lộ, Hưng Yên",
+    "lat": 20.9857238,
+    "lng": 106.0401,
+    "營業時間": {
+      "raw": "Mon-Sun (7am-10pm) wheelchair=limited toilets=yes",
+      "allDay": false,
+      "unknown": true,
+      "byDay": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": []
+      }
+    }
+  },
+  {
+    "id": "vn-f2eadade6912",
+    "type": "咖啡",
+    "name": "B&B Coffee",
+    "地址": "",
+    "lat": 10.7261119,
+    "lng": 106.6154027,
+    "營業時間": {
+      "raw": "Mo-Su 06:00-22:00 toilets=yes",
+      "allDay": false,
+      "unknown": false,
+      "byDay": {
+        "1": [
+          {
+            "open": "06:00",
+            "close": "22:00"
+          }
+        ],
+        "2": [
+          {
+            "open": "06:00",
+            "close": "22:00"
+          }
+        ],
+        "3": [
+          {
+            "open": "06:00",
+            "close": "22:00"
+          }
+        ],
+        "4": [
+          {
+            "open": "06:00",
+            "close": "22:00"
+          }
+        ],
+        "5": [
+          {
+            "open": "06:00",
+            "close": "22:00"
+          }
+        ],
+        "6": [
+          {
+            "open": "06:00",
+            "close": "22:00"
+          }
+        ],
+        "7": [
+          {
+            "open": "06:00",
+            "close": "22:00"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "vn-7a81530e9f1e",
+    "type": "咖啡",
+    "name": "BUTAbasor Tea & Fruits",
+    "地址": "56-BT1 Lý Thành Long, Hải Phòng",
+    "lat": 20.8429174,
+    "lng": 106.6906533,
+    "營業時間": {
+      "raw": "Mo-Su 07:00-23:00 wheelchair=limited toilets=yes",
+      "allDay": false,
+      "unknown": false,
+      "byDay": {
+        "1": [
+          {
+            "open": "07:00",
+            "close": "23:00"
+          }
+        ],
+        "2": [
+          {
+            "open": "07:00",
+            "close": "23:00"
+          }
+        ],
+        "3": [
+          {
+            "open": "07:00",
+            "close": "23:00"
+          }
+        ],
+        "4": [
+          {
+            "open": "07:00",
+            "close": "23:00"
+          }
+        ],
+        "5": [
+          {
+            "open": "07:00",
+            "close": "23:00"
+          }
+        ],
+        "6": [
+          {
+            "open": "07:00",
+            "close": "23:00"
+          }
+        ],
+        "7": [
+          {
+            "open": "07:00",
+            "close": "23:00"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "vn-6511638486be",
+    "type": "咖啡",
+    "name": "Barista Collective",
+    "地址": "Hẻm 264 Lê Văn Sỹ, Quận 3, Thành phố Hồ Chí Minh, Hồ Chí Minh",
+    "lat": 10.7874342,
+    "lng": 106.6806507,
+    "營業時間": {
+      "raw": "Mo-Su 07:30-22:00 toilets=yes",
+      "allDay": false,
+      "unknown": false,
+      "byDay": {
+        "1": [
+          {
+            "open": "07:30",
+            "close": "22:00"
+          }
+        ],
+        "2": [
+          {
+            "open": "07:30",
+            "close": "22:00"
+          }
+        ],
+        "3": [
+          {
+            "open": "07:30",
+            "close": "22:00"
+          }
+        ],
+        "4": [
+          {
+            "open": "07:30",
+            "close": "22:00"
+          }
+        ],
+        "5": [
+          {
+            "open": "07:30",
+            "close": "22:00"
+          }
+        ],
+        "6": [
+          {
+            "open": "07:30",
+            "close": "22:00"
+          }
+        ],
+        "7": [
+          {
+            "open": "07:30",
+            "close": "22:00"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "vn-d8e45d4f4960",
+    "type": "咖啡",
+    "name": "Becoming Specialty Coffee",
+    "地址": "74 Đường Thi Sách, Quận Hải Châu, Thành phố Đà Nẵng",
+    "lat": 16.0537961,
+    "lng": 108.2055094,
+    "營業時間": {
+      "raw": "Mo-Su 08:00-21:00 toilets=yes",
+      "allDay": false,
+      "unknown": false,
+      "byDay": {
+        "1": [
+          {
+            "open": "08:00",
+            "close": "21:00"
+          }
+        ],
+        "2": [
+          {
+            "open": "08:00",
+            "close": "21:00"
+          }
+        ],
+        "3": [
+          {
+            "open": "08:00",
+            "close": "21:00"
+          }
+        ],
+        "4": [
+          {
+            "open": "08:00",
+            "close": "21:00"
+          }
+        ],
+        "5": [
+          {
+            "open": "08:00",
+            "close": "21:00"
+          }
+        ],
+        "6": [
+          {
+            "open": "08:00",
+            "close": "21:00"
+          }
+        ],
+        "7": [
+          {
+            "open": "08:00",
+            "close": "21:00"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "vn-62b9986540e4",
+    "type": "咖啡",
+    "name": "Cafe Lafam",
+    "地址": "199 Hoa Lan, Phú Nhuận, TP.HCM",
+    "lat": 10.7984718,
+    "lng": 106.6862289,
+    "營業時間": {
+      "raw": "07:00-22:30 toilets=yes",
+      "allDay": false,
+      "unknown": false,
+      "byDay": {
+        "1": [
+          {
+            "open": "07:00",
+            "close": "22:30"
+          }
+        ],
+        "2": [
+          {
+            "open": "07:00",
+            "close": "22:30"
+          }
+        ],
+        "3": [
+          {
+            "open": "07:00",
+            "close": "22:30"
+          }
+        ],
+        "4": [
+          {
+            "open": "07:00",
+            "close": "22:30"
+          }
+        ],
+        "5": [
+          {
+            "open": "07:00",
+            "close": "22:30"
+          }
+        ],
+        "6": [
+          {
+            "open": "07:00",
+            "close": "22:30"
+          }
+        ],
+        "7": [
+          {
+            "open": "07:00",
+            "close": "22:30"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "vn-c8b97c69fe4f",
+    "type": "咖啡",
+    "name": "Cafe Vy Tùng",
+    "地址": "69 Tản Đà, Tuy Hòa, Đắk Lắk",
+    "lat": 13.0841207,
+    "lng": 109.3023428,
+    "營業時間": {
+      "raw": "Mo-Su 06:00-22:00 wheelchair=limited toilets=yes",
+      "allDay": false,
+      "unknown": false,
+      "byDay": {
+        "1": [
+          {
+            "open": "06:00",
+            "close": "22:00"
+          }
+        ],
+        "2": [
+          {
+            "open": "06:00",
+            "close": "22:00"
+          }
+        ],
+        "3": [
+          {
+            "open": "06:00",
+            "close": "22:00"
+          }
+        ],
+        "4": [
+          {
+            "open": "06:00",
+            "close": "22:00"
+          }
+        ],
+        "5": [
+          {
+            "open": "06:00",
+            "close": "22:00"
+          }
+        ],
+        "6": [
+          {
+            "open": "06:00",
+            "close": "22:00"
+          }
+        ],
+        "7": [
+          {
+            "open": "06:00",
+            "close": "22:00"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "vn-e8f5b1fc6763",
+    "type": "咖啡",
+    "name": "Cafè Phố Cổ",
+    "地址": "11 Phố Hàng Gai, Hoàn Kiếm, Hà Nội, Thành phố Hà Nội",
+    "lat": 21.0322358,
+    "lng": 105.8510679,
+    "營業時間": {
+      "raw": "toilets=yes",
+      "allDay": false,
+      "unknown": true,
+      "byDay": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": []
+      }
+    }
+  },
+  {
+    "id": "vn-33973485013e",
+    "type": "咖啡",
+    "name": "Calo Mango House",
+    "地址": "",
+    "lat": 12.2654652,
+    "lng": 109.1963958,
+    "營業時間": {
+      "raw": "toilets=yes",
+      "allDay": false,
+      "unknown": true,
+      "byDay": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": []
+      }
+    }
+  },
+  {
+    "id": "vn-d4fd7f7615a0",
+    "type": "咖啡",
+    "name": "Cargo Club Cafe & Restaurant",
+    "地址": "107-109 Nguyễn Thái Học",
+    "lat": 15.8764695,
+    "lng": 108.3275305,
+    "營業時間": {
+      "raw": "Mo-Su 10:00-22:00 wheelchair=limited toilets=yes",
+      "allDay": false,
+      "unknown": false,
+      "byDay": {
+        "1": [
+          {
+            "open": "10:00",
+            "close": "22:00"
+          }
+        ],
+        "2": [
+          {
+            "open": "10:00",
+            "close": "22:00"
+          }
+        ],
+        "3": [
+          {
+            "open": "10:00",
+            "close": "22:00"
+          }
+        ],
+        "4": [
+          {
+            "open": "10:00",
+            "close": "22:00"
+          }
+        ],
+        "5": [
+          {
+            "open": "10:00",
+            "close": "22:00"
+          }
+        ],
+        "6": [
+          {
+            "open": "10:00",
+            "close": "22:00"
+          }
+        ],
+        "7": [
+          {
+            "open": "10:00",
+            "close": "22:00"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "vn-054d0d1002ad",
+    "type": "咖啡",
+    "name": "Centro Farms Coffee Studio",
+    "地址": "",
+    "lat": 21.3248755,
+    "lng": 103.9179621,
+    "營業時間": {
+      "raw": "Mo-Su 08:00-23:00 toilets=yes",
+      "allDay": false,
+      "unknown": false,
+      "byDay": {
+        "1": [
+          {
+            "open": "08:00",
+            "close": "23:00"
+          }
+        ],
+        "2": [
+          {
+            "open": "08:00",
+            "close": "23:00"
+          }
+        ],
+        "3": [
+          {
+            "open": "08:00",
+            "close": "23:00"
+          }
+        ],
+        "4": [
+          {
+            "open": "08:00",
+            "close": "23:00"
+          }
+        ],
+        "5": [
+          {
+            "open": "08:00",
+            "close": "23:00"
+          }
+        ],
+        "6": [
+          {
+            "open": "08:00",
+            "close": "23:00"
+          }
+        ],
+        "7": [
+          {
+            "open": "08:00",
+            "close": "23:00"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "vn-6227ec9985a3",
+    "type": "咖啡",
+    "name": "Chốn Riêng",
+    "地址": "335 Phạm Văn Chí, Quận 6, Ho Chi Minh City",
+    "lat": 10.7435612,
+    "lng": 106.6446004,
+    "營業時間": {
+      "raw": "wheelchair=no toilets=yes",
+      "allDay": false,
+      "unknown": true,
+      "byDay": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": []
+      }
+    }
+  },
+  {
+    "id": "vn-96c520d107b9",
+    "type": "咖啡",
+    "name": "Coffee Bean",
+    "地址": "Lý Thái Tổ",
+    "lat": 10.3823683,
+    "lng": 105.4476242,
+    "營業時間": {
+      "raw": "toilets=yes",
+      "allDay": false,
+      "unknown": true,
+      "byDay": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": []
+      }
+    }
+  },
+  {
+    "id": "vn-dc11962e261b",
+    "type": "咖啡",
+    "name": "Coffee Maker Roastery",
+    "地址": "",
+    "lat": 12.2779294,
+    "lng": 109.2008435,
+    "營業時間": {
+      "raw": "toilets=yes",
+      "allDay": false,
+      "unknown": true,
+      "byDay": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": []
+      }
+    }
+  },
+  {
+    "id": "vn-c217173f2de4",
+    "type": "咖啡",
+    "name": "Conifer Bốn Mùa – Four Seasons",
+    "地址": "50 Phố Lê Thái Tổ, Hoàn Kiếm, Hà Nội, thành phố Hà Nội",
+    "lat": 21.0259374,
+    "lng": 105.849235,
+    "營業時間": {
+      "raw": "07:00-23:00 toilets=yes",
+      "allDay": false,
+      "unknown": false,
+      "byDay": {
+        "1": [
+          {
+            "open": "07:00",
+            "close": "23:00"
+          }
+        ],
+        "2": [
+          {
+            "open": "07:00",
+            "close": "23:00"
+          }
+        ],
+        "3": [
+          {
+            "open": "07:00",
+            "close": "23:00"
+          }
+        ],
+        "4": [
+          {
+            "open": "07:00",
+            "close": "23:00"
+          }
+        ],
+        "5": [
+          {
+            "open": "07:00",
+            "close": "23:00"
+          }
+        ],
+        "6": [
+          {
+            "open": "07:00",
+            "close": "23:00"
+          }
+        ],
+        "7": [
+          {
+            "open": "07:00",
+            "close": "23:00"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "vn-92ec51056d9a",
+    "type": "咖啡",
+    "name": "Cozy House - Coffee & Tea",
+    "地址": "Ngõ Cozy House - Coffee & Tea, Huyện Tiền Hải, Tình Thái Bình, Tỉnh Thái Bình",
+    "lat": 20.3452186,
+    "lng": 106.5397237,
+    "營業時間": {
+      "raw": "Mo-Su 07:00-22:00 toilets=yes",
+      "allDay": false,
+      "unknown": false,
+      "byDay": {
+        "1": [
+          {
+            "open": "07:00",
+            "close": "22:00"
+          }
+        ],
+        "2": [
+          {
+            "open": "07:00",
+            "close": "22:00"
+          }
+        ],
+        "3": [
+          {
+            "open": "07:00",
+            "close": "22:00"
+          }
+        ],
+        "4": [
+          {
+            "open": "07:00",
+            "close": "22:00"
+          }
+        ],
+        "5": [
+          {
+            "open": "07:00",
+            "close": "22:00"
+          }
+        ],
+        "6": [
+          {
+            "open": "07:00",
+            "close": "22:00"
+          }
+        ],
+        "7": [
+          {
+            "open": "07:00",
+            "close": "22:00"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "vn-8f3de523fab4",
+    "type": "咖啡",
+    "name": "Cuc Bac Ethnic Cafe",
+    "地址": "",
+    "lat": 23.3646587,
+    "lng": 105.3104913,
+    "營業時間": {
+      "raw": "wheelchair=limited toilets=yes",
+      "allDay": false,
+      "unknown": true,
+      "byDay": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": []
+      }
+    }
+  },
+  {
+    "id": "vn-83da208d4eb6",
+    "type": "咖啡",
+    "name": "Cộng Cà Phê",
+    "地址": "274 Đường Hai Bà Trưng, 1, Ho Chi Minh City",
+    "lat": 10.788868,
+    "lng": 106.6907767,
+    "營業時間": {
+      "raw": "Mo-Su 07:00-23:00 wheelchair=limited toilets=yes",
+      "allDay": false,
+      "unknown": false,
+      "byDay": {
+        "1": [
+          {
+            "open": "07:00",
+            "close": "23:00"
+          }
+        ],
+        "2": [
+          {
+            "open": "07:00",
+            "close": "23:00"
+          }
+        ],
+        "3": [
+          {
+            "open": "07:00",
+            "close": "23:00"
+          }
+        ],
+        "4": [
+          {
+            "open": "07:00",
+            "close": "23:00"
+          }
+        ],
+        "5": [
+          {
+            "open": "07:00",
+            "close": "23:00"
+          }
+        ],
+        "6": [
+          {
+            "open": "07:00",
+            "close": "23:00"
+          }
+        ],
+        "7": [
+          {
+            "open": "07:00",
+            "close": "23:00"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "vn-8aff01733450",
+    "type": "咖啡",
+    "name": "Dudu Cafe Hoi An",
+    "地址": "11 Trần Phú",
+    "lat": 15.8774268,
+    "lng": 108.3317198,
+    "營業時間": {
+      "raw": "Mo-Su 07:00-22:00 toilets=yes",
+      "allDay": false,
+      "unknown": false,
+      "byDay": {
+        "1": [
+          {
+            "open": "07:00",
+            "close": "22:00"
+          }
+        ],
+        "2": [
+          {
+            "open": "07:00",
+            "close": "22:00"
+          }
+        ],
+        "3": [
+          {
+            "open": "07:00",
+            "close": "22:00"
+          }
+        ],
+        "4": [
+          {
+            "open": "07:00",
+            "close": "22:00"
+          }
+        ],
+        "5": [
+          {
+            "open": "07:00",
+            "close": "22:00"
+          }
+        ],
+        "6": [
+          {
+            "open": "07:00",
+            "close": "22:00"
+          }
+        ],
+        "7": [
+          {
+            "open": "07:00",
+            "close": "22:00"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "vn-af528ea847ca",
+    "type": "咖啡",
+    "name": "GURU Natural Specially Coffee",
+    "地址": "3b Âu Cơ",
+    "lat": 12.2428058,
+    "lng": 109.1852452,
+    "營業時間": {
+      "raw": "Mo-Su 09:00-17:30 toilets=yes",
+      "allDay": false,
+      "unknown": false,
+      "byDay": {
+        "1": [
+          {
+            "open": "09:00",
+            "close": "17:30"
+          }
+        ],
+        "2": [
+          {
+            "open": "09:00",
+            "close": "17:30"
+          }
+        ],
+        "3": [
+          {
+            "open": "09:00",
+            "close": "17:30"
+          }
+        ],
+        "4": [
+          {
+            "open": "09:00",
+            "close": "17:30"
+          }
+        ],
+        "5": [
+          {
+            "open": "09:00",
+            "close": "17:30"
+          }
+        ],
+        "6": [
+          {
+            "open": "09:00",
+            "close": "17:30"
+          }
+        ],
+        "7": [
+          {
+            "open": "09:00",
+            "close": "17:30"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "vn-ebd86f0aade1",
+    "type": "咖啡",
+    "name": "Garden Café",
+    "地址": "",
+    "lat": 20.2720599,
+    "lng": 105.9124937,
+    "營業時間": {
+      "raw": "toilets=yes",
+      "allDay": false,
+      "unknown": true,
+      "byDay": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": []
+      }
+    }
+  },
+  {
+    "id": "vn-11c278020ab6",
+    "type": "咖啡",
+    "name": "Giong",
+    "地址": "",
+    "lat": 12.2428823,
+    "lng": 109.1948788,
+    "營業時間": {
+      "raw": "toilets=yes",
+      "allDay": false,
+      "unknown": true,
+      "byDay": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": []
+      }
+    }
+  },
+  {
+    "id": "vn-ee3ed59497ce",
+    "type": "咖啡",
+    "name": "Go Coffee",
+    "地址": "",
+    "lat": 20.8472909,
+    "lng": 104.6390049,
+    "營業時間": {
+      "raw": "wheelchair=limited toilets=yes",
+      "allDay": false,
+      "unknown": true,
+      "byDay": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": []
+      }
+    }
+  },
+  {
+    "id": "vn-2249b39889d4",
+    "type": "咖啡",
+    "name": "Góc Phố",
+    "地址": "",
+    "lat": 11.5398345,
+    "lng": 107.8082298,
+    "營業時間": {
+      "raw": "wheelchair=no toilets=yes",
+      "allDay": false,
+      "unknown": true,
+      "byDay": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": []
+      }
+    }
+  },
+  {
+    "id": "vn-0200fdc198b1",
+    "type": "咖啡",
+    "name": "Highlands Coffee",
+    "地址": "",
+    "lat": 16.0701777,
+    "lng": 108.2127977,
+    "營業時間": {
+      "raw": "Mo-Su 07:00-23:00 toilets=yes",
+      "allDay": false,
+      "unknown": false,
+      "byDay": {
+        "1": [
+          {
+            "open": "07:00",
+            "close": "23:00"
+          }
+        ],
+        "2": [
+          {
+            "open": "07:00",
+            "close": "23:00"
+          }
+        ],
+        "3": [
+          {
+            "open": "07:00",
+            "close": "23:00"
+          }
+        ],
+        "4": [
+          {
+            "open": "07:00",
+            "close": "23:00"
+          }
+        ],
+        "5": [
+          {
+            "open": "07:00",
+            "close": "23:00"
+          }
+        ],
+        "6": [
+          {
+            "open": "07:00",
+            "close": "23:00"
+          }
+        ],
+        "7": [
+          {
+            "open": "07:00",
+            "close": "23:00"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "vn-09536c7527df",
+    "type": "咖啡",
+    "name": "Highlands Coffee",
+    "地址": "187 Đường Phạm Ngũ Lão",
+    "lat": 10.7686142,
+    "lng": 106.6934398,
+    "營業時間": {
+      "raw": "06:00-24:00 wheelchair=limited toilets=yes",
+      "allDay": false,
+      "unknown": false,
+      "byDay": {
+        "1": [
+          {
+            "open": "06:00",
+            "close": "24:00"
+          }
+        ],
+        "2": [
+          {
+            "open": "06:00",
+            "close": "24:00"
+          }
+        ],
+        "3": [
+          {
+            "open": "06:00",
+            "close": "24:00"
+          }
+        ],
+        "4": [
+          {
+            "open": "06:00",
+            "close": "24:00"
+          }
+        ],
+        "5": [
+          {
+            "open": "06:00",
+            "close": "24:00"
+          }
+        ],
+        "6": [
+          {
+            "open": "06:00",
+            "close": "24:00"
+          }
+        ],
+        "7": [
+          {
+            "open": "06:00",
+            "close": "24:00"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "vn-24af0c9a36df",
+    "type": "咖啡",
+    "name": "Highlands Coffee",
+    "地址": "",
+    "lat": 16.0622281,
+    "lng": 108.223993,
+    "營業時間": {
+      "raw": "wheelchair=yes toilets=yes",
+      "allDay": false,
+      "unknown": true,
+      "byDay": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": []
+      }
+    }
+  },
+  {
+    "id": "vn-645dbed63876",
+    "type": "咖啡",
+    "name": "Highlands Coffee",
+    "地址": "62 Trần Phú, Nha Trang",
+    "lat": 12.236013,
+    "lng": 109.1967705,
+    "營業時間": {
+      "raw": "07:00-23:00 wheelchair=no toilets=yes",
+      "allDay": false,
+      "unknown": false,
+      "byDay": {
+        "1": [
+          {
+            "open": "07:00",
+            "close": "23:00"
+          }
+        ],
+        "2": [
+          {
+            "open": "07:00",
+            "close": "23:00"
+          }
+        ],
+        "3": [
+          {
+            "open": "07:00",
+            "close": "23:00"
+          }
+        ],
+        "4": [
+          {
+            "open": "07:00",
+            "close": "23:00"
+          }
+        ],
+        "5": [
+          {
+            "open": "07:00",
+            "close": "23:00"
+          }
+        ],
+        "6": [
+          {
+            "open": "07:00",
+            "close": "23:00"
+          }
+        ],
+        "7": [
+          {
+            "open": "07:00",
+            "close": "23:00"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "vn-6c3de7893ebe",
+    "type": "咖啡",
+    "name": "Highlands Coffee",
+    "地址": "",
+    "lat": 10.7747454,
+    "lng": 106.6982421,
+    "營業時間": {
+      "raw": "07:00-23:00 wheelchair=limited toilets=yes",
+      "allDay": false,
+      "unknown": false,
+      "byDay": {
+        "1": [
+          {
+            "open": "07:00",
+            "close": "23:00"
+          }
+        ],
+        "2": [
+          {
+            "open": "07:00",
+            "close": "23:00"
+          }
+        ],
+        "3": [
+          {
+            "open": "07:00",
+            "close": "23:00"
+          }
+        ],
+        "4": [
+          {
+            "open": "07:00",
+            "close": "23:00"
+          }
+        ],
+        "5": [
+          {
+            "open": "07:00",
+            "close": "23:00"
+          }
+        ],
+        "6": [
+          {
+            "open": "07:00",
+            "close": "23:00"
+          }
+        ],
+        "7": [
+          {
+            "open": "07:00",
+            "close": "23:00"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "vn-6f4490d4376d",
+    "type": "咖啡",
+    "name": "Highlands Coffee",
+    "地址": "28 Trần Phú, Vũng Tàu, Thành phố Hồ Chí Minh",
+    "lat": 10.3531639,
+    "lng": 107.0640738,
+    "營業時間": {
+      "raw": "toilets=yes",
+      "allDay": false,
+      "unknown": true,
+      "byDay": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": []
+      }
+    }
+  },
+  {
+    "id": "vn-bcbcca16a587",
+    "type": "咖啡",
+    "name": "Highlands Coffee",
+    "地址": "",
+    "lat": 16.4624652,
+    "lng": 107.5889827,
+    "營業時間": {
+      "raw": "Mo-Su 06:30-22:30 wheelchair=limited toilets=yes",
+      "allDay": false,
+      "unknown": false,
+      "byDay": {
+        "1": [
+          {
+            "open": "06:30",
+            "close": "22:30"
+          }
+        ],
+        "2": [
+          {
+            "open": "06:30",
+            "close": "22:30"
+          }
+        ],
+        "3": [
+          {
+            "open": "06:30",
+            "close": "22:30"
+          }
+        ],
+        "4": [
+          {
+            "open": "06:30",
+            "close": "22:30"
+          }
+        ],
+        "5": [
+          {
+            "open": "06:30",
+            "close": "22:30"
+          }
+        ],
+        "6": [
+          {
+            "open": "06:30",
+            "close": "22:30"
+          }
+        ],
+        "7": [
+          {
+            "open": "06:30",
+            "close": "22:30"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "vn-bebe97833261",
+    "type": "咖啡",
+    "name": "Highlands Coffee",
+    "地址": "",
+    "lat": 16.0563664,
+    "lng": 108.2457369,
+    "營業時間": {
+      "raw": "toilets=yes",
+      "allDay": false,
+      "unknown": true,
+      "byDay": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": []
+      }
+    }
+  },
+  {
+    "id": "vn-cf07d138839e",
+    "type": "咖啡",
+    "name": "Highlands Coffee",
+    "地址": "132A Nguyễn Thái Học, Ho Chi Minh City",
+    "lat": 10.7687495,
+    "lng": 106.6952098,
+    "營業時間": {
+      "raw": "Mo-Su 06:00-23:00 toilets=yes",
+      "allDay": false,
+      "unknown": false,
+      "byDay": {
+        "1": [
+          {
+            "open": "06:00",
+            "close": "23:00"
+          }
+        ],
+        "2": [
+          {
+            "open": "06:00",
+            "close": "23:00"
+          }
+        ],
+        "3": [
+          {
+            "open": "06:00",
+            "close": "23:00"
+          }
+        ],
+        "4": [
+          {
+            "open": "06:00",
+            "close": "23:00"
+          }
+        ],
+        "5": [
+          {
+            "open": "06:00",
+            "close": "23:00"
+          }
+        ],
+        "6": [
+          {
+            "open": "06:00",
+            "close": "23:00"
+          }
+        ],
+        "7": [
+          {
+            "open": "06:00",
+            "close": "23:00"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "vn-d21432589f2f",
+    "type": "咖啡",
+    "name": "Highlands Coffee",
+    "地址": "01 Đường Lê Duẩn, Phường Ba Đình, Hà Nội, Thành phố Hà Nội",
+    "lat": 21.0297216,
+    "lng": 105.8417379,
+    "營業時間": {
+      "raw": "Mo-Su 07:00-23:00 toilets=yes",
+      "allDay": false,
+      "unknown": false,
+      "byDay": {
+        "1": [
+          {
+            "open": "07:00",
+            "close": "23:00"
+          }
+        ],
+        "2": [
+          {
+            "open": "07:00",
+            "close": "23:00"
+          }
+        ],
+        "3": [
+          {
+            "open": "07:00",
+            "close": "23:00"
+          }
+        ],
+        "4": [
+          {
+            "open": "07:00",
+            "close": "23:00"
+          }
+        ],
+        "5": [
+          {
+            "open": "07:00",
+            "close": "23:00"
+          }
+        ],
+        "6": [
+          {
+            "open": "07:00",
+            "close": "23:00"
+          }
+        ],
+        "7": [
+          {
+            "open": "07:00",
+            "close": "23:00"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "vn-d80cd5acc4de",
+    "type": "咖啡",
+    "name": "Highlands Coffee",
+    "地址": "33 Hoàng Cầu, Đống Đa, Hà Nội",
+    "lat": 21.0188481,
+    "lng": 105.8249754,
+    "營業時間": {
+      "raw": "toilets=yes",
+      "allDay": false,
+      "unknown": true,
+      "byDay": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": []
+      }
+    }
+  },
+  {
+    "id": "vn-f30f18587dab",
+    "type": "咖啡",
+    "name": "Highlands Coffee",
+    "地址": "",
+    "lat": 16.0700231,
+    "lng": 108.2249183,
+    "營業時間": {
+      "raw": "toilets=yes",
+      "allDay": false,
+      "unknown": true,
+      "byDay": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": []
+      }
+    }
+  },
+  {
+    "id": "vn-71efc8940654",
+    "type": "咖啡",
+    "name": "Hiên cà phê",
+    "地址": "",
+    "lat": 16.4169795,
+    "lng": 107.5829234,
+    "營業時間": {
+      "raw": "wheelchair=limited toilets=yes",
+      "allDay": false,
+      "unknown": true,
+      "byDay": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": []
+      }
+    }
+  },
+  {
+    "id": "vn-8a0c6628ee3f",
+    "type": "咖啡",
+    "name": "Hợp",
+    "地址": "13 Hẻm 32 Đường Nguyễn Cửu Vân, Bình Thạnh, Ho Chi Minh City",
+    "lat": 10.7962397,
+    "lng": 106.7071763,
+    "營業時間": {
+      "raw": "toilets=yes",
+      "allDay": false,
+      "unknown": true,
+      "byDay": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": []
+      }
+    }
+  },
+  {
+    "id": "vn-4177a95f2890",
+    "type": "咖啡",
+    "name": "K coffee",
+    "地址": "",
+    "lat": 15.8739934,
+    "lng": 108.327429,
+    "營業時間": {
+      "raw": "toilets=yes",
+      "allDay": false,
+      "unknown": true,
+      "byDay": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": []
+      }
+    }
+  },
+  {
+    "id": "vn-786027bd03fa",
+    "type": "咖啡",
+    "name": "Ka Specialty Coffee",
+    "地址": "31/50 Ngõ 31 Xuân Diệu",
+    "lat": 21.0611639,
+    "lng": 105.8271683,
+    "營業時間": {
+      "raw": "Mo-Su 07:00-17:00 toilets=yes",
+      "allDay": false,
+      "unknown": false,
+      "byDay": {
+        "1": [
+          {
+            "open": "07:00",
+            "close": "17:00"
+          }
+        ],
+        "2": [
+          {
+            "open": "07:00",
+            "close": "17:00"
+          }
+        ],
+        "3": [
+          {
+            "open": "07:00",
+            "close": "17:00"
+          }
+        ],
+        "4": [
+          {
+            "open": "07:00",
+            "close": "17:00"
+          }
+        ],
+        "5": [
+          {
+            "open": "07:00",
+            "close": "17:00"
+          }
+        ],
+        "6": [
+          {
+            "open": "07:00",
+            "close": "17:00"
+          }
+        ],
+        "7": [
+          {
+            "open": "07:00",
+            "close": "17:00"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "vn-1e580a00c202",
+    "type": "咖啡",
+    "name": "Kofuku Coffee",
+    "地址": "1162 Trường Sa, Phú Nhuận, Ho Chi Minh City",
+    "lat": 10.7886823,
+    "lng": 106.6693837,
+    "營業時間": {
+      "raw": "Mo-Su 07:00-22:00 toilets=yes",
+      "allDay": false,
+      "unknown": false,
+      "byDay": {
+        "1": [
+          {
+            "open": "07:00",
+            "close": "22:00"
+          }
+        ],
+        "2": [
+          {
+            "open": "07:00",
+            "close": "22:00"
+          }
+        ],
+        "3": [
+          {
+            "open": "07:00",
+            "close": "22:00"
+          }
+        ],
+        "4": [
+          {
+            "open": "07:00",
+            "close": "22:00"
+          }
+        ],
+        "5": [
+          {
+            "open": "07:00",
+            "close": "22:00"
+          }
+        ],
+        "6": [
+          {
+            "open": "07:00",
+            "close": "22:00"
+          }
+        ],
+        "7": [
+          {
+            "open": "07:00",
+            "close": "22:00"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "vn-f83ab6ada1cd",
+    "type": "咖啡",
+    "name": "MIT COFFEE & TEA",
+    "地址": "ĐH.15, Xã Đại Đồng, Hưng Yên",
+    "lat": 20.9923413,
+    "lng": 106.062457,
+    "營業時間": {
+      "raw": "toilets=yes",
+      "allDay": false,
+      "unknown": true,
+      "byDay": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": []
+      }
+    }
+  },
+  {
+    "id": "vn-b746f7bebd0b",
+    "type": "咖啡",
+    "name": "Meet Coffee",
+    "地址": "",
+    "lat": 16.0687325,
+    "lng": 108.243763,
+    "營業時間": {
+      "raw": "wheelchair=limited toilets=yes",
+      "allDay": false,
+      "unknown": true,
+      "byDay": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": []
+      }
+    }
+  },
+  {
+    "id": "vn-8909b475a5ff",
+    "type": "咖啡",
+    "name": "Missing Garden",
+    "地址": "221/9 Lê Văn Sỹ, Quận 3, Thành phố Hồ Chí Minh, Hồ Chí Minh",
+    "lat": 10.7866904,
+    "lng": 106.6791678,
+    "營業時間": {
+      "raw": "Mo-Su 08:00-22:00 wheelchair=limited toilets=yes",
+      "allDay": false,
+      "unknown": false,
+      "byDay": {
+        "1": [
+          {
+            "open": "08:00",
+            "close": "22:00"
+          }
+        ],
+        "2": [
+          {
+            "open": "08:00",
+            "close": "22:00"
+          }
+        ],
+        "3": [
+          {
+            "open": "08:00",
+            "close": "22:00"
+          }
+        ],
+        "4": [
+          {
+            "open": "08:00",
+            "close": "22:00"
+          }
+        ],
+        "5": [
+          {
+            "open": "08:00",
+            "close": "22:00"
+          }
+        ],
+        "6": [
+          {
+            "open": "08:00",
+            "close": "22:00"
+          }
+        ],
+        "7": [
+          {
+            "open": "08:00",
+            "close": "22:00"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "vn-c9ad21a7dd8f",
+    "type": "咖啡",
+    "name": "Mộc Golden Coffee And Tea",
+    "地址": "28/7 Đường Nguyễn Bảo Đức, Phường Tam Hiệp, Thành phố Biên Hòa, Tỉnh Đồng Nai",
+    "lat": 10.9550315,
+    "lng": 106.8596726,
+    "營業時間": {
+      "raw": "06:00-22:00 toilets=yes",
+      "allDay": false,
+      "unknown": false,
+      "byDay": {
+        "1": [
+          {
+            "open": "06:00",
+            "close": "22:00"
+          }
+        ],
+        "2": [
+          {
+            "open": "06:00",
+            "close": "22:00"
+          }
+        ],
+        "3": [
+          {
+            "open": "06:00",
+            "close": "22:00"
+          }
+        ],
+        "4": [
+          {
+            "open": "06:00",
+            "close": "22:00"
+          }
+        ],
+        "5": [
+          {
+            "open": "06:00",
+            "close": "22:00"
+          }
+        ],
+        "6": [
+          {
+            "open": "06:00",
+            "close": "22:00"
+          }
+        ],
+        "7": [
+          {
+            "open": "06:00",
+            "close": "22:00"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "vn-2a3424fcedf7",
+    "type": "咖啡",
+    "name": "NGÕ QUÁN",
+    "地址": "6 Nguyễn Hới, Bình Tân, Hồ Chí Minh",
+    "lat": 10.7398315,
+    "lng": 106.6179908,
+    "營業時間": {
+      "raw": "Mo-Fr 07:00-21:00; Sa-Su 07:30-21:00 toilets=yes",
+      "allDay": false,
+      "unknown": true,
+      "byDay": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": []
+      }
+    }
+  },
+  {
+    "id": "vn-f1c1b6ce231f",
+    "type": "咖啡",
+    "name": "Na's Café & Cocktails House",
+    "地址": "",
+    "lat": 20.2166057,
+    "lng": 105.9464224,
+    "營業時間": {
+      "raw": "wheelchair=limited toilets=yes",
+      "allDay": false,
+      "unknown": true,
+      "byDay": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": []
+      }
+    }
+  },
+  {
+    "id": "vn-3e254a06528c",
+    "type": "咖啡",
+    "name": "Nam Sơn Coffee",
+    "地址": "R4-02 Hưng Gia 5, Quận 7, Hồ Chí Minh, Hồ Chí Minh",
+    "lat": 10.7339494,
+    "lng": 106.7102979,
+    "營業時間": {
+      "raw": "Mo-Su 06:00-18:00 toilets=yes",
+      "allDay": false,
+      "unknown": false,
+      "byDay": {
+        "1": [
+          {
+            "open": "06:00",
+            "close": "18:00"
+          }
+        ],
+        "2": [
+          {
+            "open": "06:00",
+            "close": "18:00"
+          }
+        ],
+        "3": [
+          {
+            "open": "06:00",
+            "close": "18:00"
+          }
+        ],
+        "4": [
+          {
+            "open": "06:00",
+            "close": "18:00"
+          }
+        ],
+        "5": [
+          {
+            "open": "06:00",
+            "close": "18:00"
+          }
+        ],
+        "6": [
+          {
+            "open": "06:00",
+            "close": "18:00"
+          }
+        ],
+        "7": [
+          {
+            "open": "06:00",
+            "close": "18:00"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "vn-65f8cd3e80aa",
+    "type": "咖啡",
+    "name": "Na‘s Tea Room",
+    "地址": "4 Phố Hoàng Văn Thụ",
+    "lat": 20.8630212,
+    "lng": 106.6811619,
+    "營業時間": {
+      "raw": "toilets=yes",
+      "allDay": false,
+      "unknown": true,
+      "byDay": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": []
+      }
+    }
+  },
+  {
+    "id": "vn-5053140320dc",
+    "type": "咖啡",
+    "name": "Neo Cafe",
+    "地址": "635 Điện Biên Phủ, Bình Thạnh, Ho Chi Minh City",
+    "lat": 10.7987052,
+    "lng": 106.7202405,
+    "營業時間": {
+      "raw": "Mo-Su 06:30-23:00 wheelchair=no toilets=yes",
+      "allDay": false,
+      "unknown": false,
+      "byDay": {
+        "1": [
+          {
+            "open": "06:30",
+            "close": "23:00"
+          }
+        ],
+        "2": [
+          {
+            "open": "06:30",
+            "close": "23:00"
+          }
+        ],
+        "3": [
+          {
+            "open": "06:30",
+            "close": "23:00"
+          }
+        ],
+        "4": [
+          {
+            "open": "06:30",
+            "close": "23:00"
+          }
+        ],
+        "5": [
+          {
+            "open": "06:30",
+            "close": "23:00"
+          }
+        ],
+        "6": [
+          {
+            "open": "06:30",
+            "close": "23:00"
+          }
+        ],
+        "7": [
+          {
+            "open": "06:30",
+            "close": "23:00"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "vn-42d8b1dcc379",
+    "type": "咖啡",
+    "name": "Ngoan Coffee",
+    "地址": "",
+    "lat": 16.0707713,
+    "lng": 108.2095469,
+    "營業時間": {
+      "raw": "toilets=yes",
+      "allDay": false,
+      "unknown": true,
+      "byDay": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": []
+      }
+    }
+  },
+  {
+    "id": "vn-b6c7d5005951",
+    "type": "咖啡",
+    "name": "Nhà Bên Rừng - U Lesa Retreat",
+    "地址": ", Xã Minh Phú, Sóc Sơn, Hà Nội",
+    "lat": 21.2937295,
+    "lng": 105.7850104,
+    "營業時間": {
+      "raw": "Mo-Su 08:00-22:00 toilets=yes",
+      "allDay": false,
+      "unknown": false,
+      "byDay": {
+        "1": [
+          {
+            "open": "08:00",
+            "close": "22:00"
+          }
+        ],
+        "2": [
+          {
+            "open": "08:00",
+            "close": "22:00"
+          }
+        ],
+        "3": [
+          {
+            "open": "08:00",
+            "close": "22:00"
+          }
+        ],
+        "4": [
+          {
+            "open": "08:00",
+            "close": "22:00"
+          }
+        ],
+        "5": [
+          {
+            "open": "08:00",
+            "close": "22:00"
+          }
+        ],
+        "6": [
+          {
+            "open": "08:00",
+            "close": "22:00"
+          }
+        ],
+        "7": [
+          {
+            "open": "08:00",
+            "close": "22:00"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "vn-073e743a59e4",
+    "type": "咖啡",
+    "name": "Nhà Cafe",
+    "地址": "2 Ngõ 135 Đội Cấn, Phường Ba Đình, Hà Nội, Thành phố Hà Nội",
+    "lat": 21.0361075,
+    "lng": 105.8290699,
+    "營業時間": {
+      "raw": "toilets=yes",
+      "allDay": false,
+      "unknown": true,
+      "byDay": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": []
+      }
+    }
+  },
+  {
+    "id": "vn-54403573f125",
+    "type": "咖啡",
+    "name": "Nora Coffee",
+    "地址": "",
+    "lat": 12.271077,
+    "lng": 109.19941,
+    "營業時間": {
+      "raw": "toilets=yes",
+      "allDay": false,
+      "unknown": true,
+      "byDay": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": []
+      }
+    }
+  },
+  {
+    "id": "vn-1908f9321329",
+    "type": "咖啡",
+    "name": "OKKIO Cafe",
+    "地址": "120-122 Lê Lợi, Quận 1, Ho Chi Minh City",
+    "lat": 10.7725238,
+    "lng": 106.698948,
+    "營業時間": {
+      "raw": "Mo-Su 07:30-20:00 wheelchair=no toilets=yes",
+      "allDay": false,
+      "unknown": false,
+      "byDay": {
+        "1": [
+          {
+            "open": "07:30",
+            "close": "20:00"
+          }
+        ],
+        "2": [
+          {
+            "open": "07:30",
+            "close": "20:00"
+          }
+        ],
+        "3": [
+          {
+            "open": "07:30",
+            "close": "20:00"
+          }
+        ],
+        "4": [
+          {
+            "open": "07:30",
+            "close": "20:00"
+          }
+        ],
+        "5": [
+          {
+            "open": "07:30",
+            "close": "20:00"
+          }
+        ],
+        "6": [
+          {
+            "open": "07:30",
+            "close": "20:00"
+          }
+        ],
+        "7": [
+          {
+            "open": "07:30",
+            "close": "20:00"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "vn-e9e6e261ba0f",
+    "type": "咖啡",
+    "name": "Oasis Sea",
+    "地址": "1A Trần Phú, Phường 1, Vũng Tàu, Thành phố Hồ Chí Minh",
+    "lat": 10.3552532,
+    "lng": 107.0613718,
+    "營業時間": {
+      "raw": "24/7 toilets=yes",
+      "allDay": true,
+      "unknown": false,
+      "byDay": {
+        "1": [
+          {
+            "open": "00:00",
+            "close": "24:00"
+          }
+        ],
+        "2": [
+          {
+            "open": "00:00",
+            "close": "24:00"
+          }
+        ],
+        "3": [
+          {
+            "open": "00:00",
+            "close": "24:00"
+          }
+        ],
+        "4": [
+          {
+            "open": "00:00",
+            "close": "24:00"
+          }
+        ],
+        "5": [
+          {
+            "open": "00:00",
+            "close": "24:00"
+          }
+        ],
+        "6": [
+          {
+            "open": "00:00",
+            "close": "24:00"
+          }
+        ],
+        "7": [
+          {
+            "open": "00:00",
+            "close": "24:00"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "vn-7327f23ca332",
+    "type": "咖啡",
+    "name": "Phong Tra",
+    "地址": "103 Hẻm 121 Cù Lao, Phú Nhuận, Ho Chi Minh City",
+    "lat": 10.7984122,
+    "lng": 106.6848684,
+    "營業時間": {
+      "raw": "wheelchair=no toilets=yes",
+      "allDay": false,
+      "unknown": true,
+      "byDay": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": []
+      }
+    }
+  },
+  {
+    "id": "vn-8ff368bfcbc2",
+    "type": "咖啡",
+    "name": "Phuoc Tai",
+    "地址": "247 Pham Van Dong, Tay Ninh",
+    "lat": 11.2875226,
+    "lng": 106.1231684,
+    "營業時間": {
+      "raw": "toilets=yes",
+      "allDay": false,
+      "unknown": true,
+      "byDay": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": []
+      }
+    }
+  },
+  {
+    "id": "vn-7fc42abfe1d9",
+    "type": "咖啡",
+    "name": "Phúc Long Coffee",
+    "地址": "Phạm Hồng Thái",
+    "lat": 10.771387,
+    "lng": 106.6955645,
+    "營業時間": {
+      "raw": "Mo-Su 07:00-22:30 wheelchair=no toilets=yes",
+      "allDay": false,
+      "unknown": false,
+      "byDay": {
+        "1": [
+          {
+            "open": "07:00",
+            "close": "22:30"
+          }
+        ],
+        "2": [
+          {
+            "open": "07:00",
+            "close": "22:30"
+          }
+        ],
+        "3": [
+          {
+            "open": "07:00",
+            "close": "22:30"
+          }
+        ],
+        "4": [
+          {
+            "open": "07:00",
+            "close": "22:30"
+          }
+        ],
+        "5": [
+          {
+            "open": "07:00",
+            "close": "22:30"
+          }
+        ],
+        "6": [
+          {
+            "open": "07:00",
+            "close": "22:30"
+          }
+        ],
+        "7": [
+          {
+            "open": "07:00",
+            "close": "22:30"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "vn-028ecb20a449",
+    "type": "咖啡",
+    "name": "Quán Treo",
+    "地址": "",
+    "lat": 10.955972,
+    "lng": 106.8427217,
+    "營業時間": {
+      "raw": "06:00-23:00 toilets=yes",
+      "allDay": false,
+      "unknown": false,
+      "byDay": {
+        "1": [
+          {
+            "open": "06:00",
+            "close": "23:00"
+          }
+        ],
+        "2": [
+          {
+            "open": "06:00",
+            "close": "23:00"
+          }
+        ],
+        "3": [
+          {
+            "open": "06:00",
+            "close": "23:00"
+          }
+        ],
+        "4": [
+          {
+            "open": "06:00",
+            "close": "23:00"
+          }
+        ],
+        "5": [
+          {
+            "open": "06:00",
+            "close": "23:00"
+          }
+        ],
+        "6": [
+          {
+            "open": "06:00",
+            "close": "23:00"
+          }
+        ],
+        "7": [
+          {
+            "open": "06:00",
+            "close": "23:00"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "vn-12fcefe0e24d",
+    "type": "咖啡",
+    "name": "Quán cà phê Thiên",
+    "地址": "51 Thạnh Lộc 19, Phường An Phú Đông, Thành phố Hồ Chí Minh",
+    "lat": 10.8675319,
+    "lng": 106.6815854,
+    "營業時間": {
+      "raw": "Mo-Su 06:30-23:00 wheelchair=yes toilets=yes",
+      "allDay": false,
+      "unknown": false,
+      "byDay": {
+        "1": [
+          {
+            "open": "06:30",
+            "close": "23:00"
+          }
+        ],
+        "2": [
+          {
+            "open": "06:30",
+            "close": "23:00"
+          }
+        ],
+        "3": [
+          {
+            "open": "06:30",
+            "close": "23:00"
+          }
+        ],
+        "4": [
+          {
+            "open": "06:30",
+            "close": "23:00"
+          }
+        ],
+        "5": [
+          {
+            "open": "06:30",
+            "close": "23:00"
+          }
+        ],
+        "6": [
+          {
+            "open": "06:30",
+            "close": "23:00"
+          }
+        ],
+        "7": [
+          {
+            "open": "06:30",
+            "close": "23:00"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "vn-a0858da64339",
+    "type": "咖啡",
+    "name": "RedDoor",
+    "地址": "28 Huỳnh Khương Ninh, Quận 1, Ho Chi Minh City",
+    "lat": 10.7901671,
+    "lng": 106.6962894,
+    "營業時間": {
+      "raw": "Mo-Su 08:00-19:00 toilets=yes",
+      "allDay": false,
+      "unknown": false,
+      "byDay": {
+        "1": [
+          {
+            "open": "08:00",
+            "close": "19:00"
+          }
+        ],
+        "2": [
+          {
+            "open": "08:00",
+            "close": "19:00"
+          }
+        ],
+        "3": [
+          {
+            "open": "08:00",
+            "close": "19:00"
+          }
+        ],
+        "4": [
+          {
+            "open": "08:00",
+            "close": "19:00"
+          }
+        ],
+        "5": [
+          {
+            "open": "08:00",
+            "close": "19:00"
+          }
+        ],
+        "6": [
+          {
+            "open": "08:00",
+            "close": "19:00"
+          }
+        ],
+        "7": [
+          {
+            "open": "08:00",
+            "close": "19:00"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "vn-e893ab7604f9",
+    "type": "咖啡",
+    "name": "Roots Plant-Based Café",
+    "地址": "27 Trần Bạch Đằng, Ngũ Hành Sơn, Đà Nẵng, Thành phố Đà Nẵng",
+    "lat": 16.0486599,
+    "lng": 108.2478755,
+    "營業時間": {
+      "raw": "Mo-Su 08:30-22:45 toilets=yes",
+      "allDay": false,
+      "unknown": false,
+      "byDay": {
+        "1": [
+          {
+            "open": "08:30",
+            "close": "22:45"
+          }
+        ],
+        "2": [
+          {
+            "open": "08:30",
+            "close": "22:45"
+          }
+        ],
+        "3": [
+          {
+            "open": "08:30",
+            "close": "22:45"
+          }
+        ],
+        "4": [
+          {
+            "open": "08:30",
+            "close": "22:45"
+          }
+        ],
+        "5": [
+          {
+            "open": "08:30",
+            "close": "22:45"
+          }
+        ],
+        "6": [
+          {
+            "open": "08:30",
+            "close": "22:45"
+          }
+        ],
+        "7": [
+          {
+            "open": "08:30",
+            "close": "22:45"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "vn-730bfb878800",
+    "type": "咖啡",
+    "name": "Rùa Kafé",
+    "地址": "109 Bầu Cát 8, Phường Bảy Hiền, Thành phố Hồ Chí Minh",
+    "lat": 10.7875454,
+    "lng": 106.6440167,
+    "營業時間": {
+      "raw": "Mo-Su 07:30-23:00 toilets=yes",
+      "allDay": false,
+      "unknown": false,
+      "byDay": {
+        "1": [
+          {
+            "open": "07:30",
+            "close": "23:00"
+          }
+        ],
+        "2": [
+          {
+            "open": "07:30",
+            "close": "23:00"
+          }
+        ],
+        "3": [
+          {
+            "open": "07:30",
+            "close": "23:00"
+          }
+        ],
+        "4": [
+          {
+            "open": "07:30",
+            "close": "23:00"
+          }
+        ],
+        "5": [
+          {
+            "open": "07:30",
+            "close": "23:00"
+          }
+        ],
+        "6": [
+          {
+            "open": "07:30",
+            "close": "23:00"
+          }
+        ],
+        "7": [
+          {
+            "open": "07:30",
+            "close": "23:00"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "vn-bbeda06e9593",
+    "type": "咖啡",
+    "name": "Rẫy Nhà Lynn",
+    "地址": "Quốc lộ 24 cũ",
+    "lat": 14.5614395,
+    "lng": 108.2697562,
+    "營業時間": {
+      "raw": "toilets=yes",
+      "allDay": false,
+      "unknown": true,
+      "byDay": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": []
+      }
+    }
+  },
+  {
+    "id": "vn-544159398cc6",
+    "type": "咖啡",
+    "name": "SM Coffee",
+    "地址": "Gò Sao, Thạnh Xuân, Quận 12, Hồ Chí Minh, Hồ Chí Minh",
+    "lat": 10.8670374,
+    "lng": 106.6649263,
+    "營業時間": {
+      "raw": "toilets=yes",
+      "allDay": false,
+      "unknown": true,
+      "byDay": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": []
+      }
+    }
+  },
+  {
+    "id": "vn-84439b5194fe",
+    "type": "咖啡",
+    "name": "Starbucks",
+    "地址": "",
+    "lat": 10.7710508,
+    "lng": 106.6939121,
+    "營業時間": {
+      "raw": "Mo-Su 06:30-00:00 wheelchair=no toilets=yes",
+      "allDay": false,
+      "unknown": false,
+      "byDay": {
+        "1": [
+          {
+            "open": "06:30",
+            "close": "00:00"
+          }
+        ],
+        "2": [
+          {
+            "open": "06:30",
+            "close": "00:00"
+          }
+        ],
+        "3": [
+          {
+            "open": "06:30",
+            "close": "00:00"
+          }
+        ],
+        "4": [
+          {
+            "open": "06:30",
+            "close": "00:00"
+          }
+        ],
+        "5": [
+          {
+            "open": "06:30",
+            "close": "00:00"
+          }
+        ],
+        "6": [
+          {
+            "open": "06:30",
+            "close": "00:00"
+          }
+        ],
+        "7": [
+          {
+            "open": "06:30",
+            "close": "00:00"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "vn-b0518b378316",
+    "type": "咖啡",
+    "name": "Sweet Dango Sài Gòn",
+    "地址": "21/13 Trường Sơn, Quận Tân Bình, Thành phố Hồ Chí Minh, Thành phố Hồ Chí Minh",
+    "lat": 10.8066313,
+    "lng": 106.6639417,
+    "營業時間": {
+      "raw": "toilets=yes",
+      "allDay": false,
+      "unknown": true,
+      "byDay": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": []
+      }
+    }
+  },
+  {
+    "id": "vn-53d4db831308",
+    "type": "咖啡",
+    "name": "Sweet Dango Vũng Tàu",
+    "地址": "18 Bà Triệu, Thành phố Vũng Tàu, Vũng Tàu, Tỉnh Bà Rịa - Vũng Tàu",
+    "lat": 10.3537994,
+    "lng": 107.073988,
+    "營業時間": {
+      "raw": "toilets=yes",
+      "allDay": false,
+      "unknown": true,
+      "byDay": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": []
+      }
+    }
+  },
+  {
+    "id": "vn-bb9bae7efac4",
+    "type": "咖啡",
+    "name": "Sữa Tươi Chà Bá",
+    "地址": "ĐT281, Xã Lạc Đạo, Hưng Yên",
+    "lat": 20.9898273,
+    "lng": 106.0500412,
+    "營業時間": {
+      "raw": "toilets=yes",
+      "allDay": false,
+      "unknown": true,
+      "byDay": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": []
+      }
+    }
+  },
+  {
+    "id": "vn-c98baf996075",
+    "type": "咖啡",
+    "name": "The Coffee House",
+    "地址": "",
+    "lat": 10.758729,
+    "lng": 106.7005406,
+    "營業時間": {
+      "raw": "toilets=yes",
+      "allDay": false,
+      "unknown": true,
+      "byDay": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": []
+      }
+    }
+  },
+  {
+    "id": "vn-a67edd39573f",
+    "type": "咖啡",
+    "name": "The Meeting Place",
+    "地址": "8 Lô A Phạm Viết Chánh, Bình Thạnh, Ho Chi Minh City",
+    "lat": 10.7904871,
+    "lng": 106.7111196,
+    "營業時間": {
+      "raw": "toilets=yes",
+      "allDay": false,
+      "unknown": true,
+      "byDay": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": []
+      }
+    }
+  },
+  {
+    "id": "vn-bf242db95f2c",
+    "type": "咖啡",
+    "name": "Thom's Sourdough Bakery & Coffee - An Bang Beach",
+    "地址": "91 Nguyễn Phan Vinh, An Bàng, Hội An, Quảng Nam",
+    "lat": 15.9113654,
+    "lng": 108.3387526,
+    "營業時間": {
+      "raw": "07:30-16:00 wheelchair=limited toilets=yes",
+      "allDay": false,
+      "unknown": false,
+      "byDay": {
+        "1": [
+          {
+            "open": "07:30",
+            "close": "16:00"
+          }
+        ],
+        "2": [
+          {
+            "open": "07:30",
+            "close": "16:00"
+          }
+        ],
+        "3": [
+          {
+            "open": "07:30",
+            "close": "16:00"
+          }
+        ],
+        "4": [
+          {
+            "open": "07:30",
+            "close": "16:00"
+          }
+        ],
+        "5": [
+          {
+            "open": "07:30",
+            "close": "16:00"
+          }
+        ],
+        "6": [
+          {
+            "open": "07:30",
+            "close": "16:00"
+          }
+        ],
+        "7": [
+          {
+            "open": "07:30",
+            "close": "16:00"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "vn-be9b6e166c16",
+    "type": "咖啡",
+    "name": "Thom's Sourdough Bakery & Coffee - Hoi An Ancient Town",
+    "地址": "146 Nguyễn Trường Tộ, Phường Minh An, Hội An, Quảng Nam",
+    "lat": 15.8807762,
+    "lng": 108.3303607,
+    "營業時間": {
+      "raw": "07:30-19:00 wheelchair=limited toilets=yes",
+      "allDay": false,
+      "unknown": false,
+      "byDay": {
+        "1": [
+          {
+            "open": "07:30",
+            "close": "19:00"
+          }
+        ],
+        "2": [
+          {
+            "open": "07:30",
+            "close": "19:00"
+          }
+        ],
+        "3": [
+          {
+            "open": "07:30",
+            "close": "19:00"
+          }
+        ],
+        "4": [
+          {
+            "open": "07:30",
+            "close": "19:00"
+          }
+        ],
+        "5": [
+          {
+            "open": "07:30",
+            "close": "19:00"
+          }
+        ],
+        "6": [
+          {
+            "open": "07:30",
+            "close": "19:00"
+          }
+        ],
+        "7": [
+          {
+            "open": "07:30",
+            "close": "19:00"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "vn-ed17dfe485da",
+    "type": "咖啡",
+    "name": "Thom's Sourdough Bakery & Coffee - Tan Thanh Beach",
+    "地址": "41 Nguyễn Phan Vinh, Cẩm An, Hội An, Quảng Nam",
+    "lat": 15.9086547,
+    "lng": 108.346936,
+    "營業時間": {
+      "raw": "Mo-Su 07:30-18:00 wheelchair=yes toilets=yes",
+      "allDay": false,
+      "unknown": false,
+      "byDay": {
+        "1": [
+          {
+            "open": "07:30",
+            "close": "18:00"
+          }
+        ],
+        "2": [
+          {
+            "open": "07:30",
+            "close": "18:00"
+          }
+        ],
+        "3": [
+          {
+            "open": "07:30",
+            "close": "18:00"
+          }
+        ],
+        "4": [
+          {
+            "open": "07:30",
+            "close": "18:00"
+          }
+        ],
+        "5": [
+          {
+            "open": "07:30",
+            "close": "18:00"
+          }
+        ],
+        "6": [
+          {
+            "open": "07:30",
+            "close": "18:00"
+          }
+        ],
+        "7": [
+          {
+            "open": "07:30",
+            "close": "18:00"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "vn-cdc9eb9d1239",
+    "type": "咖啡",
+    "name": "Tiệm trà Ali Đào",
+    "地址": "362 27 Tháng 4, Thị trấn Phước Bửu, Bà Rịa - Vũng Tàu",
+    "lat": 10.5372172,
+    "lng": 107.4131599,
+    "營業時間": {
+      "raw": "Mo-Su 09:00-22:00 toilets=yes",
+      "allDay": false,
+      "unknown": false,
+      "byDay": {
+        "1": [
+          {
+            "open": "09:00",
+            "close": "22:00"
+          }
+        ],
+        "2": [
+          {
+            "open": "09:00",
+            "close": "22:00"
+          }
+        ],
+        "3": [
+          {
+            "open": "09:00",
+            "close": "22:00"
+          }
+        ],
+        "4": [
+          {
+            "open": "09:00",
+            "close": "22:00"
+          }
+        ],
+        "5": [
+          {
+            "open": "09:00",
+            "close": "22:00"
+          }
+        ],
+        "6": [
+          {
+            "open": "09:00",
+            "close": "22:00"
+          }
+        ],
+        "7": [
+          {
+            "open": "09:00",
+            "close": "22:00"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "vn-cc2570cf537e",
+    "type": "咖啡",
+    "name": "Tĩnh Books and Coffee",
+    "地址": "21 Hẻm 182 Lê Văn Sỹ, Phú Nhuận, Ho Chi Minh City",
+    "lat": 10.7938455,
+    "lng": 106.6707495,
+    "營業時間": {
+      "raw": "Mo-Su 08:00-22:00 toilets=yes",
+      "allDay": false,
+      "unknown": false,
+      "byDay": {
+        "1": [
+          {
+            "open": "08:00",
+            "close": "22:00"
+          }
+        ],
+        "2": [
+          {
+            "open": "08:00",
+            "close": "22:00"
+          }
+        ],
+        "3": [
+          {
+            "open": "08:00",
+            "close": "22:00"
+          }
+        ],
+        "4": [
+          {
+            "open": "08:00",
+            "close": "22:00"
+          }
+        ],
+        "5": [
+          {
+            "open": "08:00",
+            "close": "22:00"
+          }
+        ],
+        "6": [
+          {
+            "open": "08:00",
+            "close": "22:00"
+          }
+        ],
+        "7": [
+          {
+            "open": "08:00",
+            "close": "22:00"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "vn-18c278696a26",
+    "type": "咖啡",
+    "name": "Ura Coffee & Tea",
+    "地址": "",
+    "lat": 10.7260209,
+    "lng": 106.6151916,
+    "營業時間": {
+      "raw": "toilets=yes",
+      "allDay": false,
+      "unknown": true,
+      "byDay": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": []
+      }
+    }
+  },
+  {
+    "id": "vn-94bb429beab5",
+    "type": "咖啡",
+    "name": "Venti Coffee Nha Trang",
+    "地址": "",
+    "lat": 12.2423764,
+    "lng": 109.1789968,
+    "營業時間": {
+      "raw": "toilets=yes",
+      "allDay": false,
+      "unknown": true,
+      "byDay": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": []
+      }
+    }
+  },
+  {
+    "id": "vn-657604baf391",
+    "type": "咖啡",
+    "name": "Wagwel Canine",
+    "地址": "24/2 Hẻm 24 Trần Ngọc Diện",
+    "lat": 10.8047258,
+    "lng": 106.7401389,
+    "營業時間": {
+      "raw": "Mo-Su 09:00-21:00 toilets=yes",
+      "allDay": false,
+      "unknown": false,
+      "byDay": {
+        "1": [
+          {
+            "open": "09:00",
+            "close": "21:00"
+          }
+        ],
+        "2": [
+          {
+            "open": "09:00",
+            "close": "21:00"
+          }
+        ],
+        "3": [
+          {
+            "open": "09:00",
+            "close": "21:00"
+          }
+        ],
+        "4": [
+          {
+            "open": "09:00",
+            "close": "21:00"
+          }
+        ],
+        "5": [
+          {
+            "open": "09:00",
+            "close": "21:00"
+          }
+        ],
+        "6": [
+          {
+            "open": "09:00",
+            "close": "21:00"
+          }
+        ],
+        "7": [
+          {
+            "open": "09:00",
+            "close": "21:00"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "vn-287c189b9d0e",
+    "type": "咖啡",
+    "name": "Wagwel Feline",
+    "地址": "24/2 Hẻm 24 Trần Ngọc Diện",
+    "lat": 10.8047212,
+    "lng": 106.7402537,
+    "營業時間": {
+      "raw": "Mo-Su 09:00-21:00 toilets=yes",
+      "allDay": false,
+      "unknown": false,
+      "byDay": {
+        "1": [
+          {
+            "open": "09:00",
+            "close": "21:00"
+          }
+        ],
+        "2": [
+          {
+            "open": "09:00",
+            "close": "21:00"
+          }
+        ],
+        "3": [
+          {
+            "open": "09:00",
+            "close": "21:00"
+          }
+        ],
+        "4": [
+          {
+            "open": "09:00",
+            "close": "21:00"
+          }
+        ],
+        "5": [
+          {
+            "open": "09:00",
+            "close": "21:00"
+          }
+        ],
+        "6": [
+          {
+            "open": "09:00",
+            "close": "21:00"
+          }
+        ],
+        "7": [
+          {
+            "open": "09:00",
+            "close": "21:00"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "vn-b52fc8b6fce7",
+    "type": "咖啡",
+    "name": "Weasel Coffee Farm",
+    "地址": "",
+    "lat": 11.9349629,
+    "lng": 108.467809,
+    "營業時間": {
+      "raw": "wheelchair=yes toilets=yes",
+      "allDay": false,
+      "unknown": true,
+      "byDay": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": []
+      }
+    }
+  },
+  {
+    "id": "vn-c9820f0195e2",
+    "type": "咖啡",
+    "name": "Zerus Caffe",
+    "地址": "337B Bến Bình Đông, Quận 8, Ho Chi Minh City",
+    "lat": 10.7481138,
+    "lng": 106.6603301,
+    "營業時間": {
+      "raw": "Mo-Su 07:00-23:00 toilets=yes",
+      "allDay": false,
+      "unknown": false,
+      "byDay": {
+        "1": [
+          {
+            "open": "07:00",
+            "close": "23:00"
+          }
+        ],
+        "2": [
+          {
+            "open": "07:00",
+            "close": "23:00"
+          }
+        ],
+        "3": [
+          {
+            "open": "07:00",
+            "close": "23:00"
+          }
+        ],
+        "4": [
+          {
+            "open": "07:00",
+            "close": "23:00"
+          }
+        ],
+        "5": [
+          {
+            "open": "07:00",
+            "close": "23:00"
+          }
+        ],
+        "6": [
+          {
+            "open": "07:00",
+            "close": "23:00"
+          }
+        ],
+        "7": [
+          {
+            "open": "07:00",
+            "close": "23:00"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "vn-bea2c52f551b",
+    "type": "咖啡",
+    "name": "À La Main",
+    "地址": "13 Đường Đặng Đức Thuật, Quận 7, Hồ Chí Minh",
+    "lat": 10.7252921,
+    "lng": 106.7098322,
+    "營業時間": {
+      "raw": "toilets=yes",
+      "allDay": false,
+      "unknown": true,
+      "byDay": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": []
+      }
+    }
+  },
+  {
+    "id": "vn-b6753fadb418",
+    "type": "咖啡",
+    "name": "Đây Đi",
+    "地址": "1C Phố Tông Đản",
+    "lat": 21.0284305,
+    "lng": 105.8572398,
+    "營業時間": {
+      "raw": "Mo-Fr 07:30-22:30; Sa-Su 08:30-22:30 wheelchair=no toilets=yes",
+      "allDay": false,
+      "unknown": true,
+      "byDay": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": []
+      }
+    }
+  },
+  {
+    "id": "vn-ec38bba84353",
+    "type": "咖啡",
+    "name": "Сусанин",
+    "地址": "98d/13 Trần Phú, Lộc Thọ, Nha Trang, Khánh Hòa",
+    "lat": 12.2267735,
+    "lng": 109.1992396,
+    "營業時間": {
+      "raw": "08:00-20:00 wheelchair=yes toilets=yes",
+      "allDay": false,
+      "unknown": false,
+      "byDay": {
+        "1": [
+          {
+            "open": "08:00",
+            "close": "20:00"
+          }
+        ],
+        "2": [
+          {
+            "open": "08:00",
+            "close": "20:00"
+          }
+        ],
+        "3": [
+          {
+            "open": "08:00",
+            "close": "20:00"
+          }
+        ],
+        "4": [
+          {
+            "open": "08:00",
+            "close": "20:00"
+          }
+        ],
+        "5": [
+          {
+            "open": "08:00",
+            "close": "20:00"
+          }
+        ],
+        "6": [
+          {
+            "open": "08:00",
+            "close": "20:00"
+          }
+        ],
+        "7": [
+          {
+            "open": "08:00",
+            "close": "20:00"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "vn-302d92cd361a",
+    "type": "咖啡",
+    "name": "咖啡",
+    "地址": "",
+    "lat": 22.3646202,
+    "lng": 104.0826979,
+    "營業時間": {
+      "raw": "toilets=yes",
+      "allDay": false,
+      "unknown": true,
+      "byDay": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": []
+      }
+    }
+  },
+  {
+    "id": "vn-41f48ca22529",
+    "type": "咖啡",
+    "name": "咖啡",
+    "地址": "",
+    "lat": 22.3629572,
+    "lng": 104.0815386,
+    "營業時間": {
+      "raw": "toilets=yes",
+      "allDay": false,
+      "unknown": true,
+      "byDay": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": []
+      }
+    }
+  },
+  {
+    "id": "vn-6189168e7664",
+    "type": "咖啡",
+    "name": "咖啡",
+    "地址": "",
+    "lat": 10.7710513,
+    "lng": 106.6930207,
+    "營業時間": {
+      "raw": "wheelchair=limited toilets=yes",
+      "allDay": false,
+      "unknown": true,
+      "byDay": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": []
+      }
+    }
+  },
+  {
+    "id": "vn-763fe51c9de7",
+    "type": "商場",
+    "name": "AEON Mall Long Biên",
+    "地址": "27 Đường Cổ Linh, Quận Long Biên, Hà Nội, Hà Nội",
+    "lat": 21.0272299,
+    "lng": 105.8994989,
+    "營業時間": {
+      "raw": "Mo-Fr 10:00-22:00; Sa,Su,PH 09:00-22:00 wheelchair=yes toilets=yes",
+      "allDay": false,
+      "unknown": true,
+      "byDay": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": []
+      }
+    }
+  },
+  {
+    "id": "vn-c4f29f8d00c6",
+    "type": "商場",
+    "name": "GO! Market",
+    "地址": "4 19/5, Vĩnh Hiệp, Nha Trang, Khánh Hòa",
+    "lat": 12.2563798,
+    "lng": 109.1703878,
+    "營業時間": {
+      "raw": "Mo-Su 08:00-22:00 toilets=yes",
+      "allDay": false,
+      "unknown": false,
+      "byDay": {
+        "1": [
+          {
+            "open": "08:00",
+            "close": "22:00"
+          }
+        ],
+        "2": [
+          {
+            "open": "08:00",
+            "close": "22:00"
+          }
+        ],
+        "3": [
+          {
+            "open": "08:00",
+            "close": "22:00"
+          }
+        ],
+        "4": [
+          {
+            "open": "08:00",
+            "close": "22:00"
+          }
+        ],
+        "5": [
+          {
+            "open": "08:00",
+            "close": "22:00"
+          }
+        ],
+        "6": [
+          {
+            "open": "08:00",
+            "close": "22:00"
+          }
+        ],
+        "7": [
+          {
+            "open": "08:00",
+            "close": "22:00"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "vn-903c2b657d25",
+    "type": "商場",
+    "name": "Giga Mall Phạm Văn Đồng",
+    "地址": "",
+    "lat": 10.8276722,
+    "lng": 106.721539,
+    "營業時間": {
+      "raw": "Mo-Fr 09:30-22:00 toilets=yes",
+      "allDay": false,
+      "unknown": true,
+      "byDay": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": []
+      }
+    }
+  },
+  {
+    "id": "vn-c9c46bc10f58",
+    "type": "商場",
+    "name": "Gigamall",
+    "地址": "240-242 Phạm Văn Đồng, Thủ Đức, Hồ Chí Minh",
+    "lat": 10.8277232,
+    "lng": 106.7217477,
+    "營業時間": {
+      "raw": "Sa,Su,PH off toilets=yes",
+      "allDay": false,
+      "unknown": true,
+      "byDay": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": []
+      }
+    }
+  },
+  {
+    "id": "vn-73d2cc0b81b2",
+    "type": "商場",
+    "name": "Hanoi Centre",
+    "地址": "175 Phố Nguyễn Thái Học, Ô Chợ Dừa, Hà Nội, Hà Nội",
+    "lat": 21.0314637,
+    "lng": 105.8306532,
+    "營業時間": {
+      "raw": "Mo-Th 09:30-21:30; Fr-Su 09:30-22:00 toilets=yes",
+      "allDay": false,
+      "unknown": true,
+      "byDay": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": []
+      }
+    }
+  },
+  {
+    "id": "vn-20836332e181",
+    "type": "商場",
+    "name": "Lotte Mall West Lake Hanoi",
+    "地址": "272 Đường Võ Chí Công, Tây Hồ, Hà Nội, Hà Nội",
+    "lat": 21.0760171,
+    "lng": 105.8126164,
+    "營業時間": {
+      "raw": "Mo-Su 09:30-22:00 toilets=yes",
+      "allDay": false,
+      "unknown": false,
+      "byDay": {
+        "1": [
+          {
+            "open": "09:30",
+            "close": "22:00"
+          }
+        ],
+        "2": [
+          {
+            "open": "09:30",
+            "close": "22:00"
+          }
+        ],
+        "3": [
+          {
+            "open": "09:30",
+            "close": "22:00"
+          }
+        ],
+        "4": [
+          {
+            "open": "09:30",
+            "close": "22:00"
+          }
+        ],
+        "5": [
+          {
+            "open": "09:30",
+            "close": "22:00"
+          }
+        ],
+        "6": [
+          {
+            "open": "09:30",
+            "close": "22:00"
+          }
+        ],
+        "7": [
+          {
+            "open": "09:30",
+            "close": "22:00"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "vn-5580ee3bc63f",
+    "type": "商場",
+    "name": "Vincom",
+    "地址": "1096 Đường Phạm Văn Thuận, Khu phố 17, Phường Tam Hiệp, TỈnh Đồng Nai",
+    "lat": 10.9576312,
+    "lng": 106.8434143,
+    "營業時間": {
+      "raw": "06:00-22:00 toilets=yes",
+      "allDay": false,
+      "unknown": false,
+      "byDay": {
+        "1": [
+          {
+            "open": "06:00",
+            "close": "22:00"
+          }
+        ],
+        "2": [
+          {
+            "open": "06:00",
+            "close": "22:00"
+          }
+        ],
+        "3": [
+          {
+            "open": "06:00",
+            "close": "22:00"
+          }
+        ],
+        "4": [
+          {
+            "open": "06:00",
+            "close": "22:00"
+          }
+        ],
+        "5": [
+          {
+            "open": "06:00",
+            "close": "22:00"
+          }
+        ],
+        "6": [
+          {
+            "open": "06:00",
+            "close": "22:00"
+          }
+        ],
+        "7": [
+          {
+            "open": "06:00",
+            "close": "22:00"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "vn-cc063152d05f",
+    "type": "商場",
+    "name": "Vincom Mega Mall Royal City",
+    "地址": "72A Đường Nguyễn Trãi, Thanh Xuân, Hà Nội",
+    "lat": 21.0022833,
+    "lng": 105.8160462,
+    "營業時間": {
+      "raw": "Mo-Su 10:00-21:30 toilets=yes",
+      "allDay": false,
+      "unknown": false,
+      "byDay": {
+        "1": [
+          {
+            "open": "10:00",
+            "close": "21:30"
+          }
+        ],
+        "2": [
+          {
+            "open": "10:00",
+            "close": "21:30"
+          }
+        ],
+        "3": [
+          {
+            "open": "10:00",
+            "close": "21:30"
+          }
+        ],
+        "4": [
+          {
+            "open": "10:00",
+            "close": "21:30"
+          }
+        ],
+        "5": [
+          {
+            "open": "10:00",
+            "close": "21:30"
+          }
+        ],
+        "6": [
+          {
+            "open": "10:00",
+            "close": "21:30"
+          }
+        ],
+        "7": [
+          {
+            "open": "10:00",
+            "close": "21:30"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "vn-953b0e1bd7c1",
+    "type": "商場",
+    "name": "Vincom Mega Mall Smart City",
+    "地址": ", Nam Từ Liêm, Hà Nội, Hà Nội",
+    "lat": 21.0059137,
+    "lng": 105.7544665,
+    "營業時間": {
+      "raw": "Mo-Su 10:00-21:30 wheelchair=yes toilets=yes",
+      "allDay": false,
+      "unknown": false,
+      "byDay": {
+        "1": [
+          {
+            "open": "10:00",
+            "close": "21:30"
+          }
+        ],
+        "2": [
+          {
+            "open": "10:00",
+            "close": "21:30"
+          }
+        ],
+        "3": [
+          {
+            "open": "10:00",
+            "close": "21:30"
+          }
+        ],
+        "4": [
+          {
+            "open": "10:00",
+            "close": "21:30"
+          }
+        ],
+        "5": [
+          {
+            "open": "10:00",
+            "close": "21:30"
+          }
+        ],
+        "6": [
+          {
+            "open": "10:00",
+            "close": "21:30"
+          }
+        ],
+        "7": [
+          {
+            "open": "10:00",
+            "close": "21:30"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "vn-73f3b5ff2c93",
+    "type": "商場",
+    "name": "Vincom Mega Mall Times City",
+    "地址": "",
+    "lat": 20.9948145,
+    "lng": 105.8685654,
+    "營業時間": {
+      "raw": "Mo-Su 10:00-21:30 toilets=yes",
+      "allDay": false,
+      "unknown": false,
+      "byDay": {
+        "1": [
+          {
+            "open": "10:00",
+            "close": "21:30"
+          }
+        ],
+        "2": [
+          {
+            "open": "10:00",
+            "close": "21:30"
+          }
+        ],
+        "3": [
+          {
+            "open": "10:00",
+            "close": "21:30"
+          }
+        ],
+        "4": [
+          {
+            "open": "10:00",
+            "close": "21:30"
+          }
+        ],
+        "5": [
+          {
+            "open": "10:00",
+            "close": "21:30"
+          }
+        ],
+        "6": [
+          {
+            "open": "10:00",
+            "close": "21:30"
+          }
+        ],
+        "7": [
+          {
+            "open": "10:00",
+            "close": "21:30"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "vn-ff0088658a83",
+    "type": "商場",
+    "name": "Vincom Megamall Thảo Điền",
+    "地址": "159-161 Đường Võ Nguyên Giáp, Phường Thảo Điền, Thành phố Thủ Đức, Thành phố Hồ Chí Minh",
+    "lat": 10.8023666,
+    "lng": 106.7408767,
+    "營業時間": {
+      "raw": "Mo-Fr 10:00-22:00; Sa,Su 09:30-22:00 toilets=yes",
+      "allDay": false,
+      "unknown": true,
+      "byDay": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": []
+      }
+    }
+  },
+  {
+    "id": "vn-c83211495245",
+    "type": "商場",
+    "name": "Vincom Phạm Ngọc Thạch",
+    "地址": "2 Phố Phạm Ngọc Thạch, Đống Đa, Hà Nội, Hà Nội",
+    "lat": 21.0062726,
+    "lng": 105.8321006,
+    "營業時間": {
+      "raw": "Mo-Su 09:00-22:00 toilets=yes",
+      "allDay": false,
+      "unknown": false,
+      "byDay": {
+        "1": [
+          {
+            "open": "09:00",
+            "close": "22:00"
+          }
+        ],
+        "2": [
+          {
+            "open": "09:00",
+            "close": "22:00"
+          }
+        ],
+        "3": [
+          {
+            "open": "09:00",
+            "close": "22:00"
+          }
+        ],
+        "4": [
+          {
+            "open": "09:00",
+            "close": "22:00"
+          }
+        ],
+        "5": [
+          {
+            "open": "09:00",
+            "close": "22:00"
+          }
+        ],
+        "6": [
+          {
+            "open": "09:00",
+            "close": "22:00"
+          }
+        ],
+        "7": [
+          {
+            "open": "09:00",
+            "close": "22:00"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "vn-0e1bb92382bf",
+    "type": "商場",
+    "name": "Vincom Plaza Huế",
+    "地址": "50A Hùng Vương, Phường Phú Nhuận, Thành phố Huế, Tỉnh Thừa Thiên Huế",
+    "lat": 16.4630118,
+    "lng": 107.5942621,
+    "營業時間": {
+      "raw": "10:00-21:00 toilets=yes",
+      "allDay": false,
+      "unknown": false,
+      "byDay": {
+        "1": [
+          {
+            "open": "10:00",
+            "close": "21:00"
+          }
+        ],
+        "2": [
+          {
+            "open": "10:00",
+            "close": "21:00"
+          }
+        ],
+        "3": [
+          {
+            "open": "10:00",
+            "close": "21:00"
+          }
+        ],
+        "4": [
+          {
+            "open": "10:00",
+            "close": "21:00"
+          }
+        ],
+        "5": [
+          {
+            "open": "10:00",
+            "close": "21:00"
+          }
+        ],
+        "6": [
+          {
+            "open": "10:00",
+            "close": "21:00"
+          }
+        ],
+        "7": [
+          {
+            "open": "10:00",
+            "close": "21:00"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "vn-8bc2f817964f",
+    "type": "商場",
+    "name": "Vincom Plaza Imperia",
+    "地址": "",
+    "lat": 20.8630346,
+    "lng": 106.6619605,
+    "營業時間": {
+      "raw": "toilets=yes",
+      "allDay": false,
+      "unknown": true,
+      "byDay": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": []
+      }
+    }
+  },
+  {
+    "id": "vn-937957635196",
+    "type": "商場",
+    "name": "Vincom Plaza Lê Thánh Tông",
+    "地址": "1 Đường Lê Thánh Tông, Quận Ngô Quyền, Thành phố Hải Phòng",
+    "lat": 20.8658425,
+    "lng": 106.6915195,
+    "營業時間": {
+      "raw": "toilets=yes",
+      "allDay": false,
+      "unknown": true,
+      "byDay": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": []
+      }
+    }
+  },
+  {
+    "id": "vn-5c3d9a70ce7c",
+    "type": "商場",
+    "name": "Vincom Plaza Đồng Hới",
+    "地址": "",
+    "lat": 17.4654922,
+    "lng": 106.6262606,
+    "營業時間": {
+      "raw": "toilets=yes",
+      "allDay": false,
+      "unknown": true,
+      "byDay": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": []
+      }
+    }
+  },
+  {
+    "id": "vn-5607ae7596c1",
+    "type": "景點",
+    "name": "Săn Mây Đồi Dổi",
+    "地址": "",
+    "lat": 11.4299392,
+    "lng": 107.7499869,
+    "營業時間": {
+      "raw": "Sa-Su 00:00-24:00 wheelchair=no toilets=yes",
+      "allDay": false,
+      "unknown": true,
+      "byDay": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": []
+      }
+    }
+  },
+  {
+    "id": "vn-b44a1ef39701",
+    "type": "車站",
+    "name": "Lào Cai",
+    "地址": "",
+    "lat": 22.4922679,
+    "lng": 103.9783871,
+    "營業時間": {
+      "raw": "toilets=yes",
+      "allDay": false,
+      "unknown": true,
+      "byDay": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": []
+      }
+    }
+  },
+  {
+    "id": "vn-8b63f1fa0e57",
+    "type": "車站",
+    "name": "Đà Nẵng",
+    "地址": "",
+    "lat": 16.071571,
+    "lng": 108.2093029,
+    "營業時間": {
+      "raw": "wheelchair=yes toilets=yes",
+      "allDay": false,
+      "unknown": true,
+      "byDay": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": []
+      }
+    }
+  },
+  {
+    "id": "vn-8cc3ac3c1236",
+    "type": "餐廳",
+    "name": "5 Elements Garden",
+    "地址": "12-14 Hàm Nghi, Ngô Mây, Quy Nhơn, Bình Định",
+    "lat": 13.7641834,
+    "lng": 109.2162079,
+    "營業時間": {
+      "raw": "ПН-ВС 08:00-22:00 toilets=yes",
+      "allDay": false,
+      "unknown": true,
+      "byDay": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": []
+      }
+    }
+  },
+  {
+    "id": "vn-553ce20c8395",
+    "type": "餐廳",
+    "name": "81东北原味烧烤 | BBQ Kiểu Đông Bắc",
+    "地址": "155 Nguyễn Hữu Cảnh, Quận Bình Thạnh, Thành phố Hồ Chí Minh, Thành phố Hồ Chí Minh",
+    "lat": 10.7965983,
+    "lng": 106.7186549,
+    "營業時間": {
+      "raw": "Mo-Su 15:00-02:00 toilets=yes",
+      "allDay": false,
+      "unknown": false,
+      "byDay": {
+        "1": [
+          {
+            "open": "15:00",
+            "close": "02:00"
+          }
+        ],
+        "2": [
+          {
+            "open": "15:00",
+            "close": "02:00"
+          }
+        ],
+        "3": [
+          {
+            "open": "15:00",
+            "close": "02:00"
+          }
+        ],
+        "4": [
+          {
+            "open": "15:00",
+            "close": "02:00"
+          }
+        ],
+        "5": [
+          {
+            "open": "15:00",
+            "close": "02:00"
+          }
+        ],
+        "6": [
+          {
+            "open": "15:00",
+            "close": "02:00"
+          }
+        ],
+        "7": [
+          {
+            "open": "15:00",
+            "close": "02:00"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "vn-ce8fb389ee40",
+    "type": "餐廳",
+    "name": "81东北原味烧烤 | BBQ Kiểu Đông Bắc",
+    "地址": "155 Nguyễn Hữu Cảnh, Quận Bình Thạnh, Thành phố Hồ Chí Minh, Thành phố Hồ Chí Minh",
+    "lat": 10.7966315,
+    "lng": 106.7189955,
+    "營業時間": {
+      "raw": "Mo-SU 15:00-02:00 toilets=yes",
+      "allDay": false,
+      "unknown": true,
+      "byDay": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": []
+      }
+    }
+  },
+  {
+    "id": "vn-387d834ecc40",
+    "type": "餐廳",
+    "name": "An Lam",
+    "地址": "",
+    "lat": 12.2382244,
+    "lng": 109.1953141,
+    "營業時間": {
+      "raw": "toilets=yes",
+      "allDay": false,
+      "unknown": true,
+      "byDay": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": []
+      }
+    }
+  },
+  {
+    "id": "vn-40b0883c4cd9",
+    "type": "餐廳",
+    "name": "Baby Mustard",
+    "地址": "Hai Bà Trưng",
+    "lat": 15.9013833,
+    "lng": 108.3364089,
+    "營業時間": {
+      "raw": "toilets=yes",
+      "allDay": false,
+      "unknown": true,
+      "byDay": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": []
+      }
+    }
+  },
+  {
+    "id": "vn-7c6cca0f180f",
+    "type": "餐廳",
+    "name": "Beer Plaza",
+    "地址": "",
+    "lat": 15.9983245,
+    "lng": 107.9876562,
+    "營業時間": {
+      "raw": "toilets=yes",
+      "allDay": false,
+      "unknown": true,
+      "byDay": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": []
+      }
+    }
+  },
+  {
+    "id": "vn-4c01d3f2819c",
+    "type": "餐廳",
+    "name": "Bikini Bottom Express",
+    "地址": "45-47 An Thuong 2, Ngũ Hành Sơn, Đà Nẵng, Danang",
+    "lat": 16.0486661,
+    "lng": 108.2475717,
+    "營業時間": {
+      "raw": "mo-su 08:00-22:45 toilets=yes",
+      "allDay": false,
+      "unknown": true,
+      "byDay": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": []
+      }
+    }
+  },
+  {
+    "id": "vn-eec998ce2380",
+    "type": "餐廳",
+    "name": "Bo Bo",
+    "地址": "",
+    "lat": 15.8790505,
+    "lng": 108.328551,
+    "營業時間": {
+      "raw": "toilets=yes",
+      "allDay": false,
+      "unknown": true,
+      "byDay": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": []
+      }
+    }
+  },
+  {
+    "id": "vn-0a63eb49fe15",
+    "type": "餐廳",
+    "name": "Bò Tơ Hồng Đào - Bò Tơ Củ Chi",
+    "地址": "171 Quốc lộ 22, Củ Chi, Thành Phố Hồ Chí Minh, Hồ Chí Minh",
+    "lat": 10.9508939,
+    "lng": 106.5183809,
+    "營業時間": {
+      "raw": "Mo-Su 08:00-21:00 wheelchair=yes toilets=yes",
+      "allDay": false,
+      "unknown": false,
+      "byDay": {
+        "1": [
+          {
+            "open": "08:00",
+            "close": "21:00"
+          }
+        ],
+        "2": [
+          {
+            "open": "08:00",
+            "close": "21:00"
+          }
+        ],
+        "3": [
+          {
+            "open": "08:00",
+            "close": "21:00"
+          }
+        ],
+        "4": [
+          {
+            "open": "08:00",
+            "close": "21:00"
+          }
+        ],
+        "5": [
+          {
+            "open": "08:00",
+            "close": "21:00"
+          }
+        ],
+        "6": [
+          {
+            "open": "08:00",
+            "close": "21:00"
+          }
+        ],
+        "7": [
+          {
+            "open": "08:00",
+            "close": "21:00"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "vn-41ced36bd858",
+    "type": "餐廳",
+    "name": "Bún - Miến Ngan Lan Huân",
+    "地址": "ĐH.15, Xã Đại Đồng, Hưng Yên",
+    "lat": 20.9916052,
+    "lng": 106.0574837,
+    "營業時間": {
+      "raw": "toilets=yes",
+      "allDay": false,
+      "unknown": true,
+      "byDay": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": []
+      }
+    }
+  },
+  {
+    "id": "vn-ec7e5e888b2f",
+    "type": "餐廳",
+    "name": "Bưu Niệm",
+    "地址": "7 Đường số 8",
+    "lat": 10.7355928,
+    "lng": 106.6931855,
+    "營業時間": {
+      "raw": "Mo-Su 07:00-21:30 wheelchair=limited toilets=yes",
+      "allDay": false,
+      "unknown": false,
+      "byDay": {
+        "1": [
+          {
+            "open": "07:00",
+            "close": "21:30"
+          }
+        ],
+        "2": [
+          {
+            "open": "07:00",
+            "close": "21:30"
+          }
+        ],
+        "3": [
+          {
+            "open": "07:00",
+            "close": "21:30"
+          }
+        ],
+        "4": [
+          {
+            "open": "07:00",
+            "close": "21:30"
+          }
+        ],
+        "5": [
+          {
+            "open": "07:00",
+            "close": "21:30"
+          }
+        ],
+        "6": [
+          {
+            "open": "07:00",
+            "close": "21:30"
+          }
+        ],
+        "7": [
+          {
+            "open": "07:00",
+            "close": "21:30"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "vn-1d40529e6eaa",
+    "type": "餐廳",
+    "name": "Bếp Hên",
+    "地址": "47 Lê Hồng Phong",
+    "lat": 16.0639909,
+    "lng": 108.2210351,
+    "營業時間": {
+      "raw": "09:00-15:00,17:00-21:00 wheelchair=limited toilets=yes",
+      "allDay": false,
+      "unknown": true,
+      "byDay": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": []
+      }
+    }
+  },
+  {
+    "id": "vn-140cb510f5b9",
+    "type": "餐廳",
+    "name": "Bếp Thái Koh Yam",
+    "地址": "3A Ngõ Bà Triệu, Hai Bà Trưng, Hà Nội, Hà Nội",
+    "lat": 21.012437,
+    "lng": 105.8487786,
+    "營業時間": {
+      "raw": "toilets=yes",
+      "allDay": false,
+      "unknown": true,
+      "byDay": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": []
+      }
+    }
+  },
+  {
+    "id": "vn-638acd2f4f97",
+    "type": "餐廳",
+    "name": "Cat Ba Oasis Bar 2",
+    "地址": "254 Cat Ba 1/4",
+    "lat": 20.7212767,
+    "lng": 107.0514886,
+    "營業時間": {
+      "raw": "toilets=yes",
+      "allDay": false,
+      "unknown": true,
+      "byDay": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": []
+      }
+    }
+  },
+  {
+    "id": "vn-de6d93aaf9fb",
+    "type": "餐廳",
+    "name": "Cleopatra Bistro",
+    "地址": "52-BT1 Lý Thành Long, Hải Phòng",
+    "lat": 20.8426632,
+    "lng": 106.6903429,
+    "營業時間": {
+      "raw": "Mo-Su 07:00-23:00 wheelchair=limited toilets=yes",
+      "allDay": false,
+      "unknown": false,
+      "byDay": {
+        "1": [
+          {
+            "open": "07:00",
+            "close": "23:00"
+          }
+        ],
+        "2": [
+          {
+            "open": "07:00",
+            "close": "23:00"
+          }
+        ],
+        "3": [
+          {
+            "open": "07:00",
+            "close": "23:00"
+          }
+        ],
+        "4": [
+          {
+            "open": "07:00",
+            "close": "23:00"
+          }
+        ],
+        "5": [
+          {
+            "open": "07:00",
+            "close": "23:00"
+          }
+        ],
+        "6": [
+          {
+            "open": "07:00",
+            "close": "23:00"
+          }
+        ],
+        "7": [
+          {
+            "open": "07:00",
+            "close": "23:00"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "vn-a68cc7343469",
+    "type": "餐廳",
+    "name": "Căng tin",
+    "地址": "",
+    "lat": 21.1911677,
+    "lng": 106.0606124,
+    "營業時間": {
+      "raw": "Mo-Sa 07:00-21:00 access=permissive wheelchair=yes toilets=yes",
+      "allDay": false,
+      "unknown": true,
+      "byDay": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": []
+      }
+    }
+  },
+  {
+    "id": "vn-a09d88126dc0",
+    "type": "餐廳",
+    "name": "Cơm Niêu Tam Cốc - Restaurant & Coffee Vintage",
+    "地址": "",
+    "lat": 20.2180977,
+    "lng": 105.9531722,
+    "營業時間": {
+      "raw": "Mo-Su 10:00-22:00 wheelchair=no toilets=yes",
+      "allDay": false,
+      "unknown": false,
+      "byDay": {
+        "1": [
+          {
+            "open": "10:00",
+            "close": "22:00"
+          }
+        ],
+        "2": [
+          {
+            "open": "10:00",
+            "close": "22:00"
+          }
+        ],
+        "3": [
+          {
+            "open": "10:00",
+            "close": "22:00"
+          }
+        ],
+        "4": [
+          {
+            "open": "10:00",
+            "close": "22:00"
+          }
+        ],
+        "5": [
+          {
+            "open": "10:00",
+            "close": "22:00"
+          }
+        ],
+        "6": [
+          {
+            "open": "10:00",
+            "close": "22:00"
+          }
+        ],
+        "7": [
+          {
+            "open": "10:00",
+            "close": "22:00"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "vn-1d6c795e972d",
+    "type": "餐廳",
+    "name": "Dolphin Bar & Kitchen",
+    "地址": "",
+    "lat": 15.9127224,
+    "lng": 108.3417419,
+    "營業時間": {
+      "raw": "toilets=yes",
+      "allDay": false,
+      "unknown": true,
+      "byDay": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": []
+      }
+    }
+  },
+  {
+    "id": "vn-c0ddb6763a2a",
+    "type": "餐廳",
+    "name": "Donald Trung",
+    "地址": "",
+    "lat": 16.0678822,
+    "lng": 108.2046485,
+    "營業時間": {
+      "raw": "Mo-Su 10:00-22:00 toilets=yes",
+      "allDay": false,
+      "unknown": false,
+      "byDay": {
+        "1": [
+          {
+            "open": "10:00",
+            "close": "22:00"
+          }
+        ],
+        "2": [
+          {
+            "open": "10:00",
+            "close": "22:00"
+          }
+        ],
+        "3": [
+          {
+            "open": "10:00",
+            "close": "22:00"
+          }
+        ],
+        "4": [
+          {
+            "open": "10:00",
+            "close": "22:00"
+          }
+        ],
+        "5": [
+          {
+            "open": "10:00",
+            "close": "22:00"
+          }
+        ],
+        "6": [
+          {
+            "open": "10:00",
+            "close": "22:00"
+          }
+        ],
+        "7": [
+          {
+            "open": "10:00",
+            "close": "22:00"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "vn-7503d36d2d55",
+    "type": "餐廳",
+    "name": "Donald pub",
+    "地址": "",
+    "lat": 20.2413347,
+    "lng": 105.9363459,
+    "營業時間": {
+      "raw": "toilets=yes",
+      "allDay": false,
+      "unknown": true,
+      "byDay": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": []
+      }
+    }
+  },
+  {
+    "id": "vn-d6781b27d497",
+    "type": "餐廳",
+    "name": "Dream catchers",
+    "地址": "",
+    "lat": 21.028975,
+    "lng": 105.8485177,
+    "營業時間": {
+      "raw": "toilets=yes",
+      "allDay": false,
+      "unknown": true,
+      "byDay": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": []
+      }
+    }
+  },
+  {
+    "id": "vn-157023a4d1e6",
+    "type": "餐廳",
+    "name": "Filthy Vegan",
+    "地址": "86 Cô Bắc",
+    "lat": 10.7649331,
+    "lng": 106.6947879,
+    "營業時間": {
+      "raw": "wheelchair=no toilets=yes",
+      "allDay": false,
+      "unknown": true,
+      "byDay": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": []
+      }
+    }
+  },
+  {
+    "id": "vn-d0c76a688fc8",
+    "type": "餐廳",
+    "name": "KURUMI - Healthy Vegan Food & Desserts",
+    "地址": "17/22 Đường Mỹ Đa Đông 12, Ngũ Hành Sơn, Da Nang",
+    "lat": 16.0457151,
+    "lng": 108.2478678,
+    "營業時間": {
+      "raw": "Mo-Su 08:00-21:30 wheelchair=limited toilets=yes",
+      "allDay": false,
+      "unknown": false,
+      "byDay": {
+        "1": [
+          {
+            "open": "08:00",
+            "close": "21:30"
+          }
+        ],
+        "2": [
+          {
+            "open": "08:00",
+            "close": "21:30"
+          }
+        ],
+        "3": [
+          {
+            "open": "08:00",
+            "close": "21:30"
+          }
+        ],
+        "4": [
+          {
+            "open": "08:00",
+            "close": "21:30"
+          }
+        ],
+        "5": [
+          {
+            "open": "08:00",
+            "close": "21:30"
+          }
+        ],
+        "6": [
+          {
+            "open": "08:00",
+            "close": "21:30"
+          }
+        ],
+        "7": [
+          {
+            "open": "08:00",
+            "close": "21:30"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "vn-06ef5c6b9671",
+    "type": "餐廳",
+    "name": "Kurumi - Healthy Vegan Food & Desserts",
+    "地址": "187 Lý Thường Kiệt",
+    "lat": 15.8835171,
+    "lng": 108.3269567,
+    "營業時間": {
+      "raw": "Mo-Su 08:00-21:00 wheelchair=yes toilets=yes",
+      "allDay": false,
+      "unknown": false,
+      "byDay": {
+        "1": [
+          {
+            "open": "08:00",
+            "close": "21:00"
+          }
+        ],
+        "2": [
+          {
+            "open": "08:00",
+            "close": "21:00"
+          }
+        ],
+        "3": [
+          {
+            "open": "08:00",
+            "close": "21:00"
+          }
+        ],
+        "4": [
+          {
+            "open": "08:00",
+            "close": "21:00"
+          }
+        ],
+        "5": [
+          {
+            "open": "08:00",
+            "close": "21:00"
+          }
+        ],
+        "6": [
+          {
+            "open": "08:00",
+            "close": "21:00"
+          }
+        ],
+        "7": [
+          {
+            "open": "08:00",
+            "close": "21:00"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "vn-2ad4c2eafe53",
+    "type": "餐廳",
+    "name": "La Cabana - House of BBQ",
+    "地址": "505 Đường Trần Hưng Đạo, Phường An Hải, Đà Nẵng",
+    "lat": 16.0629394,
+    "lng": 108.2302972,
+    "營業時間": {
+      "raw": "Mo-Su 16:00-23:00 wheelchair=limited toilets=yes",
+      "allDay": false,
+      "unknown": false,
+      "byDay": {
+        "1": [
+          {
+            "open": "16:00",
+            "close": "23:00"
+          }
+        ],
+        "2": [
+          {
+            "open": "16:00",
+            "close": "23:00"
+          }
+        ],
+        "3": [
+          {
+            "open": "16:00",
+            "close": "23:00"
+          }
+        ],
+        "4": [
+          {
+            "open": "16:00",
+            "close": "23:00"
+          }
+        ],
+        "5": [
+          {
+            "open": "16:00",
+            "close": "23:00"
+          }
+        ],
+        "6": [
+          {
+            "open": "16:00",
+            "close": "23:00"
+          }
+        ],
+        "7": [
+          {
+            "open": "16:00",
+            "close": "23:00"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "vn-dfebbfb57349",
+    "type": "餐廳",
+    "name": "La Miette Bakery & Bistro",
+    "地址": "Thai Vi, TDP Văn Lâm, Tam Coc, Ninh Binh, Ninh Bình",
+    "lat": 20.215121,
+    "lng": 105.9367787,
+    "營業時間": {
+      "raw": "Mo-Su 07:00-22:00 toilets=yes",
+      "allDay": false,
+      "unknown": false,
+      "byDay": {
+        "1": [
+          {
+            "open": "07:00",
+            "close": "22:00"
+          }
+        ],
+        "2": [
+          {
+            "open": "07:00",
+            "close": "22:00"
+          }
+        ],
+        "3": [
+          {
+            "open": "07:00",
+            "close": "22:00"
+          }
+        ],
+        "4": [
+          {
+            "open": "07:00",
+            "close": "22:00"
+          }
+        ],
+        "5": [
+          {
+            "open": "07:00",
+            "close": "22:00"
+          }
+        ],
+        "6": [
+          {
+            "open": "07:00",
+            "close": "22:00"
+          }
+        ],
+        "7": [
+          {
+            "open": "07:00",
+            "close": "22:00"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "vn-7826a6320048",
+    "type": "餐廳",
+    "name": "Lemongrass Ho Tram",
+    "地址": "",
+    "lat": 10.4858885,
+    "lng": 107.4559685,
+    "營業時間": {
+      "raw": "toilets=yes",
+      "allDay": false,
+      "unknown": true,
+      "byDay": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": []
+      }
+    }
+  },
+  {
+    "id": "vn-58e14d4d4744",
+    "type": "餐廳",
+    "name": "Lian Hua",
+    "地址": "",
+    "lat": 21.0285428,
+    "lng": 105.8437079,
+    "營業時間": {
+      "raw": "wheelchair=limited toilets=yes",
+      "allDay": false,
+      "unknown": true,
+      "byDay": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": []
+      }
+    }
+  },
+  {
+    "id": "vn-51b2dcc0c2d1",
+    "type": "餐廳",
+    "name": "Lẩu Nướng Phô Nghĩa",
+    "地址": ", Xã Lạc Đạo, Hưng Yên",
+    "lat": 20.9859611,
+    "lng": 106.0483748,
+    "營業時間": {
+      "raw": "toilets=yes",
+      "allDay": false,
+      "unknown": true,
+      "byDay": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": []
+      }
+    }
+  },
+  {
+    "id": "vn-bfbd5c7f83dc",
+    "type": "餐廳",
+    "name": "Lẩu cá đuối Hai Béo",
+    "地址": "106 Trần Trọng Cung, Quận 7, HỒ CHÍ MINH, HỒ CHÍ MINH",
+    "lat": 10.7430941,
+    "lng": 106.7351789,
+    "營業時間": {
+      "raw": "Mo-Su 17:00-22:00 wheelchair=yes toilets=yes",
+      "allDay": false,
+      "unknown": false,
+      "byDay": {
+        "1": [
+          {
+            "open": "17:00",
+            "close": "22:00"
+          }
+        ],
+        "2": [
+          {
+            "open": "17:00",
+            "close": "22:00"
+          }
+        ],
+        "3": [
+          {
+            "open": "17:00",
+            "close": "22:00"
+          }
+        ],
+        "4": [
+          {
+            "open": "17:00",
+            "close": "22:00"
+          }
+        ],
+        "5": [
+          {
+            "open": "17:00",
+            "close": "22:00"
+          }
+        ],
+        "6": [
+          {
+            "open": "17:00",
+            "close": "22:00"
+          }
+        ],
+        "7": [
+          {
+            "open": "17:00",
+            "close": "22:00"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "vn-7659abd17a04",
+    "type": "餐廳",
+    "name": "Madam Phuong",
+    "地址": "",
+    "lat": 12.2360104,
+    "lng": 109.1938192,
+    "營業時間": {
+      "raw": "Mo-Su 11:00-22:00 toilets=yes",
+      "allDay": false,
+      "unknown": false,
+      "byDay": {
+        "1": [
+          {
+            "open": "11:00",
+            "close": "22:00"
+          }
+        ],
+        "2": [
+          {
+            "open": "11:00",
+            "close": "22:00"
+          }
+        ],
+        "3": [
+          {
+            "open": "11:00",
+            "close": "22:00"
+          }
+        ],
+        "4": [
+          {
+            "open": "11:00",
+            "close": "22:00"
+          }
+        ],
+        "5": [
+          {
+            "open": "11:00",
+            "close": "22:00"
+          }
+        ],
+        "6": [
+          {
+            "open": "11:00",
+            "close": "22:00"
+          }
+        ],
+        "7": [
+          {
+            "open": "11:00",
+            "close": "22:00"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "vn-62647e4edf6a",
+    "type": "餐廳",
+    "name": "Mang's Mania Vegan Restaurant",
+    "地址": "86 Nguyễn Huệ",
+    "lat": 10.7751819,
+    "lng": 106.7027648,
+    "營業時間": {
+      "raw": "Mo-Sa 10:30-21:00 wheelchair=no toilets=yes",
+      "allDay": false,
+      "unknown": true,
+      "byDay": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": []
+      }
+    }
+  },
+  {
+    "id": "vn-a0eae3d5a27d",
+    "type": "餐廳",
+    "name": "Metta Hoan Ngoc Vegan Restaurant",
+    "地址": "Khu 1, Thanh Thủy, Thanh Thủy, Phú Thọ",
+    "lat": 21.1531461,
+    "lng": 105.2805895,
+    "營業時間": {
+      "raw": "Mo-Su 09:00-19:00 toilets=yes",
+      "allDay": false,
+      "unknown": false,
+      "byDay": {
+        "1": [
+          {
+            "open": "09:00",
+            "close": "19:00"
+          }
+        ],
+        "2": [
+          {
+            "open": "09:00",
+            "close": "19:00"
+          }
+        ],
+        "3": [
+          {
+            "open": "09:00",
+            "close": "19:00"
+          }
+        ],
+        "4": [
+          {
+            "open": "09:00",
+            "close": "19:00"
+          }
+        ],
+        "5": [
+          {
+            "open": "09:00",
+            "close": "19:00"
+          }
+        ],
+        "6": [
+          {
+            "open": "09:00",
+            "close": "19:00"
+          }
+        ],
+        "7": [
+          {
+            "open": "09:00",
+            "close": "19:00"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "vn-5608502e3d02",
+    "type": "餐廳",
+    "name": "Missteak Hoi An",
+    "地址": "117 Trần Quang Khải, hoi an, Hoi An, Quảng Nam",
+    "lat": 15.877183,
+    "lng": 108.3384546,
+    "營業時間": {
+      "raw": "Mo-Su 11:30-23:00 toilets=yes",
+      "allDay": false,
+      "unknown": false,
+      "byDay": {
+        "1": [
+          {
+            "open": "11:30",
+            "close": "23:00"
+          }
+        ],
+        "2": [
+          {
+            "open": "11:30",
+            "close": "23:00"
+          }
+        ],
+        "3": [
+          {
+            "open": "11:30",
+            "close": "23:00"
+          }
+        ],
+        "4": [
+          {
+            "open": "11:30",
+            "close": "23:00"
+          }
+        ],
+        "5": [
+          {
+            "open": "11:30",
+            "close": "23:00"
+          }
+        ],
+        "6": [
+          {
+            "open": "11:30",
+            "close": "23:00"
+          }
+        ],
+        "7": [
+          {
+            "open": "11:30",
+            "close": "23:00"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "vn-b460d6d84773",
+    "type": "餐廳",
+    "name": "Mitami",
+    "地址": "",
+    "lat": 12.2375847,
+    "lng": 109.1896519,
+    "營業時間": {
+      "raw": "11:00-14:00,17:00-22:00 wheelchair=limited toilets=yes",
+      "allDay": false,
+      "unknown": true,
+      "byDay": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": []
+      }
+    }
+  },
+  {
+    "id": "vn-9a60b244628d",
+    "type": "餐廳",
+    "name": "Nau do buffet",
+    "地址": "",
+    "lat": 11.5628806,
+    "lng": 109.0007918,
+    "營業時間": {
+      "raw": "toilets=yes",
+      "allDay": false,
+      "unknown": true,
+      "byDay": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": []
+      }
+    }
+  },
+  {
+    "id": "vn-1963efe9f948",
+    "type": "餐廳",
+    "name": "Nhà Hàng Bông Súng",
+    "地址": "",
+    "lat": 10.7782363,
+    "lng": 106.6990416,
+    "營業時間": {
+      "raw": "toilets=yes",
+      "allDay": false,
+      "unknown": true,
+      "byDay": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": []
+      }
+    }
+  },
+  {
+    "id": "vn-160441319271",
+    "type": "餐廳",
+    "name": "Nhà Hàng Phúc Quang Chay",
+    "地址": "",
+    "lat": 10.770467,
+    "lng": 106.6908778,
+    "營業時間": {
+      "raw": "Mo-Su 16:00-21:00 wheelchair=no toilets=yes",
+      "allDay": false,
+      "unknown": false,
+      "byDay": {
+        "1": [
+          {
+            "open": "16:00",
+            "close": "21:00"
+          }
+        ],
+        "2": [
+          {
+            "open": "16:00",
+            "close": "21:00"
+          }
+        ],
+        "3": [
+          {
+            "open": "16:00",
+            "close": "21:00"
+          }
+        ],
+        "4": [
+          {
+            "open": "16:00",
+            "close": "21:00"
+          }
+        ],
+        "5": [
+          {
+            "open": "16:00",
+            "close": "21:00"
+          }
+        ],
+        "6": [
+          {
+            "open": "16:00",
+            "close": "21:00"
+          }
+        ],
+        "7": [
+          {
+            "open": "16:00",
+            "close": "21:00"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "vn-dccf3f28dc59",
+    "type": "餐廳",
+    "name": "Nhà Hàng Âu Lạc - Healthy World",
+    "地址": "",
+    "lat": 10.7700134,
+    "lng": 106.6913019,
+    "營業時間": {
+      "raw": "Mo-Su 10:00-22:00 toilets=yes",
+      "allDay": false,
+      "unknown": false,
+      "byDay": {
+        "1": [
+          {
+            "open": "10:00",
+            "close": "22:00"
+          }
+        ],
+        "2": [
+          {
+            "open": "10:00",
+            "close": "22:00"
+          }
+        ],
+        "3": [
+          {
+            "open": "10:00",
+            "close": "22:00"
+          }
+        ],
+        "4": [
+          {
+            "open": "10:00",
+            "close": "22:00"
+          }
+        ],
+        "5": [
+          {
+            "open": "10:00",
+            "close": "22:00"
+          }
+        ],
+        "6": [
+          {
+            "open": "10:00",
+            "close": "22:00"
+          }
+        ],
+        "7": [
+          {
+            "open": "10:00",
+            "close": "22:00"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "vn-3b94c6a704f7",
+    "type": "餐廳",
+    "name": "Nhà hàng 126 Kaiserin",
+    "地址": "126 Đường Nguyễn Ái Quốc, Phưởng Trảng Dài, Thành phố Biên Hòa, Tỉnh Đồng Nai",
+    "lat": 10.9675823,
+    "lng": 106.8556093,
+    "營業時間": {
+      "raw": "09:00-23:00 toilets=yes",
+      "allDay": false,
+      "unknown": false,
+      "byDay": {
+        "1": [
+          {
+            "open": "09:00",
+            "close": "23:00"
+          }
+        ],
+        "2": [
+          {
+            "open": "09:00",
+            "close": "23:00"
+          }
+        ],
+        "3": [
+          {
+            "open": "09:00",
+            "close": "23:00"
+          }
+        ],
+        "4": [
+          {
+            "open": "09:00",
+            "close": "23:00"
+          }
+        ],
+        "5": [
+          {
+            "open": "09:00",
+            "close": "23:00"
+          }
+        ],
+        "6": [
+          {
+            "open": "09:00",
+            "close": "23:00"
+          }
+        ],
+        "7": [
+          {
+            "open": "09:00",
+            "close": "23:00"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "vn-d3ab99d576e2",
+    "type": "餐廳",
+    "name": "Nhà hàng Phương Nam",
+    "地址": "13 Phố Mai Hắc Đế, Hai Bà Trưng, Hà Nội, Hà Nội",
+    "lat": 21.0163051,
+    "lng": 105.8509763,
+    "營業時間": {
+      "raw": "Mo-Su 11:30-14:00,17:30-21:00 toilets=yes",
+      "allDay": false,
+      "unknown": true,
+      "byDay": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": []
+      }
+    }
+  },
+  {
+    "id": "vn-dcc764c82224",
+    "type": "餐廳",
+    "name": "Nhà hàng Tín Hiệu",
+    "地址": "Chợ Đậu, Xã Lạc Đạo, Hưng Yên",
+    "lat": 20.9869529,
+    "lng": 106.0335658,
+    "營業時間": {
+      "raw": "24/7 wheelchair=limited toilets=yes",
+      "allDay": true,
+      "unknown": false,
+      "byDay": {
+        "1": [
+          {
+            "open": "00:00",
+            "close": "24:00"
+          }
+        ],
+        "2": [
+          {
+            "open": "00:00",
+            "close": "24:00"
+          }
+        ],
+        "3": [
+          {
+            "open": "00:00",
+            "close": "24:00"
+          }
+        ],
+        "4": [
+          {
+            "open": "00:00",
+            "close": "24:00"
+          }
+        ],
+        "5": [
+          {
+            "open": "00:00",
+            "close": "24:00"
+          }
+        ],
+        "6": [
+          {
+            "open": "00:00",
+            "close": "24:00"
+          }
+        ],
+        "7": [
+          {
+            "open": "00:00",
+            "close": "24:00"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "vn-f0b507b9cdc3",
+    "type": "餐廳",
+    "name": "Noa Pub",
+    "地址": "",
+    "lat": 12.0866392,
+    "lng": 109.194609,
+    "營業時間": {
+      "raw": "Mo-Su 18:00-20:30; PH open wheelchair=yes toilets=yes",
+      "allDay": false,
+      "unknown": true,
+      "byDay": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": []
+      }
+    }
+  },
+  {
+    "id": "vn-f09f23604df3",
+    "type": "餐廳",
+    "name": "Nét Huế",
+    "地址": "43 Phố Mai Hắc Đế, Hai Bà Trưng, Hà Nội, Hà Nội",
+    "lat": 21.0154954,
+    "lng": 105.8510453,
+    "營業時間": {
+      "raw": "toilets=yes",
+      "allDay": false,
+      "unknown": true,
+      "byDay": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": []
+      }
+    }
+  },
+  {
+    "id": "vn-8f944c1941c4",
+    "type": "餐廳",
+    "name": "Oggy - Fusion Restaurant",
+    "地址": "54-BT1 Lý Thành Long, Quận Lê Chân, Hải Phòng",
+    "lat": 20.8427434,
+    "lng": 106.6905836,
+    "營業時間": {
+      "raw": "Mo-Su 07:00-23:00 wheelchair=limited toilets=yes",
+      "allDay": false,
+      "unknown": false,
+      "byDay": {
+        "1": [
+          {
+            "open": "07:00",
+            "close": "23:00"
+          }
+        ],
+        "2": [
+          {
+            "open": "07:00",
+            "close": "23:00"
+          }
+        ],
+        "3": [
+          {
+            "open": "07:00",
+            "close": "23:00"
+          }
+        ],
+        "4": [
+          {
+            "open": "07:00",
+            "close": "23:00"
+          }
+        ],
+        "5": [
+          {
+            "open": "07:00",
+            "close": "23:00"
+          }
+        ],
+        "6": [
+          {
+            "open": "07:00",
+            "close": "23:00"
+          }
+        ],
+        "7": [
+          {
+            "open": "07:00",
+            "close": "23:00"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "vn-a724b56634e5",
+    "type": "餐廳",
+    "name": "Ong Vàng",
+    "地址": "",
+    "lat": 22.8295968,
+    "lng": 104.984414,
+    "營業時間": {
+      "raw": "Mo-Fr 09:00-12:00,13:30-18:30; Sa 09:00-17:00; PH closed wheelchair=no toilets=yes",
+      "allDay": false,
+      "unknown": true,
+      "byDay": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": []
+      }
+    }
+  },
+  {
+    "id": "vn-9423b9fe8e94",
+    "type": "餐廳",
+    "name": "Phuong Binh Restaurant",
+    "地址": "Alley 118, Tran Hung Dao Street",
+    "lat": 10.1950219,
+    "lng": 103.9638351,
+    "營業時間": {
+      "raw": "Mo-Su 07:00-22:00 wheelchair=no toilets=yes",
+      "allDay": false,
+      "unknown": false,
+      "byDay": {
+        "1": [
+          {
+            "open": "07:00",
+            "close": "22:00"
+          }
+        ],
+        "2": [
+          {
+            "open": "07:00",
+            "close": "22:00"
+          }
+        ],
+        "3": [
+          {
+            "open": "07:00",
+            "close": "22:00"
+          }
+        ],
+        "4": [
+          {
+            "open": "07:00",
+            "close": "22:00"
+          }
+        ],
+        "5": [
+          {
+            "open": "07:00",
+            "close": "22:00"
+          }
+        ],
+        "6": [
+          {
+            "open": "07:00",
+            "close": "22:00"
+          }
+        ],
+        "7": [
+          {
+            "open": "07:00",
+            "close": "22:00"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "vn-8bd0f54c97d9",
+    "type": "餐廳",
+    "name": "Phở, Lẩu, Món Tiềm",
+    "地址": "Bình Thới, 11, Ho Chi Minh City",
+    "lat": 10.7663749,
+    "lng": 106.6480901,
+    "營業時間": {
+      "raw": "Mo-Su 06:00-22:00 toilets=yes",
+      "allDay": false,
+      "unknown": false,
+      "byDay": {
+        "1": [
+          {
+            "open": "06:00",
+            "close": "22:00"
+          }
+        ],
+        "2": [
+          {
+            "open": "06:00",
+            "close": "22:00"
+          }
+        ],
+        "3": [
+          {
+            "open": "06:00",
+            "close": "22:00"
+          }
+        ],
+        "4": [
+          {
+            "open": "06:00",
+            "close": "22:00"
+          }
+        ],
+        "5": [
+          {
+            "open": "06:00",
+            "close": "22:00"
+          }
+        ],
+        "6": [
+          {
+            "open": "06:00",
+            "close": "22:00"
+          }
+        ],
+        "7": [
+          {
+            "open": "06:00",
+            "close": "22:00"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "vn-0df336e1da75",
+    "type": "餐廳",
+    "name": "Pizza 4Ps",
+    "地址": "",
+    "lat": 20.8314024,
+    "lng": 106.6840205,
+    "營業時間": {
+      "raw": "toilets=yes",
+      "allDay": false,
+      "unknown": true,
+      "byDay": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": []
+      }
+    }
+  },
+  {
+    "id": "vn-15374fa5f489",
+    "type": "餐廳",
+    "name": "Quan Gio",
+    "地址": "",
+    "lat": 23.1172367,
+    "lng": 105.0826717,
+    "營業時間": {
+      "raw": "toilets=yes",
+      "allDay": false,
+      "unknown": true,
+      "byDay": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": []
+      }
+    }
+  },
+  {
+    "id": "vn-602295f2f2b9",
+    "type": "餐廳",
+    "name": "Quan La",
+    "地址": "",
+    "lat": 20.8423948,
+    "lng": 104.6699186,
+    "營業時間": {
+      "raw": "wheelchair=no toilets=yes",
+      "allDay": false,
+      "unknown": true,
+      "byDay": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": []
+      }
+    }
+  },
+  {
+    "id": "vn-69939d339422",
+    "type": "餐廳",
+    "name": "Quan Âm Liên Thọ",
+    "地址": "36 Hoàng Hoa Thám",
+    "lat": 10.3402674,
+    "lng": 107.0800052,
+    "營業時間": {
+      "raw": "Mo-Su 10:30-15:30, 17:00-21:00 toilets=yes",
+      "allDay": false,
+      "unknown": true,
+      "byDay": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": []
+      }
+    }
+  },
+  {
+    "id": "vn-8991520a67c4",
+    "type": "餐廳",
+    "name": "Quán Chay 20",
+    "地址": "20 Đường Trần Ðình Xu, Quận 1, Thành phố Hồ Chí Minh",
+    "lat": 10.7592442,
+    "lng": 106.692266,
+    "營業時間": {
+      "raw": "wheelchair=limited toilets=yes",
+      "allDay": false,
+      "unknown": true,
+      "byDay": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": []
+      }
+    }
+  },
+  {
+    "id": "vn-664edaf087d5",
+    "type": "餐廳",
+    "name": "Quán Chay Thanh Liễu",
+    "地址": "58 Nguyễn Công Trứ",
+    "lat": 16.470875,
+    "lng": 107.5980966,
+    "營業時間": {
+      "raw": "toilets=yes",
+      "allDay": false,
+      "unknown": true,
+      "byDay": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": []
+      }
+    }
+  },
+  {
+    "id": "vn-166fe967f27d",
+    "type": "餐廳",
+    "name": "Quán Cơm Cây Dừa",
+    "地址": "",
+    "lat": 10.3729298,
+    "lng": 105.4439928,
+    "營業時間": {
+      "raw": "toilets=yes",
+      "allDay": false,
+      "unknown": true,
+      "byDay": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": []
+      }
+    }
+  },
+  {
+    "id": "vn-0dc088950a55",
+    "type": "餐廳",
+    "name": "Quán Mì Nấm",
+    "地址": "23 Tân Canh",
+    "lat": 10.7966415,
+    "lng": 106.6675088,
+    "營業時間": {
+      "raw": "Mo-Su 07:00-22:00 toilets=yes",
+      "allDay": false,
+      "unknown": false,
+      "byDay": {
+        "1": [
+          {
+            "open": "07:00",
+            "close": "22:00"
+          }
+        ],
+        "2": [
+          {
+            "open": "07:00",
+            "close": "22:00"
+          }
+        ],
+        "3": [
+          {
+            "open": "07:00",
+            "close": "22:00"
+          }
+        ],
+        "4": [
+          {
+            "open": "07:00",
+            "close": "22:00"
+          }
+        ],
+        "5": [
+          {
+            "open": "07:00",
+            "close": "22:00"
+          }
+        ],
+        "6": [
+          {
+            "open": "07:00",
+            "close": "22:00"
+          }
+        ],
+        "7": [
+          {
+            "open": "07:00",
+            "close": "22:00"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "vn-218f2588dac0",
+    "type": "餐廳",
+    "name": "Quán Nhậu Tự Do",
+    "地址": "8 Phố Lê Đại Hành, Hai Bà Trưng, Hà Nội, Hà Nội",
+    "lat": 21.0094566,
+    "lng": 105.8506439,
+    "營業時間": {
+      "raw": "Mo-Su 09:00-24:00 toilets=yes",
+      "allDay": false,
+      "unknown": false,
+      "byDay": {
+        "1": [
+          {
+            "open": "09:00",
+            "close": "24:00"
+          }
+        ],
+        "2": [
+          {
+            "open": "09:00",
+            "close": "24:00"
+          }
+        ],
+        "3": [
+          {
+            "open": "09:00",
+            "close": "24:00"
+          }
+        ],
+        "4": [
+          {
+            "open": "09:00",
+            "close": "24:00"
+          }
+        ],
+        "5": [
+          {
+            "open": "09:00",
+            "close": "24:00"
+          }
+        ],
+        "6": [
+          {
+            "open": "09:00",
+            "close": "24:00"
+          }
+        ],
+        "7": [
+          {
+            "open": "09:00",
+            "close": "24:00"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "vn-41f462e75f92",
+    "type": "餐廳",
+    "name": "Quán cơm đồng bào Pơ Lang",
+    "地址": ", Pơng Drang, Đăk Lăk",
+    "lat": 12.9531412,
+    "lng": 108.2351359,
+    "營業時間": {
+      "raw": "Mo-Su 10:00-15:00 toilets=yes",
+      "allDay": false,
+      "unknown": false,
+      "byDay": {
+        "1": [
+          {
+            "open": "10:00",
+            "close": "15:00"
+          }
+        ],
+        "2": [
+          {
+            "open": "10:00",
+            "close": "15:00"
+          }
+        ],
+        "3": [
+          {
+            "open": "10:00",
+            "close": "15:00"
+          }
+        ],
+        "4": [
+          {
+            "open": "10:00",
+            "close": "15:00"
+          }
+        ],
+        "5": [
+          {
+            "open": "10:00",
+            "close": "15:00"
+          }
+        ],
+        "6": [
+          {
+            "open": "10:00",
+            "close": "15:00"
+          }
+        ],
+        "7": [
+          {
+            "open": "10:00",
+            "close": "15:00"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "vn-ff93a1355ff3",
+    "type": "餐廳",
+    "name": "Quán ăn Hiệp Gà",
+    "地址": "Đường tỉnh 385, Xã Lạc Đạo, Hưng Yên",
+    "lat": 20.9862818,
+    "lng": 106.0379314,
+    "營業時間": {
+      "raw": "wheelchair=limited toilets=yes",
+      "allDay": false,
+      "unknown": true,
+      "byDay": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": []
+      }
+    }
+  },
+  {
+    "id": "vn-695e135d85ba",
+    "type": "餐廳",
+    "name": "Rk Spice Indian Restaurant",
+    "地址": "42 Phố Hàng Hòm",
+    "lat": 21.0317236,
+    "lng": 105.8488772,
+    "營業時間": {
+      "raw": "Mo-Su 11:00-23:50 wheelchair=no toilets=yes",
+      "allDay": false,
+      "unknown": false,
+      "byDay": {
+        "1": [
+          {
+            "open": "11:00",
+            "close": "23:50"
+          }
+        ],
+        "2": [
+          {
+            "open": "11:00",
+            "close": "23:50"
+          }
+        ],
+        "3": [
+          {
+            "open": "11:00",
+            "close": "23:50"
+          }
+        ],
+        "4": [
+          {
+            "open": "11:00",
+            "close": "23:50"
+          }
+        ],
+        "5": [
+          {
+            "open": "11:00",
+            "close": "23:50"
+          }
+        ],
+        "6": [
+          {
+            "open": "11:00",
+            "close": "23:50"
+          }
+        ],
+        "7": [
+          {
+            "open": "11:00",
+            "close": "23:50"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "vn-e4450706af27",
+    "type": "餐廳",
+    "name": "Sarang Heo",
+    "地址": "18C Đường Phan Văn Trị, Quận Gò Vấp",
+    "lat": 10.8346717,
+    "lng": 106.6672908,
+    "營業時間": {
+      "raw": "Mo-Su 11:00-23:00 toilets=yes",
+      "allDay": false,
+      "unknown": false,
+      "byDay": {
+        "1": [
+          {
+            "open": "11:00",
+            "close": "23:00"
+          }
+        ],
+        "2": [
+          {
+            "open": "11:00",
+            "close": "23:00"
+          }
+        ],
+        "3": [
+          {
+            "open": "11:00",
+            "close": "23:00"
+          }
+        ],
+        "4": [
+          {
+            "open": "11:00",
+            "close": "23:00"
+          }
+        ],
+        "5": [
+          {
+            "open": "11:00",
+            "close": "23:00"
+          }
+        ],
+        "6": [
+          {
+            "open": "11:00",
+            "close": "23:00"
+          }
+        ],
+        "7": [
+          {
+            "open": "11:00",
+            "close": "23:00"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "vn-bddd5eb58780",
+    "type": "餐廳",
+    "name": "Simisi",
+    "地址": "18 Phố Chùa Láng",
+    "lat": 21.0231568,
+    "lng": 105.8081926,
+    "營業時間": {
+      "raw": "Mo-Su 09:00-15:00,18:00-21:00 wheelchair=limited toilets=yes",
+      "allDay": false,
+      "unknown": true,
+      "byDay": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": []
+      }
+    }
+  },
+  {
+    "id": "vn-f0ac2d81ff9d",
+    "type": "餐廳",
+    "name": "Sisters Tavern and Pizzeria",
+    "地址": "94 Trần Phú, Lý Thường Kiệt, Quy Nhơn, Binh Dinh",
+    "lat": 13.7749441,
+    "lng": 109.2254259,
+    "營業時間": {
+      "raw": "Mo-Su 11:00-20:30 toilets=yes",
+      "allDay": false,
+      "unknown": false,
+      "byDay": {
+        "1": [
+          {
+            "open": "11:00",
+            "close": "20:30"
+          }
+        ],
+        "2": [
+          {
+            "open": "11:00",
+            "close": "20:30"
+          }
+        ],
+        "3": [
+          {
+            "open": "11:00",
+            "close": "20:30"
+          }
+        ],
+        "4": [
+          {
+            "open": "11:00",
+            "close": "20:30"
+          }
+        ],
+        "5": [
+          {
+            "open": "11:00",
+            "close": "20:30"
+          }
+        ],
+        "6": [
+          {
+            "open": "11:00",
+            "close": "20:30"
+          }
+        ],
+        "7": [
+          {
+            "open": "11:00",
+            "close": "20:30"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "vn-a961ef1c8700",
+    "type": "餐廳",
+    "name": "SummerBeach Restaurant",
+    "地址": "72 Đường Nguyễn Phan Vinh, Cam An, Hoi AN, Quang Nam",
+    "lat": 15.9101403,
+    "lng": 108.3446017,
+    "營業時間": {
+      "raw": "Mo-Su 07:00-22:00 toilets=yes",
+      "allDay": false,
+      "unknown": false,
+      "byDay": {
+        "1": [
+          {
+            "open": "07:00",
+            "close": "22:00"
+          }
+        ],
+        "2": [
+          {
+            "open": "07:00",
+            "close": "22:00"
+          }
+        ],
+        "3": [
+          {
+            "open": "07:00",
+            "close": "22:00"
+          }
+        ],
+        "4": [
+          {
+            "open": "07:00",
+            "close": "22:00"
+          }
+        ],
+        "5": [
+          {
+            "open": "07:00",
+            "close": "22:00"
+          }
+        ],
+        "6": [
+          {
+            "open": "07:00",
+            "close": "22:00"
+          }
+        ],
+        "7": [
+          {
+            "open": "07:00",
+            "close": "22:00"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "vn-2e5708684948",
+    "type": "餐廳",
+    "name": "Tam Coc Ancient Village",
+    "地址": "",
+    "lat": 20.2168791,
+    "lng": 105.9383464,
+    "營業時間": {
+      "raw": "wheelchair=no toilets=yes",
+      "allDay": false,
+      "unknown": true,
+      "byDay": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": []
+      }
+    }
+  },
+  {
+    "id": "vn-0d151ef4528a",
+    "type": "餐廳",
+    "name": "Tam Cốc Pet Coffee",
+    "地址": "",
+    "lat": 20.2253974,
+    "lng": 105.9186922,
+    "營業時間": {
+      "raw": "wheelchair=no toilets=yes",
+      "allDay": false,
+      "unknown": true,
+      "byDay": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": []
+      }
+    }
+  },
+  {
+    "id": "vn-e11108c3a136",
+    "type": "餐廳",
+    "name": "Tam Vegetarian",
+    "地址": "",
+    "lat": 20.7307568,
+    "lng": 107.0509594,
+    "營業時間": {
+      "raw": "Mo-Fr 15:00-20:00 wheelchair=no toilets=yes",
+      "allDay": false,
+      "unknown": true,
+      "byDay": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": []
+      }
+    }
+  },
+  {
+    "id": "vn-671a9e736124",
+    "type": "餐廳",
+    "name": "The Boat Riverside Restaurant & Bar",
+    "地址": "44 Huyen Tran Cong Chua",
+    "lat": 15.8754629,
+    "lng": 108.3453456,
+    "營業時間": {
+      "raw": "11:00-21:30 wheelchair=yes toilets=yes",
+      "allDay": false,
+      "unknown": false,
+      "byDay": {
+        "1": [
+          {
+            "open": "11:00",
+            "close": "21:30"
+          }
+        ],
+        "2": [
+          {
+            "open": "11:00",
+            "close": "21:30"
+          }
+        ],
+        "3": [
+          {
+            "open": "11:00",
+            "close": "21:30"
+          }
+        ],
+        "4": [
+          {
+            "open": "11:00",
+            "close": "21:30"
+          }
+        ],
+        "5": [
+          {
+            "open": "11:00",
+            "close": "21:30"
+          }
+        ],
+        "6": [
+          {
+            "open": "11:00",
+            "close": "21:30"
+          }
+        ],
+        "7": [
+          {
+            "open": "11:00",
+            "close": "21:30"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "vn-cd924b828328",
+    "type": "餐廳",
+    "name": "The Coral Anhs",
+    "地址": "",
+    "lat": 12.2362347,
+    "lng": 109.1941659,
+    "營業時間": {
+      "raw": "wheelchair=limited toilets=yes",
+      "allDay": false,
+      "unknown": true,
+      "byDay": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": []
+      }
+    }
+  },
+  {
+    "id": "vn-e2516a7fa7e2",
+    "type": "餐廳",
+    "name": "Tinh Tâm Vegan",
+    "地址": "",
+    "lat": 16.4702727,
+    "lng": 107.5949214,
+    "營業時間": {
+      "raw": "Mo-Su 08:00-22:30 wheelchair=no toilets=yes",
+      "allDay": false,
+      "unknown": false,
+      "byDay": {
+        "1": [
+          {
+            "open": "08:00",
+            "close": "22:30"
+          }
+        ],
+        "2": [
+          {
+            "open": "08:00",
+            "close": "22:30"
+          }
+        ],
+        "3": [
+          {
+            "open": "08:00",
+            "close": "22:30"
+          }
+        ],
+        "4": [
+          {
+            "open": "08:00",
+            "close": "22:30"
+          }
+        ],
+        "5": [
+          {
+            "open": "08:00",
+            "close": "22:30"
+          }
+        ],
+        "6": [
+          {
+            "open": "08:00",
+            "close": "22:30"
+          }
+        ],
+        "7": [
+          {
+            "open": "08:00",
+            "close": "22:30"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "vn-532300a07195",
+    "type": "餐廳",
+    "name": "Tiệm Cơm Chay Pháp Hoa",
+    "地址": "",
+    "lat": 10.7632075,
+    "lng": 106.6880568,
+    "營業時間": {
+      "raw": "wheelchair=limited toilets=yes",
+      "allDay": false,
+      "unknown": true,
+      "byDay": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": []
+      }
+    }
+  },
+  {
+    "id": "vn-34e94b711b42",
+    "type": "餐廳",
+    "name": "Tiệm nướng Trạm Dừng Chill",
+    "地址": "111 Huỳnh Tấn Phát, Phường 11, Đà Lạt, Lâm Đồng",
+    "lat": 11.9540635,
+    "lng": 108.4945962,
+    "營業時間": {
+      "raw": "Mo-Su 15:00-23:00 wheelchair=yes toilets=yes",
+      "allDay": false,
+      "unknown": false,
+      "byDay": {
+        "1": [
+          {
+            "open": "15:00",
+            "close": "23:00"
+          }
+        ],
+        "2": [
+          {
+            "open": "15:00",
+            "close": "23:00"
+          }
+        ],
+        "3": [
+          {
+            "open": "15:00",
+            "close": "23:00"
+          }
+        ],
+        "4": [
+          {
+            "open": "15:00",
+            "close": "23:00"
+          }
+        ],
+        "5": [
+          {
+            "open": "15:00",
+            "close": "23:00"
+          }
+        ],
+        "6": [
+          {
+            "open": "15:00",
+            "close": "23:00"
+          }
+        ],
+        "7": [
+          {
+            "open": "15:00",
+            "close": "23:00"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "vn-77653ec1da8a",
+    "type": "餐廳",
+    "name": "White Cloud",
+    "地址": "Fansipan Street",
+    "lat": 22.3324481,
+    "lng": 103.8390209,
+    "營業時間": {
+      "raw": "wheelchair=limited toilets=yes",
+      "allDay": false,
+      "unknown": true,
+      "byDay": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": []
+      }
+    }
+  },
+  {
+    "id": "vn-f270e2c60991",
+    "type": "餐廳",
+    "name": "Yentown Mui Ne",
+    "地址": "120a Nguyễn Đình Chiểu, Thành phố Phan Thiết, Bình Thuận",
+    "lat": 10.9546534,
+    "lng": 108.2229594,
+    "營業時間": {
+      "raw": "24/7 toilets=yes",
+      "allDay": true,
+      "unknown": false,
+      "byDay": {
+        "1": [
+          {
+            "open": "00:00",
+            "close": "24:00"
+          }
+        ],
+        "2": [
+          {
+            "open": "00:00",
+            "close": "24:00"
+          }
+        ],
+        "3": [
+          {
+            "open": "00:00",
+            "close": "24:00"
+          }
+        ],
+        "4": [
+          {
+            "open": "00:00",
+            "close": "24:00"
+          }
+        ],
+        "5": [
+          {
+            "open": "00:00",
+            "close": "24:00"
+          }
+        ],
+        "6": [
+          {
+            "open": "00:00",
+            "close": "24:00"
+          }
+        ],
+        "7": [
+          {
+            "open": "00:00",
+            "close": "24:00"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "vn-edecb3a4aa5e",
+    "type": "餐廳",
+    "name": "iMeatU Korea BBQ",
+    "地址": "116K1 Phố Giảng Võ, Ba Đình, Hà Nội, Hà Nội",
+    "lat": 21.0269786,
+    "lng": 105.8241813,
+    "營業時間": {
+      "raw": "Mo-Su 08:00-22:00 toilets=yes",
+      "allDay": false,
+      "unknown": false,
+      "byDay": {
+        "1": [
+          {
+            "open": "08:00",
+            "close": "22:00"
+          }
+        ],
+        "2": [
+          {
+            "open": "08:00",
+            "close": "22:00"
+          }
+        ],
+        "3": [
+          {
+            "open": "08:00",
+            "close": "22:00"
+          }
+        ],
+        "4": [
+          {
+            "open": "08:00",
+            "close": "22:00"
+          }
+        ],
+        "5": [
+          {
+            "open": "08:00",
+            "close": "22:00"
+          }
+        ],
+        "6": [
+          {
+            "open": "08:00",
+            "close": "22:00"
+          }
+        ],
+        "7": [
+          {
+            "open": "08:00",
+            "close": "22:00"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "vn-85759bed7ebc",
+    "type": "餐廳",
+    "name": "iMeatu Korean BBQ",
+    "地址": "40 Triệu Việt Vương, Hoàn Kiếm, Hà Nội, Hà Nội",
+    "lat": 21.0173967,
+    "lng": 105.8502974,
+    "營業時間": {
+      "raw": "24/7 toilets=yes",
+      "allDay": true,
+      "unknown": false,
+      "byDay": {
+        "1": [
+          {
+            "open": "00:00",
+            "close": "24:00"
+          }
+        ],
+        "2": [
+          {
+            "open": "00:00",
+            "close": "24:00"
+          }
+        ],
+        "3": [
+          {
+            "open": "00:00",
+            "close": "24:00"
+          }
+        ],
+        "4": [
+          {
+            "open": "00:00",
+            "close": "24:00"
+          }
+        ],
+        "5": [
+          {
+            "open": "00:00",
+            "close": "24:00"
+          }
+        ],
+        "6": [
+          {
+            "open": "00:00",
+            "close": "24:00"
+          }
+        ],
+        "7": [
+          {
+            "open": "00:00",
+            "close": "24:00"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "vn-a2f9b959ed11",
+    "type": "餐廳",
+    "name": "iVegan Supershop",
+    "地址": "",
+    "lat": 15.8815103,
+    "lng": 108.3258329,
+    "營業時間": {
+      "raw": "Mo-Su 07:00-22:00 wheelchair=no toilets=yes",
+      "allDay": false,
+      "unknown": false,
+      "byDay": {
+        "1": [
+          {
+            "open": "07:00",
+            "close": "22:00"
+          }
+        ],
+        "2": [
+          {
+            "open": "07:00",
+            "close": "22:00"
+          }
+        ],
+        "3": [
+          {
+            "open": "07:00",
+            "close": "22:00"
+          }
+        ],
+        "4": [
+          {
+            "open": "07:00",
+            "close": "22:00"
+          }
+        ],
+        "5": [
+          {
+            "open": "07:00",
+            "close": "22:00"
+          }
+        ],
+        "6": [
+          {
+            "open": "07:00",
+            "close": "22:00"
+          }
+        ],
+        "7": [
+          {
+            "open": "07:00",
+            "close": "22:00"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "vn-fa6ed1978b02",
+    "type": "餐廳",
+    "name": "km 17 checkpoint",
+    "地址": "",
+    "lat": 16.1941223,
+    "lng": 107.8535984,
+    "營業時間": {
+      "raw": "toilets=yes",
+      "allDay": false,
+      "unknown": true,
+      "byDay": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": []
+      }
+    }
+  },
+  {
+    "id": "vn-7daec2995053",
+    "type": "餐廳",
+    "name": "Ông Già Cali - Hủ Tiếu Mực",
+    "地址": "3 Lê Hồng Phong, Thắng Tam, Vũng Tàu, Thành phố Hồ Chí Minh",
+    "lat": 10.3477351,
+    "lng": 107.094859,
+    "營業時間": {
+      "raw": "Mo-Su 06:00-21:00 toilets=yes",
+      "allDay": false,
+      "unknown": false,
+      "byDay": {
+        "1": [
+          {
+            "open": "06:00",
+            "close": "21:00"
+          }
+        ],
+        "2": [
+          {
+            "open": "06:00",
+            "close": "21:00"
+          }
+        ],
+        "3": [
+          {
+            "open": "06:00",
+            "close": "21:00"
+          }
+        ],
+        "4": [
+          {
+            "open": "06:00",
+            "close": "21:00"
+          }
+        ],
+        "5": [
+          {
+            "open": "06:00",
+            "close": "21:00"
+          }
+        ],
+        "6": [
+          {
+            "open": "06:00",
+            "close": "21:00"
+          }
+        ],
+        "7": [
+          {
+            "open": "06:00",
+            "close": "21:00"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "vn-5eac7a8ab649",
+    "type": "餐廳",
+    "name": "Ốc Dì Toàn",
+    "地址": "69/1/1 Nguyễn Gia Trí, Bình Thạnh, Ho Chi Minh City, Ho Chi Minh City",
+    "lat": 10.8036339,
+    "lng": 106.7203866,
+    "營業時間": {
+      "raw": "Mo-Su 11:00-22:00 toilets=yes",
+      "allDay": false,
+      "unknown": false,
+      "byDay": {
+        "1": [
+          {
+            "open": "11:00",
+            "close": "22:00"
+          }
+        ],
+        "2": [
+          {
+            "open": "11:00",
+            "close": "22:00"
+          }
+        ],
+        "3": [
+          {
+            "open": "11:00",
+            "close": "22:00"
+          }
+        ],
+        "4": [
+          {
+            "open": "11:00",
+            "close": "22:00"
+          }
+        ],
+        "5": [
+          {
+            "open": "11:00",
+            "close": "22:00"
+          }
+        ],
+        "6": [
+          {
+            "open": "11:00",
+            "close": "22:00"
+          }
+        ],
+        "7": [
+          {
+            "open": "11:00",
+            "close": "22:00"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "vn-77172291c215",
+    "type": "餐廳",
+    "name": "Ốc Hai Lúa",
+    "地址": "6A Đường Trương Định, Phường Tân Mai, Thành phố Biên Hòa, Tỉnh Đồng Nai",
+    "lat": 10.961506,
+    "lng": 106.8544154,
+    "營業時間": {
+      "raw": "10:00-12:00 toilets=yes",
+      "allDay": false,
+      "unknown": false,
+      "byDay": {
+        "1": [
+          {
+            "open": "10:00",
+            "close": "12:00"
+          }
+        ],
+        "2": [
+          {
+            "open": "10:00",
+            "close": "12:00"
+          }
+        ],
+        "3": [
+          {
+            "open": "10:00",
+            "close": "12:00"
+          }
+        ],
+        "4": [
+          {
+            "open": "10:00",
+            "close": "12:00"
+          }
+        ],
+        "5": [
+          {
+            "open": "10:00",
+            "close": "12:00"
+          }
+        ],
+        "6": [
+          {
+            "open": "10:00",
+            "close": "12:00"
+          }
+        ],
+        "7": [
+          {
+            "open": "10:00",
+            "close": "12:00"
+          }
+        ]
+      }
+    }
+  }
+]
