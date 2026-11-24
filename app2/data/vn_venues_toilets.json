@@ -7,7 +7,7 @@
     "lat": 22.8053125,
     "lng": 104.9755604,
     "營業時間": {
-      "raw": "toilets=yes",
+      "raw": "",
       "allDay": false,
       "unknown": true,
       "byDay": {
@@ -29,7 +29,7 @@
     "lat": 21.0356131,
     "lng": 105.8326022,
     "營業時間": {
-      "raw": "Tu-Th 08:00-11:30; Sa-Su 14:00-16:30 fee=yes wheelchair=yes toilets=yes",
+      "raw": "Tu-Th 08:00-11:30; Sa-Su 14:00-16:30",
       "allDay": false,
       "unknown": true,
       "byDay": {
@@ -51,7 +51,7 @@
     "lat": 16.0602574,
     "lng": 108.2231849,
     "營業時間": {
-      "raw": "fee=yes wheelchair=yes toilets=yes",
+      "raw": "",
       "allDay": false,
       "unknown": true,
       "byDay": {
@@ -73,7 +73,7 @@
     "lat": 16.0748353,
     "lng": 108.2239758,
     "營業時間": {
-      "raw": "08:00-17:00 wheelchair=limited toilets=yes",
+      "raw": "08:00-17:00",
       "allDay": false,
       "unknown": false,
       "byDay": {
@@ -130,7 +130,73 @@
     "lat": 20.7945806,
     "lng": 106.9904418,
     "營業時間": {
-      "raw": "toilets=yes",
+      "raw": "",
+      "allDay": false,
+      "unknown": true,
+      "byDay": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": []
+      }
+    }
+  },
+  {
+    "id": "vn-0008f9685f53",
+    "type": "咖啡",
+    "name": "",
+    "地址": "",
+    "lat": 22.3629572,
+    "lng": 104.0815386,
+    "營業時間": {
+      "raw": "",
+      "allDay": false,
+      "unknown": true,
+      "byDay": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": []
+      }
+    }
+  },
+  {
+    "id": "vn-61bbbd4ca3e7",
+    "type": "咖啡",
+    "name": "",
+    "地址": "",
+    "lat": 10.7710513,
+    "lng": 106.6930207,
+    "營業時間": {
+      "raw": "",
+      "allDay": false,
+      "unknown": true,
+      "byDay": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": []
+      }
+    }
+  },
+  {
+    "id": "vn-d1dc0cbcbe48",
+    "type": "咖啡",
+    "name": "",
+    "地址": "",
+    "lat": 22.3646202,
+    "lng": 104.0826979,
+    "營業時間": {
+      "raw": "",
       "allDay": false,
       "unknown": true,
       "byDay": {
@@ -152,7 +218,7 @@
     "lat": 20.9857238,
     "lng": 106.0401,
     "營業時間": {
-      "raw": "Mon-Sun (7am-10pm) wheelchair=limited toilets=yes",
+      "raw": "Mon-Sun (7am-10pm)",
       "allDay": false,
       "unknown": true,
       "byDay": {
@@ -174,7 +240,7 @@
     "lat": 10.7261119,
     "lng": 106.6154027,
     "營業時間": {
-      "raw": "Mo-Su 06:00-22:00 toilets=yes",
+      "raw": "Mo-Su 06:00-22:00",
       "allDay": false,
       "unknown": false,
       "byDay": {
@@ -231,7 +297,7 @@
     "lat": 20.8429174,
     "lng": 106.6906533,
     "營業時間": {
-      "raw": "Mo-Su 07:00-23:00 wheelchair=limited toilets=yes",
+      "raw": "Mo-Su 07:00-23:00",
       "allDay": false,
       "unknown": false,
       "byDay": {
@@ -288,7 +354,7 @@
     "lat": 10.7874342,
     "lng": 106.6806507,
     "營業時間": {
-      "raw": "Mo-Su 07:30-22:00 toilets=yes",
+      "raw": "Mo-Su 07:30-22:00",
       "allDay": false,
       "unknown": false,
       "byDay": {
@@ -345,7 +411,7 @@
     "lat": 16.0537961,
     "lng": 108.2055094,
     "營業時間": {
-      "raw": "Mo-Su 08:00-21:00 toilets=yes",
+      "raw": "Mo-Su 08:00-21:00",
       "allDay": false,
       "unknown": false,
       "byDay": {
@@ -402,7 +468,7 @@
     "lat": 10.7984718,
     "lng": 106.6862289,
     "營業時間": {
-      "raw": "07:00-22:30 toilets=yes",
+      "raw": "07:00-22:30",
       "allDay": false,
       "unknown": false,
       "byDay": {
@@ -459,7 +525,7 @@
     "lat": 13.0841207,
     "lng": 109.3023428,
     "營業時間": {
-      "raw": "Mo-Su 06:00-22:00 wheelchair=limited toilets=yes",
+      "raw": "Mo-Su 06:00-22:00",
       "allDay": false,
       "unknown": false,
       "byDay": {
@@ -516,7 +582,7 @@
     "lat": 21.0322358,
     "lng": 105.8510679,
     "營業時間": {
-      "raw": "toilets=yes",
+      "raw": "",
       "allDay": false,
       "unknown": true,
       "byDay": {
@@ -538,7 +604,7 @@
     "lat": 12.2654652,
     "lng": 109.1963958,
     "營業時間": {
-      "raw": "toilets=yes",
+      "raw": "",
       "allDay": false,
       "unknown": true,
       "byDay": {
@@ -560,7 +626,7 @@
     "lat": 15.8764695,
     "lng": 108.3275305,
     "營業時間": {
-      "raw": "Mo-Su 10:00-22:00 wheelchair=limited toilets=yes",
+      "raw": "Mo-Su 10:00-22:00",
       "allDay": false,
       "unknown": false,
       "byDay": {
@@ -617,7 +683,7 @@
     "lat": 21.3248755,
     "lng": 103.9179621,
     "營業時間": {
-      "raw": "Mo-Su 08:00-23:00 toilets=yes",
+      "raw": "Mo-Su 08:00-23:00",
       "allDay": false,
       "unknown": false,
       "byDay": {
@@ -674,7 +740,7 @@
     "lat": 10.7435612,
     "lng": 106.6446004,
     "營業時間": {
-      "raw": "wheelchair=no toilets=yes",
+      "raw": "",
       "allDay": false,
       "unknown": true,
       "byDay": {
@@ -696,7 +762,7 @@
     "lat": 10.3823683,
     "lng": 105.4476242,
     "營業時間": {
-      "raw": "toilets=yes",
+      "raw": "",
       "allDay": false,
       "unknown": true,
       "byDay": {
@@ -718,7 +784,7 @@
     "lat": 12.2779294,
     "lng": 109.2008435,
     "營業時間": {
-      "raw": "toilets=yes",
+      "raw": "",
       "allDay": false,
       "unknown": true,
       "byDay": {
@@ -740,7 +806,7 @@
     "lat": 21.0259374,
     "lng": 105.849235,
     "營業時間": {
-      "raw": "07:00-23:00 toilets=yes",
+      "raw": "07:00-23:00",
       "allDay": false,
       "unknown": false,
       "byDay": {
@@ -797,7 +863,7 @@
     "lat": 20.3452186,
     "lng": 106.5397237,
     "營業時間": {
-      "raw": "Mo-Su 07:00-22:00 toilets=yes",
+      "raw": "Mo-Su 07:00-22:00",
       "allDay": false,
       "unknown": false,
       "byDay": {
@@ -854,7 +920,7 @@
     "lat": 23.3646587,
     "lng": 105.3104913,
     "營業時間": {
-      "raw": "wheelchair=limited toilets=yes",
+      "raw": "",
       "allDay": false,
       "unknown": true,
       "byDay": {
@@ -876,7 +942,7 @@
     "lat": 10.788868,
     "lng": 106.6907767,
     "營業時間": {
-      "raw": "Mo-Su 07:00-23:00 wheelchair=limited toilets=yes",
+      "raw": "Mo-Su 07:00-23:00",
       "allDay": false,
       "unknown": false,
       "byDay": {
@@ -933,7 +999,7 @@
     "lat": 15.8774268,
     "lng": 108.3317198,
     "營業時間": {
-      "raw": "Mo-Su 07:00-22:00 toilets=yes",
+      "raw": "Mo-Su 07:00-22:00",
       "allDay": false,
       "unknown": false,
       "byDay": {
@@ -990,7 +1056,7 @@
     "lat": 12.2428058,
     "lng": 109.1852452,
     "營業時間": {
-      "raw": "Mo-Su 09:00-17:30 toilets=yes",
+      "raw": "Mo-Su 09:00-17:30",
       "allDay": false,
       "unknown": false,
       "byDay": {
@@ -1047,7 +1113,7 @@
     "lat": 20.2720599,
     "lng": 105.9124937,
     "營業時間": {
-      "raw": "toilets=yes",
+      "raw": "",
       "allDay": false,
       "unknown": true,
       "byDay": {
@@ -1069,7 +1135,7 @@
     "lat": 12.2428823,
     "lng": 109.1948788,
     "營業時間": {
-      "raw": "toilets=yes",
+      "raw": "",
       "allDay": false,
       "unknown": true,
       "byDay": {
@@ -1091,7 +1157,7 @@
     "lat": 20.8472909,
     "lng": 104.6390049,
     "營業時間": {
-      "raw": "wheelchair=limited toilets=yes",
+      "raw": "",
       "allDay": false,
       "unknown": true,
       "byDay": {
@@ -1113,7 +1179,7 @@
     "lat": 11.5398345,
     "lng": 107.8082298,
     "營業時間": {
-      "raw": "wheelchair=no toilets=yes",
+      "raw": "",
       "allDay": false,
       "unknown": true,
       "byDay": {
@@ -1135,7 +1201,7 @@
     "lat": 16.0701777,
     "lng": 108.2127977,
     "營業時間": {
-      "raw": "Mo-Su 07:00-23:00 toilets=yes",
+      "raw": "Mo-Su 07:00-23:00",
       "allDay": false,
       "unknown": false,
       "byDay": {
@@ -1192,7 +1258,7 @@
     "lat": 10.7686142,
     "lng": 106.6934398,
     "營業時間": {
-      "raw": "06:00-24:00 wheelchair=limited toilets=yes",
+      "raw": "06:00-24:00",
       "allDay": false,
       "unknown": false,
       "byDay": {
@@ -1249,7 +1315,7 @@
     "lat": 16.0622281,
     "lng": 108.223993,
     "營業時間": {
-      "raw": "wheelchair=yes toilets=yes",
+      "raw": "",
       "allDay": false,
       "unknown": true,
       "byDay": {
@@ -1271,7 +1337,7 @@
     "lat": 12.236013,
     "lng": 109.1967705,
     "營業時間": {
-      "raw": "07:00-23:00 wheelchair=no toilets=yes",
+      "raw": "07:00-23:00",
       "allDay": false,
       "unknown": false,
       "byDay": {
@@ -1328,7 +1394,7 @@
     "lat": 10.7747454,
     "lng": 106.6982421,
     "營業時間": {
-      "raw": "07:00-23:00 wheelchair=limited toilets=yes",
+      "raw": "07:00-23:00",
       "allDay": false,
       "unknown": false,
       "byDay": {
@@ -1385,7 +1451,7 @@
     "lat": 10.3531639,
     "lng": 107.0640738,
     "營業時間": {
-      "raw": "toilets=yes",
+      "raw": "",
       "allDay": false,
       "unknown": true,
       "byDay": {
@@ -1407,7 +1473,7 @@
     "lat": 16.4624652,
     "lng": 107.5889827,
     "營業時間": {
-      "raw": "Mo-Su 06:30-22:30 wheelchair=limited toilets=yes",
+      "raw": "Mo-Su 06:30-22:30",
       "allDay": false,
       "unknown": false,
       "byDay": {
@@ -1464,7 +1530,7 @@
     "lat": 16.0563664,
     "lng": 108.2457369,
     "營業時間": {
-      "raw": "toilets=yes",
+      "raw": "",
       "allDay": false,
       "unknown": true,
       "byDay": {
@@ -1486,7 +1552,7 @@
     "lat": 10.7687495,
     "lng": 106.6952098,
     "營業時間": {
-      "raw": "Mo-Su 06:00-23:00 toilets=yes",
+      "raw": "Mo-Su 06:00-23:00",
       "allDay": false,
       "unknown": false,
       "byDay": {
@@ -1543,7 +1609,7 @@
     "lat": 21.0297216,
     "lng": 105.8417379,
     "營業時間": {
-      "raw": "Mo-Su 07:00-23:00 toilets=yes",
+      "raw": "Mo-Su 07:00-23:00",
       "allDay": false,
       "unknown": false,
       "byDay": {
@@ -1600,7 +1666,7 @@
     "lat": 21.0188481,
     "lng": 105.8249754,
     "營業時間": {
-      "raw": "toilets=yes",
+      "raw": "",
       "allDay": false,
       "unknown": true,
       "byDay": {
@@ -1622,7 +1688,7 @@
     "lat": 16.0700231,
     "lng": 108.2249183,
     "營業時間": {
-      "raw": "toilets=yes",
+      "raw": "",
       "allDay": false,
       "unknown": true,
       "byDay": {
@@ -1644,7 +1710,7 @@
     "lat": 16.4169795,
     "lng": 107.5829234,
     "營業時間": {
-      "raw": "wheelchair=limited toilets=yes",
+      "raw": "",
       "allDay": false,
       "unknown": true,
       "byDay": {
@@ -1666,7 +1732,7 @@
     "lat": 10.7962397,
     "lng": 106.7071763,
     "營業時間": {
-      "raw": "toilets=yes",
+      "raw": "",
       "allDay": false,
       "unknown": true,
       "byDay": {
@@ -1688,7 +1754,7 @@
     "lat": 15.8739934,
     "lng": 108.327429,
     "營業時間": {
-      "raw": "toilets=yes",
+      "raw": "",
       "allDay": false,
       "unknown": true,
       "byDay": {
@@ -1710,7 +1776,7 @@
     "lat": 21.0611639,
     "lng": 105.8271683,
     "營業時間": {
-      "raw": "Mo-Su 07:00-17:00 toilets=yes",
+      "raw": "Mo-Su 07:00-17:00",
       "allDay": false,
       "unknown": false,
       "byDay": {
@@ -1767,7 +1833,7 @@
     "lat": 10.7886823,
     "lng": 106.6693837,
     "營業時間": {
-      "raw": "Mo-Su 07:00-22:00 toilets=yes",
+      "raw": "Mo-Su 07:00-22:00",
       "allDay": false,
       "unknown": false,
       "byDay": {
@@ -1824,7 +1890,7 @@
     "lat": 20.9923413,
     "lng": 106.062457,
     "營業時間": {
-      "raw": "toilets=yes",
+      "raw": "",
       "allDay": false,
       "unknown": true,
       "byDay": {
@@ -1846,7 +1912,7 @@
     "lat": 16.0687325,
     "lng": 108.243763,
     "營業時間": {
-      "raw": "wheelchair=limited toilets=yes",
+      "raw": "",
       "allDay": false,
       "unknown": true,
       "byDay": {
@@ -1868,7 +1934,7 @@
     "lat": 10.7866904,
     "lng": 106.6791678,
     "營業時間": {
-      "raw": "Mo-Su 08:00-22:00 wheelchair=limited toilets=yes",
+      "raw": "Mo-Su 08:00-22:00",
       "allDay": false,
       "unknown": false,
       "byDay": {
@@ -1925,7 +1991,7 @@
     "lat": 10.9550315,
     "lng": 106.8596726,
     "營業時間": {
-      "raw": "06:00-22:00 toilets=yes",
+      "raw": "06:00-22:00",
       "allDay": false,
       "unknown": false,
       "byDay": {
@@ -1982,7 +2048,7 @@
     "lat": 10.7398315,
     "lng": 106.6179908,
     "營業時間": {
-      "raw": "Mo-Fr 07:00-21:00; Sa-Su 07:30-21:00 toilets=yes",
+      "raw": "Mo-Fr 07:00-21:00; Sa-Su 07:30-21:00",
       "allDay": false,
       "unknown": true,
       "byDay": {
@@ -2004,7 +2070,7 @@
     "lat": 20.2166057,
     "lng": 105.9464224,
     "營業時間": {
-      "raw": "wheelchair=limited toilets=yes",
+      "raw": "",
       "allDay": false,
       "unknown": true,
       "byDay": {
@@ -2026,7 +2092,7 @@
     "lat": 10.7339494,
     "lng": 106.7102979,
     "營業時間": {
-      "raw": "Mo-Su 06:00-18:00 toilets=yes",
+      "raw": "Mo-Su 06:00-18:00",
       "allDay": false,
       "unknown": false,
       "byDay": {
@@ -2083,7 +2149,7 @@
     "lat": 20.8630212,
     "lng": 106.6811619,
     "營業時間": {
-      "raw": "toilets=yes",
+      "raw": "",
       "allDay": false,
       "unknown": true,
       "byDay": {
@@ -2105,7 +2171,7 @@
     "lat": 10.7987052,
     "lng": 106.7202405,
     "營業時間": {
-      "raw": "Mo-Su 06:30-23:00 wheelchair=no toilets=yes",
+      "raw": "Mo-Su 06:30-23:00",
       "allDay": false,
       "unknown": false,
       "byDay": {
@@ -2162,7 +2228,7 @@
     "lat": 16.0707713,
     "lng": 108.2095469,
     "營業時間": {
-      "raw": "toilets=yes",
+      "raw": "",
       "allDay": false,
       "unknown": true,
       "byDay": {
@@ -2184,7 +2250,7 @@
     "lat": 21.2937295,
     "lng": 105.7850104,
     "營業時間": {
-      "raw": "Mo-Su 08:00-22:00 toilets=yes",
+      "raw": "Mo-Su 08:00-22:00",
       "allDay": false,
       "unknown": false,
       "byDay": {
@@ -2241,7 +2307,7 @@
     "lat": 21.0361075,
     "lng": 105.8290699,
     "營業時間": {
-      "raw": "toilets=yes",
+      "raw": "",
       "allDay": false,
       "unknown": true,
       "byDay": {
@@ -2263,7 +2329,7 @@
     "lat": 12.271077,
     "lng": 109.19941,
     "營業時間": {
-      "raw": "toilets=yes",
+      "raw": "",
       "allDay": false,
       "unknown": true,
       "byDay": {
@@ -2285,7 +2351,7 @@
     "lat": 10.7725238,
     "lng": 106.698948,
     "營業時間": {
-      "raw": "Mo-Su 07:30-20:00 wheelchair=no toilets=yes",
+      "raw": "Mo-Su 07:30-20:00",
       "allDay": false,
       "unknown": false,
       "byDay": {
@@ -2342,7 +2408,7 @@
     "lat": 10.3552532,
     "lng": 107.0613718,
     "營業時間": {
-      "raw": "24/7 toilets=yes",
+      "raw": "24/7",
       "allDay": true,
       "unknown": false,
       "byDay": {
@@ -2399,7 +2465,7 @@
     "lat": 10.7984122,
     "lng": 106.6848684,
     "營業時間": {
-      "raw": "wheelchair=no toilets=yes",
+      "raw": "",
       "allDay": false,
       "unknown": true,
       "byDay": {
@@ -2421,7 +2487,7 @@
     "lat": 11.2875226,
     "lng": 106.1231684,
     "營業時間": {
-      "raw": "toilets=yes",
+      "raw": "",
       "allDay": false,
       "unknown": true,
       "byDay": {
@@ -2443,7 +2509,7 @@
     "lat": 10.771387,
     "lng": 106.6955645,
     "營業時間": {
-      "raw": "Mo-Su 07:00-22:30 wheelchair=no toilets=yes",
+      "raw": "Mo-Su 07:00-22:30",
       "allDay": false,
       "unknown": false,
       "byDay": {
@@ -2500,7 +2566,7 @@
     "lat": 10.955972,
     "lng": 106.8427217,
     "營業時間": {
-      "raw": "06:00-23:00 toilets=yes",
+      "raw": "06:00-23:00",
       "allDay": false,
       "unknown": false,
       "byDay": {
@@ -2557,7 +2623,7 @@
     "lat": 10.8675319,
     "lng": 106.6815854,
     "營業時間": {
-      "raw": "Mo-Su 06:30-23:00 wheelchair=yes toilets=yes",
+      "raw": "Mo-Su 06:30-23:00",
       "allDay": false,
       "unknown": false,
       "byDay": {
@@ -2614,7 +2680,7 @@
     "lat": 10.7901671,
     "lng": 106.6962894,
     "營業時間": {
-      "raw": "Mo-Su 08:00-19:00 toilets=yes",
+      "raw": "Mo-Su 08:00-19:00",
       "allDay": false,
       "unknown": false,
       "byDay": {
@@ -2671,7 +2737,7 @@
     "lat": 16.0486599,
     "lng": 108.2478755,
     "營業時間": {
-      "raw": "Mo-Su 08:30-22:45 toilets=yes",
+      "raw": "Mo-Su 08:30-22:45",
       "allDay": false,
       "unknown": false,
       "byDay": {
@@ -2728,7 +2794,7 @@
     "lat": 10.7875454,
     "lng": 106.6440167,
     "營業時間": {
-      "raw": "Mo-Su 07:30-23:00 toilets=yes",
+      "raw": "Mo-Su 07:30-23:00",
       "allDay": false,
       "unknown": false,
       "byDay": {
@@ -2785,7 +2851,7 @@
     "lat": 14.5614395,
     "lng": 108.2697562,
     "營業時間": {
-      "raw": "toilets=yes",
+      "raw": "",
       "allDay": false,
       "unknown": true,
       "byDay": {
@@ -2807,7 +2873,7 @@
     "lat": 10.8670374,
     "lng": 106.6649263,
     "營業時間": {
-      "raw": "toilets=yes",
+      "raw": "",
       "allDay": false,
       "unknown": true,
       "byDay": {
@@ -2829,7 +2895,7 @@
     "lat": 10.7710508,
     "lng": 106.6939121,
     "營業時間": {
-      "raw": "Mo-Su 06:30-00:00 wheelchair=no toilets=yes",
+      "raw": "Mo-Su 06:30-00:00",
       "allDay": false,
       "unknown": false,
       "byDay": {
@@ -2886,7 +2952,7 @@
     "lat": 10.8066313,
     "lng": 106.6639417,
     "營業時間": {
-      "raw": "toilets=yes",
+      "raw": "",
       "allDay": false,
       "unknown": true,
       "byDay": {
@@ -2908,7 +2974,7 @@
     "lat": 10.3537994,
     "lng": 107.073988,
     "營業時間": {
-      "raw": "toilets=yes",
+      "raw": "",
       "allDay": false,
       "unknown": true,
       "byDay": {
@@ -2930,7 +2996,7 @@
     "lat": 20.9898273,
     "lng": 106.0500412,
     "營業時間": {
-      "raw": "toilets=yes",
+      "raw": "",
       "allDay": false,
       "unknown": true,
       "byDay": {
@@ -2952,7 +3018,7 @@
     "lat": 10.758729,
     "lng": 106.7005406,
     "營業時間": {
-      "raw": "toilets=yes",
+      "raw": "",
       "allDay": false,
       "unknown": true,
       "byDay": {
@@ -2974,7 +3040,7 @@
     "lat": 10.7904871,
     "lng": 106.7111196,
     "營業時間": {
-      "raw": "toilets=yes",
+      "raw": "",
       "allDay": false,
       "unknown": true,
       "byDay": {
@@ -2996,7 +3062,7 @@
     "lat": 15.9113654,
     "lng": 108.3387526,
     "營業時間": {
-      "raw": "07:30-16:00 wheelchair=limited toilets=yes",
+      "raw": "07:30-16:00",
       "allDay": false,
       "unknown": false,
       "byDay": {
@@ -3053,7 +3119,7 @@
     "lat": 15.8807762,
     "lng": 108.3303607,
     "營業時間": {
-      "raw": "07:30-19:00 wheelchair=limited toilets=yes",
+      "raw": "07:30-19:00",
       "allDay": false,
       "unknown": false,
       "byDay": {
@@ -3110,7 +3176,7 @@
     "lat": 15.9086547,
     "lng": 108.346936,
     "營業時間": {
-      "raw": "Mo-Su 07:30-18:00 wheelchair=yes toilets=yes",
+      "raw": "Mo-Su 07:30-18:00",
       "allDay": false,
       "unknown": false,
       "byDay": {
@@ -3167,7 +3233,7 @@
     "lat": 10.5372172,
     "lng": 107.4131599,
     "營業時間": {
-      "raw": "Mo-Su 09:00-22:00 toilets=yes",
+      "raw": "Mo-Su 09:00-22:00",
       "allDay": false,
       "unknown": false,
       "byDay": {
@@ -3224,7 +3290,7 @@
     "lat": 10.7938455,
     "lng": 106.6707495,
     "營業時間": {
-      "raw": "Mo-Su 08:00-22:00 toilets=yes",
+      "raw": "Mo-Su 08:00-22:00",
       "allDay": false,
       "unknown": false,
       "byDay": {
@@ -3281,7 +3347,7 @@
     "lat": 10.7260209,
     "lng": 106.6151916,
     "營業時間": {
-      "raw": "toilets=yes",
+      "raw": "",
       "allDay": false,
       "unknown": true,
       "byDay": {
@@ -3303,7 +3369,7 @@
     "lat": 12.2423764,
     "lng": 109.1789968,
     "營業時間": {
-      "raw": "toilets=yes",
+      "raw": "",
       "allDay": false,
       "unknown": true,
       "byDay": {
@@ -3325,7 +3391,7 @@
     "lat": 10.8047258,
     "lng": 106.7401389,
     "營業時間": {
-      "raw": "Mo-Su 09:00-21:00 toilets=yes",
+      "raw": "Mo-Su 09:00-21:00",
       "allDay": false,
       "unknown": false,
       "byDay": {
@@ -3382,7 +3448,7 @@
     "lat": 10.8047212,
     "lng": 106.7402537,
     "營業時間": {
-      "raw": "Mo-Su 09:00-21:00 toilets=yes",
+      "raw": "Mo-Su 09:00-21:00",
       "allDay": false,
       "unknown": false,
       "byDay": {
@@ -3439,7 +3505,7 @@
     "lat": 11.9349629,
     "lng": 108.467809,
     "營業時間": {
-      "raw": "wheelchair=yes toilets=yes",
+      "raw": "",
       "allDay": false,
       "unknown": true,
       "byDay": {
@@ -3461,7 +3527,7 @@
     "lat": 10.7481138,
     "lng": 106.6603301,
     "營業時間": {
-      "raw": "Mo-Su 07:00-23:00 toilets=yes",
+      "raw": "Mo-Su 07:00-23:00",
       "allDay": false,
       "unknown": false,
       "byDay": {
@@ -3518,7 +3584,7 @@
     "lat": 10.7252921,
     "lng": 106.7098322,
     "營業時間": {
-      "raw": "toilets=yes",
+      "raw": "",
       "allDay": false,
       "unknown": true,
       "byDay": {
@@ -3540,7 +3606,7 @@
     "lat": 21.0284305,
     "lng": 105.8572398,
     "營業時間": {
-      "raw": "Mo-Fr 07:30-22:30; Sa-Su 08:30-22:30 wheelchair=no toilets=yes",
+      "raw": "Mo-Fr 07:30-22:30; Sa-Su 08:30-22:30",
       "allDay": false,
       "unknown": true,
       "byDay": {
@@ -3562,7 +3628,7 @@
     "lat": 12.2267735,
     "lng": 109.1992396,
     "營業時間": {
-      "raw": "08:00-20:00 wheelchair=yes toilets=yes",
+      "raw": "08:00-20:00",
       "allDay": false,
       "unknown": false,
       "byDay": {
@@ -3612,72 +3678,6 @@
     }
   },
   {
-    "id": "vn-302d92cd361a",
-    "type": "咖啡",
-    "name": "咖啡",
-    "地址": "",
-    "lat": 22.3646202,
-    "lng": 104.0826979,
-    "營業時間": {
-      "raw": "toilets=yes",
-      "allDay": false,
-      "unknown": true,
-      "byDay": {
-        "1": [],
-        "2": [],
-        "3": [],
-        "4": [],
-        "5": [],
-        "6": [],
-        "7": []
-      }
-    }
-  },
-  {
-    "id": "vn-41f48ca22529",
-    "type": "咖啡",
-    "name": "咖啡",
-    "地址": "",
-    "lat": 22.3629572,
-    "lng": 104.0815386,
-    "營業時間": {
-      "raw": "toilets=yes",
-      "allDay": false,
-      "unknown": true,
-      "byDay": {
-        "1": [],
-        "2": [],
-        "3": [],
-        "4": [],
-        "5": [],
-        "6": [],
-        "7": []
-      }
-    }
-  },
-  {
-    "id": "vn-6189168e7664",
-    "type": "咖啡",
-    "name": "咖啡",
-    "地址": "",
-    "lat": 10.7710513,
-    "lng": 106.6930207,
-    "營業時間": {
-      "raw": "wheelchair=limited toilets=yes",
-      "allDay": false,
-      "unknown": true,
-      "byDay": {
-        "1": [],
-        "2": [],
-        "3": [],
-        "4": [],
-        "5": [],
-        "6": [],
-        "7": []
-      }
-    }
-  },
-  {
     "id": "vn-763fe51c9de7",
     "type": "商場",
     "name": "AEON Mall Long Biên",
@@ -3685,7 +3685,7 @@
     "lat": 21.0272299,
     "lng": 105.8994989,
     "營業時間": {
-      "raw": "Mo-Fr 10:00-22:00; Sa,Su,PH 09:00-22:00 wheelchair=yes toilets=yes",
+      "raw": "Mo-Fr 10:00-22:00; Sa,Su,PH 09:00-22:00",
       "allDay": false,
       "unknown": true,
       "byDay": {
@@ -3707,7 +3707,7 @@
     "lat": 12.2563798,
     "lng": 109.1703878,
     "營業時間": {
-      "raw": "Mo-Su 08:00-22:00 toilets=yes",
+      "raw": "Mo-Su 08:00-22:00",
       "allDay": false,
       "unknown": false,
       "byDay": {
@@ -3764,7 +3764,7 @@
     "lat": 10.8276722,
     "lng": 106.721539,
     "營業時間": {
-      "raw": "Mo-Fr 09:30-22:00 toilets=yes",
+      "raw": "Mo-Fr 09:30-22:00",
       "allDay": false,
       "unknown": true,
       "byDay": {
@@ -3786,7 +3786,7 @@
     "lat": 10.8277232,
     "lng": 106.7217477,
     "營業時間": {
-      "raw": "Sa,Su,PH off toilets=yes",
+      "raw": "Sa,Su,PH off",
       "allDay": false,
       "unknown": true,
       "byDay": {
@@ -3808,7 +3808,7 @@
     "lat": 21.0314637,
     "lng": 105.8306532,
     "營業時間": {
-      "raw": "Mo-Th 09:30-21:30; Fr-Su 09:30-22:00 toilets=yes",
+      "raw": "Mo-Th 09:30-21:30; Fr-Su 09:30-22:00",
       "allDay": false,
       "unknown": true,
       "byDay": {
@@ -3830,7 +3830,7 @@
     "lat": 21.0760171,
     "lng": 105.8126164,
     "營業時間": {
-      "raw": "Mo-Su 09:30-22:00 toilets=yes",
+      "raw": "Mo-Su 09:30-22:00",
       "allDay": false,
       "unknown": false,
       "byDay": {
@@ -3887,7 +3887,7 @@
     "lat": 10.9576312,
     "lng": 106.8434143,
     "營業時間": {
-      "raw": "06:00-22:00 toilets=yes",
+      "raw": "06:00-22:00",
       "allDay": false,
       "unknown": false,
       "byDay": {
@@ -3944,7 +3944,7 @@
     "lat": 21.0022833,
     "lng": 105.8160462,
     "營業時間": {
-      "raw": "Mo-Su 10:00-21:30 toilets=yes",
+      "raw": "Mo-Su 10:00-21:30",
       "allDay": false,
       "unknown": false,
       "byDay": {
@@ -4001,7 +4001,7 @@
     "lat": 21.0059137,
     "lng": 105.7544665,
     "營業時間": {
-      "raw": "Mo-Su 10:00-21:30 wheelchair=yes toilets=yes",
+      "raw": "Mo-Su 10:00-21:30",
       "allDay": false,
       "unknown": false,
       "byDay": {
@@ -4058,7 +4058,7 @@
     "lat": 20.9948145,
     "lng": 105.8685654,
     "營業時間": {
-      "raw": "Mo-Su 10:00-21:30 toilets=yes",
+      "raw": "Mo-Su 10:00-21:30",
       "allDay": false,
       "unknown": false,
       "byDay": {
@@ -4115,7 +4115,7 @@
     "lat": 10.8023666,
     "lng": 106.7408767,
     "營業時間": {
-      "raw": "Mo-Fr 10:00-22:00; Sa,Su 09:30-22:00 toilets=yes",
+      "raw": "Mo-Fr 10:00-22:00; Sa,Su 09:30-22:00",
       "allDay": false,
       "unknown": true,
       "byDay": {
@@ -4137,7 +4137,7 @@
     "lat": 21.0062726,
     "lng": 105.8321006,
     "營業時間": {
-      "raw": "Mo-Su 09:00-22:00 toilets=yes",
+      "raw": "Mo-Su 09:00-22:00",
       "allDay": false,
       "unknown": false,
       "byDay": {
@@ -4194,7 +4194,7 @@
     "lat": 16.4630118,
     "lng": 107.5942621,
     "營業時間": {
-      "raw": "10:00-21:00 toilets=yes",
+      "raw": "10:00-21:00",
       "allDay": false,
       "unknown": false,
       "byDay": {
@@ -4251,7 +4251,7 @@
     "lat": 20.8630346,
     "lng": 106.6619605,
     "營業時間": {
-      "raw": "toilets=yes",
+      "raw": "",
       "allDay": false,
       "unknown": true,
       "byDay": {
@@ -4273,7 +4273,7 @@
     "lat": 20.8658425,
     "lng": 106.6915195,
     "營業時間": {
-      "raw": "toilets=yes",
+      "raw": "",
       "allDay": false,
       "unknown": true,
       "byDay": {
@@ -4295,7 +4295,7 @@
     "lat": 17.4654922,
     "lng": 106.6262606,
     "營業時間": {
-      "raw": "toilets=yes",
+      "raw": "",
       "allDay": false,
       "unknown": true,
       "byDay": {
@@ -4317,7 +4317,7 @@
     "lat": 11.4299392,
     "lng": 107.7499869,
     "營業時間": {
-      "raw": "Sa-Su 00:00-24:00 wheelchair=no toilets=yes",
+      "raw": "Sa-Su 00:00-24:00",
       "allDay": false,
       "unknown": true,
       "byDay": {
@@ -4339,7 +4339,7 @@
     "lat": 22.4922679,
     "lng": 103.9783871,
     "營業時間": {
-      "raw": "toilets=yes",
+      "raw": "",
       "allDay": false,
       "unknown": true,
       "byDay": {
@@ -4361,7 +4361,7 @@
     "lat": 16.071571,
     "lng": 108.2093029,
     "營業時間": {
-      "raw": "wheelchair=yes toilets=yes",
+      "raw": "",
       "allDay": false,
       "unknown": true,
       "byDay": {
@@ -4383,7 +4383,7 @@
     "lat": 13.7641834,
     "lng": 109.2162079,
     "營業時間": {
-      "raw": "ПН-ВС 08:00-22:00 toilets=yes",
+      "raw": "ПН-ВС 08:00-22:00",
       "allDay": false,
       "unknown": true,
       "byDay": {
@@ -4405,7 +4405,7 @@
     "lat": 10.7965983,
     "lng": 106.7186549,
     "營業時間": {
-      "raw": "Mo-Su 15:00-02:00 toilets=yes",
+      "raw": "Mo-Su 15:00-02:00",
       "allDay": false,
       "unknown": false,
       "byDay": {
@@ -4462,7 +4462,7 @@
     "lat": 10.7966315,
     "lng": 106.7189955,
     "營業時間": {
-      "raw": "Mo-SU 15:00-02:00 toilets=yes",
+      "raw": "Mo-SU 15:00-02:00",
       "allDay": false,
       "unknown": true,
       "byDay": {
@@ -4484,7 +4484,7 @@
     "lat": 12.2382244,
     "lng": 109.1953141,
     "營業時間": {
-      "raw": "toilets=yes",
+      "raw": "",
       "allDay": false,
       "unknown": true,
       "byDay": {
@@ -4506,7 +4506,7 @@
     "lat": 15.9013833,
     "lng": 108.3364089,
     "營業時間": {
-      "raw": "toilets=yes",
+      "raw": "",
       "allDay": false,
       "unknown": true,
       "byDay": {
@@ -4528,7 +4528,7 @@
     "lat": 15.9983245,
     "lng": 107.9876562,
     "營業時間": {
-      "raw": "toilets=yes",
+      "raw": "",
       "allDay": false,
       "unknown": true,
       "byDay": {
@@ -4550,7 +4550,7 @@
     "lat": 16.0486661,
     "lng": 108.2475717,
     "營業時間": {
-      "raw": "mo-su 08:00-22:45 toilets=yes",
+      "raw": "mo-su 08:00-22:45",
       "allDay": false,
       "unknown": true,
       "byDay": {
@@ -4572,7 +4572,7 @@
     "lat": 15.8790505,
     "lng": 108.328551,
     "營業時間": {
-      "raw": "toilets=yes",
+      "raw": "",
       "allDay": false,
       "unknown": true,
       "byDay": {
@@ -4594,7 +4594,7 @@
     "lat": 10.9508939,
     "lng": 106.5183809,
     "營業時間": {
-      "raw": "Mo-Su 08:00-21:00 wheelchair=yes toilets=yes",
+      "raw": "Mo-Su 08:00-21:00",
       "allDay": false,
       "unknown": false,
       "byDay": {
@@ -4651,7 +4651,7 @@
     "lat": 20.9916052,
     "lng": 106.0574837,
     "營業時間": {
-      "raw": "toilets=yes",
+      "raw": "",
       "allDay": false,
       "unknown": true,
       "byDay": {
@@ -4673,7 +4673,7 @@
     "lat": 10.7355928,
     "lng": 106.6931855,
     "營業時間": {
-      "raw": "Mo-Su 07:00-21:30 wheelchair=limited toilets=yes",
+      "raw": "Mo-Su 07:00-21:30",
       "allDay": false,
       "unknown": false,
       "byDay": {
@@ -4730,7 +4730,7 @@
     "lat": 16.0639909,
     "lng": 108.2210351,
     "營業時間": {
-      "raw": "09:00-15:00,17:00-21:00 wheelchair=limited toilets=yes",
+      "raw": "09:00-15:00,17:00-21:00",
       "allDay": false,
       "unknown": true,
       "byDay": {
@@ -4752,7 +4752,7 @@
     "lat": 21.012437,
     "lng": 105.8487786,
     "營業時間": {
-      "raw": "toilets=yes",
+      "raw": "",
       "allDay": false,
       "unknown": true,
       "byDay": {
@@ -4774,7 +4774,7 @@
     "lat": 20.7212767,
     "lng": 107.0514886,
     "營業時間": {
-      "raw": "toilets=yes",
+      "raw": "",
       "allDay": false,
       "unknown": true,
       "byDay": {
@@ -4796,7 +4796,7 @@
     "lat": 20.8426632,
     "lng": 106.6903429,
     "營業時間": {
-      "raw": "Mo-Su 07:00-23:00 wheelchair=limited toilets=yes",
+      "raw": "Mo-Su 07:00-23:00",
       "allDay": false,
       "unknown": false,
       "byDay": {
@@ -4853,7 +4853,7 @@
     "lat": 21.1911677,
     "lng": 106.0606124,
     "營業時間": {
-      "raw": "Mo-Sa 07:00-21:00 access=permissive wheelchair=yes toilets=yes",
+      "raw": "Mo-Sa 07:00-21:00",
       "allDay": false,
       "unknown": true,
       "byDay": {
@@ -4875,7 +4875,7 @@
     "lat": 20.2180977,
     "lng": 105.9531722,
     "營業時間": {
-      "raw": "Mo-Su 10:00-22:00 wheelchair=no toilets=yes",
+      "raw": "Mo-Su 10:00-22:00",
       "allDay": false,
       "unknown": false,
       "byDay": {
@@ -4932,7 +4932,7 @@
     "lat": 15.9127224,
     "lng": 108.3417419,
     "營業時間": {
-      "raw": "toilets=yes",
+      "raw": "",
       "allDay": false,
       "unknown": true,
       "byDay": {
@@ -4954,7 +4954,7 @@
     "lat": 16.0678822,
     "lng": 108.2046485,
     "營業時間": {
-      "raw": "Mo-Su 10:00-22:00 toilets=yes",
+      "raw": "Mo-Su 10:00-22:00",
       "allDay": false,
       "unknown": false,
       "byDay": {
@@ -5011,7 +5011,7 @@
     "lat": 20.2413347,
     "lng": 105.9363459,
     "營業時間": {
-      "raw": "toilets=yes",
+      "raw": "",
       "allDay": false,
       "unknown": true,
       "byDay": {
@@ -5033,7 +5033,7 @@
     "lat": 21.028975,
     "lng": 105.8485177,
     "營業時間": {
-      "raw": "toilets=yes",
+      "raw": "",
       "allDay": false,
       "unknown": true,
       "byDay": {
@@ -5055,7 +5055,7 @@
     "lat": 10.7649331,
     "lng": 106.6947879,
     "營業時間": {
-      "raw": "wheelchair=no toilets=yes",
+      "raw": "",
       "allDay": false,
       "unknown": true,
       "byDay": {
@@ -5077,7 +5077,7 @@
     "lat": 16.0457151,
     "lng": 108.2478678,
     "營業時間": {
-      "raw": "Mo-Su 08:00-21:30 wheelchair=limited toilets=yes",
+      "raw": "Mo-Su 08:00-21:30",
       "allDay": false,
       "unknown": false,
       "byDay": {
@@ -5134,7 +5134,7 @@
     "lat": 15.8835171,
     "lng": 108.3269567,
     "營業時間": {
-      "raw": "Mo-Su 08:00-21:00 wheelchair=yes toilets=yes",
+      "raw": "Mo-Su 08:00-21:00",
       "allDay": false,
       "unknown": false,
       "byDay": {
@@ -5191,7 +5191,7 @@
     "lat": 16.0629394,
     "lng": 108.2302972,
     "營業時間": {
-      "raw": "Mo-Su 16:00-23:00 wheelchair=limited toilets=yes",
+      "raw": "Mo-Su 16:00-23:00",
       "allDay": false,
       "unknown": false,
       "byDay": {
@@ -5248,7 +5248,7 @@
     "lat": 20.215121,
     "lng": 105.9367787,
     "營業時間": {
-      "raw": "Mo-Su 07:00-22:00 toilets=yes",
+      "raw": "Mo-Su 07:00-22:00",
       "allDay": false,
       "unknown": false,
       "byDay": {
@@ -5305,7 +5305,7 @@
     "lat": 10.4858885,
     "lng": 107.4559685,
     "營業時間": {
-      "raw": "toilets=yes",
+      "raw": "",
       "allDay": false,
       "unknown": true,
       "byDay": {
@@ -5327,7 +5327,7 @@
     "lat": 21.0285428,
     "lng": 105.8437079,
     "營業時間": {
-      "raw": "wheelchair=limited toilets=yes",
+      "raw": "",
       "allDay": false,
       "unknown": true,
       "byDay": {
@@ -5349,7 +5349,7 @@
     "lat": 20.9859611,
     "lng": 106.0483748,
     "營業時間": {
-      "raw": "toilets=yes",
+      "raw": "",
       "allDay": false,
       "unknown": true,
       "byDay": {
@@ -5371,7 +5371,7 @@
     "lat": 10.7430941,
     "lng": 106.7351789,
     "營業時間": {
-      "raw": "Mo-Su 17:00-22:00 wheelchair=yes toilets=yes",
+      "raw": "Mo-Su 17:00-22:00",
       "allDay": false,
       "unknown": false,
       "byDay": {
@@ -5428,7 +5428,7 @@
     "lat": 12.2360104,
     "lng": 109.1938192,
     "營業時間": {
-      "raw": "Mo-Su 11:00-22:00 toilets=yes",
+      "raw": "Mo-Su 11:00-22:00",
       "allDay": false,
       "unknown": false,
       "byDay": {
@@ -5485,7 +5485,7 @@
     "lat": 10.7751819,
     "lng": 106.7027648,
     "營業時間": {
-      "raw": "Mo-Sa 10:30-21:00 wheelchair=no toilets=yes",
+      "raw": "Mo-Sa 10:30-21:00",
       "allDay": false,
       "unknown": true,
       "byDay": {
@@ -5507,7 +5507,7 @@
     "lat": 21.1531461,
     "lng": 105.2805895,
     "營業時間": {
-      "raw": "Mo-Su 09:00-19:00 toilets=yes",
+      "raw": "Mo-Su 09:00-19:00",
       "allDay": false,
       "unknown": false,
       "byDay": {
@@ -5564,7 +5564,7 @@
     "lat": 15.877183,
     "lng": 108.3384546,
     "營業時間": {
-      "raw": "Mo-Su 11:30-23:00 toilets=yes",
+      "raw": "Mo-Su 11:30-23:00",
       "allDay": false,
       "unknown": false,
       "byDay": {
@@ -5621,7 +5621,7 @@
     "lat": 12.2375847,
     "lng": 109.1896519,
     "營業時間": {
-      "raw": "11:00-14:00,17:00-22:00 wheelchair=limited toilets=yes",
+      "raw": "11:00-14:00,17:00-22:00",
       "allDay": false,
       "unknown": true,
       "byDay": {
@@ -5643,7 +5643,7 @@
     "lat": 11.5628806,
     "lng": 109.0007918,
     "營業時間": {
-      "raw": "toilets=yes",
+      "raw": "",
       "allDay": false,
       "unknown": true,
       "byDay": {
@@ -5665,7 +5665,7 @@
     "lat": 10.7782363,
     "lng": 106.6990416,
     "營業時間": {
-      "raw": "toilets=yes",
+      "raw": "",
       "allDay": false,
       "unknown": true,
       "byDay": {
@@ -5687,7 +5687,7 @@
     "lat": 10.770467,
     "lng": 106.6908778,
     "營業時間": {
-      "raw": "Mo-Su 16:00-21:00 wheelchair=no toilets=yes",
+      "raw": "Mo-Su 16:00-21:00",
       "allDay": false,
       "unknown": false,
       "byDay": {
@@ -5744,7 +5744,7 @@
     "lat": 10.7700134,
     "lng": 106.6913019,
     "營業時間": {
-      "raw": "Mo-Su 10:00-22:00 toilets=yes",
+      "raw": "Mo-Su 10:00-22:00",
       "allDay": false,
       "unknown": false,
       "byDay": {
@@ -5801,7 +5801,7 @@
     "lat": 10.9675823,
     "lng": 106.8556093,
     "營業時間": {
-      "raw": "09:00-23:00 toilets=yes",
+      "raw": "09:00-23:00",
       "allDay": false,
       "unknown": false,
       "byDay": {
@@ -5858,7 +5858,7 @@
     "lat": 21.0163051,
     "lng": 105.8509763,
     "營業時間": {
-      "raw": "Mo-Su 11:30-14:00,17:30-21:00 toilets=yes",
+      "raw": "Mo-Su 11:30-14:00,17:30-21:00",
       "allDay": false,
       "unknown": true,
       "byDay": {
@@ -5880,7 +5880,7 @@
     "lat": 20.9869529,
     "lng": 106.0335658,
     "營業時間": {
-      "raw": "24/7 wheelchair=limited toilets=yes",
+      "raw": "24/7",
       "allDay": true,
       "unknown": false,
       "byDay": {
@@ -5937,7 +5937,7 @@
     "lat": 12.0866392,
     "lng": 109.194609,
     "營業時間": {
-      "raw": "Mo-Su 18:00-20:30; PH open wheelchair=yes toilets=yes",
+      "raw": "Mo-Su 18:00-20:30; PH open",
       "allDay": false,
       "unknown": true,
       "byDay": {
@@ -5959,7 +5959,7 @@
     "lat": 21.0154954,
     "lng": 105.8510453,
     "營業時間": {
-      "raw": "toilets=yes",
+      "raw": "",
       "allDay": false,
       "unknown": true,
       "byDay": {
@@ -5981,7 +5981,7 @@
     "lat": 20.8427434,
     "lng": 106.6905836,
     "營業時間": {
-      "raw": "Mo-Su 07:00-23:00 wheelchair=limited toilets=yes",
+      "raw": "Mo-Su 07:00-23:00",
       "allDay": false,
       "unknown": false,
       "byDay": {
@@ -6038,7 +6038,7 @@
     "lat": 22.8295968,
     "lng": 104.984414,
     "營業時間": {
-      "raw": "Mo-Fr 09:00-12:00,13:30-18:30; Sa 09:00-17:00; PH closed wheelchair=no toilets=yes",
+      "raw": "Mo-Fr 09:00-12:00,13:30-18:30; Sa 09:00-17:00; PH closed",
       "allDay": false,
       "unknown": true,
       "byDay": {
@@ -6060,7 +6060,7 @@
     "lat": 10.1950219,
     "lng": 103.9638351,
     "營業時間": {
-      "raw": "Mo-Su 07:00-22:00 wheelchair=no toilets=yes",
+      "raw": "Mo-Su 07:00-22:00",
       "allDay": false,
       "unknown": false,
       "byDay": {
@@ -6117,7 +6117,7 @@
     "lat": 10.7663749,
     "lng": 106.6480901,
     "營業時間": {
-      "raw": "Mo-Su 06:00-22:00 toilets=yes",
+      "raw": "Mo-Su 06:00-22:00",
       "allDay": false,
       "unknown": false,
       "byDay": {
@@ -6174,7 +6174,7 @@
     "lat": 20.8314024,
     "lng": 106.6840205,
     "營業時間": {
-      "raw": "toilets=yes",
+      "raw": "",
       "allDay": false,
       "unknown": true,
       "byDay": {
@@ -6196,7 +6196,7 @@
     "lat": 23.1172367,
     "lng": 105.0826717,
     "營業時間": {
-      "raw": "toilets=yes",
+      "raw": "",
       "allDay": false,
       "unknown": true,
       "byDay": {
@@ -6218,7 +6218,7 @@
     "lat": 20.8423948,
     "lng": 104.6699186,
     "營業時間": {
-      "raw": "wheelchair=no toilets=yes",
+      "raw": "",
       "allDay": false,
       "unknown": true,
       "byDay": {
@@ -6240,7 +6240,7 @@
     "lat": 10.3402674,
     "lng": 107.0800052,
     "營業時間": {
-      "raw": "Mo-Su 10:30-15:30, 17:00-21:00 toilets=yes",
+      "raw": "Mo-Su 10:30-15:30, 17:00-21:00",
       "allDay": false,
       "unknown": true,
       "byDay": {
@@ -6262,7 +6262,7 @@
     "lat": 10.7592442,
     "lng": 106.692266,
     "營業時間": {
-      "raw": "wheelchair=limited toilets=yes",
+      "raw": "",
       "allDay": false,
       "unknown": true,
       "byDay": {
@@ -6284,7 +6284,7 @@
     "lat": 16.470875,
     "lng": 107.5980966,
     "營業時間": {
-      "raw": "toilets=yes",
+      "raw": "",
       "allDay": false,
       "unknown": true,
       "byDay": {
@@ -6306,7 +6306,7 @@
     "lat": 10.3729298,
     "lng": 105.4439928,
     "營業時間": {
-      "raw": "toilets=yes",
+      "raw": "",
       "allDay": false,
       "unknown": true,
       "byDay": {
@@ -6328,7 +6328,7 @@
     "lat": 10.7966415,
     "lng": 106.6675088,
     "營業時間": {
-      "raw": "Mo-Su 07:00-22:00 toilets=yes",
+      "raw": "Mo-Su 07:00-22:00",
       "allDay": false,
       "unknown": false,
       "byDay": {
@@ -6385,7 +6385,7 @@
     "lat": 21.0094566,
     "lng": 105.8506439,
     "營業時間": {
-      "raw": "Mo-Su 09:00-24:00 toilets=yes",
+      "raw": "Mo-Su 09:00-24:00",
       "allDay": false,
       "unknown": false,
       "byDay": {
@@ -6442,7 +6442,7 @@
     "lat": 12.9531412,
     "lng": 108.2351359,
     "營業時間": {
-      "raw": "Mo-Su 10:00-15:00 toilets=yes",
+      "raw": "Mo-Su 10:00-15:00",
       "allDay": false,
       "unknown": false,
       "byDay": {
@@ -6499,7 +6499,7 @@
     "lat": 20.9862818,
     "lng": 106.0379314,
     "營業時間": {
-      "raw": "wheelchair=limited toilets=yes",
+      "raw": "",
       "allDay": false,
       "unknown": true,
       "byDay": {
@@ -6521,7 +6521,7 @@
     "lat": 21.0317236,
     "lng": 105.8488772,
     "營業時間": {
-      "raw": "Mo-Su 11:00-23:50 wheelchair=no toilets=yes",
+      "raw": "Mo-Su 11:00-23:50",
       "allDay": false,
       "unknown": false,
       "byDay": {
@@ -6578,7 +6578,7 @@
     "lat": 10.8346717,
     "lng": 106.6672908,
     "營業時間": {
-      "raw": "Mo-Su 11:00-23:00 toilets=yes",
+      "raw": "Mo-Su 11:00-23:00",
       "allDay": false,
       "unknown": false,
       "byDay": {
@@ -6635,7 +6635,7 @@
     "lat": 21.0231568,
     "lng": 105.8081926,
     "營業時間": {
-      "raw": "Mo-Su 09:00-15:00,18:00-21:00 wheelchair=limited toilets=yes",
+      "raw": "Mo-Su 09:00-15:00,18:00-21:00",
       "allDay": false,
       "unknown": true,
       "byDay": {
@@ -6657,7 +6657,7 @@
     "lat": 13.7749441,
     "lng": 109.2254259,
     "營業時間": {
-      "raw": "Mo-Su 11:00-20:30 toilets=yes",
+      "raw": "Mo-Su 11:00-20:30",
       "allDay": false,
       "unknown": false,
       "byDay": {
@@ -6714,7 +6714,7 @@
     "lat": 15.9101403,
     "lng": 108.3446017,
     "營業時間": {
-      "raw": "Mo-Su 07:00-22:00 toilets=yes",
+      "raw": "Mo-Su 07:00-22:00",
       "allDay": false,
       "unknown": false,
       "byDay": {
@@ -6771,7 +6771,7 @@
     "lat": 20.2168791,
     "lng": 105.9383464,
     "營業時間": {
-      "raw": "wheelchair=no toilets=yes",
+      "raw": "",
       "allDay": false,
       "unknown": true,
       "byDay": {
@@ -6793,7 +6793,7 @@
     "lat": 20.2253974,
     "lng": 105.9186922,
     "營業時間": {
-      "raw": "wheelchair=no toilets=yes",
+      "raw": "",
       "allDay": false,
       "unknown": true,
       "byDay": {
@@ -6815,7 +6815,7 @@
     "lat": 20.7307568,
     "lng": 107.0509594,
     "營業時間": {
-      "raw": "Mo-Fr 15:00-20:00 wheelchair=no toilets=yes",
+      "raw": "Mo-Fr 15:00-20:00",
       "allDay": false,
       "unknown": true,
       "byDay": {
@@ -6837,7 +6837,7 @@
     "lat": 15.8754629,
     "lng": 108.3453456,
     "營業時間": {
-      "raw": "11:00-21:30 wheelchair=yes toilets=yes",
+      "raw": "11:00-21:30",
       "allDay": false,
       "unknown": false,
       "byDay": {
@@ -6894,7 +6894,7 @@
     "lat": 12.2362347,
     "lng": 109.1941659,
     "營業時間": {
-      "raw": "wheelchair=limited toilets=yes",
+      "raw": "",
       "allDay": false,
       "unknown": true,
       "byDay": {
@@ -6916,7 +6916,7 @@
     "lat": 16.4702727,
     "lng": 107.5949214,
     "營業時間": {
-      "raw": "Mo-Su 08:00-22:30 wheelchair=no toilets=yes",
+      "raw": "Mo-Su 08:00-22:30",
       "allDay": false,
       "unknown": false,
       "byDay": {
@@ -6973,7 +6973,7 @@
     "lat": 10.7632075,
     "lng": 106.6880568,
     "營業時間": {
-      "raw": "wheelchair=limited toilets=yes",
+      "raw": "",
       "allDay": false,
       "unknown": true,
       "byDay": {
@@ -6995,7 +6995,7 @@
     "lat": 11.9540635,
     "lng": 108.4945962,
     "營業時間": {
-      "raw": "Mo-Su 15:00-23:00 wheelchair=yes toilets=yes",
+      "raw": "Mo-Su 15:00-23:00",
       "allDay": false,
       "unknown": false,
       "byDay": {
@@ -7052,7 +7052,7 @@
     "lat": 22.3324481,
     "lng": 103.8390209,
     "營業時間": {
-      "raw": "wheelchair=limited toilets=yes",
+      "raw": "",
       "allDay": false,
       "unknown": true,
       "byDay": {
@@ -7074,7 +7074,7 @@
     "lat": 10.9546534,
     "lng": 108.2229594,
     "營業時間": {
-      "raw": "24/7 toilets=yes",
+      "raw": "24/7",
       "allDay": true,
       "unknown": false,
       "byDay": {
@@ -7131,7 +7131,7 @@
     "lat": 21.0269786,
     "lng": 105.8241813,
     "營業時間": {
-      "raw": "Mo-Su 08:00-22:00 toilets=yes",
+      "raw": "Mo-Su 08:00-22:00",
       "allDay": false,
       "unknown": false,
       "byDay": {
@@ -7188,7 +7188,7 @@
     "lat": 21.0173967,
     "lng": 105.8502974,
     "營業時間": {
-      "raw": "24/7 toilets=yes",
+      "raw": "24/7",
       "allDay": true,
       "unknown": false,
       "byDay": {
@@ -7245,7 +7245,7 @@
     "lat": 15.8815103,
     "lng": 108.3258329,
     "營業時間": {
-      "raw": "Mo-Su 07:00-22:00 wheelchair=no toilets=yes",
+      "raw": "Mo-Su 07:00-22:00",
       "allDay": false,
       "unknown": false,
       "byDay": {
@@ -7302,7 +7302,7 @@
     "lat": 16.1941223,
     "lng": 107.8535984,
     "營業時間": {
-      "raw": "toilets=yes",
+      "raw": "",
       "allDay": false,
       "unknown": true,
       "byDay": {
@@ -7324,7 +7324,7 @@
     "lat": 10.3477351,
     "lng": 107.094859,
     "營業時間": {
-      "raw": "Mo-Su 06:00-21:00 toilets=yes",
+      "raw": "Mo-Su 06:00-21:00",
       "allDay": false,
       "unknown": false,
       "byDay": {
@@ -7381,7 +7381,7 @@
     "lat": 10.8036339,
     "lng": 106.7203866,
     "營業時間": {
-      "raw": "Mo-Su 11:00-22:00 toilets=yes",
+      "raw": "Mo-Su 11:00-22:00",
       "allDay": false,
       "unknown": false,
       "byDay": {
@@ -7438,7 +7438,7 @@
     "lat": 10.961506,
     "lng": 106.8544154,
     "營業時間": {
-      "raw": "10:00-12:00 toilets=yes",
+      "raw": "10:00-12:00",
       "allDay": false,
       "unknown": false,
       "byDay": {
