@@ -15,6 +15,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import math
 import shutil
 import subprocess
@@ -131,9 +132,10 @@ def classify(tags: dict, *, include_department_store: bool = True) -> tuple[str,
 
     Only confirmed toilets are kept: amenity=toilets, or a venue in the
     category list tagged toilets=yes. Venues without that tag are omitted.
-    Public toilets use type 公廁. A toilets=yes venue keeps its category type
-    and appends toilets=yes to 營業時間.raw (the same channel JP station
-    toilets use for fee=).
+    Public toilets use type 公廁. A toilets=yes venue keeps its category type.
+    營業時間.raw is only the opening_hours text; OSM fee/access/wheelchair/toilets
+    tags are not stored, because the schema has no unused field for them and
+    the app displays raw when hours are known.
     """
     if _is_airport(tags) or _is_convenience(tags):
         return None
@@ -155,12 +157,50 @@ def classify(tags: dict, *, include_department_store: bool = True) -> tuple[str,
     return "confirmed", type_name, bucket
 
 
-def pick_name(tags: dict, fallback: str) -> str:
+# Names that are OSM values or prices, not a place name. The app shows
+# `{type} {name}` and also sends that string to Google Maps.
+_JUNK_NAMES = {
+    "yes",
+    "no",
+    "true",
+    "false",
+    "none",
+    "unknown",
+    "limited",
+    "free",
+    "customers",
+    "permissive",
+    "public",
+    "private",
+}
+
+# 2,000₫ / 5000d / 5.000 VND / $2 — OSM toilets sometimes use the fee as name.
+_PRICE_NAME = re.compile(
+    r"^[\d.,\s]+(?:₫|đ|vnd|vnđ|usd|d|dong|\$)?$",
+    re.IGNORECASE,
+)
+
+
+def is_usable_name(value: str, type_name: str = "") -> bool:
+    name = str(value or "").strip()
+    if not name:
+        return False
+    if type_name and name == type_name:
+        return False
+    if name.casefold() in _JUNK_NAMES:
+        return False
+    if _PRICE_NAME.fullmatch(name):
+        return False
+    return True
+
+
+def pick_name(tags: dict, fallback: str = "") -> str:
+    """Real place name only. Category stays in type; no type-label fallback."""
     for key in ("name", "name:vi", "name:en", "brand", "operator"):
         value = _tag(tags, key)
-        if value:
+        if is_usable_name(value, fallback):
             return value
-    return fallback
+    return ""
 
 
 def pick_address(tags: dict) -> str:
@@ -180,33 +220,17 @@ def pick_address(tags: dict) -> str:
     return ", ".join(parts)
 
 
-def annotate_hours(hours: dict, tags: dict, *, toilets_yes: bool) -> dict:
-    """Keep the JP/HK hours object. Extra OSM facts go on raw, like fee=."""
-    raw = str(hours.get("raw") or "")
-    bits: list[str] = []
-    for key in ("fee", "access", "wheelchair"):
-        value = _tag(tags, key)
-        if value:
-            bits.append(f"{key}={value}")
-    if toilets_yes:
-        bits.append("toilets=yes")
-    if bits:
-        raw = f"{raw} {' '.join(bits)}".strip()
-    by_day = hours.get("byDay") or {}
-    return {
-        "raw": raw,
-        "allDay": bool(hours.get("allDay")),
-        "unknown": bool(hours.get("unknown")),
-        "byDay": {str(day): list(slots) for day, slots in by_day.items()},
-    }
-
-
 def opening_hours_text(tags: dict) -> str:
     return _tag(tags, "opening_hours") or _tag(tags, "opening_hours:toilets")
 
 
+def place_hours(tags: dict) -> dict:
+    """Hours object whose raw field is only opening_hours, never OSM amenity tags."""
+    return hours_from_osm(opening_hours_text(tags))
+
+
 def build_record(tags: dict, lat: float, lng: float, osm_type: str, osm_id: str, type_name: str, *, toilets_yes: bool) -> dict:
-    hours = annotate_hours(hours_from_osm(opening_hours_text(tags)), tags, toilets_yes=toilets_yes)
+    hours = place_hours(tags)
     return record(
         type_name,
         pick_name(tags, type_name),
@@ -617,6 +641,14 @@ def self_test() -> None:
     assert pick_name({"name:vi": "Hà Nội", "name:en": "Hanoi", "name": "Ha Noi"}, "公廁") == "Ha Noi"
     assert pick_name({"name:en": "Hanoi", "name:vi": "Hà Nội"}, "公廁") == "Hà Nội"
     assert pick_name({"brand": "Petrolimex"}, "加油站") == "Petrolimex"
+    assert pick_name({}, "公廁") == ""
+    assert pick_name({"name": "咖啡"}, "咖啡") == ""
+    assert pick_name({"name": "2,000₫"}, "公廁") == ""
+    assert pick_name({"name": "7"}, "公廁") == ""
+    assert pick_name({"name": "Free"}, "公廁") == ""
+    assert pick_name({"name": "yes"}, "公廁") == ""
+    assert pick_name({"name": "Highlands Coffee"}, "咖啡") == "Highlands Coffee"
+    assert pick_name({"name": "2,000₫", "brand": "Highlands Coffee"}, "咖啡") == "Highlands Coffee"
     square = {
         "type": "Polygon",
         "coordinates": [[[0, 0], [2, 0], [2, 2], [0, 2], [0, 0]]],
@@ -626,16 +658,34 @@ def self_test() -> None:
     line = {"type": "LineString", "coordinates": [[106.0, 10.0], [106.2, 10.4]]}
     lat, lng = centroid(line)
     assert abs(lat - 10.2) < 1e-9 and abs(lng - 106.1) < 1e-9
-    hours = annotate_hours(
-        hours_from_osm("24/7"),
-        {"fee": "no", "wheelchair": "yes", "access": "yes"},
-        toilets_yes=True,
+    hours = place_hours(
+        {
+            "opening_hours": "24/7",
+            "fee": "no",
+            "wheelchair": "yes",
+            "access": "yes",
+            "toilets": "yes",
+        }
     )
     assert hours["allDay"] is True
-    assert "fee=no" in hours["raw"] and "toilets=yes" in hours["raw"]
-    assert "wheelchair=yes" in hours["raw"]
+    assert hours["raw"] == "24/7"
+    assert "fee=" not in hours["raw"]
+    assert "toilets=" not in hours["raw"]
+    assert "wheelchair=" not in hours["raw"]
+    tagged = place_hours(
+        {
+            "opening_hours": "07:00-23:00",
+            "wheelchair": "limited",
+            "toilets": "yes",
+        }
+    )
+    assert tagged["unknown"] is False
+    assert tagged["raw"] == "07:00-23:00"
+    assert "wheelchair" not in tagged["raw"]
+    assert place_hours({"wheelchair": "limited", "toilets": "yes"})["raw"] == ""
+    assert place_hours({"wheelchair": "limited", "toilets": "yes"})["unknown"] is True
     row = build_record(
-        {"name": "Vincom", "opening_hours": "24/7", "fee": "no"},
+        {"name": "Vincom", "opening_hours": "24/7", "fee": "no", "toilets": "yes"},
         10.78,
         106.70,
         "way",
@@ -647,8 +697,22 @@ def self_test() -> None:
         assert key in row
     assert row["id"].startswith("vn-")
     assert row["type"] == "商場"
+    assert row["name"] == "Vincom"
     assert row["營業時間"]["allDay"] is True
-    assert "toilets=yes" in row["營業時間"]["raw"]
+    assert row["營業時間"]["raw"] == "24/7"
+    assert "toilets=" not in row["營業時間"]["raw"]
+    untitled = build_record(
+        {"opening_hours": "07:00-23:00", "name": "咖啡"},
+        10.77,
+        106.70,
+        "node",
+        "2",
+        "咖啡",
+        toilets_yes=True,
+    )
+    assert untitled["name"] == ""
+    assert untitled["type"] == "咖啡"
+    assert untitled["營業時間"]["raw"] == "07:00-23:00"
     print("self-test ok")
 
 

@@ -97,10 +97,8 @@ If one object matches several categories, the first hit wins: railway station, b
 - Confirmed public toilets use the existing type `公廁` (same as Taiwan FAC_P_07 and Hong Kong public toilets).
 - Venues use the closest existing type when there is one: `商場` (mall and department store, same as Hong Kong), `加油站`.
 - Categories with no existing generic type use a short Chinese label the app can print as-is: `飯店`, `咖啡`, `餐廳`, `博物館`, `主題樂園`, `景點`, `公車站`, `車站`. `港鐵` and `駅トイレ` stay Hong Kong / Japan specific.
-- A venue with `toilets=yes` keeps that category type and appends `toilets=yes` to `營業時間.raw`. Japan station toilets already store `fee=` on that string.
-- `fee`, `access`, and `wheelchair` are appended the same way (`fee=yes wheelchair=limited`). There is no separate field for them.
-- Name order is `name`, `name:vi`, `name:en`, then `brand`, `operator`, then the type label.
-- Hours use `fetchData/jp_common.py` `hours_from_osm` (`opening_hours`, else `opening_hours:toilets`). Simple `24/7` and `Mo-Su HH:MM-HH:MM` become `byDay`. Anything else stays `unknown: true`, which the app treats as open and, in the detail sheet, replaces with “hours unknown” — so `fee=` / `toilets=yes` on an unparsed raw string is kept in the file and not shown.
+- A venue with `toilets=yes` keeps that category type. The category stays in `type`; `name` is only the OSM place name (`name`, then `name:vi`, `name:en`, `brand`, `operator`). There is no type-label fallback. Prices, `yes`/`no`/`free`, and other non-names are dropped, so an unnamed cafe is `type: 咖啡` with an empty `name`.
+- Hours use `fetchData/jp_common.py` `hours_from_osm` (`opening_hours`, else `opening_hours:toilets`). Simple `24/7` and `Mo-Su HH:MM-HH:MM` become `byDay`. `營業時間.raw` is only that opening-hours text (or empty when unknown). `fee`, `access`, `wheelchair`, and `toilets=yes` are not stored: the shared schema has no unused field for them, and the app displays `raw` whenever hours are known.
 
 City shards (`城市.json`) only match addresses that start with a Taiwan `縣`/`市`. Vietnam rows still land in the `0.02°` cells the map loads.
 
@@ -138,4 +136,4 @@ No UI change is required to parse these records. They show up after `buildDataSe
 - `resolveMarket()` has no Vietnam market, so help text stays generic.
 - The free map will include `vn_venues_toilets.json` only. `公廁` stays in the Pro pack.
 - Store listing and the help modal do not mention Vietnam.
-- `營業時間.raw` extras (`fee`, `access`, `wheelchair`, `toilets=yes`) are hidden while hours are `unknown`.
+- The app title and Google Maps query are `{type} {name} {地址}` (`MapScreen.navigationQuery`). Cleaning `name` does not remove the category from that query.
