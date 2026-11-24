@@ -15,6 +15,7 @@ import { MaterialIcons } from '@expo/vector-icons';
 import * as Location from 'expo-location';
 import { colors, radius } from '../theme';
 import { nearestOpen, haversineMeters, isOpenNow } from '../lib/geo';
+import { placeLabel, googleMapsUrls } from '../lib/placeLabel';
 import { fetchComments, submitComment } from '../lib/community';
 import { isSupabaseConfigured } from '../lib/supabase';
 import {
@@ -105,10 +106,6 @@ function withTimeout(promise, ms) {
   ]);
 }
 
-function placeLabel(place) {
-  return `${place.type}${place.name ? ` ${place.name}` : ''}`;
-}
-
 function runningInExpoGo() {
   try {
     const Constants = require('expo-constants').default ?? require('expo-constants');
@@ -121,27 +118,17 @@ function runningInExpoGo() {
   }
 }
 
-function navigationQuery(place) {
-  const parts = [place?.type, place?.name, place?.地址]
-    .map((s) => String(s || '').trim())
-    .filter(Boolean);
-  // Prefer "7-11 三多門市 高雄市…" so Maps searches by name, not wrong coords.
-  return [...new Set(parts)].join(' ');
-}
-
 async function openGoogleMaps(place) {
-  const query = navigationQuery(place);
-  if (!query) {
+  // Coordinates first so a generic category like 咖啡 is not sent as the search.
+  // The app uses Google Maps (web destination= / app daddr=), not Apple Maps.
+  const urls = googleMapsUrls(place);
+  if (!urls) {
     Alert.alert(t('map.navFailTitle'), t('map.navFailBody'));
     return;
   }
 
-  const dest = encodeURIComponent(query);
-  const googleWebUrl = `https://www.google.com/maps/dir/?api=1&destination=${dest}&travelmode=walking`;
-  const googleAppUrl = `comgooglemaps://?daddr=${dest}&directionsmode=walking`;
-
   const openWeb = async () => {
-    await Linking.openURL(googleWebUrl);
+    await Linking.openURL(urls.web);
   };
 
   try {
@@ -149,8 +136,8 @@ async function openGoogleMaps(place) {
       await openWeb();
       return;
     }
-    const canOpenApp = await Linking.canOpenURL(googleAppUrl).catch(() => false);
-    await Linking.openURL(canOpenApp ? googleAppUrl : googleWebUrl);
+    const canOpenApp = await Linking.canOpenURL(urls.app).catch(() => false);
+    await Linking.openURL(canOpenApp ? urls.app : urls.web);
   } catch (e) {
     try {
       await openWeb();
